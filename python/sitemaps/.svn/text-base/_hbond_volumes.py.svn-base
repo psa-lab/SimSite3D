@@ -1,5 +1,5 @@
-import ASCbasePy
-from ASCbasePy import utils
+import SimSite3DPy
+from SimSite3DPy import utils
 from numpy import *
 
 ################################################################################
@@ -345,7 +345,7 @@ class hbond_volumes:
     prot = utils.pdb.residues(prot_fname)
     ideal_pts_fname = "/home/vanvoor4/code/SimSite3D_surfaces/params/"
     ideal_pts_fname += "new_optimum_hbonds.dat"
-    ideal_pts = ASCbasePy.sitemaps.hbond_ideal_pts(ideal_pts_fname)
+    ideal_pts = SimSite3DPy.sitemaps.hbond_ideal_pts(ideal_pts_fname)
     hbond_triplets = ideal_pts.get_polar_atom_triplets(prot, site_vol)
 
     my_caps = []

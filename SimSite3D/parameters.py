@@ -62,7 +62,7 @@ class parameters_base:
 
   ##########
   def version(self):
-    print '''ASCbase Software Development Version
+    print '''SimSite3D Software Development Version
 Copyright (C) 2006-2008, Michigan State University (MSU) Board of Trustees.
 All rights reserved.
 Written by Jeffrey R. Van Voorst and Leslie A. Kuhn
@@ -336,7 +336,7 @@ Site comparison:
   def help(self):
      print '''
 Name:
-      search_sitemaps.py - ASCbase Software tool to compare binding sites
+      search_sitemaps.py - SimSite3D Software tool to compare binding sites
 
 Database search: 
       search_sitemaps.py [OPTIONS] <query_sitemap>.csv 
@@ -345,11 +345,11 @@ Site comparison:
       search_sitemaps.py [OPTIONS] <query_sitemap>.csv <sitemap2>.csv
 
 Description:
-      search_sitemaps.py is a tool in the ASCbase Software package that takes
+      search_sitemaps.py is a tool in the SimSite3D Software package that takes
       a query site map and either searches for similar sites in a site map 
       database (directory) or compares the query to a second site map.  For
       more information on generating site maps see create_sitemaps.py and the
-      ASCbase documentation.
+      SimSite3D documentation.
 
 Note:
       The hits returned by search_sitemaps depends on both the maximum number
@@ -360,15 +360,15 @@ Note:
       database site map).
 
 Directory and File Assumptions:
-      To be reasonably flexible, ASCbase requires that the database site maps,
+      To be reasonably flexible, SimSite3D requires that the database site maps,
       database ligands, project output, diverse sites, and diverse ligands
       directories be set explicitly.  The typical or default settings for
       these values are taken first from the configuration files and then from
       environment variables.  However, these values, except for the diverse
       site maps and ligands directories, can be set by command line options.
 
-      ASCbase assumes that each protein-ligand binding site has a unique
-      identifier represented here by "'XXXXXX".  The files used by ASCbase are:
+      SimSite3D assumes that each protein-ligand binding site has a unique
+      identifier represented here by "'XXXXXX".  The files used by SimSite3D are:
             XXXXXX_p.pdb		Protein file for XXXXXX
             XXXXXX_l.mol2		Ligand file for XXXXXX
             XXXXXX_s.csv		Site map file for XXXXXX
@@ -459,7 +459,7 @@ Additional Options:
             set by the $ASCBASE_PROJ_OUTPUT variable            
 
       --scratch_dir DIRECTORY
-            Set the name of the temporary directory that ASCbase can use 
+            Set the name of the temporary directory that SimSite3D can use 
             during the course of a search.  This is set by $ASCBASE_SCRATCH_DIR
             the variable.
 

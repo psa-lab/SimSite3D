@@ -1,8 +1,8 @@
 /******************************************************************************
- * search_sitemaps is part of the ASCbase Software.
- * ASCbase Software version 1.00, Copyright (C) 2006, Michigan State University
+ * search_sitemaps is part of the SimSite3D Software.
+ * SimSite3D Software version 1.00, Copyright (C) 2006, Michigan State University
  *      (MSU) Board of Trustees.
- * ASCbase Software comes with ABSOLUTELY NO WARRANTY.
+ * SimSite3D Software comes with ABSOLUTELY NO WARRANTY.
  *
  * Authors: Jeffrey Van Voorst, vanvoor4@msu.edu
  *          Leslie Kuhn, Ph.D., KuhnL@msu.edu 
@@ -20,12 +20,12 @@
  * 
  */
 
-#include <ASCbaseMain.H>
+#include <SimSite3DMain.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 int main(const int argc, const char **argv)
 {
-  ASCbaseMain my_main(argc, argv);
+  SimSite3DMain my_main(argc, argv);
   if(!my_main.fail()) my_main.get_alignments_only();
 }

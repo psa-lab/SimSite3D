@@ -1,6 +1,6 @@
 #include <Search.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 
 int main(const int argc, const char **argv)

@@ -1,5 +1,5 @@
 
-namespace ASCbase{
+namespace SimSite3D{
 namespace optimization{
 
 #if 1
@@ -250,4 +250,4 @@ private:
 
 
 } // end namespace optimization
-} // end namespace ASCbase
+} // end namespace SimSite3D

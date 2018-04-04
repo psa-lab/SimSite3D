@@ -22,7 +22,7 @@ if(dirs.proj_dir == None):
 if(os.path.isdir("autom4te.cache")):
   utils.system("/bin/rm -rf autom4te.cache")
 
-print "initializing ASCbase C/C++ install environment... "
+print "initializing SimSite3D C/C++ install environment... "
 # shouldn't always call flush but the commands won't go in order
 sys.stdout.flush()
 if(not utils.system("/usr/bin/aclocal")):
@@ -34,11 +34,11 @@ if(not utils.system("/usr/bin/automake -a -c")):
 if(not utils.system("/usr/bin/autoconf")):
   sys.exit(1)
 
-print "configuring ASCbase C/C++ install environment... "
+print "configuring SimSite3D C/C++ install environment... "
 sys.stdout.flush()
 if(not utils.system("./configure --prefix=\"" + dirs.proj_dir + "\"")):
   sys.exit(1)
-print "building ASCbase C/C++ executables... "
+print "building SimSite3D C/C++ executables... "
 sys.stdout.flush()
 if(not utils.system("/usr/bin/make")):
   sys.exit(1)

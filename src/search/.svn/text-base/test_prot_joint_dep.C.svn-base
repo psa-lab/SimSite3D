@@ -1,6 +1,6 @@
 #include <SurfDepsJoints.H>
 #include <point_and_surf_score.H>
-using namespace ASCbase;
+using namespace SimSite3D;
 
 int main(int argc, char **argv)
 {

@@ -1,8 +1,8 @@
 import os
 import sys
 import gzip
-from ASCbasePy.utils import pdb, add_RCSB_hydrogens
-from ASCbasePy.utils.query_BindingMOAD import *
+from SimSite3DPy.utils import pdb, add_RCSB_hydrogens
+from SimSite3DPy.utils.query_BindingMOAD import *
 
 
 if(__name__ == "__main__"):

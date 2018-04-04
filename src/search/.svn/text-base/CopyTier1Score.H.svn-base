@@ -2,7 +2,7 @@
  * Copyright (c) 2010, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -21,7 +21,7 @@
 
 #include <SitesScoreBase.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! Returns the tier1 score as the score for the current tier
 /*! Used to fill in C++ template parameters if we have only 1 tiered scoring
@@ -61,5 +61,5 @@ public:
   { return false; }
                    
 };
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

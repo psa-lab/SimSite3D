@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -23,7 +23,7 @@
 #include <TransformableTrimesh.H>
 #include <ImmovableTrimesh.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! Create and provide an interface to the database sitemaps.
 /*! We need this class because currently the database sitemaps require their
@@ -102,6 +102,6 @@ private:
   geometry::SimpleTrimeshTwo *A_binding_site_mesh;
 };
 
-} // end namespace ASCbase
+} // end namespace SimSite3D
 
 #endif

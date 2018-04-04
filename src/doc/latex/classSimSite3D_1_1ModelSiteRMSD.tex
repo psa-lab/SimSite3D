@@ -1,29 +1,29 @@
-\section{ASCbase::Model\-Site\-RMSD Class Reference}
-\label{classASCbase_1_1ModelSiteRMSD}\index{ASCbase::ModelSiteRMSD@{ASCbase::ModelSiteRMSD}}
+\section{SimSite3D::Model\-Site\-RMSD Class Reference}
+\label{classSimSite3D_1_1ModelSiteRMSD}\index{SimSite3D::ModelSiteRMSD@{SimSite3D::ModelSiteRMSD}}
 Weight interaction NN interaction pair sums.  
 
 
 {\tt \#include $<$Model\-Site\-RMSD.H$>$}
 
-Inheritance diagram for ASCbase::Model\-Site\-RMSD::\begin{figure}[H]
+Inheritance diagram for SimSite3D::Model\-Site\-RMSD::\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2cm]{classASCbase_1_1ModelSiteRMSD}
+\includegraphics[height=2cm]{classSimSite3D_1_1ModelSiteRMSD}
 \end{center}
 \end{figure}
 \subsection*{Public Types}
 \begin{CompactItemize}
 \item 
-typedef std::less$<$ my\_\-float\_\-t $>$ \textbf{score\_\-cmp}\label{classASCbase_1_1ModelSiteRMSD_d7ff9231014ceb73af2c770d6647bf8f}
+typedef std::less$<$ my\_\-float\_\-t $>$ \textbf{score\_\-cmp}\label{classSimSite3D_1_1ModelSiteRMSD_d7ff9231014ceb73af2c770d6647bf8f}
 
 \end{CompactItemize}
 \subsection*{Public Member Functions}
 \begin{CompactItemize}
 \item 
-\bf{Model\-Site\-RMSD} ()\label{classASCbase_1_1ModelSiteRMSD_e6a786160b83da059ee9d9be896dd33e}
+\bf{Model\-Site\-RMSD} ()\label{classSimSite3D_1_1ModelSiteRMSD_e6a786160b83da059ee9d9be896dd33e}
 
 \begin{CompactList}\small\item\em Default constructor for site map point scoring of (aligned) sitemaps. \item\end{CompactList}\item 
-virtual \bf{$\sim$Model\-Site\-RMSD} ()\label{classASCbase_1_1ModelSiteRMSD_68b9be473953d60d4f232ad789870df0}
+virtual \bf{$\sim$Model\-Site\-RMSD} ()\label{classSimSite3D_1_1ModelSiteRMSD_68b9be473953d60d4f232ad789870df0}
 
 \begin{CompactList}\small\item\em basic destruction \item\end{CompactList}\item 
 my\_\-float\_\-t \bf{score} (const \bf{Model\-Sitemap} \&model, const \bf{Dbase\-Sitemap} \&dbase, \bf{rigid\_\-align\_\-t} $\ast$scores)
@@ -35,7 +35,7 @@ bool \bf{uses\_\-hbond\_\-surfaces} ()
 \subsection*{Static Private Attributes}
 \begin{CompactItemize}
 \item 
-static const std::string \bf{A\_\-fname}\label{classASCbase_1_1ModelSiteRMSD_095f57ffabd335008777bdccd789b6d7}
+static const std::string \bf{A\_\-fname}\label{classSimSite3D_1_1ModelSiteRMSD_095f57ffabd335008777bdccd789b6d7}
 
 \begin{CompactList}\small\item\em Source file name. \item\end{CompactList}\end{CompactItemize}
 
@@ -46,9 +46,9 @@ Weight interaction NN interaction pair sums.
 
 
 \subsection{Member Function Documentation}
-\index{ASCbase::ModelSiteRMSD@{ASCbase::Model\-Site\-RMSD}!score@{score}}
-\index{score@{score}!ASCbase::ModelSiteRMSD@{ASCbase::Model\-Site\-RMSD}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}my\_\-float\_\-t ASCbase::Model\-Site\-RMSD::score (const \bf{Model\-Sitemap} \& {\em model}, const \bf{Dbase\-Sitemap} \& {\em dbase}, \bf{rigid\_\-align\_\-t} $\ast$ {\em scores})\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classASCbase_1_1ModelSiteRMSD_3eb593c527ae195f94705cbc6b3ff335}
+\index{SimSite3D::ModelSiteRMSD@{SimSite3D::Model\-Site\-RMSD}!score@{score}}
+\index{score@{score}!SimSite3D::ModelSiteRMSD@{SimSite3D::Model\-Site\-RMSD}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}my\_\-float\_\-t SimSite3D::Model\-Site\-RMSD::score (const \bf{Model\-Sitemap} \& {\em model}, const \bf{Dbase\-Sitemap} \& {\em dbase}, \bf{rigid\_\-align\_\-t} $\ast$ {\em scores})\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classSimSite3D_1_1ModelSiteRMSD_3eb593c527ae195f94705cbc6b3ff335}
 
 
 \begin{Desc}
@@ -60,21 +60,21 @@ Weight interaction NN interaction pair sums.
 \item[Returns:]The score of the alignment \end{Desc}
 
 
-Implements \bf{ASCbase::Sites\-Score\-Base} \doxyref{p.}{classASCbase_1_1SitesScoreBase_651f05f08e15b7ea8f7fa7c41973499e}.\index{ASCbase::ModelSiteRMSD@{ASCbase::Model\-Site\-RMSD}!uses_hbond_surfaces@{uses\_\-hbond\_\-surfaces}}
-\index{uses_hbond_surfaces@{uses\_\-hbond\_\-surfaces}!ASCbase::ModelSiteRMSD@{ASCbase::Model\-Site\-RMSD}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool ASCbase::Model\-Site\-RMSD::uses\_\-hbond\_\-surfaces ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classASCbase_1_1ModelSiteRMSD_8eb481fde2008dc2d6e60a3a4679bb07}
+Implements \bf{SimSite3D::Sites\-Score\-Base} \doxyref{p.}{classSimSite3D_1_1SitesScoreBase_651f05f08e15b7ea8f7fa7c41973499e}.\index{SimSite3D::ModelSiteRMSD@{SimSite3D::Model\-Site\-RMSD}!uses_hbond_surfaces@{uses\_\-hbond\_\-surfaces}}
+\index{uses_hbond_surfaces@{uses\_\-hbond\_\-surfaces}!SimSite3D::ModelSiteRMSD@{SimSite3D::Model\-Site\-RMSD}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool SimSite3D::Model\-Site\-RMSD::uses\_\-hbond\_\-surfaces ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classSimSite3D_1_1ModelSiteRMSD_8eb481fde2008dc2d6e60a3a4679bb07}
 
 
 Derived class should return false, unless the derived class is using the hydrogen bond surface caps 
 
-Reimplemented from \bf{ASCbase::Sites\-Score\-Base} \doxyref{p.}{classASCbase_1_1SitesScoreBase_a7a5fcc3e24663874f8066c00089f3cf}.\index{ASCbase::ModelSiteRMSD@{ASCbase::Model\-Site\-RMSD}!uses_surface_mesh@{uses\_\-surface\_\-mesh}}
-\index{uses_surface_mesh@{uses\_\-surface\_\-mesh}!ASCbase::ModelSiteRMSD@{ASCbase::Model\-Site\-RMSD}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool ASCbase::Model\-Site\-RMSD::uses\_\-surface\_\-mesh ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classASCbase_1_1ModelSiteRMSD_f0f87f1b1293e8c294d24922ba2458b3}
+Reimplemented from \bf{SimSite3D::Sites\-Score\-Base} \doxyref{p.}{classSimSite3D_1_1SitesScoreBase_a7a5fcc3e24663874f8066c00089f3cf}.\index{SimSite3D::ModelSiteRMSD@{SimSite3D::Model\-Site\-RMSD}!uses_surface_mesh@{uses\_\-surface\_\-mesh}}
+\index{uses_surface_mesh@{uses\_\-surface\_\-mesh}!SimSite3D::ModelSiteRMSD@{SimSite3D::Model\-Site\-RMSD}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool SimSite3D::Model\-Site\-RMSD::uses\_\-surface\_\-mesh ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classSimSite3D_1_1ModelSiteRMSD_f0f87f1b1293e8c294d24922ba2458b3}
 
 
 Derived class should return false, unless, the site's surface needs to be to be rotated and translated 
 
-Reimplemented from \bf{ASCbase::Sites\-Score\-Base} \doxyref{p.}{classASCbase_1_1SitesScoreBase_ae4a2a1ae9113bcad0535593c210030f}.
+Reimplemented from \bf{SimSite3D::Sites\-Score\-Base} \doxyref{p.}{classSimSite3D_1_1SitesScoreBase_ae4a2a1ae9113bcad0535593c210030f}.
 
 The documentation for this class was generated from the following file:\begin{CompactItemize}
 \item 

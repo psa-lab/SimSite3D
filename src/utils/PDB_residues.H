@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -33,7 +33,7 @@
  * included only by the mol2 classes.
  *
  * Revision 1.3  2007/10/11 16:05:13  vanvoor4
- * Added ASCbase namespace
+ * Added SimSite3D namespace
  *
  * Revision 1.2  2007/08/24 15:26:49  vanvoor4
  * Updated to reflect the vdw radii in Tripos FF and Li & Nussinov (1998)
@@ -53,7 +53,7 @@
 #include <types.H>
 #include <point.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
   //! 20 residues + nonstandard PDB residues
   typedef enum residue_type_enum{
@@ -83,7 +83,7 @@ namespace ASCbase{
     TPO,  //!< Phosphorylated threonine
     PTR,  //!< Phosphorylated tyrosine
     ACE,
-    MAIN_CHAIN,        //!< A wild card used by ASCbase::HbondPoints
+    MAIN_CHAIN,        //!< A wild card used by SimSite3D::HbondPoints
     PDB_METAL,         //!< Designates a metal atom
     UNKNOWN_RESIDUE,
     RESIDUE_ENUM_END   //!< End of enum marker
@@ -115,11 +115,11 @@ namespace ASCbase{
   typedef struct{
     std::string pdb_atom_str;   //!< 4 char PDB atom name
     std::string pdb_res_str;    //!< 3 char PDB residue name
-    atom_type atom;             //!< ASCbase atom identifier (enum)
-    residue_type res;           //!< ASCbase atom identifier (enum)
+    atom_type atom;             //!< SimSite3D atom identifier (enum)
+    residue_type res;           //!< SimSite3D atom identifier (enum)
     my_float_t vdw_radius;      //!< Van der Waals radius
     my_float_t ms_atm_radius;   //!< MS, AMS, and MSMS unified atomic radius
-    orbit_type orbit;           //!< ASCbase atom orbital identifier (enum)
+    orbit_type orbit;           //!< SimSite3D atom orbital identifier (enum)
     atom_level_type level;      //!< Atom level -- not used at present
     interactionType act_type;   //!< Hbond donor/acceptor/doneptor/other
     my_float_t charge;          //!< Formal charge
@@ -190,13 +190,13 @@ namespace ASCbase{
       return a_iter->second;
     }
 
-    //! Convert from 3 char PDB residue string to ASCbase residue identifier
+    //! Convert from 3 char PDB residue string to SimSite3D residue identifier
     static residue_type string_to_residue(const std::string res_name);
  
-    //! Convert from ASCbase residue identifier to 3 char PDB residue string
+    //! Convert from SimSite3D residue identifier to 3 char PDB residue string
     static std::string residue_to_string(const residue_type res);
 
-    //! Convert from ASCbase PDB ATOM atom identifier to 4 char PDB atom string
+    //! Convert from SimSite3D PDB ATOM atom identifier to 4 char PDB atom string
     static std::string atom_to_string(const atom_type atom);
 
   private:

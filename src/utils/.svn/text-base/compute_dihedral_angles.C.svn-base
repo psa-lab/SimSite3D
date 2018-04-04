@@ -1,5 +1,5 @@
 #include <prot_joint_dep.H>
-using namespace ASCbase;
+using namespace SimSite3D;
 
 int main(int argc, char **argv)
 {

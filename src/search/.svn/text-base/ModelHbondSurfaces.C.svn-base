@@ -1,7 +1,7 @@
 #include <ModelHbondSurfaces.H>
 #include <HbondGeometry.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 const uint model_hbond_surf_t::A_num_terms = 6;
   

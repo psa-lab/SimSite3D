@@ -1,4 +1,4 @@
-from ASCbasePy import *
+from SimSite3DPy import *
 import numpy
 from pymol import cmd
 from pymol.cgo import *

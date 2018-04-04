@@ -6,7 +6,7 @@
 #include <iostream>
 #include <iomanip>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 void
 get_MC_positions(my_float_t *pos, const std::string fname, const int *res_nums, 

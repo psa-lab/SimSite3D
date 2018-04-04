@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -45,7 +45,7 @@
 #include <sstream>
 #include <unistd.h>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 const std::string SFCscoreInterface::_fname = "SFCscoreInterface.C";
 
 SFCscoreInterface::SFCscoreInterface(std::string cmdline)
@@ -56,7 +56,7 @@ SFCscoreInterface::SFCscoreInterface(std::string cmdline)
   if(pos == std::string::npos){
     std::ostringstream out;
     out << "Unable to find a .spf file specified in the command line string\n"
-        << "(column 2 of $ASCBASE_SOFTWARE_DIR/ASCbaseSoftParams/"
+        << "(column 2 of $ASCBASE_SOFTWARE_DIR/SimSite3DSoftParams/"
         << "external_scoring_functions.txt)";
     err_msg(_fname, "SFCscoreInterface", out.str());
   }else{

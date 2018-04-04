@@ -3,29 +3,29 @@ local ASCBASE_INSTALL_DIR = [ os.environ  ASCBASE_INSTALL_DIR ] ;
 
 # Extension build rules -- 
 python-extension _parameters 
-  : ParametersPy.cc /ASCbasePy//search_lib ;
+  : ParametersPy.cc /SimSite3DPy//search_lib ;
 python-extension _ModelSitemap 
-  : ModelSitemapPy.cc /ASCbasePy//search_lib /ASCbasePy//sitemaps_lib ;
+  : ModelSitemapPy.cc /SimSite3DPy//search_lib /SimSite3DPy//sitemaps_lib ;
 python-extension _DbaseSitemap 
-  : DbaseSitemapPy.cc /ASCbasePy//search_lib /ASCbasePy//sitemaps_lib ;
+  : DbaseSitemapPy.cc /SimSite3DPy//search_lib /SimSite3DPy//sitemaps_lib ;
 python-extension _MatchTriangles
-  : MatchTrianglesPy.cc /ASCbasePy//search_lib /ASCbasePy//sitemaps_lib ;
+  : MatchTrianglesPy.cc /SimSite3DPy//search_lib /SimSite3DPy//sitemaps_lib ;
 python-extension _ScoreMapBase
-  : ScoreMapBasePy.cc /ASCbasePy//search_lib /ASCbasePy//sitemaps_lib ;
+  : ScoreMapBasePy.cc /SimSite3DPy//search_lib /SimSite3DPy//sitemaps_lib ;
 python-extension _WeightedSumsScore
-  : WeightedSumsScorePy.cc /ASCbasePy//search_lib /ASCbasePy//score_lib 
-    /ASCbasePy//sitemaps_lib /ASCbasePy//lapack /ASCbasePy//blas ;
+  : WeightedSumsScorePy.cc /SimSite3DPy//search_lib /SimSite3DPy//score_lib 
+    /SimSite3DPy//sitemaps_lib /SimSite3DPy//lapack /SimSite3DPy//blas ;
 python-extension _point_and_surf_score
-  : point_and_surf_scorePy.cc /ASCbasePy//search_lib /ASCbasePy//score_lib
-    /ASCbasePy//sitemaps_lib /ASCbasePy//lapack /ASCbasePy//blas ;
+  : point_and_surf_scorePy.cc /SimSite3DPy//search_lib /SimSite3DPy//score_lib
+    /SimSite3DPy//sitemaps_lib /SimSite3DPy//lapack /SimSite3DPy//blas ;
 #python-extension _HbondSurfacesScore
-#  : HbondSurfacesScorePy.cc /ASCbasePy//search_lib /ASCbasePy//score_lib
-#    /ASCbasePy//sitemaps_lib ;
+#  : HbondSurfacesScorePy.cc /SimSite3DPy//search_lib /SimSite3DPy//score_lib
+#    /SimSite3DPy//sitemaps_lib ;
 #python-extension _ModelHbondSurfaces
-#  : ModelHbondSurfacesPy.cc  /ASCbasePy//search_lib /ASCbasePy//sitemaps_lib ;
+#  : ModelHbondSurfacesPy.cc  /SimSite3DPy//search_lib /SimSite3DPy//sitemaps_lib ;
 
 # Install rules
-install $(ASCBASE_INSTALL_DIR)/ASCbasePy/search 
+install $(ASCBASE_INSTALL_DIR)/SimSite3DPy/search 
   : _parameters _ModelSitemap _DbaseSitemap _MatchTriangles _ScoreMapBase 
     _WeightedSumsScore _point_and_surf_score ;
 #    _point_and_surf_score _HbondSurfacesScore _ModelHbondSurfaces ;

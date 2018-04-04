@@ -1,6 +1,6 @@
 import numpy
 from numpy import linalg
-from ASCbasePy.utils._quaternion import *
+from SimSite3DPy.utils._quaternion import *
 
 # silly little function to make code easier to read
 def between3(min_pos, pos, max_pos):

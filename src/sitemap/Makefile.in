@@ -106,40 +106,40 @@ mkinstalldirs = $(install_sh) -d
 CONFIG_CLEAN_FILES =
 LIBRARIES = $(noinst_LIBRARIES)
 ARFLAGS = cru
-libASCbaseSoftwareSitemaps_a_AR = $(AR) $(ARFLAGS)
-libASCbaseSoftwareSitemaps_a_LIBADD =
-am_libASCbaseSoftwareSitemaps_a_OBJECTS =  \
+libSimSite3DSoftwareSitemaps_a_AR = $(AR) $(ARFLAGS)
+libSimSite3DSoftwareSitemaps_a_LIBADD =
+am_libSimSite3DSoftwareSitemaps_a_OBJECTS =  \
 	GenPointsParameters.$(OBJEXT) WaterPoints.$(OBJEXT) \
 	HbondPoints.$(OBJEXT) HphobPoints.$(OBJEXT) \
 	complete_link_clustering.$(OBJEXT) SitemapPointsFile.$(OBJEXT) \
 	SitemapAtomsFile.$(OBJEXT) normalize_sitemap.$(OBJEXT) \
 	Sitemap.$(OBJEXT) HbondBase.$(OBJEXT) HbondSurfaces.$(OBJEXT)
-libASCbaseSoftwareSitemaps_a_OBJECTS =  \
-	$(am_libASCbaseSoftwareSitemaps_a_OBJECTS)
+libSimSite3DSoftwareSitemaps_a_OBJECTS =  \
+	$(am_libSimSite3DSoftwareSitemaps_a_OBJECTS)
 am__installdirs = "$(DESTDIR)$(bindir)"
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 PROGRAMS = $(bin_PROGRAMS) $(noinst_PROGRAMS)
 am_comp_simple_rmsd_OBJECTS = comp_simple_rmsd.$(OBJEXT)
 comp_simple_rmsd_OBJECTS = $(am_comp_simple_rmsd_OBJECTS)
-comp_simple_rmsd_DEPENDENCIES = ./libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a
+comp_simple_rmsd_DEPENDENCIES = ./libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a
 am_comp_simple_site_rmsd_OBJECTS = comp_simple_site_rmsd.$(OBJEXT)
 comp_simple_site_rmsd_OBJECTS = $(am_comp_simple_site_rmsd_OBJECTS)
-comp_simple_site_rmsd_DEPENDENCIES = ./libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a
+comp_simple_site_rmsd_DEPENDENCIES = ./libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a
 am_comp_site_rmsd_OBJECTS = comp_site_rmsd.$(OBJEXT)
 comp_site_rmsd_OBJECTS = $(am_comp_site_rmsd_OBJECTS)
-comp_site_rmsd_DEPENDENCIES = ./libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a
+comp_site_rmsd_DEPENDENCIES = ./libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a
 am_gen_points_OBJECTS = gen_points.$(OBJEXT)
 gen_points_OBJECTS = $(am_gen_points_OBJECTS)
 am__DEPENDENCIES_1 =
-gen_points_DEPENDENCIES = ./libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a $(am__DEPENDENCIES_1)
+gen_points_DEPENDENCIES = ./libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a $(am__DEPENDENCIES_1)
 am_norm_db_ade_site_rmsd_OBJECTS = norm_db_ade_site_rmsd.$(OBJEXT)
 norm_db_ade_site_rmsd_OBJECTS = $(am_norm_db_ade_site_rmsd_OBJECTS)
-norm_db_ade_site_rmsd_DEPENDENCIES = ./libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a
+norm_db_ade_site_rmsd_DEPENDENCIES = ./libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a
 DEFAULT_INCLUDES = -I. -I$(srcdir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -151,11 +151,11 @@ LTCXXCOMPILE = $(LIBTOOL) --tag=CXX --mode=compile $(CXX) $(DEFS) \
 CXXLD = $(CXX)
 CXXLINK = $(LIBTOOL) --tag=CXX --mode=link $(CXXLD) $(AM_CXXFLAGS) \
 	$(CXXFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
-SOURCES = $(libASCbaseSoftwareSitemaps_a_SOURCES) \
+SOURCES = $(libSimSite3DSoftwareSitemaps_a_SOURCES) \
 	$(comp_simple_rmsd_SOURCES) $(comp_simple_site_rmsd_SOURCES) \
 	$(comp_site_rmsd_SOURCES) $(gen_points_SOURCES) \
 	$(norm_db_ade_site_rmsd_SOURCES)
-DIST_SOURCES = $(libASCbaseSoftwareSitemaps_a_SOURCES) \
+DIST_SOURCES = $(libSimSite3DSoftwareSitemaps_a_SOURCES) \
 	$(comp_simple_rmsd_SOURCES) $(comp_simple_site_rmsd_SOURCES) \
 	$(comp_site_rmsd_SOURCES) $(gen_points_SOURCES) \
 	$(norm_db_ade_site_rmsd_SOURCES)
@@ -265,31 +265,31 @@ sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@
 target_alias = @target_alias@
 INCLUDES = -I. -I../utils
-noinst_LIBRARIES = libASCbaseSoftwareSitemaps.a
-libASCbaseSoftwareSitemaps_a_SOURCES = GenPointsParameters.C WaterPoints.C \
+noinst_LIBRARIES = libSimSite3DSoftwareSitemaps.a
+libSimSite3DSoftwareSitemaps_a_SOURCES = GenPointsParameters.C WaterPoints.C \
         HbondPoints.C HphobPoints.C complete_link_clustering.C \
 	SitemapPointsFile.C SitemapAtomsFile.C normalize_sitemap.C Sitemap.C \
 	HbondBase.C HbondSurfaces.C
 
 gen_points_SOURCES = gen_points.C
-gen_points_LDADD = ./libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a -lm $(POPT)
+gen_points_LDADD = ./libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a -lm $(POPT)
 
 comp_simple_rmsd_SOURCES = comp_simple_rmsd.C
-comp_simple_rmsd_LDADD = ./libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a -lm
+comp_simple_rmsd_LDADD = ./libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a -lm
 
 comp_simple_site_rmsd_SOURCES = comp_simple_site_rmsd.C
-comp_simple_site_rmsd_LDADD = ./libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a -lm
+comp_simple_site_rmsd_LDADD = ./libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a -lm
 
 comp_site_rmsd_SOURCES = comp_site_rmsd.C
-comp_site_rmsd_LDADD = ./libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a -lm
+comp_site_rmsd_LDADD = ./libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a -lm
 
 norm_db_ade_site_rmsd_SOURCES = norm_db_ade_site_rmsd.C
-norm_db_ade_site_rmsd_LDADD = ./libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a -lm
+norm_db_ade_site_rmsd_LDADD = ./libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a -lm
 
 all: all-am
 
@@ -327,10 +327,10 @@ $(ACLOCAL_M4):  $(am__aclocal_m4_deps)
 
 clean-noinstLIBRARIES:
 	-test -z "$(noinst_LIBRARIES)" || rm -f $(noinst_LIBRARIES)
-libASCbaseSoftwareSitemaps.a: $(libASCbaseSoftwareSitemaps_a_OBJECTS) $(libASCbaseSoftwareSitemaps_a_DEPENDENCIES) 
-	-rm -f libASCbaseSoftwareSitemaps.a
-	$(libASCbaseSoftwareSitemaps_a_AR) libASCbaseSoftwareSitemaps.a $(libASCbaseSoftwareSitemaps_a_OBJECTS) $(libASCbaseSoftwareSitemaps_a_LIBADD)
-	$(RANLIB) libASCbaseSoftwareSitemaps.a
+libSimSite3DSoftwareSitemaps.a: $(libSimSite3DSoftwareSitemaps_a_OBJECTS) $(libSimSite3DSoftwareSitemaps_a_DEPENDENCIES) 
+	-rm -f libSimSite3DSoftwareSitemaps.a
+	$(libSimSite3DSoftwareSitemaps_a_AR) libSimSite3DSoftwareSitemaps.a $(libSimSite3DSoftwareSitemaps_a_OBJECTS) $(libSimSite3DSoftwareSitemaps_a_LIBADD)
+	$(RANLIB) libSimSite3DSoftwareSitemaps.a
 install-binPROGRAMS: $(bin_PROGRAMS)
 	@$(NORMAL_INSTALL)
 	test -z "$(bindir)" || $(mkdir_p) "$(DESTDIR)$(bindir)"

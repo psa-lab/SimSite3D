@@ -1,111 +1,111 @@
-\section{ASCbase::Coord\-File Class Reference}
-\label{classASCbase_1_1CoordFile}\index{ASCbase::CoordFile@{ASCbase::CoordFile}}
+\section{SimSite3D::Coord\-File Class Reference}
+\label{classSimSite3D_1_1CoordFile}\index{SimSite3D::CoordFile@{SimSite3D::CoordFile}}
 {\tt \#include $<$Coord\-File.H$>$}
 
-Inheritance diagram for ASCbase::Coord\-File::\begin{figure}[H]
+Inheritance diagram for SimSite3D::Coord\-File::\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3cm]{classASCbase_1_1CoordFile}
+\includegraphics[height=3cm]{classSimSite3D_1_1CoordFile}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{CompactItemize}
 \item 
-\bf{Coord\-File} ()\label{classASCbase_1_1CoordFile_7e9fbda616d8d9141663ded676268a4f}
+\bf{Coord\-File} ()\label{classSimSite3D_1_1CoordFile_7e9fbda616d8d9141663ded676268a4f}
 
 \begin{CompactList}\small\item\em To be used when a file is to be created; initializes A\_\-fail to false. \item\end{CompactList}\item 
 \bf{Coord\-File} (const std::string filename\_\-in, const verbose\_\-level\_\-t verbosity=VERBOSE\_\-SILENT)
 \begin{CompactList}\small\item\em To be used when a file exists. \item\end{CompactList}\item 
 \bf{Coord\-File} (const \bf{Coord\-File} \&src)
 \item 
-virtual \bf{$\sim$Coord\-File} ()\label{classASCbase_1_1CoordFile_b0646aae13c5714c541f9c0dfad334c7}
+virtual \bf{$\sim$Coord\-File} ()\label{classSimSite3D_1_1CoordFile_b0646aae13c5714c541f9c0dfad334c7}
 
 \begin{CompactList}\small\item\em Do nothing virtual dstr. \item\end{CompactList}\item 
 virtual void \bf{report\_\-stats} (std::ostream \&out)=0
 \begin{CompactList}\small\item\em Each derived class should support some routine to report on the file. \item\end{CompactList}\item 
 virtual bool \bf{write} (const std::string filename)=0
 \begin{CompactList}\small\item\em Each derived class should support some routine to write a molecule. \item\end{CompactList}\item 
-atom\_\-vci \textbf{atoms\_\-begin} () const \label{classASCbase_1_1CoordFile_371501a34c2bb2315cda8cf5e3a8699d}
+atom\_\-vci \textbf{atoms\_\-begin} () const \label{classSimSite3D_1_1CoordFile_371501a34c2bb2315cda8cf5e3a8699d}
 
 \item 
-atom\_\-vci \textbf{atoms\_\-end} () const \label{classASCbase_1_1CoordFile_d17d0b45c944591dd5328eb65f59f044}
+atom\_\-vci \textbf{atoms\_\-end} () const \label{classSimSite3D_1_1CoordFile_d17d0b45c944591dd5328eb65f59f044}
 
 \item 
-const my\_\-float\_\-t $\ast$ \textbf{positions\_\-begin} () const \label{classASCbase_1_1CoordFile_8f69771f77006ab8fe0f3bae830d9bbe}
+const my\_\-float\_\-t $\ast$ \textbf{positions\_\-begin} () const \label{classSimSite3D_1_1CoordFile_8f69771f77006ab8fe0f3bae830d9bbe}
 
 \item 
-const my\_\-float\_\-t $\ast$ \textbf{positions\_\-end} () const \label{classASCbase_1_1CoordFile_f7848c3d7d76d033bcbadf908a7eabc0}
+const my\_\-float\_\-t $\ast$ \textbf{positions\_\-end} () const \label{classSimSite3D_1_1CoordFile_f7848c3d7d76d033bcbadf908a7eabc0}
 
 \item 
-atom\_\-vci \bf{get\_\-atom} (const uint atom\_\-num)\label{classASCbase_1_1CoordFile_c9649e85ff13ba1997fc8809401733d3}
+atom\_\-vci \bf{get\_\-atom} (const uint atom\_\-num)\label{classSimSite3D_1_1CoordFile_c9649e85ff13ba1997fc8809401733d3}
 
 \begin{CompactList}\small\item\em Assumes each atom in a coordinate file has a unique key (atom number). \item\end{CompactList}\item 
-bool \bf{fail} () const \label{classASCbase_1_1CoordFile_62b4ac1cdf4bae7acb19ce63bfca599d}
+bool \bf{fail} () const \label{classSimSite3D_1_1CoordFile_62b4ac1cdf4bae7acb19ce63bfca599d}
 
 \begin{CompactList}\small\item\em Check if any errors have occured when reading the atoms from file. \item\end{CompactList}\item 
-std::string \bf{name} () const \label{classASCbase_1_1CoordFile_687a29cf9f287acaa3919c7cd11a1474}
+std::string \bf{name} () const \label{classSimSite3D_1_1CoordFile_687a29cf9f287acaa3919c7cd11a1474}
 
 \begin{CompactList}\small\item\em Get a string holding the name of the coordinate file. \item\end{CompactList}\item 
-void \bf{transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classASCbase_1_1CoordFile_e288ddf8441fe4652e6a1b90a4b5198c}
+void \bf{transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classSimSite3D_1_1CoordFile_e288ddf8441fe4652e6a1b90a4b5198c}
 
 \begin{CompactList}\small\item\em Transform the positions. \item\end{CompactList}\item 
-void \bf{inverse\_\-transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classASCbase_1_1CoordFile_379c544ae1cd926491619e0f46532e27}
+void \bf{inverse\_\-transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classSimSite3D_1_1CoordFile_379c544ae1cd926491619e0f46532e27}
 
 \begin{CompactList}\small\item\em Transform the positions by the inverse transformation. \item\end{CompactList}\item 
-void \bf{revert} ()\label{classASCbase_1_1CoordFile_6f632e32959f743ccc307a16e04c1a96}
+void \bf{revert} ()\label{classSimSite3D_1_1CoordFile_6f632e32959f743ccc307a16e04c1a96}
 
 \begin{CompactList}\small\item\em Revert the current positions to the original positions. \item\end{CompactList}\item 
-void \textbf{bin\_\-coordinates} (const my\_\-float\_\-t max\_\-dist)\label{classASCbase_1_1CoordFile_1ab04a131afbbd2cc4d59d2a2eb7ebb4}
+void \textbf{bin\_\-coordinates} (const my\_\-float\_\-t max\_\-dist)\label{classSimSite3D_1_1CoordFile_1ab04a131afbbd2cc4d59d2a2eb7ebb4}
 
 \item 
-atom\_\-vci \bf{closest\_\-atom} (const my\_\-float\_\-t $\ast$pos, my\_\-float\_\-t $\ast$d) const \label{classASCbase_1_1CoordFile_7727bbdac08565a2a01edad154108a49}
+atom\_\-vci \bf{closest\_\-atom} (const my\_\-float\_\-t $\ast$pos, my\_\-float\_\-t $\ast$d) const \label{classSimSite3D_1_1CoordFile_7727bbdac08565a2a01edad154108a49}
 
 \begin{CompactList}\small\item\em Get the closest atom center to the given position. \item\end{CompactList}\item 
-void \bf{close\_\-atoms} (const my\_\-float\_\-t $\ast$pos, const my\_\-float\_\-t radius, std::multimap$<$ my\_\-float\_\-t, atom\_\-vci $>$ $\ast$pts\_\-map) const \label{classASCbase_1_1CoordFile_b6942055ebe927bfbedecc8f0fe098af}
+void \bf{close\_\-atoms} (const my\_\-float\_\-t $\ast$pos, const my\_\-float\_\-t radius, std::multimap$<$ my\_\-float\_\-t, atom\_\-vci $>$ $\ast$pts\_\-map) const \label{classSimSite3D_1_1CoordFile_b6942055ebe927bfbedecc8f0fe098af}
 
 \begin{CompactList}\small\item\em Get all atoms within radius of the given positition. \item\end{CompactList}\item 
 const bool \bf{overlapping\_\-atoms} (const \bf{atom\_\-t} \&a) const 
 \item 
 bool \bf{overlapping\_\-atoms} (const \bf{atom\_\-t} \&a, std::vector$<$ atom\_\-vci $>$ $\ast$overlaps)
 \begin{CompactList}\small\item\em Find all protein atoms that overlap atom a. \item\end{CompactList}\item 
-const uint \bf{num\_\-atoms} () const \label{classASCbase_1_1CoordFile_acec4ad5461784995b4fb15bb97e34d4}
+const uint \bf{num\_\-atoms} () const \label{classSimSite3D_1_1CoordFile_acec4ad5461784995b4fb15bb97e34d4}
 
 \begin{CompactList}\small\item\em Get the number of atoms in the molecule. \item\end{CompactList}\item 
-const bool \bf{centroid\_\-3D} (my\_\-float\_\-t $\ast$C) const \label{classASCbase_1_1CoordFile_db452cab2816a058a7767b0d1792e4eb}
+const bool \bf{centroid\_\-3D} (my\_\-float\_\-t $\ast$C) const \label{classSimSite3D_1_1CoordFile_db452cab2816a058a7767b0d1792e4eb}
 
 \begin{CompactList}\small\item\em Compute the centroid of the molecule. \item\end{CompactList}\item 
-void \textbf{get\_\-atom\_\-bin} (atom\_\-vci a, \bf{point\_\-storage}$<$ \bf{atom\_\-t} $>$::bins\_\-vci\_\-type $\ast$nbrs, \bf{point\_\-storage}$<$ \bf{atom\_\-t} $>$::bins\_\-vci\_\-type $\ast$moved\_\-nbrs) const \label{classASCbase_1_1CoordFile_14f3688b267dab8f21694a51b3793fe6}
+void \textbf{get\_\-atom\_\-bin} (atom\_\-vci a, \bf{point\_\-storage}$<$ \bf{atom\_\-t} $>$::bins\_\-vci\_\-type $\ast$nbrs, \bf{point\_\-storage}$<$ \bf{atom\_\-t} $>$::bins\_\-vci\_\-type $\ast$moved\_\-nbrs) const \label{classSimSite3D_1_1CoordFile_14f3688b267dab8f21694a51b3793fe6}
 
 \item 
-void \textbf{write\_\-xyzr\_\-line} (std::ostream \&out, const my\_\-float\_\-t $\ast$pos, const my\_\-float\_\-t vdw\_\-radius)\label{classASCbase_1_1CoordFile_4095812d65e11927d9a031d91b432b1c}
+void \textbf{write\_\-xyzr\_\-line} (std::ostream \&out, const my\_\-float\_\-t $\ast$pos, const my\_\-float\_\-t vdw\_\-radius)\label{classSimSite3D_1_1CoordFile_4095812d65e11927d9a031d91b432b1c}
 
 \item 
-void \textbf{write\_\-bin\_\-bounds} (std::ostream \&out) const \label{classASCbase_1_1CoordFile_6db253f2fde71cbe15a10c63ed4bf30a}
+void \textbf{write\_\-bin\_\-bounds} (std::ostream \&out) const \label{classSimSite3D_1_1CoordFile_6db253f2fde71cbe15a10c63ed4bf30a}
 
 \end{CompactItemize}
 \subsection*{Protected Member Functions}
 \begin{CompactItemize}
 \item 
-virtual bool \bf{read\_\-data} (std::ifstream \&fin)=0\label{classASCbase_1_1CoordFile_1fdc54fd347269643062dee5418859a5}
+virtual bool \bf{read\_\-data} (std::ifstream \&fin)=0\label{classSimSite3D_1_1CoordFile_1fdc54fd347269643062dee5418859a5}
 
 \begin{CompactList}\small\item\em Require all derived classes to implement some sort of read function. \item\end{CompactList}\item 
-atom\_\-vci \bf{append\_\-atom} (const \bf{atom\_\-t} \&a)\label{classASCbase_1_1CoordFile_c420fb9bdfd343ab2ec4927449cbe75c}
+atom\_\-vci \bf{append\_\-atom} (const \bf{atom\_\-t} \&a)\label{classSimSite3D_1_1CoordFile_c420fb9bdfd343ab2ec4927449cbe75c}
 
 \begin{CompactList}\small\item\em Add atom to the storage. \item\end{CompactList}\item 
 atom\_\-vi \bf{atoms\_\-storage\_\-begin} ()
 \item 
 atom\_\-vi \bf{atoms\_\-storage\_\-end} ()
 \item 
-void \bf{green\_\-light} ()\label{classASCbase_1_1CoordFile_a61fc09c8cd8b59f083cc888042b6845}
+void \bf{green\_\-light} ()\label{classSimSite3D_1_1CoordFile_a61fc09c8cd8b59f083cc888042b6845}
 
 \begin{CompactList}\small\item\em Object is good to go. \item\end{CompactList}\item 
-void \bf{red\_\-light} ()\label{classASCbase_1_1CoordFile_042ec36f57b06cb0882fff7eae5c8018}
+void \bf{red\_\-light} ()\label{classSimSite3D_1_1CoordFile_042ec36f57b06cb0882fff7eae5c8018}
 
 \begin{CompactList}\small\item\em An error has occured and object is not safe until error is resolved. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Private Member Functions}
 \begin{CompactItemize}
 \item 
-void \textbf{update\_\-atoms\_\-by\_\-num} ()\label{classASCbase_1_1CoordFile_aa264508450619b88baf9f9b870bd1a3}
+void \textbf{update\_\-atoms\_\-by\_\-num} ()\label{classSimSite3D_1_1CoordFile_aa264508450619b88baf9f9b870bd1a3}
 
 \item 
 const bool \bf{atoms\_\-overlap} (const \bf{atom\_\-t} \&a, const \bf{atom\_\-t} \&b) const 
@@ -113,28 +113,28 @@ const bool \bf{atoms\_\-overlap} (const \bf{atom\_\-t} \&a, const \bf{atom\_\-t}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
-\bf{point\_\-storage}$<$ \bf{atom\_\-t} $>$ \bf{atoms}\label{classASCbase_1_1CoordFile_e6fd931154c7b8e59298b58f592f7799}
+\bf{point\_\-storage}$<$ \bf{atom\_\-t} $>$ \bf{atoms}\label{classSimSite3D_1_1CoordFile_e6fd931154c7b8e59298b58f592f7799}
 
 \begin{CompactList}\small\item\em Vector of atoms. \item\end{CompactList}\item 
-atom\_\-map\_\-t \bf{atoms\_\-by\_\-num}\label{classASCbase_1_1CoordFile_4080cb23aeba4b34ac77e37dcc6d9f0c}
+atom\_\-map\_\-t \bf{atoms\_\-by\_\-num}\label{classSimSite3D_1_1CoordFile_4080cb23aeba4b34ac77e37dcc6d9f0c}
 
 \begin{CompactList}\small\item\em Map (atom num, atom\_\-vci). \item\end{CompactList}\item 
-std::string \bf{name\_\-of\_\-file}\label{classASCbase_1_1CoordFile_75d613311625154ae2d08009fcfa29b2}
+std::string \bf{name\_\-of\_\-file}\label{classSimSite3D_1_1CoordFile_75d613311625154ae2d08009fcfa29b2}
 
 \begin{CompactList}\small\item\em Name of coordinate file which was (hopefully) read in. \item\end{CompactList}\item 
-bool \bf{A\_\-fail}\label{classASCbase_1_1CoordFile_0b784057f780e3960b89ed6f8a25adff}
+bool \bf{A\_\-fail}\label{classSimSite3D_1_1CoordFile_0b784057f780e3960b89ed6f8a25adff}
 
 \begin{CompactList}\small\item\em Did the class fail? -- typically file I/O if it did. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Static Private Attributes}
 \begin{CompactItemize}
 \item 
-static const my\_\-float\_\-t \bf{ALLOWED\_\-OVERLAP} = 0.5\label{classASCbase_1_1CoordFile_2952245169ead06df4ae1e44b9cd69b2}
+static const my\_\-float\_\-t \bf{ALLOWED\_\-OVERLAP} = 0.5\label{classSimSite3D_1_1CoordFile_2952245169ead06df4ae1e44b9cd69b2}
 
 \begin{CompactList}\small\item\em Tolerance for the sum of two atoms Van der Waals radii to be greater than the distance between them. \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{min\_\-hbond\_\-dist} = 2.5\label{classASCbase_1_1CoordFile_24508f2022eb61a82e256555d6149193}
+static const my\_\-float\_\-t \bf{min\_\-hbond\_\-dist} = 2.5\label{classSimSite3D_1_1CoordFile_24508f2022eb61a82e256555d6149193}
 
 \begin{CompactList}\small\item\em What is the closest allowable distance for two atoms participating in a hydrogen bond. \item\end{CompactList}\item 
-static const std::string \bf{A\_\-fname} = \char`\"{}Coord\-File.H(C)\char`\"{}\label{classASCbase_1_1CoordFile_a4a1ec62ac2e45dfb39dc68d91c04905}
+static const std::string \bf{A\_\-fname} = \char`\"{}Coord\-File.H(C)\char`\"{}\label{classSimSite3D_1_1CoordFile_a4a1ec62ac2e45dfb39dc68d91c04905}
 
 \begin{CompactList}\small\item\em Name of the source file. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Friends}
@@ -150,9 +150,9 @@ NOTE: Once a molecule is read NEVER modify the underlying vectors or arrays or y
 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{ASCbase::CoordFile@{ASCbase::Coord\-File}!CoordFile@{CoordFile}}
-\index{CoordFile@{CoordFile}!ASCbase::CoordFile@{ASCbase::Coord\-File}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Coord\-File::Coord\-File (const std::string {\em filename\_\-in}, const verbose\_\-level\_\-t {\em verbosity} = {\tt VERBOSE\_\-SILENT})}\label{classASCbase_1_1CoordFile_97fb942056c6d8a1381f40f14685d295}
+\index{SimSite3D::CoordFile@{SimSite3D::Coord\-File}!CoordFile@{CoordFile}}
+\index{CoordFile@{CoordFile}!SimSite3D::CoordFile@{SimSite3D::Coord\-File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Coord\-File::Coord\-File (const std::string {\em filename\_\-in}, const verbose\_\-level\_\-t {\em verbosity} = {\tt VERBOSE\_\-SILENT})}\label{classSimSite3D_1_1CoordFile_97fb942056c6d8a1381f40f14685d295}
 
 
 To be used when a file exists. 
@@ -162,17 +162,17 @@ To be used when a file exists.
 \begin{description}
 \item[{\em filename\_\-in}]Path to the file to open \item[{\em verbosity}]verbose level \end{description}
 \end{Desc}
-\index{ASCbase::CoordFile@{ASCbase::Coord\-File}!CoordFile@{CoordFile}}
-\index{CoordFile@{CoordFile}!ASCbase::CoordFile@{ASCbase::Coord\-File}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Coord\-File::Coord\-File (const \bf{Coord\-File} \& {\em src})}\label{classASCbase_1_1CoordFile_eb7f98731ca50d29a8c4cae2eada821a}
+\index{SimSite3D::CoordFile@{SimSite3D::Coord\-File}!CoordFile@{CoordFile}}
+\index{CoordFile@{CoordFile}!SimSite3D::CoordFile@{SimSite3D::Coord\-File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Coord\-File::Coord\-File (const \bf{Coord\-File} \& {\em src})}\label{classSimSite3D_1_1CoordFile_eb7f98731ca50d29a8c4cae2eada821a}
 
 
 Only copy the name of the file since some higher level copy constructors are used to perform operations on the returned copies. 
 
 \subsection{Member Function Documentation}
-\index{ASCbase::CoordFile@{ASCbase::Coord\-File}!atoms_overlap@{atoms\_\-overlap}}
-\index{atoms_overlap@{atoms\_\-overlap}!ASCbase::CoordFile@{ASCbase::Coord\-File}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const bool ASCbase::Coord\-File::atoms\_\-overlap (const \bf{atom\_\-t} \& {\em a}, const \bf{atom\_\-t} \& {\em b}) const\hspace{0.3cm}{\tt  [inline, private]}}\label{classASCbase_1_1CoordFile_db5f1f82c8b7cb06fe1dd131ca8d67ca}
+\index{SimSite3D::CoordFile@{SimSite3D::Coord\-File}!atoms_overlap@{atoms\_\-overlap}}
+\index{atoms_overlap@{atoms\_\-overlap}!SimSite3D::CoordFile@{SimSite3D::Coord\-File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const bool SimSite3D::Coord\-File::atoms\_\-overlap (const \bf{atom\_\-t} \& {\em a}, const \bf{atom\_\-t} \& {\em b}) const\hspace{0.3cm}{\tt  [inline, private]}}\label{classSimSite3D_1_1CoordFile_db5f1f82c8b7cb06fe1dd131ca8d67ca}
 
 
 Check if the atoms have significant and undesireable overlap. 
@@ -186,19 +186,19 @@ Special rules exist to allow atoms that are participating in hydrogen bonds to b
 \end{Desc}
 \begin{Desc}
 \item[Returns:]True if there is significant and undesireable overlap between a and b \end{Desc}
-\index{ASCbase::CoordFile@{ASCbase::Coord\-File}!atoms_storage_begin@{atoms\_\-storage\_\-begin}}
-\index{atoms_storage_begin@{atoms\_\-storage\_\-begin}!ASCbase::CoordFile@{ASCbase::Coord\-File}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}atom\_\-vi ASCbase::Coord\-File::atoms\_\-storage\_\-begin ()\hspace{0.3cm}{\tt  [inline, protected]}}\label{classASCbase_1_1CoordFile_789e3d25f1bed7a0cf1ac6c2b31c7a1a}
+\index{SimSite3D::CoordFile@{SimSite3D::Coord\-File}!atoms_storage_begin@{atoms\_\-storage\_\-begin}}
+\index{atoms_storage_begin@{atoms\_\-storage\_\-begin}!SimSite3D::CoordFile@{SimSite3D::Coord\-File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}atom\_\-vi SimSite3D::Coord\-File::atoms\_\-storage\_\-begin ()\hspace{0.3cm}{\tt  [inline, protected]}}\label{classSimSite3D_1_1CoordFile_789e3d25f1bed7a0cf1ac6c2b31c7a1a}
 
 
-The name of this function is purposely changed because it using the name atoms\_\-begin() causes g++ to not know which function to choose \index{ASCbase::CoordFile@{ASCbase::Coord\-File}!atoms_storage_end@{atoms\_\-storage\_\-end}}
-\index{atoms_storage_end@{atoms\_\-storage\_\-end}!ASCbase::CoordFile@{ASCbase::Coord\-File}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}atom\_\-vi ASCbase::Coord\-File::atoms\_\-storage\_\-end ()\hspace{0.3cm}{\tt  [inline, protected]}}\label{classASCbase_1_1CoordFile_c3841ed3d35545b650f1be670c8bda08}
+The name of this function is purposely changed because it using the name atoms\_\-begin() causes g++ to not know which function to choose \index{SimSite3D::CoordFile@{SimSite3D::Coord\-File}!atoms_storage_end@{atoms\_\-storage\_\-end}}
+\index{atoms_storage_end@{atoms\_\-storage\_\-end}!SimSite3D::CoordFile@{SimSite3D::Coord\-File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}atom\_\-vi SimSite3D::Coord\-File::atoms\_\-storage\_\-end ()\hspace{0.3cm}{\tt  [inline, protected]}}\label{classSimSite3D_1_1CoordFile_c3841ed3d35545b650f1be670c8bda08}
 
 
-Allow derived classes to modify the atoms via iterators -- end of the \doxyref{point\_\-storage}{p.}{classASCbase_1_1point__storage} class \index{ASCbase::CoordFile@{ASCbase::Coord\-File}!overlapping_atoms@{overlapping\_\-atoms}}
-\index{overlapping_atoms@{overlapping\_\-atoms}!ASCbase::CoordFile@{ASCbase::Coord\-File}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool ASCbase::Coord\-File::overlapping\_\-atoms (const \bf{atom\_\-t} \& {\em a}, std::vector$<$ atom\_\-vci $>$ $\ast$ {\em overlaps})\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1CoordFile_2cfb5884b1f35cd24743e7c76dfaa155}
+Allow derived classes to modify the atoms via iterators -- end of the \doxyref{point\_\-storage}{p.}{classSimSite3D_1_1point__storage} class \index{SimSite3D::CoordFile@{SimSite3D::Coord\-File}!overlapping_atoms@{overlapping\_\-atoms}}
+\index{overlapping_atoms@{overlapping\_\-atoms}!SimSite3D::CoordFile@{SimSite3D::Coord\-File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool SimSite3D::Coord\-File::overlapping\_\-atoms (const \bf{atom\_\-t} \& {\em a}, std::vector$<$ atom\_\-vci $>$ $\ast$ {\em overlaps})\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1CoordFile_2cfb5884b1f35cd24743e7c76dfaa155}
 
 
 Find all protein atoms that overlap atom a. 
@@ -212,9 +212,9 @@ The purpose of this method is mainly a development/testing method that allows on
 \end{Desc}
 \begin{Desc}
 \item[Returns:]True if there is at least one significant overlap, else false. \end{Desc}
-\index{ASCbase::CoordFile@{ASCbase::Coord\-File}!overlapping_atoms@{overlapping\_\-atoms}}
-\index{overlapping_atoms@{overlapping\_\-atoms}!ASCbase::CoordFile@{ASCbase::Coord\-File}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const bool ASCbase::Coord\-File::overlapping\_\-atoms (const \bf{atom\_\-t} \& {\em a}) const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1CoordFile_8c96db0c2e04610ffbe1e1dd5ad57ee9}
+\index{SimSite3D::CoordFile@{SimSite3D::Coord\-File}!overlapping_atoms@{overlapping\_\-atoms}}
+\index{overlapping_atoms@{overlapping\_\-atoms}!SimSite3D::CoordFile@{SimSite3D::Coord\-File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const bool SimSite3D::Coord\-File::overlapping\_\-atoms (const \bf{atom\_\-t} \& {\em a}) const\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1CoordFile_8c96db0c2e04610ffbe1e1dd5ad57ee9}
 
 
 \begin{Desc}
@@ -224,9 +224,9 @@ The purpose of this method is mainly a development/testing method that allows on
 \end{Desc}
 \begin{Desc}
 \item[Returns:]True if there is at least one significant overlap, else false. \end{Desc}
-\index{ASCbase::CoordFile@{ASCbase::Coord\-File}!report_stats@{report\_\-stats}}
-\index{report_stats@{report\_\-stats}!ASCbase::CoordFile@{ASCbase::Coord\-File}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void ASCbase::Coord\-File::report\_\-stats (std::ostream \& {\em out})\hspace{0.3cm}{\tt  [pure virtual]}}\label{classASCbase_1_1CoordFile_a2153c9f750dd76c3b533f9e03bd8f05}
+\index{SimSite3D::CoordFile@{SimSite3D::Coord\-File}!report_stats@{report\_\-stats}}
+\index{report_stats@{report\_\-stats}!SimSite3D::CoordFile@{SimSite3D::Coord\-File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void SimSite3D::Coord\-File::report\_\-stats (std::ostream \& {\em out})\hspace{0.3cm}{\tt  [pure virtual]}}\label{classSimSite3D_1_1CoordFile_a2153c9f750dd76c3b533f9e03bd8f05}
 
 
 Each derived class should support some routine to report on the file. 
@@ -238,9 +238,9 @@ Each derived class should support some routine to report on the file.
 \end{Desc}
 
 
-Implemented in \bf{ASCbase::mol2File} \doxyref{p.}{classASCbase_1_1mol2File_8621701ac72363cd41e08123cb4929af}, and \bf{ASCbase::PDBBase} \doxyref{p.}{classASCbase_1_1PDBBase_7918cb94d1deb47d69fef5816e7a7782}.\index{ASCbase::CoordFile@{ASCbase::Coord\-File}!write@{write}}
-\index{write@{write}!ASCbase::CoordFile@{ASCbase::Coord\-File}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool ASCbase::Coord\-File::write (const std::string {\em filename})\hspace{0.3cm}{\tt  [pure virtual]}}\label{classASCbase_1_1CoordFile_dca3f5f45c21f85215dc380e2152b613}
+Implemented in \bf{SimSite3D::mol2File} \doxyref{p.}{classSimSite3D_1_1mol2File_8621701ac72363cd41e08123cb4929af}, and \bf{SimSite3D::PDBBase} \doxyref{p.}{classSimSite3D_1_1PDBBase_7918cb94d1deb47d69fef5816e7a7782}.\index{SimSite3D::CoordFile@{SimSite3D::Coord\-File}!write@{write}}
+\index{write@{write}!SimSite3D::CoordFile@{SimSite3D::Coord\-File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool SimSite3D::Coord\-File::write (const std::string {\em filename})\hspace{0.3cm}{\tt  [pure virtual]}}\label{classSimSite3D_1_1CoordFile_dca3f5f45c21f85215dc380e2152b613}
 
 
 Each derived class should support some routine to write a molecule. 
@@ -252,12 +252,12 @@ Each derived class should support some routine to write a molecule.
 \end{Desc}
 
 
-Implemented in \bf{ASCbase::mol2File} \doxyref{p.}{classASCbase_1_1mol2File_050d5348e9f9a59de0949a66acab96de}, and \bf{ASCbase::PDBBase} \doxyref{p.}{classASCbase_1_1PDBBase_e8b78da086bcde015d96f7ac19387925}.
+Implemented in \bf{SimSite3D::mol2File} \doxyref{p.}{classSimSite3D_1_1mol2File_050d5348e9f9a59de0949a66acab96de}, and \bf{SimSite3D::PDBBase} \doxyref{p.}{classSimSite3D_1_1PDBBase_e8b78da086bcde015d96f7ac19387925}.
 
 \subsection{Friends And Related Function Documentation}
-\index{ASCbase::CoordFile@{ASCbase::Coord\-File}!simple_rmsd@{simple\_\-rmsd}}
-\index{simple_rmsd@{simple\_\-rmsd}!ASCbase::CoordFile@{ASCbase::Coord\-File}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}my\_\-float\_\-t simple\_\-rmsd (const \bf{Coord\-File} \& {\em f1}, const \bf{Coord\-File} \& {\em f2})\hspace{0.3cm}{\tt  [friend]}}\label{classASCbase_1_1CoordFile_28b33c885437b5169dcd5d8700110bff}
+\index{SimSite3D::CoordFile@{SimSite3D::Coord\-File}!simple_rmsd@{simple\_\-rmsd}}
+\index{simple_rmsd@{simple\_\-rmsd}!SimSite3D::CoordFile@{SimSite3D::Coord\-File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}my\_\-float\_\-t simple\_\-rmsd (const \bf{Coord\-File} \& {\em f1}, const \bf{Coord\-File} \& {\em f2})\hspace{0.3cm}{\tt  [friend]}}\label{classSimSite3D_1_1CoordFile_28b33c885437b5169dcd5d8700110bff}
 
 
 Simple rmsd. 

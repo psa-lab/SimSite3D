@@ -6,7 +6,7 @@
 #include <HbondSurfaces.H>
 #include <TriMeshSphere.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! A simple class to model a hydrogen bond spherical cap by a triangle mesh
 //! (surface for potential complementary hydrogen bonding atom to sit)
@@ -247,5 +247,5 @@ private:
 };
 
 
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif // endif header file included

@@ -1,11 +1,11 @@
-\section{ASCbase::PDBStructure Class Reference}
-\label{classASCbase_1_1PDBStructure}\index{ASCbase::PDBStructure@{ASCbase::PDBStructure}}
+\section{SimSite3D::PDBStructure Class Reference}
+\label{classSimSite3D_1_1PDBStructure}\index{SimSite3D::PDBStructure@{SimSite3D::PDBStructure}}
 {\tt \#include $<$PDBStructure.H$>$}
 
-Inheritance diagram for ASCbase::PDBStructure::\begin{figure}[H]
+Inheritance diagram for SimSite3D::PDBStructure::\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3cm]{classASCbase_1_1PDBStructure}
+\includegraphics[height=3cm]{classSimSite3D_1_1PDBStructure}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -13,49 +13,49 @@ Inheritance diagram for ASCbase::PDBStructure::\begin{figure}[H]
 \item 
 \bf{PDBStructure} (const std::string filename, const bool ignore\_\-alt\-Locs=false, const verbose\_\-level\_\-t verbosity=VERBOSE\_\-SILENT)
 \begin{CompactList}\small\item\em Read the heavy atoms stored in the PDB file given by filename. \item\end{CompactList}\item 
-\bf{$\sim$PDBStructure} ()\label{classASCbase_1_1PDBStructure_e0882de18f1c52d18bc63f7a2853faf9}
+\bf{$\sim$PDBStructure} ()\label{classSimSite3D_1_1PDBStructure_e0882de18f1c52d18bc63f7a2853faf9}
 
 \begin{CompactList}\small\item\em Does nothing. \item\end{CompactList}\item 
-void \textbf{report\_\-stats} (std::ostream \&out, const verbose\_\-level\_\-t verbosity)\label{classASCbase_1_1PDBStructure_57ce721fcfbd2c8723e1c285cc82c3ae}
+void \textbf{report\_\-stats} (std::ostream \&out, const verbose\_\-level\_\-t verbosity)\label{classSimSite3D_1_1PDBStructure_57ce721fcfbd2c8723e1c285cc82c3ae}
 
 \item 
-void \textbf{report\_\-hetatms} (std::ostream \&out, std::string filename)\label{classASCbase_1_1PDBStructure_37cf2f2f92078fd896a2a6eb0bccb0cc}
+void \textbf{report\_\-hetatms} (std::ostream \&out, std::string filename)\label{classSimSite3D_1_1PDBStructure_37cf2f2f92078fd896a2a6eb0bccb0cc}
 
 \item 
-chain\_\-const\_\-iter \textbf{chains\_\-begin} () const \label{classASCbase_1_1PDBStructure_64aa7a5d5413c083b6ded1ba0dac64b9}
+chain\_\-const\_\-iter \textbf{chains\_\-begin} () const \label{classSimSite3D_1_1PDBStructure_64aa7a5d5413c083b6ded1ba0dac64b9}
 
 \item 
-chain\_\-const\_\-iter \textbf{chains\_\-end} () const \label{classASCbase_1_1PDBStructure_84c0ba6f23d39ce0267d36c83dd90211}
+chain\_\-const\_\-iter \textbf{chains\_\-end} () const \label{classSimSite3D_1_1PDBStructure_84c0ba6f23d39ce0267d36c83dd90211}
 
 \item 
-residue\_\-vci \textbf{residues\_\-begin} () const \label{classASCbase_1_1PDBStructure_7caac4d414fde92934337f0b14db5b97}
+residue\_\-vci \textbf{residues\_\-begin} () const \label{classSimSite3D_1_1PDBStructure_7caac4d414fde92934337f0b14db5b97}
 
 \item 
-residue\_\-vci \textbf{residues\_\-end} () const \label{classASCbase_1_1PDBStructure_c99ce9b93736f7144b6b1a853c79f650}
+residue\_\-vci \textbf{residues\_\-end} () const \label{classSimSite3D_1_1PDBStructure_c99ce9b93736f7144b6b1a853c79f650}
 
 \item 
-std::vector$<$ atom\_\-vci $>$::const\_\-iterator \bf{waters\_\-beg} () const \label{classASCbase_1_1PDBStructure_973302371517814e469393906b1f25bb}
+std::vector$<$ atom\_\-vci $>$::const\_\-iterator \bf{waters\_\-beg} () const \label{classSimSite3D_1_1PDBStructure_973302371517814e469393906b1f25bb}
 
 \begin{CompactList}\small\item\em Get an iterator to the oxygen of the first water molecule. \item\end{CompactList}\item 
-std::vector$<$ atom\_\-vci $>$::const\_\-iterator \bf{waters\_\-end} () const \label{classASCbase_1_1PDBStructure_8b5d48d05a91cd89c369a63344946844}
+std::vector$<$ atom\_\-vci $>$::const\_\-iterator \bf{waters\_\-end} () const \label{classSimSite3D_1_1PDBStructure_8b5d48d05a91cd89c369a63344946844}
 
 \begin{CompactList}\small\item\em Get an iterator to 1 past the last HOH. \item\end{CompactList}\item 
-std::vector$<$ atom\_\-vci $>$::const\_\-iterator \bf{metals\_\-begin} () const \label{classASCbase_1_1PDBStructure_78b9a1980b0702359f1d574e66566f28}
+std::vector$<$ atom\_\-vci $>$::const\_\-iterator \bf{metals\_\-begin} () const \label{classSimSite3D_1_1PDBStructure_78b9a1980b0702359f1d574e66566f28}
 
 \begin{CompactList}\small\item\em Get an iterator to the first metal atom. \item\end{CompactList}\item 
-std::vector$<$ atom\_\-vci $>$::const\_\-iterator \bf{metals\_\-end} () const \label{classASCbase_1_1PDBStructure_0a950358cbd51702109d46334ae2a877}
+std::vector$<$ atom\_\-vci $>$::const\_\-iterator \bf{metals\_\-end} () const \label{classSimSite3D_1_1PDBStructure_0a950358cbd51702109d46334ae2a877}
 
 \begin{CompactList}\small\item\em Get an iterator to 1 past the last metal atom. \item\end{CompactList}\item 
-residue\_\-vci \textbf{get\_\-residue} (atom\_\-vci atom) const \label{classASCbase_1_1PDBStructure_f190b18c197a2d2edcd9018401ae1a0e}
+residue\_\-vci \textbf{get\_\-residue} (atom\_\-vci atom) const \label{classSimSite3D_1_1PDBStructure_f190b18c197a2d2edcd9018401ae1a0e}
 
 \end{CompactItemize}
 \subsection*{Static Public Attributes}
 \begin{CompactItemize}
 \item 
-static const \bf{residue\_\-t} \bf{NULL\_\-RESIDUE}\label{classASCbase_1_1PDBStructure_d53c9ebfdcce8b07bab9e5fce3dd795c}
+static const \bf{residue\_\-t} \bf{NULL\_\-RESIDUE}\label{classSimSite3D_1_1PDBStructure_d53c9ebfdcce8b07bab9e5fce3dd795c}
 
 \begin{CompactList}\small\item\em the \char`\"{}standard\char`\"{} null residue \item\end{CompactList}\item 
-static const residue\_\-vec \bf{NULL\_\-RESIDUE\_\-VECTOR}\label{classASCbase_1_1PDBStructure_b9016e5ccd8f6b87c0657687a77e5534}
+static const residue\_\-vec \bf{NULL\_\-RESIDUE\_\-VECTOR}\label{classSimSite3D_1_1PDBStructure_b9016e5ccd8f6b87c0657687a77e5534}
 
 \begin{CompactList}\small\item\em The \char`\"{}standard\char`\"{} null vector of residues -- for the null\_\-residue\_\-vci. \item\end{CompactList}\item 
 static const residue\_\-vci \bf{NULL\_\-RESIDUE\_\-VCI}
@@ -63,37 +63,37 @@ static const residue\_\-vci \bf{NULL\_\-RESIDUE\_\-VCI}
 \subsection*{Private Member Functions}
 \begin{CompactItemize}
 \item 
-bool \textbf{read\_\-file} (std::string filename, const bool ignore\_\-alt\-Locs)\label{classASCbase_1_1PDBStructure_b3b04d9659f89ef62e6bfccbe43ea1a6}
+bool \textbf{read\_\-file} (std::string filename, const bool ignore\_\-alt\-Locs)\label{classSimSite3D_1_1PDBStructure_b3b04d9659f89ef62e6bfccbe43ea1a6}
 
 \item 
-void \bf{form\_\-chains\_\-and\_\-residues} ()\label{classASCbase_1_1PDBStructure_51b9f8bcbf8696aa54202d67cce5d960}
+void \bf{form\_\-chains\_\-and\_\-residues} ()\label{classSimSite3D_1_1PDBStructure_51b9f8bcbf8696aa54202d67cce5d960}
 
 \begin{CompactList}\small\item\em Create chains and residues from the atom information. \item\end{CompactList}\item 
-bool \textbf{add\_\-residue} (atom\_\-vci initial\_\-atom, residue\_\-vi $\ast$current\_\-residue)\label{classASCbase_1_1PDBStructure_1e48c558b27c979aad74d972ee00ae9c}
+bool \textbf{add\_\-residue} (atom\_\-vci initial\_\-atom, residue\_\-vi $\ast$current\_\-residue)\label{classSimSite3D_1_1PDBStructure_1e48c558b27c979aad74d972ee00ae9c}
 
 \end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
-residue\_\-vec \bf{residues}\label{classASCbase_1_1PDBStructure_9dd11f6736cc87da3b9b89031ce80b7e}
+residue\_\-vec \bf{residues}\label{classSimSite3D_1_1PDBStructure_9dd11f6736cc87da3b9b89031ce80b7e}
 
 \begin{CompactList}\small\item\em All residues in the PDB file. \item\end{CompactList}\item 
-residue\_\-vec \bf{A\_\-hetgroups}\label{classASCbase_1_1PDBStructure_d42eef56f82b05db082c56d6d49ad1b6}
+residue\_\-vec \bf{A\_\-hetgroups}\label{classSimSite3D_1_1PDBStructure_d42eef56f82b05db082c56d6d49ad1b6}
 
 \begin{CompactList}\small\item\em HET entries that are not also MODRES entries. \item\end{CompactList}\item 
-chain\_\-vec \bf{chains}\label{classASCbase_1_1PDBStructure_9e612a84fabe11bc13fb1765b592106d}
+chain\_\-vec \bf{chains}\label{classSimSite3D_1_1PDBStructure_9e612a84fabe11bc13fb1765b592106d}
 
 \begin{CompactList}\small\item\em All chains in PDB file. \item\end{CompactList}\item 
-std::vector$<$ atom\_\-vci $>$ \bf{A\_\-waters}\label{classASCbase_1_1PDBStructure_7edafbe33504dcb7cc88773d9a59284c}
+std::vector$<$ atom\_\-vci $>$ \bf{A\_\-waters}\label{classSimSite3D_1_1PDBStructure_7edafbe33504dcb7cc88773d9a59284c}
 
 \begin{CompactList}\small\item\em All the waters in PDB file. \item\end{CompactList}\item 
-std::vector$<$ atom\_\-vci $>$ \bf{metals}\label{classASCbase_1_1PDBStructure_04d9ef54e90699d0f17bd2b2bd06aab5}
+std::vector$<$ atom\_\-vci $>$ \bf{metals}\label{classSimSite3D_1_1PDBStructure_04d9ef54e90699d0f17bd2b2bd06aab5}
 
 \begin{CompactList}\small\item\em All the metals in PDB file. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Static Private Attributes}
 \begin{CompactItemize}
 \item 
-static const std::string \bf{\_\-fname} = \char`\"{}PDBStructure.C\char`\"{}\label{classASCbase_1_1PDBStructure_f5b95fd62e534d4637878df12b49486e}
+static const std::string \bf{\_\-fname} = \char`\"{}PDBStructure.C\char`\"{}\label{classSimSite3D_1_1PDBStructure_f5b95fd62e534d4637878df12b49486e}
 
 \begin{CompactList}\small\item\em Name of the source file. \item\end{CompactList}\end{CompactItemize}
 
@@ -104,14 +104,14 @@ Basic class to impose the chain/residue/atom hierarchy of a PDB structure file. 
 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{ASCbase::PDBStructure@{ASCbase::PDBStructure}!PDBStructure@{PDBStructure}}
-\index{PDBStructure@{PDBStructure}!ASCbase::PDBStructure@{ASCbase::PDBStructure}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}PDBStructure::PDBStructure (const std::string {\em filename}, const bool {\em ignore\_\-alt\-Locs} = {\tt false}, const verbose\_\-level\_\-t {\em verbosity} = {\tt VERBOSE\_\-SILENT})}\label{classASCbase_1_1PDBStructure_00a83216864911bab18d3377daf27159}
+\index{SimSite3D::PDBStructure@{SimSite3D::PDBStructure}!PDBStructure@{PDBStructure}}
+\index{PDBStructure@{PDBStructure}!SimSite3D::PDBStructure@{SimSite3D::PDBStructure}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}PDBStructure::PDBStructure (const std::string {\em filename}, const bool {\em ignore\_\-alt\-Locs} = {\tt false}, const verbose\_\-level\_\-t {\em verbosity} = {\tt VERBOSE\_\-SILENT})}\label{classSimSite3D_1_1PDBStructure_00a83216864911bab18d3377daf27159}
 
 
 Read the heavy atoms stored in the PDB file given by filename. 
 
-Uses \doxyref{PDBBase}{p.}{classASCbase_1_1PDBBase} to read the heavy atoms and then imposes/creates the residues and chains from the heavy atoms (in \doxyref{Coord\-File}{p.}{classASCbase_1_1CoordFile}).
+Uses \doxyref{PDBBase}{p.}{classSimSite3D_1_1PDBBase} to read the heavy atoms and then imposes/creates the residues and chains from the heavy atoms (in \doxyref{Coord\-File}{p.}{classSimSite3D_1_1CoordFile}).
 
 \begin{Desc}
 \item[Parameters:]
@@ -121,9 +121,9 @@ Uses \doxyref{PDBBase}{p.}{classASCbase_1_1PDBBase} to read the heavy atoms and 
 
 
 \subsection{Member Data Documentation}
-\index{ASCbase::PDBStructure@{ASCbase::PDBStructure}!NULL_RESIDUE_VCI@{NULL\_\-RESIDUE\_\-VCI}}
-\index{NULL_RESIDUE_VCI@{NULL\_\-RESIDUE\_\-VCI}!ASCbase::PDBStructure@{ASCbase::PDBStructure}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const residue\_\-vci \bf{PDBStructure::NULL\_\-RESIDUE\_\-VCI}\hspace{0.3cm}{\tt  [static]}}\label{classASCbase_1_1PDBStructure_f2758b2a1d343af8dce5d53ec61cab9a}
+\index{SimSite3D::PDBStructure@{SimSite3D::PDBStructure}!NULL_RESIDUE_VCI@{NULL\_\-RESIDUE\_\-VCI}}
+\index{NULL_RESIDUE_VCI@{NULL\_\-RESIDUE\_\-VCI}!SimSite3D::PDBStructure@{SimSite3D::PDBStructure}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const residue\_\-vci \bf{PDBStructure::NULL\_\-RESIDUE\_\-VCI}\hspace{0.3cm}{\tt  [static]}}\label{classSimSite3D_1_1PDBStructure_f2758b2a1d343af8dce5d53ec61cab9a}
 
 
 \textbf{Initial value:}

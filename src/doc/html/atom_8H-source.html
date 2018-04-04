@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -63,43 +63,43 @@
 <a name="l00050"></a>00050 <span class="preprocessor">#include &lt;PDB_residues.H&gt;</span>
 <a name="l00051"></a>00051 <span class="preprocessor">#include &lt;point_storage.H&gt;</span>
 <a name="l00052"></a>00052 
-<a name="l00053"></a>00053 <span class="keyword">namespace </span>ASCbase{
+<a name="l00053"></a>00053 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00054"></a>00054 
 <a name="l00055"></a>00055 
-<a name="l00057"></a><a class="code" href="classASCbase_1_1atom__t.html">00057</a> <span class="keyword">class </span><a class="code" href="classASCbase_1_1atom__t.html">atom_t</a> : <span class="keyword">public</span> <a class="code" href="classASCbase_1_1point__t.html">point_t</a>{
+<a name="l00057"></a><a class="code" href="classSimSite3D_1_1atom__t.html">00057</a> <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1atom__t.html">atom_t</a> : <span class="keyword">public</span> <a class="code" href="classSimSite3D_1_1point__t.html">point_t</a>{
 <a name="l00058"></a>00058 <span class="keyword">public</span>:
-<a name="l00059"></a>00059   <a class="code" href="classASCbase_1_1atom__t.html">atom_t</a>(alloc_t a = ALLOC_POSITION) : <a class="code" href="classASCbase_1_1point__t.html">point_t</a>(a)
+<a name="l00059"></a>00059   <a class="code" href="classSimSite3D_1_1atom__t.html">atom_t</a>(alloc_t a = ALLOC_POSITION) : <a class="code" href="classSimSite3D_1_1point__t.html">point_t</a>(a)
 <a name="l00060"></a>00060   {
-<a name="l00061"></a>00061     <a class="code" href="classASCbase_1_1atom__t.html#9a854374ed82fbc5e7f29690cd7f2418">atom_num</a> = 0;
-<a name="l00062"></a>00062     <a class="code" href="classASCbase_1_1atom__t.html#4a643f052098c53dd7cfe1e6f17462a0">res_num</a> = 0;
-<a name="l00063"></a>00063     <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> = NULL_ATOM_TYPE;
-<a name="l00064"></a>00064     <a class="code" href="classASCbase_1_1atom__t.html#b3b7b5f7e8172387dd581dcacc4a9f72">res</a> = NULL_RESIDUE;
-<a name="l00065"></a>00065     <a class="code" href="classASCbase_1_1atom__t.html#b4a4060dde7bf73e494332146ed5ca92">chainID</a> = <span class="charliteral">' '</span>;
-<a name="l00066"></a>00066     <a class="code" href="classASCbase_1_1atom__t.html#7e7d73ecb81a7923c92284e4c86bfc5c">altLoc</a> = <span class="charliteral">' '</span>;
-<a name="l00067"></a>00067     <a class="code" href="classASCbase_1_1atom__t.html#f7a846d9ffb1b0caf8a7b7b88bcf2f32">iCode</a> = <span class="charliteral">' '</span>;
-<a name="l00068"></a>00068     <a class="code" href="classASCbase_1_1atom__t.html#e9d0dc62c74dc8e3cf8c4a8d9866170a">occupancy</a> = 0.00;
-<a name="l00069"></a>00069     <a class="code" href="classASCbase_1_1atom__t.html#6a08edf1e9a8fc861d434a81e306da39">tempFactor</a> = 0.0;
-<a name="l00070"></a>00070     <a class="code" href="classASCbase_1_1atom__t.html#0a438d9b577cedf15ac1629c3067e2a7">orbit</a> = UNKNOWN_ORBIT;
-<a name="l00071"></a>00071     <a class="code" href="classASCbase_1_1atom__t.html#1beb46018c79fd73df622a22540c341a">vdw_radius</a> = 1000.0;
-<a name="l00072"></a>00072     <a class="code" href="classASCbase_1_1atom__t.html#d4583a7bfb72db12ae7eccbb2c232714">is_hetero</a> = <span class="keyword">false</span>;
-<a name="l00073"></a>00073     <a class="code" href="classASCbase_1_1atom__t.html#0649f5881857d9437b85dfec852f5a88">act_type</a> = UNKNOWN_INTERACTION;
-<a name="l00074"></a>00074     <a class="code" href="classASCbase_1_1atom__t.html#bb5f12af2e89540a14e1d2ed78905a97">name_str</a> = <span class="stringliteral">""</span>;
-<a name="l00075"></a>00075     <a class="code" href="classASCbase_1_1atom__t.html#16c11a15f4136c3d4bb29e9abd6fa719">res_str</a> = <span class="stringliteral">""</span>;
-<a name="l00076"></a>00076     <a class="code" href="classASCbase_1_1atom__t.html#5b15b577b1e6874f1ca87a3a972ba212">charge</a> = 0.0;
-<a name="l00077"></a>00077     <a class="code" href="classASCbase_1_1atom__t.html#1bdb3b1e702e49621bcbcfcee908e9c6">orig_charge</a> = 0.0;
-<a name="l00078"></a>00078     <a class="code" href="classASCbase_1_1atom__t.html#6e71b7884ac0a9e5526ce40f2a807cf9">subst_id</a> = 0;
-<a name="l00079"></a>00079     <a class="code" href="classASCbase_1_1atom__t.html#f1eaec85b84f948e97692a58dbfa2526">hydro</a> = 82;
+<a name="l00061"></a>00061     <a class="code" href="classSimSite3D_1_1atom__t.html#9a854374ed82fbc5e7f29690cd7f2418">atom_num</a> = 0;
+<a name="l00062"></a>00062     <a class="code" href="classSimSite3D_1_1atom__t.html#4a643f052098c53dd7cfe1e6f17462a0">res_num</a> = 0;
+<a name="l00063"></a>00063     <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> = NULL_ATOM_TYPE;
+<a name="l00064"></a>00064     <a class="code" href="classSimSite3D_1_1atom__t.html#b3b7b5f7e8172387dd581dcacc4a9f72">res</a> = NULL_RESIDUE;
+<a name="l00065"></a>00065     <a class="code" href="classSimSite3D_1_1atom__t.html#b4a4060dde7bf73e494332146ed5ca92">chainID</a> = <span class="charliteral">' '</span>;
+<a name="l00066"></a>00066     <a class="code" href="classSimSite3D_1_1atom__t.html#7e7d73ecb81a7923c92284e4c86bfc5c">altLoc</a> = <span class="charliteral">' '</span>;
+<a name="l00067"></a>00067     <a class="code" href="classSimSite3D_1_1atom__t.html#f7a846d9ffb1b0caf8a7b7b88bcf2f32">iCode</a> = <span class="charliteral">' '</span>;
+<a name="l00068"></a>00068     <a class="code" href="classSimSite3D_1_1atom__t.html#e9d0dc62c74dc8e3cf8c4a8d9866170a">occupancy</a> = 0.00;
+<a name="l00069"></a>00069     <a class="code" href="classSimSite3D_1_1atom__t.html#6a08edf1e9a8fc861d434a81e306da39">tempFactor</a> = 0.0;
+<a name="l00070"></a>00070     <a class="code" href="classSimSite3D_1_1atom__t.html#0a438d9b577cedf15ac1629c3067e2a7">orbit</a> = UNKNOWN_ORBIT;
+<a name="l00071"></a>00071     <a class="code" href="classSimSite3D_1_1atom__t.html#1beb46018c79fd73df622a22540c341a">vdw_radius</a> = 1000.0;
+<a name="l00072"></a>00072     <a class="code" href="classSimSite3D_1_1atom__t.html#d4583a7bfb72db12ae7eccbb2c232714">is_hetero</a> = <span class="keyword">false</span>;
+<a name="l00073"></a>00073     <a class="code" href="classSimSite3D_1_1atom__t.html#0649f5881857d9437b85dfec852f5a88">act_type</a> = UNKNOWN_INTERACTION;
+<a name="l00074"></a>00074     <a class="code" href="classSimSite3D_1_1atom__t.html#bb5f12af2e89540a14e1d2ed78905a97">name_str</a> = <span class="stringliteral">""</span>;
+<a name="l00075"></a>00075     <a class="code" href="classSimSite3D_1_1atom__t.html#16c11a15f4136c3d4bb29e9abd6fa719">res_str</a> = <span class="stringliteral">""</span>;
+<a name="l00076"></a>00076     <a class="code" href="classSimSite3D_1_1atom__t.html#5b15b577b1e6874f1ca87a3a972ba212">charge</a> = 0.0;
+<a name="l00077"></a>00077     <a class="code" href="classSimSite3D_1_1atom__t.html#1bdb3b1e702e49621bcbcfcee908e9c6">orig_charge</a> = 0.0;
+<a name="l00078"></a>00078     <a class="code" href="classSimSite3D_1_1atom__t.html#6e71b7884ac0a9e5526ce40f2a807cf9">subst_id</a> = 0;
+<a name="l00079"></a>00079     <a class="code" href="classSimSite3D_1_1atom__t.html#f1eaec85b84f948e97692a58dbfa2526">hydro</a> = 82;
 <a name="l00080"></a>00080   }
 <a name="l00081"></a>00081 
 <a name="l00082"></a>00082   <span class="comment">// Must be a faster way to copy, but copying should not play a sigificant </span>
-<a name="l00083"></a>00083   <span class="comment">// role in the speed for ASCbase</span>
-<a name="l00084"></a>00084   <a class="code" href="classASCbase_1_1atom__t.html">atom_t</a>(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1atom__t.html">atom_t</a>&amp; a) : <a class="code" href="classASCbase_1_1point__t.html">point_t</a>(a)
+<a name="l00083"></a>00083   <span class="comment">// role in the speed for SimSite3D</span>
+<a name="l00084"></a>00084   <a class="code" href="classSimSite3D_1_1atom__t.html">atom_t</a>(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1atom__t.html">atom_t</a>&amp; a) : <a class="code" href="classSimSite3D_1_1point__t.html">point_t</a>(a)
 <a name="l00085"></a>00085   {
 <a name="l00086"></a>00086     do_copy(a);
 <a name="l00087"></a>00087   }
 <a name="l00088"></a>00088 
-<a name="l00089"></a>00089   <span class="keyword">const</span> <a class="code" href="classASCbase_1_1atom__t.html">atom_t</a>&amp; 
-<a name="l00090"></a>00090   operator=(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1atom__t.html">atom_t</a>&amp; a)
+<a name="l00089"></a>00089   <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1atom__t.html">atom_t</a>&amp; 
+<a name="l00090"></a>00090   operator=(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1atom__t.html">atom_t</a>&amp; a)
 <a name="l00091"></a>00091   {
 <a name="l00092"></a>00092     <span class="keywordflow">if</span>(&amp;a != <span class="keyword">this</span>){
 <a name="l00093"></a>00093       do_copy(a);
@@ -108,28 +108,28 @@
 <a name="l00096"></a>00096     <span class="keywordflow">return</span> *<span class="keyword">this</span>; 
 <a name="l00097"></a>00097   }
 <a name="l00098"></a>00098 
-<a name="l00099"></a>00099   ~<a class="code" href="classASCbase_1_1atom__t.html">atom_t</a>() { ; }
+<a name="l00099"></a>00099   ~<a class="code" href="classSimSite3D_1_1atom__t.html">atom_t</a>() { ; }
 <a name="l00100"></a>00100 
 <a name="l00102"></a>00102   <span class="keyword">static</span> <span class="keywordtype">bool</span> 
-<a name="l00103"></a><a class="code" href="classASCbase_1_1atom__t.html#0e4ddf2772215a45e107615b3a144537">00103</a>   <a class="code" href="classASCbase_1_1atom__t.html#0e4ddf2772215a45e107615b3a144537">cmp</a>(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1atom__t.html">atom_t</a> &amp;A, <span class="keyword">const</span> <a class="code" href="classASCbase_1_1atom__t.html">atom_t</a> &amp;B)
-<a name="l00104"></a>00104   { <span class="keywordflow">return</span> A.<a class="code" href="classASCbase_1_1atom__t.html#9a854374ed82fbc5e7f29690cd7f2418">atom_num</a> &lt; B.<a class="code" href="classASCbase_1_1atom__t.html#9a854374ed82fbc5e7f29690cd7f2418">atom_num</a>; }
+<a name="l00103"></a><a class="code" href="classSimSite3D_1_1atom__t.html#0e4ddf2772215a45e107615b3a144537">00103</a>   <a class="code" href="classSimSite3D_1_1atom__t.html#0e4ddf2772215a45e107615b3a144537">cmp</a>(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1atom__t.html">atom_t</a> &amp;A, <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1atom__t.html">atom_t</a> &amp;B)
+<a name="l00104"></a>00104   { <span class="keywordflow">return</span> A.<a class="code" href="classSimSite3D_1_1atom__t.html#9a854374ed82fbc5e7f29690cd7f2418">atom_num</a> &lt; B.<a class="code" href="classSimSite3D_1_1atom__t.html#9a854374ed82fbc5e7f29690cd7f2418">atom_num</a>; }
 <a name="l00105"></a>00105 
 <a name="l00107"></a>00107   <span class="keyword">const</span> <span class="keywordtype">bool</span>
-<a name="l00108"></a><a class="code" href="classASCbase_1_1atom__t.html#77399ac0cfa6b5d267e92b9d476a2465">00108</a>   <a class="code" href="classASCbase_1_1atom__t.html#77399ac0cfa6b5d267e92b9d476a2465">is_water</a>()<span class="keyword"> const</span>
+<a name="l00108"></a><a class="code" href="classSimSite3D_1_1atom__t.html#77399ac0cfa6b5d267e92b9d476a2465">00108</a>   <a class="code" href="classSimSite3D_1_1atom__t.html#77399ac0cfa6b5d267e92b9d476a2465">is_water</a>()<span class="keyword"> const</span>
 <a name="l00109"></a>00109 <span class="keyword">  </span>{
-<a name="l00110"></a>00110     <span class="keywordflow">if</span>(<a class="code" href="classASCbase_1_1atom__t.html#b3b7b5f7e8172387dd581dcacc4a9f72">res</a> == HOH) <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00110"></a>00110     <span class="keywordflow">if</span>(<a class="code" href="classSimSite3D_1_1atom__t.html#b3b7b5f7e8172387dd581dcacc4a9f72">res</a> == HOH) <span class="keywordflow">return</span> <span class="keyword">true</span>;
 <a name="l00111"></a>00111     <span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00112"></a>00112   } 
 <a name="l00113"></a>00113 
 <a name="l00115"></a>00115   <span class="keyword">const</span> <span class="keywordtype">bool</span>
-<a name="l00116"></a><a class="code" href="classASCbase_1_1atom__t.html#4e560e164d125669d08aa9525d34216e">00116</a>   <a class="code" href="classASCbase_1_1atom__t.html#4e560e164d125669d08aa9525d34216e">is_metal</a>()<span class="keyword"> const</span>
-<a name="l00117"></a>00117 <span class="keyword">  </span>{ <span class="keywordflow">return</span> ( (<a class="code" href="classASCbase_1_1atom__t.html#b3b7b5f7e8172387dd581dcacc4a9f72">res</a> == PDB_METAL) ? <span class="keyword">true</span> : <span class="keyword">false</span>); }
+<a name="l00116"></a><a class="code" href="classSimSite3D_1_1atom__t.html#4e560e164d125669d08aa9525d34216e">00116</a>   <a class="code" href="classSimSite3D_1_1atom__t.html#4e560e164d125669d08aa9525d34216e">is_metal</a>()<span class="keyword"> const</span>
+<a name="l00117"></a>00117 <span class="keyword">  </span>{ <span class="keywordflow">return</span> ( (<a class="code" href="classSimSite3D_1_1atom__t.html#b3b7b5f7e8172387dd581dcacc4a9f72">res</a> == PDB_METAL) ? <span class="keyword">true</span> : <span class="keyword">false</span>); }
 <a name="l00118"></a>00118 
 <a name="l00119"></a>00119   <span class="keyword">const</span> <span class="keywordtype">bool</span>
 <a name="l00120"></a>00120   is_nitrogen()<span class="keyword"> const</span>
 <a name="l00121"></a>00121 <span class="keyword">  </span>{
-<a name="l00122"></a>00122      <span class="keywordflow">if</span>(<a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == N || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == ND1 || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == ND2 || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == NE || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == NE1
-<a name="l00123"></a>00123        || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == NE2 || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == NH1 || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == NH2 || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == NZ) 
+<a name="l00122"></a>00122      <span class="keywordflow">if</span>(<a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == N || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == ND1 || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == ND2 || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == NE || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == NE1
+<a name="l00123"></a>00123        || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == NE2 || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == NH1 || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == NH2 || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == NZ) 
 <a name="l00124"></a>00124        <span class="keywordflow">return</span> <span class="keyword">true</span>;
 <a name="l00125"></a>00125      <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00126"></a>00126   } 
@@ -137,26 +137,26 @@
 <a name="l00128"></a>00128   <span class="keyword">const</span> <span class="keywordtype">bool</span>
 <a name="l00129"></a>00129   is_oxygen()<span class="keyword"> const</span>
 <a name="l00130"></a>00130 <span class="keyword">  </span>{
-<a name="l00131"></a>00131     <span class="keywordflow">if</span>(<a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == O || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == OD1 || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == OD2 || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == OE1 || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == OE2
-<a name="l00132"></a>00132        || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == OG || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == OG1 || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == OH) <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00131"></a>00131     <span class="keywordflow">if</span>(<a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == O || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == OD1 || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == OD2 || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == OE1 || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == OE2
+<a name="l00132"></a>00132        || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == OG || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == OG1 || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == OH) <span class="keywordflow">return</span> <span class="keyword">true</span>;
 <a name="l00133"></a>00133     <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00134"></a>00134   } 
 <a name="l00135"></a>00135 
 <a name="l00136"></a>00136   <span class="keyword">const</span> <span class="keywordtype">bool</span>
 <a name="l00137"></a>00137   is_hydrophobic()<span class="keyword"> const</span>
 <a name="l00138"></a>00138 <span class="keyword">  </span>{
-<a name="l00139"></a>00139     <span class="keywordflow">if</span>(<a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == C || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CA || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CB || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CD || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CD1
-<a name="l00140"></a>00140        || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CD2 || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CE || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CE1 || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CE2 
-<a name="l00141"></a>00141        || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CE3 || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CG || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CG1 || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CG2 
-<a name="l00142"></a>00142        || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CH2 || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CH3 || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CZ || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CZ2 
-<a name="l00143"></a>00143        || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CZ3 || <a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == S) <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00139"></a>00139     <span class="keywordflow">if</span>(<a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == C || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CA || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CB || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CD || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CD1
+<a name="l00140"></a>00140        || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CD2 || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CE || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CE1 || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CE2 
+<a name="l00141"></a>00141        || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CE3 || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CG || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CG1 || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CG2 
+<a name="l00142"></a>00142        || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CH2 || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CH3 || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CZ || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CZ2 
+<a name="l00143"></a>00143        || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == CZ3 || <a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a> == S) <span class="keywordflow">return</span> <span class="keyword">true</span>;
 <a name="l00144"></a>00144     <span class="keywordflow">return</span> <span class="keyword">false</span>; 
 <a name="l00145"></a>00145   }
 <a name="l00146"></a>00146 
 <a name="l00147"></a>00147   <span class="keyword">const</span> <span class="keywordtype">bool</span>
 <a name="l00148"></a>00148   is_hbonder()<span class="keyword"> const</span>
 <a name="l00149"></a>00149 <span class="keyword">  </span>{
-<a name="l00150"></a>00150     <span class="keywordflow">if</span>(<a class="code" href="classASCbase_1_1atom__t.html#b3b7b5f7e8172387dd581dcacc4a9f72">res</a> != PRO &amp;&amp; is_nitrogen()) <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00150"></a>00150     <span class="keywordflow">if</span>(<a class="code" href="classSimSite3D_1_1atom__t.html#b3b7b5f7e8172387dd581dcacc4a9f72">res</a> != PRO &amp;&amp; is_nitrogen()) <span class="keywordflow">return</span> <span class="keyword">true</span>;
 <a name="l00151"></a>00151     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(is_oxygen()) <span class="keywordflow">return</span> <span class="keyword">true</span>;
 <a name="l00152"></a>00152     <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00153"></a>00153   }
@@ -168,9 +168,9 @@
 <a name="l00159"></a>00159       <span class="keywordflow">if</span>(a.name_str.length()) out &lt;&lt; a.name_str;
 <a name="l00160"></a>00160       <span class="keywordflow">else</span>{
 <a name="l00161"></a>00161         <span class="keywordflow">if</span>(a.chainID != <span class="charliteral">' '</span>) out &lt;&lt; <span class="stringliteral">"("</span> &lt;&lt; a.chainID &lt;&lt; <span class="stringliteral">")"</span>;
-<a name="l00162"></a>00162         out &lt;&lt; <a class="code" href="classASCbase_1_1PDB__residues.html#d17b8fa8fe06ed333b7d35510ee05b01">PDB_residues::residue_to_string</a>(a.res) &lt;&lt; a.res_num;
+<a name="l00162"></a>00162         out &lt;&lt; <a class="code" href="classSimSite3D_1_1PDB__residues.html#d17b8fa8fe06ed333b7d35510ee05b01">PDB_residues::residue_to_string</a>(a.res) &lt;&lt; a.res_num;
 <a name="l00163"></a>00163         <span class="keywordflow">if</span>(a.iCode != <span class="charliteral">' '</span>) out &lt;&lt; a.iCode;
-<a name="l00164"></a>00164         out &lt;&lt; <span class="stringliteral">" "</span> &lt;&lt; <a class="code" href="classASCbase_1_1PDB__residues.html#7776d1c208963a0f70edc290f5317b9b">PDB_residues::atom_to_string</a>(a.name);
+<a name="l00164"></a>00164         out &lt;&lt; <span class="stringliteral">" "</span> &lt;&lt; <a class="code" href="classSimSite3D_1_1PDB__residues.html#7776d1c208963a0f70edc290f5317b9b">PDB_residues::atom_to_string</a>(a.name);
 <a name="l00165"></a>00165       }
 <a name="l00166"></a>00166     }<span class="keywordflow">else</span>{
 <a name="l00167"></a>00167       <span class="keywordflow">if</span>(a.chainID != <span class="charliteral">' '</span>) out &lt;&lt; <span class="stringliteral">"("</span> &lt;&lt; a.chainID &lt;&lt; <span class="stringliteral">")"</span>;
@@ -181,56 +181,56 @@
 <a name="l00172"></a>00172     <span class="keywordflow">return</span> out;
 <a name="l00173"></a>00173   }
 <a name="l00174"></a>00174 
-<a name="l00175"></a><a class="code" href="classASCbase_1_1atom__t.html#9a854374ed82fbc5e7f29690cd7f2418">00175</a>   uint atom_num;       
-<a name="l00176"></a><a class="code" href="classASCbase_1_1atom__t.html#4a643f052098c53dd7cfe1e6f17462a0">00176</a>   uint res_num;        
-<a name="l00177"></a><a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">00177</a>   atom_type name;      
-<a name="l00178"></a><a class="code" href="classASCbase_1_1atom__t.html#b3b7b5f7e8172387dd581dcacc4a9f72">00178</a>   residue_type res;    
-<a name="l00179"></a><a class="code" href="classASCbase_1_1atom__t.html#b4a4060dde7bf73e494332146ed5ca92">00179</a>   <span class="keywordtype">char</span> chainID;        
-<a name="l00180"></a><a class="code" href="classASCbase_1_1atom__t.html#7e7d73ecb81a7923c92284e4c86bfc5c">00180</a>   <span class="keywordtype">char</span> altLoc;         
-<a name="l00181"></a><a class="code" href="classASCbase_1_1atom__t.html#f7a846d9ffb1b0caf8a7b7b88bcf2f32">00181</a>   <span class="keywordtype">char</span> iCode;          
-<a name="l00182"></a><a class="code" href="classASCbase_1_1atom__t.html#e9d0dc62c74dc8e3cf8c4a8d9866170a">00182</a>   my_float_t occupancy; 
-<a name="l00183"></a><a class="code" href="classASCbase_1_1atom__t.html#6a08edf1e9a8fc861d434a81e306da39">00183</a>   my_float_t tempFactor; 
-<a name="l00184"></a><a class="code" href="classASCbase_1_1atom__t.html#0a438d9b577cedf15ac1629c3067e2a7">00184</a>   orbit_type orbit;      
-<a name="l00185"></a><a class="code" href="classASCbase_1_1atom__t.html#1beb46018c79fd73df622a22540c341a">00185</a>   my_float_t vdw_radius; 
-<a name="l00186"></a><a class="code" href="classASCbase_1_1atom__t.html#bb5f12af2e89540a14e1d2ed78905a97">00186</a>   std::string name_str;  
-<a name="l00187"></a><a class="code" href="classASCbase_1_1atom__t.html#16c11a15f4136c3d4bb29e9abd6fa719">00187</a>   std::string res_str;   
-<a name="l00188"></a><a class="code" href="classASCbase_1_1atom__t.html#d4583a7bfb72db12ae7eccbb2c232714">00188</a>   <span class="keywordtype">bool</span> is_hetero;        
-<a name="l00189"></a><a class="code" href="classASCbase_1_1atom__t.html#0649f5881857d9437b85dfec852f5a88">00189</a>   interactionType act_type; 
-<a name="l00190"></a><a class="code" href="classASCbase_1_1atom__t.html#5b15b577b1e6874f1ca87a3a972ba212">00190</a>   my_float_t charge;     
-<a name="l00191"></a><a class="code" href="classASCbase_1_1atom__t.html#1bdb3b1e702e49621bcbcfcee908e9c6">00191</a>   my_float_t orig_charge;  
+<a name="l00175"></a><a class="code" href="classSimSite3D_1_1atom__t.html#9a854374ed82fbc5e7f29690cd7f2418">00175</a>   uint atom_num;       
+<a name="l00176"></a><a class="code" href="classSimSite3D_1_1atom__t.html#4a643f052098c53dd7cfe1e6f17462a0">00176</a>   uint res_num;        
+<a name="l00177"></a><a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">00177</a>   atom_type name;      
+<a name="l00178"></a><a class="code" href="classSimSite3D_1_1atom__t.html#b3b7b5f7e8172387dd581dcacc4a9f72">00178</a>   residue_type res;    
+<a name="l00179"></a><a class="code" href="classSimSite3D_1_1atom__t.html#b4a4060dde7bf73e494332146ed5ca92">00179</a>   <span class="keywordtype">char</span> chainID;        
+<a name="l00180"></a><a class="code" href="classSimSite3D_1_1atom__t.html#7e7d73ecb81a7923c92284e4c86bfc5c">00180</a>   <span class="keywordtype">char</span> altLoc;         
+<a name="l00181"></a><a class="code" href="classSimSite3D_1_1atom__t.html#f7a846d9ffb1b0caf8a7b7b88bcf2f32">00181</a>   <span class="keywordtype">char</span> iCode;          
+<a name="l00182"></a><a class="code" href="classSimSite3D_1_1atom__t.html#e9d0dc62c74dc8e3cf8c4a8d9866170a">00182</a>   my_float_t occupancy; 
+<a name="l00183"></a><a class="code" href="classSimSite3D_1_1atom__t.html#6a08edf1e9a8fc861d434a81e306da39">00183</a>   my_float_t tempFactor; 
+<a name="l00184"></a><a class="code" href="classSimSite3D_1_1atom__t.html#0a438d9b577cedf15ac1629c3067e2a7">00184</a>   orbit_type orbit;      
+<a name="l00185"></a><a class="code" href="classSimSite3D_1_1atom__t.html#1beb46018c79fd73df622a22540c341a">00185</a>   my_float_t vdw_radius; 
+<a name="l00186"></a><a class="code" href="classSimSite3D_1_1atom__t.html#bb5f12af2e89540a14e1d2ed78905a97">00186</a>   std::string name_str;  
+<a name="l00187"></a><a class="code" href="classSimSite3D_1_1atom__t.html#16c11a15f4136c3d4bb29e9abd6fa719">00187</a>   std::string res_str;   
+<a name="l00188"></a><a class="code" href="classSimSite3D_1_1atom__t.html#d4583a7bfb72db12ae7eccbb2c232714">00188</a>   <span class="keywordtype">bool</span> is_hetero;        
+<a name="l00189"></a><a class="code" href="classSimSite3D_1_1atom__t.html#0649f5881857d9437b85dfec852f5a88">00189</a>   interactionType act_type; 
+<a name="l00190"></a><a class="code" href="classSimSite3D_1_1atom__t.html#5b15b577b1e6874f1ca87a3a972ba212">00190</a>   my_float_t charge;     
+<a name="l00191"></a><a class="code" href="classSimSite3D_1_1atom__t.html#1bdb3b1e702e49621bcbcfcee908e9c6">00191</a>   my_float_t orig_charge;  
 <a name="l00192"></a>00192 
-<a name="l00193"></a><a class="code" href="classASCbase_1_1atom__t.html#6e71b7884ac0a9e5526ce40f2a807cf9">00193</a>   <span class="keywordtype">int</span> subst_id; 
-<a name="l00194"></a><a class="code" href="classASCbase_1_1atom__t.html#41715c0d9c29a54ee6b8b1fe979c49b6">00194</a>   std::string subst_name; 
-<a name="l00195"></a><a class="code" href="classASCbase_1_1atom__t.html#f1eaec85b84f948e97692a58dbfa2526">00195</a>   <span class="keywordtype">int</span> hydro;    
+<a name="l00193"></a><a class="code" href="classSimSite3D_1_1atom__t.html#6e71b7884ac0a9e5526ce40f2a807cf9">00193</a>   <span class="keywordtype">int</span> subst_id; 
+<a name="l00194"></a><a class="code" href="classSimSite3D_1_1atom__t.html#41715c0d9c29a54ee6b8b1fe979c49b6">00194</a>   std::string subst_name; 
+<a name="l00195"></a><a class="code" href="classSimSite3D_1_1atom__t.html#f1eaec85b84f948e97692a58dbfa2526">00195</a>   <span class="keywordtype">int</span> hydro;    
 <a name="l00196"></a>00196 
-<a name="l00197"></a><a class="code" href="classASCbase_1_1atom__t.html#3bdee8ba5c2e5b44c68458d9640f1051">00197</a>   <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classASCbase_1_1atom__t.html">atom_t</a> NULL_ATOM;  
-<a name="l00198"></a><a class="code" href="classASCbase_1_1atom__t.html#7d84cd97fa838e1ab2452a1794e723bc">00198</a>   <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classASCbase_1_1point__storage.html">point_storage&lt;atom_t&gt;</a> NULL_ATOM_VECTOR;  
-<a name="l00199"></a><a class="code" href="classASCbase_1_1atom__t.html#6006207a0eed1857af230dca1dadc4a1">00199</a>   <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classASCbase_1_1point__storage.html">point_storage&lt;atom_t&gt;::const_iterator</a> NULL_ATOM_VCI;  
+<a name="l00197"></a><a class="code" href="classSimSite3D_1_1atom__t.html#3bdee8ba5c2e5b44c68458d9640f1051">00197</a>   <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1atom__t.html">atom_t</a> NULL_ATOM;  
+<a name="l00198"></a><a class="code" href="classSimSite3D_1_1atom__t.html#7d84cd97fa838e1ab2452a1794e723bc">00198</a>   <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1point__storage.html">point_storage&lt;atom_t&gt;</a> NULL_ATOM_VECTOR;  
+<a name="l00199"></a><a class="code" href="classSimSite3D_1_1atom__t.html#6006207a0eed1857af230dca1dadc4a1">00199</a>   <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1point__storage.html">point_storage&lt;atom_t&gt;::const_iterator</a> NULL_ATOM_VCI;  
 <a name="l00200"></a>00200 
 <a name="l00201"></a>00201 <span class="keyword">private</span>:
 <a name="l00202"></a>00202   <span class="keywordtype">void</span>
-<a name="l00203"></a>00203   do_copy(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1atom__t.html">atom_t</a>&amp; a)
+<a name="l00203"></a>00203   do_copy(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1atom__t.html">atom_t</a>&amp; a)
 <a name="l00204"></a>00204   {
-<a name="l00205"></a>00205     atom_num = a.<a class="code" href="classASCbase_1_1atom__t.html#9a854374ed82fbc5e7f29690cd7f2418">atom_num</a>;
-<a name="l00206"></a>00206     res_num = a.<a class="code" href="classASCbase_1_1atom__t.html#4a643f052098c53dd7cfe1e6f17462a0">res_num</a>;
-<a name="l00207"></a>00207     name = a.<a class="code" href="classASCbase_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a>;
-<a name="l00208"></a>00208     res = a.<a class="code" href="classASCbase_1_1atom__t.html#b3b7b5f7e8172387dd581dcacc4a9f72">res</a>;
-<a name="l00209"></a>00209     chainID = a.<a class="code" href="classASCbase_1_1atom__t.html#b4a4060dde7bf73e494332146ed5ca92">chainID</a>;
-<a name="l00210"></a>00210     altLoc = a.<a class="code" href="classASCbase_1_1atom__t.html#7e7d73ecb81a7923c92284e4c86bfc5c">altLoc</a>;
-<a name="l00211"></a>00211     iCode = a.<a class="code" href="classASCbase_1_1atom__t.html#f7a846d9ffb1b0caf8a7b7b88bcf2f32">iCode</a>;
-<a name="l00212"></a>00212     occupancy = a.<a class="code" href="classASCbase_1_1atom__t.html#e9d0dc62c74dc8e3cf8c4a8d9866170a">occupancy</a>;
-<a name="l00213"></a>00213     tempFactor = a.<a class="code" href="classASCbase_1_1atom__t.html#6a08edf1e9a8fc861d434a81e306da39">tempFactor</a>;
-<a name="l00214"></a>00214     orbit = a.<a class="code" href="classASCbase_1_1atom__t.html#0a438d9b577cedf15ac1629c3067e2a7">orbit</a>;
-<a name="l00215"></a>00215     vdw_radius = a.<a class="code" href="classASCbase_1_1atom__t.html#1beb46018c79fd73df622a22540c341a">vdw_radius</a>;
-<a name="l00216"></a>00216     name_str = a.<a class="code" href="classASCbase_1_1atom__t.html#bb5f12af2e89540a14e1d2ed78905a97">name_str</a>;
-<a name="l00217"></a>00217     res_str = a.<a class="code" href="classASCbase_1_1atom__t.html#16c11a15f4136c3d4bb29e9abd6fa719">res_str</a>;
-<a name="l00218"></a>00218     is_hetero = a.<a class="code" href="classASCbase_1_1atom__t.html#d4583a7bfb72db12ae7eccbb2c232714">is_hetero</a>;
-<a name="l00219"></a>00219     act_type = a.<a class="code" href="classASCbase_1_1atom__t.html#0649f5881857d9437b85dfec852f5a88">act_type</a>;
-<a name="l00220"></a>00220     charge = a.<a class="code" href="classASCbase_1_1atom__t.html#5b15b577b1e6874f1ca87a3a972ba212">charge</a>;
-<a name="l00221"></a>00221     orig_charge = a.<a class="code" href="classASCbase_1_1atom__t.html#1bdb3b1e702e49621bcbcfcee908e9c6">orig_charge</a>;
-<a name="l00222"></a>00222     subst_id = a.<a class="code" href="classASCbase_1_1atom__t.html#6e71b7884ac0a9e5526ce40f2a807cf9">subst_id</a>;
-<a name="l00223"></a>00223     subst_name = a.<a class="code" href="classASCbase_1_1atom__t.html#41715c0d9c29a54ee6b8b1fe979c49b6">subst_name</a>;
-<a name="l00224"></a>00224     hydro = a.<a class="code" href="classASCbase_1_1atom__t.html#f1eaec85b84f948e97692a58dbfa2526">hydro</a>;
+<a name="l00205"></a>00205     atom_num = a.<a class="code" href="classSimSite3D_1_1atom__t.html#9a854374ed82fbc5e7f29690cd7f2418">atom_num</a>;
+<a name="l00206"></a>00206     res_num = a.<a class="code" href="classSimSite3D_1_1atom__t.html#4a643f052098c53dd7cfe1e6f17462a0">res_num</a>;
+<a name="l00207"></a>00207     name = a.<a class="code" href="classSimSite3D_1_1atom__t.html#8d17fc5f8e49ef5e1bea2e89a0b6e600">name</a>;
+<a name="l00208"></a>00208     res = a.<a class="code" href="classSimSite3D_1_1atom__t.html#b3b7b5f7e8172387dd581dcacc4a9f72">res</a>;
+<a name="l00209"></a>00209     chainID = a.<a class="code" href="classSimSite3D_1_1atom__t.html#b4a4060dde7bf73e494332146ed5ca92">chainID</a>;
+<a name="l00210"></a>00210     altLoc = a.<a class="code" href="classSimSite3D_1_1atom__t.html#7e7d73ecb81a7923c92284e4c86bfc5c">altLoc</a>;
+<a name="l00211"></a>00211     iCode = a.<a class="code" href="classSimSite3D_1_1atom__t.html#f7a846d9ffb1b0caf8a7b7b88bcf2f32">iCode</a>;
+<a name="l00212"></a>00212     occupancy = a.<a class="code" href="classSimSite3D_1_1atom__t.html#e9d0dc62c74dc8e3cf8c4a8d9866170a">occupancy</a>;
+<a name="l00213"></a>00213     tempFactor = a.<a class="code" href="classSimSite3D_1_1atom__t.html#6a08edf1e9a8fc861d434a81e306da39">tempFactor</a>;
+<a name="l00214"></a>00214     orbit = a.<a class="code" href="classSimSite3D_1_1atom__t.html#0a438d9b577cedf15ac1629c3067e2a7">orbit</a>;
+<a name="l00215"></a>00215     vdw_radius = a.<a class="code" href="classSimSite3D_1_1atom__t.html#1beb46018c79fd73df622a22540c341a">vdw_radius</a>;
+<a name="l00216"></a>00216     name_str = a.<a class="code" href="classSimSite3D_1_1atom__t.html#bb5f12af2e89540a14e1d2ed78905a97">name_str</a>;
+<a name="l00217"></a>00217     res_str = a.<a class="code" href="classSimSite3D_1_1atom__t.html#16c11a15f4136c3d4bb29e9abd6fa719">res_str</a>;
+<a name="l00218"></a>00218     is_hetero = a.<a class="code" href="classSimSite3D_1_1atom__t.html#d4583a7bfb72db12ae7eccbb2c232714">is_hetero</a>;
+<a name="l00219"></a>00219     act_type = a.<a class="code" href="classSimSite3D_1_1atom__t.html#0649f5881857d9437b85dfec852f5a88">act_type</a>;
+<a name="l00220"></a>00220     charge = a.<a class="code" href="classSimSite3D_1_1atom__t.html#5b15b577b1e6874f1ca87a3a972ba212">charge</a>;
+<a name="l00221"></a>00221     orig_charge = a.<a class="code" href="classSimSite3D_1_1atom__t.html#1bdb3b1e702e49621bcbcfcee908e9c6">orig_charge</a>;
+<a name="l00222"></a>00222     subst_id = a.<a class="code" href="classSimSite3D_1_1atom__t.html#6e71b7884ac0a9e5526ce40f2a807cf9">subst_id</a>;
+<a name="l00223"></a>00223     subst_name = a.<a class="code" href="classSimSite3D_1_1atom__t.html#41715c0d9c29a54ee6b8b1fe979c49b6">subst_name</a>;
+<a name="l00224"></a>00224     hydro = a.<a class="code" href="classSimSite3D_1_1atom__t.html#f1eaec85b84f948e97692a58dbfa2526">hydro</a>;
 <a name="l00225"></a>00225   };
 <a name="l00226"></a>00226 
 <a name="l00227"></a>00227 };
@@ -241,7 +241,7 @@
 <a name="l00232"></a>00232 <span class="keyword">typedef</span> std::map&lt;uint, atom_vci&gt; atom_map_t;
 <a name="l00233"></a>00233 
 <a name="l00234"></a>00234 
-<a name="l00235"></a>00235 } <span class="comment">// end of namespace ASCbase</span>
+<a name="l00235"></a>00235 } <span class="comment">// end of namespace SimSite3D</span>
 <a name="l00236"></a>00236 <span class="preprocessor">#endif</span>
 </pre></div><hr size="1"><address style="align: right;"><small>Generated on Tue Apr 3 23:09:17 2012 for simsite3d by&nbsp;
 <a href="http://www.doxygen.org/index.html">

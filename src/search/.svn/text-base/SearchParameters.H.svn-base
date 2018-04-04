@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -17,7 +17,7 @@
  *****************************************************************************/
   
 /*
- * $Source: /psa/share/repository/pfizer_proj/src/search/ASCbaseSearchParameters.H,v $
+ * $Source: /psa/share/repository/pfizer_proj/src/search/SimSite3DSearchParameters.H,v $
  * $Revision: 1.5 $
  * $Author: vanvoor4 $
  * $Date: 2009-01-21 01:52:37 $
@@ -35,7 +35,7 @@
  * outside method) and to generate random alignments
  *
  * Revision 1.1  2007/11/01 16:31:23  vanvoor4
- * Split from ASCbaseMain.H
+ * Split from SimSite3DMain.H
  * 
  *
  */
@@ -46,7 +46,7 @@
 #include <BaseParameters.H>
 #include <types.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
   //! Use popt to parse a search's commandline parameters 
   class SearchParameters : public BaseParameters{
@@ -81,7 +81,7 @@ namespace ASCbase{
       IK_BOTH_REPS
     }IK_type_t;
 
-    //! To be used by the ASCbasePy search.parameters module
+    //! To be used by the SimSite3DPy search.parameters module
     SearchParameters();
 
     //! Set the search parameters using the values in argv

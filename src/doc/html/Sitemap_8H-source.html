@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -39,47 +39,47 @@
 <a name="l00026"></a>00026 <span class="preprocessor">#include &lt;HbondSurfaces.H&gt;</span>
 <a name="l00027"></a>00027 <span class="preprocessor">#include &lt;SimpleTrimesh.H&gt;</span>
 <a name="l00028"></a>00028 
-<a name="l00029"></a>00029 <span class="keyword">namespace </span>ASCbase{
+<a name="l00029"></a>00029 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00030"></a>00030 
 <a name="l00031"></a>00031   <span class="keyword">typedef</span> dir_point_storage&lt;interact_point_t&gt;           interact_pts_vec;
 <a name="l00032"></a>00032   <span class="keyword">typedef</span> interact_pts_vec::const_iterator              interact_pts_vci;
 <a name="l00033"></a>00033 
-<a name="l00037"></a><a class="code" href="classASCbase_1_1Sitemap.html">00037</a>   <span class="keyword">class </span><a class="code" href="classASCbase_1_1Sitemap.html">Sitemap</a>{
+<a name="l00037"></a><a class="code" href="classSimSite3D_1_1Sitemap.html">00037</a>   <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1Sitemap.html">Sitemap</a>{
 <a name="l00038"></a>00038   <span class="keyword">public</span>:
 <a name="l00039"></a>00039 
-<a name="l00041"></a>00041     <a class="code" href="classASCbase_1_1Sitemap.html#50c5a65ec5c3b1e196466431ab71637a">Sitemap</a>(<span class="keyword">const</span> std::string path, <span class="keyword">const</span> std::string struct_id, 
-<a name="l00042"></a>00042             <span class="keyword">const</span> <a class="code" href="classASCbase_1_1BaseParameters.html">BaseParameters</a>&amp; args, <span class="keyword">const</span> <span class="keywordtype">bool</span> normalize = <span class="keyword">true</span>,
+<a name="l00041"></a>00041     <a class="code" href="classSimSite3D_1_1Sitemap.html#50c5a65ec5c3b1e196466431ab71637a">Sitemap</a>(<span class="keyword">const</span> std::string path, <span class="keyword">const</span> std::string struct_id, 
+<a name="l00042"></a>00042             <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1BaseParameters.html">BaseParameters</a>&amp; args, <span class="keyword">const</span> <span class="keywordtype">bool</span> normalize = <span class="keyword">true</span>,
 <a name="l00043"></a>00043             <span class="keyword">const</span> <span class="keywordtype">bool</span> load_hbond_surfaces = <span class="keyword">false</span>,
 <a name="l00044"></a>00044             <span class="keyword">const</span> <span class="keywordtype">bool</span> hydrophobic_query = <span class="keyword">false</span>,
 <a name="l00045"></a>00045             <span class="keyword">const</span> verbose_level_t verbosity = VERBOSE_SILENT);
 <a name="l00046"></a>00046 
-<a name="l00048"></a>00048     <a class="code" href="classASCbase_1_1Sitemap.html#50c5a65ec5c3b1e196466431ab71637a">Sitemap</a>(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1GenPointsParameters.html">GenPointsParameters</a>&amp; usr_args);
+<a name="l00048"></a>00048     <a class="code" href="classSimSite3D_1_1Sitemap.html#50c5a65ec5c3b1e196466431ab71637a">Sitemap</a>(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1GenPointsParameters.html">GenPointsParameters</a>&amp; usr_args);
 <a name="l00049"></a>00049 
-<a name="l00051"></a>00051     <span class="keyword">virtual</span> <a class="code" href="classASCbase_1_1Sitemap.html#efd8a95708982d72800caf7f69073700">~Sitemap</a>();
+<a name="l00051"></a>00051     <span class="keyword">virtual</span> <a class="code" href="classSimSite3D_1_1Sitemap.html#efd8a95708982d72800caf7f69073700">~Sitemap</a>();
 <a name="l00052"></a>00052 
 <a name="l00054"></a>00054 
-<a name="l00057"></a><a class="code" href="classASCbase_1_1Sitemap.html#1a15e9045f766ba8e80f6411513de6ac">00057</a>     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1Sitemap.html#1a15e9045f766ba8e80f6411513de6ac">fail</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> A_fail; }
+<a name="l00057"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#1a15e9045f766ba8e80f6411513de6ac">00057</a>     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1Sitemap.html#1a15e9045f766ba8e80f6411513de6ac">fail</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> A_fail; }
 <a name="l00058"></a>00058  
-<a name="l00060"></a>00060     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1Sitemap.html#88720d257d371462b7fc1b8c797aa697">write_files</a>(<span class="keyword">const</span> std::string struct_id, <span class="keyword">const</span> std::string path);
+<a name="l00060"></a>00060     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1Sitemap.html#88720d257d371462b7fc1b8c797aa697">write_files</a>(<span class="keyword">const</span> std::string struct_id, <span class="keyword">const</span> std::string path);
 <a name="l00061"></a>00061 
-<a name="l00065"></a>00065     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1Sitemap.html#e9d2433452ba04908e7ef43cbe7d8c3c">has_enough_points</a>();
+<a name="l00065"></a>00065     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1Sitemap.html#e9d2433452ba04908e7ef43cbe7d8c3c">has_enough_points</a>();
 <a name="l00066"></a>00066 
 <a name="l00068"></a>00068     std::string
-<a name="l00069"></a><a class="code" href="classASCbase_1_1Sitemap.html#aaf9fd841e8f5a03b2b7b756240bbe82">00069</a>     <a class="code" href="classASCbase_1_1Sitemap.html#aaf9fd841e8f5a03b2b7b756240bbe82">atoms_file_name</a>()<span class="keyword"> const</span>
-<a name="l00070"></a>00070 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1Sitemap.html#22af7b3e2f83f482711f96fd2b8036fb">A_atoms_fname</a>; }
+<a name="l00069"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#aaf9fd841e8f5a03b2b7b756240bbe82">00069</a>     <a class="code" href="classSimSite3D_1_1Sitemap.html#aaf9fd841e8f5a03b2b7b756240bbe82">atoms_file_name</a>()<span class="keyword"> const</span>
+<a name="l00070"></a>00070 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1Sitemap.html#22af7b3e2f83f482711f96fd2b8036fb">A_atoms_fname</a>; }
 <a name="l00071"></a>00071 
 <a name="l00073"></a>00073     std::string
-<a name="l00074"></a><a class="code" href="classASCbase_1_1Sitemap.html#cb41876f6caf930dbfd134532ba02a0c">00074</a>     <a class="code" href="classASCbase_1_1Sitemap.html#cb41876f6caf930dbfd134532ba02a0c">ligand_file_name</a>()<span class="keyword"> const</span>
+<a name="l00074"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#cb41876f6caf930dbfd134532ba02a0c">00074</a>     <a class="code" href="classSimSite3D_1_1Sitemap.html#cb41876f6caf930dbfd134532ba02a0c">ligand_file_name</a>()<span class="keyword"> const</span>
 <a name="l00075"></a>00075 <span class="keyword">    </span>{ 
 <a name="l00076"></a>00076 
 <a name="l00077"></a>00077       <span class="comment">// Check if a ligand was specified at creation time</span>
-<a name="l00078"></a>00078       <span class="keywordflow">if</span>(<a class="code" href="classASCbase_1_1Sitemap.html#8687cc1a0a4f3c900d40bc3b3ba7b4bb">A_lig_fname</a> == <span class="stringliteral">"NONE"</span>) <span class="keywordflow">return</span> <span class="stringliteral">"NONE"</span>;
+<a name="l00078"></a>00078       <span class="keywordflow">if</span>(<a class="code" href="classSimSite3D_1_1Sitemap.html#8687cc1a0a4f3c900d40bc3b3ba7b4bb">A_lig_fname</a> == <span class="stringliteral">"NONE"</span>) <span class="keywordflow">return</span> <span class="stringliteral">"NONE"</span>;
 <a name="l00079"></a>00079 
 <a name="l00080"></a>00080       <span class="comment">// Check A_site_path first, since the ligand could be in the same</span>
 <a name="l00081"></a>00081       <span class="comment">// directory as the site map</span>
-<a name="l00082"></a>00082       std::string my_lig = <a class="code" href="classASCbase_1_1Sitemap.html#f9703909778c885c912a1415910f988f">A_site_path</a> + <span class="stringliteral">"/"</span> + <a class="code" href="classASCbase_1_1Sitemap.html#8687cc1a0a4f3c900d40bc3b3ba7b4bb">A_lig_fname</a>;
+<a name="l00082"></a>00082       std::string my_lig = <a class="code" href="classSimSite3D_1_1Sitemap.html#f9703909778c885c912a1415910f988f">A_site_path</a> + <span class="stringliteral">"/"</span> + <a class="code" href="classSimSite3D_1_1Sitemap.html#8687cc1a0a4f3c900d40bc3b3ba7b4bb">A_lig_fname</a>;
 <a name="l00083"></a>00083       <span class="keywordflow">if</span>(!normal_file_exists(my_lig, <span class="keyword">false</span>)){
-<a name="l00084"></a>00084         my_lig = <a class="code" href="classASCbase_1_1Sitemap.html#f759f963ef40e2d5b8bfe0805f70e2f8">A_dbase_ligs</a> + <span class="stringliteral">"/"</span> + A_lig_fname;
+<a name="l00084"></a>00084         my_lig = <a class="code" href="classSimSite3D_1_1Sitemap.html#f759f963ef40e2d5b8bfe0805f70e2f8">A_dbase_ligs</a> + <span class="stringliteral">"/"</span> + A_lig_fname;
 <a name="l00085"></a>00085 
 <a name="l00086"></a>00086         <span class="keywordflow">if</span>(!normal_file_exists(my_lig, <span class="keyword">false</span>)){
 <a name="l00087"></a>00087           std::cerr &lt;&lt; <span class="stringliteral">"Unable to find the file: "</span> &lt;&lt; my_lig &lt;&lt; <span class="stringliteral">"\n"</span>;
@@ -89,13 +89,13 @@
 <a name="l00091"></a>00091       <span class="keywordflow">return</span> my_lig;
 <a name="l00092"></a>00092     }   
 <a name="l00093"></a>00093 
-<a name="l00094"></a>00094     <span class="keyword">const</span> <a class="code" href="classASCbase_1_1SitemapAtomsFile.html">SitemapAtomsFile</a>&amp;
+<a name="l00094"></a>00094     <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1SitemapAtomsFile.html">SitemapAtomsFile</a>&amp;
 <a name="l00095"></a>00095     interacting_atoms()<span class="keyword"> const</span>
-<a name="l00096"></a>00096 <span class="keyword">    </span>{ <span class="keywordflow">return</span> *<a class="code" href="classASCbase_1_1Sitemap.html#aacf141914798bdd7861687e432628f8">A_site_atoms</a>; } 
+<a name="l00096"></a>00096 <span class="keyword">    </span>{ <span class="keywordflow">return</span> *<a class="code" href="classSimSite3D_1_1Sitemap.html#aacf141914798bdd7861687e432628f8">A_site_atoms</a>; } 
 <a name="l00097"></a>00097 
 <a name="l00098"></a>00098     SitemapAtomsFile&amp;
 <a name="l00099"></a>00099     interacting_atoms()
-<a name="l00100"></a>00100     { <span class="keywordflow">return</span> *<a class="code" href="classASCbase_1_1Sitemap.html#aacf141914798bdd7861687e432628f8">A_site_atoms</a>; } 
+<a name="l00100"></a>00100     { <span class="keywordflow">return</span> *<a class="code" href="classSimSite3D_1_1Sitemap.html#aacf141914798bdd7861687e432628f8">A_site_atoms</a>; } 
 <a name="l00101"></a>00101 
 <a name="l00102"></a>00102     <span class="comment">//const SitemapAtomsFile&amp;</span>
 <a name="l00103"></a>00103     <span class="keyword">const</span> PDBStructure &amp; 
@@ -132,26 +132,26 @@
 <a name="l00134"></a>00134     { interact_points.centroid_3D(C); }
 <a name="l00135"></a>00135 
 <a name="l00137"></a>00137     HbondPoints&amp;
-<a name="l00138"></a><a class="code" href="classASCbase_1_1Sitemap.html#007b084d4422bb7a72bdd63e309985ce">00138</a>     <a class="code" href="classASCbase_1_1Sitemap.html#007b084d4422bb7a72bdd63e309985ce">hbond_points</a>()
-<a name="l00139"></a>00139     { <span class="keywordflow">return</span> *<a class="code" href="classASCbase_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>; }
+<a name="l00138"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#007b084d4422bb7a72bdd63e309985ce">00138</a>     <a class="code" href="classSimSite3D_1_1Sitemap.html#007b084d4422bb7a72bdd63e309985ce">hbond_points</a>()
+<a name="l00139"></a>00139     { <span class="keywordflow">return</span> *<a class="code" href="classSimSite3D_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>; }
 <a name="l00140"></a>00140 
-<a name="l00142"></a>00142     <span class="keyword">const</span> <a class="code" href="classASCbase_1_1HbondPoints.html">HbondPoints</a>&amp;
-<a name="l00143"></a><a class="code" href="classASCbase_1_1Sitemap.html#d985aeaf02eedb866b67eb389e62df52">00143</a>     <a class="code" href="classASCbase_1_1Sitemap.html#007b084d4422bb7a72bdd63e309985ce">hbond_points</a>()<span class="keyword"> const</span>
-<a name="l00144"></a>00144 <span class="keyword">    </span>{ <span class="keywordflow">return</span> *<a class="code" href="classASCbase_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>; }
+<a name="l00142"></a>00142     <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1HbondPoints.html">HbondPoints</a>&amp;
+<a name="l00143"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#d985aeaf02eedb866b67eb389e62df52">00143</a>     <a class="code" href="classSimSite3D_1_1Sitemap.html#007b084d4422bb7a72bdd63e309985ce">hbond_points</a>()<span class="keyword"> const</span>
+<a name="l00144"></a>00144 <span class="keyword">    </span>{ <span class="keywordflow">return</span> *<a class="code" href="classSimSite3D_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>; }
 <a name="l00145"></a>00145 
-<a name="l00147"></a>00147     <a class="code" href="classASCbase_1_1HphobPoints.html">HphobPoints</a>&amp;
-<a name="l00148"></a><a class="code" href="classASCbase_1_1Sitemap.html#ac2a508a7cb5843d2450b4261de23b93">00148</a>     <a class="code" href="classASCbase_1_1Sitemap.html#ac2a508a7cb5843d2450b4261de23b93">hphob_points</a>()
-<a name="l00149"></a>00149     { <span class="keywordflow">return</span> *<a class="code" href="classASCbase_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>; }
+<a name="l00147"></a>00147     <a class="code" href="classSimSite3D_1_1HphobPoints.html">HphobPoints</a>&amp;
+<a name="l00148"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#ac2a508a7cb5843d2450b4261de23b93">00148</a>     <a class="code" href="classSimSite3D_1_1Sitemap.html#ac2a508a7cb5843d2450b4261de23b93">hphob_points</a>()
+<a name="l00149"></a>00149     { <span class="keywordflow">return</span> *<a class="code" href="classSimSite3D_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>; }
 <a name="l00150"></a>00150 
-<a name="l00152"></a>00152     <span class="keyword">const</span> <a class="code" href="classASCbase_1_1HphobPoints.html">HphobPoints</a>&amp;
-<a name="l00153"></a><a class="code" href="classASCbase_1_1Sitemap.html#0ee5530e8852f95876a978e8c284f88f">00153</a>     <a class="code" href="classASCbase_1_1Sitemap.html#ac2a508a7cb5843d2450b4261de23b93">hphob_points</a>()<span class="keyword"> const</span>
-<a name="l00154"></a>00154 <span class="keyword">    </span>{ <span class="keywordflow">return</span> *<a class="code" href="classASCbase_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>; }
+<a name="l00152"></a>00152     <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1HphobPoints.html">HphobPoints</a>&amp;
+<a name="l00153"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#0ee5530e8852f95876a978e8c284f88f">00153</a>     <a class="code" href="classSimSite3D_1_1Sitemap.html#ac2a508a7cb5843d2450b4261de23b93">hphob_points</a>()<span class="keyword"> const</span>
+<a name="l00154"></a>00154 <span class="keyword">    </span>{ <span class="keywordflow">return</span> *<a class="code" href="classSimSite3D_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>; }
 <a name="l00155"></a>00155 
 <a name="l00156"></a>00156     size_t
 <a name="l00157"></a>00157     fit_points_size()<span class="keyword"> const</span>
 <a name="l00158"></a>00158 <span class="keyword">    </span>{ 
-<a name="l00159"></a>00159       <span class="keywordflow">return</span> (<a class="code" href="classASCbase_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;<a class="code" href="classASCbase_1_1HbondPoints.html#2b5bf1df8a99b0f1b933526cca817e86">fit_pts_end</a>() - <a class="code" href="classASCbase_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;<a class="code" href="classASCbase_1_1HbondPoints.html#9bdd5a0296d972353e432b010b7964dd">fit_pts_beg</a>()) 
-<a name="l00160"></a>00160         + <a class="code" href="classASCbase_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>-&gt;<a class="code" href="classASCbase_1_1HphobPoints.html#b1837926d048082c5aaf03d5cd3346cd">size</a>();
+<a name="l00159"></a>00159       <span class="keywordflow">return</span> (<a class="code" href="classSimSite3D_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;<a class="code" href="classSimSite3D_1_1HbondPoints.html#2b5bf1df8a99b0f1b933526cca817e86">fit_pts_end</a>() - <a class="code" href="classSimSite3D_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;<a class="code" href="classSimSite3D_1_1HbondPoints.html#9bdd5a0296d972353e432b010b7964dd">fit_pts_beg</a>()) 
+<a name="l00160"></a>00160         + <a class="code" href="classSimSite3D_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>-&gt;<a class="code" href="classSimSite3D_1_1HphobPoints.html#b1837926d048082c5aaf03d5cd3346cd">size</a>();
 <a name="l00161"></a>00161     }
 <a name="l00162"></a>00162 
 <a name="l00163"></a>00163     <span class="keyword">const</span> my_float_t*
@@ -172,45 +172,45 @@
 <a name="l00178"></a>00178 
 <a name="l00179"></a>00179     <span class="keyword">const</span> BoundingVolume&amp;
 <a name="l00180"></a>00180     site_volume_estimate_handle()<span class="keyword"> const</span>
-<a name="l00181"></a>00181 <span class="keyword">    </span>{ <span class="keywordflow">return</span> *<a class="code" href="classASCbase_1_1Sitemap.html#cb78a63c2111c987ecd011d1dd3d1ce0">A_site_vol_est</a>; }
+<a name="l00181"></a>00181 <span class="keyword">    </span>{ <span class="keywordflow">return</span> *<a class="code" href="classSimSite3D_1_1Sitemap.html#cb78a63c2111c987ecd011d1dd3d1ce0">A_site_vol_est</a>; }
 <a name="l00182"></a>00182 
 <a name="l00183"></a>00183     <span class="keyword">inline</span> <span class="keywordtype">void</span>
 <a name="l00184"></a>00184     revert()
 <a name="l00185"></a>00185     {
-<a name="l00186"></a>00186       <a class="code" href="classASCbase_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;revert();
-<a name="l00187"></a>00187       <a class="code" href="classASCbase_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>-&gt;revert();
+<a name="l00186"></a>00186       <a class="code" href="classSimSite3D_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;revert();
+<a name="l00187"></a>00187       <a class="code" href="classSimSite3D_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>-&gt;revert();
 <a name="l00188"></a>00188       A_bind_site_res-&gt;revert();
 <a name="l00189"></a>00189     }
 <a name="l00190"></a>00190 
 <a name="l00193"></a>00193     <span class="keyword">inline</span> my_float_t
-<a name="l00194"></a><a class="code" href="classASCbase_1_1Sitemap.html#81fe70b16f0e030e8c20923fc2e66a49">00194</a>     <a class="code" href="classASCbase_1_1Sitemap.html#81fe70b16f0e030e8c20923fc2e66a49">compute_RMSD</a>()<span class="keyword"> const</span>
+<a name="l00194"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#81fe70b16f0e030e8c20923fc2e66a49">00194</a>     <a class="code" href="classSimSite3D_1_1Sitemap.html#81fe70b16f0e030e8c20923fc2e66a49">compute_RMSD</a>()<span class="keyword"> const</span>
 <a name="l00195"></a>00195 <span class="keyword">    </span>{ 
 <a name="l00196"></a>00196       <span class="comment">// This function was built for ease of use and not speed</span>
 <a name="l00197"></a>00197       my_float_t hbond_sum = 0.0;
-<a name="l00198"></a>00198       <span class="keywordflow">if</span>(<a class="code" href="classASCbase_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;<a class="code" href="classASCbase_1_1HbondPoints.html#0d26e83f90943a2e13158647cd11d0c7">fit_pts_size</a>() &gt; 0) hbond_sum = <a class="code" href="classASCbase_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;<a class="code" href="classASCbase_1_1HbondPoints.html#ff599a0e97c9b535f644765f8a63be1f">compute_RMSD</a>();
+<a name="l00198"></a>00198       <span class="keywordflow">if</span>(<a class="code" href="classSimSite3D_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;<a class="code" href="classSimSite3D_1_1HbondPoints.html#0d26e83f90943a2e13158647cd11d0c7">fit_pts_size</a>() &gt; 0) hbond_sum = <a class="code" href="classSimSite3D_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;<a class="code" href="classSimSite3D_1_1HbondPoints.html#ff599a0e97c9b535f644765f8a63be1f">compute_RMSD</a>();
 <a name="l00199"></a>00199       my_float_t hphob_sum = 0.0;
-<a name="l00200"></a>00200       <span class="keywordflow">if</span>(<a class="code" href="classASCbase_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>-&gt;<a class="code" href="classASCbase_1_1HphobPoints.html#b1837926d048082c5aaf03d5cd3346cd">size</a>() &gt; 0) hphob_sum = <a class="code" href="classASCbase_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>-&gt;<a class="code" href="classASCbase_1_1HphobPoints.html#747fff02a3a0463f032470212a50e9e6">compute_RMSD</a>();
-<a name="l00201"></a>00201       hbond_sum *= hbond_sum * <a class="code" href="classASCbase_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;<a class="code" href="classASCbase_1_1HbondPoints.html#0d26e83f90943a2e13158647cd11d0c7">fit_pts_size</a>();
-<a name="l00202"></a>00202       hphob_sum *= hphob_sum * <a class="code" href="classASCbase_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>-&gt;<a class="code" href="classASCbase_1_1HphobPoints.html#b1837926d048082c5aaf03d5cd3346cd">size</a>();
-<a name="l00203"></a>00203       size_t N = <a class="code" href="classASCbase_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;<a class="code" href="classASCbase_1_1HbondPoints.html#0d26e83f90943a2e13158647cd11d0c7">fit_pts_size</a>() + <a class="code" href="classASCbase_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>-&gt;<a class="code" href="classASCbase_1_1HphobPoints.html#b1837926d048082c5aaf03d5cd3346cd">size</a>();
+<a name="l00200"></a>00200       <span class="keywordflow">if</span>(<a class="code" href="classSimSite3D_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>-&gt;<a class="code" href="classSimSite3D_1_1HphobPoints.html#b1837926d048082c5aaf03d5cd3346cd">size</a>() &gt; 0) hphob_sum = <a class="code" href="classSimSite3D_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>-&gt;<a class="code" href="classSimSite3D_1_1HphobPoints.html#747fff02a3a0463f032470212a50e9e6">compute_RMSD</a>();
+<a name="l00201"></a>00201       hbond_sum *= hbond_sum * <a class="code" href="classSimSite3D_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;<a class="code" href="classSimSite3D_1_1HbondPoints.html#0d26e83f90943a2e13158647cd11d0c7">fit_pts_size</a>();
+<a name="l00202"></a>00202       hphob_sum *= hphob_sum * <a class="code" href="classSimSite3D_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>-&gt;<a class="code" href="classSimSite3D_1_1HphobPoints.html#b1837926d048082c5aaf03d5cd3346cd">size</a>();
+<a name="l00203"></a>00203       size_t N = <a class="code" href="classSimSite3D_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;<a class="code" href="classSimSite3D_1_1HbondPoints.html#0d26e83f90943a2e13158647cd11d0c7">fit_pts_size</a>() + <a class="code" href="classSimSite3D_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>-&gt;<a class="code" href="classSimSite3D_1_1HphobPoints.html#b1837926d048082c5aaf03d5cd3346cd">size</a>();
 <a name="l00204"></a>00204       <span class="keywordflow">if</span>(N == 0) <span class="keywordflow">return</span> my_float_max;
 <a name="l00205"></a>00205       <span class="keywordflow">return</span> std::sqrt((hbond_sum + hphob_sum) / N);
 <a name="l00206"></a>00206     }
 <a name="l00207"></a>00207 
 <a name="l00209"></a>00209     <span class="keyword">inline</span> <span class="keywordtype">void</span>
-<a name="l00210"></a><a class="code" href="classASCbase_1_1Sitemap.html#5dc7a050ffc9ae70c203cb31e41b4b77">00210</a>     <a class="code" href="classASCbase_1_1Sitemap.html#5dc7a050ffc9ae70c203cb31e41b4b77">transform</a>(<span class="keyword">const</span> my_float_t* R, <span class="keyword">const</span> my_float_t* T)
+<a name="l00210"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#5dc7a050ffc9ae70c203cb31e41b4b77">00210</a>     <a class="code" href="classSimSite3D_1_1Sitemap.html#5dc7a050ffc9ae70c203cb31e41b4b77">transform</a>(<span class="keyword">const</span> my_float_t* R, <span class="keyword">const</span> my_float_t* T)
 <a name="l00211"></a>00211     {
-<a name="l00212"></a>00212       <a class="code" href="classASCbase_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;<a class="code" href="classASCbase_1_1HbondPoints.html#2b4848ccd8ce2fed483e32ac356ebe12">transform</a>(R, T);
-<a name="l00213"></a>00213       <a class="code" href="classASCbase_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>-&gt;<a class="code" href="classASCbase_1_1HphobPoints.html#1dbaaf75ee974e4153e58d4ad0d4abd3">transform</a>(R, T);
-<a name="l00214"></a>00214       A_bind_site_res-&gt;<a class="code" href="classASCbase_1_1CoordFile.html#e288ddf8441fe4652e6a1b90a4b5198c">transform</a>(R, T);
+<a name="l00212"></a>00212       <a class="code" href="classSimSite3D_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;<a class="code" href="classSimSite3D_1_1HbondPoints.html#2b4848ccd8ce2fed483e32ac356ebe12">transform</a>(R, T);
+<a name="l00213"></a>00213       <a class="code" href="classSimSite3D_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>-&gt;<a class="code" href="classSimSite3D_1_1HphobPoints.html#1dbaaf75ee974e4153e58d4ad0d4abd3">transform</a>(R, T);
+<a name="l00214"></a>00214       A_bind_site_res-&gt;<a class="code" href="classSimSite3D_1_1CoordFile.html#e288ddf8441fe4652e6a1b90a4b5198c">transform</a>(R, T);
 <a name="l00215"></a>00215     }
 <a name="l00216"></a>00216 
 <a name="l00219"></a>00219     <span class="keyword">inline</span> <span class="keywordtype">void</span>
-<a name="l00220"></a><a class="code" href="classASCbase_1_1Sitemap.html#9923d897faab8e6b015908311241ac3a">00220</a>     <a class="code" href="classASCbase_1_1Sitemap.html#9923d897faab8e6b015908311241ac3a">inverse_transform</a>(<span class="keyword">const</span> my_float_t* R, <span class="keyword">const</span> my_float_t* T)
+<a name="l00220"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#9923d897faab8e6b015908311241ac3a">00220</a>     <a class="code" href="classSimSite3D_1_1Sitemap.html#9923d897faab8e6b015908311241ac3a">inverse_transform</a>(<span class="keyword">const</span> my_float_t* R, <span class="keyword">const</span> my_float_t* T)
 <a name="l00221"></a>00221     {
-<a name="l00222"></a>00222       <a class="code" href="classASCbase_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;<a class="code" href="classASCbase_1_1HbondPoints.html#f9c02371e09065fb1099aa0a0921b4c4">inverse_transform</a>(R, T);
-<a name="l00223"></a>00223       <a class="code" href="classASCbase_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>-&gt;<a class="code" href="classASCbase_1_1HphobPoints.html#116528abe8dfc536c786ac885e87dc02">inverse_transform</a>(R, T);
-<a name="l00224"></a>00224       A_bind_site_res-&gt;<a class="code" href="classASCbase_1_1CoordFile.html#379c544ae1cd926491619e0f46532e27">inverse_transform</a>(R, T);
+<a name="l00222"></a>00222       <a class="code" href="classSimSite3D_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>-&gt;<a class="code" href="classSimSite3D_1_1HbondPoints.html#f9c02371e09065fb1099aa0a0921b4c4">inverse_transform</a>(R, T);
+<a name="l00223"></a>00223       <a class="code" href="classSimSite3D_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>-&gt;<a class="code" href="classSimSite3D_1_1HphobPoints.html#116528abe8dfc536c786ac885e87dc02">inverse_transform</a>(R, T);
+<a name="l00224"></a>00224       A_bind_site_res-&gt;<a class="code" href="classSimSite3D_1_1CoordFile.html#379c544ae1cd926491619e0f46532e27">inverse_transform</a>(R, T);
 <a name="l00225"></a>00225     }
 <a name="l00226"></a>00226 
 <a name="l00227"></a>00227     HbondSurfaces&lt;hbond_surface_t&gt;&amp;
@@ -219,18 +219,18 @@
 <a name="l00230"></a>00230 
 <a name="l00231"></a>00231     std::string
 <a name="l00232"></a>00232     site_path()<span class="keyword"> const</span>
-<a name="l00233"></a>00233 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1Sitemap.html#f9703909778c885c912a1415910f988f">A_site_path</a>; }
+<a name="l00233"></a>00233 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1Sitemap.html#f9703909778c885c912a1415910f988f">A_site_path</a>; }
 <a name="l00234"></a>00234 
 <a name="l00235"></a>00235     std::string
 <a name="l00236"></a>00236     get_struct_id()<span class="keyword"> const</span>
-<a name="l00237"></a>00237 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1Sitemap.html#1355b26f18d6bd22405fc2ed95543b68">A_struct_id</a>; }
+<a name="l00237"></a>00237 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1Sitemap.html#1355b26f18d6bd22405fc2ed95543b68">A_struct_id</a>; }
 <a name="l00238"></a>00238 
 <a name="l00239"></a>00239 
 <a name="l00242"></a>00242     <span class="keywordtype">void</span>
-<a name="l00243"></a>00243     <a class="code" href="classASCbase_1_1Sitemap.html#2fc4a9ede3730c0cd6fdadc97f00864b">compute_max_feature_values</a>(std::vector&lt;my_float_t&gt; *max_feat_vals) <span class="keyword">const</span>;
+<a name="l00243"></a>00243     <a class="code" href="classSimSite3D_1_1Sitemap.html#2fc4a9ede3730c0cd6fdadc97f00864b">compute_max_feature_values</a>(std::vector&lt;my_float_t&gt; *max_feat_vals) <span class="keyword">const</span>;
 <a name="l00244"></a>00244 
 <a name="l00247"></a>00247     my_float_t
-<a name="l00248"></a>00248     <a class="code" href="classASCbase_1_1Sitemap.html#8865b700374d55d3e7b4d6c4cd489f60">compute_site_vol_intersect</a>(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1Sitemap.html#50c5a65ec5c3b1e196466431ab71637a">Sitemap</a>&amp; other) <span class="keyword">const</span>;
+<a name="l00248"></a>00248     <a class="code" href="classSimSite3D_1_1Sitemap.html#8865b700374d55d3e7b4d6c4cd489f60">compute_site_vol_intersect</a>(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1Sitemap.html#50c5a65ec5c3b1e196466431ab71637a">Sitemap</a>&amp; other) <span class="keyword">const</span>;
 <a name="l00249"></a>00249 
 <a name="l00250"></a>00250   <span class="keyword">protected</span>:
 <a name="l00251"></a>00251     <span class="keywordtype">void</span> set_fail_flag(<span class="keyword">const</span> <span class="keywordtype">bool</span> val) { A_fail = val; }
@@ -239,13 +239,13 @@
 <a name="l00254"></a>00254                      std::string dbase_sites, std::string vol_tag,
 <a name="l00255"></a>00255                      BoundingVolume **vol, geometry::sphere_t *S = 0);
 <a name="l00256"></a>00256 
-<a name="l00257"></a><a class="code" href="classASCbase_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">00257</a>     <a class="code" href="classASCbase_1_1HbondPoints.html">HbondPoints</a> *<a class="code" href="classASCbase_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>;      
-<a name="l00258"></a><a class="code" href="classASCbase_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">00258</a>     <a class="code" href="classASCbase_1_1HphobPoints.html">HphobPoints</a> *<a class="code" href="classASCbase_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>;      
-<a name="l00259"></a>00259     <a class="code" href="classASCbase_1_1dir__point__storage.html">interact_pts_vec</a> interact_points;
-<a name="l00260"></a><a class="code" href="classASCbase_1_1Sitemap.html#cb78a63c2111c987ecd011d1dd3d1ce0">00260</a>     <a class="code" href="classASCbase_1_1BoundingVolume.html">BoundingVolume</a> *<a class="code" href="classASCbase_1_1Sitemap.html#cb78a63c2111c987ecd011d1dd3d1ce0">A_site_vol_est</a>;   
+<a name="l00257"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">00257</a>     <a class="code" href="classSimSite3D_1_1HbondPoints.html">HbondPoints</a> *<a class="code" href="classSimSite3D_1_1Sitemap.html#dcd2dacc1cda6d35e9e477e38ab1af5b">hbond_pts</a>;      
+<a name="l00258"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">00258</a>     <a class="code" href="classSimSite3D_1_1HphobPoints.html">HphobPoints</a> *<a class="code" href="classSimSite3D_1_1Sitemap.html#89271f4fedad4a8435ff3f30e58bb7f7">hphob_pts</a>;      
+<a name="l00259"></a>00259     <a class="code" href="classSimSite3D_1_1dir__point__storage.html">interact_pts_vec</a> interact_points;
+<a name="l00260"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#cb78a63c2111c987ecd011d1dd3d1ce0">00260</a>     <a class="code" href="classSimSite3D_1_1BoundingVolume.html">BoundingVolume</a> *<a class="code" href="classSimSite3D_1_1Sitemap.html#cb78a63c2111c987ecd011d1dd3d1ce0">A_site_vol_est</a>;   
 <a name="l00261"></a>00261 
 <a name="l00262"></a>00262   <span class="keyword">private</span>:
-<a name="l00264"></a>00264     <span class="keywordtype">void</span> <a class="code" href="classASCbase_1_1Sitemap.html#2c579b022413645a8ecbdc4317117563">init</a>();
+<a name="l00264"></a>00264     <span class="keywordtype">void</span> <a class="code" href="classSimSite3D_1_1Sitemap.html#2c579b022413645a8ecbdc4317117563">init</a>();
 <a name="l00265"></a>00265 
 <a name="l00266"></a>00266     <span class="keywordtype">bool</span>
 <a name="l00267"></a>00267     get_user_surf_patches(<span class="keyword">const</span> std::string &amp;lig_fname,
@@ -262,18 +262,18 @@
 <a name="l00278"></a>00278                           <span class="keyword">const</span> std::string &amp;msms_binary,
 <a name="l00279"></a>00279                           <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;waters);
 <a name="l00280"></a>00280 
-<a name="l00282"></a>00282     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1Sitemap.html#d692fc3eae9705af5c3b5151a18aad82">get_norm_stats</a>(<span class="keyword">const</span> std::string csv_fname, 
-<a name="l00283"></a>00283                         <span class="keyword">const</span> <a class="code" href="classASCbase_1_1BaseParameters.html">BaseParameters</a>&amp; args,
+<a name="l00282"></a>00282     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1Sitemap.html#d692fc3eae9705af5c3b5151a18aad82">get_norm_stats</a>(<span class="keyword">const</span> std::string csv_fname, 
+<a name="l00283"></a>00283                         <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1BaseParameters.html">BaseParameters</a>&amp; args,
 <a name="l00284"></a>00284                         <span class="keywordtype">bool</span> hydrophobic_query = <span class="keyword">false</span>);
 <a name="l00285"></a>00285 
 <a name="l00287"></a>00287 
-<a name="l00296"></a>00296     <a class="code" href="classASCbase_1_1BoundingVolume.html">BoundingVolume</a>* <a class="code" href="classASCbase_1_1Sitemap.html#dbc5be7e837523050ebf38da9fca1d1f">setup_volume</a>(<span class="keyword">const</span> std::string ligand_fname,
+<a name="l00296"></a>00296     <a class="code" href="classSimSite3D_1_1BoundingVolume.html">BoundingVolume</a>* <a class="code" href="classSimSite3D_1_1Sitemap.html#dbc5be7e837523050ebf38da9fca1d1f">setup_volume</a>(<span class="keyword">const</span> std::string ligand_fname,
 <a name="l00297"></a>00297                                  <span class="keyword">const</span> my_float_t grid_spacing,
 <a name="l00298"></a>00298                                  <span class="keyword">const</span> std::string sphere_str,
 <a name="l00299"></a>00299                                  <span class="keyword">const</span> <span class="keywordtype">bool</span> use_union_of_balls);
 <a name="l00300"></a>00300 
-<a name="l00301"></a>00301     <span class="keywordtype">void</span> get_prot_interact_atoms(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1PDBStructure.html">PDBStructure</a>* prot,
-<a name="l00302"></a>00302                                  <a class="code" href="classASCbase_1_1BoundingVolume.html">BoundingVolume</a>* site_vol,
+<a name="l00301"></a>00301     <span class="keywordtype">void</span> get_prot_interact_atoms(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1PDBStructure.html">PDBStructure</a>* prot,
+<a name="l00302"></a>00302                                  <a class="code" href="classSimSite3D_1_1BoundingVolume.html">BoundingVolume</a>* site_vol,
 <a name="l00303"></a>00303                                  std::vector&lt;atom_vci&gt;* bind_atoms,
 <a name="l00304"></a>00304                                  std::vector&lt;atom_vci&gt;* rad_atoms, 
 <a name="l00305"></a>00305                                  interact_atoms_vec* hbond_atoms,
@@ -283,31 +283,31 @@
 <a name="l00309"></a>00309 
 <a name="l00312"></a>00312 
 <a name="l00322"></a>00322     <span class="keywordtype">void</span>
-<a name="l00323"></a>00323     <a class="code" href="classASCbase_1_1Sitemap.html#1c89cc76612ae6e252b459b4bf62bc13">find_binding_site_hbonds</a>(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1GenPointsParameters.html#a6dc6c525bc5758a44eb9713cefd1723">GenPointsParameters::hbond_method_t</a> hbond_density,
+<a name="l00323"></a>00323     <a class="code" href="classSimSite3D_1_1Sitemap.html#1c89cc76612ae6e252b459b4bf62bc13">find_binding_site_hbonds</a>(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1GenPointsParameters.html#a6dc6c525bc5758a44eb9713cefd1723">GenPointsParameters::hbond_method_t</a> hbond_density,
 <a name="l00324"></a>00324                              <span class="keyword">const</span> std::string params_dir,
 <a name="l00325"></a>00325                              <span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; waters,
-<a name="l00326"></a>00326                              <a class="code" href="classASCbase_1_1BoundingVolume.html">BoundingVolume</a>* site_vol,
+<a name="l00326"></a>00326                              <a class="code" href="classSimSite3D_1_1BoundingVolume.html">BoundingVolume</a>* site_vol,
 <a name="l00327"></a>00327                              <span class="keyword">const</span> interact_atoms_vec&amp; hbond_atoms,
 <a name="l00328"></a>00328                              std::vector&lt;atom_vci&gt;* bind_atoms,
 <a name="l00329"></a>00329                              std::vector&lt;atom_vci&gt;* rad_atoms);
 <a name="l00330"></a>00330 
-<a name="l00332"></a>00332     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1Sitemap.html#4fcf9aa2c2a4afcf1d21bd3038434d7d">find_binding_site_metals</a>();
+<a name="l00332"></a>00332     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1Sitemap.html#4fcf9aa2c2a4afcf1d21bd3038434d7d">find_binding_site_metals</a>();
 <a name="l00333"></a>00333 
 <a name="l00336"></a>00336 
-<a name="l00343"></a>00343     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1Sitemap.html#955ee3f2bcb9a0853c49c98f9664310b">find_binding_site_hphobs</a>(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1GenPointsParameters.html#669b793f08bf6d29c9ad36ec0b86dc87">GenPointsParameters::hphob_method_t</a> hphob_method,
+<a name="l00343"></a>00343     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1Sitemap.html#955ee3f2bcb9a0853c49c98f9664310b">find_binding_site_hphobs</a>(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1GenPointsParameters.html#669b793f08bf6d29c9ad36ec0b86dc87">GenPointsParameters::hphob_method_t</a> hphob_method,
 <a name="l00344"></a>00344                                   <span class="keyword">const</span> my_float_t cluster_diameter,
 <a name="l00345"></a>00345                                   <span class="keyword">const</span> interact_atoms_vec&amp; hphob_atoms,
 <a name="l00346"></a>00346                                   <span class="keyword">const</span> hphob_triad_vec&amp; hphob_triads,
 <a name="l00347"></a>00347                                   <span class="keyword">const</span> std::vector&lt;atom_vci&gt;&amp; bind_atoms, 
-<a name="l00348"></a>00348                                   <a class="code" href="classASCbase_1_1BoundingVolume.html">BoundingVolume</a>* site_vol,
+<a name="l00348"></a>00348                                   <a class="code" href="classSimSite3D_1_1BoundingVolume.html">BoundingVolume</a>* site_vol,
 <a name="l00349"></a>00349                                   <span class="keyword">const</span> sphere_sample_level_t sample_level =
 <a name="l00350"></a>00350                                   DISCRETE_SPHERE_LEVEL_TWO);
 <a name="l00351"></a>00351 
-<a name="l00353"></a>00353     <span class="keywordtype">void</span> <a class="code" href="classASCbase_1_1Sitemap.html#1596bc4cf18ba4f6709a67f3e30437cb">write_feature_scales</a>(std::ostream &amp;out);
+<a name="l00353"></a>00353     <span class="keywordtype">void</span> <a class="code" href="classSimSite3D_1_1Sitemap.html#1596bc4cf18ba4f6709a67f3e30437cb">write_feature_scales</a>(std::ostream &amp;out);
 <a name="l00354"></a>00354 
 <a name="l00355"></a>00355     <span class="keywordtype">void</span> clean_up_string(std::string&amp; S);
 <a name="l00356"></a>00356 
-<a name="l00357"></a>00357     <span class="keywordtype">void</span> build_points_header(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1GenPointsParameters.html">GenPointsParameters</a>&amp; args);
+<a name="l00357"></a>00357     <span class="keywordtype">void</span> build_points_header(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1GenPointsParameters.html">GenPointsParameters</a>&amp; args);
 <a name="l00358"></a>00358 
 <a name="l00359"></a>00359     <span class="keywordtype">bool</span> gen_lig_box(<span class="keyword">const</span> std::string fname, my_float_t* corners);
 <a name="l00360"></a>00360 
@@ -317,7 +317,7 @@
 <a name="l00364"></a>00364                                   hphob_point_lci hphob_points_end, size_t npts,
 <a name="l00365"></a>00365                                   my_float_t vol_est_tol);
 <a name="l00366"></a>00366 
-<a name="l00367"></a>00367     <span class="keywordtype">bool</span> load_ligand(<span class="keyword">const</span> std::string &amp;fname, <a class="code" href="classASCbase_1_1CoordFile.html">CoordFile</a>** lig);
+<a name="l00367"></a>00367     <span class="keywordtype">bool</span> load_ligand(<span class="keyword">const</span> std::string &amp;fname, <a class="code" href="classSimSite3D_1_1CoordFile.html">CoordFile</a>** lig);
 <a name="l00368"></a>00368   
 <a name="l00369"></a>00369     <span class="keywordtype">bool</span>
 <a name="l00370"></a>00370     get_prot_atom_close_to_ligand(<span class="keyword">const</span> std::string ligand_fname, 
@@ -326,39 +326,39 @@
 <a name="l00373"></a>00373 
 <a name="l00374"></a>00374 
 <a name="l00375"></a>00375     verbose_level_t verbose;
-<a name="l00376"></a>00376     <a class="code" href="classASCbase_1_1BoundingVolume.html">BoundingVolume</a> *A_site_vol;
-<a name="l00377"></a><a class="code" href="classASCbase_1_1Sitemap.html#aacf141914798bdd7861687e432628f8">00377</a>     <a class="code" href="classASCbase_1_1SitemapAtomsFile.html">SitemapAtomsFile</a> *<a class="code" href="classASCbase_1_1Sitemap.html#aacf141914798bdd7861687e432628f8">A_site_atoms</a>; 
+<a name="l00376"></a>00376     <a class="code" href="classSimSite3D_1_1BoundingVolume.html">BoundingVolume</a> *A_site_vol;
+<a name="l00377"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#aacf141914798bdd7861687e432628f8">00377</a>     <a class="code" href="classSimSite3D_1_1SitemapAtomsFile.html">SitemapAtomsFile</a> *<a class="code" href="classSimSite3D_1_1Sitemap.html#aacf141914798bdd7861687e432628f8">A_site_atoms</a>; 
 <a name="l00378"></a>00378     <span class="comment">//SitemapAtomsFile *A_bind_site_res;</span>
-<a name="l00379"></a>00379     <a class="code" href="classASCbase_1_1PDBStructure.html">PDBStructure</a> *A_bind_site_res;
-<a name="l00380"></a>00380     <a class="code" href="classASCbase_1_1SitemapPointsFile.html">SitemapPointsFile</a> *points;
-<a name="l00381"></a>00381     <a class="code" href="classASCbase_1_1PDBStructure.html">PDBStructure</a> *prot_atoms;
+<a name="l00379"></a>00379     <a class="code" href="classSimSite3D_1_1PDBStructure.html">PDBStructure</a> *A_bind_site_res;
+<a name="l00380"></a>00380     <a class="code" href="classSimSite3D_1_1SitemapPointsFile.html">SitemapPointsFile</a> *points;
+<a name="l00381"></a>00381     <a class="code" href="classSimSite3D_1_1PDBStructure.html">PDBStructure</a> *prot_atoms;
 <a name="l00382"></a>00382     atom_map_t interact_atoms;
 <a name="l00383"></a>00383     my_float_t A_norm_moments[2];
 <a name="l00384"></a>00384     my_float_t A_hphob_norm_moments[2];
 <a name="l00385"></a>00385     HbondSurfaces&lt;hbond_surface_t&gt;* A_hbond_surfaces;   
-<a name="l00386"></a>00386     <a class="code" href="classASCbase_1_1SimpleTrimesh.html">SimpleTrimesh</a> *old_binding_site_mesh;
+<a name="l00386"></a>00386     <a class="code" href="classSimSite3D_1_1SimpleTrimesh.html">SimpleTrimesh</a> *old_binding_site_mesh;
 <a name="l00387"></a>00387 
-<a name="l00388"></a><a class="code" href="classASCbase_1_1Sitemap.html#d868aaadd592ee46383e0ab2e9cc9350">00388</a>     geometry::sphere_t <a class="code" href="classASCbase_1_1Sitemap.html#d868aaadd592ee46383e0ab2e9cc9350">A_site_vol_est_as_sphere</a>; 
+<a name="l00388"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#d868aaadd592ee46383e0ab2e9cc9350">00388</a>     geometry::sphere_t <a class="code" href="classSimSite3D_1_1Sitemap.html#d868aaadd592ee46383e0ab2e9cc9350">A_site_vol_est_as_sphere</a>; 
 <a name="l00389"></a>00389 
-<a name="l00390"></a><a class="code" href="classASCbase_1_1Sitemap.html#f9703909778c885c912a1415910f988f">00390</a>     std::string <a class="code" href="classASCbase_1_1Sitemap.html#f9703909778c885c912a1415910f988f">A_site_path</a>;     
-<a name="l00391"></a><a class="code" href="classASCbase_1_1Sitemap.html#1355b26f18d6bd22405fc2ed95543b68">00391</a>     std::string <a class="code" href="classASCbase_1_1Sitemap.html#1355b26f18d6bd22405fc2ed95543b68">A_struct_id</a>;     
-<a name="l00392"></a><a class="code" href="classASCbase_1_1Sitemap.html#f759f963ef40e2d5b8bfe0805f70e2f8">00392</a>     std::string <a class="code" href="classASCbase_1_1Sitemap.html#f759f963ef40e2d5b8bfe0805f70e2f8">A_dbase_ligs</a>;    
-<a name="l00393"></a><a class="code" href="classASCbase_1_1Sitemap.html#8687cc1a0a4f3c900d40bc3b3ba7b4bb">00393</a>     std::string <a class="code" href="classASCbase_1_1Sitemap.html#8687cc1a0a4f3c900d40bc3b3ba7b4bb">A_lig_fname</a>;     
-<a name="l00394"></a><a class="code" href="classASCbase_1_1Sitemap.html#22af7b3e2f83f482711f96fd2b8036fb">00394</a>     std::string <a class="code" href="classASCbase_1_1Sitemap.html#22af7b3e2f83f482711f96fd2b8036fb">A_atoms_fname</a>;     
+<a name="l00390"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#f9703909778c885c912a1415910f988f">00390</a>     std::string <a class="code" href="classSimSite3D_1_1Sitemap.html#f9703909778c885c912a1415910f988f">A_site_path</a>;     
+<a name="l00391"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#1355b26f18d6bd22405fc2ed95543b68">00391</a>     std::string <a class="code" href="classSimSite3D_1_1Sitemap.html#1355b26f18d6bd22405fc2ed95543b68">A_struct_id</a>;     
+<a name="l00392"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#f759f963ef40e2d5b8bfe0805f70e2f8">00392</a>     std::string <a class="code" href="classSimSite3D_1_1Sitemap.html#f759f963ef40e2d5b8bfe0805f70e2f8">A_dbase_ligs</a>;    
+<a name="l00393"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#8687cc1a0a4f3c900d40bc3b3ba7b4bb">00393</a>     std::string <a class="code" href="classSimSite3D_1_1Sitemap.html#8687cc1a0a4f3c900d40bc3b3ba7b4bb">A_lig_fname</a>;     
+<a name="l00394"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#22af7b3e2f83f482711f96fd2b8036fb">00394</a>     std::string <a class="code" href="classSimSite3D_1_1Sitemap.html#22af7b3e2f83f482711f96fd2b8036fb">A_atoms_fname</a>;     
 <a name="l00395"></a>00395     <span class="keywordtype">bool</span> A_include_metals;
 <a name="l00396"></a>00396     <span class="keywordtype">bool</span> A_MSMS_surf;
 <a name="l00397"></a>00397     <span class="keywordtype">bool</span> A_user_surf;
-<a name="l00398"></a><a class="code" href="classASCbase_1_1Sitemap.html#7474a2670e5f74e20594a2add689f8d5">00398</a>     my_float_t <a class="code" href="classASCbase_1_1Sitemap.html#7474a2670e5f74e20594a2add689f8d5">A_probe_radius</a>; 
-<a name="l00399"></a><a class="code" href="classASCbase_1_1Sitemap.html#f9dbc37200a6d1841ea366760f8d0837">00399</a>     my_float_t <a class="code" href="classASCbase_1_1Sitemap.html#f9dbc37200a6d1841ea366760f8d0837">A_num_pts_per_area</a>; 
+<a name="l00398"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#7474a2670e5f74e20594a2add689f8d5">00398</a>     my_float_t <a class="code" href="classSimSite3D_1_1Sitemap.html#7474a2670e5f74e20594a2add689f8d5">A_probe_radius</a>; 
+<a name="l00399"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#f9dbc37200a6d1841ea366760f8d0837">00399</a>     my_float_t <a class="code" href="classSimSite3D_1_1Sitemap.html#f9dbc37200a6d1841ea366760f8d0837">A_num_pts_per_area</a>; 
 <a name="l00400"></a>00400     <span class="keywordtype">int</span> A_min_res_per_chain;
 <a name="l00401"></a>00401 
 <a name="l00402"></a>00402     <span class="keywordtype">bool</span> A_fail;
 <a name="l00403"></a>00403     <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MIN_NUMBER_POINTS__POLAR_SITE;
 <a name="l00404"></a>00404     <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MIN_NUMBER_POINTS__HPHOB_SITE;
 <a name="l00405"></a>00405     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t TOLERANCE;
-<a name="l00406"></a><a class="code" href="classASCbase_1_1Sitemap.html#5eeb7fdc83ae79798995a668a58b42e1">00406</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classASCbase_1_1Sitemap.html#5eeb7fdc83ae79798995a668a58b42e1">MAXRADDIST</a>;  
-<a name="l00407"></a><a class="code" href="classASCbase_1_1Sitemap.html#7cf5dd107e339908dc8ca026eba23360">00407</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classASCbase_1_1Sitemap.html#7cf5dd107e339908dc8ca026eba23360">MAXBINDDIST</a>;  
-<a name="l00408"></a><a class="code" href="classASCbase_1_1Sitemap.html#b28ac13500885c7b52d35446d3fa89de">00408</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classASCbase_1_1Sitemap.html#b28ac13500885c7b52d35446d3fa89de">A_fname</a>; 
+<a name="l00406"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#5eeb7fdc83ae79798995a668a58b42e1">00406</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classSimSite3D_1_1Sitemap.html#5eeb7fdc83ae79798995a668a58b42e1">MAXRADDIST</a>;  
+<a name="l00407"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#7cf5dd107e339908dc8ca026eba23360">00407</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classSimSite3D_1_1Sitemap.html#7cf5dd107e339908dc8ca026eba23360">MAXBINDDIST</a>;  
+<a name="l00408"></a><a class="code" href="classSimSite3D_1_1Sitemap.html#b28ac13500885c7b52d35446d3fa89de">00408</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classSimSite3D_1_1Sitemap.html#b28ac13500885c7b52d35446d3fa89de">A_fname</a>; 
 <a name="l00409"></a>00409   };
 <a name="l00410"></a>00410 
 <a name="l00411"></a>00411 }

@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -41,7 +41,7 @@
 <a name="l00028"></a>00028 <span class="preprocessor">#include &lt;point.H&gt;</span>
 <a name="l00029"></a>00029 <span class="preprocessor">#include &lt;atom.H&gt;</span>
 <a name="l00030"></a>00030 
-<a name="l00031"></a>00031 <span class="keyword">namespace </span>ASCbase{
+<a name="l00031"></a>00031 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00032"></a>00032 
 <a name="l00033"></a>00033 <span class="comment">// #define TRACE</span>
 <a name="l00034"></a>00034 
@@ -79,7 +79,7 @@
 <a name="l00069"></a>00069 };
 <a name="l00070"></a>00070 
 <a name="l00072"></a>00072 
-<a name="l00075"></a><a class="code" href="classASCbase_1_1PointOctree.html">00075</a> <span class="keyword">class </span><a class="code" href="classASCbase_1_1PointOctree.html">PointOctree</a>{
+<a name="l00075"></a><a class="code" href="classSimSite3D_1_1PointOctree.html">00075</a> <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1PointOctree.html">PointOctree</a>{
 <a name="l00076"></a>00076 
 <a name="l00077"></a>00077 <span class="keyword">public</span>:
 <a name="l00078"></a>00078 
@@ -90,24 +90,24 @@
 <a name="l00083"></a>00083     CUBE_AND_SPHERE_INTERSECT
 <a name="l00084"></a>00084   }cube_sphere_intersect_t;
 <a name="l00085"></a>00085 
-<a name="l00086"></a>00086   <a class="code" href="classASCbase_1_1PointOctree.html">PointOctree</a>(atom_vci first, atom_vci last,
+<a name="l00086"></a>00086   <a class="code" href="classSimSite3D_1_1PointOctree.html">PointOctree</a>(atom_vci first, atom_vci last,
 <a name="l00087"></a>00087               <span class="keyword">const</span> my_float_t min_half_width = 4.5, <span class="keyword">const</span> uint max_numel = 1)
 <a name="l00088"></a>00088   {
-<a name="l00089"></a>00089     <a class="code" href="classASCbase_1_1PointOctree.html#ea82427ff395714332d21ff1ceac2716">A_min_half_width</a> = min_half_width;
-<a name="l00090"></a>00090     <a class="code" href="classASCbase_1_1PointOctree.html#0e341947fdbf0da8c6507d6461c8ffe5">A_max_numel</a> = max_numel;
+<a name="l00089"></a>00089     <a class="code" href="classSimSite3D_1_1PointOctree.html#ea82427ff395714332d21ff1ceac2716">A_min_half_width</a> = min_half_width;
+<a name="l00090"></a>00090     <a class="code" href="classSimSite3D_1_1PointOctree.html#0e341947fdbf0da8c6507d6461c8ffe5">A_max_numel</a> = max_numel;
 <a name="l00091"></a>00091     build(first, last);
 <a name="l00092"></a>00092   }
 <a name="l00093"></a>00093 
-<a name="l00094"></a>00094   ~<a class="code" href="classASCbase_1_1PointOctree.html">PointOctree</a>()
+<a name="l00094"></a>00094   ~<a class="code" href="classSimSite3D_1_1PointOctree.html">PointOctree</a>()
 <a name="l00095"></a>00095   {
-<a name="l00096"></a>00096     <a class="code" href="classASCbase_1_1PointOctree.html#312dabdbfa0177cf2336fe534032b811">free_octree_node</a>(&amp;<a class="code" href="classASCbase_1_1PointOctree.html#cf433700d8979b8a5531af09c1a722a5">A_root</a>);
+<a name="l00096"></a>00096     <a class="code" href="classSimSite3D_1_1PointOctree.html#312dabdbfa0177cf2336fe534032b811">free_octree_node</a>(&amp;<a class="code" href="classSimSite3D_1_1PointOctree.html#cf433700d8979b8a5531af09c1a722a5">A_root</a>);
 <a name="l00097"></a>00097   }
 <a name="l00098"></a>00098 
 <a name="l00099"></a>00099   <span class="keywordtype">void</span>
 <a name="l00100"></a>00100   get_close_points(atom_vci a, <span class="keyword">const</span> my_float_t max_dist, 
 <a name="l00101"></a>00101                    std::vector&lt;atom_vci&gt; *close_points)
 <a name="l00102"></a>00102   { 
-<a name="l00103"></a>00103     get_close_points(&amp;<a class="code" href="classASCbase_1_1PointOctree.html#cf433700d8979b8a5531af09c1a722a5">A_root</a>, a-&gt;pos, max_dist, close_points, 0);
+<a name="l00103"></a>00103     get_close_points(&amp;<a class="code" href="classSimSite3D_1_1PointOctree.html#cf433700d8979b8a5531af09c1a722a5">A_root</a>, a-&gt;pos, max_dist, close_points, 0);
 <a name="l00104"></a>00104   }
 <a name="l00105"></a>00105 
 <a name="l00106"></a>00106   <span class="keywordtype">void</span> 
@@ -346,7 +346,7 @@
 <a name="l00344"></a>00344 <span class="preprocessor">#endif</span>
 <a name="l00345"></a>00345 <span class="preprocessor"></span>
 <a name="l00346"></a>00346   <span class="keywordtype">void</span>
-<a name="l00347"></a><a class="code" href="classASCbase_1_1PointOctree.html#312dabdbfa0177cf2336fe534032b811">00347</a>   free_octree_node(octree_node_t&lt;atom_vci&gt;* cnode)
+<a name="l00347"></a><a class="code" href="classSimSite3D_1_1PointOctree.html#312dabdbfa0177cf2336fe534032b811">00347</a>   free_octree_node(octree_node_t&lt;atom_vci&gt;* cnode)
 <a name="l00348"></a>00348   {
 <a name="l00349"></a>00349     <span class="keywordtype">bool</span> leaf_node = <span class="keyword">false</span>;
 <a name="l00350"></a>00350     <span class="keywordflow">if</span>(cnode-&gt;data.size()){
@@ -595,14 +595,14 @@
 <a name="l00593"></a>00593     <span class="keywordflow">return</span> <span class="keyword">true</span>;
 <a name="l00594"></a>00594   }
 <a name="l00595"></a>00595  
-<a name="l00596"></a><a class="code" href="classASCbase_1_1PointOctree.html#cf433700d8979b8a5531af09c1a722a5">00596</a>   octree_node_t&lt;atom_vci&gt; A_root;  
-<a name="l00597"></a><a class="code" href="classASCbase_1_1PointOctree.html#0e341947fdbf0da8c6507d6461c8ffe5">00597</a>   uint A_max_numel; 
-<a name="l00598"></a><a class="code" href="classASCbase_1_1PointOctree.html#ea82427ff395714332d21ff1ceac2716">00598</a>   my_float_t A_min_half_width;   
+<a name="l00596"></a><a class="code" href="classSimSite3D_1_1PointOctree.html#cf433700d8979b8a5531af09c1a722a5">00596</a>   octree_node_t&lt;atom_vci&gt; A_root;  
+<a name="l00597"></a><a class="code" href="classSimSite3D_1_1PointOctree.html#0e341947fdbf0da8c6507d6461c8ffe5">00597</a>   uint A_max_numel; 
+<a name="l00598"></a><a class="code" href="classSimSite3D_1_1PointOctree.html#ea82427ff395714332d21ff1ceac2716">00598</a>   my_float_t A_min_half_width;   
 <a name="l00599"></a>00599 
-<a name="l00600"></a><a class="code" href="classASCbase_1_1PointOctree.html#6b1e10ac2fe83f68cc03bdd24ec8d9ca">00600</a>   <span class="keyword">static</span> <span class="keyword">const</span> std::string A_fname;  
+<a name="l00600"></a><a class="code" href="classSimSite3D_1_1PointOctree.html#6b1e10ac2fe83f68cc03bdd24ec8d9ca">00600</a>   <span class="keyword">static</span> <span class="keyword">const</span> std::string A_fname;  
 <a name="l00601"></a>00601 };
 <a name="l00602"></a>00602 
-<a name="l00603"></a>00603 } <span class="comment">// end namesapce ASCbase</span>
+<a name="l00603"></a>00603 } <span class="comment">// end namesapce SimSite3D</span>
 <a name="l00604"></a>00604 <span class="preprocessor">#endif</span>
 </pre></div><hr size="1"><address style="align: right;"><small>Generated on Tue Apr 3 23:09:18 2012 for simsite3d by&nbsp;
 <a href="http://www.doxygen.org/index.html">

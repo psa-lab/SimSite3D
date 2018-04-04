@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2010, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -32,27 +32,27 @@
 <a name="l00019"></a>00019 <span class="preprocessor">#ifndef ALIGNMENTS_FROM_RESULTS_FILE_HEADER_FILE</span>
 <a name="l00020"></a>00020 <span class="preprocessor"></span><span class="preprocessor">#define ALIGNMENTS_FROM_RESULTS_FILE_HEADER_FILE</span>
 <a name="l00021"></a>00021 <span class="preprocessor"></span>
-<a name="l00022"></a>00022 <span class="keyword">namespace </span>ASCbase{
+<a name="l00022"></a>00022 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00023"></a>00023 
 <a name="l00025"></a>00025 
-<a name="l00029"></a><a class="code" href="classASCbase_1_1AlignmentsFromResultsFile.html">00029</a> <span class="keyword">class </span><a class="code" href="classASCbase_1_1AlignmentsFromResultsFile.html">AlignmentsFromResultsFile</a>{
+<a name="l00029"></a><a class="code" href="classSimSite3D_1_1AlignmentsFromResultsFile.html">00029</a> <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1AlignmentsFromResultsFile.html">AlignmentsFromResultsFile</a>{
 <a name="l00030"></a>00030 <span class="keyword">public</span>:
-<a name="l00032"></a><a class="code" href="classASCbase_1_1AlignmentsFromResultsFile.html#0834e02449a91cc81b01e44566b3ca9c">00032</a>   <a class="code" href="classASCbase_1_1AlignmentsFromResultsFile.html#0834e02449a91cc81b01e44566b3ca9c">AlignmentsFromResultsFile</a>(<span class="keyword">const</span> std::string res_fname)
+<a name="l00032"></a><a class="code" href="classSimSite3D_1_1AlignmentsFromResultsFile.html#0834e02449a91cc81b01e44566b3ca9c">00032</a>   <a class="code" href="classSimSite3D_1_1AlignmentsFromResultsFile.html#0834e02449a91cc81b01e44566b3ca9c">AlignmentsFromResultsFile</a>(<span class="keyword">const</span> std::string res_fname)
 <a name="l00033"></a>00033   { 
 <a name="l00034"></a>00034     A_res_fname = res_fname; 
 <a name="l00035"></a>00035   }
 <a name="l00036"></a>00036 
-<a name="l00038"></a><a class="code" href="classASCbase_1_1AlignmentsFromResultsFile.html#ac17079e981f15b11ff09284843f1c60">00038</a>   <span class="keyword">virtual</span> <a class="code" href="classASCbase_1_1AlignmentsFromResultsFile.html#ac17079e981f15b11ff09284843f1c60">~AlignmentsFromResultsFile</a>()
+<a name="l00038"></a><a class="code" href="classSimSite3D_1_1AlignmentsFromResultsFile.html#ac17079e981f15b11ff09284843f1c60">00038</a>   <span class="keyword">virtual</span> <a class="code" href="classSimSite3D_1_1AlignmentsFromResultsFile.html#ac17079e981f15b11ff09284843f1c60">~AlignmentsFromResultsFile</a>()
 <a name="l00039"></a>00039   { ; }
 <a name="l00040"></a>00040 
 <a name="l00042"></a>00042   <span class="keyword">template</span>&lt;<span class="keyword">typename</span> align_T&gt; <span class="keywordtype">bool</span>
-<a name="l00043"></a><a class="code" href="classASCbase_1_1AlignmentsFromResultsFile.html#8a607016b81b625aa0debaa1d469067d">00043</a>   <a class="code" href="classASCbase_1_1AlignmentsFromResultsFile.html#8a607016b81b625aa0debaa1d469067d">align</a>(<a class="code" href="classASCbase_1_1ModelSitemap.html">ModelSitemap</a> *query_site, <a class="code" href="classASCbase_1_1Sitemap.html">Sitemap</a>&amp; dset_site, 
+<a name="l00043"></a><a class="code" href="classSimSite3D_1_1AlignmentsFromResultsFile.html#8a607016b81b625aa0debaa1d469067d">00043</a>   <a class="code" href="classSimSite3D_1_1AlignmentsFromResultsFile.html#8a607016b81b625aa0debaa1d469067d">align</a>(<a class="code" href="classSimSite3D_1_1ModelSitemap.html">ModelSitemap</a> *query_site, <a class="code" href="classSimSite3D_1_1Sitemap.html">Sitemap</a>&amp; dset_site, 
 <a name="l00044"></a>00044         std::vector&lt;align_T&gt; *alignments)
 <a name="l00045"></a>00045   {
 <a name="l00046"></a>00046     std::ifstream res_file;
 <a name="l00047"></a>00047     <span class="keywordflow">if</span>(!open_ifstream(res_file, A_res_fname)) <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00048"></a>00048 
-<a name="l00049"></a>00049     std::string dset_struct_id = dset_site.<a class="code" href="classASCbase_1_1Sitemap.html#325a5ef0a4b1949fd1d7eb8622a91802">get_struct_id</a>();
+<a name="l00049"></a>00049     std::string dset_struct_id = dset_site.<a class="code" href="classSimSite3D_1_1Sitemap.html#325a5ef0a4b1949fd1d7eb8622a91802">get_struct_id</a>();
 <a name="l00050"></a>00050     <span class="keywordflow">for</span>(std::string line; std::getline(res_file, line); ){
 <a name="l00051"></a>00051       <span class="keywordflow">if</span>(line[0] == <span class="charliteral">'#'</span> || line.length() == 0) <span class="keywordflow">continue</span>;
 <a name="l00052"></a>00052 
@@ -113,7 +113,7 @@
 <a name="l00107"></a>00107 <span class="keyword">private</span>:
 <a name="l00108"></a>00108   std::string A_res_fname;
 <a name="l00109"></a>00109 };
-<a name="l00110"></a>00110 } <span class="comment">// end namespace ASCbase</span>
+<a name="l00110"></a>00110 } <span class="comment">// end namespace SimSite3D</span>
 <a name="l00111"></a>00111 <span class="preprocessor">#endif</span>
 </pre></div><hr size="1"><address style="align: right;"><small>Generated on Tue Apr 3 23:09:17 2012 for simsite3d by&nbsp;
 <a href="http://www.doxygen.org/index.html">

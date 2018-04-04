@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -50,22 +50,22 @@
 <a name="l00037"></a>00037 <span class="preprocessor"></span>
 <a name="l00038"></a>00038 <span class="preprocessor">#include &lt;ScoreRigidAlignments.H&gt;</span>
 <a name="l00039"></a>00039 
-<a name="l00040"></a>00040 <span class="keyword">namespace </span>ASCbase{
+<a name="l00040"></a>00040 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00041"></a>00041 
 <a name="l00044"></a>00044 
-<a name="l00049"></a><a class="code" href="classASCbase_1_1PsuedoLigRmsd.html">00049</a>   <span class="keyword">class </span><a class="code" href="classASCbase_1_1PsuedoLigRmsd.html">PsuedoLigRmsd</a> : <span class="keyword">public</span> <a class="code" href="classASCbase_1_1ScoreRigidAlignments.html">ScoreRigidAlignments</a>&lt;std::less&lt;my_float_t&gt; &gt;{
+<a name="l00049"></a><a class="code" href="classSimSite3D_1_1PsuedoLigRmsd.html">00049</a>   <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1PsuedoLigRmsd.html">PsuedoLigRmsd</a> : <span class="keyword">public</span> <a class="code" href="classSimSite3D_1_1ScoreRigidAlignments.html">ScoreRigidAlignments</a>&lt;std::less&lt;my_float_t&gt; &gt;{
 <a name="l00050"></a>00050   <span class="keyword">public</span>:
 <a name="l00052"></a>00052     <span class="comment">/*</span>
 <a name="l00053"></a>00053 <span class="comment">     * @param model_in Pointer to the model/query sitemap</span>
 <a name="l00054"></a>00054 <span class="comment">     * @param params Reference to the search's runtime parameters</span>
 <a name="l00055"></a>00055 <span class="comment">     */</span>
-<a name="l00056"></a>00056     <a class="code" href="classASCbase_1_1PsuedoLigRmsd.html#cb2260f005103d3160c017839c4bd06e">PsuedoLigRmsd</a>(<a class="code" href="classASCbase_1_1ModelSitemap.html">ModelSitemap</a>* model_in, <span class="keyword">const</span> <a class="code" href="classASCbase_1_1SearchParameters.html">SearchParameters</a>&amp; params);
+<a name="l00056"></a>00056     <a class="code" href="classSimSite3D_1_1PsuedoLigRmsd.html#cb2260f005103d3160c017839c4bd06e">PsuedoLigRmsd</a>(<a class="code" href="classSimSite3D_1_1ModelSitemap.html">ModelSitemap</a>* model_in, <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1SearchParameters.html">SearchParameters</a>&amp; params);
 <a name="l00057"></a>00057 
-<a name="l00059"></a>00059     <a class="code" href="classASCbase_1_1PsuedoLigRmsd.html#2ab21999e1e371a9eaa2839251d15d12">~PsuedoLigRmsd</a>(); 
+<a name="l00059"></a>00059     <a class="code" href="classSimSite3D_1_1PsuedoLigRmsd.html#2ab21999e1e371a9eaa2839251d15d12">~PsuedoLigRmsd</a>(); 
 <a name="l00060"></a>00060 
 <a name="l00061"></a>00061   <span class="keyword">protected</span>:
 <a name="l00063"></a>00063 
-<a name="l00067"></a>00067     my_float_t <a class="code" href="classASCbase_1_1PsuedoLigRmsd.html#889f9461ef48612a4d146c4b7c34b46c">score</a>(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1DbaseSitemap.html">DbaseSitemap</a>&amp; search, rigid_align_vi scores);
+<a name="l00067"></a>00067     my_float_t <a class="code" href="classSimSite3D_1_1PsuedoLigRmsd.html#889f9461ef48612a4d146c4b7c34b46c">score</a>(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1DbaseSitemap.html">DbaseSitemap</a>&amp; search, rigid_align_vi scores);
 <a name="l00068"></a>00068 
 <a name="l00069"></a>00069     my_float_t
 <a name="l00070"></a>00070     correspondences(my_float_t **query_pts_ptr, my_float_t **db_pts_ptr,
@@ -78,8 +78,8 @@
 <a name="l00077"></a>00077     }
 <a name="l00078"></a>00078 
 <a name="l00079"></a>00079   <span class="keyword">private</span>:
-<a name="l00080"></a><a class="code" href="classASCbase_1_1PsuedoLigRmsd.html#2f21de3bff3a23947a0f443dd906c0bc">00080</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classASCbase_1_1PsuedoLigRmsd.html#2f21de3bff3a23947a0f443dd906c0bc">_fname</a>; 
-<a name="l00081"></a>00081     <a class="code" href="classASCbase_1_1mol2File.html">mol2File</a>* model_lig;
+<a name="l00080"></a><a class="code" href="classSimSite3D_1_1PsuedoLigRmsd.html#2f21de3bff3a23947a0f443dd906c0bc">00080</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classSimSite3D_1_1PsuedoLigRmsd.html#2f21de3bff3a23947a0f443dd906c0bc">_fname</a>; 
+<a name="l00081"></a>00081     <a class="code" href="classSimSite3D_1_1mol2File.html">mol2File</a>* model_lig;
 <a name="l00082"></a>00082   };
 <a name="l00083"></a>00083 }
 <a name="l00084"></a>00084 <span class="preprocessor">#endif</span>

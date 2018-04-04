@@ -17,7 +17,7 @@ def setup_directories(base_dir, mode):
     os.makedirs(base_dir + "/ligand_fragments", 0770)
 
 def copy_search_params(params_py):
-  from ASCbasePy import search
+  from SimSite3DPy import search
   params_cc = search.parameters()
 
 #(params.num_rand_aligns > 0):
@@ -56,7 +56,7 @@ if(proj_dir == None):
   sys.exit(1)
 
 sys.path.append(proj_dir + "/python")
-from ASCbasePy import *
+from SimSite3DPy import *
 
 # Handle command line parameters
 params = parameters.search_parameters()

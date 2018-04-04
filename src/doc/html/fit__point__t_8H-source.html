@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -46,22 +46,22 @@
 <a name="l00033"></a>00033 <span class="preprocessor"></span>                                                                                
 <a name="l00034"></a>00034 <span class="preprocessor">#include &lt;point.H&gt;</span>
 <a name="l00035"></a>00035                                                                                 
-<a name="l00036"></a>00036 <span class="keyword">namespace </span>ASCbase{
+<a name="l00036"></a>00036 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00037"></a>00037 
-<a name="l00040"></a><a class="code" href="classASCbase_1_1fit__point__t.html">00040</a>   <span class="keyword">class </span><a class="code" href="classASCbase_1_1fit__point__t.html">fit_point_t</a> : <span class="keyword">public</span> <a class="code" href="classASCbase_1_1point__t.html">point_t</a>{
+<a name="l00040"></a><a class="code" href="classSimSite3D_1_1fit__point__t.html">00040</a>   <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1fit__point__t.html">fit_point_t</a> : <span class="keyword">public</span> <a class="code" href="classSimSite3D_1_1point__t.html">point_t</a>{
 <a name="l00041"></a>00041   <span class="keyword">public</span>:
-<a name="l00043"></a><a class="code" href="classASCbase_1_1fit__point__t.html#dd761e7b147a311e47e84e607e5848f3">00043</a>     <a class="code" href="classASCbase_1_1fit__point__t.html#dd761e7b147a311e47e84e607e5848f3">fit_point_t</a>(alloc_t a = ALLOC_POSITION) : <a class="code" href="classASCbase_1_1point__t.html">point_t</a>(a)
+<a name="l00043"></a><a class="code" href="classSimSite3D_1_1fit__point__t.html#dd761e7b147a311e47e84e607e5848f3">00043</a>     <a class="code" href="classSimSite3D_1_1fit__point__t.html#dd761e7b147a311e47e84e607e5848f3">fit_point_t</a>(alloc_t a = ALLOC_POSITION) : <a class="code" href="classSimSite3D_1_1point__t.html">point_t</a>(a)
 <a name="l00044"></a>00044     {
-<a name="l00045"></a>00045       <a class="code" href="classASCbase_1_1fit__point__t.html#63623ba84e89eba6f1712251f7f099ce">act_type</a> = UNKNOWN_INTERACTION; 
+<a name="l00045"></a>00045       <a class="code" href="classSimSite3D_1_1fit__point__t.html#63623ba84e89eba6f1712251f7f099ce">act_type</a> = UNKNOWN_INTERACTION; 
 <a name="l00046"></a>00046     }  
 <a name="l00047"></a>00047 
-<a name="l00050"></a><a class="code" href="classASCbase_1_1fit__point__t.html#c316016e3b9987d7130d0ddc6e14ca82">00050</a>     <a class="code" href="classASCbase_1_1fit__point__t.html#dd761e7b147a311e47e84e607e5848f3">fit_point_t</a>(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1fit__point__t.html">fit_point_t</a>&amp; p) : <a class="code" href="classASCbase_1_1point__t.html">point_t</a>(p)
+<a name="l00050"></a><a class="code" href="classSimSite3D_1_1fit__point__t.html#c316016e3b9987d7130d0ddc6e14ca82">00050</a>     <a class="code" href="classSimSite3D_1_1fit__point__t.html#dd761e7b147a311e47e84e607e5848f3">fit_point_t</a>(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1fit__point__t.html">fit_point_t</a>&amp; p) : <a class="code" href="classSimSite3D_1_1point__t.html">point_t</a>(p)
 <a name="l00051"></a>00051     {
 <a name="l00052"></a>00052       do_copy(p);
 <a name="l00053"></a>00053     }
 <a name="l00054"></a>00054 
-<a name="l00055"></a>00055     <span class="keyword">const</span> <a class="code" href="classASCbase_1_1fit__point__t.html">fit_point_t</a>&amp;
-<a name="l00056"></a>00056     operator=(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1fit__point__t.html">fit_point_t</a>&amp; p) 
+<a name="l00055"></a>00055     <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1fit__point__t.html">fit_point_t</a>&amp;
+<a name="l00056"></a>00056     operator=(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1fit__point__t.html">fit_point_t</a>&amp; p) 
 <a name="l00057"></a>00057     {
 <a name="l00058"></a>00058       <span class="keywordflow">if</span>(&amp;p != <span class="keyword">this</span>){
 <a name="l00059"></a>00059         do_copy(p);
@@ -71,14 +71,14 @@
 <a name="l00063"></a>00063     }
 <a name="l00064"></a>00064   <span class="keyword">private</span>:
 <a name="l00065"></a>00065     <span class="keywordtype">void</span>
-<a name="l00066"></a>00066     do_copy(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1fit__point__t.html#dd761e7b147a311e47e84e607e5848f3">fit_point_t</a>&amp; p)
+<a name="l00066"></a>00066     do_copy(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1fit__point__t.html#dd761e7b147a311e47e84e607e5848f3">fit_point_t</a>&amp; p)
 <a name="l00067"></a>00067     {
-<a name="l00068"></a>00068       <a class="code" href="classASCbase_1_1fit__point__t.html#63623ba84e89eba6f1712251f7f099ce">act_type</a> = p.act_type;
-<a name="l00069"></a>00069       <a class="code" href="classASCbase_1_1fit__point__t.html#b5d60780b42c7d83a11764010b05dd88">atoms</a> = p.atoms;
+<a name="l00068"></a>00068       <a class="code" href="classSimSite3D_1_1fit__point__t.html#63623ba84e89eba6f1712251f7f099ce">act_type</a> = p.act_type;
+<a name="l00069"></a>00069       <a class="code" href="classSimSite3D_1_1fit__point__t.html#b5d60780b42c7d83a11764010b05dd88">atoms</a> = p.atoms;
 <a name="l00070"></a>00070     }
 <a name="l00071"></a>00071 
-<a name="l00072"></a><a class="code" href="classASCbase_1_1fit__point__t.html#63623ba84e89eba6f1712251f7f099ce">00072</a>     interactionType <a class="code" href="classASCbase_1_1fit__point__t.html#63623ba84e89eba6f1712251f7f099ce">act_type</a>;    
-<a name="l00073"></a><a class="code" href="classASCbase_1_1fit__point__t.html#b5d60780b42c7d83a11764010b05dd88">00073</a>     std::vector&lt;atom_vci&gt; <a class="code" href="classASCbase_1_1fit__point__t.html#b5d60780b42c7d83a11764010b05dd88">atoms</a>; 
+<a name="l00072"></a><a class="code" href="classSimSite3D_1_1fit__point__t.html#63623ba84e89eba6f1712251f7f099ce">00072</a>     interactionType <a class="code" href="classSimSite3D_1_1fit__point__t.html#63623ba84e89eba6f1712251f7f099ce">act_type</a>;    
+<a name="l00073"></a><a class="code" href="classSimSite3D_1_1fit__point__t.html#b5d60780b42c7d83a11764010b05dd88">00073</a>     std::vector&lt;atom_vci&gt; <a class="code" href="classSimSite3D_1_1fit__point__t.html#b5d60780b42c7d83a11764010b05dd88">atoms</a>; 
 <a name="l00074"></a>00074   };
 <a name="l00075"></a>00075 
 <a name="l00076"></a>00076 }

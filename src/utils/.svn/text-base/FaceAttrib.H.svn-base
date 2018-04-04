@@ -3,7 +3,7 @@
 
 #include <VertAttrib.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 namespace geometry{
 
 //! Class to hold the attributes associated with a face
@@ -579,7 +579,7 @@ private:
 
 
 } // end namespace geometry
-} // end namespace ASCbase
+} // end namespace SimSite3D
 
 
 

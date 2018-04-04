@@ -38,15 +38,15 @@ int main(const int argc, const char** argv)
 
   // Do not return -1 here since system, fork, etc return -1 on failure, and we
   // wish to distinguish between system and program failure
-  ASCbase::GenPointsParameters my_params(argc, argv);
-  ASCbase::BaseParameters::status_t status = my_params.status();
-  if(status == ASCbase::BaseParameters::DISPLAY_HELP_ONLY) return 0;
-  else if(status != ASCbase::BaseParameters::READY){
+  SimSite3D::GenPointsParameters my_params(argc, argv);
+  SimSite3D::BaseParameters::status_t status = my_params.status();
+  if(status == SimSite3D::BaseParameters::DISPLAY_HELP_ONLY) return 0;
+  else if(status != SimSite3D::BaseParameters::READY){
     std::cerr << "\n" << argv[0] 
               << " *FAILED* \n\tCould not initialize parameters\n";
     return 1;
   }
-  ASCbase::Sitemap my_site(my_params);
+  SimSite3D::Sitemap my_site(my_params);
   if(my_site.fail()){
     std::cerr << "\n" << argv[0] 
               << " *FAILED* \n\tCould not initialize sitemap\n";

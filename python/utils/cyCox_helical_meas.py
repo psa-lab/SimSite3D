@@ -1,6 +1,6 @@
 import sys
 from numpy import *
-from ASCbasePy.utils import *
+from SimSite3DPy.utils import *
 
 def load_CA_positions(pdb_fname, res_nums):
   prot = pdb.residues(pdb_fname)

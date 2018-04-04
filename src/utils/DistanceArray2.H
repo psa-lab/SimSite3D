@@ -2,7 +2,7 @@
 #define DISTANCE_ARRAY_HEADER_INCLUDED
 
 
-namespace ASCbase{
+namespace SimSite3D{
 namespace geometry{
 
 //! Make this a simple class to get it working -- then template it for generic
@@ -207,5 +207,5 @@ private:
   bool A_bins_are_setup;
 };
 } // end namespace geometry
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

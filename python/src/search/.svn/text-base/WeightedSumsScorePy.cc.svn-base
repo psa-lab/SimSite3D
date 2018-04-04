@@ -6,14 +6,14 @@
 #include "../utils/stream_basicsPy.hh"
 
 using namespace boost::python;
-using ASCbase::rigid_align_t;
-using ASCbase::ScoreRigidAlignments;
-using ASCbase::WeightedSumsScore;
-using ASCbase::point_and_surf_score;
-using ASCbase::NoTier1Score;
-using ASCbase::DbaseSitemap;
-using ASCbase::ModelSitemap;
-using ASCbase::SearchParameters;
+using SimSite3D::rigid_align_t;
+using SimSite3D::ScoreRigidAlignments;
+using SimSite3D::WeightedSumsScore;
+using SimSite3D::point_and_surf_score;
+using SimSite3D::NoTier1Score;
+using SimSite3D::DbaseSitemap;
+using SimSite3D::ModelSitemap;
+using SimSite3D::SearchParameters;
 
 // Wrapper class to handle passing in an std::ofstream object
 template < class tier1_SF, class tier2_SF, typename align_T >

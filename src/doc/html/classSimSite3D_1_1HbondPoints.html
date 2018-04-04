@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
-<title>simsite3d: ASCbase::HbondPoints Class Reference</title>
+<title>simsite3d: SimSite3D::HbondPoints Class Reference</title>
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="tabs.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -18,176 +18,176 @@
     <li><a href="functions.html"><span>Class&nbsp;Members</span></a></li>
   </ul></div>
 <div class="nav">
-<b>ASCbase</b>::<a class="el" href="classASCbase_1_1HbondPoints.html">HbondPoints</a></div>
-<h1>ASCbase::HbondPoints Class Reference</h1><!-- doxytag: class="ASCbase::HbondPoints" --><code>#include &lt;<a class="el" href="HbondPoints_8H-source.html">HbondPoints.H</a>&gt;</code>
+<b>SimSite3D</b>::<a class="el" href="classSimSite3D_1_1HbondPoints.html">HbondPoints</a></div>
+<h1>SimSite3D::HbondPoints Class Reference</h1><!-- doxytag: class="SimSite3D::HbondPoints" --><code>#include &lt;<a class="el" href="HbondPoints_8H-source.html">HbondPoints.H</a>&gt;</code>
 <p>
-<a href="classASCbase_1_1HbondPoints-members.html">List of all members.</a><table border="0" cellpadding="0" cellspacing="0">
+<a href="classSimSite3D_1_1HbondPoints-members.html">List of all members.</a><table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
 <tr><td colspan="2"><br><h2>Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#da198374071ef598a898466343ca4d17">HbondPoints</a> (std::istream &amp;in, const uint num_lines, <a class="el" href="classASCbase_1_1PDBBase.html">PDBBase</a> &amp;rad_atoms, <a class="el" href="classASCbase_1_1PDBBase.html">PDBBase</a> &amp;points)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#da198374071ef598a898466343ca4d17">HbondPoints</a> (std::istream &amp;in, const uint num_lines, <a class="el" href="classSimSite3D_1_1PDBBase.html">PDBBase</a> &amp;rad_atoms, <a class="el" href="classSimSite3D_1_1PDBBase.html">PDBBase</a> &amp;points)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Build the hbonds_pts vector from a stored sitemap.  <a href="#da198374071ef598a898466343ca4d17"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#ffcbf1d30cd9190ad924c5a263f387c6">HbondPoints</a> (const <a class="el" href="classASCbase_1_1GenPointsParameters.html#a6dc6c525bc5758a44eb9713cefd1723">GenPointsParameters::hbond_method_t</a> hbond_density, const std::string param_path, <a class="el" href="classASCbase_1_1BoundingVolume.html">BoundingVolume</a> *vol_in, const bool compute_volume=false)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#ffcbf1d30cd9190ad924c5a263f387c6">HbondPoints</a> (const <a class="el" href="classSimSite3D_1_1GenPointsParameters.html#a6dc6c525bc5758a44eb9713cefd1723">GenPointsParameters::hbond_method_t</a> hbond_density, const std::string param_path, <a class="el" href="classSimSite3D_1_1BoundingVolume.html">BoundingVolume</a> *vol_in, const bool compute_volume=false)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Basic constructor.  <a href="#ffcbf1d30cd9190ad924c5a263f387c6"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#4ac75a890a38f90de37bd4793da50fef">find_binding_site_hbonds</a> (const <a class="el" href="classASCbase_1_1PDBStructure.html">PDBStructure</a> *prot, const std::vector&lt; std::string &gt; &amp;H2O_res_names, const bool include_metals, const interact_atoms_vec &amp;hbond_atoms, std::vector&lt; atom_vci &gt; *bind_atoms, std::vector&lt; atom_vci &gt; *rad_atoms)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#4ac75a890a38f90de37bd4793da50fef">find_binding_site_hbonds</a> (const <a class="el" href="classSimSite3D_1_1PDBStructure.html">PDBStructure</a> *prot, const std::vector&lt; std::string &gt; &amp;H2O_res_names, const bool include_metals, const interact_atoms_vec &amp;hbond_atoms, std::vector&lt; atom_vci &gt; *bind_atoms, std::vector&lt; atom_vci &gt; *rad_atoms)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="cfc90ecdc78a82f1fc2cd6a3894f71f5"></a><!-- doxytag: member="ASCbase::HbondPoints::ideal_pts_beg" ref="cfc90ecdc78a82f1fc2cd6a3894f71f5" args="() const " -->
-hbond_ideal_pt_vci&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#cfc90ecdc78a82f1fc2cd6a3894f71f5">ideal_pts_beg</a> () const </td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="cfc90ecdc78a82f1fc2cd6a3894f71f5"></a><!-- doxytag: member="SimSite3D::HbondPoints::ideal_pts_beg" ref="cfc90ecdc78a82f1fc2cd6a3894f71f5" args="() const " -->
+hbond_ideal_pt_vci&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#cfc90ecdc78a82f1fc2cd6a3894f71f5">ideal_pts_beg</a> () const </td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get a constant iterator to the first hbond ideal point. <br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="dbcd5aa42ce40703760fab5195f15093"></a><!-- doxytag: member="ASCbase::HbondPoints::ideal_pts_end" ref="dbcd5aa42ce40703760fab5195f15093" args="() const " -->
-hbond_ideal_pt_vci&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#dbcd5aa42ce40703760fab5195f15093">ideal_pts_end</a> () const </td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="dbcd5aa42ce40703760fab5195f15093"></a><!-- doxytag: member="SimSite3D::HbondPoints::ideal_pts_end" ref="dbcd5aa42ce40703760fab5195f15093" args="() const " -->
+hbond_ideal_pt_vci&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#dbcd5aa42ce40703760fab5195f15093">ideal_pts_end</a> () const </td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get a constant iterator to one past the last hbond ideal point. <br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="9bdd5a0296d972353e432b010b7964dd"></a><!-- doxytag: member="ASCbase::HbondPoints::fit_pts_beg" ref="9bdd5a0296d972353e432b010b7964dd" args="() const " -->
-hbond_fit_pt_vci&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#9bdd5a0296d972353e432b010b7964dd">fit_pts_beg</a> () const </td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="9bdd5a0296d972353e432b010b7964dd"></a><!-- doxytag: member="SimSite3D::HbondPoints::fit_pts_beg" ref="9bdd5a0296d972353e432b010b7964dd" args="() const " -->
+hbond_fit_pt_vci&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#9bdd5a0296d972353e432b010b7964dd">fit_pts_beg</a> () const </td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get a constant iterator to the first hbond fit point. <br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="2b5bf1df8a99b0f1b933526cca817e86"></a><!-- doxytag: member="ASCbase::HbondPoints::fit_pts_end" ref="2b5bf1df8a99b0f1b933526cca817e86" args="() const " -->
-hbond_fit_pt_vci&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#2b5bf1df8a99b0f1b933526cca817e86">fit_pts_end</a> () const </td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="2b5bf1df8a99b0f1b933526cca817e86"></a><!-- doxytag: member="SimSite3D::HbondPoints::fit_pts_end" ref="2b5bf1df8a99b0f1b933526cca817e86" args="() const " -->
+hbond_fit_pt_vci&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#2b5bf1df8a99b0f1b933526cca817e86">fit_pts_end</a> () const </td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get a constant iterator to one past the last hbond fit point. <br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="0d26e83f90943a2e13158647cd11d0c7"></a><!-- doxytag: member="ASCbase::HbondPoints::fit_pts_size" ref="0d26e83f90943a2e13158647cd11d0c7" args="() const " -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="0d26e83f90943a2e13158647cd11d0c7"></a><!-- doxytag: member="SimSite3D::HbondPoints::fit_pts_size" ref="0d26e83f90943a2e13158647cd11d0c7" args="() const " -->
 const size_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>fit_pts_size</b> () const </td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#2b4848ccd8ce2fed483e32ac356ebe12">transform</a> (const my_float_t *R, const my_float_t *T)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#2b4848ccd8ce2fed483e32ac356ebe12">transform</a> (const my_float_t *R, const my_float_t *T)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#f9c02371e09065fb1099aa0a0921b4c4">inverse_transform</a> (const my_float_t *R, const my_float_t *T)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#f9c02371e09065fb1099aa0a0921b4c4">inverse_transform</a> (const my_float_t *R, const my_float_t *T)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#cf6e668fee3d6d59bb7a1205db1c8a84">revert</a> ()</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#cf6e668fee3d6d59bb7a1205db1c8a84">revert</a> ()</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#315af5cac9bd9bbd51d52bd2539ed075">get_current_inverse_3D_transform</a> (Quaternion *Q, my_float_t *T) const </td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#315af5cac9bd9bbd51d52bd2539ed075">get_current_inverse_3D_transform</a> (Quaternion *Q, my_float_t *T) const </td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#ff599a0e97c9b535f644765f8a63be1f">compute_RMSD</a> () const </td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#ff599a0e97c9b535f644765f8a63be1f">compute_RMSD</a> () const </td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="6ed493e533d9b4d58040452835edc0bf"></a><!-- doxytag: member="ASCbase::HbondPoints::closest_fit_pt" ref="6ed493e533d9b4d58040452835edc0bf" args="(const my_float_t *pos, my_float_t *d) const " -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="6ed493e533d9b4d58040452835edc0bf"></a><!-- doxytag: member="SimSite3D::HbondPoints::closest_fit_pt" ref="6ed493e533d9b4d58040452835edc0bf" args="(const my_float_t *pos, my_float_t *d) const " -->
 hbond_fit_pt_vci&nbsp;</td><td class="memItemRight" valign="bottom"><b>closest_fit_pt</b> (const my_float_t *pos, my_float_t *d) const </td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="bb868c3415537bf4201293ed155f8de6"></a><!-- doxytag: member="ASCbase::HbondPoints::closest_ideal_pt" ref="bb868c3415537bf4201293ed155f8de6" args="(const my_float_t *pos, my_float_t *d) const " -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="bb868c3415537bf4201293ed155f8de6"></a><!-- doxytag: member="SimSite3D::HbondPoints::closest_ideal_pt" ref="bb868c3415537bf4201293ed155f8de6" args="(const my_float_t *pos, my_float_t *d) const " -->
 hbond_ideal_pt_vci&nbsp;</td><td class="memItemRight" valign="bottom"><b>closest_ideal_pt</b> (const my_float_t *pos, my_float_t *d) const </td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="199ab61731d64ddbc1f1693dc27b5b58"></a><!-- doxytag: member="ASCbase::HbondPoints::close_fit_pts" ref="199ab61731d64ddbc1f1693dc27b5b58" args="(const my_float_t *pos, const my_float_t radius, hbond_fit_pt_vec::float_const_iter_map *pts_map) const " -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="199ab61731d64ddbc1f1693dc27b5b58"></a><!-- doxytag: member="SimSite3D::HbondPoints::close_fit_pts" ref="199ab61731d64ddbc1f1693dc27b5b58" args="(const my_float_t *pos, const my_float_t radius, hbond_fit_pt_vec::float_const_iter_map *pts_map) const " -->
 void&nbsp;</td><td class="memItemRight" valign="bottom"><b>close_fit_pts</b> (const my_float_t *pos, const my_float_t radius, hbond_fit_pt_vec::float_const_iter_map *pts_map) const </td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="693b4ff8920d1fb4245f10bcc2210c36"></a><!-- doxytag: member="ASCbase::HbondPoints::fail" ref="693b4ff8920d1fb4245f10bcc2210c36" args="()" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="693b4ff8920d1fb4245f10bcc2210c36"></a><!-- doxytag: member="SimSite3D::HbondPoints::fail" ref="693b4ff8920d1fb4245f10bcc2210c36" args="()" -->
 bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>fail</b> ()</td></tr>
 
 <tr><td colspan="2"><br><h2>Static Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ada240a8c1e41ce847e1a4d02d08eba8"></a><!-- doxytag: member="ASCbase::HbondPoints::NO_CARBON_NEIGHBOR" ref="ada240a8c1e41ce847e1a4d02d08eba8" args="" -->
-static const atom_vci&nbsp;</td><td class="memItemRight" valign="bottom"><b>NO_CARBON_NEIGHBOR</b> = <a class="el" href="classASCbase_1_1atom__t.html#6006207a0eed1857af230dca1dadc4a1">atom_t::NULL_ATOM_VCI</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ada240a8c1e41ce847e1a4d02d08eba8"></a><!-- doxytag: member="SimSite3D::HbondPoints::NO_CARBON_NEIGHBOR" ref="ada240a8c1e41ce847e1a4d02d08eba8" args="" -->
+static const atom_vci&nbsp;</td><td class="memItemRight" valign="bottom"><b>NO_CARBON_NEIGHBOR</b> = <a class="el" href="classSimSite3D_1_1atom__t.html#6006207a0eed1857af230dca1dadc4a1">atom_t::NULL_ATOM_VCI</a></td></tr>
 
 <tr><td colspan="2"><br><h2>Private Types</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="7fcd7708b6fd8bdae05d31921b01749d"></a><!-- doxytag: member="ASCbase::HbondPoints::add_angles_t" ref="7fcd7708b6fd8bdae05d31921b01749d" args="(std::map&lt; residue_type, angles_vec &gt; *angles, const std::vector&lt; std::string &gt; &amp;tokens)" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="7fcd7708b6fd8bdae05d31921b01749d"></a><!-- doxytag: member="SimSite3D::HbondPoints::add_angles_t" ref="7fcd7708b6fd8bdae05d31921b01749d" args="(std::map&lt; residue_type, angles_vec &gt; *angles, const std::vector&lt; std::string &gt; &amp;tokens)" -->
 typedef bool(*)&nbsp;</td><td class="memItemRight" valign="bottom"><b>add_angles_t</b> (std::map&lt; residue_type, angles_vec &gt; *angles, const std::vector&lt; std::string &gt; &amp;tokens)</td></tr>
 
 <tr><td colspan="2"><br><h2>Private Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#ff5ef9470438e55c45d421cafde76651">get_nearby_waters</a> (const <a class="el" href="classASCbase_1_1PDBStructure.html">PDBStructure</a> *prot, const std::vector&lt; std::string &gt; &amp;H2O_res, std::vector&lt; atom_vci &gt; *nearby_waters, std::vector&lt; atom_vci &gt; *bind_atoms, std::vector&lt; atom_vci &gt; *rad_atoms)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#ff5ef9470438e55c45d421cafde76651">get_nearby_waters</a> (const <a class="el" href="classSimSite3D_1_1PDBStructure.html">PDBStructure</a> *prot, const std::vector&lt; std::string &gt; &amp;H2O_res, std::vector&lt; atom_vci &gt; *nearby_waters, std::vector&lt; atom_vci &gt; *bind_atoms, std::vector&lt; atom_vci &gt; *rad_atoms)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get points for the specified waters near the binding site.  <a href="#ff5ef9470438e55c45d421cafde76651"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="7409a5ed54b6b5a1091ec470222d8fff"></a><!-- doxytag: member="ASCbase::HbondPoints::init_iterators" ref="7409a5ed54b6b5a1091ec470222d8fff" args="(hbond_ideal_pt_vec *ideal_pts_p, hbond_fit_pt_vec *fit_pts_p, std::vector&lt; int &gt; num_fit_pts)" -->
-void&nbsp;</td><td class="memItemRight" valign="bottom"><b>init_iterators</b> (<a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *ideal_pts_p, <a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *fit_pts_p, std::vector&lt; int &gt; num_fit_pts)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="7409a5ed54b6b5a1091ec470222d8fff"></a><!-- doxytag: member="SimSite3D::HbondPoints::init_iterators" ref="7409a5ed54b6b5a1091ec470222d8fff" args="(hbond_ideal_pt_vec *ideal_pts_p, hbond_fit_pt_vec *fit_pts_p, std::vector&lt; int &gt; num_fit_pts)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>init_iterators</b> (<a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *ideal_pts_p, <a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *fit_pts_p, std::vector&lt; int &gt; num_fit_pts)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#097c5b40240e8c09fe3bbb18fde8f373">get_atom_hbonds</a> (const chain_const_iter chain, const residue_vci residue, const atom_vci B_atom, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, <a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *ideal_pts_p, <a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *fit_pts_p, std::vector&lt; int &gt; *num_fit_pts)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#097c5b40240e8c09fe3bbb18fde8f373">get_atom_hbonds</a> (const chain_const_iter chain, const residue_vci residue, const atom_vci B_atom, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, <a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *ideal_pts_p, <a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *fit_pts_p, std::vector&lt; int &gt; *num_fit_pts)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set down the potential hbonding template points for the given atom.  <a href="#097c5b40240e8c09fe3bbb18fde8f373"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#04d88991f26fd35fddb13e8fd9b24a02">calc_positions</a> (const atom_vci atom, const atom_vci carbon_nbr, const hbond_data_t &amp;hbond_info, const my_float_t **positions, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, <a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *ideal_pts_p, <a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *fit_pts_p, std::vector&lt; int &gt; *num_fit_pts)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#04d88991f26fd35fddb13e8fd9b24a02">calc_positions</a> (const atom_vci atom, const atom_vci carbon_nbr, const hbond_data_t &amp;hbond_info, const my_float_t **positions, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, <a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *ideal_pts_p, <a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *fit_pts_p, std::vector&lt; int &gt; *num_fit_pts)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="68b193317365c110b4f395b82f918ec5"></a><!-- doxytag: member="ASCbase::HbondPoints::calc_volume" ref="68b193317365c110b4f395b82f918ec5" args="(const atom_vci atom, const atom_vci carbon_nbr, const hbond_data_t &amp;hbond_info, const my_float_t **positions, const std::vector&lt; atom_vci &gt; &amp;rad_atoms)" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="68b193317365c110b4f395b82f918ec5"></a><!-- doxytag: member="SimSite3D::HbondPoints::calc_volume" ref="68b193317365c110b4f395b82f918ec5" args="(const atom_vci atom, const atom_vci carbon_nbr, const hbond_data_t &amp;hbond_info, const my_float_t **positions, const std::vector&lt; atom_vci &gt; &amp;rad_atoms)" -->
 bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>calc_volume</b> (const atom_vci atom, const atom_vci carbon_nbr, const hbond_data_t &amp;hbond_info, const my_float_t **positions, const std::vector&lt; atom_vci &gt; &amp;rad_atoms)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e49c038430c23fd41cec0f86a7f8d3a0"></a><!-- doxytag: member="ASCbase::HbondPoints::compute_offset" ref="e49c038430c23fd41cec0f86a7f8d3a0" args="(const my_float_t bond_len, const my_float_t alpha, const my_float_t beta, const atom_vci atom, my_float_t *offset)" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e49c038430c23fd41cec0f86a7f8d3a0"></a><!-- doxytag: member="SimSite3D::HbondPoints::compute_offset" ref="e49c038430c23fd41cec0f86a7f8d3a0" args="(const my_float_t bond_len, const my_float_t alpha, const my_float_t beta, const atom_vci atom, my_float_t *offset)" -->
 void&nbsp;</td><td class="memItemRight" valign="bottom"><b>compute_offset</b> (const my_float_t bond_len, const my_float_t alpha, const my_float_t beta, const atom_vci atom, my_float_t *offset)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#94654be41f529fa7a22c08ff9f422e50">add_water_points</a> (const atom_vci water_O, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, <a class="el" href="classASCbase_1_1WaterPoints.html">WaterPoints</a> *water_hbond_pts, <a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *ideal_pts_p, <a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *fit_pts_p, std::vector&lt; int &gt; *num_fit_pts)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#94654be41f529fa7a22c08ff9f422e50">add_water_points</a> (const atom_vci water_O, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, <a class="el" href="classSimSite3D_1_1WaterPoints.html">WaterPoints</a> *water_hbond_pts, <a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *ideal_pts_p, <a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *fit_pts_p, std::vector&lt; int &gt; *num_fit_pts)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#a51c90df30b66be9745fe00ea616d5be">add_metal_points</a> (const atom_vci metal, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, <a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *ideal_pts_p, <a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *fit_pts_p, std::vector&lt; int &gt; *num_fit_pts)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#a51c90df30b66be9745fe00ea616d5be">add_metal_points</a> (const atom_vci metal, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, <a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *ideal_pts_p, <a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *fit_pts_p, std::vector&lt; int &gt; *num_fit_pts)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#ddac8742752fc700af5512d4ee7b4d75">transform_point</a> (const my_float_t bond_len, const my_float_t alpha, const my_float_t beta, const my_float_t *R_inv, my_float_t *pt)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#ddac8742752fc700af5512d4ee7b4d75">transform_point</a> (const my_float_t bond_len, const my_float_t alpha, const my_float_t beta, const my_float_t *R_inv, my_float_t *pt)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wrapper function to setup temporaries and transform a given point.  <a href="#ddac8742752fc700af5512d4ee7b4d75"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#d0b52b652b7ec3367efa7d507b10d663">sidechain_nhbr_pos</a> (residue_vci residue, const <a class="el" href="structASCbase_1_1hbond__triad__t.html">hbond_triad_t</a> &amp;triad, const my_float_t **positions, atom_vci *carbon_nbr)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#d0b52b652b7ec3367efa7d507b10d663">sidechain_nhbr_pos</a> (residue_vci residue, const <a class="el" href="structSimSite3D_1_1hbond__triad__t.html">hbond_triad_t</a> &amp;triad, const my_float_t **positions, atom_vci *carbon_nbr)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Given the hbond triad get the postions of the atoms nbr_A and nbr_C.  <a href="#d0b52b652b7ec3367efa7d507b10d663"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#9c96fe73b65271a49aebf9e4f17fc787">load_hbond_angles</a> (<a class="el" href="classASCbase_1_1GenPointsParameters.html#a6dc6c525bc5758a44eb9713cefd1723">GenPointsParameters::hbond_method_t</a> hbond_density, std::string param_path)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#9c96fe73b65271a49aebf9e4f17fc787">load_hbond_angles</a> (<a class="el" href="classSimSite3D_1_1GenPointsParameters.html#a6dc6c525bc5758a44eb9713cefd1723">GenPointsParameters::hbond_method_t</a> hbond_density, std::string param_path)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Read in the ideal and favored hbond angles for the binding residues.  <a href="#9c96fe73b65271a49aebf9e4f17fc787"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#dd0d8a2958197f4affccd88818d0f90c">read_angles_file</a> (std::string fname, add_angles_t add_angles)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#dd0d8a2958197f4affccd88818d0f90c">read_angles_file</a> (std::string fname, add_angles_t add_angles)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#1d461841f496a487d56a8041b3443fc1">build_residue_table</a> ()</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#1d461841f496a487d56a8041b3443fc1">build_residue_table</a> ()</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#14615a8c95ec86228c24de2b96dab9eb">add_fit_point</a> (const atom_vci atom, const my_float_t *pt_pos, const interactionType pt_act_type, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, <a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *fit_pts_p)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#14615a8c95ec86228c24de2b96dab9eb">add_fit_point</a> (const atom_vci atom, const my_float_t *pt_pos, const interactionType pt_act_type, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, <a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *fit_pts_p)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#7a16d0105816da029d43b16136fa67f8">add_ideal_point</a> (const atom_vci atom, const atom_vci carbon_nbr, const my_float_t *pt_pos, const interactionType pt_act_type, const uint pt_num, const uint num_pts, <a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *ideal_pts_p, std::vector&lt; int &gt; *num_fit_pts)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#7a16d0105816da029d43b16136fa67f8">add_ideal_point</a> (const atom_vci atom, const atom_vci carbon_nbr, const my_float_t *pt_pos, const interactionType pt_act_type, const uint pt_num, const uint num_pts, <a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *ideal_pts_p, std::vector&lt; int &gt; *num_fit_pts)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Add hbond ideal point to the ideal points vector.  <a href="#7a16d0105816da029d43b16136fa67f8"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="45d676fb5eb395fd2e4f61f94ea67e76"></a><!-- doxytag: member="ASCbase::HbondPoints::load_carbon_nbrs" ref="45d676fb5eb395fd2e4f61f94ea67e76" args="(const std::string rad_fname)" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="45d676fb5eb395fd2e4f61f94ea67e76"></a><!-- doxytag: member="SimSite3D::HbondPoints::load_carbon_nbrs" ref="45d676fb5eb395fd2e4f61f94ea67e76" args="(const std::string rad_fname)" -->
 bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>load_carbon_nbrs</b> (const std::string rad_fname)</td></tr>
 
 <tr><td colspan="2"><br><h2>Static Private Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="1c14aa20232ac3a35eba9e30f38a1f80"></a><!-- doxytag: member="ASCbase::HbondPoints::add_ideal_angles" ref="1c14aa20232ac3a35eba9e30f38a1f80" args="(std::map&lt; residue_type, angles_vec &gt; *angles, const std::vector&lt; std::string &gt; &amp;tokens)" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="1c14aa20232ac3a35eba9e30f38a1f80"></a><!-- doxytag: member="SimSite3D::HbondPoints::add_ideal_angles" ref="1c14aa20232ac3a35eba9e30f38a1f80" args="(std::map&lt; residue_type, angles_vec &gt; *angles, const std::vector&lt; std::string &gt; &amp;tokens)" -->
 static bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>add_ideal_angles</b> (std::map&lt; residue_type, angles_vec &gt; *angles, const std::vector&lt; std::string &gt; &amp;tokens)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="21eb7ee3276d166291a4a4d9a92f3988"></a><!-- doxytag: member="ASCbase::HbondPoints::add_favored_angles" ref="21eb7ee3276d166291a4a4d9a92f3988" args="(std::map&lt; residue_type, angles_vec &gt; *angles, const std::vector&lt; std::string &gt; &amp;tokens)" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="21eb7ee3276d166291a4a4d9a92f3988"></a><!-- doxytag: member="SimSite3D::HbondPoints::add_favored_angles" ref="21eb7ee3276d166291a4a4d9a92f3988" args="(std::map&lt; residue_type, angles_vec &gt; *angles, const std::vector&lt; std::string &gt; &amp;tokens)" -->
 static bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>add_favored_angles</b> (std::map&lt; residue_type, angles_vec &gt; *angles, const std::vector&lt; std::string &gt; &amp;tokens)</td></tr>
 
 <tr><td colspan="2"><br><h2>Private Attributes</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b8bd71a270952792930378c3ff38468b"></a><!-- doxytag: member="ASCbase::HbondPoints::bounding_volume" ref="b8bd71a270952792930378c3ff38468b" args="" -->
-<a class="el" href="classASCbase_1_1BoundingVolume.html">BoundingVolume</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#b8bd71a270952792930378c3ff38468b">bounding_volume</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b8bd71a270952792930378c3ff38468b"></a><!-- doxytag: member="SimSite3D::HbondPoints::bounding_volume" ref="b8bd71a270952792930378c3ff38468b" args="" -->
+<a class="el" href="classSimSite3D_1_1BoundingVolume.html">BoundingVolume</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#b8bd71a270952792930378c3ff38468b">bounding_volume</a></td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Pointer to the template bounding volume. <br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d57a41a394ef6493da286ca08693e4e7"></a><!-- doxytag: member="ASCbase::HbondPoints::fit_pts" ref="d57a41a394ef6493da286ca08693e4e7" args="" -->
-<a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_fit_pt_vec</a>&nbsp;</td><td class="memItemRight" valign="bottom"><b>fit_pts</b></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d57a41a394ef6493da286ca08693e4e7"></a><!-- doxytag: member="SimSite3D::HbondPoints::fit_pts" ref="d57a41a394ef6493da286ca08693e4e7" args="" -->
+<a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_fit_pt_vec</a>&nbsp;</td><td class="memItemRight" valign="bottom"><b>fit_pts</b></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="35657ed1abbe90e1ba27730d228c184d"></a><!-- doxytag: member="ASCbase::HbondPoints::ideal_pts" ref="35657ed1abbe90e1ba27730d228c184d" args="" -->
-<a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_ideal_pt_vec</a>&nbsp;</td><td class="memItemRight" valign="bottom"><b>ideal_pts</b></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="35657ed1abbe90e1ba27730d228c184d"></a><!-- doxytag: member="SimSite3D::HbondPoints::ideal_pts" ref="35657ed1abbe90e1ba27730d228c184d" args="" -->
+<a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_ideal_pt_vec</a>&nbsp;</td><td class="memItemRight" valign="bottom"><b>ideal_pts</b></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c8dbf8d8fe8853dd5e8b507cd67a4c7e"></a><!-- doxytag: member="ASCbase::HbondPoints::A_O_angles" ref="c8dbf8d8fe8853dd5e8b507cd67a4c7e" args="" -->
-std::map&lt; residue_type, angles_vec &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#c8dbf8d8fe8853dd5e8b507cd67a4c7e">A_O_angles</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c8dbf8d8fe8853dd5e8b507cd67a4c7e"></a><!-- doxytag: member="SimSite3D::HbondPoints::A_O_angles" ref="c8dbf8d8fe8853dd5e8b507cd67a4c7e" args="" -->
+std::map&lt; residue_type, angles_vec &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#c8dbf8d8fe8853dd5e8b507cd67a4c7e">A_O_angles</a></td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">O hbond angles table -- keyed by PDB residue. <br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="324506b3ad239e15f1f82c4b7219ca6a"></a><!-- doxytag: member="ASCbase::HbondPoints::A_N_angles" ref="324506b3ad239e15f1f82c4b7219ca6a" args="" -->
-std::map&lt; residue_type, angles_vec &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#324506b3ad239e15f1f82c4b7219ca6a">A_N_angles</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="324506b3ad239e15f1f82c4b7219ca6a"></a><!-- doxytag: member="SimSite3D::HbondPoints::A_N_angles" ref="324506b3ad239e15f1f82c4b7219ca6a" args="" -->
+std::map&lt; residue_type, angles_vec &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#324506b3ad239e15f1f82c4b7219ca6a">A_N_angles</a></td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">N hbond angles table -- keyed by PDB residue. <br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="45a1db04f743d2c692fc6c84be45765f"></a><!-- doxytag: member="ASCbase::HbondPoints::hbond_residue_table" ref="45a1db04f743d2c692fc6c84be45765f" args="" -->
-residue_table_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#45a1db04f743d2c692fc6c84be45765f">hbond_residue_table</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="45a1db04f743d2c692fc6c84be45765f"></a><!-- doxytag: member="SimSite3D::HbondPoints::hbond_residue_table" ref="45a1db04f743d2c692fc6c84be45765f" args="" -->
+residue_table_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#45a1db04f743d2c692fc6c84be45765f">hbond_residue_table</a></td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Table holding the Hbond geometry -- keyed by PDB residue -- for a given residue and atom. <br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4cae614e34c14cde3be1c4c794944c87"></a><!-- doxytag: member="ASCbase::HbondPoints::A_fail" ref="4cae614e34c14cde3be1c4c794944c87" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4cae614e34c14cde3be1c4c794944c87"></a><!-- doxytag: member="SimSite3D::HbondPoints::A_fail" ref="4cae614e34c14cde3be1c4c794944c87" args="" -->
 bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>A_fail</b></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="1314acbf5e42587a66484b4c37e766e2"></a><!-- doxytag: member="ASCbase::HbondPoints::A_compute_volume" ref="1314acbf5e42587a66484b4c37e766e2" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="1314acbf5e42587a66484b4c37e766e2"></a><!-- doxytag: member="SimSite3D::HbondPoints::A_compute_volume" ref="1314acbf5e42587a66484b4c37e766e2" args="" -->
 bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>A_compute_volume</b></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="806e96a34dca894dadb4b5b97fbb4117"></a><!-- doxytag: member="ASCbase::HbondPoints::A_hbond_vol" ref="806e96a34dca894dadb4b5b97fbb4117" args="" -->
-<a class="el" href="classASCbase_1_1my__float__array.html">my_float_array</a>&nbsp;</td><td class="memItemRight" valign="bottom"><b>A_hbond_vol</b></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="806e96a34dca894dadb4b5b97fbb4117"></a><!-- doxytag: member="SimSite3D::HbondPoints::A_hbond_vol" ref="806e96a34dca894dadb4b5b97fbb4117" args="" -->
+<a class="el" href="classSimSite3D_1_1my__float__array.html">my_float_array</a>&nbsp;</td><td class="memItemRight" valign="bottom"><b>A_hbond_vol</b></td></tr>
 
 <tr><td colspan="2"><br><h2>Static Private Attributes</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="92890c70651529c4a1614cf1860ee411"></a><!-- doxytag: member="ASCbase::HbondPoints::MAXRADDIST" ref="92890c70651529c4a1614cf1860ee411" args="" -->
-static const my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#92890c70651529c4a1614cf1860ee411">MAXRADDIST</a> = 9.0</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="92890c70651529c4a1614cf1860ee411"></a><!-- doxytag: member="SimSite3D::HbondPoints::MAXRADDIST" ref="92890c70651529c4a1614cf1860ee411" args="" -->
+static const my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#92890c70651529c4a1614cf1860ee411">MAXRADDIST</a> = 9.0</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">So called rad file distance. <br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="90584820c666418a18d36d3b8b84e5b8"></a><!-- doxytag: member="ASCbase::HbondPoints::MAXBINDDIST" ref="90584820c666418a18d36d3b8b84e5b8" args="" -->
-static const my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#90584820c666418a18d36d3b8b84e5b8">MAXBINDDIST</a> = 5.0</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="90584820c666418a18d36d3b8b84e5b8"></a><!-- doxytag: member="SimSite3D::HbondPoints::MAXBINDDIST" ref="90584820c666418a18d36d3b8b84e5b8" args="" -->
+static const my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#90584820c666418a18d36d3b8b84e5b8">MAXBINDDIST</a> = 5.0</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">So called bind file distance. <br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d891ae0c548a5c6850c3921581a98bb3"></a><!-- doxytag: member="ASCbase::HbondPoints::MIN_VDW_DIST" ref="d891ae0c548a5c6850c3921581a98bb3" args="" -->
-static const my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#d891ae0c548a5c6850c3921581a98bb3">MIN_VDW_DIST</a> = 2.5</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d891ae0c548a5c6850c3921581a98bb3"></a><!-- doxytag: member="SimSite3D::HbondPoints::MIN_VDW_DIST" ref="d891ae0c548a5c6850c3921581a98bb3" args="" -->
+static const my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#d891ae0c548a5c6850c3921581a98bb3">MIN_VDW_DIST</a> = 2.5</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Min distance for template pt to prot atom. <br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">static const my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#c3782b5110cb3ebf7c9c81fe98bac1a8">MIN_VDW_DIST_2</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static const my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#c3782b5110cb3ebf7c9c81fe98bac1a8">MIN_VDW_DIST_2</a></td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Square of min vdw dist.  <a href="#c3782b5110cb3ebf7c9c81fe98bac1a8"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="56639b91eee7ddcb46dc46952accc1e9"></a><!-- doxytag: member="ASCbase::HbondPoints::MIN_VDW_DIST_METAL" ref="56639b91eee7ddcb46dc46952accc1e9" args="" -->
-static const my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#56639b91eee7ddcb46dc46952accc1e9">MIN_VDW_DIST_METAL</a> = 2.0</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="56639b91eee7ddcb46dc46952accc1e9"></a><!-- doxytag: member="SimSite3D::HbondPoints::MIN_VDW_DIST_METAL" ref="56639b91eee7ddcb46dc46952accc1e9" args="" -->
+static const my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#56639b91eee7ddcb46dc46952accc1e9">MIN_VDW_DIST_METAL</a> = 2.0</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Min distance for template pt to metal atom. <br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">static const my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#9fbe94d92727f2f547b3cc0bf6b5543a">MIN_VDW_DIST_METAL_2</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static const my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#9fbe94d92727f2f547b3cc0bf6b5543a">MIN_VDW_DIST_METAL_2</a></td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Square of min vdw dist to metals.  <a href="#9fbe94d92727f2f547b3cc0bf6b5543a"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="47f608875e817aa6b3ebf9a3c21b731f"></a><!-- doxytag: member="ASCbase::HbondPoints::_fname" ref="47f608875e817aa6b3ebf9a3c21b731f" args="" -->
-static const std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1HbondPoints.html#47f608875e817aa6b3ebf9a3c21b731f">_fname</a> = &quot;HbondPoints.C&quot;</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="47f608875e817aa6b3ebf9a3c21b731f"></a><!-- doxytag: member="SimSite3D::HbondPoints::_fname" ref="47f608875e817aa6b3ebf9a3c21b731f" args="" -->
+static const std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1HbondPoints.html#47f608875e817aa6b3ebf9a3c21b731f">_fname</a> = &quot;HbondPoints.C&quot;</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">"HbondPoints.C" <br></td></tr>
 </table>
@@ -195,7 +195,7 @@ static const std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a c
 Compute the hydrogen bonding template points based on the protein residues in the binding site. 
 <p>
 <hr><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" name="da198374071ef598a898466343ca4d17"></a><!-- doxytag: member="ASCbase::HbondPoints::HbondPoints" ref="da198374071ef598a898466343ca4d17" args="(std::istream &amp;in, const uint num_lines, PDBBase &amp;rad_atoms, PDBBase &amp;points)" -->
+<a class="anchor" name="da198374071ef598a898466343ca4d17"></a><!-- doxytag: member="SimSite3D::HbondPoints::HbondPoints" ref="da198374071ef598a898466343ca4d17" args="(std::istream &amp;in, const uint num_lines, PDBBase &amp;rad_atoms, PDBBase &amp;points)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -214,13 +214,13 @@ Compute the hydrogen bonding template points based on the protein residues in th
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classASCbase_1_1PDBBase.html">PDBBase</a> &amp;&nbsp;</td>
+          <td class="paramtype"><a class="el" href="classSimSite3D_1_1PDBBase.html">PDBBase</a> &amp;&nbsp;</td>
           <td class="paramname"> <em>rad_atoms</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classASCbase_1_1PDBBase.html">PDBBase</a> &amp;&nbsp;</td>
+          <td class="paramtype"><a class="el" href="classSimSite3D_1_1PDBBase.html">PDBBase</a> &amp;&nbsp;</td>
           <td class="paramname"> <em>points</em></td><td>&nbsp;</td>
         </tr>
         <tr>
@@ -238,14 +238,14 @@ Build the hbonds_pts vector from a stored sitemap.
 This needs to be updated at some point so that the atoms and points are correctly typed -- so that there is no possiblity of passing in the wrong arguments 
 </div>
 </div><p>
-<a class="anchor" name="ffcbf1d30cd9190ad924c5a263f387c6"></a><!-- doxytag: member="ASCbase::HbondPoints::HbondPoints" ref="ffcbf1d30cd9190ad924c5a263f387c6" args="(const GenPointsParameters::hbond_method_t hbond_density, const std::string param_path, BoundingVolume *vol_in, const bool compute_volume=false)" -->
+<a class="anchor" name="ffcbf1d30cd9190ad924c5a263f387c6"></a><!-- doxytag: member="SimSite3D::HbondPoints::HbondPoints" ref="ffcbf1d30cd9190ad924c5a263f387c6" args="(const GenPointsParameters::hbond_method_t hbond_density, const std::string param_path, BoundingVolume *vol_in, const bool compute_volume=false)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">HbondPoints::HbondPoints           </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASCbase_1_1GenPointsParameters.html#a6dc6c525bc5758a44eb9713cefd1723">GenPointsParameters::hbond_method_t</a>&nbsp;</td>
+          <td class="paramtype">const <a class="el" href="classSimSite3D_1_1GenPointsParameters.html#a6dc6c525bc5758a44eb9713cefd1723">GenPointsParameters::hbond_method_t</a>&nbsp;</td>
           <td class="paramname"> <em>hbond_density</em>, </td>
         </tr>
         <tr>
@@ -257,7 +257,7 @@ This needs to be updated at some point so that the atoms and points are correctl
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classASCbase_1_1BoundingVolume.html">BoundingVolume</a> *&nbsp;</td>
+          <td class="paramtype"><a class="el" href="classSimSite3D_1_1BoundingVolume.html">BoundingVolume</a> *&nbsp;</td>
           <td class="paramname"> <em>vol_in</em>, </td>
         </tr>
         <tr>
@@ -282,7 +282,7 @@ Sets a pointer to the bounding volume, loads the parameters for the hbond geomet
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>density</em>&nbsp;</td><td>How coarse or finely to lay down template points </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>param_path</em>&nbsp;</td><td>Path to the ASCbase parameters directory </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>param_path</em>&nbsp;</td><td>Path to the SimSite3D parameters directory </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>vol_in</em>&nbsp;</td><td>Reference to the template bounding volume </td></tr>
   </table>
 </dl>
@@ -290,7 +290,7 @@ Sets a pointer to the bounding volume, loads the parameters for the hbond geomet
 </div>
 </div><p>
 <hr><h2>Member Function Documentation</h2>
-<a class="anchor" name="14615a8c95ec86228c24de2b96dab9eb"></a><!-- doxytag: member="ASCbase::HbondPoints::add_fit_point" ref="14615a8c95ec86228c24de2b96dab9eb" args="(const atom_vci atom, const my_float_t *pt_pos, const interactionType pt_act_type, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, hbond_fit_pt_vec *fit_pts_p)" -->
+<a class="anchor" name="14615a8c95ec86228c24de2b96dab9eb"></a><!-- doxytag: member="SimSite3D::HbondPoints::add_fit_point" ref="14615a8c95ec86228c24de2b96dab9eb" args="(const atom_vci atom, const my_float_t *pt_pos, const interactionType pt_act_type, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, hbond_fit_pt_vec *fit_pts_p)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -321,7 +321,7 @@ Sets a pointer to the bounding volume, loads the parameters for the hbond geomet
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *&nbsp;</td>
+          <td class="paramtype"><a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *&nbsp;</td>
           <td class="paramname"> <em>fit_pts_p</em></td><td>&nbsp;</td>
         </tr>
         <tr>
@@ -347,7 +347,7 @@ Sets a pointer to the bounding volume, loads the parameters for the hbond geomet
 
 </div>
 </div><p>
-<a class="anchor" name="7a16d0105816da029d43b16136fa67f8"></a><!-- doxytag: member="ASCbase::HbondPoints::add_ideal_point" ref="7a16d0105816da029d43b16136fa67f8" args="(const atom_vci atom, const atom_vci carbon_nbr, const my_float_t *pt_pos, const interactionType pt_act_type, const uint pt_num, const uint num_pts, hbond_ideal_pt_vec *ideal_pts_p, std::vector&lt; int &gt; *num_fit_pts)" -->
+<a class="anchor" name="7a16d0105816da029d43b16136fa67f8"></a><!-- doxytag: member="SimSite3D::HbondPoints::add_ideal_point" ref="7a16d0105816da029d43b16136fa67f8" args="(const atom_vci atom, const atom_vci carbon_nbr, const my_float_t *pt_pos, const interactionType pt_act_type, const uint pt_num, const uint num_pts, hbond_ideal_pt_vec *ideal_pts_p, std::vector&lt; int &gt; *num_fit_pts)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -390,7 +390,7 @@ Sets a pointer to the bounding volume, loads the parameters for the hbond geomet
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *&nbsp;</td>
+          <td class="paramtype"><a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *&nbsp;</td>
           <td class="paramname"> <em>ideal_pts_p</em>, </td>
         </tr>
         <tr>
@@ -425,7 +425,7 @@ Add hbond ideal point to the ideal points vector.
 
 </div>
 </div><p>
-<a class="anchor" name="a51c90df30b66be9745fe00ea616d5be"></a><!-- doxytag: member="ASCbase::HbondPoints::add_metal_points" ref="a51c90df30b66be9745fe00ea616d5be" args="(const atom_vci metal, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, hbond_ideal_pt_vec *ideal_pts_p, hbond_fit_pt_vec *fit_pts_p, std::vector&lt; int &gt; *num_fit_pts)" -->
+<a class="anchor" name="a51c90df30b66be9745fe00ea616d5be"></a><!-- doxytag: member="SimSite3D::HbondPoints::add_metal_points" ref="a51c90df30b66be9745fe00ea616d5be" args="(const atom_vci metal, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, hbond_ideal_pt_vec *ideal_pts_p, hbond_fit_pt_vec *fit_pts_p, std::vector&lt; int &gt; *num_fit_pts)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -444,13 +444,13 @@ Add hbond ideal point to the ideal points vector.
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *&nbsp;</td>
+          <td class="paramtype"><a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *&nbsp;</td>
           <td class="paramname"> <em>ideal_pts_p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *&nbsp;</td>
+          <td class="paramtype"><a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *&nbsp;</td>
           <td class="paramname"> <em>fit_pts_p</em>, </td>
         </tr>
         <tr>
@@ -469,7 +469,7 @@ Add hbond ideal point to the ideal points vector.
 <div class="memdoc">
 
 <p>
-This method is similar to that of SLIDE with a couple of exceptions: 1) To stay consistent with the ASCbase handling of points, no template points can be closer than 2.5 (A) to the center of a metal atom (except for the template points arising from a given metal atom). 2) The distribution of points on the sphere is somewhat different and arises from a systematic discretization of a sphere<p>
+This method is similar to that of SLIDE with a couple of exceptions: 1) To stay consistent with the SimSite3D handling of points, no template points can be closer than 2.5 (A) to the center of a metal atom (except for the template points arising from a given metal atom). 2) The distribution of points on the sphere is somewhat different and arises from a systematic discretization of a sphere<p>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>metal</em>&nbsp;</td><td>Iterator to the metal atom that needs template points </td></tr>
@@ -482,7 +482,7 @@ This method is similar to that of SLIDE with a couple of exceptions: 1) To stay 
 
 </div>
 </div><p>
-<a class="anchor" name="94654be41f529fa7a22c08ff9f422e50"></a><!-- doxytag: member="ASCbase::HbondPoints::add_water_points" ref="94654be41f529fa7a22c08ff9f422e50" args="(const atom_vci water_O, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, WaterPoints *water_hbond_pts, hbond_ideal_pt_vec *ideal_pts_p, hbond_fit_pt_vec *fit_pts_p, std::vector&lt; int &gt; *num_fit_pts)" -->
+<a class="anchor" name="94654be41f529fa7a22c08ff9f422e50"></a><!-- doxytag: member="SimSite3D::HbondPoints::add_water_points" ref="94654be41f529fa7a22c08ff9f422e50" args="(const atom_vci water_O, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, WaterPoints *water_hbond_pts, hbond_ideal_pt_vec *ideal_pts_p, hbond_fit_pt_vec *fit_pts_p, std::vector&lt; int &gt; *num_fit_pts)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -501,19 +501,19 @@ This method is similar to that of SLIDE with a couple of exceptions: 1) To stay 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classASCbase_1_1WaterPoints.html">WaterPoints</a> *&nbsp;</td>
+          <td class="paramtype"><a class="el" href="classSimSite3D_1_1WaterPoints.html">WaterPoints</a> *&nbsp;</td>
           <td class="paramname"> <em>water_hbond_pts</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *&nbsp;</td>
+          <td class="paramtype"><a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *&nbsp;</td>
           <td class="paramname"> <em>ideal_pts_p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *&nbsp;</td>
+          <td class="paramtype"><a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *&nbsp;</td>
           <td class="paramname"> <em>fit_pts_p</em>, </td>
         </tr>
         <tr>
@@ -545,7 +545,7 @@ This method is similar to that of SLIDE with a couple of exceptions: 1) To stay 
 
 </div>
 </div><p>
-<a class="anchor" name="1d461841f496a487d56a8041b3443fc1"></a><!-- doxytag: member="ASCbase::HbondPoints::build_residue_table" ref="1d461841f496a487d56a8041b3443fc1" args="()" -->
+<a class="anchor" name="1d461841f496a487d56a8041b3443fc1"></a><!-- doxytag: member="SimSite3D::HbondPoints::build_residue_table" ref="1d461841f496a487d56a8041b3443fc1" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -564,7 +564,7 @@ This method is similar to that of SLIDE with a couple of exceptions: 1) To stay 
 Build a table keyed by residue type that holds the residues and corresponding atoms which have been parameterized to make hbonds 
 </div>
 </div><p>
-<a class="anchor" name="04d88991f26fd35fddb13e8fd9b24a02"></a><!-- doxytag: member="ASCbase::HbondPoints::calc_positions" ref="04d88991f26fd35fddb13e8fd9b24a02" args="(const atom_vci atom, const atom_vci carbon_nbr, const hbond_data_t &amp;hbond_info, const my_float_t **positions, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, hbond_ideal_pt_vec *ideal_pts_p, hbond_fit_pt_vec *fit_pts_p, std::vector&lt; int &gt; *num_fit_pts)" -->
+<a class="anchor" name="04d88991f26fd35fddb13e8fd9b24a02"></a><!-- doxytag: member="SimSite3D::HbondPoints::calc_positions" ref="04d88991f26fd35fddb13e8fd9b24a02" args="(const atom_vci atom, const atom_vci carbon_nbr, const hbond_data_t &amp;hbond_info, const my_float_t **positions, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, hbond_ideal_pt_vec *ideal_pts_p, hbond_fit_pt_vec *fit_pts_p, std::vector&lt; int &gt; *num_fit_pts)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -601,13 +601,13 @@ Build a table keyed by residue type that holds the residues and corresponding at
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *&nbsp;</td>
+          <td class="paramtype"><a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *&nbsp;</td>
           <td class="paramname"> <em>ideal_pts_p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *&nbsp;</td>
+          <td class="paramtype"><a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *&nbsp;</td>
           <td class="paramname"> <em>fit_pts_p</em>, </td>
         </tr>
         <tr>
@@ -641,12 +641,12 @@ Given the hbonding atom and 2 of its neighbors, compute the template points by t
 
 </div>
 </div><p>
-<a class="anchor" name="ff599a0e97c9b535f644765f8a63be1f"></a><!-- doxytag: member="ASCbase::HbondPoints::compute_RMSD" ref="ff599a0e97c9b535f644765f8a63be1f" args="() const " -->
+<a class="anchor" name="ff599a0e97c9b535f644765f8a63be1f"></a><!-- doxytag: member="SimSite3D::HbondPoints::compute_RMSD" ref="ff599a0e97c9b535f644765f8a63be1f" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">my_float_t ASCbase::HbondPoints::compute_RMSD           </td>
+          <td class="memname">my_float_t SimSite3D::HbondPoints::compute_RMSD           </td>
           <td>(</td>
           <td class="paramname">          </td>
           <td>&nbsp;)&nbsp;</td>
@@ -660,14 +660,14 @@ Given the hbonding atom and 2 of its neighbors, compute the template points by t
 Compute the root mean squared deviation (RMSD) between the current and orignial positions of the fit points 
 </div>
 </div><p>
-<a class="anchor" name="4ac75a890a38f90de37bd4793da50fef"></a><!-- doxytag: member="ASCbase::HbondPoints::find_binding_site_hbonds" ref="4ac75a890a38f90de37bd4793da50fef" args="(const PDBStructure *prot, const std::vector&lt; std::string &gt; &amp;H2O_res_names, const bool include_metals, const interact_atoms_vec &amp;hbond_atoms, std::vector&lt; atom_vci &gt; *bind_atoms, std::vector&lt; atom_vci &gt; *rad_atoms)" -->
+<a class="anchor" name="4ac75a890a38f90de37bd4793da50fef"></a><!-- doxytag: member="SimSite3D::HbondPoints::find_binding_site_hbonds" ref="4ac75a890a38f90de37bd4793da50fef" args="(const PDBStructure *prot, const std::vector&lt; std::string &gt; &amp;H2O_res_names, const bool include_metals, const interact_atoms_vec &amp;hbond_atoms, std::vector&lt; atom_vci &gt; *bind_atoms, std::vector&lt; atom_vci &gt; *rad_atoms)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void HbondPoints::find_binding_site_hbonds           </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASCbase_1_1PDBStructure.html">PDBStructure</a> *&nbsp;</td>
+          <td class="paramtype">const <a class="el" href="classSimSite3D_1_1PDBStructure.html">PDBStructure</a> *&nbsp;</td>
           <td class="paramname"> <em>prot</em>, </td>
         </tr>
         <tr>
@@ -725,7 +725,7 @@ Inclusion of water molecules requires correct protonation and orientation of all
 
 </div>
 </div><p>
-<a class="anchor" name="097c5b40240e8c09fe3bbb18fde8f373"></a><!-- doxytag: member="ASCbase::HbondPoints::get_atom_hbonds" ref="097c5b40240e8c09fe3bbb18fde8f373" args="(const chain_const_iter chain, const residue_vci residue, const atom_vci B_atom, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, hbond_ideal_pt_vec *ideal_pts_p, hbond_fit_pt_vec *fit_pts_p, std::vector&lt; int &gt; *num_fit_pts)" -->
+<a class="anchor" name="097c5b40240e8c09fe3bbb18fde8f373"></a><!-- doxytag: member="SimSite3D::HbondPoints::get_atom_hbonds" ref="097c5b40240e8c09fe3bbb18fde8f373" args="(const chain_const_iter chain, const residue_vci residue, const atom_vci B_atom, const std::vector&lt; atom_vci &gt; &amp;rad_atoms, hbond_ideal_pt_vec *ideal_pts_p, hbond_fit_pt_vec *fit_pts_p, std::vector&lt; int &gt; *num_fit_pts)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -756,13 +756,13 @@ Inclusion of water molecules requires correct protonation and orientation of all
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *&nbsp;</td>
+          <td class="paramtype"><a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_ideal_pt_vec</a> *&nbsp;</td>
           <td class="paramname"> <em>ideal_pts_p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classASCbase_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *&nbsp;</td>
+          <td class="paramtype"><a class="el" href="classSimSite3D_1_1dir__point__storage.html">hbond_fit_pt_vec</a> *&nbsp;</td>
           <td class="paramname"> <em>fit_pts_p</em>, </td>
         </tr>
         <tr>
@@ -798,12 +798,12 @@ Using the given atom and residue, set down the hbond template points for that at
 
 </div>
 </div><p>
-<a class="anchor" name="315af5cac9bd9bbd51d52bd2539ed075"></a><!-- doxytag: member="ASCbase::HbondPoints::get_current_inverse_3D_transform" ref="315af5cac9bd9bbd51d52bd2539ed075" args="(Quaternion *Q, my_float_t *T) const " -->
+<a class="anchor" name="315af5cac9bd9bbd51d52bd2539ed075"></a><!-- doxytag: member="SimSite3D::HbondPoints::get_current_inverse_3D_transform" ref="315af5cac9bd9bbd51d52bd2539ed075" args="(Quaternion *Q, my_float_t *T) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ASCbase::HbondPoints::get_current_inverse_3D_transform           </td>
+          <td class="memname">void SimSite3D::HbondPoints::get_current_inverse_3D_transform           </td>
           <td>(</td>
           <td class="paramtype">Quaternion *&nbsp;</td>
           <td class="paramname"> <em>Q</em>, </td>
@@ -827,14 +827,14 @@ Using the given atom and residue, set down the hbond template points for that at
 Get transform to move current fit points to original position of the fit points 
 </div>
 </div><p>
-<a class="anchor" name="ff5ef9470438e55c45d421cafde76651"></a><!-- doxytag: member="ASCbase::HbondPoints::get_nearby_waters" ref="ff5ef9470438e55c45d421cafde76651" args="(const PDBStructure *prot, const std::vector&lt; std::string &gt; &amp;H2O_res, std::vector&lt; atom_vci &gt; *nearby_waters, std::vector&lt; atom_vci &gt; *bind_atoms, std::vector&lt; atom_vci &gt; *rad_atoms)" -->
+<a class="anchor" name="ff5ef9470438e55c45d421cafde76651"></a><!-- doxytag: member="SimSite3D::HbondPoints::get_nearby_waters" ref="ff5ef9470438e55c45d421cafde76651" args="(const PDBStructure *prot, const std::vector&lt; std::string &gt; &amp;H2O_res, std::vector&lt; atom_vci &gt; *nearby_waters, std::vector&lt; atom_vci &gt; *bind_atoms, std::vector&lt; atom_vci &gt; *rad_atoms)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void HbondPoints::get_nearby_waters           </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASCbase_1_1PDBStructure.html">PDBStructure</a> *&nbsp;</td>
+          <td class="paramtype">const <a class="el" href="classSimSite3D_1_1PDBStructure.html">PDBStructure</a> *&nbsp;</td>
           <td class="paramname"> <em>prot</em>, </td>
         </tr>
         <tr>
@@ -876,12 +876,12 @@ Get points for the specified waters near the binding site.
 Check if water atoms are near the binding site based on the location of the oxygen atoms of H2O -- assume that if a chainID is specified with the water residue #, the chainID always preceeds the residue #. Similarly if an insertion code (iCode) is specified with a water residue #, the iCode always follows the residue # 
 </div>
 </div><p>
-<a class="anchor" name="f9c02371e09065fb1099aa0a0921b4c4"></a><!-- doxytag: member="ASCbase::HbondPoints::inverse_transform" ref="f9c02371e09065fb1099aa0a0921b4c4" args="(const my_float_t *R, const my_float_t *T)" -->
+<a class="anchor" name="f9c02371e09065fb1099aa0a0921b4c4"></a><!-- doxytag: member="SimSite3D::HbondPoints::inverse_transform" ref="f9c02371e09065fb1099aa0a0921b4c4" args="(const my_float_t *R, const my_float_t *T)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ASCbase::HbondPoints::inverse_transform           </td>
+          <td class="memname">void SimSite3D::HbondPoints::inverse_transform           </td>
           <td>(</td>
           <td class="paramtype">const my_float_t *&nbsp;</td>
           <td class="paramname"> <em>R</em>, </td>
@@ -905,14 +905,14 @@ Check if water atoms are near the binding site based on the location of the oxyg
 Transform the positions of the hbond points and rotate their associated normal vectors (directions) by the inverse transform 
 </div>
 </div><p>
-<a class="anchor" name="9c96fe73b65271a49aebf9e4f17fc787"></a><!-- doxytag: member="ASCbase::HbondPoints::load_hbond_angles" ref="9c96fe73b65271a49aebf9e4f17fc787" args="(GenPointsParameters::hbond_method_t hbond_density, std::string param_path)" -->
+<a class="anchor" name="9c96fe73b65271a49aebf9e4f17fc787"></a><!-- doxytag: member="SimSite3D::HbondPoints::load_hbond_angles" ref="9c96fe73b65271a49aebf9e4f17fc787" args="(GenPointsParameters::hbond_method_t hbond_density, std::string param_path)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool HbondPoints::load_hbond_angles           </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classASCbase_1_1GenPointsParameters.html#a6dc6c525bc5758a44eb9713cefd1723">GenPointsParameters::hbond_method_t</a>&nbsp;</td>
+          <td class="paramtype"><a class="el" href="classSimSite3D_1_1GenPointsParameters.html#a6dc6c525bc5758a44eb9713cefd1723">GenPointsParameters::hbond_method_t</a>&nbsp;</td>
           <td class="paramname"> <em>hbond_density</em>, </td>
         </tr>
         <tr>
@@ -936,14 +936,14 @@ Read in the ideal and favored hbond angles for the binding residues.
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>hbond_density</em>&nbsp;</td><td>Sampling density for hbond angles </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>param_path</em>&nbsp;</td><td>Path to the ASCbase parameters directory </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>param_path</em>&nbsp;</td><td>Path to the SimSite3D parameters directory </td></tr>
   </table>
 </dl>
 <dl compact><dt><b>Returns:</b></dt><dd>True if both files were found and had no parsing errors, otherwise false </dd></dl>
 
 </div>
 </div><p>
-<a class="anchor" name="dd0d8a2958197f4affccd88818d0f90c"></a><!-- doxytag: member="ASCbase::HbondPoints::read_angles_file" ref="dd0d8a2958197f4affccd88818d0f90c" args="(std::string fname, add_angles_t add_angles)" -->
+<a class="anchor" name="dd0d8a2958197f4affccd88818d0f90c"></a><!-- doxytag: member="SimSite3D::HbondPoints::read_angles_file" ref="dd0d8a2958197f4affccd88818d0f90c" args="(std::string fname, add_angles_t add_angles)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -980,12 +980,12 @@ The second angles file should be one which holds one or more angle pairs for a g
 
 </div>
 </div><p>
-<a class="anchor" name="cf6e668fee3d6d59bb7a1205db1c8a84"></a><!-- doxytag: member="ASCbase::HbondPoints::revert" ref="cf6e668fee3d6d59bb7a1205db1c8a84" args="()" -->
+<a class="anchor" name="cf6e668fee3d6d59bb7a1205db1c8a84"></a><!-- doxytag: member="SimSite3D::HbondPoints::revert" ref="cf6e668fee3d6d59bb7a1205db1c8a84" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ASCbase::HbondPoints::revert           </td>
+          <td class="memname">void SimSite3D::HbondPoints::revert           </td>
           <td>(</td>
           <td class="paramname">          </td>
           <td>&nbsp;)&nbsp;</td>
@@ -999,7 +999,7 @@ The second angles file should be one which holds one or more angle pairs for a g
 Revert the positions of the hbond points and rotate their associated normal vectors (directions) to the positions and normals first stored. 
 </div>
 </div><p>
-<a class="anchor" name="d0b52b652b7ec3367efa7d507b10d663"></a><!-- doxytag: member="ASCbase::HbondPoints::sidechain_nhbr_pos" ref="d0b52b652b7ec3367efa7d507b10d663" args="(residue_vci residue, const hbond_triad_t &amp;triad, const my_float_t **positions, atom_vci *carbon_nbr)" -->
+<a class="anchor" name="d0b52b652b7ec3367efa7d507b10d663"></a><!-- doxytag: member="SimSite3D::HbondPoints::sidechain_nhbr_pos" ref="d0b52b652b7ec3367efa7d507b10d663" args="(residue_vci residue, const hbond_triad_t &amp;triad, const my_float_t **positions, atom_vci *carbon_nbr)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1012,7 +1012,7 @@ Revert the positions of the hbond points and rotate their associated normal vect
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structASCbase_1_1hbond__triad__t.html">hbond_triad_t</a> &amp;&nbsp;</td>
+          <td class="paramtype">const <a class="el" href="structSimSite3D_1_1hbond__triad__t.html">hbond_triad_t</a> &amp;&nbsp;</td>
           <td class="paramname"> <em>triad</em>, </td>
         </tr>
         <tr>
@@ -1050,12 +1050,12 @@ Given the hbond triad get the postions of the atoms nbr_A and nbr_C.
 
 </div>
 </div><p>
-<a class="anchor" name="2b4848ccd8ce2fed483e32ac356ebe12"></a><!-- doxytag: member="ASCbase::HbondPoints::transform" ref="2b4848ccd8ce2fed483e32ac356ebe12" args="(const my_float_t *R, const my_float_t *T)" -->
+<a class="anchor" name="2b4848ccd8ce2fed483e32ac356ebe12"></a><!-- doxytag: member="SimSite3D::HbondPoints::transform" ref="2b4848ccd8ce2fed483e32ac356ebe12" args="(const my_float_t *R, const my_float_t *T)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ASCbase::HbondPoints::transform           </td>
+          <td class="memname">void SimSite3D::HbondPoints::transform           </td>
           <td>(</td>
           <td class="paramtype">const my_float_t *&nbsp;</td>
           <td class="paramname"> <em>R</em>, </td>
@@ -1079,12 +1079,12 @@ Given the hbond triad get the postions of the atoms nbr_A and nbr_C.
 Transform the positions of the hbond points and rotate their associated normal vectors (directions) 
 </div>
 </div><p>
-<a class="anchor" name="ddac8742752fc700af5512d4ee7b4d75"></a><!-- doxytag: member="ASCbase::HbondPoints::transform_point" ref="ddac8742752fc700af5512d4ee7b4d75" args="(const my_float_t bond_len, const my_float_t alpha, const my_float_t beta, const my_float_t *R_inv, my_float_t *pt)" -->
+<a class="anchor" name="ddac8742752fc700af5512d4ee7b4d75"></a><!-- doxytag: member="SimSite3D::HbondPoints::transform_point" ref="ddac8742752fc700af5512d4ee7b4d75" args="(const my_float_t bond_len, const my_float_t alpha, const my_float_t beta, const my_float_t *R_inv, my_float_t *pt)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ASCbase::HbondPoints::transform_point           </td>
+          <td class="memname">void SimSite3D::HbondPoints::transform_point           </td>
           <td>(</td>
           <td class="paramtype">const my_float_t&nbsp;</td>
           <td class="paramname"> <em>bond_len</em>, </td>
@@ -1139,12 +1139,12 @@ This functions main purpose is to reduce the number of lines in calc_positions<p
 </div>
 </div><p>
 <hr><h2>Member Data Documentation</h2>
-<a class="anchor" name="c3782b5110cb3ebf7c9c81fe98bac1a8"></a><!-- doxytag: member="ASCbase::HbondPoints::MIN_VDW_DIST_2" ref="c3782b5110cb3ebf7c9c81fe98bac1a8" args="" -->
+<a class="anchor" name="c3782b5110cb3ebf7c9c81fe98bac1a8"></a><!-- doxytag: member="SimSite3D::HbondPoints::MIN_VDW_DIST_2" ref="c3782b5110cb3ebf7c9c81fe98bac1a8" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const my_float_t <a class="el" href="classASCbase_1_1HbondPoints.html#c3782b5110cb3ebf7c9c81fe98bac1a8">HbondPoints::MIN_VDW_DIST_2</a><code> [static, private]</code>          </td>
+          <td class="memname">const my_float_t <a class="el" href="classSimSite3D_1_1HbondPoints.html#c3782b5110cb3ebf7c9c81fe98bac1a8">HbondPoints::MIN_VDW_DIST_2</a><code> [static, private]</code>          </td>
         </tr>
       </table>
 </div>
@@ -1152,18 +1152,18 @@ This functions main purpose is to reduce the number of lines in calc_positions<p
 
 <p>
 <b>Initial value:</b><div class="fragment"><pre class="fragment"> 
-  <a class="code" href="classASCbase_1_1HbondPoints.html#d891ae0c548a5c6850c3921581a98bb3">HbondPoints::MIN_VDW_DIST</a> * <a class="code" href="classASCbase_1_1HbondPoints.html#d891ae0c548a5c6850c3921581a98bb3">HbondPoints::MIN_VDW_DIST</a>
+  <a class="code" href="classSimSite3D_1_1HbondPoints.html#d891ae0c548a5c6850c3921581a98bb3">HbondPoints::MIN_VDW_DIST</a> * <a class="code" href="classSimSite3D_1_1HbondPoints.html#d891ae0c548a5c6850c3921581a98bb3">HbondPoints::MIN_VDW_DIST</a>
 </pre></div>Square of min vdw dist. 
 <p>
 
 </div>
 </div><p>
-<a class="anchor" name="9fbe94d92727f2f547b3cc0bf6b5543a"></a><!-- doxytag: member="ASCbase::HbondPoints::MIN_VDW_DIST_METAL_2" ref="9fbe94d92727f2f547b3cc0bf6b5543a" args="" -->
+<a class="anchor" name="9fbe94d92727f2f547b3cc0bf6b5543a"></a><!-- doxytag: member="SimSite3D::HbondPoints::MIN_VDW_DIST_METAL_2" ref="9fbe94d92727f2f547b3cc0bf6b5543a" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const my_float_t <a class="el" href="classASCbase_1_1HbondPoints.html#9fbe94d92727f2f547b3cc0bf6b5543a">HbondPoints::MIN_VDW_DIST_METAL_2</a><code> [static, private]</code>          </td>
+          <td class="memname">const my_float_t <a class="el" href="classSimSite3D_1_1HbondPoints.html#9fbe94d92727f2f547b3cc0bf6b5543a">HbondPoints::MIN_VDW_DIST_METAL_2</a><code> [static, private]</code>          </td>
         </tr>
       </table>
 </div>
@@ -1171,7 +1171,7 @@ This functions main purpose is to reduce the number of lines in calc_positions<p
 
 <p>
 <b>Initial value:</b><div class="fragment"><pre class="fragment"> 
-  <a class="code" href="classASCbase_1_1HbondPoints.html#56639b91eee7ddcb46dc46952accc1e9">HbondPoints::MIN_VDW_DIST_METAL</a> * <a class="code" href="classASCbase_1_1HbondPoints.html#56639b91eee7ddcb46dc46952accc1e9">HbondPoints::MIN_VDW_DIST_METAL</a>
+  <a class="code" href="classSimSite3D_1_1HbondPoints.html#56639b91eee7ddcb46dc46952accc1e9">HbondPoints::MIN_VDW_DIST_METAL</a> * <a class="code" href="classSimSite3D_1_1HbondPoints.html#56639b91eee7ddcb46dc46952accc1e9">HbondPoints::MIN_VDW_DIST_METAL</a>
 </pre></div>Square of min vdw dist to metals. 
 <p>
 

@@ -1,5 +1,5 @@
-\section{ASCbase::geometry::Face\-Attrib Class Reference}
-\label{classASCbase_1_1geometry_1_1FaceAttrib}\index{ASCbase::geometry::FaceAttrib@{ASCbase::geometry::FaceAttrib}}
+\section{SimSite3D::geometry::Face\-Attrib Class Reference}
+\label{classSimSite3D_1_1geometry_1_1FaceAttrib}\index{SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::FaceAttrib}}
 Class to hold the attributes associated with a face.  
 
 
@@ -8,32 +8,32 @@ Class to hold the attributes associated with a face.
 \subsection*{Public Types}
 \begin{CompactItemize}
 \item 
-typedef std::vector$<$ \bf{Face\-Attrib} $>$::iterator \bf{vi}\label{classASCbase_1_1geometry_1_1FaceAttrib_3eb0b75de163c3238b77c100bac7cb63}
+typedef std::vector$<$ \bf{Face\-Attrib} $>$::iterator \bf{vi}\label{classSimSite3D_1_1geometry_1_1FaceAttrib_3eb0b75de163c3238b77c100bac7cb63}
 
 \begin{CompactList}\small\item\em Iterator in a vector of faces. \item\end{CompactList}\item 
-typedef std::vector$<$ \bf{Face\-Attrib} $>$::const\_\-iterator \bf{vci}\label{classASCbase_1_1geometry_1_1FaceAttrib_842f81a96ce61b0118b03ee349c53bb8}
+typedef std::vector$<$ \bf{Face\-Attrib} $>$::const\_\-iterator \bf{vci}\label{classSimSite3D_1_1geometry_1_1FaceAttrib_842f81a96ce61b0118b03ee349c53bb8}
 
 \begin{CompactList}\small\item\em Const iterater in a vector of faces. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Public Member Functions}
 \begin{CompactItemize}
 \item 
-\bf{Face\-Attrib} ()\label{classASCbase_1_1geometry_1_1FaceAttrib_58f47b12a77b0bfe438d4d410a2545bb}
+\bf{Face\-Attrib} ()\label{classSimSite3D_1_1geometry_1_1FaceAttrib_58f47b12a77b0bfe438d4d410a2545bb}
 
 \begin{CompactList}\small\item\em Default constructor. \item\end{CompactList}\item 
 \bf{Face\-Attrib} (\bf{Vert\-Attrib::vi} V0, \bf{Vert\-Attrib::vi} V1, \bf{Vert\-Attrib::vi} V2)
 \begin{CompactList}\small\item\em Construct using 3 vertices. \item\end{CompactList}\item 
-\bf{Face\-Attrib} (const \bf{Face\-Attrib} \&F)\label{classASCbase_1_1geometry_1_1FaceAttrib_1e99d6a0fc70decafa2658c8a51779a1}
+\bf{Face\-Attrib} (const \bf{Face\-Attrib} \&F)\label{classSimSite3D_1_1geometry_1_1FaceAttrib_1e99d6a0fc70decafa2658c8a51779a1}
 
 \begin{CompactList}\small\item\em Copy constructor. \item\end{CompactList}\item 
-const \bf{Face\-Attrib} \& \bf{operator=} (const \bf{Face\-Attrib} \&F)\label{classASCbase_1_1geometry_1_1FaceAttrib_7af2c6ec62751d4207bf11f0daee1649}
+const \bf{Face\-Attrib} \& \bf{operator=} (const \bf{Face\-Attrib} \&F)\label{classSimSite3D_1_1geometry_1_1FaceAttrib_7af2c6ec62751d4207bf11f0daee1649}
 
 \begin{CompactList}\small\item\em Assignment operator. \item\end{CompactList}\item 
 void \bf{set\_\-vertices} (\bf{Vert\-Attrib::vi} V0, \bf{Vert\-Attrib::vi} V1, \bf{Vert\-Attrib::vi} V2)
 \begin{CompactList}\small\item\em assign the 3 vertices \item\end{CompactList}\item 
-void \bf{add\_\-sample\_\-pt} (const my\_\-float\_\-t $\ast$pt)\label{classASCbase_1_1geometry_1_1FaceAttrib_39dedd2a7d3b5d02eb9d1ffc6e7c9d93}
+void \bf{add\_\-sample\_\-pt} (const my\_\-float\_\-t $\ast$pt)\label{classSimSite3D_1_1geometry_1_1FaceAttrib_39dedd2a7d3b5d02eb9d1ffc6e7c9d93}
 
 \begin{CompactList}\small\item\em Copy constructor. \item\end{CompactList}\item 
-void \textbf{get\_\-other\_\-verts} (const \bf{Vert\-Attrib::vci} V, \bf{Vert\-Attrib::vi} A, \bf{Vert\-Attrib::vi} B)\label{classASCbase_1_1geometry_1_1FaceAttrib_458e3c60431028bc94c74768f5651985}
+void \textbf{get\_\-other\_\-verts} (const \bf{Vert\-Attrib::vci} V, \bf{Vert\-Attrib::vi} A, \bf{Vert\-Attrib::vi} B)\label{classSimSite3D_1_1geometry_1_1FaceAttrib_458e3c60431028bc94c74768f5651985}
 
 \item 
 void \bf{closest\_\-point} (const my\_\-float\_\-t $\ast$P, const my\_\-float\_\-t prev\_\-best\_\-d, my\_\-float\_\-t $\ast$d, my\_\-float\_\-t $\ast$closest\_\-pt, my\_\-float\_\-t $\ast$corr\_\-N) const 
@@ -44,50 +44,50 @@ bool \bf{barycentric\_\-coords} (const my\_\-float\_\-t $\ast$p, my\_\-float\_\-
 \item 
 \bf{Face\-Attrib::vi} \bf{prev} (\bf{Vert\-Attrib::vi} V) const 
 \item 
-bool \textbf{set\_\-face\_\-neighbor} (\bf{Vert\-Attrib::vi} V0, \bf{Vert\-Attrib::vi} V1, \bf{Face\-Attrib::vi} nbr)\label{classASCbase_1_1geometry_1_1FaceAttrib_412ac3fa3ee7ec5d559c4a15badd5415}
+bool \textbf{set\_\-face\_\-neighbor} (\bf{Vert\-Attrib::vi} V0, \bf{Vert\-Attrib::vi} V1, \bf{Face\-Attrib::vi} nbr)\label{classSimSite3D_1_1geometry_1_1FaceAttrib_412ac3fa3ee7ec5d559c4a15badd5415}
 
 \item 
-void \textbf{get\_\-vertices} (\bf{Vert\-Attrib::vi} $\ast$V) const \label{classASCbase_1_1geometry_1_1FaceAttrib_133f30ead168af2a6231f366e21785e9}
+void \textbf{get\_\-vertices} (\bf{Vert\-Attrib::vi} $\ast$V) const \label{classSimSite3D_1_1geometry_1_1FaceAttrib_133f30ead168af2a6231f366e21785e9}
 
 \item 
-my\_\-float\_\-t \textbf{proj\_\-pt\_\-to\_\-plane} (const my\_\-float\_\-t $\ast$pt, my\_\-float\_\-t $\ast$proj\_\-pt) const \label{classASCbase_1_1geometry_1_1FaceAttrib_7df244a711c3d3aaafcab27567ccb106}
+my\_\-float\_\-t \textbf{proj\_\-pt\_\-to\_\-plane} (const my\_\-float\_\-t $\ast$pt, my\_\-float\_\-t $\ast$proj\_\-pt) const \label{classSimSite3D_1_1geometry_1_1FaceAttrib_7df244a711c3d3aaafcab27567ccb106}
 
 \end{CompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{CompactItemize}
 \item 
-static void \textbf{test\_\-removing\_\-edge} (\bf{Vert\-Attrib::vi} $\ast$end\_\-pts, \bf{Face\-Attrib::vi} $\ast$edge\_\-faces, \bf{Vert\-Attrib::vi} verts\_\-begin)\label{classASCbase_1_1geometry_1_1FaceAttrib_aaa21e453271eb9dcc0d7c93b4ebbb8d}
+static void \textbf{test\_\-removing\_\-edge} (\bf{Vert\-Attrib::vi} $\ast$end\_\-pts, \bf{Face\-Attrib::vi} $\ast$edge\_\-faces, \bf{Vert\-Attrib::vi} verts\_\-begin)\label{classSimSite3D_1_1geometry_1_1FaceAttrib_aaa21e453271eb9dcc0d7c93b4ebbb8d}
 
 \end{CompactItemize}
 \subsection*{Static Public Attributes}
 \begin{CompactItemize}
 \item 
-static std::vector$<$ \bf{Face\-Attrib} $>$ \textbf{NULL\_\-FACES\_\-STORAGE}\label{classASCbase_1_1geometry_1_1FaceAttrib_c9163721e9096e21f15bb26d31bb4aa6}
+static std::vector$<$ \bf{Face\-Attrib} $>$ \textbf{NULL\_\-FACES\_\-STORAGE}\label{classSimSite3D_1_1geometry_1_1FaceAttrib_c9163721e9096e21f15bb26d31bb4aa6}
 
 \item 
-static const \bf{Face\-Attrib::vi} \textbf{NULL\_\-VI} = Face\-Attrib::NULL\_\-FACES\_\-STORAGE.end()\label{classASCbase_1_1geometry_1_1FaceAttrib_24cdd7efba12dbdb850dfc048e587494}
+static const \bf{Face\-Attrib::vi} \textbf{NULL\_\-VI} = Face\-Attrib::NULL\_\-FACES\_\-STORAGE.end()\label{classSimSite3D_1_1geometry_1_1FaceAttrib_24cdd7efba12dbdb850dfc048e587494}
 
 \end{CompactItemize}
 \subsection*{Private Member Functions}
 \begin{CompactItemize}
 \item 
-void \bf{initialize} ()\label{classASCbase_1_1geometry_1_1FaceAttrib_0a74580eb4b67a2aab807c573f23150f}
+void \bf{initialize} ()\label{classSimSite3D_1_1geometry_1_1FaceAttrib_0a74580eb4b67a2aab807c573f23150f}
 
 \begin{CompactList}\small\item\em Initialize class variables. \item\end{CompactList}\item 
-void \textbf{do\_\-copy} (const \bf{Face\-Attrib} \&F)\label{classASCbase_1_1geometry_1_1FaceAttrib_37f47b2aff4f63b97ba3c3925a9ce48c}
+void \textbf{do\_\-copy} (const \bf{Face\-Attrib} \&F)\label{classSimSite3D_1_1geometry_1_1FaceAttrib_37f47b2aff4f63b97ba3c3925a9ce48c}
 
 \item 
 size\_\-t \bf{next\_\-fnei\_\-idx} (\bf{Vert\-Attrib::vi} V) const 
 \item 
 size\_\-t \bf{prev\_\-fnei\_\-idx} (\bf{Vert\-Attrib::vi} V) const 
 \item 
-bool \bf{replace\_\-vert} (\bf{Vert\-Attrib::vi} V\_\-old, \bf{Vert\-Attrib::vi} V\_\-new)\label{classASCbase_1_1geometry_1_1FaceAttrib_4ce6b7f01131a4b4cf7f2b0941a06815}
+bool \bf{replace\_\-vert} (\bf{Vert\-Attrib::vi} V\_\-old, \bf{Vert\-Attrib::vi} V\_\-new)\label{classSimSite3D_1_1geometry_1_1FaceAttrib_4ce6b7f01131a4b4cf7f2b0941a06815}
 
 \begin{CompactList}\small\item\em Replace the old vertex with the new vertex. \item\end{CompactList}\item 
-bool \bf{not\_\-sharp} (\bf{Vert\-Attrib::vi} A, \bf{Vert\-Attrib::vi} B)\label{classASCbase_1_1geometry_1_1FaceAttrib_0acc4dced66afbc8ab90ed453dbd275e}
+bool \bf{not\_\-sharp} (\bf{Vert\-Attrib::vi} A, \bf{Vert\-Attrib::vi} B)\label{classSimSite3D_1_1geometry_1_1FaceAttrib_0acc4dced66afbc8ab90ed453dbd275e}
 
 \begin{CompactList}\small\item\em Example \char`\"{}sharp\char`\"{} function -- always returns false. \item\end{CompactList}\item 
-my\_\-float\_\-t \textbf{E\_\-disc} (\bf{Vert\-Attrib::vi} V\_\-s, \bf{Vert\-Attrib::vi} V\_\-t, \bf{Vert\-Attrib::vi} V\_\-l, \bf{Vert\-Attrib::vi} V\_\-r, bool($\ast$sharp\-Func)(\bf{Vert\-Attrib::vi} A, \bf{Vert\-Attrib::vi} B))\label{classASCbase_1_1geometry_1_1FaceAttrib_5781c0b9abd91d4e0fc90d0e495d7d1d}
+my\_\-float\_\-t \textbf{E\_\-disc} (\bf{Vert\-Attrib::vi} V\_\-s, \bf{Vert\-Attrib::vi} V\_\-t, \bf{Vert\-Attrib::vi} V\_\-l, \bf{Vert\-Attrib::vi} V\_\-r, bool($\ast$sharp\-Func)(\bf{Vert\-Attrib::vi} A, \bf{Vert\-Attrib::vi} B))\label{classSimSite3D_1_1geometry_1_1FaceAttrib_5781c0b9abd91d4e0fc90d0e495d7d1d}
 
 \end{CompactItemize}
 \subsection*{Static Private Member Functions}
@@ -95,31 +95,31 @@ my\_\-float\_\-t \textbf{E\_\-disc} (\bf{Vert\-Attrib::vi} V\_\-s, \bf{Vert\-Att
 \item 
 static bool \bf{get\_\-faces} (const \bf{Vert\-Attrib::vi} \&central\_\-vert, const \bf{Face\-Attrib::vi} \&start\_\-face, std::vector$<$ \bf{Face\-Attrib::vi} $>$ $\ast$faces\_\-out, const bool skip\_\-first\_\-prev=false)
 \begin{CompactList}\small\item\em Get all the faces for the given vertex. \item\end{CompactList}\item 
-static bool \textbf{get\_\-faces} (\bf{Face\-Attrib::vi} central\_\-face, std::vector$<$ \bf{Face\-Attrib::vi} $>$ $\ast$faces\_\-out)\label{classASCbase_1_1geometry_1_1FaceAttrib_48c6dd9a6f5ee0f205006ac346a8c6db}
+static bool \textbf{get\_\-faces} (\bf{Face\-Attrib::vi} central\_\-face, std::vector$<$ \bf{Face\-Attrib::vi} $>$ $\ast$faces\_\-out)\label{classSimSite3D_1_1geometry_1_1FaceAttrib_48c6dd9a6f5ee0f205006ac346a8c6db}
 
 \end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
-\bf{Vert\-Attrib::vi} \bf{A\_\-V} [3]\label{classASCbase_1_1geometry_1_1FaceAttrib_904831d51fed8e5ecc419c2f2c55fce4}
+\bf{Vert\-Attrib::vi} \bf{A\_\-V} [3]\label{classSimSite3D_1_1geometry_1_1FaceAttrib_904831d51fed8e5ecc419c2f2c55fce4}
 
 \begin{CompactList}\small\item\em Vertices of this face. \item\end{CompactList}\item 
-\bf{Face\-Attrib::vi} \bf{A\_\-fnei} [3]\label{classASCbase_1_1geometry_1_1FaceAttrib_194b12426bd69f372dbb37e32fd156e1}
+\bf{Face\-Attrib::vi} \bf{A\_\-fnei} [3]\label{classSimSite3D_1_1geometry_1_1FaceAttrib_194b12426bd69f372dbb37e32fd156e1}
 
 \begin{CompactList}\small\item\em Neighbor faces -- first corresponds to A\_\-V[0] -$>$ A\_\-V[1], ... \item\end{CompactList}\item 
-std::vector$<$ const my\_\-float\_\-t $\ast$ $>$ \textbf{A\_\-X}\label{classASCbase_1_1geometry_1_1FaceAttrib_adef9b1294772d0546142c2a8d92b466}
+std::vector$<$ const my\_\-float\_\-t $\ast$ $>$ \textbf{A\_\-X}\label{classSimSite3D_1_1geometry_1_1FaceAttrib_adef9b1294772d0546142c2a8d92b466}
 
 \item 
-my\_\-float\_\-t \bf{A\_\-normal} [3]\label{classASCbase_1_1geometry_1_1FaceAttrib_6850d39bcde536959e914a695a977422}
+my\_\-float\_\-t \bf{A\_\-normal} [3]\label{classSimSite3D_1_1geometry_1_1FaceAttrib_6850d39bcde536959e914a695a977422}
 
 \begin{CompactList}\small\item\em Normal to the face (V[0] - V[1]) x (V[2] - V[1]). \item\end{CompactList}\item 
-my\_\-float\_\-t \bf{A\_\-area}\label{classASCbase_1_1geometry_1_1FaceAttrib_e32bb1596b04ad7b14209d60c8d73468}
+my\_\-float\_\-t \bf{A\_\-area}\label{classSimSite3D_1_1geometry_1_1FaceAttrib_e32bb1596b04ad7b14209d60c8d73468}
 
 \begin{CompactList}\small\item\em Area of the face. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Friends}
 \begin{CompactItemize}
 \item 
-std::ostream \& \textbf{operator$<$$<$} (std::ostream \&out, const \bf{Face\-Attrib} \&F)\label{classASCbase_1_1geometry_1_1FaceAttrib_c6ae99b680126898fbde7fef3d9afd8a}
+std::ostream \& \textbf{operator$<$$<$} (std::ostream \&out, const \bf{Face\-Attrib} \&F)\label{classSimSite3D_1_1geometry_1_1FaceAttrib_c6ae99b680126898fbde7fef3d9afd8a}
 
 \end{CompactItemize}
 \subsection*{Classes}
@@ -132,14 +132,14 @@ class \textbf{point\_\-data\_\-t}
 \subsection{Detailed Description}
 Class to hold the attributes associated with a face. 
 
-Note: inside this class I tended to use \doxyref{Face\-Attrib::vi}{p.}{classASCbase_1_1geometry_1_1FaceAttrib_3eb0b75de163c3238b77c100bac7cb63} so that it is clear which vector iterator is being used 
+Note: inside this class I tended to use \doxyref{Face\-Attrib::vi}{p.}{classSimSite3D_1_1geometry_1_1FaceAttrib_3eb0b75de163c3238b77c100bac7cb63} so that it is clear which vector iterator is being used 
 
 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}!FaceAttrib@{FaceAttrib}}
-\index{FaceAttrib@{FaceAttrib}!ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ASCbase::geometry::Face\-Attrib::Face\-Attrib (\bf{Vert\-Attrib::vi} {\em V0}, \bf{Vert\-Attrib::vi} {\em V1}, \bf{Vert\-Attrib::vi} {\em V2})\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1geometry_1_1FaceAttrib_defd6241ccd16e32a99aba6767e8b33f}
+\index{SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}!FaceAttrib@{FaceAttrib}}
+\index{FaceAttrib@{FaceAttrib}!SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}SimSite3D::geometry::Face\-Attrib::Face\-Attrib (\bf{Vert\-Attrib::vi} {\em V0}, \bf{Vert\-Attrib::vi} {\em V1}, \bf{Vert\-Attrib::vi} {\em V2})\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1geometry_1_1FaceAttrib_defd6241ccd16e32a99aba6767e8b33f}
 
 
 Construct using 3 vertices. 
@@ -149,9 +149,9 @@ Assumption: The vertices are in counter clockwise order so that barycentric meth
 NEED TO THINK ABOUT THIS MORE -- after rotation we could mess up the cross product? If it flips to be clockwise with respect to the right hand rule we should be ok since the resulting vector of the cross products will still face the same direction for all 3 vectors 
 
 \subsection{Member Function Documentation}
-\index{ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}!barycentric_coords@{barycentric\_\-coords}}
-\index{barycentric_coords@{barycentric\_\-coords}!ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Face\-Attrib::barycentric\_\-coords (const my\_\-float\_\-t $\ast$ {\em p}, my\_\-float\_\-t $\ast$ {\em b}) const}\label{classASCbase_1_1geometry_1_1FaceAttrib_12fa38d9657d070bf64725471f209ee8}
+\index{SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}!barycentric_coords@{barycentric\_\-coords}}
+\index{barycentric_coords@{barycentric\_\-coords}!SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Face\-Attrib::barycentric\_\-coords (const my\_\-float\_\-t $\ast$ {\em p}, my\_\-float\_\-t $\ast$ {\em b}) const}\label{classSimSite3D_1_1geometry_1_1FaceAttrib_12fa38d9657d070bf64725471f209ee8}
 
 
 Use the area method to compute barycentric coordinates for p. 
@@ -160,45 +160,45 @@ Assumption: p lies in the plane defined by the 3 vertices of this face This func
 
 \begin{Desc}
 \item[Returns:]True if p is inside this face, false otherwise \end{Desc}
-\index{ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}!closest_point@{closest\_\-point}}
-\index{closest_point@{closest\_\-point}!ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Face\-Attrib::closest\_\-point (const my\_\-float\_\-t $\ast$ {\em P}, const my\_\-float\_\-t {\em prev\_\-best\_\-d}, my\_\-float\_\-t $\ast$ {\em d}, my\_\-float\_\-t $\ast$ {\em closest\_\-pt}, my\_\-float\_\-t $\ast$ {\em corr\_\-N}) const}\label{classASCbase_1_1geometry_1_1FaceAttrib_26012b35094ee4eff6f782e21f837f88}
+\index{SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}!closest_point@{closest\_\-point}}
+\index{closest_point@{closest\_\-point}!SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Face\-Attrib::closest\_\-point (const my\_\-float\_\-t $\ast$ {\em P}, const my\_\-float\_\-t {\em prev\_\-best\_\-d}, my\_\-float\_\-t $\ast$ {\em d}, my\_\-float\_\-t $\ast$ {\em closest\_\-pt}, my\_\-float\_\-t $\ast$ {\em corr\_\-N}) const}\label{classSimSite3D_1_1geometry_1_1FaceAttrib_26012b35094ee4eff6f782e21f837f88}
 
 
 Get the point on face that is the closest to P. 
 
-ASSUMPTION: A\_\-normal is valid! \index{ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}!get_faces@{get\_\-faces}}
-\index{get_faces@{get\_\-faces}!ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static bool ASCbase::geometry::Face\-Attrib::get\_\-faces (const \bf{Vert\-Attrib::vi} \& {\em central\_\-vert}, const \bf{Face\-Attrib::vi} \& {\em start\_\-face}, std::vector$<$ \bf{Face\-Attrib::vi} $>$ $\ast$ {\em faces\_\-out}, const bool {\em skip\_\-first\_\-prev} = {\tt false})\hspace{0.3cm}{\tt  [inline, static, private]}}\label{classASCbase_1_1geometry_1_1FaceAttrib_5ae94bb0705521f9ab476ce65b525e83}
+ASSUMPTION: A\_\-normal is valid! \index{SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}!get_faces@{get\_\-faces}}
+\index{get_faces@{get\_\-faces}!SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static bool SimSite3D::geometry::Face\-Attrib::get\_\-faces (const \bf{Vert\-Attrib::vi} \& {\em central\_\-vert}, const \bf{Face\-Attrib::vi} \& {\em start\_\-face}, std::vector$<$ \bf{Face\-Attrib::vi} $>$ $\ast$ {\em faces\_\-out}, const bool {\em skip\_\-first\_\-prev} = {\tt false})\hspace{0.3cm}{\tt  [inline, static, private]}}\label{classSimSite3D_1_1geometry_1_1FaceAttrib_5ae94bb0705521f9ab476ce65b525e83}
 
 
 Get all the faces for the given vertex. 
 
 This method does not add the starting face First this method will check all the faces that can be found via the face-$>$next links. If a \char`\"{}null\char`\"{} face is found, it will check all the faces via the face-$>$prev links.
 
-This method will fail if the mesh is of poor quality and all of the faces cannot be found by both next and prev traversal \index{ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}!next@{next}}
-\index{next@{next}!ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Face\-Attrib::vi} ASCbase::geometry::Face\-Attrib::next (\bf{Vert\-Attrib::vi} {\em V}) const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1geometry_1_1FaceAttrib_8e27be3eedc3330db14d563b0cc829b6}
+This method will fail if the mesh is of poor quality and all of the faces cannot be found by both next and prev traversal \index{SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}!next@{next}}
+\index{next@{next}!SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Face\-Attrib::vi} SimSite3D::geometry::Face\-Attrib::next (\bf{Vert\-Attrib::vi} {\em V}) const\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1geometry_1_1FaceAttrib_8e27be3eedc3330db14d563b0cc829b6}
 
 
-Return the next face after the current face given a vertex V of the current face -- use right hand rule for next (i.e. counter-clockwise rotation) \index{ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}!next_fnei_idx@{next\_\-fnei\_\-idx}}
-\index{next_fnei_idx@{next\_\-fnei\_\-idx}!ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}size\_\-t ASCbase::geometry::Face\-Attrib::next\_\-fnei\_\-idx (\bf{Vert\-Attrib::vi} {\em V}) const\hspace{0.3cm}{\tt  [inline, private]}}\label{classASCbase_1_1geometry_1_1FaceAttrib_c214a46fbbbeb51a667c7eb23b2b4916}
+Return the next face after the current face given a vertex V of the current face -- use right hand rule for next (i.e. counter-clockwise rotation) \index{SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}!next_fnei_idx@{next\_\-fnei\_\-idx}}
+\index{next_fnei_idx@{next\_\-fnei\_\-idx}!SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}size\_\-t SimSite3D::geometry::Face\-Attrib::next\_\-fnei\_\-idx (\bf{Vert\-Attrib::vi} {\em V}) const\hspace{0.3cm}{\tt  [inline, private]}}\label{classSimSite3D_1_1geometry_1_1FaceAttrib_c214a46fbbbeb51a667c7eb23b2b4916}
 
 
-Return the next face after the current face given a vertex V of the current face -- use right hand rule for next (i.e. counter-clockwise rotation) \index{ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}!prev@{prev}}
-\index{prev@{prev}!ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Face\-Attrib::vi} ASCbase::geometry::Face\-Attrib::prev (\bf{Vert\-Attrib::vi} {\em V}) const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1geometry_1_1FaceAttrib_48d587e02fec7b05c076bbd2c9c75467}
+Return the next face after the current face given a vertex V of the current face -- use right hand rule for next (i.e. counter-clockwise rotation) \index{SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}!prev@{prev}}
+\index{prev@{prev}!SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Face\-Attrib::vi} SimSite3D::geometry::Face\-Attrib::prev (\bf{Vert\-Attrib::vi} {\em V}) const\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1geometry_1_1FaceAttrib_48d587e02fec7b05c076bbd2c9c75467}
 
 
-Return the previous face before the current face given a vertex V of the current face -- use right hand rule for previou (i.e. clockwise rotation) \index{ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}!prev_fnei_idx@{prev\_\-fnei\_\-idx}}
-\index{prev_fnei_idx@{prev\_\-fnei\_\-idx}!ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}size\_\-t ASCbase::geometry::Face\-Attrib::prev\_\-fnei\_\-idx (\bf{Vert\-Attrib::vi} {\em V}) const\hspace{0.3cm}{\tt  [inline, private]}}\label{classASCbase_1_1geometry_1_1FaceAttrib_14c4e75eb1b55664d343ee816b6899fd}
+Return the previous face before the current face given a vertex V of the current face -- use right hand rule for previou (i.e. clockwise rotation) \index{SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}!prev_fnei_idx@{prev\_\-fnei\_\-idx}}
+\index{prev_fnei_idx@{prev\_\-fnei\_\-idx}!SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}size\_\-t SimSite3D::geometry::Face\-Attrib::prev\_\-fnei\_\-idx (\bf{Vert\-Attrib::vi} {\em V}) const\hspace{0.3cm}{\tt  [inline, private]}}\label{classSimSite3D_1_1geometry_1_1FaceAttrib_14c4e75eb1b55664d343ee816b6899fd}
 
 
-Return the previous face before the current face given a vertex V of the current face -- use right hand rule for previous (i.e. clockwise rotation) \index{ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}!set_vertices@{set\_\-vertices}}
-\index{set_vertices@{set\_\-vertices}!ASCbase::geometry::FaceAttrib@{ASCbase::geometry::Face\-Attrib}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ASCbase::geometry::Face\-Attrib::set\_\-vertices (\bf{Vert\-Attrib::vi} {\em V0}, \bf{Vert\-Attrib::vi} {\em V1}, \bf{Vert\-Attrib::vi} {\em V2})\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1geometry_1_1FaceAttrib_fa71741b951f0b895f21c0322ba53dc2}
+Return the previous face before the current face given a vertex V of the current face -- use right hand rule for previous (i.e. clockwise rotation) \index{SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}!set_vertices@{set\_\-vertices}}
+\index{set_vertices@{set\_\-vertices}!SimSite3D::geometry::FaceAttrib@{SimSite3D::geometry::Face\-Attrib}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void SimSite3D::geometry::Face\-Attrib::set\_\-vertices (\bf{Vert\-Attrib::vi} {\em V0}, \bf{Vert\-Attrib::vi} {\em V1}, \bf{Vert\-Attrib::vi} {\em V2})\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1geometry_1_1FaceAttrib_fa71741b951f0b895f21c0322ba53dc2}
 
 
 assign the 3 vertices 

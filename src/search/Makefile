@@ -52,8 +52,8 @@ mkinstalldirs = $(install_sh) -d
 CONFIG_CLEAN_FILES =
 LIBRARIES = $(noinst_LIBRARIES)
 ARFLAGS = cru
-libASCbaseSoftwareSearch_a_AR = $(AR) $(ARFLAGS)
-libASCbaseSoftwareSearch_a_LIBADD =
+libSimSite3DSoftwareSearch_a_AR = $(AR) $(ARFLAGS)
+libSimSite3DSoftwareSearch_a_LIBADD =
 am__objects_1 = ScoreMapBase.$(OBJEXT) ModelSitemap.$(OBJEXT) \
 	MatchTriangles.$(OBJEXT)
 am__objects_2 = WeightedSumsScore.$(OBJEXT) \
@@ -62,10 +62,10 @@ am__objects_2 = WeightedSumsScore.$(OBJEXT) \
 	point_and_surf_score.$(OBJEXT) TriMeshSphere.$(OBJEXT) \
 	HbondSurfacesScore.$(OBJEXT) SurfDepsJoints.$(OBJEXT) \
 	IK_tests.$(OBJEXT)
-am_libASCbaseSoftwareSearch_a_OBJECTS = $(am__objects_1) \
+am_libSimSite3DSoftwareSearch_a_OBJECTS = $(am__objects_1) \
 	$(am__objects_2) SearchParameters.$(OBJEXT)
-libASCbaseSoftwareSearch_a_OBJECTS =  \
-	$(am_libASCbaseSoftwareSearch_a_OBJECTS)
+libSimSite3DSoftwareSearch_a_OBJECTS =  \
+	$(am_libSimSite3DSoftwareSearch_a_OBJECTS)
 am__installdirs = "$(DESTDIR)$(bindir)"
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 PROGRAMS = $(bin_PROGRAMS) $(noinst_PROGRAMS)
@@ -77,42 +77,42 @@ compute_dataset_matchprints_OBJECTS =  \
 am__DEPENDENCIES_1 =
 am__DEPENDENCIES_2 = /usr/lib64/liblapack.so.3 /usr/lib64/libblas.so.3
 compute_dataset_matchprints_DEPENDENCIES =  \
-	../score/libASCbaseSoftwareScore.a \
-	../sitemap/libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a $(am__DEPENDENCIES_1) \
+	../score/libSimSite3DSoftwareScore.a \
+	../sitemap/libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_2)
 am_new_tri_test_OBJECTS = $(am__objects_1) $(am__objects_2) \
 	SearchParameters.$(OBJEXT) Search.$(OBJEXT) \
 	new_tri_test.$(OBJEXT)
 new_tri_test_OBJECTS = $(am_new_tri_test_OBJECTS)
-new_tri_test_DEPENDENCIES = ../score/libASCbaseSoftwareScore.a \
-	../sitemap/libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a $(am__DEPENDENCIES_1) \
+new_tri_test_DEPENDENCIES = ../score/libSimSite3DSoftwareScore.a \
+	../sitemap/libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_2)
 am_search_sitemaps_OBJECTS = $(am__objects_1) $(am__objects_2) \
 	SearchParameters.$(OBJEXT) Search.$(OBJEXT) \
 	search_sitemaps.$(OBJEXT)
 search_sitemaps_OBJECTS = $(am_search_sitemaps_OBJECTS)
-search_sitemaps_DEPENDENCIES = ../score/libASCbaseSoftwareScore.a \
-	../sitemap/libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a $(am__DEPENDENCIES_1) \
+search_sitemaps_DEPENDENCIES = ../score/libSimSite3DSoftwareScore.a \
+	../sitemap/libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_2)
 am_search_using_ArtSurf_OBJECTS = $(am__objects_1) $(am__objects_2) \
 	SearchParameters.$(OBJEXT) Search.$(OBJEXT) \
 	search_using_ArtSurf.$(OBJEXT)
 search_using_ArtSurf_OBJECTS = $(am_search_using_ArtSurf_OBJECTS)
 search_using_ArtSurf_DEPENDENCIES =  \
-	../score/libASCbaseSoftwareScore.a \
-	../sitemap/libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a $(am__DEPENDENCIES_1) \
+	../score/libSimSite3DSoftwareScore.a \
+	../sitemap/libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_2)
 am_test_grid_sampling_OBJECTS = $(am__objects_1) $(am__objects_2) \
 	SearchParameters.$(OBJEXT) Search.$(OBJEXT) \
 	test_grid_sampling.$(OBJEXT)
 test_grid_sampling_OBJECTS = $(am_test_grid_sampling_OBJECTS)
-test_grid_sampling_DEPENDENCIES = ../score/libASCbaseSoftwareScore.a \
-	../sitemap/libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a $(am__DEPENDENCIES_1) \
+test_grid_sampling_DEPENDENCIES = ../score/libSimSite3DSoftwareScore.a \
+	../sitemap/libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_2)
 am_write_hbond_surfs_meshes_OBJECTS = $(am__objects_1) \
 	$(am__objects_2) SearchParameters.$(OBJEXT) \
@@ -120,9 +120,9 @@ am_write_hbond_surfs_meshes_OBJECTS = $(am__objects_1) \
 write_hbond_surfs_meshes_OBJECTS =  \
 	$(am_write_hbond_surfs_meshes_OBJECTS)
 write_hbond_surfs_meshes_DEPENDENCIES =  \
-	../score/libASCbaseSoftwareScore.a \
-	../sitemap/libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a $(am__DEPENDENCIES_1) \
+	../score/libSimSite3DSoftwareScore.a \
+	../sitemap/libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_2)
 DEFAULT_INCLUDES = -I. -I$(srcdir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
@@ -135,12 +135,12 @@ LTCXXCOMPILE = $(LIBTOOL) --tag=CXX --mode=compile $(CXX) $(DEFS) \
 CXXLD = $(CXX)
 CXXLINK = $(LIBTOOL) --tag=CXX --mode=link $(CXXLD) $(AM_CXXFLAGS) \
 	$(CXXFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
-SOURCES = $(libASCbaseSoftwareSearch_a_SOURCES) \
+SOURCES = $(libSimSite3DSoftwareSearch_a_SOURCES) \
 	$(compute_dataset_matchprints_SOURCES) $(new_tri_test_SOURCES) \
 	$(search_sitemaps_SOURCES) $(search_using_ArtSurf_SOURCES) \
 	$(test_grid_sampling_SOURCES) \
 	$(write_hbond_surfs_meshes_SOURCES)
-DIST_SOURCES = $(libASCbaseSoftwareSearch_a_SOURCES) \
+DIST_SOURCES = $(libSimSite3DSoftwareSearch_a_SOURCES) \
 	$(compute_dataset_matchprints_SOURCES) $(new_tri_test_SOURCES) \
 	$(search_sitemaps_SOURCES) $(search_using_ArtSurf_SOURCES) \
 	$(test_grid_sampling_SOURCES) \
@@ -251,7 +251,7 @@ sharedstatedir = ${prefix}/com
 sysconfdir = ${prefix}/etc
 target_alias = 
 INCLUDES = -I../utils -I../sitemap -I../score -I.
-noinst_LIBRARIES = libASCbaseSoftwareSearch.a
+noinst_LIBRARIES = libSimSite3DSoftwareSearch.a
 ALIGN_SRCS = ScoreMapBase.C ModelSitemap.C MatchTriangles.C
 SCORE_SRCS = WeightedSumsScore.C ExternalScoringFunction.C \
 	DrugScoreInterface.C SFCscoreInterface.C ModelHbondSurfaces.C \
@@ -263,58 +263,58 @@ LAPACK_LIBS = /usr/lib64/liblapack.so.3 /usr/lib64/libblas.so.3
 #TESTSCORING.C \
 #PsuedoLigRmsd.C EllipsoidalHbondsScore.C SimplifiedMayoHbondsScore.C \
 #ModelHbondSurfaces.C 
-libASCbaseSoftwareSearch_a_SOURCES = $(ALIGN_SRCS) $(SCORE_SRCS) \
+libSimSite3DSoftwareSearch_a_SOURCES = $(ALIGN_SRCS) $(SCORE_SRCS) \
 	SearchParameters.C
 
 search_sitemaps_SOURCES = $(ALIGN_SRCS) $(SCORE_SRCS) \
 	SearchParameters.C Search.C search_sitemaps.C
 
-search_sitemaps_LDADD = ../score/libASCbaseSoftwareScore.a \
-	../sitemap/libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a -lm $(POPT) $(LAPACK_LIBS)
+search_sitemaps_LDADD = ../score/libSimSite3DSoftwareScore.a \
+	../sitemap/libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a -lm $(POPT) $(LAPACK_LIBS)
 
 
 #test_moving_stuff_SOURCES = $(ALIGN_SRCS) $(SCORE_SRCS) \
 #	SearchParameters.C Search.C IK_tests.C test_moving_stuff.C
 
-#test_moving_stuff_LDADD = ../score/libASCbaseSoftwareScore.a \
-#	../sitemap/libASCbaseSoftwareSitemaps.a \
-#	../utils/libASCbaseSoftwareUtils.a -lm $(POPT) \
+#test_moving_stuff_LDADD = ../score/libSimSite3DSoftwareScore.a \
+#	../sitemap/libSimSite3DSoftwareSitemaps.a \
+#	../utils/libSimSite3DSoftwareUtils.a -lm $(POPT) \
 #        /usr/lib64/liblapack.so.3 /usr/lib64/libblas.so.3
 write_hbond_surfs_meshes_SOURCES = $(ALIGN_SRCS) $(SCORE_SRCS) \
 	SearchParameters.C write_hbond_surfs_meshes.C
 
-write_hbond_surfs_meshes_LDADD = ../score/libASCbaseSoftwareScore.a \
-	../sitemap/libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a -lm $(POPT) $(LAPACK_LIBS)
+write_hbond_surfs_meshes_LDADD = ../score/libSimSite3DSoftwareScore.a \
+	../sitemap/libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a -lm $(POPT) $(LAPACK_LIBS)
 
 search_using_ArtSurf_SOURCES = $(ALIGN_SRCS) $(SCORE_SRCS) \
 	SearchParameters.C Search.C search_using_ArtSurf.C
 
-search_using_ArtSurf_LDADD = ../score/libASCbaseSoftwareScore.a \
-	../sitemap/libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a -lm $(POPT) $(LAPACK_LIBS)
+search_using_ArtSurf_LDADD = ../score/libSimSite3DSoftwareScore.a \
+	../sitemap/libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a -lm $(POPT) $(LAPACK_LIBS)
 
 new_tri_test_SOURCES = $(ALIGN_SRCS) $(SCORE_SRCS) \
 	SearchParameters.C Search.C new_tri_test.C
 
-new_tri_test_LDADD = ../score/libASCbaseSoftwareScore.a \
-	../sitemap/libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a -lm $(POPT) $(LAPACK_LIBS)
+new_tri_test_LDADD = ../score/libSimSite3DSoftwareScore.a \
+	../sitemap/libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a -lm $(POPT) $(LAPACK_LIBS)
 
 test_grid_sampling_SOURCES = $(ALIGN_SRCS) $(SCORE_SRCS) \
 	SearchParameters.C Search.C test_grid_sampling.C
 
-test_grid_sampling_LDADD = ../score/libASCbaseSoftwareScore.a \
-	../sitemap/libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a -lm $(POPT) $(LAPACK_LIBS)
+test_grid_sampling_LDADD = ../score/libSimSite3DSoftwareScore.a \
+	../sitemap/libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a -lm $(POPT) $(LAPACK_LIBS)
 
 compute_dataset_matchprints_SOURCES = $(ALIGN_SRCS) $(SCORE_SRCS) \
 	SearchParameters.C Search.C compute_dataset_matchprints.C
 
-compute_dataset_matchprints_LDADD = ../score/libASCbaseSoftwareScore.a \
-	../sitemap/libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a -lm $(POPT) $(LAPACK_LIBS)
+compute_dataset_matchprints_LDADD = ../score/libSimSite3DSoftwareScore.a \
+	../sitemap/libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a -lm $(POPT) $(LAPACK_LIBS)
 
 all: all-am
 
@@ -352,10 +352,10 @@ $(ACLOCAL_M4):  $(am__aclocal_m4_deps)
 
 clean-noinstLIBRARIES:
 	-test -z "$(noinst_LIBRARIES)" || rm -f $(noinst_LIBRARIES)
-libASCbaseSoftwareSearch.a: $(libASCbaseSoftwareSearch_a_OBJECTS) $(libASCbaseSoftwareSearch_a_DEPENDENCIES) 
-	-rm -f libASCbaseSoftwareSearch.a
-	$(libASCbaseSoftwareSearch_a_AR) libASCbaseSoftwareSearch.a $(libASCbaseSoftwareSearch_a_OBJECTS) $(libASCbaseSoftwareSearch_a_LIBADD)
-	$(RANLIB) libASCbaseSoftwareSearch.a
+libSimSite3DSoftwareSearch.a: $(libSimSite3DSoftwareSearch_a_OBJECTS) $(libSimSite3DSoftwareSearch_a_DEPENDENCIES) 
+	-rm -f libSimSite3DSoftwareSearch.a
+	$(libSimSite3DSoftwareSearch_a_AR) libSimSite3DSoftwareSearch.a $(libSimSite3DSoftwareSearch_a_OBJECTS) $(libSimSite3DSoftwareSearch_a_LIBADD)
+	$(RANLIB) libSimSite3DSoftwareSearch.a
 install-binPROGRAMS: $(bin_PROGRAMS)
 	@$(NORMAL_INSTALL)
 	test -z "$(bindir)" || $(mkdir_p) "$(DESTDIR)$(bindir)"

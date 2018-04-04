@@ -6,7 +6,7 @@
 #include <ScoreMapBase.H>
 
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! Testing/Validation class for surface deformations and hbonds moving
 class IK_tests{
@@ -63,5 +63,5 @@ private:
   static const std::string A_fname;
 
 };
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

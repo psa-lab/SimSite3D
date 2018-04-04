@@ -4,7 +4,7 @@
 #include <ModelHbondSurfaces.H>
 #include <HbondPoints.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! A simple data class for a block of a block matrix
 class pos_dep_on_joints{

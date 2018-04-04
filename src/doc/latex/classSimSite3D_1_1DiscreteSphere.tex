@@ -1,65 +1,65 @@
-\section{ASCbase::Discrete\-Sphere Class Reference}
-\label{classASCbase_1_1DiscreteSphere}\index{ASCbase::DiscreteSphere@{ASCbase::DiscreteSphere}}
+\section{SimSite3D::Discrete\-Sphere Class Reference}
+\label{classSimSite3D_1_1DiscreteSphere}\index{SimSite3D::DiscreteSphere@{SimSite3D::DiscreteSphere}}
 {\tt \#include $<$Discrete\-Sphere.H$>$}
 
 \subsection*{Public Member Functions}
 \begin{CompactItemize}
 \item 
-\bf{Discrete\-Sphere} (sphere\_\-sample\_\-level\_\-t lvl=DISCRETE\_\-SPHERE\_\-LEVEL\_\-TWO)\label{classASCbase_1_1DiscreteSphere_e621966eb3054dab3f2f9798bca76a6b}
+\bf{Discrete\-Sphere} (sphere\_\-sample\_\-level\_\-t lvl=DISCRETE\_\-SPHERE\_\-LEVEL\_\-TWO)\label{classSimSite3D_1_1DiscreteSphere_e621966eb3054dab3f2f9798bca76a6b}
 
 \begin{CompactList}\small\item\em Cstor; sets the sphere level. \item\end{CompactList}\item 
-\bf{Discrete\-Sphere} (const \bf{Discrete\-Sphere} \&src, const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classASCbase_1_1DiscreteSphere_d712606834a92c7735f3522a9c1983dc}
+\bf{Discrete\-Sphere} (const \bf{Discrete\-Sphere} \&src, const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classSimSite3D_1_1DiscreteSphere_d712606834a92c7735f3522a9c1983dc}
 
 \begin{CompactList}\small\item\em Apply the given transformation to the copy. \item\end{CompactList}\item 
-\bf{$\sim$Discrete\-Sphere} ()\label{classASCbase_1_1DiscreteSphere_0e4e024bf87c9f629c58e96e405a48e9}
+\bf{$\sim$Discrete\-Sphere} ()\label{classSimSite3D_1_1DiscreteSphere_0e4e024bf87c9f629c58e96e405a48e9}
 
 \begin{CompactList}\small\item\em Basic Dstor. \item\end{CompactList}\item 
-void \bf{scale} (my\_\-float\_\-t s)\label{classASCbase_1_1DiscreteSphere_499dd540bc049f849618e63141a762c9}
+void \bf{scale} (my\_\-float\_\-t s)\label{classSimSite3D_1_1DiscreteSphere_499dd540bc049f849618e63141a762c9}
 
 \begin{CompactList}\small\item\em Scale the current sphere by s. \item\end{CompactList}\item 
-const my\_\-float\_\-t $\ast$ \bf{pts\_\-begin} () const \label{classASCbase_1_1DiscreteSphere_cc1900a41dc02c937dee4964eb40f805}
+const my\_\-float\_\-t $\ast$ \bf{pts\_\-begin} () const \label{classSimSite3D_1_1DiscreteSphere_cc1900a41dc02c937dee4964eb40f805}
 
 \begin{CompactList}\small\item\em Get a constant pointer to the first element of the sphere. \item\end{CompactList}\item 
-const my\_\-float\_\-t $\ast$ \bf{pts\_\-end} () const \label{classASCbase_1_1DiscreteSphere_19c0f6e97d7235647271a5376dec43c6}
+const my\_\-float\_\-t $\ast$ \bf{pts\_\-end} () const \label{classSimSite3D_1_1DiscreteSphere_19c0f6e97d7235647271a5376dec43c6}
 
 \begin{CompactList}\small\item\em Get a constant pointer to 1 past the last element of the sphere. \item\end{CompactList}\item 
-const uint \bf{num\_\-pts} () const \label{classASCbase_1_1DiscreteSphere_f3062c3c256ce124eae95a440cd385d0}
+const uint \bf{num\_\-pts} () const \label{classSimSite3D_1_1DiscreteSphere_f3062c3c256ce124eae95a440cd385d0}
 
 \begin{CompactList}\small\item\em Get the number of points in the array. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Private Member Functions}
 \begin{CompactItemize}
 \item 
-void \bf{create\_\-copy} (const my\_\-float\_\-t $\ast$src, my\_\-float\_\-t $\ast$$\ast$dest)\label{classASCbase_1_1DiscreteSphere_27a44b0af870362405f7ff812e909e02}
+void \bf{create\_\-copy} (const my\_\-float\_\-t $\ast$src, my\_\-float\_\-t $\ast$$\ast$dest)\label{classSimSite3D_1_1DiscreteSphere_27a44b0af870362405f7ff812e909e02}
 
 \begin{CompactList}\small\item\em Create a nonconstant copy of the points. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
-const my\_\-float\_\-t $\ast$ \bf{A\_\-orig\_\-pts}\label{classASCbase_1_1DiscreteSphere_84eda7819366feacab69b8eca58b90a5}
+const my\_\-float\_\-t $\ast$ \bf{A\_\-orig\_\-pts}\label{classSimSite3D_1_1DiscreteSphere_84eda7819366feacab69b8eca58b90a5}
 
 \begin{CompactList}\small\item\em The first element of original sphere. \item\end{CompactList}\item 
-uint \bf{A\_\-num\_\-pts}\label{classASCbase_1_1DiscreteSphere_75720a63fc626c586eab6e8e8342f00b}
+uint \bf{A\_\-num\_\-pts}\label{classSimSite3D_1_1DiscreteSphere_75720a63fc626c586eab6e8e8342f00b}
 
 \begin{CompactList}\small\item\em Number of points in sphere (array). \item\end{CompactList}\item 
-my\_\-float\_\-t $\ast$ \bf{A\_\-pts}\label{classASCbase_1_1DiscreteSphere_6fa35750d9d3be1543df6e5fe88efa66}
+my\_\-float\_\-t $\ast$ \bf{A\_\-pts}\label{classSimSite3D_1_1DiscreteSphere_6fa35750d9d3be1543df6e5fe88efa66}
 
 \begin{CompactList}\small\item\em Pointer to first coord of first pt. \item\end{CompactList}\item 
-my\_\-float\_\-t \bf{A\_\-center} [3]\label{classASCbase_1_1DiscreteSphere_c38903731c1e07ab1b6a72aba830abfb}
+my\_\-float\_\-t \bf{A\_\-center} [3]\label{classSimSite3D_1_1DiscreteSphere_c38903731c1e07ab1b6a72aba830abfb}
 
 \begin{CompactList}\small\item\em Center of the sphere. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Static Private Attributes}
 \begin{CompactItemize}
 \item 
-static const uint \bf{level\_\-0\_\-len} = 10\label{classASCbase_1_1DiscreteSphere_272db3a33db89cfda38c0a2f7e488bca}
+static const uint \bf{level\_\-0\_\-len} = 10\label{classSimSite3D_1_1DiscreteSphere_272db3a33db89cfda38c0a2f7e488bca}
 
 \begin{CompactList}\small\item\em Number of points in the 0th level rep. \item\end{CompactList}\item 
-static const uint \bf{level\_\-1\_\-len} = 18\label{classASCbase_1_1DiscreteSphere_f067998b14bfba388d2f803330d6792c}
+static const uint \bf{level\_\-1\_\-len} = 18\label{classSimSite3D_1_1DiscreteSphere_f067998b14bfba388d2f803330d6792c}
 
 \begin{CompactList}\small\item\em Number of points in the 1st level rep. \item\end{CompactList}\item 
-static const uint \bf{level\_\-2\_\-len} = 26\label{classASCbase_1_1DiscreteSphere_59d0d77b116b29ec295f48add6fec024}
+static const uint \bf{level\_\-2\_\-len} = 26\label{classSimSite3D_1_1DiscreteSphere_59d0d77b116b29ec295f48add6fec024}
 
 \begin{CompactList}\small\item\em Number of points in the 2nd level rep. \item\end{CompactList}\item 
-static const uint \bf{level\_\-3\_\-len} = 39\label{classASCbase_1_1DiscreteSphere_066b8e66f73f541fb02b82ed853a3aed}
+static const uint \bf{level\_\-3\_\-len} = 39\label{classSimSite3D_1_1DiscreteSphere_066b8e66f73f541fb02b82ed853a3aed}
 
 \begin{CompactList}\small\item\em Number of points in the 3rd level rep. \item\end{CompactList}\item 
 static const my\_\-float\_\-t \bf{level\_\-0} [$\,$]
@@ -68,7 +68,7 @@ static const my\_\-float\_\-t \bf{level\_\-1} [$\,$]
 \begin{CompactList}\small\item\em 1st level rep of 1 (A) sphere \item\end{CompactList}\item 
 static const my\_\-float\_\-t \bf{level\_\-2} [$\,$]
 \begin{CompactList}\small\item\em 2nd level rep of 1 (A) sphere \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{level\_\-3} [$\,$]\label{classASCbase_1_1DiscreteSphere_a074b8dd69e55ae9ac9020e3d5a56a7d}
+static const my\_\-float\_\-t \bf{level\_\-3} [$\,$]\label{classSimSite3D_1_1DiscreteSphere_a074b8dd69e55ae9ac9020e3d5a56a7d}
 
 \begin{CompactList}\small\item\em 3rd level rep of 1 (A) sphere \item\end{CompactList}\end{CompactItemize}
 
@@ -83,9 +83,9 @@ One nicety is that the points in level 1 correspond to the same points as those 
 
 
 \subsection{Member Data Documentation}
-\index{ASCbase::DiscreteSphere@{ASCbase::Discrete\-Sphere}!level_0@{level\_\-0}}
-\index{level_0@{level\_\-0}!ASCbase::DiscreteSphere@{ASCbase::Discrete\-Sphere}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t \bf{Discrete\-Sphere::level\_\-0}\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1DiscreteSphere_53fc82a740852de5f8b12e96487c6e90}
+\index{SimSite3D::DiscreteSphere@{SimSite3D::Discrete\-Sphere}!level_0@{level\_\-0}}
+\index{level_0@{level\_\-0}!SimSite3D::DiscreteSphere@{SimSite3D::Discrete\-Sphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t \bf{Discrete\-Sphere::level\_\-0}\hspace{0.3cm}{\tt  [static, private]}}\label{classSimSite3D_1_1DiscreteSphere_53fc82a740852de5f8b12e96487c6e90}
 
 
 \textbf{Initial value:}
@@ -103,9 +103,9 @@ One nicety is that the points in level 1 correspond to the same points as those 
 \end{verbatim}\end{Code}
 0th level rep of 1 (A) sphere 
 
-\index{ASCbase::DiscreteSphere@{ASCbase::Discrete\-Sphere}!level_1@{level\_\-1}}
-\index{level_1@{level\_\-1}!ASCbase::DiscreteSphere@{ASCbase::Discrete\-Sphere}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t \bf{Discrete\-Sphere::level\_\-1}\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1DiscreteSphere_d3ff32a1e85a1c1f1e321fd09b0ec050}
+\index{SimSite3D::DiscreteSphere@{SimSite3D::Discrete\-Sphere}!level_1@{level\_\-1}}
+\index{level_1@{level\_\-1}!SimSite3D::DiscreteSphere@{SimSite3D::Discrete\-Sphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t \bf{Discrete\-Sphere::level\_\-1}\hspace{0.3cm}{\tt  [static, private]}}\label{classSimSite3D_1_1DiscreteSphere_d3ff32a1e85a1c1f1e321fd09b0ec050}
 
 
 \textbf{Initial value:}
@@ -131,9 +131,9 @@ One nicety is that the points in level 1 correspond to the same points as those 
 \end{verbatim}\end{Code}
 1st level rep of 1 (A) sphere 
 
-\index{ASCbase::DiscreteSphere@{ASCbase::Discrete\-Sphere}!level_2@{level\_\-2}}
-\index{level_2@{level\_\-2}!ASCbase::DiscreteSphere@{ASCbase::Discrete\-Sphere}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t \bf{Discrete\-Sphere::level\_\-2}\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1DiscreteSphere_e3e514caf92b337aae7cb629d90f9a61}
+\index{SimSite3D::DiscreteSphere@{SimSite3D::Discrete\-Sphere}!level_2@{level\_\-2}}
+\index{level_2@{level\_\-2}!SimSite3D::DiscreteSphere@{SimSite3D::Discrete\-Sphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t \bf{Discrete\-Sphere::level\_\-2}\hspace{0.3cm}{\tt  [static, private]}}\label{classSimSite3D_1_1DiscreteSphere_e3e514caf92b337aae7cb629d90f9a61}
 
 
 \textbf{Initial value:}

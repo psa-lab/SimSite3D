@@ -1,5 +1,5 @@
-\section{ASCbase::Search Class Reference}
-\label{classASCbase_1_1Search}\index{ASCbase::Search@{ASCbase::Search}}
+\section{SimSite3D::Search Class Reference}
+\label{classSimSite3D_1_1Search}\index{SimSite3D::Search@{SimSite3D::Search}}
 Main (Driver) class for searching sitemaps.  
 
 
@@ -8,25 +8,25 @@ Main (Driver) class for searching sitemaps.
 \subsection*{Public Types}
 \begin{CompactItemize}
 \item 
-typedef enum ASCbase::Search::align\_\-method\_\-enum \textbf{align\_\-method\_\-t}\label{classASCbase_1_1Search_a9a44b9d89721dd413afb8490f4183c3}
+typedef enum SimSite3D::Search::align\_\-method\_\-enum \textbf{align\_\-method\_\-t}\label{classSimSite3D_1_1Search_a9a44b9d89721dd413afb8490f4183c3}
 
 \item 
-\textbf{UNKNOWN\_\-ALIGNMENT\_\-METHOD} = 0\label{classASCbase_1_1Search_809c94eeeb25e147aa08d2f815a789863082530b329b01a266cf0c1141717bf3}
+\textbf{UNKNOWN\_\-ALIGNMENT\_\-METHOD} = 0\label{classSimSite3D_1_1Search_809c94eeeb25e147aa08d2f815a789863082530b329b01a266cf0c1141717bf3}
 
 \item 
-\textbf{NO\_\-ALIGNMENT}\label{classASCbase_1_1Search_809c94eeeb25e147aa08d2f815a789866c54f67a19009c78bf649262c0340adb}
+\textbf{NO\_\-ALIGNMENT}\label{classSimSite3D_1_1Search_809c94eeeb25e147aa08d2f815a789866c54f67a19009c78bf649262c0340adb}
 
 \item 
-\textbf{FROM\_\-RESULTS\_\-FILE}\label{classASCbase_1_1Search_809c94eeeb25e147aa08d2f815a7898696fb54c9b28bf785753ffdf6dde83b51}
+\textbf{FROM\_\-RESULTS\_\-FILE}\label{classSimSite3D_1_1Search_809c94eeeb25e147aa08d2f815a7898696fb54c9b28bf785753ffdf6dde83b51}
 
 \item 
-\textbf{TRIANGLE\_\-MATCHES}\label{classASCbase_1_1Search_809c94eeeb25e147aa08d2f815a7898638899be1fef1a8ff304fc9ce51878356}
+\textbf{TRIANGLE\_\-MATCHES}\label{classSimSite3D_1_1Search_809c94eeeb25e147aa08d2f815a7898638899be1fef1a8ff304fc9ce51878356}
 
 \item 
-\textbf{RANDOM\_\-SAMPLING}\label{classASCbase_1_1Search_809c94eeeb25e147aa08d2f815a789867516ae95f045b741fd84de2adc079724}
+\textbf{RANDOM\_\-SAMPLING}\label{classSimSite3D_1_1Search_809c94eeeb25e147aa08d2f815a789867516ae95f045b741fd84de2adc079724}
 
 \item 
-\textbf{GRID\_\-SAMPLING}\label{classASCbase_1_1Search_809c94eeeb25e147aa08d2f815a789865c39ba09fea0735bc5b06204c4251b7d}
+\textbf{GRID\_\-SAMPLING}\label{classSimSite3D_1_1Search_809c94eeeb25e147aa08d2f815a789865c39ba09fea0735bc5b06204c4251b7d}
 
 \item 
 enum \textbf{align\_\-method\_\-enum} \{ \par
@@ -42,75 +42,75 @@ enum \textbf{align\_\-method\_\-enum} \{ \par
 \subsection*{Public Member Functions}
 \begin{CompactItemize}
 \item 
-\bf{Search} (const \bf{Search\-Parameters} $\ast$args\_\-in)\label{classASCbase_1_1Search_ff7b007d7a7b19f5009d205ec68ce465}
+\bf{Search} (const \bf{Search\-Parameters} $\ast$args\_\-in)\label{classSimSite3D_1_1Search_ff7b007d7a7b19f5009d205ec68ce465}
 
 \begin{CompactList}\small\item\em Only allowed Cstor for search\_\-sitemaps. \item\end{CompactList}\item 
-virtual \bf{$\sim$Search} ()\label{classASCbase_1_1Search_4cdd25e61eac9ffe50b2aaa79a8a728b}
+virtual \bf{$\sim$Search} ()\label{classSimSite3D_1_1Search_4cdd25e61eac9ffe50b2aaa79a8a728b}
 
 \begin{CompactList}\small\item\em Free up the user\_\-args structure. \item\end{CompactList}\item 
 bool \bf{run} ()
 \begin{CompactList}\small\item\em Do the search. \item\end{CompactList}\item 
 bool \bf{fail} () const 
 \begin{CompactList}\small\item\em If true, running will yield undefined results or core dump. \item\end{CompactList}\item 
-const \bf{Search\-Parameters} $\ast$ \textbf{args} () const \label{classASCbase_1_1Search_ed92b23eb8bdd71f0ba4efcde810c99b}
+const \bf{Search\-Parameters} $\ast$ \textbf{args} () const \label{classSimSite3D_1_1Search_ed92b23eb8bdd71f0ba4efcde810c99b}
 
 \end{CompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{CompactItemize}
 \item 
-static bool \bf{setup\_\-directories} (std::string base\_\-dir, mode\_\-t mode)\label{classASCbase_1_1Search_04389ee319e0961afe77b5c5f4f93a70}
+static bool \bf{setup\_\-directories} (std::string base\_\-dir, mode\_\-t mode)\label{classSimSite3D_1_1Search_04389ee319e0961afe77b5c5f4f93a70}
 
 \begin{CompactList}\small\item\em Setup the directories for output. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Protected Member Functions}
 \begin{CompactItemize}
 \item 
-\bf{Model\-Sitemap} $\ast$ \textbf{model} ()\label{classASCbase_1_1Search_8943627120b7578d1d37ad37c319e5b9}
+\bf{Model\-Sitemap} $\ast$ \textbf{model} ()\label{classSimSite3D_1_1Search_8943627120b7578d1d37ad37c319e5b9}
 
 \item 
-void \textbf{start\_\-timer} ()\label{classASCbase_1_1Search_5bb9e31b72d314730373b33c2a602cc4}
+void \textbf{start\_\-timer} ()\label{classSimSite3D_1_1Search_5bb9e31b72d314730373b33c2a602cc4}
 
 \item 
-bool \textbf{get\_\-timer\_\-and\_\-write\_\-to\_\-file} ()\label{classASCbase_1_1Search_54f6cd281b8ba0c9760a57c6d1b7f2c1}
+bool \textbf{get\_\-timer\_\-and\_\-write\_\-to\_\-file} ()\label{classSimSite3D_1_1Search_54f6cd281b8ba0c9760a57c6d1b7f2c1}
 
 \item 
-template$<$typename align\_\-T$>$ bool \textbf{run} (std::vector$<$ align\_\-T $>$ $\ast$alignments, const align\_\-method\_\-t align\_\-method)\label{classASCbase_1_1Search_221ce8b930daf65916a915436fc44254}
+template$<$typename align\_\-T$>$ bool \textbf{run} (std::vector$<$ align\_\-T $>$ $\ast$alignments, const align\_\-method\_\-t align\_\-method)\label{classSimSite3D_1_1Search_221ce8b930daf65916a915436fc44254}
 
 \item 
 template$<$typename scoring\_\-T, typename align\_\-T$>$ bool \bf{score} (std::vector$<$ align\_\-T $>$ $\ast$alignments, const align\_\-method\_\-t align\_\-method, scoring\_\-T $\ast$score\_\-method)
 \item 
-bool \bf{set\_\-alignment\_\-method} (align\_\-method\_\-t $\ast$align\_\-method)\label{classASCbase_1_1Search_8d8972c7e6cab00f3251285af696d902}
+bool \bf{set\_\-alignment\_\-method} (align\_\-method\_\-t $\ast$align\_\-method)\label{classSimSite3D_1_1Search_8d8972c7e6cab00f3251285af696d902}
 
 \begin{CompactList}\small\item\em Set the alignment method enum based on the arguments. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Private Member Functions}
 \begin{CompactItemize}
 \item 
-void \bf{init\_\-vars} ()\label{classASCbase_1_1Search_2249af437ccb9705517b8ad80a6a0564}
+void \bf{init\_\-vars} ()\label{classSimSite3D_1_1Search_2249af437ccb9705517b8ad80a6a0564}
 
 \begin{CompactList}\small\item\em Initialize class variables. \item\end{CompactList}\item 
 template$<$typename scoring\_\-T, typename align\_\-T$>$ bool \bf{align\_\-and\_\-score\_\-dset\_\-site} (std::vector$<$ align\_\-T $>$ $\ast$alignments, scoring\_\-T $\ast$score\_\-method, const align\_\-method\_\-t align\_\-method, const std::string target\_\-sitemap\_\-path, const std::string struct\_\-id, std::ofstream \&results\_\-out)
 \item 
-template$<$typename align\_\-T$>$ bool \textbf{align} (\bf{Model\-Sitemap} $\ast$query\_\-site, \bf{Sitemap} \&dset\_\-site, std::vector$<$ align\_\-T $>$ $\ast$alignments, const align\_\-method\_\-t align\_\-method)\label{classASCbase_1_1Search_fab7009bb634e1f71167f883d338ba98}
+template$<$typename align\_\-T$>$ bool \textbf{align} (\bf{Model\-Sitemap} $\ast$query\_\-site, \bf{Sitemap} \&dset\_\-site, std::vector$<$ align\_\-T $>$ $\ast$alignments, const align\_\-method\_\-t align\_\-method)\label{classSimSite3D_1_1Search_fab7009bb634e1f71167f883d338ba98}
 
 \end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
-bool \bf{A\_\-fail}\label{classASCbase_1_1Search_658d52e28d45179d6b9d1d6a205215ea}
+bool \bf{A\_\-fail}\label{classSimSite3D_1_1Search_658d52e28d45179d6b9d1d6a205215ea}
 
 \begin{CompactList}\small\item\em If true, running will yield undefined results. \item\end{CompactList}\item 
-const \bf{Search\-Parameters} $\ast$ \textbf{A\_\-args}\label{classASCbase_1_1Search_da2546891b0401510843373abd2dafb1}
+const \bf{Search\-Parameters} $\ast$ \textbf{A\_\-args}\label{classSimSite3D_1_1Search_da2546891b0401510843373abd2dafb1}
 
 \item 
-\bf{Model\-Sitemap} $\ast$ \bf{A\_\-model}\label{classASCbase_1_1Search_7b57373932f92cce7ab4bf5148851ede}
+\bf{Model\-Sitemap} $\ast$ \bf{A\_\-model}\label{classSimSite3D_1_1Search_7b57373932f92cce7ab4bf5148851ede}
 
 \begin{CompactList}\small\item\em Cmdline and config file args Model to which we wish to align dbase sitemaps. \item\end{CompactList}\item 
-\bf{Timer} \textbf{A\_\-timer}\label{classASCbase_1_1Search_55335360d173f7c5c6bc04855f62bc04}
+\bf{Timer} \textbf{A\_\-timer}\label{classSimSite3D_1_1Search_55335360d173f7c5c6bc04855f62bc04}
 
 \end{CompactItemize}
 \subsection*{Static Private Attributes}
 \begin{CompactItemize}
 \item 
-static const std::string \bf{A\_\-fname} = \char`\"{}Search.C\char`\"{}\label{classASCbase_1_1Search_f7e20ddc101c1e6165e3b00a2e0eeb82}
+static const std::string \bf{A\_\-fname} = \char`\"{}Search.C\char`\"{}\label{classSimSite3D_1_1Search_f7e20ddc101c1e6165e3b00a2e0eeb82}
 
 \begin{CompactList}\small\item\em Source file name. \item\end{CompactList}\end{CompactItemize}
 
@@ -121,23 +121,23 @@ Main (Driver) class for searching sitemaps.
 
 
 \subsection{Member Function Documentation}
-\index{ASCbase::Search@{ASCbase::Search}!align_and_score_dset_site@{align\_\-and\_\-score\_\-dset\_\-site}}
-\index{align_and_score_dset_site@{align\_\-and\_\-score\_\-dset\_\-site}!ASCbase::Search@{ASCbase::Search}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename scoring\_\-T, typename align\_\-T$>$ bool ASCbase::Search::align\_\-and\_\-score\_\-dset\_\-site (std::vector$<$ align\_\-T $>$ $\ast$ {\em alignments}, scoring\_\-T $\ast$ {\em score\_\-method}, const align\_\-method\_\-t {\em align\_\-method}, const std::string {\em target\_\-sitemap\_\-path}, const std::string {\em struct\_\-id}, std::ofstream \& {\em results\_\-out})\hspace{0.3cm}{\tt  [inline, private]}}\label{classASCbase_1_1Search_fd59641ac1b15dd60260cdc03455068d}
+\index{SimSite3D::Search@{SimSite3D::Search}!align_and_score_dset_site@{align\_\-and\_\-score\_\-dset\_\-site}}
+\index{align_and_score_dset_site@{align\_\-and\_\-score\_\-dset\_\-site}!SimSite3D::Search@{SimSite3D::Search}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename scoring\_\-T, typename align\_\-T$>$ bool SimSite3D::Search::align\_\-and\_\-score\_\-dset\_\-site (std::vector$<$ align\_\-T $>$ $\ast$ {\em alignments}, scoring\_\-T $\ast$ {\em score\_\-method}, const align\_\-method\_\-t {\em align\_\-method}, const std::string {\em target\_\-sitemap\_\-path}, const std::string {\em struct\_\-id}, std::ofstream \& {\em results\_\-out})\hspace{0.3cm}{\tt  [inline, private]}}\label{classSimSite3D_1_1Search_fd59641ac1b15dd60260cdc03455068d}
 
 
-Note that this function no longer clears the alignments container \index{ASCbase::Search@{ASCbase::Search}!fail@{fail}}
-\index{fail@{fail}!ASCbase::Search@{ASCbase::Search}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool ASCbase::Search::fail () const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1Search_829f1f284ce32f03af0d34bdf6ccfab4}
+Note that this function no longer clears the alignments container \index{SimSite3D::Search@{SimSite3D::Search}!fail@{fail}}
+\index{fail@{fail}!SimSite3D::Search@{SimSite3D::Search}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool SimSite3D::Search::fail () const\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1Search_829f1f284ce32f03af0d34bdf6ccfab4}
 
 
 If true, running will yield undefined results or core dump. 
 
 \begin{Desc}
 \item[Returns:]True if an error has occured, otherwise false \end{Desc}
-\index{ASCbase::Search@{ASCbase::Search}!run@{run}}
-\index{run@{run}!ASCbase::Search@{ASCbase::Search}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Search::run ()}\label{classASCbase_1_1Search_051f1638b64fb50b60b1b6dd5f10305e}
+\index{SimSite3D::Search@{SimSite3D::Search}!run@{run}}
+\index{run@{run}!SimSite3D::Search@{SimSite3D::Search}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Search::run ()}\label{classSimSite3D_1_1Search_051f1638b64fb50b60b1b6dd5f10305e}
 
 
 Do the search. 
@@ -146,9 +146,9 @@ Given the template gunk as well as gcc issues, we need a function to call score 
 
 \begin{Desc}
 \item[Returns:]True if no errors have occured, else false \end{Desc}
-\index{ASCbase::Search@{ASCbase::Search}!score@{score}}
-\index{score@{score}!ASCbase::Search@{ASCbase::Search}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename scoring\_\-T, typename align\_\-T$>$ bool ASCbase::Search::score (std::vector$<$ align\_\-T $>$ $\ast$ {\em alignments}, const align\_\-method\_\-t {\em align\_\-method}, scoring\_\-T $\ast$ {\em score\_\-method})\hspace{0.3cm}{\tt  [inline, protected]}}\label{classASCbase_1_1Search_1da1018845426f8b1ebfcf3388d6dbed}
+\index{SimSite3D::Search@{SimSite3D::Search}!score@{score}}
+\index{score@{score}!SimSite3D::Search@{SimSite3D::Search}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename scoring\_\-T, typename align\_\-T$>$ bool SimSite3D::Search::score (std::vector$<$ align\_\-T $>$ $\ast$ {\em alignments}, const align\_\-method\_\-t {\em align\_\-method}, scoring\_\-T $\ast$ {\em score\_\-method})\hspace{0.3cm}{\tt  [inline, protected]}}\label{classSimSite3D_1_1Search_1da1018845426f8b1ebfcf3388d6dbed}
 
 
 Wrapper method to allow pairwise comparisons and database (directory) blasts using the given scoring method. 

@@ -3,8 +3,8 @@
 #include "__array_1.pypp.hpp"
 
 using namespace boost::python;
-using ASCbase::point_t;
-using ASCbase::atom_t;
+using SimSite3D::point_t;
+using SimSite3D::atom_t;
 
 // Machinery to get at the position stored in point_t -- not foolproof since
 // it doesn't support python type iteration but seems to work using numpy.array
@@ -42,7 +42,7 @@ BOOST_PYTHON_MODULE(_atom)
     //point_t_exposer.def( boost.python.self == boost.python.self );
     pyplusplus::containers::static_sized::register_array_1< double, 3 >
       ( "__array_1_double_3" );
-    { //ASCbase::point_t::pos [variable], type=my_float_t[3]
+    { //SimSite3D::point_t::pos [variable], type=my_float_t[3]
       typedef pyplusplus::containers::static_sized::array_1_t< double, 3> 
         ( *array_wrapper_creator )( point_t & );
       point_t_exposer.add_property("pos", 

@@ -15,11 +15,11 @@
 <a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define DISTANCE_ARRAY_HEADER_INCLUDED</span>
 <a name="l00003"></a>00003 <span class="preprocessor"></span>
 <a name="l00004"></a>00004 
-<a name="l00005"></a>00005 <span class="keyword">namespace </span>ASCbase{
+<a name="l00005"></a>00005 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00006"></a>00006 <span class="keyword">namespace </span>geometry{
 <a name="l00007"></a>00007 
 <a name="l00011"></a>00011 
-<a name="l00015"></a><a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html">00015</a> <span class="keyword">class </span><a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html">DistanceArray2</a>{
+<a name="l00015"></a><a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html">00015</a> <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html">DistanceArray2</a>{
 <a name="l00016"></a>00016 <span class="keyword">public</span>:
 <a name="l00017"></a>00017   <span class="keyword">typedef</span> std::vector&lt; std::vector&lt;const my_float_t *&gt; &gt; bin_vec;
 <a name="l00018"></a>00018   <span class="keyword">typedef</span> bin_vec::iterator bin_vi;
@@ -28,17 +28,17 @@
 <a name="l00021"></a>00021   <span class="keyword">typedef</span> std::multimap&lt;bin_vci, const my_float_t*&gt; bin2vert_mmap;
 <a name="l00022"></a>00022   <span class="keyword">typedef</span> bin2vert_mmap::const_iterator bin2vert_mmci;
 <a name="l00023"></a>00023 
-<a name="l00026"></a><a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#e951f6ba30f7b4868e4b00347f24da0e">00026</a>   <a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#e951f6ba30f7b4868e4b00347f24da0e">DistanceArray2</a>()
+<a name="l00026"></a><a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#e951f6ba30f7b4868e4b00347f24da0e">00026</a>   <a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#e951f6ba30f7b4868e4b00347f24da0e">DistanceArray2</a>()
 <a name="l00027"></a>00027   { init(); }
 <a name="l00028"></a>00028 
-<a name="l00029"></a>00029   <a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#e951f6ba30f7b4868e4b00347f24da0e">DistanceArray2</a>(<span class="keyword">const</span> my_float_t *positions, <span class="keyword">const</span> uint num_pos,
+<a name="l00029"></a>00029   <a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#e951f6ba30f7b4868e4b00347f24da0e">DistanceArray2</a>(<span class="keyword">const</span> my_float_t *positions, <span class="keyword">const</span> uint num_pos,
 <a name="l00030"></a>00030                  <span class="keyword">const</span> my_float_t bin_width)
 <a name="l00031"></a>00031   {
 <a name="l00032"></a>00032     init();
 <a name="l00033"></a>00033     setup_grid(positions, num_pos, bin_width);
 <a name="l00034"></a>00034   }
 <a name="l00035"></a>00035   
-<a name="l00036"></a>00036   ~<a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#e951f6ba30f7b4868e4b00347f24da0e">DistanceArray2</a>() {;}
+<a name="l00036"></a>00036   ~<a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#e951f6ba30f7b4868e4b00347f24da0e">DistanceArray2</a>() {;}
 <a name="l00037"></a>00037 
 <a name="l00038"></a>00038   <span class="keywordtype">void</span>
 <a name="l00039"></a>00039   setup_grid(<span class="keyword">const</span> my_float_t *positions, <span class="keyword">const</span> uint num_pos, 
@@ -48,15 +48,15 @@
 <a name="l00043"></a>00043       std::cerr &lt;&lt; <span class="stringliteral">"Bins are already setup - cannot set them up again\n"</span>;
 <a name="l00044"></a>00044       <span class="keywordflow">return</span>;
 <a name="l00045"></a>00045     }
-<a name="l00046"></a>00046     <a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a> = bin_width + 0.01;
-<a name="l00047"></a>00047     <a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#d27b3690450da6a8df54915b042e4425">A_bin_width_inv</a> = 1.0 / bin_width;
+<a name="l00046"></a>00046     <a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a> = bin_width + 0.01;
+<a name="l00047"></a>00047     <a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#d27b3690450da6a8df54915b042e4425">A_bin_width_inv</a> = 1.0 / bin_width;
 <a name="l00048"></a>00048     <span class="comment">//A_max_dist = max_dist;</span>
 <a name="l00049"></a>00049 
 <a name="l00050"></a>00050     my_float_t min_pos[3], max_pos[3];
 <a name="l00051"></a>00051     get_min_max_coords(positions, num_pos, min_pos, max_pos);
 <a name="l00052"></a>00052     determine_space(min_pos, max_pos, A_lower_corner, A_upper_corner, 
 <a name="l00053"></a>00053                     A_num_bins);
-<a name="l00054"></a>00054     populate_grid(positions, num_pos, <a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a>, &amp;A_bins);
+<a name="l00054"></a>00054     populate_grid(positions, num_pos, <a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a>, &amp;A_bins);
 <a name="l00055"></a>00055 <span class="comment">//    A_bins_for_moved_pts-&gt;resize(A_num_bins[0]*A_num_bins[1]*A_num_bins[2]);</span>
 <a name="l00056"></a>00056     A_bins_are_setup = <span class="keyword">true</span>;
 <a name="l00057"></a>00057   }
@@ -81,9 +81,9 @@
 <a name="l00076"></a>00076   {
 <a name="l00077"></a>00077     <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 3; ++i){
 <a name="l00078"></a>00078       min_corner[i] = 
-<a name="l00079"></a>00079         <a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a> * std::floor(min_pos[i] / <a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a>) - 2*<a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a>;
+<a name="l00079"></a>00079         <a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a> * std::floor(min_pos[i] / <a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a>) - 2*<a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a>;
 <a name="l00080"></a>00080       max_corner[i] = 
-<a name="l00081"></a>00081         <a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a> * std::ceil(max_pos[i] / <a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a>) + 2*<a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a>;
+<a name="l00081"></a>00081         <a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a> * std::ceil(max_pos[i] / <a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a>) + 2*<a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a>;
 <a name="l00082"></a>00082       num_bins[i] = 
 <a name="l00083"></a>00083         static_cast&lt;int&gt;(std::ceil((max_corner[i] - min_corner[i]) 
 <a name="l00084"></a>00084                                    / A_bin_width));
@@ -107,7 +107,7 @@
 <a name="l00102"></a>00102       <span class="keywordtype">int</span> idx[3];
 <a name="l00103"></a>00103       <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 3; ++i)
 <a name="l00104"></a>00104         idx[i] = static_cast&lt;int&gt;(std::floor((p[i] - A_lower_corner[i]) * 
-<a name="l00105"></a>00105                                              <a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#d27b3690450da6a8df54915b042e4425">A_bin_width_inv</a>)); 
+<a name="l00105"></a>00105                                              <a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#d27b3690450da6a8df54915b042e4425">A_bin_width_inv</a>)); 
 <a name="l00106"></a>00106 
 <a name="l00107"></a>00107 <span class="comment">//      std::cout &lt;&lt; "bin idz " &lt;&lt; idx[0] &lt;&lt; " " &lt;&lt; idx[1] &lt;&lt; " " </span>
 <a name="l00108"></a>00108 <span class="comment">//                &lt;&lt; idx[2] &lt;&lt; std::endl;</span>
@@ -183,7 +183,7 @@
 <a name="l00178"></a>00178   }
 <a name="l00179"></a>00179 
 <a name="l00181"></a>00181   <span class="keyword">inline</span> bin_vci
-<a name="l00182"></a><a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#cf50a867e282cb26de29625843288be7">00182</a>   <a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#cf50a867e282cb26de29625843288be7">bins_end</a>()<span class="keyword"> const</span>
+<a name="l00182"></a><a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#cf50a867e282cb26de29625843288be7">00182</a>   <a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#cf50a867e282cb26de29625843288be7">bins_end</a>()<span class="keyword"> const</span>
 <a name="l00183"></a>00183 <span class="keyword">  </span>{ <span class="keywordflow">return</span> A_bins.end(); }
 <a name="l00184"></a>00184                 
 <a name="l00185"></a>00185 
@@ -192,7 +192,7 @@
 <a name="l00188"></a>00188   init()
 <a name="l00189"></a>00189   {
 <a name="l00190"></a>00190     <span class="comment">//A_max_dist = my_float_max;</span>
-<a name="l00191"></a>00191     <a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a> = my_float_max;
+<a name="l00191"></a>00191     <a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a> = my_float_max;
 <a name="l00192"></a>00192     std::fill(A_upper_corner, A_upper_corner + 3, 0.0);
 <a name="l00193"></a>00193     std::fill(A_lower_corner, A_lower_corner + 3, 0.0);
 <a name="l00194"></a>00194     std::fill(A_num_bins, A_num_bins + 3, 0);
@@ -200,8 +200,8 @@
 <a name="l00196"></a>00196   }
 <a name="l00197"></a>00197 
 <a name="l00198"></a>00198 <span class="comment">//  my_float_t A_max_dist;  //!&lt; Maximum distance for grid to be valid</span>
-<a name="l00199"></a><a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">00199</a>   my_float_t <a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a>; 
-<a name="l00200"></a><a class="code" href="classASCbase_1_1geometry_1_1DistanceArray2.html#d27b3690450da6a8df54915b042e4425">00200</a>   my_float_t A_bin_width_inv; 
+<a name="l00199"></a><a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">00199</a>   my_float_t <a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#46bf43dba80eca2a90354de43f3e090f">A_bin_width</a>; 
+<a name="l00200"></a><a class="code" href="classSimSite3D_1_1geometry_1_1DistanceArray2.html#d27b3690450da6a8df54915b042e4425">00200</a>   my_float_t A_bin_width_inv; 
 <a name="l00201"></a>00201   my_float_t A_upper_corner[3];
 <a name="l00202"></a>00202   my_float_t A_lower_corner[3];
 <a name="l00203"></a>00203   <span class="keywordtype">int</span> A_num_bins[3];
@@ -211,7 +211,7 @@
 <a name="l00207"></a>00207   <span class="keywordtype">bool</span> A_bins_are_setup;
 <a name="l00208"></a>00208 };
 <a name="l00209"></a>00209 } <span class="comment">// end namespace geometry</span>
-<a name="l00210"></a>00210 } <span class="comment">// end namespace ASCbase</span>
+<a name="l00210"></a>00210 } <span class="comment">// end namespace SimSite3D</span>
 <a name="l00211"></a>00211 <span class="preprocessor">#endif</span>
 </pre></div><hr size="1"><address style="align: right;"><small>Generated on Tue Apr 3 23:09:17 2012 for simsite3d by&nbsp;
 <a href="http://www.doxygen.org/index.html">

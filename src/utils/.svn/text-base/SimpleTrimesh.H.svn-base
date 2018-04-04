@@ -9,7 +9,7 @@
 #include <SimpleOctree.H>
 
 
-namespace ASCbase{
+namespace SimSite3D{
 
   //! Simple surface class built for speed of computing the shortest point to
   //! surface distance.

@@ -32,7 +32,7 @@
 
 #include <ScoreMapBase.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 class RigidAlignWithDsetMP : public rigid_align_t{
 public:

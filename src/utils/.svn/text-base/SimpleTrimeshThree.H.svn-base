@@ -3,7 +3,7 @@
 
 #include <FaceAttrib.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 namespace geometry{
 
 class Edge{
@@ -247,5 +247,5 @@ private:
 
 
 } // end namespace geometry
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

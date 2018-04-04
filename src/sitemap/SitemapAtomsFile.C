@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -19,7 +19,7 @@
 #include <algorithm>
 #include <mol2File.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 const std::string SitemapAtomsFile::A_fname = "SitemapAtomsFile.C";
 const my_float_t SitemapAtomsFile::A_max_interact_dist = 12.0;
 

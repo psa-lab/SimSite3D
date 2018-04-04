@@ -1,33 +1,33 @@
-\section{ASCbase::Drug\-Score\-Interface Class Reference}
-\label{classASCbase_1_1DrugScoreInterface}\index{ASCbase::DrugScoreInterface@{ASCbase::DrugScoreInterface}}
+\section{SimSite3D::Drug\-Score\-Interface Class Reference}
+\label{classSimSite3D_1_1DrugScoreInterface}\index{SimSite3D::DrugScoreInterface@{SimSite3D::DrugScoreInterface}}
 Base class: wrapper and parser for external scoring functions.  
 
 
 {\tt \#include $<$Drug\-Score\-Interface.H$>$}
 
-Inheritance diagram for ASCbase::Drug\-Score\-Interface::\begin{figure}[H]
+Inheritance diagram for SimSite3D::Drug\-Score\-Interface::\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2cm]{classASCbase_1_1DrugScoreInterface}
+\includegraphics[height=2cm]{classSimSite3D_1_1DrugScoreInterface}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{CompactItemize}
 \item 
-\textbf{Drug\-Score\-Interface} (std::string cmdline)\label{classASCbase_1_1DrugScoreInterface_9e2c6ac97391cc6792e18b9621082b0e}
+\textbf{Drug\-Score\-Interface} (std::string cmdline)\label{classSimSite3D_1_1DrugScoreInterface_9e2c6ac97391cc6792e18b9621082b0e}
 
 \item 
-\bf{$\sim$Drug\-Score\-Interface} ()\label{classASCbase_1_1DrugScoreInterface_22c88a6abd867ac26771908b5240d710}
+\bf{$\sim$Drug\-Score\-Interface} ()\label{classSimSite3D_1_1DrugScoreInterface_22c88a6abd867ac26771908b5240d710}
 
 \begin{CompactList}\small\item\em Do nothing destructor. \item\end{CompactList}\item 
 bool \bf{score} (std::string prot\_\-path, std::string lig\_\-path, std::vector$<$ my\_\-float\_\-t $>$ $\ast$scores)
-\begin{CompactList}\small\item\em Wrapper to \doxyref{External\-Scoring\-Function::run}{p.}{classASCbase_1_1ExternalScoringFunction_118e501c983ee3c61747b40741c776ff} and parse output score file. \item\end{CompactList}\item 
+\begin{CompactList}\small\item\em Wrapper to \doxyref{External\-Scoring\-Function::run}{p.}{classSimSite3D_1_1ExternalScoringFunction_118e501c983ee3c61747b40741c776ff} and parse output score file. \item\end{CompactList}\item 
 void \bf{sf\_\-names} (std::vector$<$ std::string $>$ $\ast$names)
 \begin{CompactList}\small\item\em Store the string \char`\"{}Drug\-Score\char`\"{} in names. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Static Private Attributes}
 \begin{CompactItemize}
 \item 
-static const std::string \textbf{\_\-fname} = \char`\"{}Drug\-Score\-Interface.C\char`\"{}\label{classASCbase_1_1DrugScoreInterface_7f1e950977fafc985b8678428b3d7ea2}
+static const std::string \textbf{\_\-fname} = \char`\"{}Drug\-Score\-Interface.C\char`\"{}\label{classSimSite3D_1_1DrugScoreInterface_7f1e950977fafc985b8678428b3d7ea2}
 
 \end{CompactItemize}
 
@@ -38,12 +38,12 @@ Base class: wrapper and parser for external scoring functions.
 
 
 \subsection{Member Function Documentation}
-\index{ASCbase::DrugScoreInterface@{ASCbase::Drug\-Score\-Interface}!score@{score}}
-\index{score@{score}!ASCbase::DrugScoreInterface@{ASCbase::Drug\-Score\-Interface}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Drug\-Score\-Interface::score (std::string {\em prot\_\-path}, std::string {\em lig\_\-path}, std::vector$<$ my\_\-float\_\-t $>$ $\ast$ {\em scores})\hspace{0.3cm}{\tt  [virtual]}}\label{classASCbase_1_1DrugScoreInterface_dc18368127b62019d1af8c158ba61517}
+\index{SimSite3D::DrugScoreInterface@{SimSite3D::Drug\-Score\-Interface}!score@{score}}
+\index{score@{score}!SimSite3D::DrugScoreInterface@{SimSite3D::Drug\-Score\-Interface}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Drug\-Score\-Interface::score (std::string {\em prot\_\-path}, std::string {\em lig\_\-path}, std::vector$<$ my\_\-float\_\-t $>$ $\ast$ {\em scores})\hspace{0.3cm}{\tt  [virtual]}}\label{classSimSite3D_1_1DrugScoreInterface_dc18368127b62019d1af8c158ba61517}
 
 
-Wrapper to \doxyref{External\-Scoring\-Function::run}{p.}{classASCbase_1_1ExternalScoringFunction_118e501c983ee3c61747b40741c776ff} and parse output score file. 
+Wrapper to \doxyref{External\-Scoring\-Function::run}{p.}{classSimSite3D_1_1ExternalScoringFunction_118e501c983ee3c61747b40741c776ff} and parse output score file. 
 
 Currently is operating under the assumption that PAIR\_\-10 is enough. A change in options would cause the Drug\-Score output files to have a different prefix. Assume the .scr file holds the score only
 
@@ -56,9 +56,9 @@ Currently is operating under the assumption that PAIR\_\-10 is enough. A change 
 \item[Returns:]True if Drug\-Score seemed to work, otherwise false \end{Desc}
 
 
-Implements \bf{ASCbase::External\-Scoring\-Function} \doxyref{p.}{classASCbase_1_1ExternalScoringFunction_d0e70f7569b5746af85eebc1208afa2a}.\index{ASCbase::DrugScoreInterface@{ASCbase::Drug\-Score\-Interface}!sf_names@{sf\_\-names}}
-\index{sf_names@{sf\_\-names}!ASCbase::DrugScoreInterface@{ASCbase::Drug\-Score\-Interface}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Drug\-Score\-Interface::sf\_\-names (std::vector$<$ std::string $>$ $\ast$ {\em names})\hspace{0.3cm}{\tt  [virtual]}}\label{classASCbase_1_1DrugScoreInterface_f58148608722e9454c2f3e108bfc98f5}
+Implements \bf{SimSite3D::External\-Scoring\-Function} \doxyref{p.}{classSimSite3D_1_1ExternalScoringFunction_d0e70f7569b5746af85eebc1208afa2a}.\index{SimSite3D::DrugScoreInterface@{SimSite3D::Drug\-Score\-Interface}!sf_names@{sf\_\-names}}
+\index{sf_names@{sf\_\-names}!SimSite3D::DrugScoreInterface@{SimSite3D::Drug\-Score\-Interface}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Drug\-Score\-Interface::sf\_\-names (std::vector$<$ std::string $>$ $\ast$ {\em names})\hspace{0.3cm}{\tt  [virtual]}}\label{classSimSite3D_1_1DrugScoreInterface_f58148608722e9454c2f3e108bfc98f5}
 
 
 Store the string \char`\"{}Drug\-Score\char`\"{} in names. 
@@ -70,7 +70,7 @@ Store the string \char`\"{}Drug\-Score\char`\"{} in names.
 \end{Desc}
 
 
-Implements \bf{ASCbase::External\-Scoring\-Function} \doxyref{p.}{classASCbase_1_1ExternalScoringFunction_3db07e1e70e4946b507c9b320a124b8b}.
+Implements \bf{SimSite3D::External\-Scoring\-Function} \doxyref{p.}{classSimSite3D_1_1ExternalScoringFunction_3db07e1e70e4946b507c9b320a124b8b}.
 
 The documentation for this class was generated from the following files:\begin{CompactItemize}
 \item 

@@ -24,7 +24,7 @@
 #include <signal.h>
 #include <string>
 
-namespace ASCbase{
+namespace SimSite3D{
   //! A Linux profile timer for sequential programs
   /*! @ingroup common 
    * This class has been updated to use sigaction() in the place of signal(). 

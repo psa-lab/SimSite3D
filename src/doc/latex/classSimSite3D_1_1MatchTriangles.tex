@@ -1,5 +1,5 @@
-\section{ASCbase::Match\-Triangles Class Reference}
-\label{classASCbase_1_1MatchTriangles}\index{ASCbase::MatchTriangles@{ASCbase::MatchTriangles}}
+\section{SimSite3D::Match\-Triangles Class Reference}
+\label{classSimSite3D_1_1MatchTriangles}\index{SimSite3D::MatchTriangles@{SimSite3D::MatchTriangles}}
 Registration of sitemaps based on close 3 point alignments.  
 
 
@@ -10,7 +10,7 @@ Registration of sitemaps based on close 3 point alignments.
 \item 
 \bf{Match\-Triangles} (const my\_\-float\_\-t dmetol\_\-in, const my\_\-float\_\-t lsetol\_\-in, const bool allow\_\-hphob\_\-triangles)
 \begin{CompactList}\small\item\em Cstor. \item\end{CompactList}\item 
-virtual \bf{$\sim$Match\-Triangles} ()\label{classASCbase_1_1MatchTriangles_2c1b59400cb3b11d304f8ac9fe4446e1}
+virtual \bf{$\sim$Match\-Triangles} ()\label{classSimSite3D_1_1MatchTriangles_2c1b59400cb3b11d304f8ac9fe4446e1}
 
 \begin{CompactList}\small\item\em basic destruction \item\end{CompactList}\item 
 template$<$typename align\_\-T$>$ bool \bf{align} (\bf{Model\-Sitemap} $\ast$query\_\-site, \bf{Sitemap} \&dset\_\-site, std::vector$<$ align\_\-T $>$ $\ast$alignments)
@@ -18,66 +18,66 @@ template$<$typename align\_\-T$>$ bool \bf{align} (\bf{Model\-Sitemap} $\ast$que
 \subsection*{Private Member Functions}
 \begin{CompactItemize}
 \item 
-template$<$typename align\_\-T$>$ void \textbf{compute\_\-triangles} (std::vector$<$ uint $>$ $\ast$arr\_\-p, int index, int length, std::vector$<$ align\_\-T $>$ $\ast$alignments)\label{classASCbase_1_1MatchTriangles_147928ad10a438af6c6e6ee6cefe10df}
+template$<$typename align\_\-T$>$ void \textbf{compute\_\-triangles} (std::vector$<$ uint $>$ $\ast$arr\_\-p, int index, int length, std::vector$<$ align\_\-T $>$ $\ast$alignments)\label{classSimSite3D_1_1MatchTriangles_147928ad10a438af6c6e6ee6cefe10df}
 
 \item 
 int \bf{get\_\-best\_\-correspondence} (const \bf{triangle\_\-t} \&model\_\-tri, const \bf{triangle\_\-t} \&search\_\-tri)
 \begin{CompactList}\small\item\em Find the best correspondence between a given model and search triangle. \item\end{CompactList}\item 
 bool \bf{Three\-Pt\-Least\-Squares} (const \bf{triangle\_\-t} \&A, const \bf{triangle\_\-t} \&B, Quaternion $\ast$Q, my\_\-float\_\-t $\ast$R, my\_\-float\_\-t $\ast$T)
 \begin{CompactList}\small\item\em Wrapper to get the least squares fit for two triangles. \item\end{CompactList}\item 
-bool \textbf{get\_\-triangles} (\bf{triangle\_\-t} $\ast$target\_\-tri, const std::vector$<$ uint $>$ \&arr, bucket\_\-vci $\ast$bucket\_\-begin, bucket\_\-vci $\ast$bucket\_\-end)\label{classASCbase_1_1MatchTriangles_6212c1fe978ef723724ed5029963e109}
+bool \textbf{get\_\-triangles} (\bf{triangle\_\-t} $\ast$target\_\-tri, const std::vector$<$ uint $>$ \&arr, bucket\_\-vci $\ast$bucket\_\-begin, bucket\_\-vci $\ast$bucket\_\-end)\label{classSimSite3D_1_1MatchTriangles_6212c1fe978ef723724ed5029963e109}
 
 \end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
-\bf{Model\-Sitemap} $\ast$ \textbf{A\_\-model}\label{classASCbase_1_1MatchTriangles_4a2674b892098a9041d2d64240545d3d}
+\bf{Model\-Sitemap} $\ast$ \textbf{A\_\-model}\label{classSimSite3D_1_1MatchTriangles_4a2674b892098a9041d2d64240545d3d}
 
 \item 
-my\_\-float\_\-t \textbf{target\_\-centroid} [3]\label{classASCbase_1_1MatchTriangles_3c8d67e4f6f23bb114deaffd0e983c06}
+my\_\-float\_\-t \textbf{target\_\-centroid} [3]\label{classSimSite3D_1_1MatchTriangles_3c8d67e4f6f23bb114deaffd0e983c06}
 
 \item 
-interact\_\-pts\_\-vci \textbf{A\_\-targ\_\-pts\_\-beg}\label{classASCbase_1_1MatchTriangles_db2be75b7d41089ed59a31b0fd6ab4d0}
+interact\_\-pts\_\-vci \textbf{A\_\-targ\_\-pts\_\-beg}\label{classSimSite3D_1_1MatchTriangles_db2be75b7d41089ed59a31b0fd6ab4d0}
 
 \item 
-my\_\-float\_\-t \bf{dmetol\_\-2}\label{classASCbase_1_1MatchTriangles_285278f41b70244a22984cf328522494}
+my\_\-float\_\-t \bf{dmetol\_\-2}\label{classSimSite3D_1_1MatchTriangles_285278f41b70244a22984cf328522494}
 
 \begin{CompactList}\small\item\em Square of avg distance metric error tolerance. \item\end{CompactList}\item 
-my\_\-float\_\-t \bf{lsetol\_\-2}\label{classASCbase_1_1MatchTriangles_4f725552c68b6de6e1d49a9796a3165b}
+my\_\-float\_\-t \bf{lsetol\_\-2}\label{classSimSite3D_1_1MatchTriangles_4f725552c68b6de6e1d49a9796a3165b}
 
 \begin{CompactList}\small\item\em Square of avg least squares pt correspondence tol. \item\end{CompactList}\item 
-bool \textbf{A\_\-allow\_\-hphob\_\-triangles}\label{classASCbase_1_1MatchTriangles_0987b2902ceeac3e785e3a44db49f6f0}
+bool \textbf{A\_\-allow\_\-hphob\_\-triangles}\label{classSimSite3D_1_1MatchTriangles_0987b2902ceeac3e785e3a44db49f6f0}
 
 \end{CompactItemize}
 \subsection*{Static Private Attributes}
 \begin{CompactItemize}
 \item 
-static const std::string \bf{\_\-fname} = \char`\"{}Match\-Triangles.C\char`\"{}\label{classASCbase_1_1MatchTriangles_263da86497b71a67e4cb0b14356e830d}
+static const std::string \bf{\_\-fname} = \char`\"{}Match\-Triangles.C\char`\"{}\label{classSimSite3D_1_1MatchTriangles_263da86497b71a67e4cb0b14356e830d}
 
 \begin{CompactList}\small\item\em Name of the source file. \item\end{CompactList}\item 
 static const int \bf{permutations} [6][3]
 \begin{CompactList}\small\item\em Permutations of edges. \item\end{CompactList}\item 
 static const int \bf{point\_\-permutations} [6][3]
 \begin{CompactList}\small\item\em Permutations of vertices. \item\end{CompactList}\item 
-static const int \bf{ACCEPTOR\_\-ACCEPTOR} = 2\label{classASCbase_1_1MatchTriangles_987dee7263175dc5dac58309ca26d4eb}
+static const int \bf{ACCEPTOR\_\-ACCEPTOR} = 2\label{classSimSite3D_1_1MatchTriangles_987dee7263175dc5dac58309ca26d4eb}
 
 \begin{CompactList}\small\item\em 2 $\ast$ ACCEPTOR \item\end{CompactList}\item 
-static const int \bf{DONOR\_\-DONOR} = 8\label{classASCbase_1_1MatchTriangles_b78b92259f4ef3245675fdf17a21f6c9}
+static const int \bf{DONOR\_\-DONOR} = 8\label{classSimSite3D_1_1MatchTriangles_b78b92259f4ef3245675fdf17a21f6c9}
 
 \begin{CompactList}\small\item\em 2 $\ast$ DONOR \item\end{CompactList}\item 
-static const int \bf{HYDROPHOB\_\-HYDROPHOB} = 32\label{classASCbase_1_1MatchTriangles_ff621328272ce0e2c143efe4315feb9c}
+static const int \bf{HYDROPHOB\_\-HYDROPHOB} = 32\label{classSimSite3D_1_1MatchTriangles_ff621328272ce0e2c143efe4315feb9c}
 
 \begin{CompactList}\small\item\em 2 $\ast$ HYDROPHOB \item\end{CompactList}\item 
-static const int \bf{ACCEPTOR\_\-DONOR} = 5\label{classASCbase_1_1MatchTriangles_ade24f76f84d429853f48e41208db45e}
+static const int \bf{ACCEPTOR\_\-DONOR} = 5\label{classSimSite3D_1_1MatchTriangles_ade24f76f84d429853f48e41208db45e}
 
 \begin{CompactList}\small\item\em ACCEPTOR + DONOR. \item\end{CompactList}\item 
-static const int \bf{ACCEPTOR\_\-DONEPTOR} = 65\label{classASCbase_1_1MatchTriangles_4c4b4779b05e824be2960a0a6ba525f8}
+static const int \bf{ACCEPTOR\_\-DONEPTOR} = 65\label{classSimSite3D_1_1MatchTriangles_4c4b4779b05e824be2960a0a6ba525f8}
 
 \begin{CompactList}\small\item\em ACCEPTOR + DONEPTOR. \item\end{CompactList}\item 
-static const int \bf{DONOR\_\-DONEPTOR} = 68\label{classASCbase_1_1MatchTriangles_7816e470f2da8b31bfe68f635a84870f}
+static const int \bf{DONOR\_\-DONEPTOR} = 68\label{classSimSite3D_1_1MatchTriangles_7816e470f2da8b31bfe68f635a84870f}
 
 \begin{CompactList}\small\item\em DONOR + DONEPTOR. \item\end{CompactList}\item 
-static const int \bf{DONEPTOR\_\-DONEPTOR} = 128\label{classASCbase_1_1MatchTriangles_152f1eff01e619c50b2361c394330a63}
+static const int \bf{DONEPTOR\_\-DONEPTOR} = 128\label{classSimSite3D_1_1MatchTriangles_152f1eff01e619c50b2361c394330a63}
 
 \begin{CompactList}\small\item\em DONEPTOR + DONEPTOR. \item\end{CompactList}\end{CompactItemize}
 
@@ -88,9 +88,9 @@ Registration of sitemaps based on close 3 point alignments.
 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{ASCbase::MatchTriangles@{ASCbase::Match\-Triangles}!MatchTriangles@{MatchTriangles}}
-\index{MatchTriangles@{MatchTriangles}!ASCbase::MatchTriangles@{ASCbase::Match\-Triangles}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Match\-Triangles::Match\-Triangles (const my\_\-float\_\-t {\em dmetol\_\-in}, const my\_\-float\_\-t {\em lsetol\_\-in}, const bool {\em allow\_\-hphob\_\-triangles})}\label{classASCbase_1_1MatchTriangles_29b1ab95b85c05e891ecbdc6700e5926}
+\index{SimSite3D::MatchTriangles@{SimSite3D::Match\-Triangles}!MatchTriangles@{MatchTriangles}}
+\index{MatchTriangles@{MatchTriangles}!SimSite3D::MatchTriangles@{SimSite3D::Match\-Triangles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Match\-Triangles::Match\-Triangles (const my\_\-float\_\-t {\em dmetol\_\-in}, const my\_\-float\_\-t {\em lsetol\_\-in}, const bool {\em allow\_\-hphob\_\-triangles})}\label{classSimSite3D_1_1MatchTriangles_29b1ab95b85c05e891ecbdc6700e5926}
 
 
 Cstor. 
@@ -103,9 +103,9 @@ Cstor.
 
 
 \subsection{Member Function Documentation}
-\index{ASCbase::MatchTriangles@{ASCbase::Match\-Triangles}!align@{align}}
-\index{align@{align}!ASCbase::MatchTriangles@{ASCbase::Match\-Triangles}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename align\_\-T$>$ bool ASCbase::Match\-Triangles::align (\bf{Model\-Sitemap} $\ast$ {\em query\_\-site}, \bf{Sitemap} \& {\em dset\_\-site}, std::vector$<$ align\_\-T $>$ $\ast$ {\em alignments})\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1MatchTriangles_e1a93a3866983cd03a85ebc19cca5908}
+\index{SimSite3D::MatchTriangles@{SimSite3D::Match\-Triangles}!align@{align}}
+\index{align@{align}!SimSite3D::MatchTriangles@{SimSite3D::Match\-Triangles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename align\_\-T$>$ bool SimSite3D::Match\-Triangles::align (\bf{Model\-Sitemap} $\ast$ {\em query\_\-site}, \bf{Sitemap} \& {\em dset\_\-site}, std::vector$<$ align\_\-T $>$ $\ast$ {\em alignments})\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1MatchTriangles_e1a93a3866983cd03a85ebc19cca5908}
 
 
 Run to generate the 3pt rigid alignments. 
@@ -115,9 +115,9 @@ Run to generate the 3pt rigid alignments.
 \begin{description}
 \item[{\em dset\_\-site}]Pointer to the \char`\"{}second\char`\"{} sitemap \item[{\em alignments}]Pointer to the vector holding found correspondences \end{description}
 \end{Desc}
-\index{ASCbase::MatchTriangles@{ASCbase::Match\-Triangles}!get_best_correspondence@{get\_\-best\_\-correspondence}}
-\index{get_best_correspondence@{get\_\-best\_\-correspondence}!ASCbase::MatchTriangles@{ASCbase::Match\-Triangles}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Match\-Triangles::get\_\-best\_\-correspondence (const \bf{triangle\_\-t} \& {\em model\_\-tri}, const \bf{triangle\_\-t} \& {\em search\_\-tri})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1MatchTriangles_90fabfb57f81c9a8366434de82984762}
+\index{SimSite3D::MatchTriangles@{SimSite3D::Match\-Triangles}!get_best_correspondence@{get\_\-best\_\-correspondence}}
+\index{get_best_correspondence@{get\_\-best\_\-correspondence}!SimSite3D::MatchTriangles@{SimSite3D::Match\-Triangles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Match\-Triangles::get\_\-best\_\-correspondence (const \bf{triangle\_\-t} \& {\em model\_\-tri}, const \bf{triangle\_\-t} \& {\em search\_\-tri})\hspace{0.3cm}{\tt  [private]}}\label{classSimSite3D_1_1MatchTriangles_90fabfb57f81c9a8366434de82984762}
 
 
 Find the best correspondence between a given model and search triangle. 
@@ -131,9 +131,9 @@ For each (6) permuation of the vertices of the search triangle see if the corres
 \end{Desc}
 \begin{Desc}
 \item[Returns:]0--5 depending which permutation is closest match, -1 if none \end{Desc}
-\index{ASCbase::MatchTriangles@{ASCbase::Match\-Triangles}!ThreePtLeastSquares@{ThreePtLeastSquares}}
-\index{ThreePtLeastSquares@{ThreePtLeastSquares}!ASCbase::MatchTriangles@{ASCbase::Match\-Triangles}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Match\-Triangles::Three\-Pt\-Least\-Squares (const \bf{triangle\_\-t} \& {\em A}, const \bf{triangle\_\-t} \& {\em B}, Quaternion $\ast$ {\em Q}, my\_\-float\_\-t $\ast$ {\em R}, my\_\-float\_\-t $\ast$ {\em T})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1MatchTriangles_434d4cfe074a18dd8d79b46b5585b559}
+\index{SimSite3D::MatchTriangles@{SimSite3D::Match\-Triangles}!ThreePtLeastSquares@{ThreePtLeastSquares}}
+\index{ThreePtLeastSquares@{ThreePtLeastSquares}!SimSite3D::MatchTriangles@{SimSite3D::Match\-Triangles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Match\-Triangles::Three\-Pt\-Least\-Squares (const \bf{triangle\_\-t} \& {\em A}, const \bf{triangle\_\-t} \& {\em B}, Quaternion $\ast$ {\em Q}, my\_\-float\_\-t $\ast$ {\em R}, my\_\-float\_\-t $\ast$ {\em T})\hspace{0.3cm}{\tt  [private]}}\label{classSimSite3D_1_1MatchTriangles_434d4cfe074a18dd8d79b46b5585b559}
 
 
 Wrapper to get the least squares fit for two triangles. 
@@ -150,9 +150,9 @@ Get a weighted least squares fit to align A to B. That is, A is moved to the ref
 
 
 \subsection{Member Data Documentation}
-\index{ASCbase::MatchTriangles@{ASCbase::Match\-Triangles}!permutations@{permutations}}
-\index{permutations@{permutations}!ASCbase::MatchTriangles@{ASCbase::Match\-Triangles}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const int \bf{Match\-Triangles::permutations}\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1MatchTriangles_ef9e8c25707ff5d109fc2f93d00be198}
+\index{SimSite3D::MatchTriangles@{SimSite3D::Match\-Triangles}!permutations@{permutations}}
+\index{permutations@{permutations}!SimSite3D::MatchTriangles@{SimSite3D::Match\-Triangles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const int \bf{Match\-Triangles::permutations}\hspace{0.3cm}{\tt  [static, private]}}\label{classSimSite3D_1_1MatchTriangles_ef9e8c25707ff5d109fc2f93d00be198}
 
 
 \textbf{Initial value:}
@@ -167,9 +167,9 @@ Get a weighted least squares fit to align A to B. That is, A is moved to the ref
 \end{verbatim}\end{Code}
 Permutations of edges. 
 
-\index{ASCbase::MatchTriangles@{ASCbase::Match\-Triangles}!point_permutations@{point\_\-permutations}}
-\index{point_permutations@{point\_\-permutations}!ASCbase::MatchTriangles@{ASCbase::Match\-Triangles}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const int \bf{Match\-Triangles::point\_\-permutations}\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1MatchTriangles_5249b60afc22af79841be9345cf6c98e}
+\index{SimSite3D::MatchTriangles@{SimSite3D::Match\-Triangles}!point_permutations@{point\_\-permutations}}
+\index{point_permutations@{point\_\-permutations}!SimSite3D::MatchTriangles@{SimSite3D::Match\-Triangles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const int \bf{Match\-Triangles::point\_\-permutations}\hspace{0.3cm}{\tt  [static, private]}}\label{classSimSite3D_1_1MatchTriangles_5249b60afc22af79841be9345cf6c98e}
 
 
 \textbf{Initial value:}

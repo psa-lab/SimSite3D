@@ -3,16 +3,16 @@ local ASCBASE_INSTALL_DIR = [ os.environ  ASCBASE_INSTALL_DIR ] ;
 
 # Extension build rules
 python-extension _Sitemap
-  : SitemapPy.cc /ASCbasePy//sitemaps_lib ;
+  : SitemapPy.cc /SimSite3DPy//sitemaps_lib ;
 python-extension _HbondPoints
-  : HbondPointsPy.cc /ASCbasePy//sitemaps_lib ;
+  : HbondPointsPy.cc /SimSite3DPy//sitemaps_lib ;
 python-extension _hbond_points
-  : hbond_pointsPy.cc /ASCbasePy//sitemaps_lib ;
+  : hbond_pointsPy.cc /SimSite3DPy//sitemaps_lib ;
 python-extension _parameters
-  : GenPointsParametersPy.cc /ASCbasePy//sitemaps_lib ;
+  : GenPointsParametersPy.cc /SimSite3DPy//sitemaps_lib ;
 python-extension _HbondSurfaces
-  : HbondSurfacesPy.cc /ASCbasePy//sitemaps_lib ;
+  : HbondSurfacesPy.cc /SimSite3DPy//sitemaps_lib ;
 
 # Install rules
-install $(ASCBASE_INSTALL_DIR)/ASCbasePy/sitemaps 
+install $(ASCBASE_INSTALL_DIR)/SimSite3DPy/sitemaps 
   : _Sitemap _HbondPoints _hbond_points _parameters _HbondSurfaces ;

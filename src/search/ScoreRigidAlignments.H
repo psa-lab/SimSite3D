@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -29,7 +29,7 @@
 #include <IK_tests.H>
 
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! Base class for scoring and storing the rigid alignments of dbase 
 //! sitemaps to a given model (query).
@@ -217,7 +217,7 @@ public:
           << A_mu << "\n"
           << std::setw(50) << "# Stdev of raw scores of diverse sitemaps:"
           << A_sigma << "\n";
-    }else out << "# ASCbase alignments scores are not normalized\n";
+    }else out << "# SimSite3D alignments scores are not normalized\n";
   
     out << "#\n# Fields:\n";
     if(A_struct_id_field) out << "# 0) Database structure id\n";

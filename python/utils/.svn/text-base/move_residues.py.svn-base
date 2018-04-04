@@ -1,5 +1,5 @@
 from numpy import *
-from ASCbasePy.utils import *
+from SimSite3DPy.utils import *
 
 
 def add_noise_to_site_residues(residues_fname, out_fname, trans_sigma,

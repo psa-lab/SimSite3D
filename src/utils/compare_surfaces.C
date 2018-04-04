@@ -7,8 +7,8 @@
 #include <PDBBase.H>
 #include <mol2File.H>
 
-using namespace ASCbase;
-using namespace ASCbase::geometry;
+using namespace SimSite3D;
+using namespace SimSite3D::geometry;
 
 class comp_surf_parameters{
 public:

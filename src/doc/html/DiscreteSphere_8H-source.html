@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -47,7 +47,7 @@
 <a name="l00034"></a>00034 <span class="preprocessor"></span>
 <a name="l00035"></a>00035 <span class="preprocessor">#include &lt;types.H&gt;</span>
 <a name="l00036"></a>00036 
-<a name="l00037"></a>00037 <span class="keyword">namespace </span>ASCbase{
+<a name="l00037"></a>00037 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00038"></a>00038 
 <a name="l00039"></a>00039   <span class="keyword">typedef</span> <span class="keyword">enum</span>{
 <a name="l00040"></a>00040     DISCRETE_SPHERE_LEVEL_ZERO,
@@ -57,67 +57,67 @@
 <a name="l00044"></a>00044   }sphere_sample_level_t;
 <a name="l00045"></a>00045 
 <a name="l00048"></a>00048 
-<a name="l00064"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html">00064</a>   <span class="keyword">class </span><a class="code" href="classASCbase_1_1DiscreteSphere.html">DiscreteSphere</a>{
+<a name="l00064"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html">00064</a>   <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1DiscreteSphere.html">DiscreteSphere</a>{
 <a name="l00065"></a>00065   <span class="keyword">public</span>:    
-<a name="l00067"></a>00067     <a class="code" href="classASCbase_1_1DiscreteSphere.html#e621966eb3054dab3f2f9798bca76a6b">DiscreteSphere</a>(sphere_sample_level_t lvl = DISCRETE_SPHERE_LEVEL_TWO);
+<a name="l00067"></a>00067     <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#e621966eb3054dab3f2f9798bca76a6b">DiscreteSphere</a>(sphere_sample_level_t lvl = DISCRETE_SPHERE_LEVEL_TWO);
 <a name="l00068"></a>00068 
-<a name="l00070"></a>00070     <a class="code" href="classASCbase_1_1DiscreteSphere.html#e621966eb3054dab3f2f9798bca76a6b">DiscreteSphere</a>(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1DiscreteSphere.html">DiscreteSphere</a>&amp; src, <span class="keyword">const</span> my_float_t* R,  
+<a name="l00070"></a>00070     <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#e621966eb3054dab3f2f9798bca76a6b">DiscreteSphere</a>(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1DiscreteSphere.html">DiscreteSphere</a>&amp; src, <span class="keyword">const</span> my_float_t* R,  
 <a name="l00071"></a>00071                    <span class="keyword">const</span> my_float_t* T);
 <a name="l00072"></a>00072 
-<a name="l00074"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html#0e4e024bf87c9f629c58e96e405a48e9">00074</a>     <a class="code" href="classASCbase_1_1DiscreteSphere.html#0e4e024bf87c9f629c58e96e405a48e9">~DiscreteSphere</a>()
+<a name="l00074"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html#0e4e024bf87c9f629c58e96e405a48e9">00074</a>     <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#0e4e024bf87c9f629c58e96e405a48e9">~DiscreteSphere</a>()
 <a name="l00075"></a>00075     { 
-<a name="l00076"></a>00076       <span class="keywordflow">if</span>(<a class="code" href="classASCbase_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a>) <span class="keyword">delete</span>[] <a class="code" href="classASCbase_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a>;
-<a name="l00077"></a>00077       <a class="code" href="classASCbase_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a> = 0;
+<a name="l00076"></a>00076       <span class="keywordflow">if</span>(<a class="code" href="classSimSite3D_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a>) <span class="keyword">delete</span>[] <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a>;
+<a name="l00077"></a>00077       <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a> = 0;
 <a name="l00078"></a>00078     }
 <a name="l00079"></a>00079 
 <a name="l00081"></a>00081     <span class="keywordtype">void</span> 
-<a name="l00082"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html#499dd540bc049f849618e63141a762c9">00082</a>     <a class="code" href="classASCbase_1_1DiscreteSphere.html#499dd540bc049f849618e63141a762c9">scale</a>(my_float_t s)
+<a name="l00082"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html#499dd540bc049f849618e63141a762c9">00082</a>     <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#499dd540bc049f849618e63141a762c9">scale</a>(my_float_t s)
 <a name="l00083"></a>00083     {
-<a name="l00084"></a>00084       <span class="keywordflow">if</span>(<a class="code" href="classASCbase_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a> == 0) <a class="code" href="classASCbase_1_1DiscreteSphere.html#27a44b0af870362405f7ff812e909e02">create_copy</a>(<a class="code" href="classASCbase_1_1DiscreteSphere.html#84eda7819366feacab69b8eca58b90a5">A_orig_pts</a>, &amp;<a class="code" href="classASCbase_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a>);
-<a name="l00085"></a>00085       my_float_t* pt = <a class="code" href="classASCbase_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a>;
-<a name="l00086"></a>00086       <span class="keywordflow">if</span>(<a class="code" href="classASCbase_1_1DiscreteSphere.html#c38903731c1e07ab1b6a72aba830abfb">A_center</a>[0] == 0.0 &amp;&amp; <a class="code" href="classASCbase_1_1DiscreteSphere.html#c38903731c1e07ab1b6a72aba830abfb">A_center</a>[1] == 0.0 &amp;&amp; <a class="code" href="classASCbase_1_1DiscreteSphere.html#c38903731c1e07ab1b6a72aba830abfb">A_center</a>[2] == 0.0){
-<a name="l00087"></a>00087         <span class="keywordflow">for</span>(uint i = 0; i &lt; 3*<a class="code" href="classASCbase_1_1DiscreteSphere.html#75720a63fc626c586eab6e8e8342f00b">A_num_pts</a>; ++i, ++pt) *pt *= s;
+<a name="l00084"></a>00084       <span class="keywordflow">if</span>(<a class="code" href="classSimSite3D_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a> == 0) <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#27a44b0af870362405f7ff812e909e02">create_copy</a>(<a class="code" href="classSimSite3D_1_1DiscreteSphere.html#84eda7819366feacab69b8eca58b90a5">A_orig_pts</a>, &amp;<a class="code" href="classSimSite3D_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a>);
+<a name="l00085"></a>00085       my_float_t* pt = <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a>;
+<a name="l00086"></a>00086       <span class="keywordflow">if</span>(<a class="code" href="classSimSite3D_1_1DiscreteSphere.html#c38903731c1e07ab1b6a72aba830abfb">A_center</a>[0] == 0.0 &amp;&amp; <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#c38903731c1e07ab1b6a72aba830abfb">A_center</a>[1] == 0.0 &amp;&amp; <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#c38903731c1e07ab1b6a72aba830abfb">A_center</a>[2] == 0.0){
+<a name="l00087"></a>00087         <span class="keywordflow">for</span>(uint i = 0; i &lt; 3*<a class="code" href="classSimSite3D_1_1DiscreteSphere.html#75720a63fc626c586eab6e8e8342f00b">A_num_pts</a>; ++i, ++pt) *pt *= s;
 <a name="l00088"></a>00088       }<span class="keywordflow">else</span>{
 <a name="l00089"></a>00089         my_float_t* c = 0;
-<a name="l00090"></a>00090         <span class="keywordflow">for</span>(uint i = 0; i &lt; <a class="code" href="classASCbase_1_1DiscreteSphere.html#75720a63fc626c586eab6e8e8342f00b">A_num_pts</a>; ++i){
-<a name="l00091"></a>00091           c = <a class="code" href="classASCbase_1_1DiscreteSphere.html#c38903731c1e07ab1b6a72aba830abfb">A_center</a>;
+<a name="l00090"></a>00090         <span class="keywordflow">for</span>(uint i = 0; i &lt; <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#75720a63fc626c586eab6e8e8342f00b">A_num_pts</a>; ++i){
+<a name="l00091"></a>00091           c = <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#c38903731c1e07ab1b6a72aba830abfb">A_center</a>;
 <a name="l00092"></a>00092           <span class="keywordflow">for</span>(uint j = 0; j &lt; 3; ++j, ++pt, ++c) *pt = s * (*pt - *c) + *c;
 <a name="l00093"></a>00093         }
 <a name="l00094"></a>00094       }
 <a name="l00095"></a>00095     }
 <a name="l00096"></a>00096 
 <a name="l00098"></a>00098     <span class="keyword">const</span> my_float_t*
-<a name="l00099"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html#cc1900a41dc02c937dee4964eb40f805">00099</a>     <a class="code" href="classASCbase_1_1DiscreteSphere.html#cc1900a41dc02c937dee4964eb40f805">pts_begin</a>()<span class="keyword"> const</span>
-<a name="l00100"></a>00100 <span class="keyword">    </span>{ <span class="keywordflow">return</span> (<a class="code" href="classASCbase_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a> ? <a class="code" href="classASCbase_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a> :  <a class="code" href="classASCbase_1_1DiscreteSphere.html#84eda7819366feacab69b8eca58b90a5">A_orig_pts</a>); }
+<a name="l00099"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html#cc1900a41dc02c937dee4964eb40f805">00099</a>     <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#cc1900a41dc02c937dee4964eb40f805">pts_begin</a>()<span class="keyword"> const</span>
+<a name="l00100"></a>00100 <span class="keyword">    </span>{ <span class="keywordflow">return</span> (<a class="code" href="classSimSite3D_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a> ? <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a> :  <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#84eda7819366feacab69b8eca58b90a5">A_orig_pts</a>); }
 <a name="l00101"></a>00101 
 <a name="l00103"></a>00103     <span class="keyword">const</span> my_float_t*
-<a name="l00104"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html#19c0f6e97d7235647271a5376dec43c6">00104</a>     <a class="code" href="classASCbase_1_1DiscreteSphere.html#19c0f6e97d7235647271a5376dec43c6">pts_end</a>()<span class="keyword"> const</span>
+<a name="l00104"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html#19c0f6e97d7235647271a5376dec43c6">00104</a>     <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#19c0f6e97d7235647271a5376dec43c6">pts_end</a>()<span class="keyword"> const</span>
 <a name="l00105"></a>00105 <span class="keyword">    </span>{ 
-<a name="l00106"></a>00106       uint my_end = 3*<a class="code" href="classASCbase_1_1DiscreteSphere.html#75720a63fc626c586eab6e8e8342f00b">A_num_pts</a>;
-<a name="l00107"></a>00107       <span class="keywordflow">return</span> (<a class="code" href="classASCbase_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a> ? <a class="code" href="classASCbase_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a> + my_end : <a class="code" href="classASCbase_1_1DiscreteSphere.html#84eda7819366feacab69b8eca58b90a5">A_orig_pts</a> + my_end); 
+<a name="l00106"></a>00106       uint my_end = 3*<a class="code" href="classSimSite3D_1_1DiscreteSphere.html#75720a63fc626c586eab6e8e8342f00b">A_num_pts</a>;
+<a name="l00107"></a>00107       <span class="keywordflow">return</span> (<a class="code" href="classSimSite3D_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a> ? <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a> + my_end : <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#84eda7819366feacab69b8eca58b90a5">A_orig_pts</a> + my_end); 
 <a name="l00108"></a>00108     }
 <a name="l00109"></a>00109  
 <a name="l00111"></a>00111     <span class="keyword">const</span> uint
-<a name="l00112"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html#f3062c3c256ce124eae95a440cd385d0">00112</a>     <a class="code" href="classASCbase_1_1DiscreteSphere.html#f3062c3c256ce124eae95a440cd385d0">num_pts</a>()<span class="keyword"> const</span>
-<a name="l00113"></a>00113 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1DiscreteSphere.html#75720a63fc626c586eab6e8e8342f00b">A_num_pts</a>; }
+<a name="l00112"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html#f3062c3c256ce124eae95a440cd385d0">00112</a>     <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#f3062c3c256ce124eae95a440cd385d0">num_pts</a>()<span class="keyword"> const</span>
+<a name="l00113"></a>00113 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#75720a63fc626c586eab6e8e8342f00b">A_num_pts</a>; }
 <a name="l00114"></a>00114 
 <a name="l00115"></a>00115   <span class="keyword">private</span>:
 <a name="l00117"></a>00117     <span class="keywordtype">void</span> 
-<a name="l00118"></a>00118     <a class="code" href="classASCbase_1_1DiscreteSphere.html#27a44b0af870362405f7ff812e909e02">create_copy</a>(<span class="keyword">const</span> my_float_t* src, my_float_t** dest);
+<a name="l00118"></a>00118     <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#27a44b0af870362405f7ff812e909e02">create_copy</a>(<span class="keyword">const</span> my_float_t* src, my_float_t** dest);
 <a name="l00119"></a>00119 
-<a name="l00120"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html#84eda7819366feacab69b8eca58b90a5">00120</a>     <span class="keyword">const</span> my_float_t* <a class="code" href="classASCbase_1_1DiscreteSphere.html#84eda7819366feacab69b8eca58b90a5">A_orig_pts</a>; 
-<a name="l00121"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html#75720a63fc626c586eab6e8e8342f00b">00121</a>     uint <a class="code" href="classASCbase_1_1DiscreteSphere.html#75720a63fc626c586eab6e8e8342f00b">A_num_pts</a>;               
-<a name="l00122"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">00122</a>     my_float_t* <a class="code" href="classASCbase_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a>;            
-<a name="l00123"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html#c38903731c1e07ab1b6a72aba830abfb">00123</a>     my_float_t <a class="code" href="classASCbase_1_1DiscreteSphere.html#c38903731c1e07ab1b6a72aba830abfb">A_center</a>[3];       
+<a name="l00120"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html#84eda7819366feacab69b8eca58b90a5">00120</a>     <span class="keyword">const</span> my_float_t* <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#84eda7819366feacab69b8eca58b90a5">A_orig_pts</a>; 
+<a name="l00121"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html#75720a63fc626c586eab6e8e8342f00b">00121</a>     uint <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#75720a63fc626c586eab6e8e8342f00b">A_num_pts</a>;               
+<a name="l00122"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">00122</a>     my_float_t* <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#6fa35750d9d3be1543df6e5fe88efa66">A_pts</a>;            
+<a name="l00123"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html#c38903731c1e07ab1b6a72aba830abfb">00123</a>     my_float_t <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#c38903731c1e07ab1b6a72aba830abfb">A_center</a>[3];       
 <a name="l00124"></a>00124  
-<a name="l00125"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html#272db3a33db89cfda38c0a2f7e488bca">00125</a>     <span class="keyword">static</span> <span class="keyword">const</span> uint <a class="code" href="classASCbase_1_1DiscreteSphere.html#272db3a33db89cfda38c0a2f7e488bca">level_0_len</a>; 
-<a name="l00126"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html#f067998b14bfba388d2f803330d6792c">00126</a>     <span class="keyword">static</span> <span class="keyword">const</span> uint <a class="code" href="classASCbase_1_1DiscreteSphere.html#f067998b14bfba388d2f803330d6792c">level_1_len</a>; 
-<a name="l00127"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html#59d0d77b116b29ec295f48add6fec024">00127</a>     <span class="keyword">static</span> <span class="keyword">const</span> uint <a class="code" href="classASCbase_1_1DiscreteSphere.html#59d0d77b116b29ec295f48add6fec024">level_2_len</a>; 
-<a name="l00128"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html#066b8e66f73f541fb02b82ed853a3aed">00128</a>     <span class="keyword">static</span> <span class="keyword">const</span> uint <a class="code" href="classASCbase_1_1DiscreteSphere.html#066b8e66f73f541fb02b82ed853a3aed">level_3_len</a>; 
-<a name="l00129"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html#53fc82a740852de5f8b12e96487c6e90">00129</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classASCbase_1_1DiscreteSphere.html#53fc82a740852de5f8b12e96487c6e90">level_0</a>[]; 
-<a name="l00130"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html#d3ff32a1e85a1c1f1e321fd09b0ec050">00130</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classASCbase_1_1DiscreteSphere.html#d3ff32a1e85a1c1f1e321fd09b0ec050">level_1</a>[]; 
-<a name="l00131"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html#e3e514caf92b337aae7cb629d90f9a61">00131</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classASCbase_1_1DiscreteSphere.html#e3e514caf92b337aae7cb629d90f9a61">level_2</a>[]; 
-<a name="l00132"></a><a class="code" href="classASCbase_1_1DiscreteSphere.html#a074b8dd69e55ae9ac9020e3d5a56a7d">00132</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classASCbase_1_1DiscreteSphere.html#a074b8dd69e55ae9ac9020e3d5a56a7d">level_3</a>[]; 
+<a name="l00125"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html#272db3a33db89cfda38c0a2f7e488bca">00125</a>     <span class="keyword">static</span> <span class="keyword">const</span> uint <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#272db3a33db89cfda38c0a2f7e488bca">level_0_len</a>; 
+<a name="l00126"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html#f067998b14bfba388d2f803330d6792c">00126</a>     <span class="keyword">static</span> <span class="keyword">const</span> uint <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#f067998b14bfba388d2f803330d6792c">level_1_len</a>; 
+<a name="l00127"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html#59d0d77b116b29ec295f48add6fec024">00127</a>     <span class="keyword">static</span> <span class="keyword">const</span> uint <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#59d0d77b116b29ec295f48add6fec024">level_2_len</a>; 
+<a name="l00128"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html#066b8e66f73f541fb02b82ed853a3aed">00128</a>     <span class="keyword">static</span> <span class="keyword">const</span> uint <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#066b8e66f73f541fb02b82ed853a3aed">level_3_len</a>; 
+<a name="l00129"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html#53fc82a740852de5f8b12e96487c6e90">00129</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#53fc82a740852de5f8b12e96487c6e90">level_0</a>[]; 
+<a name="l00130"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html#d3ff32a1e85a1c1f1e321fd09b0ec050">00130</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#d3ff32a1e85a1c1f1e321fd09b0ec050">level_1</a>[]; 
+<a name="l00131"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html#e3e514caf92b337aae7cb629d90f9a61">00131</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#e3e514caf92b337aae7cb629d90f9a61">level_2</a>[]; 
+<a name="l00132"></a><a class="code" href="classSimSite3D_1_1DiscreteSphere.html#a074b8dd69e55ae9ac9020e3d5a56a7d">00132</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classSimSite3D_1_1DiscreteSphere.html#a074b8dd69e55ae9ac9020e3d5a56a7d">level_3</a>[]; 
 <a name="l00133"></a>00133   };
 <a name="l00134"></a>00134 }
 <a name="l00135"></a>00135 <span class="preprocessor">#endif</span>

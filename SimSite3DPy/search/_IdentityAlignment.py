@@ -1,4 +1,4 @@
-import ASCbasePy
+import SimSite3DPy
 
 class IdentityAlignment:
 
@@ -9,7 +9,7 @@ class IdentityAlignment:
     """
     This function does not explicitly clear the aligns vector
     """
-    x = ASCbasePy.search.rigid_align_t()
+    x = SimSite3DPy.search.rigid_align_t()
     x.R[0] = 1.0
     x.R[1] = 0.0
     x.R[2] = 0.0

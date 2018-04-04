@@ -1,4 +1,4 @@
-project ASCbasePy
+project SimSite3DPy
   : requirements <include>/soft/linux64/boost_1_48_0
   : requirements <include>../src/utils
   : requirements <include>../src/sitemap
@@ -8,7 +8,7 @@ project ASCbasePy
   : requirements <library>/site-config//popt
   : requirements <library>/site-config//blas
   : requirements <library>/site-config//lapack
-  : requirements <library>/ASCbasePy//../src/utils/libASCbaseSoftwareUtils.a
+  : requirements <library>/SimSite3DPy//../src/utils/libSimSite3DSoftwareUtils.a
   : default-build release
   ;
 
@@ -21,22 +21,22 @@ echo $(ARGV) ;
 
 lib utils_lib
   :   
-  : <file>../src/utils/libASCbaseSoftwareUtils.a
+  : <file>../src/utils/libSimSite3DSoftwareUtils.a
   ;
 
 lib sitemaps_lib 
   : 
-  : <file>../src/sitemap/libASCbaseSoftwareSitemaps.a
+  : <file>../src/sitemap/libSimSite3DSoftwareSitemaps.a
   ;
 
 lib search_lib
   :
-  : <file>../src/search/libASCbaseSoftwareSearch.a
+  : <file>../src/search/libSimSite3DSoftwareSearch.a
   ;
 
 lib score_lib
   :
-  : <file>../src/score/libASCbaseSoftwareScore.a
+  : <file>../src/score/libSimSite3DSoftwareScore.a
   ;
 
 build-project src/utils ;
@@ -62,12 +62,12 @@ install python_sources
     ./utils/cgo_items.py ./utils/_TransformResults.py
     ./score/__init__.py ./sitemaps/Sitemap.py
     ./plotting/_LoadData.py ./plotting/__init__.py ./plotting/plot_matrices.py
-  : <location>$(ASCBASE_INSTALL_DIR)/ASCbasePy <install-source-root>.
+  : <location>$(ASCBASE_INSTALL_DIR)/SimSite3DPy <install-source-root>.
   ;
 
 #install python_sources2
 #  : ./py_src/_hits.py 
-#  : <location>$(ASCBASE_INSTALL_DIR)/ASCbasePy
+#  : <location>$(ASCBASE_INSTALL_DIR)/SimSite3DPy
 #  ;
 
 install pymol_scripts
@@ -78,17 +78,17 @@ install pymol_scripts
     ./SimSite3D/PmwExtras/__init__.py
     ./SimSite3D/PmwExtras/_DirBrowser.py
     ./SimSite3D/PmwExtras/_FileDialog.py
-  : <location>$(ASCBASE_INSTALL_DIR)/ASCbasePy <install-source-root>.
+  : <location>$(ASCBASE_INSTALL_DIR)/SimSite3DPy <install-source-root>.
   ;
 
 install pymol_scripts2
   : ./utils/pdb.py ./utils/pdb_residues.csv
-  : <location>$(ASCBASE_INSTALL_DIR)/ASCbasePy/SimSite3D
+  : <location>$(ASCBASE_INSTALL_DIR)/SimSite3DPy/SimSite3D
   ;
 
 install pymol_plugins
   : ./SimSite3D/SimSite3D_hits.py
-  : <location>$(ASCBASE_INSTALL_DIR)/ASCbasePy/PyMOL_plugins
+  : <location>$(ASCBASE_INSTALL_DIR)/SimSite3DPy/PyMOL_plugins
   ;
 
 install python_progs

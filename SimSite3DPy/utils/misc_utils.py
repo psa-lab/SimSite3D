@@ -1,4 +1,4 @@
-from ASCbasePy.utils import Quaternion
+from SimSite3DPy.utils import Quaternion
 from numpy import zeros, eye, isnan
 from sys import stderr
 
@@ -216,7 +216,7 @@ def load_pdb_file(pdb_id, save_dir=".", local_pdb_dir="/psa/pdb",
   """
   from os import path
   from os import system
-  from ASCbasePy.utils import pdb
+  from SimSite3DPy.utils import pdb
 
   # Load the corresponding PDB file 
   prot_fname = "%s/pdb%s.ent" % (local_pdb_dir, pdb_id.lower())

@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -38,9 +38,9 @@
 #include <math_basics.H>
 #include <string_basics.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
-  //! Level of output from ASCbase -- does not affect warning messages
+  //! Level of output from SimSite3D -- does not affect warning messages
   typedef enum{
     VERBOSE_SILENT,     //!< All output to stdout is to be suppressed
     VERBOSE_ONE         //!< Some output may be sent to stdout

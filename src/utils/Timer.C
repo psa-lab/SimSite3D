@@ -23,7 +23,7 @@
 #include <cstring>
 #include <errno.h>
 #include <Timer.H>
-using namespace ASCbase;
+using namespace SimSite3D;
 
 long Timer::A_timer_interval_sec = 0; 
 long Timer::A_real_elapsed_sec = 0; 

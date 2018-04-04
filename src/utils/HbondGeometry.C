@@ -4,7 +4,7 @@
 
 #define TRACE 0
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 const my_float_t HbondGeometry::MIN_SALT_BRIDGE_SQUARED_LENGTH = 2.5 * 2.5; 
 const my_float_t HbondGeometry::MAX_SALT_BRIDGE_SQUARED_LENGTH = 4.5 * 4.5;

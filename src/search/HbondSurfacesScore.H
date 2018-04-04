@@ -4,7 +4,7 @@
 
 #include <point_and_surf_score.H> 
 
-namespace ASCbase{
+namespace SimSite3D{
 
 class HbondSurfacesScore : public point_and_surf_score{
 public:
@@ -163,5 +163,5 @@ private:
   static const my_float_t SCALED_QUAD_DIST_N_DOT_PROD_DNEPTOR_SUM_W;
 };
 
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

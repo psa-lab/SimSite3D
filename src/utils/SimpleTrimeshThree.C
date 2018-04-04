@@ -1,7 +1,7 @@
 #include <SimpleTrimeshThree.H>
 #include <stream_basics.H>
 
-using namespace ASCbase::geometry;
+using namespace SimSite3D::geometry;
 
 void 
 Edge::init()

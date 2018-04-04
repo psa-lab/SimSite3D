@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -37,29 +37,29 @@
 <a name="l00024"></a>00024 <span class="preprocessor">#include &lt;ScoreMapBase.H&gt;</span>
 <a name="l00025"></a>00025 <span class="preprocessor">#include &lt;hash_class.H&gt;</span>
 <a name="l00026"></a>00026 
-<a name="l00027"></a>00027 <span class="keyword">namespace </span>ASCbase{
+<a name="l00027"></a>00027 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00028"></a>00028 
 <a name="l00030"></a>00030 <span class="comment">//class MatchTriangles : public InitialAlignmentsBase{</span>
-<a name="l00031"></a><a class="code" href="classASCbase_1_1MatchTriangles.html">00031</a> <span class="keyword">class </span><a class="code" href="classASCbase_1_1MatchTriangles.html">MatchTriangles</a>{
+<a name="l00031"></a><a class="code" href="classSimSite3D_1_1MatchTriangles.html">00031</a> <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1MatchTriangles.html">MatchTriangles</a>{
 <a name="l00032"></a>00032 <span class="keyword">public</span>:
 <a name="l00034"></a>00034 
-<a name="l00040"></a>00040   <a class="code" href="classASCbase_1_1MatchTriangles.html#29b1ab95b85c05e891ecbdc6700e5926">MatchTriangles</a>(<span class="keyword">const</span> my_float_t dmetol_in, <span class="keyword">const</span> my_float_t lsetol_in, 
+<a name="l00040"></a>00040   <a class="code" href="classSimSite3D_1_1MatchTriangles.html#29b1ab95b85c05e891ecbdc6700e5926">MatchTriangles</a>(<span class="keyword">const</span> my_float_t dmetol_in, <span class="keyword">const</span> my_float_t lsetol_in, 
 <a name="l00041"></a>00041                  <span class="keyword">const</span> <span class="keywordtype">bool</span> allow_hphob_triangles);
 <a name="l00042"></a>00042 
 <a name="l00044"></a>00044   <span class="keyword">virtual</span>
-<a name="l00045"></a>00045   <a class="code" href="classASCbase_1_1MatchTriangles.html#2c1b59400cb3b11d304f8ac9fe4446e1">~MatchTriangles</a>(); 
+<a name="l00045"></a>00045   <a class="code" href="classSimSite3D_1_1MatchTriangles.html#2c1b59400cb3b11d304f8ac9fe4446e1">~MatchTriangles</a>(); 
 <a name="l00046"></a>00046 <span class="preprocessor">#if 0</span>
 <a name="l00047"></a>00047 <span class="preprocessor"></span>  <span class="keyword">template</span> &lt; <span class="keyword">typename</span> align_T &gt;
-<a name="l00048"></a>00048   <span class="keyword">struct </span>test_align : <span class="keyword">public</span> <a class="code" href="structASCbase_1_1align__impl.html">align_impl</a>&lt; align_T&gt;{
+<a name="l00048"></a>00048   <span class="keyword">struct </span>test_align : <span class="keyword">public</span> <a class="code" href="structSimSite3D_1_1align__impl.html">align_impl</a>&lt; align_T&gt;{
 <a name="l00049"></a>00049 
 <a name="l00050"></a>00050     <span class="keywordtype">bool</span>
-<a name="l00051"></a>00051     <a class="code" href="classASCbase_1_1MatchTriangles.html#e1a93a3866983cd03a85ebc19cca5908">align</a>(<a class="code" href="classASCbase_1_1Sitemap.html">Sitemap</a>&amp; dset_site, std::vector&lt;align_T&gt; *alignments)
+<a name="l00051"></a>00051     <a class="code" href="classSimSite3D_1_1MatchTriangles.html#e1a93a3866983cd03a85ebc19cca5908">align</a>(<a class="code" href="classSimSite3D_1_1Sitemap.html">Sitemap</a>&amp; dset_site, std::vector&lt;align_T&gt; *alignments)
 <a name="l00052"></a>00052     {
-<a name="l00053"></a>00053       <span class="keywordflow">if</span>(model-&gt;fail() || dset_site.<a class="code" href="classASCbase_1_1Sitemap.html#1a15e9045f766ba8e80f6411513de6ac">fail</a>() || !alignments) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00053"></a>00053       <span class="keywordflow">if</span>(model-&gt;fail() || dset_site.<a class="code" href="classSimSite3D_1_1Sitemap.html#1a15e9045f766ba8e80f6411513de6ac">fail</a>() || !alignments) <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00054"></a>00054     
 <a name="l00055"></a>00055       errorType error = NONE;
-<a name="l00056"></a>00056       targ_pts_beg = dset_site.<a class="code" href="classASCbase_1_1Sitemap.html#a7ad7e74e6ef0cdfb3e8e487e2db6200">interact_pts_beg</a>();
-<a name="l00057"></a>00057       std::vector&lt;uint&gt; tmp_array(dset_site.<a class="code" href="classASCbase_1_1Sitemap.html#fe90bda50b24ac3ecfa92df9d698b7d1">interact_pts_end</a>() - targ_pts_beg);
+<a name="l00056"></a>00056       targ_pts_beg = dset_site.<a class="code" href="classSimSite3D_1_1Sitemap.html#a7ad7e74e6ef0cdfb3e8e487e2db6200">interact_pts_beg</a>();
+<a name="l00057"></a>00057       std::vector&lt;uint&gt; tmp_array(dset_site.<a class="code" href="classSimSite3D_1_1Sitemap.html#fe90bda50b24ac3ecfa92df9d698b7d1">interact_pts_end</a>() - targ_pts_beg);
 <a name="l00058"></a>00058       <span class="keywordflow">for</span>(uint i = 0; i &lt; tmp_array.size(); ++i) tmp_array[i] = i;
 <a name="l00059"></a>00059       <span class="keywordflow">for</span>(uint i = 2; !error &amp;&amp; i &lt; tmp_array.size(); i++){
 <a name="l00060"></a>00060         tmp_array[2] = tmp_array[i];
@@ -74,15 +74,15 @@
 <a name="l00069"></a>00069 <span class="preprocessor"></span>
 <a name="l00071"></a>00071 
 <a name="l00075"></a>00075   <span class="keyword">template</span>&lt; <span class="keyword">typename</span> align_T &gt; <span class="keywordtype">bool</span>
-<a name="l00076"></a><a class="code" href="classASCbase_1_1MatchTriangles.html#e1a93a3866983cd03a85ebc19cca5908">00076</a>   <a class="code" href="classASCbase_1_1MatchTriangles.html#e1a93a3866983cd03a85ebc19cca5908">align</a>(<a class="code" href="classASCbase_1_1ModelSitemap.html">ModelSitemap</a> *query_site, <a class="code" href="classASCbase_1_1Sitemap.html">Sitemap</a>&amp; dset_site, 
+<a name="l00076"></a><a class="code" href="classSimSite3D_1_1MatchTriangles.html#e1a93a3866983cd03a85ebc19cca5908">00076</a>   <a class="code" href="classSimSite3D_1_1MatchTriangles.html#e1a93a3866983cd03a85ebc19cca5908">align</a>(<a class="code" href="classSimSite3D_1_1ModelSitemap.html">ModelSitemap</a> *query_site, <a class="code" href="classSimSite3D_1_1Sitemap.html">Sitemap</a>&amp; dset_site, 
 <a name="l00077"></a>00077         std::vector&lt;align_T&gt; *alignments)
 <a name="l00078"></a>00078   {
-<a name="l00079"></a>00079     <span class="keywordflow">if</span>(query_site-&gt;<a class="code" href="classASCbase_1_1Sitemap.html#1a15e9045f766ba8e80f6411513de6ac">fail</a>() || dset_site.<a class="code" href="classASCbase_1_1Sitemap.html#1a15e9045f766ba8e80f6411513de6ac">fail</a>() || !alignments) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00079"></a>00079     <span class="keywordflow">if</span>(query_site-&gt;<a class="code" href="classSimSite3D_1_1Sitemap.html#1a15e9045f766ba8e80f6411513de6ac">fail</a>() || dset_site.<a class="code" href="classSimSite3D_1_1Sitemap.html#1a15e9045f766ba8e80f6411513de6ac">fail</a>() || !alignments) <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00080"></a>00080     A_model = query_site;
 <a name="l00081"></a>00081   
 <a name="l00082"></a>00082     errorType error = NONE;
-<a name="l00083"></a>00083     A_targ_pts_beg = dset_site.<a class="code" href="classASCbase_1_1Sitemap.html#a7ad7e74e6ef0cdfb3e8e487e2db6200">interact_pts_beg</a>();
-<a name="l00084"></a>00084     std::vector&lt;uint&gt; tmp_array(dset_site.<a class="code" href="classASCbase_1_1Sitemap.html#fe90bda50b24ac3ecfa92df9d698b7d1">interact_pts_end</a>() - A_targ_pts_beg);
+<a name="l00083"></a>00083     A_targ_pts_beg = dset_site.<a class="code" href="classSimSite3D_1_1Sitemap.html#a7ad7e74e6ef0cdfb3e8e487e2db6200">interact_pts_beg</a>();
+<a name="l00084"></a>00084     std::vector&lt;uint&gt; tmp_array(dset_site.<a class="code" href="classSimSite3D_1_1Sitemap.html#fe90bda50b24ac3ecfa92df9d698b7d1">interact_pts_end</a>() - A_targ_pts_beg);
 <a name="l00085"></a>00085     <span class="keywordflow">for</span>(uint i = 0; i &lt; tmp_array.size(); ++i) tmp_array[i] = i;
 <a name="l00086"></a>00086     <span class="keywordflow">for</span>(uint i = 2; !error &amp;&amp; i &lt; tmp_array.size(); i++){
 <a name="l00087"></a>00087       tmp_array[2] = tmp_array[i];
@@ -94,25 +94,25 @@
 <a name="l00093"></a>00093   
 <a name="l00094"></a>00094 
 <a name="l00095"></a>00095 <span class="keyword">private</span>:
-<a name="l00096"></a>00096   <a class="code" href="classASCbase_1_1ModelSitemap.html">ModelSitemap</a>* A_model;
+<a name="l00096"></a>00096   <a class="code" href="classSimSite3D_1_1ModelSitemap.html">ModelSitemap</a>* A_model;
 <a name="l00097"></a>00097   my_float_t target_centroid[3];
 <a name="l00098"></a>00098   interact_pts_vci A_targ_pts_beg;
-<a name="l00099"></a><a class="code" href="classASCbase_1_1MatchTriangles.html#285278f41b70244a22984cf328522494">00099</a>   my_float_t <a class="code" href="classASCbase_1_1MatchTriangles.html#285278f41b70244a22984cf328522494">dmetol_2</a>;  
-<a name="l00100"></a><a class="code" href="classASCbase_1_1MatchTriangles.html#4f725552c68b6de6e1d49a9796a3165b">00100</a>   my_float_t <a class="code" href="classASCbase_1_1MatchTriangles.html#4f725552c68b6de6e1d49a9796a3165b">lsetol_2</a>;  
+<a name="l00099"></a><a class="code" href="classSimSite3D_1_1MatchTriangles.html#285278f41b70244a22984cf328522494">00099</a>   my_float_t <a class="code" href="classSimSite3D_1_1MatchTriangles.html#285278f41b70244a22984cf328522494">dmetol_2</a>;  
+<a name="l00100"></a><a class="code" href="classSimSite3D_1_1MatchTriangles.html#4f725552c68b6de6e1d49a9796a3165b">00100</a>   my_float_t <a class="code" href="classSimSite3D_1_1MatchTriangles.html#4f725552c68b6de6e1d49a9796a3165b">lsetol_2</a>;  
 <a name="l00101"></a>00101   <span class="comment">//std::vector&lt;rigid_align_t&gt; *A_alignments; //!&lt; candidate alignments</span>
 <a name="l00102"></a>00102   <span class="keywordtype">bool</span> A_allow_hphob_triangles; 
 <a name="l00103"></a>00103 
 <a name="l00104"></a>00104   <span class="comment">// Constants for ease of use/readability</span>
-<a name="l00105"></a><a class="code" href="classASCbase_1_1MatchTriangles.html#263da86497b71a67e4cb0b14356e830d">00105</a>   <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classASCbase_1_1MatchTriangles.html#263da86497b71a67e4cb0b14356e830d">_fname</a>;           
-<a name="l00106"></a><a class="code" href="classASCbase_1_1MatchTriangles.html#ef9e8c25707ff5d109fc2f93d00be198">00106</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classASCbase_1_1MatchTriangles.html#ef9e8c25707ff5d109fc2f93d00be198">permutations</a>[6][3];       
-<a name="l00107"></a><a class="code" href="classASCbase_1_1MatchTriangles.html#5249b60afc22af79841be9345cf6c98e">00107</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classASCbase_1_1MatchTriangles.html#5249b60afc22af79841be9345cf6c98e">point_permutations</a>[6][3]; 
-<a name="l00108"></a><a class="code" href="classASCbase_1_1MatchTriangles.html#987dee7263175dc5dac58309ca26d4eb">00108</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classASCbase_1_1MatchTriangles.html#987dee7263175dc5dac58309ca26d4eb">ACCEPTOR_ACCEPTOR</a>;   
-<a name="l00109"></a><a class="code" href="classASCbase_1_1MatchTriangles.html#b78b92259f4ef3245675fdf17a21f6c9">00109</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classASCbase_1_1MatchTriangles.html#b78b92259f4ef3245675fdf17a21f6c9">DONOR_DONOR</a>;         
-<a name="l00110"></a><a class="code" href="classASCbase_1_1MatchTriangles.html#ff621328272ce0e2c143efe4315feb9c">00110</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classASCbase_1_1MatchTriangles.html#ff621328272ce0e2c143efe4315feb9c">HYDROPHOB_HYDROPHOB</a>; 
-<a name="l00111"></a><a class="code" href="classASCbase_1_1MatchTriangles.html#ade24f76f84d429853f48e41208db45e">00111</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classASCbase_1_1MatchTriangles.html#ade24f76f84d429853f48e41208db45e">ACCEPTOR_DONOR</a>;      
-<a name="l00112"></a><a class="code" href="classASCbase_1_1MatchTriangles.html#4c4b4779b05e824be2960a0a6ba525f8">00112</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classASCbase_1_1MatchTriangles.html#4c4b4779b05e824be2960a0a6ba525f8">ACCEPTOR_DONEPTOR</a>;   
-<a name="l00113"></a><a class="code" href="classASCbase_1_1MatchTriangles.html#7816e470f2da8b31bfe68f635a84870f">00113</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classASCbase_1_1MatchTriangles.html#7816e470f2da8b31bfe68f635a84870f">DONOR_DONEPTOR</a>;      
-<a name="l00114"></a><a class="code" href="classASCbase_1_1MatchTriangles.html#152f1eff01e619c50b2361c394330a63">00114</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classASCbase_1_1MatchTriangles.html#152f1eff01e619c50b2361c394330a63">DONEPTOR_DONEPTOR</a>;   
+<a name="l00105"></a><a class="code" href="classSimSite3D_1_1MatchTriangles.html#263da86497b71a67e4cb0b14356e830d">00105</a>   <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classSimSite3D_1_1MatchTriangles.html#263da86497b71a67e4cb0b14356e830d">_fname</a>;           
+<a name="l00106"></a><a class="code" href="classSimSite3D_1_1MatchTriangles.html#ef9e8c25707ff5d109fc2f93d00be198">00106</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classSimSite3D_1_1MatchTriangles.html#ef9e8c25707ff5d109fc2f93d00be198">permutations</a>[6][3];       
+<a name="l00107"></a><a class="code" href="classSimSite3D_1_1MatchTriangles.html#5249b60afc22af79841be9345cf6c98e">00107</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classSimSite3D_1_1MatchTriangles.html#5249b60afc22af79841be9345cf6c98e">point_permutations</a>[6][3]; 
+<a name="l00108"></a><a class="code" href="classSimSite3D_1_1MatchTriangles.html#987dee7263175dc5dac58309ca26d4eb">00108</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classSimSite3D_1_1MatchTriangles.html#987dee7263175dc5dac58309ca26d4eb">ACCEPTOR_ACCEPTOR</a>;   
+<a name="l00109"></a><a class="code" href="classSimSite3D_1_1MatchTriangles.html#b78b92259f4ef3245675fdf17a21f6c9">00109</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classSimSite3D_1_1MatchTriangles.html#b78b92259f4ef3245675fdf17a21f6c9">DONOR_DONOR</a>;         
+<a name="l00110"></a><a class="code" href="classSimSite3D_1_1MatchTriangles.html#ff621328272ce0e2c143efe4315feb9c">00110</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classSimSite3D_1_1MatchTriangles.html#ff621328272ce0e2c143efe4315feb9c">HYDROPHOB_HYDROPHOB</a>; 
+<a name="l00111"></a><a class="code" href="classSimSite3D_1_1MatchTriangles.html#ade24f76f84d429853f48e41208db45e">00111</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classSimSite3D_1_1MatchTriangles.html#ade24f76f84d429853f48e41208db45e">ACCEPTOR_DONOR</a>;      
+<a name="l00112"></a><a class="code" href="classSimSite3D_1_1MatchTriangles.html#4c4b4779b05e824be2960a0a6ba525f8">00112</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classSimSite3D_1_1MatchTriangles.html#4c4b4779b05e824be2960a0a6ba525f8">ACCEPTOR_DONEPTOR</a>;   
+<a name="l00113"></a><a class="code" href="classSimSite3D_1_1MatchTriangles.html#7816e470f2da8b31bfe68f635a84870f">00113</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classSimSite3D_1_1MatchTriangles.html#7816e470f2da8b31bfe68f635a84870f">DONOR_DONEPTOR</a>;      
+<a name="l00114"></a><a class="code" href="classSimSite3D_1_1MatchTriangles.html#152f1eff01e619c50b2361c394330a63">00114</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classSimSite3D_1_1MatchTriangles.html#152f1eff01e619c50b2361c394330a63">DONEPTOR_DONEPTOR</a>;   
 <a name="l00115"></a>00115 
 <a name="l00116"></a>00116 
 <a name="l00117"></a>00117   <span class="keyword">template</span>&lt; <span class="keyword">typename</span> align_T &gt; <span class="keywordtype">void</span>
@@ -120,16 +120,16 @@
 <a name="l00119"></a>00119                     std::vector&lt;align_T&gt; *alignments)
 <a name="l00120"></a>00120   {
 <a name="l00121"></a>00121     std::vector&lt;uint&gt;&amp; arr = *arr_p;
-<a name="l00122"></a>00122     <a class="code" href="structASCbase_1_1triangle__t.html">triangle_t</a> target_tri;
+<a name="l00122"></a>00122     <a class="code" href="structSimSite3D_1_1triangle__t.html">triangle_t</a> target_tri;
 <a name="l00123"></a>00123 
 <a name="l00124"></a>00124     <span class="comment">// Get edge lengths and perimeter for the given vertices</span>
 <a name="l00125"></a>00125     <span class="keywordflow">for</span>(uint i = 0; i &lt; 3; ++i) 
-<a name="l00126"></a>00126       target_tri.<a class="code" href="structASCbase_1_1triangle__t.html#6c50fcf5765d863b447d3f85d2ed5bdb">vertices</a>[i] = A_targ_pts_beg + arr[i];
+<a name="l00126"></a>00126       target_tri.<a class="code" href="structSimSite3D_1_1triangle__t.html#6c50fcf5765d863b447d3f85d2ed5bdb">vertices</a>[i] = A_targ_pts_beg + arr[i];
 <a name="l00127"></a>00127     my_float_t perimeter = 0;
 <a name="l00128"></a>00128     <span class="keywordflow">for</span>(uint i = 0; i &lt; 3; ++i){
-<a name="l00129"></a>00129       target_tri.<a class="code" href="structASCbase_1_1triangle__t.html#054eeaf8f6d93e76685c52338351cc40">edge_len</a>[i] = 
-<a name="l00130"></a>00130         dist(target_tri.<a class="code" href="structASCbase_1_1triangle__t.html#6c50fcf5765d863b447d3f85d2ed5bdb">vertices</a>[i]-&gt;pos, target_tri.<a class="code" href="structASCbase_1_1triangle__t.html#6c50fcf5765d863b447d3f85d2ed5bdb">vertices</a>[(i+1) % 3]-&gt;pos);
-<a name="l00131"></a>00131       perimeter += target_tri.<a class="code" href="structASCbase_1_1triangle__t.html#054eeaf8f6d93e76685c52338351cc40">edge_len</a>[i];
+<a name="l00129"></a>00129       target_tri.<a class="code" href="structSimSite3D_1_1triangle__t.html#054eeaf8f6d93e76685c52338351cc40">edge_len</a>[i] = 
+<a name="l00130"></a>00130         dist(target_tri.<a class="code" href="structSimSite3D_1_1triangle__t.html#6c50fcf5765d863b447d3f85d2ed5bdb">vertices</a>[i]-&gt;pos, target_tri.<a class="code" href="structSimSite3D_1_1triangle__t.html#6c50fcf5765d863b447d3f85d2ed5bdb">vertices</a>[(i+1) % 3]-&gt;pos);
+<a name="l00131"></a>00131       perimeter += target_tri.<a class="code" href="structSimSite3D_1_1triangle__t.html#054eeaf8f6d93e76685c52338351cc40">edge_len</a>[i];
 <a name="l00132"></a>00132     }
 <a name="l00133"></a>00133     
 <a name="l00134"></a>00134     <span class="comment">// Find min and max edge lengths -- assumes no eqilateral triangle</span>
@@ -164,7 +164,7 @@
 <a name="l00163"></a>00163        (have_Hbond || A_allow_hphob_triangles) &amp;&amp; have_model_triangles){
 <a name="l00164"></a>00164       <span class="keywordflow">for</span>(bucket_vci model_tri = bucket_begin; model_tri &lt; bucket_end;
 <a name="l00165"></a>00165           ++model_tri){
-<a name="l00166"></a>00166         <span class="keywordtype">int</span> idx = <a class="code" href="classASCbase_1_1MatchTriangles.html#90fabfb57f81c9a8366434de82984762">get_best_correspondence</a>(**model_tri, target_tri);
+<a name="l00166"></a>00166         <span class="keywordtype">int</span> idx = <a class="code" href="classSimSite3D_1_1MatchTriangles.html#90fabfb57f81c9a8366434de82984762">get_best_correspondence</a>(**model_tri, target_tri);
 <a name="l00167"></a>00167         <span class="keywordflow">if</span>(idx == -1) <span class="keywordflow">continue</span>;
 <a name="l00168"></a>00168   
 <a name="l00169"></a>00169         <span class="comment">// Get the permuted search triangle corresponding to idx and find a </span>
@@ -173,10 +173,10 @@
 <a name="l00172"></a>00172         <span class="comment">// triangle.</span>
 <a name="l00173"></a>00173         triangle_t c_tri;
 <a name="l00174"></a>00174         <span class="keywordflow">for</span>(uint i = 0; i &lt; 3; ++i)
-<a name="l00175"></a>00175           c_tri.vertices[i] = target_tri.vertices[<a class="code" href="classASCbase_1_1MatchTriangles.html#5249b60afc22af79841be9345cf6c98e">point_permutations</a>[idx][i]];
+<a name="l00175"></a>00175           c_tri.vertices[i] = target_tri.vertices[<a class="code" href="classSimSite3D_1_1MatchTriangles.html#5249b60afc22af79841be9345cf6c98e">point_permutations</a>[idx][i]];
 <a name="l00176"></a>00176         align_T my_align;
 <a name="l00177"></a>00177         my_align.frag_file = NULL;
-<a name="l00178"></a>00178         <span class="keywordflow">if</span>(<a class="code" href="classASCbase_1_1MatchTriangles.html#434d4cfe074a18dd8d79b46b5585b559">ThreePtLeastSquares</a>(c_tri, **model_tri, &amp;(my_align.Q), my_align.R,
+<a name="l00178"></a>00178         <span class="keywordflow">if</span>(<a class="code" href="classSimSite3D_1_1MatchTriangles.html#434d4cfe074a18dd8d79b46b5585b559">ThreePtLeastSquares</a>(c_tri, **model_tri, &amp;(my_align.Q), my_align.R,
 <a name="l00179"></a>00179                                my_align.T)){
 <a name="l00180"></a>00180           <span class="comment">// Potentially inefficient depending on vector design</span>
 <a name="l00181"></a>00181           my_align.set_triangle_params(perimeter, max_len, min_len);
@@ -223,7 +223,7 @@
 <a name="l00242"></a>00242                 bucket_vci *bucket_begin, bucket_vci *bucket_end);
 <a name="l00243"></a>00243 
 <a name="l00244"></a>00244 };
-<a name="l00245"></a>00245 } <span class="comment">// end namespace ASCbase</span>
+<a name="l00245"></a>00245 } <span class="comment">// end namespace SimSite3D</span>
 <a name="l00246"></a>00246 <span class="preprocessor">#endif</span>
 </pre></div><hr size="1"><address style="align: right;"><small>Generated on Tue Apr 3 23:09:18 2012 for simsite3d by&nbsp;
 <a href="http://www.doxygen.org/index.html">

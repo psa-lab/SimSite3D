@@ -1,7 +1,7 @@
 #include <FaceAttrib.H>
 
-using namespace ASCbase;
-using namespace ASCbase::geometry;
+using namespace SimSite3D;
+using namespace SimSite3D::geometry;
 
 std::vector<FaceAttrib> FaceAttrib::NULL_FACES_STORAGE;
 const FaceAttrib::vi FaceAttrib::NULL_VI = FaceAttrib::NULL_FACES_STORAGE.end();

@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -34,7 +34,7 @@
 #include <ModelSiteRMSD.H>
 #include <AllPairsSitemapTest.H>
 
-namespace ASCbase{
+namespace SimSite3D{
  
 #if 0 
   template < typename align_T >
@@ -176,7 +176,7 @@ namespace ASCbase{
 //      A_args->report_parameters(rigid_results_out);
     
       std::string sf_file = A_args->install_dir;
-      sf_file += "/ASCbaseSoftParams/ext_prot_lig_score_fcns.conf";
+      sf_file += "/SimSite3DSoftParams/ext_prot_lig_score_fcns.conf";
       if(A_args->ext_score_method.length() == 0){
         if(!score_method->set_external_scoring_method(sf_file, "default")) 
           return false;
@@ -272,7 +272,7 @@ namespace ASCbase{
       // Need to check if this is a "normalization" run or "actual" run
       std::vector<std::string> tokens;
       string_tok(A_args->proj_output, &tokens, '/');
-      if(tokens.back().substr(0,13) != ".ASCbase_tmp_")
+      if(tokens.back().substr(0,13) != ".SimSite3D_tmp_")
         std::cout << "You may find the results of your search in\n  "
                   << A_args->proj_output << "\n";
      

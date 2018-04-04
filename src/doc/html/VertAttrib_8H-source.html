@@ -17,24 +17,24 @@
 <a name="l00004"></a>00004 <span class="preprocessor">#include &lt;dir_point.H&gt;</span>
 <a name="l00005"></a>00005 <span class="preprocessor">#include &lt;dir_point_storage.H&gt;</span>
 <a name="l00006"></a>00006 
-<a name="l00007"></a>00007 <span class="keyword">namespace </span>ASCbase{
+<a name="l00007"></a>00007 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00008"></a>00008 <span class="keyword">namespace </span>geometry{
 <a name="l00009"></a>00009 
-<a name="l00011"></a><a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html">00011</a> <span class="keyword">class </span><a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html">VertAttrib</a> : <span class="keyword">public</span> <a class="code" href="classASCbase_1_1dir__point__t.html">dir_point_t</a>{
+<a name="l00011"></a><a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html">00011</a> <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html">VertAttrib</a> : <span class="keyword">public</span> <a class="code" href="classSimSite3D_1_1dir__point__t.html">dir_point_t</a>{
 <a name="l00012"></a>00012 <span class="keyword">public</span>:
-<a name="l00013"></a><a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html#d3308c2a5ee7edecf77e42c012d06dc9">00013</a>   <span class="keyword">typedef</span> <a class="code" href="classASCbase_1_1dir__point__storage.html">dir_point_storage&lt;VertAttrib&gt;::iterator</a> <a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html#d3308c2a5ee7edecf77e42c012d06dc9">vi</a>; 
-<a name="l00014"></a><a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">00014</a>   <span class="keyword">typedef</span> <a class="code" href="classASCbase_1_1dir__point__storage.html">dir_point_storage&lt;VertAttrib&gt;::const_iterator</a> <a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">vci</a>; 
+<a name="l00013"></a><a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#d3308c2a5ee7edecf77e42c012d06dc9">00013</a>   <span class="keyword">typedef</span> <a class="code" href="classSimSite3D_1_1dir__point__storage.html">dir_point_storage&lt;VertAttrib&gt;::iterator</a> <a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#d3308c2a5ee7edecf77e42c012d06dc9">vi</a>; 
+<a name="l00014"></a><a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">00014</a>   <span class="keyword">typedef</span> <a class="code" href="classSimSite3D_1_1dir__point__storage.html">dir_point_storage&lt;VertAttrib&gt;::const_iterator</a> <a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">vci</a>; 
 <a name="l00015"></a>00015 
-<a name="l00017"></a><a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html#a77e8939222aed943aebbe5e245e470a">00017</a>   <a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html#a77e8939222aed943aebbe5e245e470a">VertAttrib</a>(alloc_t a = ALLOC_POSITION) : <a class="code" href="classASCbase_1_1dir__point__t.html">dir_point_t</a>(a)
+<a name="l00017"></a><a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#a77e8939222aed943aebbe5e245e470a">00017</a>   <a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#a77e8939222aed943aebbe5e245e470a">VertAttrib</a>(alloc_t a = ALLOC_POSITION) : <a class="code" href="classSimSite3D_1_1dir__point__t.html">dir_point_t</a>(a)
 <a name="l00018"></a>00018   { ; }
 <a name="l00019"></a>00019 
-<a name="l00021"></a><a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html#8e26a0cf88068110941e381fc5733821">00021</a>   <a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html#a77e8939222aed943aebbe5e245e470a">VertAttrib</a>(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html">VertAttrib</a>&amp; V) : <a class="code" href="classASCbase_1_1dir__point__t.html">dir_point_t</a>(V)
+<a name="l00021"></a><a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#8e26a0cf88068110941e381fc5733821">00021</a>   <a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#a77e8939222aed943aebbe5e245e470a">VertAttrib</a>(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html">VertAttrib</a>&amp; V) : <a class="code" href="classSimSite3D_1_1dir__point__t.html">dir_point_t</a>(V)
 <a name="l00022"></a>00022   {
 <a name="l00023"></a>00023     do_copy(V);
 <a name="l00024"></a>00024   }
 <a name="l00025"></a>00025 
-<a name="l00027"></a>00027   <span class="keyword">const</span> <a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html">VertAttrib</a>&amp;
-<a name="l00028"></a><a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html#65a6cc95baa1a297f7dd96edb4b6aac2">00028</a>   <a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html#65a6cc95baa1a297f7dd96edb4b6aac2">operator=</a>(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html">VertAttrib</a>&amp; V)
+<a name="l00027"></a>00027   <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html">VertAttrib</a>&amp;
+<a name="l00028"></a><a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#65a6cc95baa1a297f7dd96edb4b6aac2">00028</a>   <a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#65a6cc95baa1a297f7dd96edb4b6aac2">operator=</a>(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html">VertAttrib</a>&amp; V)
 <a name="l00029"></a>00029   {
 <a name="l00030"></a>00030     <span class="keywordflow">if</span>(&amp;V != <span class="keyword">this</span>){
 <a name="l00031"></a>00031       do_copy(V);
@@ -43,24 +43,24 @@
 <a name="l00034"></a>00034     <span class="keywordflow">return</span> *<span class="keyword">this</span>;
 <a name="l00035"></a>00035   }
 <a name="l00036"></a>00036 
-<a name="l00037"></a>00037   <span class="keyword">virtual</span> ~<a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html">VertAttrib</a>()
+<a name="l00037"></a>00037   <span class="keyword">virtual</span> ~<a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html">VertAttrib</a>()
 <a name="l00038"></a>00038   {
 <a name="l00039"></a>00039   }
 <a name="l00040"></a>00040 
 <a name="l00041"></a>00041 
-<a name="l00042"></a>00042   <span class="keyword">static</span> <a class="code" href="classASCbase_1_1dir__point__storage.html">dir_point_storage&lt;VertAttrib&gt;</a> NULL_VERTICES_STORAGE;
-<a name="l00043"></a>00043   <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html#d3308c2a5ee7edecf77e42c012d06dc9">vi</a> NULL_VI;
-<a name="l00044"></a>00044   <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">vci</a> NULL_VCI;
+<a name="l00042"></a>00042   <span class="keyword">static</span> <a class="code" href="classSimSite3D_1_1dir__point__storage.html">dir_point_storage&lt;VertAttrib&gt;</a> NULL_VERTICES_STORAGE;
+<a name="l00043"></a>00043   <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#d3308c2a5ee7edecf77e42c012d06dc9">vi</a> NULL_VI;
+<a name="l00044"></a>00044   <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">vci</a> NULL_VCI;
 <a name="l00045"></a>00045 
 <a name="l00046"></a>00046 <span class="keyword">private</span>:
 <a name="l00047"></a>00047   <span class="keyword">inline</span> <span class="keywordtype">void</span>
-<a name="l00048"></a>00048   do_copy(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1geometry_1_1VertAttrib.html#a77e8939222aed943aebbe5e245e470a">VertAttrib</a>&amp; V)
+<a name="l00048"></a>00048   do_copy(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#a77e8939222aed943aebbe5e245e470a">VertAttrib</a>&amp; V)
 <a name="l00049"></a>00049   {
 <a name="l00050"></a>00050   }
 <a name="l00051"></a>00051 };
 <a name="l00052"></a>00052  
 <a name="l00053"></a>00053 } <span class="comment">// end namespace geometry</span>
-<a name="l00054"></a>00054 } <span class="comment">// end namespace ASCbase</span>
+<a name="l00054"></a>00054 } <span class="comment">// end namespace SimSite3D</span>
 <a name="l00055"></a>00055 
 <a name="l00056"></a>00056 <span class="preprocessor">#endif</span>
 </pre></div><hr size="1"><address style="align: right;"><small>Generated on Tue Apr 3 23:09:18 2012 for simsite3d by&nbsp;

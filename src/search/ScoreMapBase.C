@@ -1,6 +1,6 @@
 #include <ScoreMapBase.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 void
 rigid_align_t::write_score_fields(std::ostream& out, const uint orient_num,
@@ -74,8 +74,8 @@ rigid_align_t::get_score_field_labels(std::vector<std::string> *fields,
 {
   std::string tmp;
   if(normalize_score)
-    tmp = "Normalized ASCbase alignment score of target to query";
-  else tmp = "Raw ASCbase alignment score of target to query";
+    tmp = "Normalized SimSite3D alignment score of target to query";
+  else tmp = "Raw SimSite3D alignment score of target to query";
   fields->push_back(tmp);
 
   fields->push_back("Rotation matrix to align target to query");

@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -20,7 +20,7 @@
 #define PDB_STRUCTURE_HEADER_INCLUDED
 #include <PDBBase.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! Simple package to hold information about a PDB residue
 class residue_t{
@@ -167,6 +167,6 @@ private:
   static const std::string _fname;   //!< Name of the source file
 };
 
-} // End of namespace ASCbase
+} // End of namespace SimSite3D
 
 #endif

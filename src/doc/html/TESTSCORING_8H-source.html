@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -50,19 +50,19 @@
 <a name="l00037"></a>00037 <span class="preprocessor"></span>
 <a name="l00038"></a>00038 <span class="preprocessor">#include &lt;ScoreRigidAlignments.H&gt;</span>
 <a name="l00039"></a>00039 
-<a name="l00040"></a>00040 <span class="keyword">namespace </span>ASCbase{
+<a name="l00040"></a>00040 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00041"></a>00041 
-<a name="l00043"></a><a class="code" href="classASCbase_1_1TestScoring.html">00043</a>   <span class="keyword">class </span><a class="code" href="classASCbase_1_1TestScoring.html">TestScoring</a> : <span class="keyword">public</span> <a class="code" href="classASCbase_1_1ScoreRigidAlignments.html">ScoreRigidAlignments</a>&lt;std::less&lt;my_float_t&gt; &gt;{
+<a name="l00043"></a><a class="code" href="classSimSite3D_1_1TestScoring.html">00043</a>   <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1TestScoring.html">TestScoring</a> : <span class="keyword">public</span> <a class="code" href="classSimSite3D_1_1ScoreRigidAlignments.html">ScoreRigidAlignments</a>&lt;std::less&lt;my_float_t&gt; &gt;{
 <a name="l00044"></a>00044   <span class="keyword">public</span>:
 <a name="l00046"></a>00046 
-<a name="l00050"></a>00050     <a class="code" href="classASCbase_1_1TestScoring.html#30cc41f637641ce6dd0c225594e17e15">TestScoring</a>(<a class="code" href="classASCbase_1_1ModelSitemap.html">ModelSitemap</a>* model_in, 
-<a name="l00051"></a>00051                 <span class="keyword">const</span> <a class="code" href="classASCbase_1_1SearchParameters.html">SearchParameters</a>&amp; params);
+<a name="l00050"></a>00050     <a class="code" href="classSimSite3D_1_1TestScoring.html#30cc41f637641ce6dd0c225594e17e15">TestScoring</a>(<a class="code" href="classSimSite3D_1_1ModelSitemap.html">ModelSitemap</a>* model_in, 
+<a name="l00051"></a>00051                 <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1SearchParameters.html">SearchParameters</a>&amp; params);
 <a name="l00052"></a>00052 
-<a name="l00054"></a>00054     <a class="code" href="classASCbase_1_1TestScoring.html#47bf11af16fb49567855096808ec8a7f">~TestScoring</a>(); 
+<a name="l00054"></a>00054     <a class="code" href="classSimSite3D_1_1TestScoring.html#47bf11af16fb49567855096808ec8a7f">~TestScoring</a>(); 
 <a name="l00055"></a>00055 
 <a name="l00056"></a>00056   <span class="keyword">protected</span>:
 <a name="l00058"></a>00058 
-<a name="l00062"></a>00062     my_float_t <a class="code" href="classASCbase_1_1TestScoring.html#e0e06721302874c8daff87995f2609b9">score</a>(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1DbaseSitemap.html">DbaseSitemap</a>&amp; search, rigid_align_vi scores);
+<a name="l00062"></a>00062     my_float_t <a class="code" href="classSimSite3D_1_1TestScoring.html#e0e06721302874c8daff87995f2609b9">score</a>(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1DbaseSitemap.html">DbaseSitemap</a>&amp; search, rigid_align_vi scores);
 <a name="l00063"></a>00063 
 <a name="l00064"></a>00064     my_float_t
 <a name="l00065"></a>00065     correspondences(my_float_t **query_pts_ptr, my_float_t **db_pts_ptr,
@@ -75,13 +75,13 @@
 <a name="l00072"></a>00072     }
 <a name="l00073"></a>00073 
 <a name="l00074"></a>00074   <span class="keyword">private</span>:
-<a name="l00075"></a><a class="code" href="classASCbase_1_1TestScoring.html#b4ebe268b1b74f5fe669c109de103c8f">00075</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classASCbase_1_1TestScoring.html#b4ebe268b1b74f5fe669c109de103c8f">_fname</a>;          
-<a name="l00076"></a><a class="code" href="classASCbase_1_1TestScoring.html#d98e1f35e2bdf736d103e6e5b0acb5dd">00076</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classASCbase_1_1TestScoring.html#d98e1f35e2bdf736d103e6e5b0acb5dd">POLAR_SUM_W</a>;      
-<a name="l00077"></a><a class="code" href="classASCbase_1_1TestScoring.html#4d97cb87f8816169344f99d6d82f9910">00077</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classASCbase_1_1TestScoring.html#4d97cb87f8816169344f99d6d82f9910">HPHOBIC_COUNT_W</a>;  
-<a name="l00078"></a><a class="code" href="classASCbase_1_1TestScoring.html#346e2d0eab2f073e92340f747237e674">00078</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classASCbase_1_1TestScoring.html#346e2d0eab2f073e92340f747237e674">POLAR_MISMATCH_W</a>; 
-<a name="l00079"></a><a class="code" href="classASCbase_1_1TestScoring.html#668c7fb952beb31eb9c991e0f736570c">00079</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classASCbase_1_1TestScoring.html#668c7fb952beb31eb9c991e0f736570c">UNSAT_POLAR_W</a>;    
-<a name="l00080"></a><a class="code" href="classASCbase_1_1TestScoring.html#1ee5151bf6450adf872d86f51b9f9e72">00080</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classASCbase_1_1TestScoring.html#1ee5151bf6450adf872d86f51b9f9e72">CONSTANT_TERM</a>;    
-<a name="l00081"></a><a class="code" href="classASCbase_1_1TestScoring.html#46212ce7b93b0912702739bfd3efe04f">00081</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classASCbase_1_1TestScoring.html#46212ce7b93b0912702739bfd3efe04f">max_dist</a>;         
+<a name="l00075"></a><a class="code" href="classSimSite3D_1_1TestScoring.html#b4ebe268b1b74f5fe669c109de103c8f">00075</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classSimSite3D_1_1TestScoring.html#b4ebe268b1b74f5fe669c109de103c8f">_fname</a>;          
+<a name="l00076"></a><a class="code" href="classSimSite3D_1_1TestScoring.html#d98e1f35e2bdf736d103e6e5b0acb5dd">00076</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classSimSite3D_1_1TestScoring.html#d98e1f35e2bdf736d103e6e5b0acb5dd">POLAR_SUM_W</a>;      
+<a name="l00077"></a><a class="code" href="classSimSite3D_1_1TestScoring.html#4d97cb87f8816169344f99d6d82f9910">00077</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classSimSite3D_1_1TestScoring.html#4d97cb87f8816169344f99d6d82f9910">HPHOBIC_COUNT_W</a>;  
+<a name="l00078"></a><a class="code" href="classSimSite3D_1_1TestScoring.html#346e2d0eab2f073e92340f747237e674">00078</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classSimSite3D_1_1TestScoring.html#346e2d0eab2f073e92340f747237e674">POLAR_MISMATCH_W</a>; 
+<a name="l00079"></a><a class="code" href="classSimSite3D_1_1TestScoring.html#668c7fb952beb31eb9c991e0f736570c">00079</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classSimSite3D_1_1TestScoring.html#668c7fb952beb31eb9c991e0f736570c">UNSAT_POLAR_W</a>;    
+<a name="l00080"></a><a class="code" href="classSimSite3D_1_1TestScoring.html#1ee5151bf6450adf872d86f51b9f9e72">00080</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classSimSite3D_1_1TestScoring.html#1ee5151bf6450adf872d86f51b9f9e72">CONSTANT_TERM</a>;    
+<a name="l00081"></a><a class="code" href="classSimSite3D_1_1TestScoring.html#46212ce7b93b0912702739bfd3efe04f">00081</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classSimSite3D_1_1TestScoring.html#46212ce7b93b0912702739bfd3efe04f">max_dist</a>;         
 <a name="l00082"></a>00082   };
 <a name="l00083"></a>00083 }
 <a name="l00084"></a>00084 <span class="preprocessor">#endif</span>

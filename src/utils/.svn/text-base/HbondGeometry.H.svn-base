@@ -3,7 +3,7 @@
 #define HBOND_GEOMETRY_HEADER_FILE_INCLUDED
 #include <mol2File.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 //! A helper class to compute various geometrical features of hydrogen bonds
 class HbondGeometry{
 public:
@@ -244,5 +244,5 @@ private:
   static const sidechain_preacc_t A_SC_preacc_array[];
   static preacc_tbl_res_lvl A_SC_preaccs;  //!< Map to help look up protein sidechain preacceptor info based on pdb residue and atom names
 };
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

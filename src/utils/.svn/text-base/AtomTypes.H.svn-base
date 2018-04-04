@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -32,7 +32,7 @@
 #include <orbitals.H>
 #include <types.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
   //! The majority of atom types
   typedef enum atom_type_enum{
@@ -173,8 +173,8 @@ namespace ASCbase{
    * V. 44, 1995.
    */
   typedef struct{
-    atom_type atom;             //!< ASCbase atom identifier (enum)
-    orbit_type orbit;           //!< ASCbase atom orbital identifier (enum)
+    atom_type atom;             //!< SimSite3D atom identifier (enum)
+    orbit_type orbit;           //!< SimSite3D atom orbital identifier (enum)
     my_float_t vdw_radius;      //!< Van der Waals radius
   }atom_info_t;
 

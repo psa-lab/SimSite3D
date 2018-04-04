@@ -4,7 +4,7 @@ from numpy import random
 class Quaternion:
   """
   Simple quaternion class that (in the end) should mirror the
-  ASCbase::Quaternion C++ class
+  SimSite3D::Quaternion C++ class
   """
 
 

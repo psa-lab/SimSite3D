@@ -97,7 +97,7 @@ class scale_factors:
           self.scale_factors[q_id] = [ float(s) for s in line.split() ]
           break;
   
-        if(line.startswith("<ASCbase features scales>")):
+        if(line.startswith("<SimSite3D features scales>")):
           grab = True
       csv_file.close()
 

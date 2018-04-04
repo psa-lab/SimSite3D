@@ -4,7 +4,7 @@
 #include <dir_point.H>
 #include <dir_point_storage.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 namespace geometry{
 
 //! A class to hold attributes associated with a vertex
@@ -51,6 +51,6 @@ private:
 };
  
 } // end namespace geometry
-} // end namespace ASCbase
+} // end namespace SimSite3D
 
 #endif

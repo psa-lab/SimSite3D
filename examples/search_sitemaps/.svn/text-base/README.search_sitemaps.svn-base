@@ -20,7 +20,7 @@ respectively are the same).
 DrugScore:  DrugScore 1.2 writes out 3 files for each comparison (scoring). 
 A log file, an info file and a score file.  Because 3 files are written for
 each site in a search, a large number of files are generated.  For this reason,
-the default action of ASCbase is to read the score from the DrugScore score 
+the default action of SimSite3D is to read the score from the DrugScore score 
 file and delete the DrugScore files.
 
 SFCscore:  Please refer the Quick Guide for information on how to setup the 
@@ -30,5 +30,5 @@ the methods to setup the interface are not discussed here).
 Molecular Graphics:  You may visualize the ligand "hit" by along with its 
 reference by viewing the protein, reference ligand and hit ligand 
 (in/1b38_atp_p.pdb, in/1b38_atp_l.mol2, 
-$PROJ_OUTPUT/1b38_atp_results/ligand_fragments/1ua2_atp_0001_ASCbase_frag_l.mol2
+$PROJ_OUTPUT/1b38_atp_results/ligand_fragments/1ua2_atp_0001_SimSite3D_frag_l.mol2
 respectively).

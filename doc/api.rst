@@ -4,11 +4,11 @@
 Some Notes on SimSite3D's Python API and Tools
 ***********************************************
 
-.. module:: ASCbasePy
+.. module:: SimSite3DPy
 
-ASCbasePy.plotting
+SimSite3DPy.plotting
 ==================
-.. automodule:: ASCbasePy.plotting
+.. automodule:: SimSite3DPy.plotting
 
 LoadData
 ---------

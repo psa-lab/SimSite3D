@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -34,24 +34,24 @@
 <a name="l00021"></a>00021 <span class="preprocessor"></span>
 <a name="l00022"></a>00022 <span class="preprocessor">#include &lt;point.H&gt;</span>
 <a name="l00023"></a>00023 
-<a name="l00024"></a>00024 <span class="keyword">namespace </span>ASCbase{
+<a name="l00024"></a>00024 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00025"></a>00025   
-<a name="l00027"></a><a class="code" href="classASCbase_1_1dir__point__t.html">00027</a>   <span class="keyword">class </span><a class="code" href="classASCbase_1_1dir__point__t.html">dir_point_t</a> : <span class="keyword">public</span> <a class="code" href="classASCbase_1_1point__t.html">point_t</a>{
+<a name="l00027"></a><a class="code" href="classSimSite3D_1_1dir__point__t.html">00027</a>   <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1dir__point__t.html">dir_point_t</a> : <span class="keyword">public</span> <a class="code" href="classSimSite3D_1_1point__t.html">point_t</a>{
 <a name="l00028"></a>00028   <span class="keyword">public</span>:
-<a name="l00029"></a>00029     <a class="code" href="classASCbase_1_1dir__point__t.html">dir_point_t</a>(alloc_t a = ALLOC_POSITION) : <a class="code" href="classASCbase_1_1point__t.html">point_t</a>(a)
+<a name="l00029"></a>00029     <a class="code" href="classSimSite3D_1_1dir__point__t.html">dir_point_t</a>(alloc_t a = ALLOC_POSITION) : <a class="code" href="classSimSite3D_1_1point__t.html">point_t</a>(a)
 <a name="l00030"></a>00030     {
 <a name="l00031"></a>00031       _dir_allocated = a;
 <a name="l00032"></a>00032       <span class="keywordflow">if</span>(a == ALLOC_POSITION) dir = <span class="keyword">new</span> my_float_t[3];
 <a name="l00033"></a>00033       <span class="keywordflow">else</span> dir = 0;
 <a name="l00034"></a>00034     } 
 <a name="l00035"></a>00035 
-<a name="l00036"></a>00036     <a class="code" href="classASCbase_1_1dir__point__t.html">dir_point_t</a>(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1dir__point__t.html">dir_point_t</a>&amp; p) : <a class="code" href="classASCbase_1_1point__t.html">point_t</a>(p)
+<a name="l00036"></a>00036     <a class="code" href="classSimSite3D_1_1dir__point__t.html">dir_point_t</a>(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1dir__point__t.html">dir_point_t</a>&amp; p) : <a class="code" href="classSimSite3D_1_1point__t.html">point_t</a>(p)
 <a name="l00037"></a>00037     {
 <a name="l00038"></a>00038       do_copy(p);
 <a name="l00039"></a>00039     }
 <a name="l00040"></a>00040 
-<a name="l00041"></a>00041     <span class="keyword">const</span> <a class="code" href="classASCbase_1_1dir__point__t.html">dir_point_t</a>&amp;
-<a name="l00042"></a>00042     operator=(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1dir__point__t.html">dir_point_t</a>&amp; p)
+<a name="l00041"></a>00041     <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1dir__point__t.html">dir_point_t</a>&amp;
+<a name="l00042"></a>00042     operator=(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1dir__point__t.html">dir_point_t</a>&amp; p)
 <a name="l00043"></a>00043     {
 <a name="l00044"></a>00044       <span class="keywordflow">if</span>(&amp;p != <span class="keyword">this</span>){
 <a name="l00045"></a>00045         do_copy(p);
@@ -60,7 +60,7 @@
 <a name="l00048"></a>00048       <span class="keywordflow">return</span> *<span class="keyword">this</span>;
 <a name="l00049"></a>00049     }
 <a name="l00050"></a>00050 
-<a name="l00051"></a>00051     ~<a class="code" href="classASCbase_1_1dir__point__t.html">dir_point_t</a>() 
+<a name="l00051"></a>00051     ~<a class="code" href="classSimSite3D_1_1dir__point__t.html">dir_point_t</a>() 
 <a name="l00052"></a>00052     {
 <a name="l00053"></a>00053       delete_dir();
 <a name="l00054"></a>00054     }
@@ -75,13 +75,13 @@
 <a name="l00063"></a>00063     my_float_t* dir; 
 <a name="l00064"></a>00064   <span class="keyword">private</span>:
 <a name="l00065"></a>00065     <span class="keywordtype">void</span>
-<a name="l00066"></a>00066     do_copy(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1dir__point__t.html">dir_point_t</a>&amp; p)
+<a name="l00066"></a>00066     do_copy(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1dir__point__t.html">dir_point_t</a>&amp; p)
 <a name="l00067"></a>00067     {
-<a name="l00068"></a>00068       _dir_allocated = p.<a class="code" href="classASCbase_1_1dir__point__t.html#14646e021c9e24eedf8a41ef4f6dc68d">_dir_allocated</a>;
-<a name="l00069"></a>00069       <span class="keywordflow">if</span>(p.<a class="code" href="classASCbase_1_1dir__point__t.html#14646e021c9e24eedf8a41ef4f6dc68d">_dir_allocated</a> == ALLOC_POSITION){
+<a name="l00068"></a>00068       _dir_allocated = p.<a class="code" href="classSimSite3D_1_1dir__point__t.html#14646e021c9e24eedf8a41ef4f6dc68d">_dir_allocated</a>;
+<a name="l00069"></a>00069       <span class="keywordflow">if</span>(p.<a class="code" href="classSimSite3D_1_1dir__point__t.html#14646e021c9e24eedf8a41ef4f6dc68d">_dir_allocated</a> == ALLOC_POSITION){
 <a name="l00070"></a>00070         dir = <span class="keyword">new</span> my_float_t[3];
-<a name="l00071"></a>00071         std::copy(p.<a class="code" href="classASCbase_1_1dir__point__t.html#7378ba825067f07353f214941ca4a715">dir</a>, p.<a class="code" href="classASCbase_1_1dir__point__t.html#7378ba825067f07353f214941ca4a715">dir</a>+3, dir);
-<a name="l00072"></a>00072       }<span class="keywordflow">else</span> dir = p.<a class="code" href="classASCbase_1_1dir__point__t.html#7378ba825067f07353f214941ca4a715">dir</a>;
+<a name="l00071"></a>00071         std::copy(p.<a class="code" href="classSimSite3D_1_1dir__point__t.html#7378ba825067f07353f214941ca4a715">dir</a>, p.<a class="code" href="classSimSite3D_1_1dir__point__t.html#7378ba825067f07353f214941ca4a715">dir</a>+3, dir);
+<a name="l00072"></a>00072       }<span class="keywordflow">else</span> dir = p.<a class="code" href="classSimSite3D_1_1dir__point__t.html#7378ba825067f07353f214941ca4a715">dir</a>;
 <a name="l00073"></a>00073     }
 <a name="l00074"></a>00074 
 <a name="l00075"></a>00075     alloc_t _dir_allocated;

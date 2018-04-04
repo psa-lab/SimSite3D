@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -47,7 +47,7 @@
 #include <BoundingVolume.H>
 
 
-namespace ASCbase{
+namespace SimSite3D{
 
   //! Forward declaration of "ideal" point class
   class hbond_ideal_point_t;
@@ -84,11 +84,11 @@ namespace ASCbase{
     cmp(const hbond_point_t &A, const hbond_point_t &B)
     { return A.act_type < B.act_type; }
 
-    const ASCbase::atom_t&
+    const SimSite3D::atom_t&
     __get_atom() const
     { return *atom; }
 
-    const ASCbase::hbond_ideal_point_t&
+    const SimSite3D::hbond_ideal_point_t&
     __get_ideal_pt() const
     { return *ideal_pt; }
 
@@ -155,11 +155,11 @@ namespace ASCbase{
     cmp(const hbond_ideal_pt_base &A, const hbond_ideal_pt_base &B)
     { return A.act_type < B.act_type; }
 
-    const ASCbase::atom_t&
+    const SimSite3D::atom_t&
     __get_atom() const
     { return *atom; }
 
-    const ASCbase::atom_t&
+    const SimSite3D::atom_t&
      __get_carbon_nbr() const
      { return *carbon_nbr; }
 

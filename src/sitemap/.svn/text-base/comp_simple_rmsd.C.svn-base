@@ -2,7 +2,7 @@
 #include <sstream>
 #include <iomanip>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 int main(int argc, char** argv)
 {

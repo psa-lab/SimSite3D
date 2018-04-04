@@ -1,56 +1,56 @@
-\section{ASCbase::Ball Class Reference}
-\label{classASCbase_1_1Ball}\index{ASCbase::Ball@{ASCbase::Ball}}
+\section{SimSite3D::Ball Class Reference}
+\label{classSimSite3D_1_1Ball}\index{SimSite3D::Ball@{SimSite3D::Ball}}
 A spherical solid bounding volume.  
 
 
 {\tt \#include $<$Bounding\-Volume.H$>$}
 
-Inheritance diagram for ASCbase::Ball::\begin{figure}[H]
+Inheritance diagram for SimSite3D::Ball::\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2cm]{classASCbase_1_1Ball}
+\includegraphics[height=2cm]{classSimSite3D_1_1Ball}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{CompactItemize}
 \item 
-\textbf{Ball} (const my\_\-float\_\-t $\ast$center\_\-in, const my\_\-float\_\-t radius\_\-in, const my\_\-float\_\-t grid\_\-spacing=0.0)\label{classASCbase_1_1Ball_97e67bc08a56c79e9e959a632009ade6}
+\textbf{Ball} (const my\_\-float\_\-t $\ast$center\_\-in, const my\_\-float\_\-t radius\_\-in, const my\_\-float\_\-t grid\_\-spacing=0.0)\label{classSimSite3D_1_1Ball_97e67bc08a56c79e9e959a632009ade6}
 
 \item 
-\textbf{Ball} (const \bf{Ball} \&src)\label{classASCbase_1_1Ball_75d5e1bf95a7262c6bc624dd12dfcc64}
+\textbf{Ball} (const \bf{Ball} \&src)\label{classSimSite3D_1_1Ball_75d5e1bf95a7262c6bc624dd12dfcc64}
 
 \item 
-virtual bool \bf{contains} (const my\_\-float\_\-t $\ast$point) const \label{classASCbase_1_1Ball_2f35f02b622dd5ab6a0587fea4decab9}
+virtual bool \bf{contains} (const my\_\-float\_\-t $\ast$point) const \label{classSimSite3D_1_1Ball_2f35f02b622dd5ab6a0587fea4decab9}
 
 \begin{CompactList}\small\item\em Is the given point inside the bounding volume? \item\end{CompactList}\item 
-virtual bool \textbf{BIND\_\-vol\_\-contains} (const my\_\-float\_\-t $\ast$point) const \label{classASCbase_1_1Ball_813573b67261525d0e929c403ada4edd}
+virtual bool \textbf{BIND\_\-vol\_\-contains} (const my\_\-float\_\-t $\ast$point) const \label{classSimSite3D_1_1Ball_813573b67261525d0e929c403ada4edd}
 
 \item 
-virtual bool \textbf{RAD\_\-vol\_\-contains} (const my\_\-float\_\-t $\ast$point) const \label{classASCbase_1_1Ball_35f5cc5ed18329e95f9b76ec9e57341d}
+virtual bool \textbf{RAD\_\-vol\_\-contains} (const my\_\-float\_\-t $\ast$point) const \label{classSimSite3D_1_1Ball_35f5cc5ed18329e95f9b76ec9e57341d}
 
 \item 
-virtual size\_\-t \bf{discretize} (const my\_\-float\_\-t spacing, my\_\-float\_\-t $\ast$$\ast$grid\_\-pts)\label{classASCbase_1_1Ball_a9f72b0b6f081f0d84907ae3dce7381b}
+virtual size\_\-t \bf{discretize} (const my\_\-float\_\-t spacing, my\_\-float\_\-t $\ast$$\ast$grid\_\-pts)\label{classSimSite3D_1_1Ball_a9f72b0b6f081f0d84907ae3dce7381b}
 
 \begin{CompactList}\small\item\em discretize the volume using the spacing for grid spacing. \item\end{CompactList}\item 
-virtual std::string \textbf{xml\_\-str} ()\label{classASCbase_1_1Ball_25e523c23461317176d63b322d700deb}
+virtual std::string \textbf{xml\_\-str} ()\label{classSimSite3D_1_1Ball_25e523c23461317176d63b322d700deb}
 
 \end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
-my\_\-float\_\-t \textbf{center} [3]\label{classASCbase_1_1Ball_8cdfc3ec26ff94910d7a217fdf00b122}
+my\_\-float\_\-t \textbf{center} [3]\label{classSimSite3D_1_1Ball_8cdfc3ec26ff94910d7a217fdf00b122}
 
 \item 
-my\_\-float\_\-t \textbf{radius}\label{classASCbase_1_1Ball_b10e3e683d98de2a313d95db8b1c2b5c}
+my\_\-float\_\-t \textbf{radius}\label{classSimSite3D_1_1Ball_b10e3e683d98de2a313d95db8b1c2b5c}
 
 \item 
-my\_\-float\_\-t \textbf{rad\_\-squared}\label{classASCbase_1_1Ball_005b5e685fffb4e47e10ffba05f2c608}
+my\_\-float\_\-t \textbf{rad\_\-squared}\label{classSimSite3D_1_1Ball_005b5e685fffb4e47e10ffba05f2c608}
 
 \item 
-my\_\-float\_\-t \textbf{BIND\_\-rad\_\-squared}\label{classASCbase_1_1Ball_46f12f5f5ce2f6ec63af22bb30cbcc39}
+my\_\-float\_\-t \textbf{BIND\_\-rad\_\-squared}\label{classSimSite3D_1_1Ball_46f12f5f5ce2f6ec63af22bb30cbcc39}
 
 \item 
-my\_\-float\_\-t \textbf{RAD\_\-rad\_\-squared}\label{classASCbase_1_1Ball_6124ef4765e6a8fb6653fae9fb06c927}
+my\_\-float\_\-t \textbf{RAD\_\-rad\_\-squared}\label{classSimSite3D_1_1Ball_6124ef4765e6a8fb6653fae9fb06c927}
 
 \end{CompactItemize}
 

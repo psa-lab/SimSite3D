@@ -1,37 +1,37 @@
-\section{ASCbase::Weighted\-Sums\-Score Class Reference}
-\label{classASCbase_1_1WeightedSumsScore}\index{ASCbase::WeightedSumsScore@{ASCbase::WeightedSumsScore}}
+\section{SimSite3D::Weighted\-Sums\-Score Class Reference}
+\label{classSimSite3D_1_1WeightedSumsScore}\index{SimSite3D::WeightedSumsScore@{SimSite3D::WeightedSumsScore}}
 Weight interaction NN interaction pair sums.  
 
 
 {\tt \#include $<$Weighted\-Sums\-Score.H$>$}
 
-Inheritance diagram for ASCbase::Weighted\-Sums\-Score::\begin{figure}[H]
+Inheritance diagram for SimSite3D::Weighted\-Sums\-Score::\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3cm]{classASCbase_1_1WeightedSumsScore}
+\includegraphics[height=3cm]{classSimSite3D_1_1WeightedSumsScore}
 \end{center}
 \end{figure}
 \subsection*{Public Types}
 \begin{CompactItemize}
 \item 
-typedef std::less$<$ my\_\-float\_\-t $>$ \textbf{score\_\-cmp}\label{classASCbase_1_1WeightedSumsScore_c7d40e189ef4573833fd970f05ca0f26}
+typedef std::less$<$ my\_\-float\_\-t $>$ \textbf{score\_\-cmp}\label{classSimSite3D_1_1WeightedSumsScore_c7d40e189ef4573833fd970f05ca0f26}
 
 \end{CompactItemize}
 \subsection*{Public Member Functions}
 \begin{CompactItemize}
 \item 
-\bf{Weighted\-Sums\-Score} ()\label{classASCbase_1_1WeightedSumsScore_69c71746b50e336c3bfeea4db657832c}
+\bf{Weighted\-Sums\-Score} ()\label{classSimSite3D_1_1WeightedSumsScore_69c71746b50e336c3bfeea4db657832c}
 
 \begin{CompactList}\small\item\em Default constructor for site map point scoring of (aligned) sitemaps. \item\end{CompactList}\item 
-virtual \bf{$\sim$Weighted\-Sums\-Score} ()\label{classASCbase_1_1WeightedSumsScore_69dc18855ceef71681dd7a00e8f0966b}
+virtual \bf{$\sim$Weighted\-Sums\-Score} ()\label{classSimSite3D_1_1WeightedSumsScore_69dc18855ceef71681dd7a00e8f0966b}
 
 \begin{CompactList}\small\item\em basic destruction \item\end{CompactList}\item 
 my\_\-float\_\-t \bf{score} (const \bf{Model\-Sitemap} \&model, const \bf{Dbase\-Sitemap} \&dbase, \bf{rigid\_\-align\_\-t} $\ast$scores)
 \item 
-virtual my\_\-float\_\-t \bf{correspondences} (const \bf{Model\-Sitemap} \&model, my\_\-float\_\-t $\ast$$\ast$Q\_\-pts\_\-ptr, my\_\-float\_\-t $\ast$$\ast$D\_\-pts\_\-ptr, size\_\-t $\ast$npts)\label{classASCbase_1_1WeightedSumsScore_14bd722eaf99ae7c9c81fe85e5f761d6}
+virtual my\_\-float\_\-t \bf{correspondences} (const \bf{Model\-Sitemap} \&model, my\_\-float\_\-t $\ast$$\ast$Q\_\-pts\_\-ptr, my\_\-float\_\-t $\ast$$\ast$D\_\-pts\_\-ptr, size\_\-t $\ast$npts)\label{classSimSite3D_1_1WeightedSumsScore_14bd722eaf99ae7c9c81fe85e5f761d6}
 
 \begin{CompactList}\small\item\em Get the latest correspondences of the db to query sites. \item\end{CompactList}\item 
-virtual void \textbf{polar\_\-correspondences} (const \bf{Model\-Sitemap} \&model, std::vector$<$ const my\_\-float\_\-t $\ast$ $>$ $\ast$q\_\-pts, std::vector$<$ const my\_\-float\_\-t $\ast$ $>$ $\ast$corr\_\-pts) const \label{classASCbase_1_1WeightedSumsScore_76c3b03103218cc983b2233952bdaf45}
+virtual void \textbf{polar\_\-correspondences} (const \bf{Model\-Sitemap} \&model, std::vector$<$ const my\_\-float\_\-t $\ast$ $>$ $\ast$q\_\-pts, std::vector$<$ const my\_\-float\_\-t $\ast$ $>$ $\ast$corr\_\-pts) const \label{classSimSite3D_1_1WeightedSumsScore_76c3b03103218cc983b2233952bdaf45}
 
 \item 
 virtual bool \bf{uses\_\-surface\_\-mesh} ()
@@ -41,85 +41,85 @@ virtual bool \bf{uses\_\-hbond\_\-surfaces} ()
 \subsection*{Protected Member Functions}
 \begin{CompactItemize}
 \item 
-virtual const my\_\-float\_\-t $\ast$ \textbf{closest\_\-points} () const \label{classASCbase_1_1WeightedSumsScore_d82af6105e9ee622ed5c122825a2d3e7}
+virtual const my\_\-float\_\-t $\ast$ \textbf{closest\_\-points} () const \label{classSimSite3D_1_1WeightedSumsScore_d82af6105e9ee622ed5c122825a2d3e7}
 
 \item 
-virtual int \textbf{num\_\-close\_\-points} () const \label{classASCbase_1_1WeightedSumsScore_0b305cbc0f32afbd99e02ddaeff23962}
+virtual int \textbf{num\_\-close\_\-points} () const \label{classSimSite3D_1_1WeightedSumsScore_0b305cbc0f32afbd99e02ddaeff23962}
 
 \end{CompactItemize}
 \subsection*{Private Member Functions}
 \begin{CompactItemize}
 \item 
-void \textbf{init} ()\label{classASCbase_1_1WeightedSumsScore_00168176078d947da51ed3330b164c0b}
+void \textbf{init} ()\label{classSimSite3D_1_1WeightedSumsScore_00168176078d947da51ed3330b164c0b}
 
 \item 
-void \textbf{clear\_\-mem} ()\label{classASCbase_1_1WeightedSumsScore_6863b16bbf29f54e2d6de68aa2919e12}
+void \textbf{clear\_\-mem} ()\label{classSimSite3D_1_1WeightedSumsScore_6863b16bbf29f54e2d6de68aa2919e12}
 
 \item 
-void \textbf{init\_\-storage} (const \bf{Model\-Sitemap} \&model)\label{classASCbase_1_1WeightedSumsScore_672e6390f1323736b8890726bc1dd0e6}
+void \textbf{init\_\-storage} (const \bf{Model\-Sitemap} \&model)\label{classSimSite3D_1_1WeightedSumsScore_672e6390f1323736b8890726bc1dd0e6}
 
 \end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
-my\_\-float\_\-t $\ast$ \textbf{A\_\-closest\_\-pts}\label{classASCbase_1_1WeightedSumsScore_b4555ac1476234e3c94e7e221c33bd9f}
+my\_\-float\_\-t $\ast$ \textbf{A\_\-closest\_\-pts}\label{classSimSite3D_1_1WeightedSumsScore_b4555ac1476234e3c94e7e221c33bd9f}
 
 \item 
-my\_\-float\_\-t $\ast$ \textbf{A\_\-pt\_\-dists}\label{classASCbase_1_1WeightedSumsScore_0c66f4e146c2ef22497d555d99634edb}
+my\_\-float\_\-t $\ast$ \textbf{A\_\-pt\_\-dists}\label{classSimSite3D_1_1WeightedSumsScore_0c66f4e146c2ef22497d555d99634edb}
 
 \item 
-size\_\-t \textbf{A\_\-max\_\-num\_\-pts}\label{classASCbase_1_1WeightedSumsScore_9c0082cdfc124ac7037256429ccdc230}
+size\_\-t \textbf{A\_\-max\_\-num\_\-pts}\label{classSimSite3D_1_1WeightedSumsScore_9c0082cdfc124ac7037256429ccdc230}
 
 \end{CompactItemize}
 \subsection*{Static Private Attributes}
 \begin{CompactItemize}
 \item 
-static const std::string \bf{A\_\-fname} = \char`\"{}Weighted\-Sums\-Score.C\char`\"{}\label{classASCbase_1_1WeightedSumsScore_a55eaafd22a87ff837e6fdc31d7d9ffd}
+static const std::string \bf{A\_\-fname} = \char`\"{}Weighted\-Sums\-Score.C\char`\"{}\label{classSimSite3D_1_1WeightedSumsScore_a55eaafd22a87ff837e6fdc31d7d9ffd}
 
 \begin{CompactList}\small\item\em Source file name. \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{POLAR\_\-SUM\_\-W} = 0.0\label{classASCbase_1_1WeightedSumsScore_0ddbb39dee8f32733be5f250cfe28b21}
+static const my\_\-float\_\-t \bf{POLAR\_\-SUM\_\-W} = 0.0\label{classSimSite3D_1_1WeightedSumsScore_0ddbb39dee8f32733be5f250cfe28b21}
 
 \begin{CompactList}\small\item\em W for sum all \char`\"{}good\char`\"{} polar interactions. \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{DD\_\-OR\_\-AA\_\-POLAR\_\-SUM\_\-W} = -0.0456776\label{classASCbase_1_1WeightedSumsScore_0ab2b57fc4cb8e676ca80141d5a6cf01}
+static const my\_\-float\_\-t \bf{DD\_\-OR\_\-AA\_\-POLAR\_\-SUM\_\-W} = -0.0456776\label{classSimSite3D_1_1WeightedSumsScore_0ab2b57fc4cb8e676ca80141d5a6cf01}
 
 \begin{CompactList}\small\item\em W for sum only DD or AA \char`\"{}good\char`\"{} polar interactions. \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{DONEPTOR\_\-POLAR\_\-SUM\_\-W} = -0.012702\label{classASCbase_1_1WeightedSumsScore_6d6a766de6d9e26acb5ac25901434b12}
+static const my\_\-float\_\-t \bf{DONEPTOR\_\-POLAR\_\-SUM\_\-W} = -0.012702\label{classSimSite3D_1_1WeightedSumsScore_6d6a766de6d9e26acb5ac25901434b12}
 
 \begin{CompactList}\small\item\em W for sum NA or AN or ND or DN or NN \char`\"{}good\char`\"{} polar interactions. \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{HPHOBIC\_\-COUNT\_\-W} = -0.0323914\label{classASCbase_1_1WeightedSumsScore_a955731ebec450fedd1992c26dd9db3c}
+static const my\_\-float\_\-t \bf{HPHOBIC\_\-COUNT\_\-W} = -0.0323914\label{classSimSite3D_1_1WeightedSumsScore_a955731ebec450fedd1992c26dd9db3c}
 
 \begin{CompactList}\small\item\em W for hydrophobic point count. \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{POLAR\_\-MISMATCH\_\-W} = 0.0\label{classASCbase_1_1WeightedSumsScore_357f45b79bcb254cff96666a4539e223}
+static const my\_\-float\_\-t \bf{POLAR\_\-MISMATCH\_\-W} = 0.0\label{classSimSite3D_1_1WeightedSumsScore_357f45b79bcb254cff96666a4539e223}
 
 \begin{CompactList}\small\item\em W for sum of AD or DA matches with positive dot product. \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{UNSAT\_\-POLAR\_\-W} = 0.0\label{classASCbase_1_1WeightedSumsScore_2f6797c0e1495883fb50768a5a4307d4}
+static const my\_\-float\_\-t \bf{UNSAT\_\-POLAR\_\-W} = 0.0\label{classSimSite3D_1_1WeightedSumsScore_2f6797c0e1495883fb50768a5a4307d4}
 
 \begin{CompactList}\small\item\em W for polar points matched to hydrophobic. \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{CONSTANT\_\-TERM} = 0.0054731\label{classASCbase_1_1WeightedSumsScore_aeac1f99a57289ddf2001453c1e77bf4}
+static const my\_\-float\_\-t \bf{CONSTANT\_\-TERM} = 0.0054731\label{classSimSite3D_1_1WeightedSumsScore_aeac1f99a57289ddf2001453c1e77bf4}
 
 \begin{CompactList}\small\item\em Constant obtained from the regresion method. \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{SCALED\_\-POLAR\_\-SUM\_\-W} = 0.0\label{classASCbase_1_1WeightedSumsScore_917b2edf7bc9d6b9388a6cf35ac34984}
+static const my\_\-float\_\-t \bf{SCALED\_\-POLAR\_\-SUM\_\-W} = 0.0\label{classSimSite3D_1_1WeightedSumsScore_917b2edf7bc9d6b9388a6cf35ac34984}
 
 \begin{CompactList}\small\item\em W for sum all \char`\"{}good\char`\"{} polar interactions for scaled terms. \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{SCALED\_\-DD\_\-OR\_\-AA\_\-POLAR\_\-SUM\_\-W} = -1.39892\label{classASCbase_1_1WeightedSumsScore_a55423586953effb70d9ffa4c409ebbc}
+static const my\_\-float\_\-t \bf{SCALED\_\-DD\_\-OR\_\-AA\_\-POLAR\_\-SUM\_\-W} = -1.39892\label{classSimSite3D_1_1WeightedSumsScore_a55423586953effb70d9ffa4c409ebbc}
 
 \begin{CompactList}\small\item\em W for sum only DD or AA \char`\"{}good\char`\"{} polar interactions for scaled terms. \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{SCALED\_\-DONEPTOR\_\-POLAR\_\-SUM\_\-W} = 0.0329575\label{classASCbase_1_1WeightedSumsScore_480239bd6df13b6088fa7f2514c544a1}
+static const my\_\-float\_\-t \bf{SCALED\_\-DONEPTOR\_\-POLAR\_\-SUM\_\-W} = 0.0329575\label{classSimSite3D_1_1WeightedSumsScore_480239bd6df13b6088fa7f2514c544a1}
 
 \begin{CompactList}\small\item\em W for sum NA or AN or ND or DN or NN \char`\"{}good\char`\"{} polar interactions for scaled terms. \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{SCALED\_\-HPHOBIC\_\-COUNT\_\-W} = -0.367527\label{classASCbase_1_1WeightedSumsScore_df981a43a0b9ea8637d3713222baecd7}
+static const my\_\-float\_\-t \bf{SCALED\_\-HPHOBIC\_\-COUNT\_\-W} = -0.367527\label{classSimSite3D_1_1WeightedSumsScore_df981a43a0b9ea8637d3713222baecd7}
 
 \begin{CompactList}\small\item\em W for hydrophobic point count for scaled terms. \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{SCALED\_\-POLAR\_\-MISMATCH\_\-W} = 0.0\label{classASCbase_1_1WeightedSumsScore_ba7f330b50d3250a1355c7f56b94af9f}
+static const my\_\-float\_\-t \bf{SCALED\_\-POLAR\_\-MISMATCH\_\-W} = 0.0\label{classSimSite3D_1_1WeightedSumsScore_ba7f330b50d3250a1355c7f56b94af9f}
 
 \begin{CompactList}\small\item\em W for sum of AD or DA matches with positive dot product for scaled terms. \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{SCALED\_\-UNSAT\_\-POLAR\_\-W} = 0.0\label{classASCbase_1_1WeightedSumsScore_0dffcb3e686f38d0f66b7cc2f10a89dc}
+static const my\_\-float\_\-t \bf{SCALED\_\-UNSAT\_\-POLAR\_\-W} = 0.0\label{classSimSite3D_1_1WeightedSumsScore_0dffcb3e686f38d0f66b7cc2f10a89dc}
 
 \begin{CompactList}\small\item\em W for polar points matched to hydrophobic for scaled terms. \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{SCALED\_\-CONSTANT\_\-TERM} = 0.0373266\label{classASCbase_1_1WeightedSumsScore_e0a90bb30eeb2d8117323d04a4cff22b}
+static const my\_\-float\_\-t \bf{SCALED\_\-CONSTANT\_\-TERM} = 0.0373266\label{classSimSite3D_1_1WeightedSumsScore_e0a90bb30eeb2d8117323d04a4cff22b}
 
 \begin{CompactList}\small\item\em Constant obtained from the regresion method for scaled terms. \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{A\_\-max\_\-dist} = 1.5\label{classASCbase_1_1WeightedSumsScore_d5f1b812740954ec65df1828fd1e522a}
+static const my\_\-float\_\-t \bf{A\_\-max\_\-dist} = 1.5\label{classSimSite3D_1_1WeightedSumsScore_d5f1b812740954ec65df1828fd1e522a}
 
 \begin{CompactList}\small\item\em Max distance for corresponding points. \item\end{CompactList}\end{CompactItemize}
 
@@ -130,9 +130,9 @@ Weight interaction NN interaction pair sums.
 
 
 \subsection{Member Function Documentation}
-\index{ASCbase::WeightedSumsScore@{ASCbase::Weighted\-Sums\-Score}!score@{score}}
-\index{score@{score}!ASCbase::WeightedSumsScore@{ASCbase::Weighted\-Sums\-Score}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}my\_\-float\_\-t ASCbase::Weighted\-Sums\-Score::score (const \bf{Model\-Sitemap} \& {\em model}, const \bf{Dbase\-Sitemap} \& {\em dbase}, \bf{rigid\_\-align\_\-t} $\ast$ {\em scores})\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classASCbase_1_1WeightedSumsScore_eeee8c834449ce75686bb076f40c3ee4}
+\index{SimSite3D::WeightedSumsScore@{SimSite3D::Weighted\-Sums\-Score}!score@{score}}
+\index{score@{score}!SimSite3D::WeightedSumsScore@{SimSite3D::Weighted\-Sums\-Score}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}my\_\-float\_\-t SimSite3D::Weighted\-Sums\-Score::score (const \bf{Model\-Sitemap} \& {\em model}, const \bf{Dbase\-Sitemap} \& {\em dbase}, \bf{rigid\_\-align\_\-t} $\ast$ {\em scores})\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classSimSite3D_1_1WeightedSumsScore_eeee8c834449ce75686bb076f40c3ee4}
 
 
 \begin{Desc}
@@ -144,27 +144,27 @@ Weight interaction NN interaction pair sums.
 \item[Returns:]The score of the alignment \end{Desc}
 
 
-Implements \bf{ASCbase::Sites\-Score\-Base} \doxyref{p.}{classASCbase_1_1SitesScoreBase_651f05f08e15b7ea8f7fa7c41973499e}.
+Implements \bf{SimSite3D::Sites\-Score\-Base} \doxyref{p.}{classSimSite3D_1_1SitesScoreBase_651f05f08e15b7ea8f7fa7c41973499e}.
 
-Reimplemented in \bf{ASCbase::point\_\-and\_\-surf\_\-score} \doxyref{p.}{classASCbase_1_1point__and__surf__score_f7086e180c849bba8a8a1df984a3b114}.\index{ASCbase::WeightedSumsScore@{ASCbase::Weighted\-Sums\-Score}!uses_hbond_surfaces@{uses\_\-hbond\_\-surfaces}}
-\index{uses_hbond_surfaces@{uses\_\-hbond\_\-surfaces}!ASCbase::WeightedSumsScore@{ASCbase::Weighted\-Sums\-Score}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool ASCbase::Weighted\-Sums\-Score::uses\_\-hbond\_\-surfaces ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classASCbase_1_1WeightedSumsScore_a54a5a22b71dd4bc14aaf06f7756eca7}
+Reimplemented in \bf{SimSite3D::point\_\-and\_\-surf\_\-score} \doxyref{p.}{classSimSite3D_1_1point__and__surf__score_f7086e180c849bba8a8a1df984a3b114}.\index{SimSite3D::WeightedSumsScore@{SimSite3D::Weighted\-Sums\-Score}!uses_hbond_surfaces@{uses\_\-hbond\_\-surfaces}}
+\index{uses_hbond_surfaces@{uses\_\-hbond\_\-surfaces}!SimSite3D::WeightedSumsScore@{SimSite3D::Weighted\-Sums\-Score}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool SimSite3D::Weighted\-Sums\-Score::uses\_\-hbond\_\-surfaces ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classSimSite3D_1_1WeightedSumsScore_a54a5a22b71dd4bc14aaf06f7756eca7}
 
 
 Derived class should return false, unless the derived class is using the hydrogen bond surface caps 
 
-Reimplemented from \bf{ASCbase::Sites\-Score\-Base} \doxyref{p.}{classASCbase_1_1SitesScoreBase_a7a5fcc3e24663874f8066c00089f3cf}.
+Reimplemented from \bf{SimSite3D::Sites\-Score\-Base} \doxyref{p.}{classSimSite3D_1_1SitesScoreBase_a7a5fcc3e24663874f8066c00089f3cf}.
 
-Reimplemented in \bf{ASCbase::point\_\-and\_\-surf\_\-score} \doxyref{p.}{classASCbase_1_1point__and__surf__score_8f006a0249c062673acec07465b4d686}.\index{ASCbase::WeightedSumsScore@{ASCbase::Weighted\-Sums\-Score}!uses_surface_mesh@{uses\_\-surface\_\-mesh}}
-\index{uses_surface_mesh@{uses\_\-surface\_\-mesh}!ASCbase::WeightedSumsScore@{ASCbase::Weighted\-Sums\-Score}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool ASCbase::Weighted\-Sums\-Score::uses\_\-surface\_\-mesh ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classASCbase_1_1WeightedSumsScore_9d12b648a5adc7dff9d6058d6239a314}
+Reimplemented in \bf{SimSite3D::point\_\-and\_\-surf\_\-score} \doxyref{p.}{classSimSite3D_1_1point__and__surf__score_8f006a0249c062673acec07465b4d686}.\index{SimSite3D::WeightedSumsScore@{SimSite3D::Weighted\-Sums\-Score}!uses_surface_mesh@{uses\_\-surface\_\-mesh}}
+\index{uses_surface_mesh@{uses\_\-surface\_\-mesh}!SimSite3D::WeightedSumsScore@{SimSite3D::Weighted\-Sums\-Score}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool SimSite3D::Weighted\-Sums\-Score::uses\_\-surface\_\-mesh ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classSimSite3D_1_1WeightedSumsScore_9d12b648a5adc7dff9d6058d6239a314}
 
 
 Derived class should return false, unless, the site's surface needs to be to be rotated and translated 
 
-Reimplemented from \bf{ASCbase::Sites\-Score\-Base} \doxyref{p.}{classASCbase_1_1SitesScoreBase_ae4a2a1ae9113bcad0535593c210030f}.
+Reimplemented from \bf{SimSite3D::Sites\-Score\-Base} \doxyref{p.}{classSimSite3D_1_1SitesScoreBase_ae4a2a1ae9113bcad0535593c210030f}.
 
-Reimplemented in \bf{ASCbase::point\_\-and\_\-surf\_\-score} \doxyref{p.}{classASCbase_1_1point__and__surf__score_92345073d3e38666cb95cca9adc14ae3}.
+Reimplemented in \bf{SimSite3D::point\_\-and\_\-surf\_\-score} \doxyref{p.}{classSimSite3D_1_1point__and__surf__score_92345073d3e38666cb95cca9adc14ae3}.
 
 The documentation for this class was generated from the following files:\begin{CompactItemize}
 \item 

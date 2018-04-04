@@ -3,9 +3,9 @@
 #include <ProtLigScore.H>
 
 using namespace boost::python;
-using ASCbase::ProtLigScore;
-using ASCbase::PDBStructure;
-using ASCbase::mol2File;
+using SimSite3D::ProtLigScore;
+using SimSite3D::PDBStructure;
+using SimSite3D::mol2File;
 
 
 BOOST_PYTHON_MODULE(_ProtLigScore)

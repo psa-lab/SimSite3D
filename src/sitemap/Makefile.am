@@ -54,32 +54,32 @@
 
 INCLUDES = -I. -I../utils
 
-noinst_LIBRARIES = libASCbaseSoftwareSitemaps.a
+noinst_LIBRARIES = libSimSite3DSoftwareSitemaps.a
 noinst_PROGRAMS = comp_simple_rmsd comp_simple_site_rmsd comp_site_rmsd \
 	norm_db_ade_site_rmsd
 bin_PROGRAMS = gen_points 
 
-libASCbaseSoftwareSitemaps_a_SOURCES =  GenPointsParameters.C WaterPoints.C \
+libSimSite3DSoftwareSitemaps_a_SOURCES =  GenPointsParameters.C WaterPoints.C \
         HbondPoints.C HphobPoints.C complete_link_clustering.C \
 	SitemapPointsFile.C SitemapAtomsFile.C normalize_sitemap.C Sitemap.C \
 	HbondBase.C HbondSurfaces.C
 
 gen_points_SOURCES = gen_points.C
-gen_points_LDADD = ./libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a -lm $(POPT)
+gen_points_LDADD = ./libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a -lm $(POPT)
 
 comp_simple_rmsd_SOURCES = comp_simple_rmsd.C
-comp_simple_rmsd_LDADD = ./libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a -lm
+comp_simple_rmsd_LDADD = ./libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a -lm
 
 comp_simple_site_rmsd_SOURCES = comp_simple_site_rmsd.C
-comp_simple_site_rmsd_LDADD = ./libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a -lm
+comp_simple_site_rmsd_LDADD = ./libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a -lm
 
 comp_site_rmsd_SOURCES = comp_site_rmsd.C
-comp_site_rmsd_LDADD = ./libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a -lm
+comp_site_rmsd_LDADD = ./libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a -lm
 
 norm_db_ade_site_rmsd_SOURCES = norm_db_ade_site_rmsd.C
-norm_db_ade_site_rmsd_LDADD = ./libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a -lm
+norm_db_ade_site_rmsd_LDADD = ./libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a -lm

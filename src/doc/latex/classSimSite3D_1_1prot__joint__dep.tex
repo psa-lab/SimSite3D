@@ -1,5 +1,5 @@
-\section{ASCbase::prot\_\-joint\_\-dep Class Reference}
-\label{classASCbase_1_1prot__joint__dep}\index{ASCbase::prot_joint_dep@{ASCbase::prot\_\-joint\_\-dep}}
+\section{SimSite3D::prot\_\-joint\_\-dep Class Reference}
+\label{classSimSite3D_1_1prot__joint__dep}\index{SimSite3D::prot_joint_dep@{SimSite3D::prot\_\-joint\_\-dep}}
 Class to handle mobile residues -- rotatable joints for each residue.  
 
 
@@ -8,13 +8,13 @@ Class to handle mobile residues -- rotatable joints for each residue.
 \subsection*{Public Types}
 \begin{CompactItemize}
 \item 
-typedef std::map$<$ atom\_\-type, std::vector$<$ atom\_\-type $>$ $>$ \textbf{joint\_\-dep\_\-tbl\_\-atom\_\-lvl}\label{classASCbase_1_1prot__joint__dep_9e36ead4cfdfc490f727f6c417480421}
+typedef std::map$<$ atom\_\-type, std::vector$<$ atom\_\-type $>$ $>$ \textbf{joint\_\-dep\_\-tbl\_\-atom\_\-lvl}\label{classSimSite3D_1_1prot__joint__dep_9e36ead4cfdfc490f727f6c417480421}
 
 \item 
-typedef std::map$<$ residue\_\-type, joint\_\-dep\_\-tbl\_\-atom\_\-lvl $>$ \textbf{joint\_\-dep\_\-tbl\_\-res\_\-lvl}\label{classASCbase_1_1prot__joint__dep_ea37de1c525672bf30521e8e97282cb4}
+typedef std::map$<$ residue\_\-type, joint\_\-dep\_\-tbl\_\-atom\_\-lvl $>$ \textbf{joint\_\-dep\_\-tbl\_\-res\_\-lvl}\label{classSimSite3D_1_1prot__joint__dep_ea37de1c525672bf30521e8e97282cb4}
 
 \item 
-typedef std::map$<$ residue\_\-vci, \bf{residue\_\-joints} $>$::const\_\-iterator \textbf{res\_\-to\_\-joints\_\-mci}\label{classASCbase_1_1prot__joint__dep_ff1116a39fb38afeaa53971b2b39cfa1}
+typedef std::map$<$ residue\_\-vci, \bf{residue\_\-joints} $>$::const\_\-iterator \textbf{res\_\-to\_\-joints\_\-mci}\label{classSimSite3D_1_1prot__joint__dep_ff1116a39fb38afeaa53971b2b39cfa1}
 
 \end{CompactItemize}
 \subsection*{Public Member Functions}
@@ -22,159 +22,159 @@ typedef std::map$<$ residue\_\-vci, \bf{residue\_\-joints} $>$::const\_\-iterato
 \item 
 bool \bf{add\_\-residue\_\-info} (const \bf{PDBStructure} $\ast$prot, residue\_\-vci res, const \bf{residue\_\-joints} $\ast$$\ast$j)
 \begin{CompactList}\small\item\em Add mobile atoms (based on bond network not other constraints). \item\end{CompactList}\item 
-res\_\-to\_\-joints\_\-mci \textbf{joints\_\-begin} () const \label{classASCbase_1_1prot__joint__dep_4c89eabdd2a06a9ad881fec55aff32d6}
+res\_\-to\_\-joints\_\-mci \textbf{joints\_\-begin} () const \label{classSimSite3D_1_1prot__joint__dep_4c89eabdd2a06a9ad881fec55aff32d6}
 
 \item 
-res\_\-to\_\-joints\_\-mci \textbf{joints\_\-end} () const \label{classASCbase_1_1prot__joint__dep_49c901cd2d806782ed5be925e93ea72d}
+res\_\-to\_\-joints\_\-mci \textbf{joints\_\-end} () const \label{classSimSite3D_1_1prot__joint__dep_49c901cd2d806782ed5be925e93ea72d}
 
 \item 
-const joint\_\-deps\_\-t \& \textbf{get\_\-joints\_\-info} (residue\_\-type res\_\-name)\label{classASCbase_1_1prot__joint__dep_6eb47defc3517af3de338df188ba0993}
+const joint\_\-deps\_\-t \& \textbf{get\_\-joints\_\-info} (residue\_\-type res\_\-name)\label{classSimSite3D_1_1prot__joint__dep_6eb47defc3517af3de338df188ba0993}
 
 \item 
-const bool \textbf{fail} ()\label{classASCbase_1_1prot__joint__dep_ae8b48cbd3294ff3ec1b40cc637c2db0}
+const bool \textbf{fail} ()\label{classSimSite3D_1_1prot__joint__dep_ae8b48cbd3294ff3ec1b40cc637c2db0}
 
 \end{CompactItemize}
 \subsection*{Private Member Functions}
 \begin{CompactItemize}
 \item 
-void \textbf{init} ()\label{classASCbase_1_1prot__joint__dep_4f10e02931d487269a4987cfb6408791}
+void \textbf{init} ()\label{classSimSite3D_1_1prot__joint__dep_4f10e02931d487269a4987cfb6408791}
 
 \end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
-bool \textbf{A\_\-fail}\label{classASCbase_1_1prot__joint__dep_54fd130e58b3deeb5f66dc94eb02b99a}
+bool \textbf{A\_\-fail}\label{classSimSite3D_1_1prot__joint__dep_54fd130e58b3deeb5f66dc94eb02b99a}
 
 \item 
-joint\_\-dep\_\-tbl\_\-res\_\-lvl \textbf{A\_\-atoms\_\-dep\_\-on\_\-joint}\label{classASCbase_1_1prot__joint__dep_db46d04a0979968d80e81663454c2d5e}
+joint\_\-dep\_\-tbl\_\-res\_\-lvl \textbf{A\_\-atoms\_\-dep\_\-on\_\-joint}\label{classSimSite3D_1_1prot__joint__dep_db46d04a0979968d80e81663454c2d5e}
 
 \item 
-std::vector$<$ atom\_\-type $>$ \textbf{A\_\-unknown\_\-residue\_\-vec}\label{classASCbase_1_1prot__joint__dep_5a8e3059f806f770411915200b7caddd}
+std::vector$<$ atom\_\-type $>$ \textbf{A\_\-unknown\_\-residue\_\-vec}\label{classSimSite3D_1_1prot__joint__dep_5a8e3059f806f770411915200b7caddd}
 
 \item 
-std::vector$<$ atom\_\-type $>$ \textbf{A\_\-unknown\_\-atom\_\-vec}\label{classASCbase_1_1prot__joint__dep_aef12ef042d6d8a16e19265d3b17b47e}
+std::vector$<$ atom\_\-type $>$ \textbf{A\_\-unknown\_\-atom\_\-vec}\label{classSimSite3D_1_1prot__joint__dep_aef12ef042d6d8a16e19265d3b17b47e}
 
 \item 
-std::map$<$ residue\_\-type, joint\_\-deps\_\-t $>$ \textbf{A\_\-res\_\-map}\label{classASCbase_1_1prot__joint__dep_970b14f7c96ce896be316d66ce1a797b}
+std::map$<$ residue\_\-type, joint\_\-deps\_\-t $>$ \textbf{A\_\-res\_\-map}\label{classSimSite3D_1_1prot__joint__dep_970b14f7c96ce896be316d66ce1a797b}
 
 \item 
-std::map$<$ residue\_\-vci, \bf{residue\_\-joints} $>$ \bf{A\_\-joint\_\-blocks}\label{classASCbase_1_1prot__joint__dep_b28915bf49d2cb1789e3620d989daa07}
+std::map$<$ residue\_\-vci, \bf{residue\_\-joints} $>$ \bf{A\_\-joint\_\-blocks}\label{classSimSite3D_1_1prot__joint__dep_b28915bf49d2cb1789e3620d989daa07}
 
 \begin{CompactList}\small\item\em Groups of consecutive rows that correspond to joints from one residue -- ordered by residue number and chain\-ID. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Static Private Attributes}
 \begin{CompactItemize}
 \item 
-static const atom\_\-type \textbf{ALA\_\-atoms} [$\,$] = \{N, CA, C, O, CB\}\label{classASCbase_1_1prot__joint__dep_bdfba272e362e3aaec7a1c7a4a236413}
+static const atom\_\-type \textbf{ALA\_\-atoms} [$\,$] = \{N, CA, C, O, CB\}\label{classSimSite3D_1_1prot__joint__dep_bdfba272e362e3aaec7a1c7a4a236413}
 
 \item 
 static const atom\_\-type \textbf{ARG\_\-atoms} [$\,$]
 \item 
-static const atom\_\-type \textbf{ASN\_\-atoms} [$\,$] = \{N, CA, C, O, CB, CG, OD1, ND2\}\label{classASCbase_1_1prot__joint__dep_c42be93f2786f326aa7ca4900a243568}
+static const atom\_\-type \textbf{ASN\_\-atoms} [$\,$] = \{N, CA, C, O, CB, CG, OD1, ND2\}\label{classSimSite3D_1_1prot__joint__dep_c42be93f2786f326aa7ca4900a243568}
 
 \item 
-static const atom\_\-type \textbf{ASP\_\-atoms} [$\,$] = \{N, CA, C, O, CB, CG, OD1, OD2\}\label{classASCbase_1_1prot__joint__dep_98f917b5a699f9f048933fbec9170136}
+static const atom\_\-type \textbf{ASP\_\-atoms} [$\,$] = \{N, CA, C, O, CB, CG, OD1, OD2\}\label{classSimSite3D_1_1prot__joint__dep_98f917b5a699f9f048933fbec9170136}
 
 \item 
-static const atom\_\-type \textbf{CYS\_\-atoms} [$\,$] = \{N, CA, C, O, CB, SG\}\label{classASCbase_1_1prot__joint__dep_ff8c1b4fd6995e071efd57c053760338}
+static const atom\_\-type \textbf{CYS\_\-atoms} [$\,$] = \{N, CA, C, O, CB, SG\}\label{classSimSite3D_1_1prot__joint__dep_ff8c1b4fd6995e071efd57c053760338}
 
 \item 
 static const atom\_\-type \textbf{GLN\_\-atoms} [$\,$]
 \item 
 static const atom\_\-type \textbf{GLU\_\-atoms} [$\,$]
 \item 
-static const atom\_\-type \textbf{GLY\_\-atoms} [$\,$] = \{N, CA, C, O\}\label{classASCbase_1_1prot__joint__dep_388d19cb5bb2bdbc270b4b6c82b406f3}
+static const atom\_\-type \textbf{GLY\_\-atoms} [$\,$] = \{N, CA, C, O\}\label{classSimSite3D_1_1prot__joint__dep_388d19cb5bb2bdbc270b4b6c82b406f3}
 
 \item 
 static const atom\_\-type \textbf{HIS\_\-atoms} [$\,$]
 \item 
-static const atom\_\-type \textbf{ILE\_\-atoms} [$\,$] = \{N, CA, C, O, CB, CG1, CG2, CD1\}\label{classASCbase_1_1prot__joint__dep_3b3e44de9218be85c84ab92e07cd306e}
+static const atom\_\-type \textbf{ILE\_\-atoms} [$\,$] = \{N, CA, C, O, CB, CG1, CG2, CD1\}\label{classSimSite3D_1_1prot__joint__dep_3b3e44de9218be85c84ab92e07cd306e}
 
 \item 
-static const atom\_\-type \textbf{LEU\_\-atoms} [$\,$] = \{N, CA, C, O, CB, CG, CD1, CD2\}\label{classASCbase_1_1prot__joint__dep_d9b51ba5dbb4d4e87307d7919cd28e25}
+static const atom\_\-type \textbf{LEU\_\-atoms} [$\,$] = \{N, CA, C, O, CB, CG, CD1, CD2\}\label{classSimSite3D_1_1prot__joint__dep_d9b51ba5dbb4d4e87307d7919cd28e25}
 
 \item 
-static const atom\_\-type \textbf{LYS\_\-atoms} [$\,$] = \{N, CA, C, O, CB, CG, CD, CE, NZ\}\label{classASCbase_1_1prot__joint__dep_d85c7a75fc06cce60194df94c98a670e}
+static const atom\_\-type \textbf{LYS\_\-atoms} [$\,$] = \{N, CA, C, O, CB, CG, CD, CE, NZ\}\label{classSimSite3D_1_1prot__joint__dep_d85c7a75fc06cce60194df94c98a670e}
 
 \item 
-static const atom\_\-type \textbf{MET\_\-atoms} [$\,$] = \{N, CA, C, O, CB, CG, SD, CE\}\label{classASCbase_1_1prot__joint__dep_b88f61ad6c202cec8d2d4c9862d42b56}
+static const atom\_\-type \textbf{MET\_\-atoms} [$\,$] = \{N, CA, C, O, CB, CG, SD, CE\}\label{classSimSite3D_1_1prot__joint__dep_b88f61ad6c202cec8d2d4c9862d42b56}
 
 \item 
 static const atom\_\-type \textbf{PHE\_\-atoms} [$\,$]
 \item 
-static const atom\_\-type \textbf{PRO\_\-atoms} [$\,$] = \{N, CA, C, O, CB, CG, CD\}\label{classASCbase_1_1prot__joint__dep_a047cddbe0cb0dae3c19407fe6b5b9f8}
+static const atom\_\-type \textbf{PRO\_\-atoms} [$\,$] = \{N, CA, C, O, CB, CG, CD\}\label{classSimSite3D_1_1prot__joint__dep_a047cddbe0cb0dae3c19407fe6b5b9f8}
 
 \item 
-static const atom\_\-type \textbf{SER\_\-atoms} [$\,$] = \{N, CA, C, O, CB, OG\}\label{classASCbase_1_1prot__joint__dep_83654fa964913525ee564c1a83d3dbcf}
+static const atom\_\-type \textbf{SER\_\-atoms} [$\,$] = \{N, CA, C, O, CB, OG\}\label{classSimSite3D_1_1prot__joint__dep_83654fa964913525ee564c1a83d3dbcf}
 
 \item 
-static const atom\_\-type \textbf{THR\_\-atoms} [$\,$] = \{N, CA, C, O, CB, OG1, CG2\}\label{classASCbase_1_1prot__joint__dep_2dc4ca2d156eb27d696d35c740bcb34e}
+static const atom\_\-type \textbf{THR\_\-atoms} [$\,$] = \{N, CA, C, O, CB, OG1, CG2\}\label{classSimSite3D_1_1prot__joint__dep_2dc4ca2d156eb27d696d35c740bcb34e}
 
 \item 
 static const atom\_\-type \textbf{TRP\_\-atoms} [$\,$]
 \item 
 static const atom\_\-type \textbf{TYR\_\-atoms} [$\,$]
 \item 
-static const atom\_\-type \textbf{VAL\_\-atoms} [$\,$] = \{N, CA, C, O, CB, CG1, CG2\}\label{classASCbase_1_1prot__joint__dep_da6c6ceab748e553c5695344c58aefff}
+static const atom\_\-type \textbf{VAL\_\-atoms} [$\,$] = \{N, CA, C, O, CB, CG1, CG2\}\label{classSimSite3D_1_1prot__joint__dep_da6c6ceab748e553c5695344c58aefff}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{ALA\_\-deps} = \{ ALA\_\-atoms, 0, 5 \}\label{classASCbase_1_1prot__joint__dep_952dbe38f8ad0b8127729d6ba84b97d7}
+static const joint\_\-deps\_\-t \textbf{ALA\_\-deps} = \{ ALA\_\-atoms, 0, 5 \}\label{classSimSite3D_1_1prot__joint__dep_952dbe38f8ad0b8127729d6ba84b97d7}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{ARG\_\-deps} = \{ ARG\_\-atoms, 3, 11 \}\label{classASCbase_1_1prot__joint__dep_65fd4251f4a673b01a07a682cbfb1ffa}
+static const joint\_\-deps\_\-t \textbf{ARG\_\-deps} = \{ ARG\_\-atoms, 3, 11 \}\label{classSimSite3D_1_1prot__joint__dep_65fd4251f4a673b01a07a682cbfb1ffa}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{ASN\_\-deps} = \{ ASN\_\-atoms, 2, 8 \}\label{classASCbase_1_1prot__joint__dep_08ae4d6148c80f98f5f95041a478fac8}
+static const joint\_\-deps\_\-t \textbf{ASN\_\-deps} = \{ ASN\_\-atoms, 2, 8 \}\label{classSimSite3D_1_1prot__joint__dep_08ae4d6148c80f98f5f95041a478fac8}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{ASP\_\-deps} = \{ ASP\_\-atoms, 2, 8 \}\label{classASCbase_1_1prot__joint__dep_fac607dcac19d1c84d54597b95f6ec02}
+static const joint\_\-deps\_\-t \textbf{ASP\_\-deps} = \{ ASP\_\-atoms, 2, 8 \}\label{classSimSite3D_1_1prot__joint__dep_fac607dcac19d1c84d54597b95f6ec02}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{CYS\_\-deps} = \{ CYS\_\-atoms, 1, 6 \}\label{classASCbase_1_1prot__joint__dep_18d22c4d1a2f061809bb89d552fcc14d}
+static const joint\_\-deps\_\-t \textbf{CYS\_\-deps} = \{ CYS\_\-atoms, 1, 6 \}\label{classSimSite3D_1_1prot__joint__dep_18d22c4d1a2f061809bb89d552fcc14d}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{GLN\_\-deps} = \{ GLN\_\-atoms, 3, 9 \}\label{classASCbase_1_1prot__joint__dep_4aefee35dbad6c943d8ce73ebb68b2d6}
+static const joint\_\-deps\_\-t \textbf{GLN\_\-deps} = \{ GLN\_\-atoms, 3, 9 \}\label{classSimSite3D_1_1prot__joint__dep_4aefee35dbad6c943d8ce73ebb68b2d6}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{GLU\_\-deps} = \{ GLU\_\-atoms, 3, 9 \}\label{classASCbase_1_1prot__joint__dep_9753dde7e298c1584ce0af03816b28bb}
+static const joint\_\-deps\_\-t \textbf{GLU\_\-deps} = \{ GLU\_\-atoms, 3, 9 \}\label{classSimSite3D_1_1prot__joint__dep_9753dde7e298c1584ce0af03816b28bb}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{GLY\_\-deps} = \{ GLY\_\-atoms, 0, 4 \}\label{classASCbase_1_1prot__joint__dep_99d499534c8f02f34e09069f6b25fed6}
+static const joint\_\-deps\_\-t \textbf{GLY\_\-deps} = \{ GLY\_\-atoms, 0, 4 \}\label{classSimSite3D_1_1prot__joint__dep_99d499534c8f02f34e09069f6b25fed6}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{HIS\_\-deps} = \{ HIS\_\-atoms, 2, 10 \}\label{classASCbase_1_1prot__joint__dep_18e7ac5f3c807b3070349b7074d69504}
+static const joint\_\-deps\_\-t \textbf{HIS\_\-deps} = \{ HIS\_\-atoms, 2, 10 \}\label{classSimSite3D_1_1prot__joint__dep_18e7ac5f3c807b3070349b7074d69504}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{ILE\_\-deps} = \{ ILE\_\-atoms, 2, 8 \}\label{classASCbase_1_1prot__joint__dep_c3e9e61ad80c5f1ef124520c55d0d2c3}
+static const joint\_\-deps\_\-t \textbf{ILE\_\-deps} = \{ ILE\_\-atoms, 2, 8 \}\label{classSimSite3D_1_1prot__joint__dep_c3e9e61ad80c5f1ef124520c55d0d2c3}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{LEU\_\-deps} = \{ LEU\_\-atoms, 2, 8 \}\label{classASCbase_1_1prot__joint__dep_4283688178a143eb12c945d4498d4ea5}
+static const joint\_\-deps\_\-t \textbf{LEU\_\-deps} = \{ LEU\_\-atoms, 2, 8 \}\label{classSimSite3D_1_1prot__joint__dep_4283688178a143eb12c945d4498d4ea5}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{LYS\_\-deps} = \{ LYS\_\-atoms, 4, 9 \}\label{classASCbase_1_1prot__joint__dep_e4498e5c919a95e72910c9b127b86253}
+static const joint\_\-deps\_\-t \textbf{LYS\_\-deps} = \{ LYS\_\-atoms, 4, 9 \}\label{classSimSite3D_1_1prot__joint__dep_e4498e5c919a95e72910c9b127b86253}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{MET\_\-deps} = \{ MET\_\-atoms, 3, 8 \}\label{classASCbase_1_1prot__joint__dep_e872ffbde7c5e3b7a70ed361b3a34bdd}
+static const joint\_\-deps\_\-t \textbf{MET\_\-deps} = \{ MET\_\-atoms, 3, 8 \}\label{classSimSite3D_1_1prot__joint__dep_e872ffbde7c5e3b7a70ed361b3a34bdd}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{PHE\_\-deps} = \{ PHE\_\-atoms, 2, 11 \}\label{classASCbase_1_1prot__joint__dep_b11dbf3a7007396f15fa2b20c477abd9}
+static const joint\_\-deps\_\-t \textbf{PHE\_\-deps} = \{ PHE\_\-atoms, 2, 11 \}\label{classSimSite3D_1_1prot__joint__dep_b11dbf3a7007396f15fa2b20c477abd9}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{PRO\_\-deps} = \{ PRO\_\-atoms, 0, 7 \}\label{classASCbase_1_1prot__joint__dep_b4938e30da71c81440ddd1e3ddbe69cb}
+static const joint\_\-deps\_\-t \textbf{PRO\_\-deps} = \{ PRO\_\-atoms, 0, 7 \}\label{classSimSite3D_1_1prot__joint__dep_b4938e30da71c81440ddd1e3ddbe69cb}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{SER\_\-deps} = \{ SER\_\-atoms, 1, 6 \}\label{classASCbase_1_1prot__joint__dep_f381c853c58c15f7edf528bc97b0f433}
+static const joint\_\-deps\_\-t \textbf{SER\_\-deps} = \{ SER\_\-atoms, 1, 6 \}\label{classSimSite3D_1_1prot__joint__dep_f381c853c58c15f7edf528bc97b0f433}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{THR\_\-deps} = \{ THR\_\-atoms, 1, 7 \}\label{classASCbase_1_1prot__joint__dep_88aae83dea1f46fe3290472bda94d3ac}
+static const joint\_\-deps\_\-t \textbf{THR\_\-deps} = \{ THR\_\-atoms, 1, 7 \}\label{classSimSite3D_1_1prot__joint__dep_88aae83dea1f46fe3290472bda94d3ac}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{TRP\_\-deps} = \{ TRP\_\-atoms, 2, 14 \}\label{classASCbase_1_1prot__joint__dep_6c55f10b16638027e48422d5d544dc6c}
+static const joint\_\-deps\_\-t \textbf{TRP\_\-deps} = \{ TRP\_\-atoms, 2, 14 \}\label{classSimSite3D_1_1prot__joint__dep_6c55f10b16638027e48422d5d544dc6c}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{TYR\_\-deps} = \{ TYR\_\-atoms, 2, 12 \}\label{classASCbase_1_1prot__joint__dep_3c8b12464a851cee0321652191b8fea8}
+static const joint\_\-deps\_\-t \textbf{TYR\_\-deps} = \{ TYR\_\-atoms, 2, 12 \}\label{classSimSite3D_1_1prot__joint__dep_3c8b12464a851cee0321652191b8fea8}
 
 \item 
-static const joint\_\-deps\_\-t \textbf{VAL\_\-deps} = \{ VAL\_\-atoms, 1, 7 \}\label{classASCbase_1_1prot__joint__dep_ccabd31547bdfb65023bff5e09bc9aaa}
+static const joint\_\-deps\_\-t \textbf{VAL\_\-deps} = \{ VAL\_\-atoms, 1, 7 \}\label{classSimSite3D_1_1prot__joint__dep_ccabd31547bdfb65023bff5e09bc9aaa}
 
 \end{CompactItemize}
 
@@ -182,14 +182,14 @@ static const joint\_\-deps\_\-t \textbf{VAL\_\-deps} = \{ VAL\_\-atoms, 1, 7 \}\
 \subsection{Detailed Description}
 Class to handle mobile residues -- rotatable joints for each residue. 
 
-Build the data structure based using \doxyref{add\_\-residue\_\-info()}{p.}{classASCbase_1_1prot__joint__dep_a1cb25bee328bc154ca8fe35044b4c28} Get the joints using get\_\-joints() and check that the returned iterator is valid by comparing it against joints\_\-end() 
+Build the data structure based using \doxyref{add\_\-residue\_\-info()}{p.}{classSimSite3D_1_1prot__joint__dep_a1cb25bee328bc154ca8fe35044b4c28} Get the joints using get\_\-joints() and check that the returned iterator is valid by comparing it against joints\_\-end() 
 
 
 
 \subsection{Member Function Documentation}
-\index{ASCbase::prot_joint_dep@{ASCbase::prot\_\-joint\_\-dep}!add_residue_info@{add\_\-residue\_\-info}}
-\index{add_residue_info@{add\_\-residue\_\-info}!ASCbase::prot_joint_dep@{ASCbase::prot\_\-joint\_\-dep}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool prot\_\-joint\_\-dep::add\_\-residue\_\-info (const \bf{PDBStructure} $\ast$ {\em prot}, residue\_\-vci {\em res}, const \bf{residue\_\-joints} $\ast$$\ast$ {\em j})}\label{classASCbase_1_1prot__joint__dep_a1cb25bee328bc154ca8fe35044b4c28}
+\index{SimSite3D::prot_joint_dep@{SimSite3D::prot\_\-joint\_\-dep}!add_residue_info@{add\_\-residue\_\-info}}
+\index{add_residue_info@{add\_\-residue\_\-info}!SimSite3D::prot_joint_dep@{SimSite3D::prot\_\-joint\_\-dep}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool prot\_\-joint\_\-dep::add\_\-residue\_\-info (const \bf{PDBStructure} $\ast$ {\em prot}, residue\_\-vci {\em res}, const \bf{residue\_\-joints} $\ast$$\ast$ {\em j})}\label{classSimSite3D_1_1prot__joint__dep_a1cb25bee328bc154ca8fe35044b4c28}
 
 
 Add mobile atoms (based on bond network not other constraints). 
@@ -197,9 +197,9 @@ Add mobile atoms (based on bond network not other constraints).
 Do not use this to add neighboring residues which we will hold fixed. 
 
 \subsection{Member Data Documentation}
-\index{ASCbase::prot_joint_dep@{ASCbase::prot\_\-joint\_\-dep}!ARG_atoms@{ARG\_\-atoms}}
-\index{ARG_atoms@{ARG\_\-atoms}!ASCbase::prot_joint_dep@{ASCbase::prot\_\-joint\_\-dep}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const atom\_\-type prot\_\-joint\_\-dep::ARG\_\-atoms\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1prot__joint__dep_e9694a2c1acdb92adcceaf04b49437bd}
+\index{SimSite3D::prot_joint_dep@{SimSite3D::prot\_\-joint\_\-dep}!ARG_atoms@{ARG\_\-atoms}}
+\index{ARG_atoms@{ARG\_\-atoms}!SimSite3D::prot_joint_dep@{SimSite3D::prot\_\-joint\_\-dep}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const atom\_\-type prot\_\-joint\_\-dep::ARG\_\-atoms\hspace{0.3cm}{\tt  [static, private]}}\label{classSimSite3D_1_1prot__joint__dep_e9694a2c1acdb92adcceaf04b49437bd}
 
 
 \textbf{Initial value:}
@@ -207,9 +207,9 @@ Do not use this to add neighboring residues which we will hold fixed.
 \begin{Code}\begin{verbatim} 
   {N, CA, C, O, CB, CG, CD, NE, CZ, NH1, NH2}
 \end{verbatim}\end{Code}
-\index{ASCbase::prot_joint_dep@{ASCbase::prot\_\-joint\_\-dep}!GLN_atoms@{GLN\_\-atoms}}
-\index{GLN_atoms@{GLN\_\-atoms}!ASCbase::prot_joint_dep@{ASCbase::prot\_\-joint\_\-dep}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const atom\_\-type prot\_\-joint\_\-dep::GLN\_\-atoms\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1prot__joint__dep_778a227bc6f21f9df7ad071cb28a0fe4}
+\index{SimSite3D::prot_joint_dep@{SimSite3D::prot\_\-joint\_\-dep}!GLN_atoms@{GLN\_\-atoms}}
+\index{GLN_atoms@{GLN\_\-atoms}!SimSite3D::prot_joint_dep@{SimSite3D::prot\_\-joint\_\-dep}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const atom\_\-type prot\_\-joint\_\-dep::GLN\_\-atoms\hspace{0.3cm}{\tt  [static, private]}}\label{classSimSite3D_1_1prot__joint__dep_778a227bc6f21f9df7ad071cb28a0fe4}
 
 
 \textbf{Initial value:}
@@ -217,9 +217,9 @@ Do not use this to add neighboring residues which we will hold fixed.
 \begin{Code}\begin{verbatim} 
   {N, CA, C, O, CB, CG, CD, OE1, NE2}
 \end{verbatim}\end{Code}
-\index{ASCbase::prot_joint_dep@{ASCbase::prot\_\-joint\_\-dep}!GLU_atoms@{GLU\_\-atoms}}
-\index{GLU_atoms@{GLU\_\-atoms}!ASCbase::prot_joint_dep@{ASCbase::prot\_\-joint\_\-dep}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const atom\_\-type prot\_\-joint\_\-dep::GLU\_\-atoms\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1prot__joint__dep_f126d6eee30314bf4d880970cf51c135}
+\index{SimSite3D::prot_joint_dep@{SimSite3D::prot\_\-joint\_\-dep}!GLU_atoms@{GLU\_\-atoms}}
+\index{GLU_atoms@{GLU\_\-atoms}!SimSite3D::prot_joint_dep@{SimSite3D::prot\_\-joint\_\-dep}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const atom\_\-type prot\_\-joint\_\-dep::GLU\_\-atoms\hspace{0.3cm}{\tt  [static, private]}}\label{classSimSite3D_1_1prot__joint__dep_f126d6eee30314bf4d880970cf51c135}
 
 
 \textbf{Initial value:}
@@ -227,9 +227,9 @@ Do not use this to add neighboring residues which we will hold fixed.
 \begin{Code}\begin{verbatim} 
   {N, CA, C, O, CB, CG, CD, OE1, OE2}
 \end{verbatim}\end{Code}
-\index{ASCbase::prot_joint_dep@{ASCbase::prot\_\-joint\_\-dep}!HIS_atoms@{HIS\_\-atoms}}
-\index{HIS_atoms@{HIS\_\-atoms}!ASCbase::prot_joint_dep@{ASCbase::prot\_\-joint\_\-dep}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const atom\_\-type prot\_\-joint\_\-dep::HIS\_\-atoms\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1prot__joint__dep_027525d3ce56e48660760c3af223a4fa}
+\index{SimSite3D::prot_joint_dep@{SimSite3D::prot\_\-joint\_\-dep}!HIS_atoms@{HIS\_\-atoms}}
+\index{HIS_atoms@{HIS\_\-atoms}!SimSite3D::prot_joint_dep@{SimSite3D::prot\_\-joint\_\-dep}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const atom\_\-type prot\_\-joint\_\-dep::HIS\_\-atoms\hspace{0.3cm}{\tt  [static, private]}}\label{classSimSite3D_1_1prot__joint__dep_027525d3ce56e48660760c3af223a4fa}
 
 
 \textbf{Initial value:}
@@ -237,9 +237,9 @@ Do not use this to add neighboring residues which we will hold fixed.
 \begin{Code}\begin{verbatim} 
   {N, CA, C, O, CB, CG, ND1, CD2, CE1, NE2}
 \end{verbatim}\end{Code}
-\index{ASCbase::prot_joint_dep@{ASCbase::prot\_\-joint\_\-dep}!PHE_atoms@{PHE\_\-atoms}}
-\index{PHE_atoms@{PHE\_\-atoms}!ASCbase::prot_joint_dep@{ASCbase::prot\_\-joint\_\-dep}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const atom\_\-type prot\_\-joint\_\-dep::PHE\_\-atoms\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1prot__joint__dep_e9f5147ed18c5265759259b4c6a4f575}
+\index{SimSite3D::prot_joint_dep@{SimSite3D::prot\_\-joint\_\-dep}!PHE_atoms@{PHE\_\-atoms}}
+\index{PHE_atoms@{PHE\_\-atoms}!SimSite3D::prot_joint_dep@{SimSite3D::prot\_\-joint\_\-dep}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const atom\_\-type prot\_\-joint\_\-dep::PHE\_\-atoms\hspace{0.3cm}{\tt  [static, private]}}\label{classSimSite3D_1_1prot__joint__dep_e9f5147ed18c5265759259b4c6a4f575}
 
 
 \textbf{Initial value:}
@@ -247,9 +247,9 @@ Do not use this to add neighboring residues which we will hold fixed.
 \begin{Code}\begin{verbatim} 
   {N, CA, C, O, CB, CG, CD1, CD2, CE1, CE2, CZ}
 \end{verbatim}\end{Code}
-\index{ASCbase::prot_joint_dep@{ASCbase::prot\_\-joint\_\-dep}!TRP_atoms@{TRP\_\-atoms}}
-\index{TRP_atoms@{TRP\_\-atoms}!ASCbase::prot_joint_dep@{ASCbase::prot\_\-joint\_\-dep}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const atom\_\-type prot\_\-joint\_\-dep::TRP\_\-atoms\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1prot__joint__dep_195efde1d5901fe270a4be8c743e4a89}
+\index{SimSite3D::prot_joint_dep@{SimSite3D::prot\_\-joint\_\-dep}!TRP_atoms@{TRP\_\-atoms}}
+\index{TRP_atoms@{TRP\_\-atoms}!SimSite3D::prot_joint_dep@{SimSite3D::prot\_\-joint\_\-dep}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const atom\_\-type prot\_\-joint\_\-dep::TRP\_\-atoms\hspace{0.3cm}{\tt  [static, private]}}\label{classSimSite3D_1_1prot__joint__dep_195efde1d5901fe270a4be8c743e4a89}
 
 
 \textbf{Initial value:}
@@ -257,9 +257,9 @@ Do not use this to add neighboring residues which we will hold fixed.
 \begin{Code}\begin{verbatim} 
   {N, CA, C, O, CB, CG, CD1, CD2, NE1, CE2, CE3, CZ2, CZ3, CH2}
 \end{verbatim}\end{Code}
-\index{ASCbase::prot_joint_dep@{ASCbase::prot\_\-joint\_\-dep}!TYR_atoms@{TYR\_\-atoms}}
-\index{TYR_atoms@{TYR\_\-atoms}!ASCbase::prot_joint_dep@{ASCbase::prot\_\-joint\_\-dep}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const atom\_\-type prot\_\-joint\_\-dep::TYR\_\-atoms\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1prot__joint__dep_34a462915415a32e12a514d8ac434638}
+\index{SimSite3D::prot_joint_dep@{SimSite3D::prot\_\-joint\_\-dep}!TYR_atoms@{TYR\_\-atoms}}
+\index{TYR_atoms@{TYR\_\-atoms}!SimSite3D::prot_joint_dep@{SimSite3D::prot\_\-joint\_\-dep}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const atom\_\-type prot\_\-joint\_\-dep::TYR\_\-atoms\hspace{0.3cm}{\tt  [static, private]}}\label{classSimSite3D_1_1prot__joint__dep_34a462915415a32e12a514d8ac434638}
 
 
 \textbf{Initial value:}

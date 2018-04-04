@@ -13,7 +13,7 @@
 #include <AllPairsSitemapTest.H>
 
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 class test_Search : public Search{
 public:

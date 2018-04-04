@@ -1,7 +1,7 @@
 #include "TriMeshCap.H"
 
-using namespace ASCbase;
-using namespace ASCbase::geometry;
+using namespace SimSite3D;
+using namespace SimSite3D::geometry;
 
 int main(){
 

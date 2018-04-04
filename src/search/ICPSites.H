@@ -5,7 +5,7 @@
 #include <DbaseSitemap.H>
 #include <AlignDataWithPreIKData.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 namespace ICP{
 
 template<typename Score_T, typename Align_T> bool
@@ -236,5 +236,5 @@ fine_tune_caps_and_surf(ModelSitemap *model, const DbaseSitemap *dset,
 
 
 } // end namespace ICP
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

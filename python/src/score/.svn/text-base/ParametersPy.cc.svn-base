@@ -3,11 +3,11 @@
 #include <ProtLigScoreParameters.H>
 
 using namespace boost::python;
-using ASCbase::ProtLigScoreParameters;
+using SimSite3D::ProtLigScoreParameters;
 
 BOOST_PYTHON_MODULE(_parameters)
 {
-  class_<ProtLigScoreParameters, bases<ASCbase::BaseParameters> >
+  class_<ProtLigScoreParameters, bases<SimSite3D::BaseParameters> >
     ("parameters", init< > ())
     .def_readwrite("prot_fname", &ProtLigScoreParameters::prot_fname)
     .def_readwrite("lig_fname", &ProtLigScoreParameters::lig_fname)

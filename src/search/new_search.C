@@ -34,7 +34,7 @@
 #include <sstream>
 #include <Search.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 bool 
 compute_hash(const SearchParameters &params, std::string hash_val)

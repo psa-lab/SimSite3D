@@ -2,7 +2,7 @@
  * Copyright (c) 2010, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -22,7 +22,7 @@
 #include <ScoreMapBase.H>
 #include <Sitemap.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! The way to get around/handle template function specialization
 /*! This is as per Herb Sutter, Peter Dimov, and Dave Abrahams 
@@ -89,6 +89,6 @@ align_impl<rigid_align_t>::align(Sitemap& dset_site, std::vector<rigid_align_t> 
 
 
 
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif
 

@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -32,7 +32,7 @@
  * Changed the point type from hbond_point to hphob_point
  *
  * Revision 1.3  2007/02/07 15:32:30  vanvoor4
- * Header files changed.  Added ASCbase namespace and they point_t conflict
+ * Header files changed.  Added SimSite3D namespace and they point_t conflict
  * required the necessary changes here as well.
  *
  * Revision 1.2  2006/10/20 13:19:58  vanvoor4
@@ -51,7 +51,7 @@
 #include <complete_link_clustering.H>
 #include <SimpleOctree.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 typedef enum my_stuff{
   NOT_SET,

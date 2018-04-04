@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -38,12 +38,12 @@
 #include <string>
 #include <map>
 
-namespace ASCbase{
+namespace SimSite3D{
 
   //! A method to load database, diverse sitemaps, etc directories from 
   //! environment variables and parameter files
   /*! The order is to first read the $ASCBASE_INSTALL_DIR environment variable.
-   * Second, parse $ASCBASE_INSTALL_DIR/ASCbaseSoftParams/ascbase_software.conf
+   * Second, parse $ASCBASE_INSTALL_DIR/SimSite3DSoftParams/ascbase_software.conf
    * for system wide default values.  Thirdly, check for any updated parameters
    * in the environment.  Finally, if load_conf_file is called by a derived 
    * class, the parsed values override all previously stored values.
@@ -75,7 +75,7 @@ namespace ASCbase{
     std::string diverse_sites;  //!< Directory holding the diverse sitemaps
     std::string diverse_ligs;//!< Directory holding ligands for diverse sitemaps
     std::string proj_output; //!< Directory to store results 
-    std::string scratch_dir; //!< Directory where ASCbase can create temp files
+    std::string scratch_dir; //!< Directory where SimSite3D can create temp files
 
     // for now we keep this around till we fold the information into 
     // header files.

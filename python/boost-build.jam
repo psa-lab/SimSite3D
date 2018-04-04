@@ -9,7 +9,7 @@
 # The default gentoo boost.build jam files are in /usr/share/boost-build
 #boost-build /usr/share/boost-build ;
 
-# Local ASCbasePy Boost.Build V2 may be found at (Note: this is unmodified from
+# Local SimSite3DPy Boost.Build V2 may be found at (Note: this is unmodified from
 # a direct download of version 2.0-m12 Boost.Build V2 except for the addition 
 # of some libraries in site-config.jam.  Without these modifications, bjam 
 # could not find the popt and boost_python system libraries)

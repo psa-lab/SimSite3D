@@ -23,6 +23,6 @@ python-extension _system_timers
   : TimerPy.cc 
   : <variant>release:<cxxflags>-O2 ;
 
-install $(ASCBASE_INSTALL_DIR)/ASCbasePy/utils 
+install $(ASCBASE_INSTALL_DIR)/SimSite3DPy/utils 
   : _base_parameters _atom _stl_containers _stream_basics _mol2File 
     _PDBStructure _system_timers ;

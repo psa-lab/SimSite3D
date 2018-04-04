@@ -1,4 +1,4 @@
-from ASCbasePy import *
+from SimSite3DPy import *
 import numpy
 
 ###############################################################################
@@ -416,7 +416,7 @@ if __name__ == "__main__":
 #        num_ideal_pts += 1
 #      break
 
-#  from ASCbasePy.pymol_scripts import SimSite3D
+#  from SimSite3DPy.pymol_scripts import SimSite3D
 #  my_site = SimSite3D.site_map(csv_fname)
 #  my_site.draw("2qx0_ph2_site", sphere_rad=0.2)
 

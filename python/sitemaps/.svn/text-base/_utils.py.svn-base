@@ -12,8 +12,8 @@ def generate_sitemaps(prots_dir, ligs_dir, dbase_dir, msms_surf=False,
 
   import os
   from sys import stderr
-  from ASCbasePy.sitemaps._parameters import parameters
-  from ASCbasePy.sitemaps.Sitemap import sitemap
+  from SimSite3DPy.sitemaps._parameters import parameters
+  from SimSite3DPy.sitemaps.Sitemap import sitemap
   #import cPickle
 
   print "\nGenerating sitemaps:"

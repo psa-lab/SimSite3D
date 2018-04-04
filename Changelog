@@ -15,7 +15,7 @@
   have modified residues near the binding site and want them to contribute
   to the molecular surface they MUST have MODRES entries in the protein
   structure (PDB) file.
-ASCbase_Software_2.7.2
+SimSite3D_Software_2.7.2
 * Cleaned up misc. files there were no longer used.
 * Adding support for metals in sitemaps
 * Repaired issue with fragmenting mol2 files with multiple substructures.
@@ -32,13 +32,13 @@ ASCbase_Software_2.7.2
   generating a sitemap.
 * Mucked around with templates for the scoring functions.
 * Template points now have a unique label in the corresponding csv file.
-ASCbase_Software_2.7.1-r1
+SimSite3D_Software_2.7.1-r1
 * Fixed copy-n-paste bug in method used to load environment variables
 * Programs no longer allow explicit loading of conf files from command line
 * conf files are no longer required
 * system conf file now is /etc/ascbase/ascbase.conf
 * local conf file now is ${HOME}/.ascbase/ascbase.conf
-ASCbase_Software_2.7.1-A6
+SimSite3D_Software_2.7.1-A6
 * mol2File::write() now puts the "struct_id" + _NNNNN as the molecule name
   (instead of "*****").  mol2File::write() now places the atom-type + orbit
   in a 6 char column.
@@ -49,7 +49,7 @@ ASCbase_Software_2.7.1-A6
   relatively easy to add or change environment and configuration variables.
   Of course, this has nothing to do with the actual implementation of the ideas
   the variables represent.
-* Renamed some of the ASCbase Software cmdline parameters (flags) to better fit
+* Renamed some of the SimSite3D Software cmdline parameters (flags) to better fit
   the updated cmdline options
 * Ligand fragments with few than N heavy atoms are discarded.  If no ligand
   fragments remain, the alignment is discarded.
@@ -73,10 +73,10 @@ ASCbase_Software_2.7.1-A6
   to the source dir.
 * Changed the way that the external scoring functions are called.  The explicit
   command line is listed in external_scoring_functions.txt with $PROTEIN and
-  $LIGAND denoting where ASCbase will stuff in the chosen protein and ligand
+  $LIGAND denoting where SimSite3D will stuff in the chosen protein and ligand
   files.
 
-ASCbase_Software_2.7.1-A5
+SimSite3D_Software_2.7.1-A5
 * Version of software is now added to the sitemaps .csv files and the search
   results files and stdout.
 * Diverse ligand that had a Br labeled at Du is fixed -- MolCharge (or its
@@ -84,7 +84,7 @@ ASCbase_Software_2.7.1-A5
 * Allow S.o2 and S.o as aliases for Tripos Mol2 atoms S.O2 and S.O -- why did
   Tripos decide these should be capitalized?
 
-ASCbase_Software_2.7.1-A4
+SimSite3D_Software_2.7.1-A4
 * Changed the first field of a score record (line in output flat file) to be
   that of the ligand fragment (the ligand fragment file can be found in the
   corresponding ligand_fragments directory -- typically the same directory
@@ -92,7 +92,7 @@ ASCbase_Software_2.7.1-A4
 * The ligand fragments file names have been changed from XXXX_NNNNN_frag_l.mol2
   to XXXX_NNNNN_f.mol2 (where XXXX is the structure id and NNNNN is a 5 digit
   zero padded orientation/alignment/score number for the given structure id).
-* The moved ligands file names have been changed from XXXX_NNNNN_ASCbase_l.mol2
+* The moved ligands file names have been changed from XXXX_NNNNN_SimSite3D_l.mol2
   to XXXX_NNNNN_l.mol2.
 * The check for the number of database hit heavy ligand atoms in the query 
   pocket now correctly disregards the number of hydrogen atoms in the pocket
@@ -101,7 +101,7 @@ ASCbase_Software_2.7.1-A4
 * The gen_points and search_sitemaps files now support the command line options
   '-V' and '--version' to print out the version information of the program.
 
-ASCbase_Software_2.7.1-A3
+SimSite3D_Software_2.7.1-A3
 * Added error checking to give reasonable warning messages and exit when 
   required parameters are not listed to gen_points.
 * mol2 ligand hydrogen atoms are now excluded when using mol2 ligands to 
@@ -112,8 +112,8 @@ ASCbase_Software_2.7.1-A3
 * Added somewhat reasonable checks for 3pt alignments which are numerically the
   identity alignment.
 
-ASCbase_Software_2.7.1-A2
+SimSite3D_Software_2.7.1-A2
 
-ASCbase_Software_2.7.1-A
+SimSite3D_Software_2.7.1-A
 
-ASCbase_Software_2.7.0
+SimSite3D_Software_2.7.0

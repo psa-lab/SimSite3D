@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -36,7 +36,7 @@
 #ifndef HPHOB_TRIADS_HEADER_INCLUDED
 #define HPHOB_TRIADS_HEADER_INCLUDED
 
-namespace ASCbase{
+namespace SimSite3D{
 
   typedef struct{
     residue_type residue;  

@@ -3,7 +3,7 @@
 
 #include <ScoreMapBase.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! addition of triangle parameters to saved alignments
 class align_w_tri_params_t : public rigid_align_t{
@@ -100,6 +100,6 @@ private:
   }
 };
 
-} // End namespace ASCbase
+} // End namespace SimSite3D
 #endif
 

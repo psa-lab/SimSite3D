@@ -2,7 +2,7 @@
 #include <iomanip>
 
 
-using namespace ASCbase::geometry;
+using namespace SimSite3D::geometry;
 
 ImmovableTrimeshThree::ImmovableTrimeshThree(const std::string fname,
                                              const my_float_t max_pt2surf_dist)

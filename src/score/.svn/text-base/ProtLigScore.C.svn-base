@@ -2,7 +2,7 @@
 #include <sstream>
 #include <ProtLigScore.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 const my_float_t ProtLigScore::MIN_BURY_SQUARED_DIST = 1.9 * 1.9;
 const my_float_t ProtLigScore::MAX_BURY_SQUARED_DIST = 4.5 * 4.5;

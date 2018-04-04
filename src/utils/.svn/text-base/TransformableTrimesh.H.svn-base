@@ -3,7 +3,7 @@
 
 #include <SimpleTrimeshTwo.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 namespace geometry{
 
 class TransformableTrimesh : public SimpleTrimeshTwo{
@@ -174,5 +174,5 @@ private:
 #endif
 
 } // end namespace geometry
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

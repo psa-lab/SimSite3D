@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -52,7 +52,7 @@
 <a name="l00039"></a>00039 <span class="preprocessor"></span>
 <a name="l00040"></a>00040 <span class="preprocessor">#include &lt;basics.H&gt;</span>
 <a name="l00041"></a>00041 
-<a name="l00042"></a>00042 <span class="keyword">namespace </span>ASCbase{
+<a name="l00042"></a>00042 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00043"></a>00043 
 <a name="l00045"></a>00045   <span class="keyword">typedef</span> <span class="keyword">enum</span>{
 <a name="l00046"></a>00046     HBOND_DENSITY_NOT_SET = 0,
@@ -78,25 +78,25 @@
 <a name="l00066"></a>00066     SPHERE_SAMPLE_LEVEL_THREE,
 <a name="l00067"></a>00067   }sphere_sample_level_t;
 <a name="l00068"></a>00068 
-<a name="l00070"></a><a class="code" href="structASCbase_1_1sitemap__variables__t.html">00070</a>   <span class="keyword">typedef</span> <span class="keyword">struct</span>{
-<a name="l00071"></a><a class="code" href="structASCbase_1_1sitemap__variables__t.html#85023c58ca8199341e073b66de1309ff">00071</a>     <span class="keywordtype">char</span>* pts_fname;       
-<a name="l00072"></a><a class="code" href="structASCbase_1_1sitemap__variables__t.html#08d611868163121dfa6083f2265f2b9a">00072</a>     <span class="keywordtype">char</span>* protein_fname;   
-<a name="l00073"></a><a class="code" href="structASCbase_1_1sitemap__variables__t.html#b192da1b9c611409dda2762f266f2f8d">00073</a>     <span class="keywordtype">char</span>* ligand_fname;    
-<a name="l00074"></a><a class="code" href="structASCbase_1_1sitemap__variables__t.html#9209d76febae9ba180b5da6ad237e402">00074</a>     <span class="keywordtype">char</span>* ligs_dir;        
-<a name="l00075"></a><a class="code" href="structASCbase_1_1sitemap__variables__t.html#079ccca327e81108ffa7b5ebda75b72b">00075</a>     <span class="keywordtype">char</span>* proteins_dir;    
-<a name="l00076"></a><a class="code" href="structASCbase_1_1sitemap__variables__t.html#b4c8e92a25e8659139365e489cf7d5d3">00076</a>     <span class="keywordtype">char</span>* work_dir;        
-<a name="l00077"></a><a class="code" href="structASCbase_1_1sitemap__variables__t.html#8d23a8f0fece77b6720972a9ccb38771">00077</a>     <span class="keywordtype">char</span>* hbond_dens_str;  
-<a name="l00078"></a><a class="code" href="structASCbase_1_1sitemap__variables__t.html#9d1d9d528f2e67c292a79eb12d343f2b">00078</a>     <span class="keywordtype">char</span>* sphere_str;      
-<a name="l00079"></a><a class="code" href="structASCbase_1_1sitemap__variables__t.html#e2234821022ddc0b1bfd001fbc29d035">00079</a>     my_float_t cluster_diameter;  
-<a name="l00080"></a><a class="code" href="structASCbase_1_1sitemap__variables__t.html#90d5f33a206ea3f421bba55e2e72601b">00080</a>     my_float_t grid_spacing;   
+<a name="l00070"></a><a class="code" href="structSimSite3D_1_1sitemap__variables__t.html">00070</a>   <span class="keyword">typedef</span> <span class="keyword">struct</span>{
+<a name="l00071"></a><a class="code" href="structSimSite3D_1_1sitemap__variables__t.html#85023c58ca8199341e073b66de1309ff">00071</a>     <span class="keywordtype">char</span>* pts_fname;       
+<a name="l00072"></a><a class="code" href="structSimSite3D_1_1sitemap__variables__t.html#08d611868163121dfa6083f2265f2b9a">00072</a>     <span class="keywordtype">char</span>* protein_fname;   
+<a name="l00073"></a><a class="code" href="structSimSite3D_1_1sitemap__variables__t.html#b192da1b9c611409dda2762f266f2f8d">00073</a>     <span class="keywordtype">char</span>* ligand_fname;    
+<a name="l00074"></a><a class="code" href="structSimSite3D_1_1sitemap__variables__t.html#9209d76febae9ba180b5da6ad237e402">00074</a>     <span class="keywordtype">char</span>* ligs_dir;        
+<a name="l00075"></a><a class="code" href="structSimSite3D_1_1sitemap__variables__t.html#079ccca327e81108ffa7b5ebda75b72b">00075</a>     <span class="keywordtype">char</span>* proteins_dir;    
+<a name="l00076"></a><a class="code" href="structSimSite3D_1_1sitemap__variables__t.html#b4c8e92a25e8659139365e489cf7d5d3">00076</a>     <span class="keywordtype">char</span>* work_dir;        
+<a name="l00077"></a><a class="code" href="structSimSite3D_1_1sitemap__variables__t.html#8d23a8f0fece77b6720972a9ccb38771">00077</a>     <span class="keywordtype">char</span>* hbond_dens_str;  
+<a name="l00078"></a><a class="code" href="structSimSite3D_1_1sitemap__variables__t.html#9d1d9d528f2e67c292a79eb12d343f2b">00078</a>     <span class="keywordtype">char</span>* sphere_str;      
+<a name="l00079"></a><a class="code" href="structSimSite3D_1_1sitemap__variables__t.html#e2234821022ddc0b1bfd001fbc29d035">00079</a>     my_float_t cluster_diameter;  
+<a name="l00080"></a><a class="code" href="structSimSite3D_1_1sitemap__variables__t.html#90d5f33a206ea3f421bba55e2e72601b">00080</a>     my_float_t grid_spacing;   
 <a name="l00081"></a>00081 <span class="comment">//    char* hphob_method_str;//!&lt; Cstring holding the desired hphob method</span>
-<a name="l00082"></a><a class="code" href="structASCbase_1_1sitemap__variables__t.html#8569b43e6c79f7a203cf8c6f47bf34c6">00082</a>     hbond_method_t hbond_method;  
-<a name="l00083"></a><a class="code" href="structASCbase_1_1sitemap__variables__t.html#2a80a7d61e4e7b4062d4f7add6a5fb06">00083</a>     hphob_method_t hphob_method;  
+<a name="l00082"></a><a class="code" href="structSimSite3D_1_1sitemap__variables__t.html#8569b43e6c79f7a203cf8c6f47bf34c6">00082</a>     hbond_method_t hbond_method;  
+<a name="l00083"></a><a class="code" href="structSimSite3D_1_1sitemap__variables__t.html#2a80a7d61e4e7b4062d4f7add6a5fb06">00083</a>     hphob_method_t hphob_method;  
 <a name="l00084"></a>00084     sphere_sample_level_t sphere_sample_level;
 <a name="l00085"></a>00085     <span class="keywordtype">int</span> sphere_sample_level_int;
-<a name="l00086"></a><a class="code" href="structASCbase_1_1sitemap__variables__t.html#74cbcaa59bfae447d25c367ca3eab643">00086</a>     <span class="keywordtype">bool</span> normalize;        
-<a name="l00087"></a><a class="code" href="structASCbase_1_1sitemap__variables__t.html#f9d61423254f0b0be183097564d60d2f">00087</a>     verbose_level_t verbose;  
-<a name="l00088"></a>00088   }<a class="code" href="structASCbase_1_1sitemap__variables__t.html">sitemap_variables_t</a>;
+<a name="l00086"></a><a class="code" href="structSimSite3D_1_1sitemap__variables__t.html#74cbcaa59bfae447d25c367ca3eab643">00086</a>     <span class="keywordtype">bool</span> normalize;        
+<a name="l00087"></a><a class="code" href="structSimSite3D_1_1sitemap__variables__t.html#f9d61423254f0b0be183097564d60d2f">00087</a>     verbose_level_t verbose;  
+<a name="l00088"></a>00088   }<a class="code" href="structSimSite3D_1_1sitemap__variables__t.html">sitemap_variables_t</a>;
 <a name="l00089"></a>00089 
 <a name="l00090"></a>00090 }
 <a name="l00091"></a>00091 

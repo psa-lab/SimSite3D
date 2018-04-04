@@ -1,23 +1,23 @@
-\section{ASCbase::geometry::Distance\-Array2 Class Reference}
-\label{classASCbase_1_1geometry_1_1DistanceArray2}\index{ASCbase::geometry::DistanceArray2@{ASCbase::geometry::DistanceArray2}}
+\section{SimSite3D::geometry::Distance\-Array2 Class Reference}
+\label{classSimSite3D_1_1geometry_1_1DistanceArray2}\index{SimSite3D::geometry::DistanceArray2@{SimSite3D::geometry::DistanceArray2}}
 {\tt \#include $<$Distance\-Array2.H$>$}
 
 \subsection*{Public Types}
 \begin{CompactItemize}
 \item 
-typedef std::vector$<$ std::vector$<$ const my\_\-float\_\-t $\ast$ $>$ $>$ \textbf{bin\_\-vec}\label{classASCbase_1_1geometry_1_1DistanceArray2_5671c6bffbec6d424869132a9b8278fe}
+typedef std::vector$<$ std::vector$<$ const my\_\-float\_\-t $\ast$ $>$ $>$ \textbf{bin\_\-vec}\label{classSimSite3D_1_1geometry_1_1DistanceArray2_5671c6bffbec6d424869132a9b8278fe}
 
 \item 
-typedef bin\_\-vec::iterator \textbf{bin\_\-vi}\label{classASCbase_1_1geometry_1_1DistanceArray2_3b8950a2f913a1c99f07cd8207b8d4c7}
+typedef bin\_\-vec::iterator \textbf{bin\_\-vi}\label{classSimSite3D_1_1geometry_1_1DistanceArray2_3b8950a2f913a1c99f07cd8207b8d4c7}
 
 \item 
-typedef bin\_\-vec::const\_\-iterator \textbf{bin\_\-vci}\label{classASCbase_1_1geometry_1_1DistanceArray2_edfb950bc7209814dc46236e34e2dc31}
+typedef bin\_\-vec::const\_\-iterator \textbf{bin\_\-vci}\label{classSimSite3D_1_1geometry_1_1DistanceArray2_edfb950bc7209814dc46236e34e2dc31}
 
 \item 
-typedef std::multimap$<$ bin\_\-vci, const my\_\-float\_\-t $\ast$ $>$ \textbf{bin2vert\_\-mmap}\label{classASCbase_1_1geometry_1_1DistanceArray2_1cb8df28537da9c452689b0424c4f38b}
+typedef std::multimap$<$ bin\_\-vci, const my\_\-float\_\-t $\ast$ $>$ \textbf{bin2vert\_\-mmap}\label{classSimSite3D_1_1geometry_1_1DistanceArray2_1cb8df28537da9c452689b0424c4f38b}
 
 \item 
-typedef bin2vert\_\-mmap::const\_\-iterator \textbf{bin2vert\_\-mmci}\label{classASCbase_1_1geometry_1_1DistanceArray2_0e789f5551c49ffa057399daf777fb66}
+typedef bin2vert\_\-mmap::const\_\-iterator \textbf{bin2vert\_\-mmci}\label{classSimSite3D_1_1geometry_1_1DistanceArray2_0e789f5551c49ffa057399daf777fb66}
 
 \end{CompactItemize}
 \subsection*{Public Member Functions}
@@ -25,64 +25,64 @@ typedef bin2vert\_\-mmap::const\_\-iterator \textbf{bin2vert\_\-mmci}\label{clas
 \item 
 \bf{Distance\-Array2} ()
 \item 
-\textbf{Distance\-Array2} (const my\_\-float\_\-t $\ast$positions, const uint num\_\-pos, const my\_\-float\_\-t bin\_\-width)\label{classASCbase_1_1geometry_1_1DistanceArray2_49275693a93f9cebda96761d3a2915b5}
+\textbf{Distance\-Array2} (const my\_\-float\_\-t $\ast$positions, const uint num\_\-pos, const my\_\-float\_\-t bin\_\-width)\label{classSimSite3D_1_1geometry_1_1DistanceArray2_49275693a93f9cebda96761d3a2915b5}
 
 \item 
-void \textbf{setup\_\-grid} (const my\_\-float\_\-t $\ast$positions, const uint num\_\-pos, const my\_\-float\_\-t bin\_\-width)\label{classASCbase_1_1geometry_1_1DistanceArray2_23d27799b8d0236ec7c24c9997922a99}
+void \textbf{setup\_\-grid} (const my\_\-float\_\-t $\ast$positions, const uint num\_\-pos, const my\_\-float\_\-t bin\_\-width)\label{classSimSite3D_1_1geometry_1_1DistanceArray2_23d27799b8d0236ec7c24c9997922a99}
 
 \item 
-void \textbf{get\_\-min\_\-max\_\-coords} (const my\_\-float\_\-t $\ast$positions, const uint num\_\-pos, my\_\-float\_\-t $\ast$min\_\-pos, my\_\-float\_\-t $\ast$max\_\-pos)\label{classASCbase_1_1geometry_1_1DistanceArray2_9bc747ee3e49df4d6ffebb44894e7fc2}
+void \textbf{get\_\-min\_\-max\_\-coords} (const my\_\-float\_\-t $\ast$positions, const uint num\_\-pos, my\_\-float\_\-t $\ast$min\_\-pos, my\_\-float\_\-t $\ast$max\_\-pos)\label{classSimSite3D_1_1geometry_1_1DistanceArray2_9bc747ee3e49df4d6ffebb44894e7fc2}
 
 \item 
-void \textbf{determine\_\-space} (const my\_\-float\_\-t $\ast$min\_\-pos, const my\_\-float\_\-t $\ast$max\_\-pos, my\_\-float\_\-t $\ast$min\_\-corner, my\_\-float\_\-t $\ast$max\_\-corner, int $\ast$num\_\-bins)\label{classASCbase_1_1geometry_1_1DistanceArray2_d44944a03efc076969d8ab6b9973606c}
+void \textbf{determine\_\-space} (const my\_\-float\_\-t $\ast$min\_\-pos, const my\_\-float\_\-t $\ast$max\_\-pos, my\_\-float\_\-t $\ast$min\_\-corner, my\_\-float\_\-t $\ast$max\_\-corner, int $\ast$num\_\-bins)\label{classSimSite3D_1_1geometry_1_1DistanceArray2_d44944a03efc076969d8ab6b9973606c}
 
 \item 
-void \textbf{populate\_\-grid} (const my\_\-float\_\-t $\ast$positions, const uint num\_\-pos, const my\_\-float\_\-t bin\_\-width, std::vector$<$ std::vector$<$ const my\_\-float\_\-t $\ast$ $>$ $>$ $\ast$bins)\label{classASCbase_1_1geometry_1_1DistanceArray2_c518041203193931e8be215e65d2b5a1}
+void \textbf{populate\_\-grid} (const my\_\-float\_\-t $\ast$positions, const uint num\_\-pos, const my\_\-float\_\-t bin\_\-width, std::vector$<$ std::vector$<$ const my\_\-float\_\-t $\ast$ $>$ $>$ $\ast$bins)\label{classSimSite3D_1_1geometry_1_1DistanceArray2_c518041203193931e8be215e65d2b5a1}
 
 \item 
-bin\_\-vci \textbf{get\_\-bin} (const my\_\-float\_\-t $\ast$pt) const \label{classASCbase_1_1geometry_1_1DistanceArray2_fe1645f8f07c30ac363eb665e0c3c365}
+bin\_\-vci \textbf{get\_\-bin} (const my\_\-float\_\-t $\ast$pt) const \label{classSimSite3D_1_1geometry_1_1DistanceArray2_fe1645f8f07c30ac363eb665e0c3c365}
 
 \item 
-void \textbf{get\_\-bins} (const my\_\-float\_\-t $\ast$vert\_\-begin, const uint num\_\-vert, bin2vert\_\-mmap $\ast$pts\_\-in\_\-bins) const \label{classASCbase_1_1geometry_1_1DistanceArray2_dd5739ac76526d894efa53e17461a20b}
+void \textbf{get\_\-bins} (const my\_\-float\_\-t $\ast$vert\_\-begin, const uint num\_\-vert, bin2vert\_\-mmap $\ast$pts\_\-in\_\-bins) const \label{classSimSite3D_1_1geometry_1_1DistanceArray2_dd5739ac76526d894efa53e17461a20b}
 
 \item 
-bin\_\-vci \bf{bins\_\-end} () const \label{classASCbase_1_1geometry_1_1DistanceArray2_cf50a867e282cb26de29625843288be7}
+bin\_\-vci \bf{bins\_\-end} () const \label{classSimSite3D_1_1geometry_1_1DistanceArray2_cf50a867e282cb26de29625843288be7}
 
 \begin{CompactList}\small\item\em Constant iterator to one past the last bin in the vector. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Private Member Functions}
 \begin{CompactItemize}
 \item 
-void \textbf{init} ()\label{classASCbase_1_1geometry_1_1DistanceArray2_3a6b04a93a64eb5d858d75872809ed87}
+void \textbf{init} ()\label{classSimSite3D_1_1geometry_1_1DistanceArray2_3a6b04a93a64eb5d858d75872809ed87}
 
 \end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
-my\_\-float\_\-t \bf{A\_\-bin\_\-width}\label{classASCbase_1_1geometry_1_1DistanceArray2_46bf43dba80eca2a90354de43f3e090f}
+my\_\-float\_\-t \bf{A\_\-bin\_\-width}\label{classSimSite3D_1_1geometry_1_1DistanceArray2_46bf43dba80eca2a90354de43f3e090f}
 
 \begin{CompactList}\small\item\em Side length of a bin. \item\end{CompactList}\item 
-my\_\-float\_\-t \bf{A\_\-bin\_\-width\_\-inv}\label{classASCbase_1_1geometry_1_1DistanceArray2_d27b3690450da6a8df54915b042e4425}
+my\_\-float\_\-t \bf{A\_\-bin\_\-width\_\-inv}\label{classSimSite3D_1_1geometry_1_1DistanceArray2_d27b3690450da6a8df54915b042e4425}
 
 \begin{CompactList}\small\item\em multiplicative inverse (1 over) side length \item\end{CompactList}\item 
-my\_\-float\_\-t \textbf{A\_\-upper\_\-corner} [3]\label{classASCbase_1_1geometry_1_1DistanceArray2_c20120c88fe303758aa644279ceae45f}
+my\_\-float\_\-t \textbf{A\_\-upper\_\-corner} [3]\label{classSimSite3D_1_1geometry_1_1DistanceArray2_c20120c88fe303758aa644279ceae45f}
 
 \item 
-my\_\-float\_\-t \textbf{A\_\-lower\_\-corner} [3]\label{classASCbase_1_1geometry_1_1DistanceArray2_7ec1a3b6cb3fc3c1fd73d8768fab7cfc}
+my\_\-float\_\-t \textbf{A\_\-lower\_\-corner} [3]\label{classSimSite3D_1_1geometry_1_1DistanceArray2_7ec1a3b6cb3fc3c1fd73d8768fab7cfc}
 
 \item 
-int \textbf{A\_\-num\_\-bins} [3]\label{classASCbase_1_1geometry_1_1DistanceArray2_da392e2b7b553662d86c53d58e42cb2d}
+int \textbf{A\_\-num\_\-bins} [3]\label{classSimSite3D_1_1geometry_1_1DistanceArray2_da392e2b7b553662d86c53d58e42cb2d}
 
 \item 
-bin\_\-vec \textbf{A\_\-bins}\label{classASCbase_1_1geometry_1_1DistanceArray2_358d86ba1f5aef66aa85e514e273ed0c}
+bin\_\-vec \textbf{A\_\-bins}\label{classSimSite3D_1_1geometry_1_1DistanceArray2_358d86ba1f5aef66aa85e514e273ed0c}
 
 \item 
-std::vector$<$ int $>$ \textbf{A\_\-current\_\-bin\_\-idz}\label{classASCbase_1_1geometry_1_1DistanceArray2_ee6a02c194abdc0cd4f4c8caa1b7e238}
+std::vector$<$ int $>$ \textbf{A\_\-current\_\-bin\_\-idz}\label{classSimSite3D_1_1geometry_1_1DistanceArray2_ee6a02c194abdc0cd4f4c8caa1b7e238}
 
 \item 
-bin\_\-vec \textbf{A\_\-bins\_\-for\_\-moved\_\-pts}\label{classASCbase_1_1geometry_1_1DistanceArray2_df002d40101ccf23897a693eaac5084f}
+bin\_\-vec \textbf{A\_\-bins\_\-for\_\-moved\_\-pts}\label{classSimSite3D_1_1geometry_1_1DistanceArray2_df002d40101ccf23897a693eaac5084f}
 
 \item 
-bool \textbf{A\_\-bins\_\-are\_\-setup}\label{classASCbase_1_1geometry_1_1DistanceArray2_da8e60db90bd4144a04d5016294c2d1e}
+bool \textbf{A\_\-bins\_\-are\_\-setup}\label{classSimSite3D_1_1geometry_1_1DistanceArray2_da8e60db90bd4144a04d5016294c2d1e}
 
 \end{CompactItemize}
 
@@ -93,9 +93,9 @@ The goal of this method is to make things easier to update and hopefully at the 
 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{ASCbase::geometry::DistanceArray2@{ASCbase::geometry::Distance\-Array2}!DistanceArray2@{DistanceArray2}}
-\index{DistanceArray2@{DistanceArray2}!ASCbase::geometry::DistanceArray2@{ASCbase::geometry::Distance\-Array2}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ASCbase::geometry::Distance\-Array2::Distance\-Array2 ()\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1geometry_1_1DistanceArray2_e951f6ba30f7b4868e4b00347f24da0e}
+\index{SimSite3D::geometry::DistanceArray2@{SimSite3D::geometry::Distance\-Array2}!DistanceArray2@{DistanceArray2}}
+\index{DistanceArray2@{DistanceArray2}!SimSite3D::geometry::DistanceArray2@{SimSite3D::geometry::Distance\-Array2}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}SimSite3D::geometry::Distance\-Array2::Distance\-Array2 ()\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1geometry_1_1DistanceArray2_e951f6ba30f7b4868e4b00347f24da0e}
 
 
 Default constructor -- sometimes the array cannot be constructed at class construction 

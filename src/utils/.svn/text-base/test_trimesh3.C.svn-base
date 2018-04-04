@@ -1,7 +1,7 @@
 #include <ImmovableTrimesh.H>
 #include <ImmovableTrimeshThree.H>
 
-using namespace ASCbase::geometry;
+using namespace SimSite3D::geometry;
 
 int main(int argc, char **argv)
 {

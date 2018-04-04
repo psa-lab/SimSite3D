@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -56,14 +56,14 @@ bool write_stats(std::string fname, my_float_t mean, my_float_t stdev,
 
 bool 
 normalize_sitemap(const std::string site_fname, 
-                  const ASCbase::BaseParameters& params,
+                  const SimSite3D::BaseParameters& params,
                   const bool hydrophobic_query)
 {
   std::cout << "Calculating normalization stats for " << site_fname << "\n";
   
   // Make a temporary directory to store the "hits" against the diverse set
   // Lazily convert string to cstring so that mkdtemp can modify the cstring
-  std::string tmp_dir = params.scratch_dir +  "/.ASCbase_tmp_XXXXXX";
+  std::string tmp_dir = params.scratch_dir +  "/.SimSite3D_tmp_XXXXXX";
   char* output_dir = new char[tmp_dir.length() + 1];
   std::strcpy(output_dir, tmp_dir.c_str());
   mkdtemp(output_dir);
@@ -128,7 +128,7 @@ calc_mean_and_stdev(std::string fname, my_float_t *mean, my_float_t* stdev)
     std::vector<std::string> toks;
     string_tok(line, &toks, '|');
 
-    // Want the ASCbase score field
+    // Want the SimSite3D score field
     my_float_t score;
     if(my_strtof(toks[1], &score)){
       ++n;

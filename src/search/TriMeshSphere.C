@@ -1,7 +1,7 @@
 #include <TriMeshSphere.H>
 #include <iomanip>
 
-using namespace ASCbase::geometry;
+using namespace SimSite3D::geometry;
 
 #if 0
 const my_float_t TriMeshSphere::A_level2_points[] =

@@ -41,8 +41,8 @@ if(__name__ == "__main__"):
 
   import tempfile
   import cPickle
-  from ASCbasePy import *
-  from ASCbasePy.utils import add_RCSB_hydrogens, misc_utils
+  from SimSite3DPy import *
+  from SimSite3DPy.utils import add_RCSB_hydrogens, misc_utils
   import sys
 #  sys.path.append("/psa/results/SimSite3D_datasets/scripts")
   import RCSB_PDB_records

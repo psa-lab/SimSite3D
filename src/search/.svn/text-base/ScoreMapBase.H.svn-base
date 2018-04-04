@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -25,7 +25,7 @@
 #include <sstream>
 #include <iomanip>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! Data class: Holds the numerous features of an alignment
 /*! This class was supposed to make it easier to swap things in and out.
@@ -157,8 +157,8 @@ public:
   }
   
   
-  my_float_t tier1_score;      //!< ASCbase fast orientation score (sieve)
-  my_float_t score;            //!< Final ASCbase score -- tier2
+  my_float_t tier1_score;      //!< SimSite3D fast orientation score (sieve)
+  my_float_t score;            //!< Final SimSite3D score -- tier2
   std::vector<my_float_t> terms;
   std::vector<my_float_t> ext_scores;  //!< External score(s) 
   std::vector<bool> frag_atoms_flags;  
@@ -168,7 +168,7 @@ public:
   mol2File *frag_file;   //!< Pointer to the ligand fragment in query pocket
   std::vector<bool> match_print;
 
-  // Added for prototype of hbond caps - used in only ASCbasePy as this point
+  // Added for prototype of hbond caps - used in only SimSite3DPy as this point
   my_float_t hb_caps_score;
   std::string hb_caps_match_print;
 
@@ -322,7 +322,7 @@ public:
   }
   
   //! Run the external scoring function over all the saved alignments
-  /*! For a given ASCbase run, the model sitemap is held constant.  Thus,
+  /*! For a given SimSite3D run, the model sitemap is held constant.  Thus,
    * we need only one protein_file.  For each saved alignment, score the 
    * protein and the saved ligand fragment.
    *
@@ -365,5 +365,5 @@ private:
   ExternalScoringFunction* A_external_SF; //!< external prot-lig score fcn ptr
 
 };
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

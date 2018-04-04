@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -45,7 +45,7 @@
 <a name="l00032"></a>00032 <span class="preprocessor">#include &lt;orbitals.H&gt;</span>
 <a name="l00033"></a>00033 <span class="preprocessor">#include &lt;types.H&gt;</span>
 <a name="l00034"></a>00034 
-<a name="l00035"></a>00035 <span class="keyword">namespace </span>ASCbase{
+<a name="l00035"></a>00035 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00036"></a>00036 
 <a name="l00038"></a>00038   <span class="keyword">typedef</span> <span class="keyword">enum</span> atom_type_enum{
 <a name="l00039"></a>00039     NULL_ATOM_TYPE = 0,
@@ -165,10 +165,10 @@
 <a name="l00154"></a>00154     LEVEL_ENUM_END
 <a name="l00155"></a>00155   }atom_level_type;
 <a name="l00156"></a>00156 
-<a name="l00158"></a><a class="code" href="structASCbase_1_1atom__conv__type.html">00158</a>   <span class="keyword">typedef</span> <span class="keyword">struct</span>{
+<a name="l00158"></a><a class="code" href="structSimSite3D_1_1atom__conv__type.html">00158</a>   <span class="keyword">typedef</span> <span class="keyword">struct</span>{
 <a name="l00159"></a>00159     atom_type atom;
 <a name="l00160"></a>00160     std::string name;
-<a name="l00161"></a>00161   }<a class="code" href="structASCbase_1_1atom__conv__type.html">atom_conv_type</a>;
+<a name="l00161"></a>00161   }<a class="code" href="structSimSite3D_1_1atom__conv__type.html">atom_conv_type</a>;
 <a name="l00162"></a>00162 
 <a name="l00163"></a>00163   <span class="keyword">typedef</span> <span class="keyword">enum</span>{
 <a name="l00164"></a>00164     WARN_UNKNOWN_ATOMS,
@@ -176,19 +176,19 @@
 <a name="l00166"></a>00166   }atoms_warn_type;
 <a name="l00167"></a>00167 
 <a name="l00170"></a>00170 
-<a name="l00175"></a><a class="code" href="structASCbase_1_1atom__info__t.html">00175</a>   <span class="keyword">typedef</span> <span class="keyword">struct</span>{
-<a name="l00176"></a><a class="code" href="structASCbase_1_1atom__info__t.html#3a8ad1a87e0f8c0e9e20c6b7a3b53e51">00176</a>     atom_type atom;             
-<a name="l00177"></a><a class="code" href="structASCbase_1_1atom__info__t.html#fcebe437b571a4ac9ff7b4dfa319b1d7">00177</a>     orbit_type orbit;           
-<a name="l00178"></a><a class="code" href="structASCbase_1_1atom__info__t.html#1d6e93f1fc9c78af5bec80786d7560f6">00178</a>     my_float_t vdw_radius;      
-<a name="l00179"></a>00179   }<a class="code" href="structASCbase_1_1atom__info__t.html">atom_info_t</a>;
+<a name="l00175"></a><a class="code" href="structSimSite3D_1_1atom__info__t.html">00175</a>   <span class="keyword">typedef</span> <span class="keyword">struct</span>{
+<a name="l00176"></a><a class="code" href="structSimSite3D_1_1atom__info__t.html#3a8ad1a87e0f8c0e9e20c6b7a3b53e51">00176</a>     atom_type atom;             
+<a name="l00177"></a><a class="code" href="structSimSite3D_1_1atom__info__t.html#fcebe437b571a4ac9ff7b4dfa319b1d7">00177</a>     orbit_type orbit;           
+<a name="l00178"></a><a class="code" href="structSimSite3D_1_1atom__info__t.html#1d6e93f1fc9c78af5bec80786d7560f6">00178</a>     my_float_t vdw_radius;      
+<a name="l00179"></a>00179   }<a class="code" href="structSimSite3D_1_1atom__info__t.html">atom_info_t</a>;
 <a name="l00180"></a>00180 
-<a name="l00183"></a><a class="code" href="classASCbase_1_1AtomTypes.html">00183</a>   <span class="keyword">class </span><a class="code" href="classASCbase_1_1AtomTypes.html">AtomTypes</a>{
+<a name="l00183"></a><a class="code" href="classSimSite3D_1_1AtomTypes.html">00183</a>   <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1AtomTypes.html">AtomTypes</a>{
 <a name="l00184"></a>00184   <span class="keyword">public</span>:
 <a name="l00187"></a>00187 
-<a name="l00192"></a>00192     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structASCbase_1_1atom__info__t.html">atom_info_t</a>*    
-<a name="l00193"></a><a class="code" href="classASCbase_1_1AtomTypes.html#79594ad220d1951219aebe927c06626c">00193</a>     <a class="code" href="classASCbase_1_1AtomTypes.html#79594ad220d1951219aebe927c06626c">lookup_vdw_rad</a>(<span class="keyword">const</span> atom_type atom, <span class="keyword">const</span> orbit_type orbit = DEFAULT_ORBIT)
+<a name="l00192"></a>00192     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structSimSite3D_1_1atom__info__t.html">atom_info_t</a>*    
+<a name="l00193"></a><a class="code" href="classSimSite3D_1_1AtomTypes.html#79594ad220d1951219aebe927c06626c">00193</a>     <a class="code" href="classSimSite3D_1_1AtomTypes.html#79594ad220d1951219aebe927c06626c">lookup_vdw_rad</a>(<span class="keyword">const</span> atom_type atom, <span class="keyword">const</span> orbit_type orbit = DEFAULT_ORBIT)
 <a name="l00194"></a>00194     {
-<a name="l00195"></a>00195        <span class="keywordflow">if</span>(vdw_table.empty()) <a class="code" href="classASCbase_1_1AtomTypes.html#e95076f4bd69e270be8e165cc069d153">build_vdw_table</a>();
+<a name="l00195"></a>00195        <span class="keywordflow">if</span>(vdw_table.empty()) <a class="code" href="classSimSite3D_1_1AtomTypes.html#e95076f4bd69e270be8e165cc069d153">build_vdw_table</a>();
 <a name="l00196"></a>00196        std::multimap&lt;atom_type, const atom_info_t*&gt;::const_iterator tbl_iter;
 <a name="l00197"></a>00197        tbl_iter = vdw_table.find(atom);
 <a name="l00198"></a>00198        <span class="keywordflow">if</span>(tbl_iter == vdw_table.end()) <span class="keywordflow">return</span> 0; 
@@ -200,11 +200,11 @@
 <a name="l00204"></a>00204     }
 <a name="l00205"></a>00205 
 <a name="l00206"></a>00206   <span class="keyword">private</span>:
-<a name="l00208"></a>00208     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classASCbase_1_1AtomTypes.html#e95076f4bd69e270be8e165cc069d153">build_vdw_table</a>();
+<a name="l00208"></a>00208     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classSimSite3D_1_1AtomTypes.html#e95076f4bd69e270be8e165cc069d153">build_vdw_table</a>();
 <a name="l00209"></a>00209 
 <a name="l00210"></a>00210     <span class="keyword">static</span> std::multimap&lt;atom_type, const atom_info_t*&gt; vdw_table;
 <a name="l00211"></a>00211     <span class="keyword">static</span> <span class="keyword">const</span> uint A_atoms_array_size;
-<a name="l00212"></a>00212     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structASCbase_1_1atom__info__t.html">atom_info_t</a> A_atoms_array[];
+<a name="l00212"></a>00212     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structSimSite3D_1_1atom__info__t.html">atom_info_t</a> A_atoms_array[];
 <a name="l00213"></a>00213   };
 <a name="l00214"></a>00214 }
 <a name="l00215"></a>00215 <span class="preprocessor">#endif</span>

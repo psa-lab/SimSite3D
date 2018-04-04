@@ -5,10 +5,10 @@
 #include "__array_1.pypp.hpp"
 
 using namespace boost::python;
-using ASCbase::point_t;
-using ASCbase::dir_point_t;
-using ASCbase::hbond_point_t;
-using ASCbase::hbond_ideal_point_t;
+using SimSite3D::point_t;
+using SimSite3D::dir_point_t;
+using SimSite3D::hbond_point_t;
+using SimSite3D::hbond_ideal_point_t;
 
 
 struct dir_point_t_wrapper : dir_point_t, wrapper<dir_point_t>{
@@ -41,17 +41,17 @@ struct dir_point_t_wrapper : dir_point_t, wrapper<dir_point_t>{
 // In particular one should not be creating hbond points or hbond ideal points
 // in python but use the C++ extensions to do so
 BOOST_PYTHON_MODULE(_hbond_points){
-  enum_< ASCbase::interactionType>("interactionType")
-    .value("UNKNOWN_INTERACTION", ASCbase::UNKNOWN_INTERACTION)
-    .value("ACCEPTOR", ASCbase::ACCEPTOR)
-    .value("DONOR", ASCbase::DONOR)
-    .value("HYDROPHOB", ASCbase::HYDROPHOB)
-    .value("DONEPTOR", ASCbase::DONEPTOR)
-    .value("DONOR_HYDROGEN", ASCbase::DONOR_HYDROGEN)
-    .value("METAL_1", ASCbase::METAL_1)
-    .value("METAL_2", ASCbase::METAL_2)
-    .value("HBVEC", ASCbase::HBVEC)
-    .value("NOTHING", ASCbase::NOTHING)
+  enum_< SimSite3D::interactionType>("interactionType")
+    .value("UNKNOWN_INTERACTION", SimSite3D::UNKNOWN_INTERACTION)
+    .value("ACCEPTOR", SimSite3D::ACCEPTOR)
+    .value("DONOR", SimSite3D::DONOR)
+    .value("HYDROPHOB", SimSite3D::HYDROPHOB)
+    .value("DONEPTOR", SimSite3D::DONEPTOR)
+    .value("DONOR_HYDROGEN", SimSite3D::DONOR_HYDROGEN)
+    .value("METAL_1", SimSite3D::METAL_1)
+    .value("METAL_2", SimSite3D::METAL_2)
+    .value("HBVEC", SimSite3D::HBVEC)
+    .value("NOTHING", SimSite3D::NOTHING)
     .export_values()
   ;
  
@@ -63,7 +63,7 @@ BOOST_PYTHON_MODULE(_hbond_points){
 
     pyplusplus::containers::static_sized::register_array_1<double, 3>
       ("__array_1_double_3");
-    {  // ASCbase::dir_point_t::dir [variable], type = myfloat_t[3]
+    {  // SimSite3D::dir_point_t::dir [variable], type = myfloat_t[3]
       typedef pyplusplus::containers::static_sized::array_1_t<double,3>
         (*array_wrapper_creator)(dir_point_t &);
       dir_point_exposer.add_property("dir",
@@ -71,7 +71,7 @@ BOOST_PYTHON_MODULE(_hbond_points){
         with_custodian_and_ward_postcall<0,1>()) );
     }
 
-    { // ASCbase::dir_point_t::pos [variable], type = myfloat_t[3]
+    { // SimSite3D::dir_point_t::pos [variable], type = myfloat_t[3]
       typedef pyplusplus::containers::static_sized::array_1_t<double,3>
         (*array_wrapper_creator)(dir_point_t &);
       dir_point_exposer.add_property("pos",
@@ -137,11 +137,11 @@ struct hbond_ideal_point_t_wrapper
     // null constructor
   }
 
-  const ASCbase::atom_t&
+  const SimSite3D::atom_t&
    __get_atom() const
    { return *atom; }
 
-  const ASCbase::atom_t&
+  const SimSite3D::atom_t&
    __get_carbon_nbr() const
    { return *carbon_nbr; }
 };
@@ -154,17 +154,17 @@ struct hbond_ideal_point_t_wrapper
 // In particular one should not be creating hbond points or hbond ideal points
 // in python but use the C++ extensions to do so
 BOOST_PYTHON_MODULE(_hbond_points){
-  enum_< ASCbase::interactionType>("interactionType")
-    .value("UNKNOWN_INTERACTION", ASCbase::UNKNOWN_INTERACTION)
-    .value("ACCEPTOR", ASCbase::ACCEPTOR)
-    .value("DONOR", ASCbase::DONOR)
-    .value("HYDROPHOB", ASCbase::HYDROPHOB)
-    .value("DONEPTOR", ASCbase::DONEPTOR)
-    .value("DONOR_HYDROGEN", ASCbase::DONOR_HYDROGEN)
-    .value("METAL_1", ASCbase::METAL_1)
-    .value("METAL_2", ASCbase::METAL_2)
-    .value("HBVEC", ASCbase::HBVEC)
-    .value("NOTHING", ASCbase::NOTHING)
+  enum_< SimSite3D::interactionType>("interactionType")
+    .value("UNKNOWN_INTERACTION", SimSite3D::UNKNOWN_INTERACTION)
+    .value("ACCEPTOR", SimSite3D::ACCEPTOR)
+    .value("DONOR", SimSite3D::DONOR)
+    .value("HYDROPHOB", SimSite3D::HYDROPHOB)
+    .value("DONEPTOR", SimSite3D::DONEPTOR)
+    .value("DONOR_HYDROGEN", SimSite3D::DONOR_HYDROGEN)
+    .value("METAL_1", SimSite3D::METAL_1)
+    .value("METAL_2", SimSite3D::METAL_2)
+    .value("HBVEC", SimSite3D::HBVEC)
+    .value("NOTHING", SimSite3D::NOTHING)
     .export_values()
   ;
  
@@ -176,7 +176,7 @@ BOOST_PYTHON_MODULE(_hbond_points){
 
     pyplusplus::containers::static_sized::register_array_1<double, 3>
       ("__array_1_double_3");
-    {  // ASCbase::dir_point_t::dir [variable], type = myfloat_t[3]
+    {  // SimSite3D::dir_point_t::dir [variable], type = myfloat_t[3]
       typedef pyplusplus::containers::static_sized::array_1_t<double,3>
         (*array_wrapper_creator)(dir_point_t &);
       dir_point_exposer.add_property("dir",

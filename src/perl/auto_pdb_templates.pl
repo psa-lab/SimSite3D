@@ -71,19 +71,19 @@ foreach $protein_file (@proteins){
 
 sub get_directories{
 
-  # Directory where ASCbase is installed
+  # Directory where SimSite3D is installed
   $dirs->{project} = $ENV{'ASCBASE_SOFTWARE_DIR'} or croak "ERROR: " .
     "environment variable ASCBASE_SOFTWARE_DIR is not set\n";
   # Added so that it can be changed if needed.
   $dirs->{data} = $dirs->{project} . "/data";
-  # Directory holding the query ASCbase sitemap pdb file
+  # Directory holding the query SimSite3D sitemap pdb file
   $dirs->{queries} = $dirs->{data} . "/query_sitemaps";
   # Directory holding the Pfizer protein pdb files
   $dirs->{proteins} = $ENV{'PROTEIN_CRYSTAL_STRUCTURES_DIR'} or croak "ERROR: ".    "environment variable PROTEIN_CRYSTAL_STRUCTURES_DIR is not set\n";
   # Directory holding the Pfizer ligand mol2 files
   $dirs->{ligands} = $ENV{'LIGAND_CRYSTAL_STRUCTURES_DIR'} or croak "ERROR: ".
     "environment variable LIGAND_CRYSTAL_STRUCTURES_DIR is not set\n";
-  # Directory holding the searchable ASCbase sitemap pdb files
+  # Directory holding the searchable SimSite3D sitemap pdb files
   $dirs->{search} = $ENV{'ASCBASE_SEARCHABLE_SITEMAPS_DIR'} or croak "ERROR: ".
     "environment variable ASCBASE_SEARCHABLE_SITEMAPS_DIR is not set\n";
 

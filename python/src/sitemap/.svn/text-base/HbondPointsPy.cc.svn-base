@@ -3,9 +3,9 @@
 #include <HbondPoints.H>
 
 using namespace boost::python;
-using ASCbase::HbondPoints;
-using ASCbase::PDBBase;
-using ASCbase::hbond_ideal_pt_vci;
+using SimSite3D::HbondPoints;
+using SimSite3D::PDBBase;
+using SimSite3D::hbond_ideal_pt_vci;
 
 
 

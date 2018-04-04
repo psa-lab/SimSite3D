@@ -1,4 +1,4 @@
-import ASCbasePy
+import SimSite3DPy
 
 class RandomAlignments:
 
@@ -10,7 +10,7 @@ class RandomAlignments:
     """
     self -- calling class
     dbase_site -- (only need the point positions at this time -- need hphob point interface )
-    aligns -- an ASCbasePy.search.vector_less__rigid_align_t__greater_() 
+    aligns -- an SimSite3DPy.search.vector_less__rigid_align_t__greater_() 
       instance
     centroid -- centroid of sitemap or ligand points -- use only ligand atoms
       in the query pocket
@@ -30,13 +30,13 @@ class RandomAlignments:
     """
 #    aligns.clear()
     (orientations, orient_params) = \
-      ASCbasePy.utils.gen_orientations(N, centroid, q_width=q_width,
+      SimSite3DPy.utils.gen_orientations(N, centroid, q_width=q_width,
                                        half_side_len=half_side_len, 
                                        overlap = 0.0)
 
     for i in range(N):
       (q,t) = orientations[i]
-      x = ASCbasePy.search.rigid_align_t()
+      x = SimSite3DPy.search.rigid_align_t()
       R = q.get_ortho_rot_mat().reshape((9,))
       for j in range(9): x.R[j] = R[j]
       for j in range(3): x.T[j] = t[j]

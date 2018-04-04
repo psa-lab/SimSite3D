@@ -49,21 +49,21 @@ mkinstalldirs = $(install_sh) -d
 CONFIG_CLEAN_FILES =
 LIBRARIES = $(noinst_LIBRARIES)
 ARFLAGS = cru
-libASCbaseSoftwareScore_a_AR = $(AR) $(ARFLAGS)
-libASCbaseSoftwareScore_a_LIBADD =
+libSimSite3DSoftwareScore_a_AR = $(AR) $(ARFLAGS)
+libSimSite3DSoftwareScore_a_LIBADD =
 am__objects_1 = ProtLigScoreParameters.$(OBJEXT) \
 	ProtLigScore.$(OBJEXT) ProtLigActTable.$(OBJEXT)
-am_libASCbaseSoftwareScore_a_OBJECTS = $(am__objects_1)
-libASCbaseSoftwareScore_a_OBJECTS =  \
-	$(am_libASCbaseSoftwareScore_a_OBJECTS)
+am_libSimSite3DSoftwareScore_a_OBJECTS = $(am__objects_1)
+libSimSite3DSoftwareScore_a_OBJECTS =  \
+	$(am_libSimSite3DSoftwareScore_a_OBJECTS)
 am__installdirs = "$(DESTDIR)$(bindir)"
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 PROGRAMS = $(bin_PROGRAMS)
 am_prot_lig_score_OBJECTS = $(am__objects_1) prot_lig_score.$(OBJEXT)
 prot_lig_score_OBJECTS = $(am_prot_lig_score_OBJECTS)
 am__DEPENDENCIES_1 =
-prot_lig_score_DEPENDENCIES = ../sitemap/libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a $(am__DEPENDENCIES_1)
+prot_lig_score_DEPENDENCIES = ../sitemap/libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a $(am__DEPENDENCIES_1)
 DEFAULT_INCLUDES = -I. -I$(srcdir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -75,9 +75,9 @@ LTCXXCOMPILE = $(LIBTOOL) --tag=CXX --mode=compile $(CXX) $(DEFS) \
 CXXLD = $(CXX)
 CXXLINK = $(LIBTOOL) --tag=CXX --mode=link $(CXXLD) $(AM_CXXFLAGS) \
 	$(CXXFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
-SOURCES = $(libASCbaseSoftwareScore_a_SOURCES) \
+SOURCES = $(libSimSite3DSoftwareScore_a_SOURCES) \
 	$(prot_lig_score_SOURCES)
-DIST_SOURCES = $(libASCbaseSoftwareScore_a_SOURCES) \
+DIST_SOURCES = $(libSimSite3DSoftwareScore_a_SOURCES) \
 	$(prot_lig_score_SOURCES)
 ETAGS = etags
 CTAGS = ctags
@@ -185,12 +185,12 @@ sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@
 target_alias = @target_alias@
 INCLUDES = -I../utils -I../sitemap -I.
-noinst_LIBRARIES = libASCbaseSoftwareScore.a
+noinst_LIBRARIES = libSimSite3DSoftwareScore.a
 SCORE_SRCS = ProtLigScoreParameters.C ProtLigScore.C ProtLigActTable.C 
-libASCbaseSoftwareScore_a_SOURCES = $(SCORE_SRCS) 
+libSimSite3DSoftwareScore_a_SOURCES = $(SCORE_SRCS) 
 prot_lig_score_SOURCES = $(SCORE_SRCS) prot_lig_score.C
-prot_lig_score_LDADD = ../sitemap/libASCbaseSoftwareSitemaps.a \
-	../utils/libASCbaseSoftwareUtils.a -lm $(POPT)
+prot_lig_score_LDADD = ../sitemap/libSimSite3DSoftwareSitemaps.a \
+	../utils/libSimSite3DSoftwareUtils.a -lm $(POPT)
 
 all: all-am
 
@@ -228,10 +228,10 @@ $(ACLOCAL_M4):  $(am__aclocal_m4_deps)
 
 clean-noinstLIBRARIES:
 	-test -z "$(noinst_LIBRARIES)" || rm -f $(noinst_LIBRARIES)
-libASCbaseSoftwareScore.a: $(libASCbaseSoftwareScore_a_OBJECTS) $(libASCbaseSoftwareScore_a_DEPENDENCIES) 
-	-rm -f libASCbaseSoftwareScore.a
-	$(libASCbaseSoftwareScore_a_AR) libASCbaseSoftwareScore.a $(libASCbaseSoftwareScore_a_OBJECTS) $(libASCbaseSoftwareScore_a_LIBADD)
-	$(RANLIB) libASCbaseSoftwareScore.a
+libSimSite3DSoftwareScore.a: $(libSimSite3DSoftwareScore_a_OBJECTS) $(libSimSite3DSoftwareScore_a_DEPENDENCIES) 
+	-rm -f libSimSite3DSoftwareScore.a
+	$(libSimSite3DSoftwareScore_a_AR) libSimSite3DSoftwareScore.a $(libSimSite3DSoftwareScore_a_OBJECTS) $(libSimSite3DSoftwareScore_a_LIBADD)
+	$(RANLIB) libSimSite3DSoftwareScore.a
 install-binPROGRAMS: $(bin_PROGRAMS)
 	@$(NORMAL_INSTALL)
 	test -z "$(bindir)" || $(mkdir_p) "$(DESTDIR)$(bindir)"

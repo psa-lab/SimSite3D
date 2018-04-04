@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -41,11 +41,11 @@
 
 #include <ExternalScoringFunction.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
   //! Wrapper and parser for the external scoring functions in SFCscore
-  /*! This is a hack to get SFCscore to work with ASCbase.  At present, running
-   * with a specified weight file is not supported (by ASCbase; i.e. this class)
+  /*! This is a hack to get SFCscore to work with SimSite3D.  At present, running
+   * with a specified weight file is not supported (by SimSite3D; i.e. this class)
    */
   class SFCscoreInterface : public ExternalScoringFunction{
   public:
@@ -89,7 +89,7 @@ namespace ASCbase{
      *
      * @param spf_fname Path to the .spf file--typically specified in the 
      *        options field of
-     *        the ASCbaseSoftParams/external_scoring_functions.txt file
+     *        the SimSite3DSoftParams/external_scoring_functions.txt file
      * @return True if the .spf file was opened for reading, otherwise false
      */
     bool get_scoring_functions(std::string spf_fname);

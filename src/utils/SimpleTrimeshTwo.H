@@ -5,7 +5,7 @@
 #include <dir_point_storage.H>
 
 
-namespace ASCbase{
+namespace SimSite3D{
 namespace geometry{
 
 //! Simple surface class built to contain basic features of a triangle mesh
@@ -297,5 +297,5 @@ private:
   
 };
 } // end namespace geometry
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

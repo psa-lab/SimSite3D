@@ -6,7 +6,7 @@
 #include <mol2File.H>
 #include <HbondGeometry.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! Compute orientation and affinity scores between protein atoms and ligand
 //! atoms.  Note: because the protein and ligand are required for scoring but
@@ -89,7 +89,7 @@ public:
   report_scores(std::ostream &out, char delim = '|');
 
   //! Generate the ligand atoms' interaction strings
-  /*! This function is public to support the ASCbasePy interface
+  /*! This function is public to support the SimSite3DPy interface
    */
   void
   gen_lig_act_strings(const char field_delim = '|', 
@@ -130,7 +130,7 @@ public:
     return A_lig->name();
   }
 
-  //! Added for ASCbasePy interface -- why compute it in python when it is 
+  //! Added for SimSite3DPy interface -- why compute it in python when it is 
   //! already computed and debugged in C++
   std::vector<std::string>::const_iterator
   lig_act_strings_begin()
@@ -139,7 +139,7 @@ public:
     return A_lig_act_strings.begin(); 
   }  
 
-  //! Added for ASCbasePy interface -- why compute it in python when it is 
+  //! Added for SimSite3DPy interface -- why compute it in python when it is 
   //! already computed and debugged in C++
   std::vector<std::string>::const_iterator
   lig_act_strings_end()
@@ -211,5 +211,5 @@ private:
   static const my_float_t AFFI_64_WEIGHTS[];
   static const my_float_t ORIENT_99_WEIGHTS[];
 };
-} // end of namespace ASCbase
+} // end of namespace SimSite3D
 #endif

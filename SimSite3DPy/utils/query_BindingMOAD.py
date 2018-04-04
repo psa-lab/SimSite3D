@@ -8,7 +8,7 @@
 
 import os
 import sys
-from ASCbasePy.utils import pdb
+from SimSite3DPy.utils import pdb
 
 ################################################################################
 class PDBsum_entry:

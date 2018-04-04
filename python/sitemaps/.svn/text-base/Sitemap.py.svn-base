@@ -1,5 +1,5 @@
 from numpy import *
-from ASCbasePy.sitemaps._Sitemap import *
+from SimSite3DPy.sitemaps._Sitemap import *
 import cPickle
 from os import path
 

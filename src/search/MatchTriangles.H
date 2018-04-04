@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -24,7 +24,7 @@
 #include <ScoreMapBase.H>
 #include <hash_class.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! Registration of sitemaps based on close 3 point alignments
 //class MatchTriangles : public InitialAlignmentsBase{
@@ -242,5 +242,5 @@ private:
                 bucket_vci *bucket_begin, bucket_vci *bucket_end);
 
 };
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

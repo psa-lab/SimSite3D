@@ -1,5 +1,5 @@
-\section{ASCbase::PDB\_\-metals Class Reference}
-\label{classASCbase_1_1PDB__metals}\index{ASCbase::PDB_metals@{ASCbase::PDB\_\-metals}}
+\section{SimSite3D::PDB\_\-metals Class Reference}
+\label{classSimSite3D_1_1PDB__metals}\index{SimSite3D::PDB_metals@{SimSite3D::PDB\_\-metals}}
 Simple class to facilitate lookup of metals using 4 char PDB metal names.  
 
 
@@ -15,36 +15,36 @@ static const \bf{pdb\_\-metal\_\-info\_\-t} $\ast$ \bf{lookup} (const atom\_\-ty
 \subsection*{Static Public Attributes}
 \begin{CompactItemize}
 \item 
-static const my\_\-float\_\-t \textbf{MAX\_\-METAL\_\-1\_\-SQUARED\_\-LENGTH} = 2.9 $\ast$ 2.9\label{classASCbase_1_1PDB__metals_ccfed2ea9c7249c7a3c8c2f9b6a896fe}
+static const my\_\-float\_\-t \textbf{MAX\_\-METAL\_\-1\_\-SQUARED\_\-LENGTH} = 2.9 $\ast$ 2.9\label{classSimSite3D_1_1PDB__metals_ccfed2ea9c7249c7a3c8c2f9b6a896fe}
 
 \item 
-static const my\_\-float\_\-t \textbf{MAX\_\-METAL\_\-2\_\-SQUARED\_\-LENGTH} = 2.6 $\ast$ 2.6\label{classASCbase_1_1PDB__metals_41d57fb651b1afe0b2bdb68a51ff5642}
+static const my\_\-float\_\-t \textbf{MAX\_\-METAL\_\-2\_\-SQUARED\_\-LENGTH} = 2.6 $\ast$ 2.6\label{classSimSite3D_1_1PDB__metals_41d57fb651b1afe0b2bdb68a51ff5642}
 
 \item 
-static const my\_\-float\_\-t \textbf{MIN\_\-METAL\_\-1\_\-SQUARED\_\-LENGTH} = 2.0 $\ast$ 2.0\label{classASCbase_1_1PDB__metals_085856c7568fa2d9d9c2ef26fe41df1f}
+static const my\_\-float\_\-t \textbf{MIN\_\-METAL\_\-1\_\-SQUARED\_\-LENGTH} = 2.0 $\ast$ 2.0\label{classSimSite3D_1_1PDB__metals_085856c7568fa2d9d9c2ef26fe41df1f}
 
 \item 
-static const my\_\-float\_\-t \textbf{MIN\_\-METAL\_\-2\_\-SQUARED\_\-LENGTH} = 1.7 $\ast$ 1.7\label{classASCbase_1_1PDB__metals_d83053987cd3dedfc2dd399d6aa8881c}
+static const my\_\-float\_\-t \textbf{MIN\_\-METAL\_\-2\_\-SQUARED\_\-LENGTH} = 1.7 $\ast$ 1.7\label{classSimSite3D_1_1PDB__metals_d83053987cd3dedfc2dd399d6aa8881c}
 
 \end{CompactItemize}
 \subsection*{Static Private Member Functions}
 \begin{CompactItemize}
 \item 
-static void \textbf{set\_\-metal\_\-res\_\-names} ()\label{classASCbase_1_1PDB__metals_4ffdb3ab19bc7e0cada024aad6a67e4f}
+static void \textbf{set\_\-metal\_\-res\_\-names} ()\label{classSimSite3D_1_1PDB__metals_4ffdb3ab19bc7e0cada024aad6a67e4f}
 
 \end{CompactItemize}
 \subsection*{Static Private Attributes}
 \begin{CompactItemize}
 \item 
-static std::map$<$ atom\_\-type, std::vector$<$ std::string $>$ $>$ \textbf{A\_\-metal\_\-res\_\-names}\label{classASCbase_1_1PDB__metals_fa89d3ce277a4a989980b06aeaacea34}
+static std::map$<$ atom\_\-type, std::vector$<$ std::string $>$ $>$ \textbf{A\_\-metal\_\-res\_\-names}\label{classSimSite3D_1_1PDB__metals_fa89d3ce277a4a989980b06aeaacea34}
 
 \item 
-static const uint \bf{A\_\-metal\_\-array\_\-size} = 11\label{classASCbase_1_1PDB__metals_c28f7415de1f2b6dec44ff26bd6698a1}
+static const uint \bf{A\_\-metal\_\-array\_\-size} = 11\label{classSimSite3D_1_1PDB__metals_c28f7415de1f2b6dec44ff26bd6698a1}
 
 \begin{CompactList}\small\item\em Number of els in metal array. \item\end{CompactList}\item 
 static const \bf{pdb\_\-metal\_\-info\_\-t} \bf{A\_\-metal\_\-array} [$\,$]
 \begin{CompactList}\small\item\em Array holding metal info. \item\end{CompactList}\item 
-static const std::string \bf{A\_\-fname} = \char`\"{}PDB\_\-metals.C\char`\"{}\label{classASCbase_1_1PDB__metals_04a5ba744abde48e1a57da373dd6d1d2}
+static const std::string \bf{A\_\-fname} = \char`\"{}PDB\_\-metals.C\char`\"{}\label{classSimSite3D_1_1PDB__metals_04a5ba744abde48e1a57da373dd6d1d2}
 
 \begin{CompactList}\small\item\em Name of the source file. \item\end{CompactList}\end{CompactItemize}
 
@@ -55,9 +55,9 @@ Simple class to facilitate lookup of metals using 4 char PDB metal names.
 
 
 \subsection{Member Function Documentation}
-\index{ASCbase::PDB_metals@{ASCbase::PDB\_\-metals}!lookup@{lookup}}
-\index{lookup@{lookup}!ASCbase::PDB_metals@{ASCbase::PDB\_\-metals}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const \bf{pdb\_\-metal\_\-info\_\-t} $\ast$ PDB\_\-metals::lookup (const atom\_\-type {\em metal}, metal\_\-warn\_\-type {\em warn\_\-if\_\-unknown} = {\tt WARN\_\-UKNOWN\_\-METALS})\hspace{0.3cm}{\tt  [static]}}\label{classASCbase_1_1PDB__metals_e7a2d62b17ce424ac6a13cac851638bf}
+\index{SimSite3D::PDB_metals@{SimSite3D::PDB\_\-metals}!lookup@{lookup}}
+\index{lookup@{lookup}!SimSite3D::PDB_metals@{SimSite3D::PDB\_\-metals}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const \bf{pdb\_\-metal\_\-info\_\-t} $\ast$ PDB\_\-metals::lookup (const atom\_\-type {\em metal}, metal\_\-warn\_\-type {\em warn\_\-if\_\-unknown} = {\tt WARN\_\-UKNOWN\_\-METALS})\hspace{0.3cm}{\tt  [static]}}\label{classSimSite3D_1_1PDB__metals_e7a2d62b17ce424ac6a13cac851638bf}
 
 
 Look up metal info for the atom\_\-type. 
@@ -71,9 +71,9 @@ NOTE: because of the small number of elements in the table (at this point 9 meta
 \end{Desc}
 \begin{Desc}
 \item[Returns:]Const ptr to metal info struct, otherwise 0 \end{Desc}
-\index{ASCbase::PDB_metals@{ASCbase::PDB\_\-metals}!lookup@{lookup}}
-\index{lookup@{lookup}!ASCbase::PDB_metals@{ASCbase::PDB\_\-metals}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const \bf{pdb\_\-metal\_\-info\_\-t} $\ast$ PDB\_\-metals::lookup (const std::string {\em metal\_\-name}, const std::string {\em metal\_\-res}, metal\_\-warn\_\-type {\em warn\_\-if\_\-unknown} = {\tt WARN\_\-UKNOWN\_\-METALS})\hspace{0.3cm}{\tt  [static]}}\label{classASCbase_1_1PDB__metals_ee311afb288f71f33ef60d4079bcd407}
+\index{SimSite3D::PDB_metals@{SimSite3D::PDB\_\-metals}!lookup@{lookup}}
+\index{lookup@{lookup}!SimSite3D::PDB_metals@{SimSite3D::PDB\_\-metals}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const \bf{pdb\_\-metal\_\-info\_\-t} $\ast$ PDB\_\-metals::lookup (const std::string {\em metal\_\-name}, const std::string {\em metal\_\-res}, metal\_\-warn\_\-type {\em warn\_\-if\_\-unknown} = {\tt WARN\_\-UKNOWN\_\-METALS})\hspace{0.3cm}{\tt  [static]}}\label{classSimSite3D_1_1PDB__metals_ee311afb288f71f33ef60d4079bcd407}
 
 
 Look up metal info for the given 4 char PDB metal name. 
@@ -90,9 +90,9 @@ NOTE: because of the small number of elements in the table (at this point 9 meta
 
 
 \subsection{Member Data Documentation}
-\index{ASCbase::PDB_metals@{ASCbase::PDB\_\-metals}!A_metal_array@{A\_\-metal\_\-array}}
-\index{A_metal_array@{A\_\-metal\_\-array}!ASCbase::PDB_metals@{ASCbase::PDB\_\-metals}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const \bf{pdb\_\-metal\_\-info\_\-t} \bf{PDB\_\-metals::A\_\-metal\_\-array}\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1PDB__metals_c8b5b8eb8f21b989c996ca5be4fb4773}
+\index{SimSite3D::PDB_metals@{SimSite3D::PDB\_\-metals}!A_metal_array@{A\_\-metal\_\-array}}
+\index{A_metal_array@{A\_\-metal\_\-array}!SimSite3D::PDB_metals@{SimSite3D::PDB\_\-metals}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const \bf{pdb\_\-metal\_\-info\_\-t} \bf{PDB\_\-metals::A\_\-metal\_\-array}\hspace{0.3cm}{\tt  [static, private]}}\label{classSimSite3D_1_1PDB__metals_c8b5b8eb8f21b989c996ca5be4fb4773}
 
 
 \textbf{Initial value:}

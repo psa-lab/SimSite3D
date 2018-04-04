@@ -5,7 +5,7 @@
 #include <mat_ops.H>
 #include <SimpleTrimesh.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 const std::string SimpleTrimesh::A_fname = "SimpleTrimesh.C";
 

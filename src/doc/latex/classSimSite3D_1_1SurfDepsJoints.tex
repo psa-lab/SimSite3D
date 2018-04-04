@@ -1,5 +1,5 @@
-\section{ASCbase::Surf\-Deps\-Joints Class Reference}
-\label{classASCbase_1_1SurfDepsJoints}\index{ASCbase::SurfDepsJoints@{ASCbase::SurfDepsJoints}}
+\section{SimSite3D::Surf\-Deps\-Joints Class Reference}
+\label{classSimSite3D_1_1SurfDepsJoints}\index{SimSite3D::SurfDepsJoints@{SimSite3D::SurfDepsJoints}}
 Atoms (joints) and surface vertices that depend on rotatable joints.  
 
 
@@ -8,19 +8,19 @@ Atoms (joints) and surface vertices that depend on rotatable joints.
 \subsection*{Public Types}
 \begin{CompactItemize}
 \item 
-typedef std::map$<$ residue\_\-vci, \bf{pos\_\-dep\_\-on\_\-joints} $>$ \textbf{res\_\-to\_\-verts\_\-map}\label{classASCbase_1_1SurfDepsJoints_316ae96b9db4556ce0244c88f41d680c}
+typedef std::map$<$ residue\_\-vci, \bf{pos\_\-dep\_\-on\_\-joints} $>$ \textbf{res\_\-to\_\-verts\_\-map}\label{classSimSite3D_1_1SurfDepsJoints_316ae96b9db4556ce0244c88f41d680c}
 
 \item 
-typedef res\_\-to\_\-verts\_\-map::iterator \textbf{res\_\-to\_\-verts\_\-mi}\label{classASCbase_1_1SurfDepsJoints_e26b5fed19a3641ad008bfc55772a463}
+typedef res\_\-to\_\-verts\_\-map::iterator \textbf{res\_\-to\_\-verts\_\-mi}\label{classSimSite3D_1_1SurfDepsJoints_e26b5fed19a3641ad008bfc55772a463}
 
 \item 
-typedef res\_\-to\_\-verts\_\-map::const\_\-iterator \textbf{res\_\-to\_\-verts\_\-mci}\label{classASCbase_1_1SurfDepsJoints_f1373f13b08b0cb8aca30efb548dc1a6}
+typedef res\_\-to\_\-verts\_\-map::const\_\-iterator \textbf{res\_\-to\_\-verts\_\-mci}\label{classSimSite3D_1_1SurfDepsJoints_f1373f13b08b0cb8aca30efb548dc1a6}
 
 \item 
-\textbf{JACOBIAN}\label{classASCbase_1_1SurfDepsJoints_560742b76595dd55fccd15bf18b40e607761d353bf420f282da81c11995598a8}
+\textbf{JACOBIAN}\label{classSimSite3D_1_1SurfDepsJoints_560742b76595dd55fccd15bf18b40e607761d353bf420f282da81c11995598a8}
 
 \item 
-\textbf{PINV\_\-JACOBIAN}\label{classASCbase_1_1SurfDepsJoints_560742b76595dd55fccd15bf18b40e60ebfdcae202539532cc482f2ef9a9a969}
+\textbf{PINV\_\-JACOBIAN}\label{classSimSite3D_1_1SurfDepsJoints_560742b76595dd55fccd15bf18b40e60ebfdcae202539532cc482f2ef9a9a969}
 
 \item 
 enum \textbf{mat\_\-type} \{ \textbf{JACOBIAN}, 
@@ -30,74 +30,74 @@ enum \textbf{mat\_\-type} \{ \textbf{JACOBIAN},
 \subsection*{Public Member Functions}
 \begin{CompactItemize}
 \item 
-\textbf{Surf\-Deps\-Joints} (\bf{prot\_\-joint\_\-dep} \&joints, \bf{PDBStructure} $\ast$prot, geometry::Transformable\-Trimesh $\ast$surf, Model\-Hbond\-Surfaces $\ast$hbond\_\-surfaces, \bf{Hbond\-Points} $\ast$hbond\_\-pts)\label{classASCbase_1_1SurfDepsJoints_5680f50b97eca320f525ae90985747a3}
+\textbf{Surf\-Deps\-Joints} (\bf{prot\_\-joint\_\-dep} \&joints, \bf{PDBStructure} $\ast$prot, geometry::Transformable\-Trimesh $\ast$surf, Model\-Hbond\-Surfaces $\ast$hbond\_\-surfaces, \bf{Hbond\-Points} $\ast$hbond\_\-pts)\label{classSimSite3D_1_1SurfDepsJoints_5680f50b97eca320f525ae90985747a3}
 
 \item 
-void \bf{compute\_\-dihedrals\_\-and\_\-verts\_\-J} ()\label{classASCbase_1_1SurfDepsJoints_139426fae21dbc20a3a6a3c7dbf8c54c}
+void \bf{compute\_\-dihedrals\_\-and\_\-verts\_\-J} ()\label{classSimSite3D_1_1SurfDepsJoints_139426fae21dbc20a3a6a3c7dbf8c54c}
 
 \begin{CompactList}\small\item\em Jacobian that give dependence of joint angles on small motions of vertices. \item\end{CompactList}\item 
-void \textbf{compute\_\-JJtranspose} ()\label{classASCbase_1_1SurfDepsJoints_298d0fc1edb2ddc1efcdd1f2b36f3443}
+void \textbf{compute\_\-JJtranspose} ()\label{classSimSite3D_1_1SurfDepsJoints_298d0fc1edb2ddc1efcdd1f2b36f3443}
 
 \item 
-void \textbf{update\_\-positions} (const my\_\-float\_\-t $\ast$delta\_\-q)\label{classASCbase_1_1SurfDepsJoints_dfc64104fc3c39a3aff447e134e12cda}
+void \textbf{update\_\-positions} (const my\_\-float\_\-t $\ast$delta\_\-q)\label{classSimSite3D_1_1SurfDepsJoints_dfc64104fc3c39a3aff447e134e12cda}
 
 \item 
-void \textbf{compute\_\-pinv\-J\_\-transpose} ()\label{classASCbase_1_1SurfDepsJoints_30880bb61a44aecad9d100c59fbe115d}
+void \textbf{compute\_\-pinv\-J\_\-transpose} ()\label{classSimSite3D_1_1SurfDepsJoints_30880bb61a44aecad9d100c59fbe115d}
 
 \item 
-void \textbf{write\_\-point\_\-correspondences} (std::ostream \&out) const \label{classASCbase_1_1SurfDepsJoints_8c2e24181fcea5568c6ffbd1857ae43a}
+void \textbf{write\_\-point\_\-correspondences} (std::ostream \&out) const \label{classSimSite3D_1_1SurfDepsJoints_8c2e24181fcea5568c6ffbd1857ae43a}
 
 \item 
-void \bf{compute\_\-dihedral\_\-angles} (std::vector$<$ std::vector$<$ my\_\-float\_\-t $>$ $>$ $\ast$angles) const \label{classASCbase_1_1SurfDepsJoints_bc4a01295624d2f5bcad3ec57773df94}
+void \bf{compute\_\-dihedral\_\-angles} (std::vector$<$ std::vector$<$ my\_\-float\_\-t $>$ $>$ $\ast$angles) const \label{classSimSite3D_1_1SurfDepsJoints_bc4a01295624d2f5bcad3ec57773df94}
 
 \begin{CompactList}\small\item\em Compute the dihedral angles for those sidechains that are not fixed. \item\end{CompactList}\item 
 void \bf{apply\_\-verts\_\-pinv\-J\_\-to\_\-grad} (const my\_\-float\_\-t $\ast$grad\_\-F, my\_\-float\_\-t $\ast$Q)
 \begin{CompactList}\small\item\em Wrapper to compute\_\-portion\_\-pinv\-Jtrans\_\-times\_\-grad for vertices. \item\end{CompactList}\item 
 void \bf{apply\_\-hbond\_\-pts\_\-pinv\-J\_\-to\_\-grad} (const my\_\-float\_\-t $\ast$grad\_\-F, my\_\-float\_\-t $\ast$Q)
 \begin{CompactList}\small\item\em Wrapper to compute\_\-portion\_\-pinv\-Jtrans\_\-times\_\-grad for hbond cap pts. \item\end{CompactList}\item 
-void \bf{apply\_\-atoms\_\-pinv\-J\_\-to\_\-grad} (const my\_\-float\_\-t $\ast$grad\_\-F, my\_\-float\_\-t $\ast$Q, const std::vector$<$ bool $>$ \&overlap\_\-vec)\label{classASCbase_1_1SurfDepsJoints_140826a670991bf10bcd607446b279ff}
+void \bf{apply\_\-atoms\_\-pinv\-J\_\-to\_\-grad} (const my\_\-float\_\-t $\ast$grad\_\-F, my\_\-float\_\-t $\ast$Q, const std::vector$<$ bool $>$ \&overlap\_\-vec)\label{classSimSite3D_1_1SurfDepsJoints_140826a670991bf10bcd607446b279ff}
 
 \begin{CompactList}\small\item\em Averaging method to handle overlapping atoms. \item\end{CompactList}\item 
-const int \bf{nrows\_\-J} () const \label{classASCbase_1_1SurfDepsJoints_36b6e55f8699306d664f21a252a5ba56}
+const int \bf{nrows\_\-J} () const \label{classSimSite3D_1_1SurfDepsJoints_36b6e55f8699306d664f21a252a5ba56}
 
 \begin{CompactList}\small\item\em Get the number of rows in the Jacobian. \item\end{CompactList}\item 
-const int \bf{ncols\_\-J} () const \label{classASCbase_1_1SurfDepsJoints_504ff6d5d3a85c29b7991cb632ddc5f5}
+const int \bf{ncols\_\-J} () const \label{classSimSite3D_1_1SurfDepsJoints_504ff6d5d3a85c29b7991cb632ddc5f5}
 
 \begin{CompactList}\small\item\em Get the number of columns in the Jacobian. \item\end{CompactList}\item 
-const int \bf{num\_\-atom\_\-cols\_\-J} () const \label{classASCbase_1_1SurfDepsJoints_dee28e63c09450b55c560d03571f2bdd}
+const int \bf{num\_\-atom\_\-cols\_\-J} () const \label{classSimSite3D_1_1SurfDepsJoints_dee28e63c09450b55c560d03571f2bdd}
 
 \begin{CompactList}\small\item\em Get the number of atom columns in the Jacobian. \item\end{CompactList}\item 
-const int \bf{num\_\-vert\_\-cols\_\-J} () const \label{classASCbase_1_1SurfDepsJoints_49f30238fa55e02769664cd40711d808}
+const int \bf{num\_\-vert\_\-cols\_\-J} () const \label{classSimSite3D_1_1SurfDepsJoints_49f30238fa55e02769664cd40711d808}
 
 \begin{CompactList}\small\item\em Get the number of vertex columns in the Jacobian. \item\end{CompactList}\item 
-const int \bf{num\_\-hbond\_\-pts\_\-cols\_\-J} () const \label{classASCbase_1_1SurfDepsJoints_141fb2d323750c0095da41cfbe229a00}
+const int \bf{num\_\-hbond\_\-pts\_\-cols\_\-J} () const \label{classSimSite3D_1_1SurfDepsJoints_141fb2d323750c0095da41cfbe229a00}
 
 \begin{CompactList}\small\item\em Get the number of hbond pts columns in the Jacobian. \item\end{CompactList}\item 
-res\_\-to\_\-verts\_\-mci \textbf{atoms\_\-dep\_\-on\_\-joints\_\-begin} () const \label{classASCbase_1_1SurfDepsJoints_3ef79398935691313fbeaf244312799e}
+res\_\-to\_\-verts\_\-mci \textbf{atoms\_\-dep\_\-on\_\-joints\_\-begin} () const \label{classSimSite3D_1_1SurfDepsJoints_3ef79398935691313fbeaf244312799e}
 
 \item 
-res\_\-to\_\-verts\_\-mci \textbf{atoms\_\-dep\_\-on\_\-joints\_\-end} () const \label{classASCbase_1_1SurfDepsJoints_d0c0a6c1b4ac65bbf3aab788d3443d49}
+res\_\-to\_\-verts\_\-mci \textbf{atoms\_\-dep\_\-on\_\-joints\_\-end} () const \label{classSimSite3D_1_1SurfDepsJoints_d0c0a6c1b4ac65bbf3aab788d3443d49}
 
 \item 
-std::vector$<$ int $>$::const\_\-iterator \textbf{vertex\_\-idz\_\-begin} () const \label{classASCbase_1_1SurfDepsJoints_768e2bb28761a73d0e1bd777d9007f37}
+std::vector$<$ int $>$::const\_\-iterator \textbf{vertex\_\-idz\_\-begin} () const \label{classSimSite3D_1_1SurfDepsJoints_768e2bb28761a73d0e1bd777d9007f37}
 
 \item 
-std::vector$<$ int $>$::const\_\-iterator \textbf{vertex\_\-idz\_\-end} () const \label{classASCbase_1_1SurfDepsJoints_8ce7887064ca371dc9a38398ba5c0a81}
+std::vector$<$ int $>$::const\_\-iterator \textbf{vertex\_\-idz\_\-end} () const \label{classSimSite3D_1_1SurfDepsJoints_8ce7887064ca371dc9a38398ba5c0a81}
 
 \item 
-void \textbf{write\_\-mat} (std::ostream \&out, const mat\_\-type type) const \label{classASCbase_1_1SurfDepsJoints_037d0b3d26dc9faef4aab88016b1d6db}
+void \textbf{write\_\-mat} (std::ostream \&out, const mat\_\-type type) const \label{classSimSite3D_1_1SurfDepsJoints_037d0b3d26dc9faef4aab88016b1d6db}
 
 \item 
-bool \textbf{fail} () const \label{classASCbase_1_1SurfDepsJoints_327c4e4641287aca3ad12d74e586a7ed}
+bool \textbf{fail} () const \label{classSimSite3D_1_1SurfDepsJoints_327c4e4641287aca3ad12d74e586a7ed}
 
 \item 
-std::vector$<$ Model\-Hbond\-Surfaces::m\_\-surf\_\-vci $>$::const\_\-iterator \textbf{mobile\_\-cap\_\-iters\_\-begin} () const \label{classASCbase_1_1SurfDepsJoints_cb9132967ed681f304a3aa5483305525}
+std::vector$<$ Model\-Hbond\-Surfaces::m\_\-surf\_\-vci $>$::const\_\-iterator \textbf{mobile\_\-cap\_\-iters\_\-begin} () const \label{classSimSite3D_1_1SurfDepsJoints_cb9132967ed681f304a3aa5483305525}
 
 \item 
-std::vector$<$ Model\-Hbond\-Surfaces::m\_\-surf\_\-vci $>$::const\_\-iterator \textbf{mobile\_\-cap\_\-iters\_\-end} () const \label{classASCbase_1_1SurfDepsJoints_9136b5ac1ff71cdde78a89ab6e5558b4}
+std::vector$<$ Model\-Hbond\-Surfaces::m\_\-surf\_\-vci $>$::const\_\-iterator \textbf{mobile\_\-cap\_\-iters\_\-end} () const \label{classSimSite3D_1_1SurfDepsJoints_9136b5ac1ff71cdde78a89ab6e5558b4}
 
 \item 
-void \textbf{stop\_\-rotation\_\-given\_\-atoms} (const std::vector$<$ bool $>$ \&overlap\_\-vec, std::vector$<$ bool $>$ $\ast$fix\_\-Q)\label{classASCbase_1_1SurfDepsJoints_964260669ca7efa6820247126758b3a9}
+void \textbf{stop\_\-rotation\_\-given\_\-atoms} (const std::vector$<$ bool $>$ \&overlap\_\-vec, std::vector$<$ bool $>$ $\ast$fix\_\-Q)\label{classSimSite3D_1_1SurfDepsJoints_964260669ca7efa6820247126758b3a9}
 
 \item 
 my\_\-float\_\-t \bf{site\_\-atomic\_\-rmsd} (const \bf{PDBStructure} \&dset\_\-prot) const 
@@ -109,82 +109,82 @@ void \bf{add\_\-mol\_\-surf\_\-vertices} (geometry::Transformable\-Trimesh $\ast
 \item 
 void \bf{add\_\-hbond\_\-points} (Model\-Hbond\-Surfaces $\ast$hbond\_\-surfaces, \bf{Hbond\-Points} $\ast$hbond\_\-pts, const \bf{PDBStructure} $\ast$prot)
 \begin{CompactList}\small\item\em Add the points for the hbond groups in the binding site. \item\end{CompactList}\item 
-bool \bf{check\_\-containers} ()\label{classASCbase_1_1SurfDepsJoints_2e5ac87512513806b5415aa008c6a41e}
+bool \bf{check\_\-containers} ()\label{classSimSite3D_1_1SurfDepsJoints_2e5ac87512513806b5415aa008c6a41e}
 
 \begin{CompactList}\small\item\em Check the 3 containers to make sure they have the same residues. \item\end{CompactList}\item 
-void \bf{add\_\-dependent\_\-atoms} (const \bf{PDBStructure} $\ast$prot, residue\_\-vci res)\label{classASCbase_1_1SurfDepsJoints_ab55d5b90278e690ae8607c945a41162}
+void \bf{add\_\-dependent\_\-atoms} (const \bf{PDBStructure} $\ast$prot, residue\_\-vci res)\label{classSimSite3D_1_1SurfDepsJoints_ab55d5b90278e690ae8607c945a41162}
 
 \begin{CompactList}\small\item\em Add the mobile atoms for those residues that can move. \item\end{CompactList}\item 
-bool \bf{determine\_\-pt\_\-dependence} (my\_\-float\_\-t $\ast$pt, const \bf{PDBStructure} $\ast$prot, residue\_\-vci res, atom\_\-vci closest\_\-atom)\label{classASCbase_1_1SurfDepsJoints_7782e94d2a21055c6ea8c528e97daee3}
+bool \bf{determine\_\-pt\_\-dependence} (my\_\-float\_\-t $\ast$pt, const \bf{PDBStructure} $\ast$prot, residue\_\-vci res, atom\_\-vci closest\_\-atom)\label{classSimSite3D_1_1SurfDepsJoints_7782e94d2a21055c6ea8c528e97daee3}
 
 \begin{CompactList}\small\item\em Add dependencies for each surface patch vertex. \item\end{CompactList}\item 
-bool \bf{determine\_\-hbond\_\-dep} (Hbond\-Surfaces$<$ \bf{model\_\-hbond\_\-surf\_\-t} $>$::surfaces\_\-vci cap, const \bf{PDBStructure} $\ast$prot, residue\_\-vci $\ast$res\_\-out)\label{classASCbase_1_1SurfDepsJoints_db588d6797a5dbee35e55722429574cb}
+bool \bf{determine\_\-hbond\_\-dep} (Hbond\-Surfaces$<$ \bf{model\_\-hbond\_\-surf\_\-t} $>$::surfaces\_\-vci cap, const \bf{PDBStructure} $\ast$prot, residue\_\-vci $\ast$res\_\-out)\label{classSimSite3D_1_1SurfDepsJoints_db588d6797a5dbee35e55722429574cb}
 
 \begin{CompactList}\small\item\em Add joint dependencies for the given hbond cap. \item\end{CompactList}\item 
 bool \bf{determine\_\-hbond\_\-dep} (hbond\_\-ideal\_\-pt\_\-vci ideal\_\-pt, const \bf{PDBStructure} $\ast$prot, residue\_\-vci $\ast$res\_\-out)
 \item 
 void \bf{compute\_\-portion\_\-of\_\-J} (res\_\-to\_\-verts\_\-mi pts\_\-begin, res\_\-to\_\-verts\_\-mi pts\_\-end)
 \item 
-void \bf{compute\_\-portion\_\-of\_\-JJtranspose} (res\_\-to\_\-verts\_\-mi pts\_\-begin, res\_\-to\_\-verts\_\-mi pts\_\-end, my\_\-float\_\-t $\ast$JJtrans)\label{classASCbase_1_1SurfDepsJoints_da88391361dff24fca61364a859cf83a}
+void \bf{compute\_\-portion\_\-of\_\-JJtranspose} (res\_\-to\_\-verts\_\-mi pts\_\-begin, res\_\-to\_\-verts\_\-mi pts\_\-end, my\_\-float\_\-t $\ast$JJtrans)\label{classSimSite3D_1_1SurfDepsJoints_da88391361dff24fca61364a859cf83a}
 
 \begin{CompactList}\small\item\em Compute the Jacobian times its transpose for the given iterators. \item\end{CompactList}\item 
-void \textbf{compute\_\-portion\_\-of\_\-pinv\-Jtranspose} (res\_\-to\_\-verts\_\-mi pts\_\-begin, res\_\-to\_\-verts\_\-mi pts\_\-end, my\_\-float\_\-t $\ast$JJtrans\_\-inv)\label{classASCbase_1_1SurfDepsJoints_eced98b340d0308407ec47a3601f3130}
+void \textbf{compute\_\-portion\_\-of\_\-pinv\-Jtranspose} (res\_\-to\_\-verts\_\-mi pts\_\-begin, res\_\-to\_\-verts\_\-mi pts\_\-end, my\_\-float\_\-t $\ast$JJtrans\_\-inv)\label{classSimSite3D_1_1SurfDepsJoints_eced98b340d0308407ec47a3601f3130}
 
 \item 
 void \bf{compute\_\-portion\_\-pinv\-Jtrans\_\-times\_\-grad} (res\_\-to\_\-verts\_\-mi pts\_\-begin, res\_\-to\_\-verts\_\-mi pts\_\-end, const my\_\-float\_\-t $\ast$grad\_\-F, my\_\-float\_\-t $\ast$Q)
 \item 
-void \textbf{write\_\-mat\_\-component} (res\_\-to\_\-verts\_\-mci pts\_\-begin, res\_\-to\_\-verts\_\-mci pts\_\-end, const mat\_\-type type, const std::string name, std::ostream \&out) const \label{classASCbase_1_1SurfDepsJoints_95487bc867c1cb6f6fd003b7c8040d8c}
+void \textbf{write\_\-mat\_\-component} (res\_\-to\_\-verts\_\-mci pts\_\-begin, res\_\-to\_\-verts\_\-mci pts\_\-end, const mat\_\-type type, const std::string name, std::ostream \&out) const \label{classSimSite3D_1_1SurfDepsJoints_95487bc867c1cb6f6fd003b7c8040d8c}
 
 \item 
-void \bf{rotate\_\-points} (\bf{pos\_\-dep\_\-on\_\-joints} $\ast$points, const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$joint\_\-center, const int joint\_\-number)\label{classASCbase_1_1SurfDepsJoints_1d51091baf7a06109b2b1129aa74ef51}
+void \bf{rotate\_\-points} (\bf{pos\_\-dep\_\-on\_\-joints} $\ast$points, const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$joint\_\-center, const int joint\_\-number)\label{classSimSite3D_1_1SurfDepsJoints_1d51091baf7a06109b2b1129aa74ef51}
 
 \begin{CompactList}\small\item\em Rotate the dependent points using R about the axis of the joint. \item\end{CompactList}\item 
-void \bf{init} ()\label{classASCbase_1_1SurfDepsJoints_4cdd546f6c403da0f5417c993a8d780b}
+void \bf{init} ()\label{classSimSite3D_1_1SurfDepsJoints_4cdd546f6c403da0f5417c993a8d780b}
 
 \begin{CompactList}\small\item\em Initialize class variables. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
-bool \textbf{A\_\-have\_\-surf}\label{classASCbase_1_1SurfDepsJoints_3515dd1581f443f45dd4809d0ac47935}
+bool \textbf{A\_\-have\_\-surf}\label{classSimSite3D_1_1SurfDepsJoints_3515dd1581f443f45dd4809d0ac47935}
 
 \item 
-bool \textbf{A\_\-have\_\-hbond\_\-surfs}\label{classASCbase_1_1SurfDepsJoints_459da037b1829e110ac910bcfe0e9dbc}
+bool \textbf{A\_\-have\_\-hbond\_\-surfs}\label{classSimSite3D_1_1SurfDepsJoints_459da037b1829e110ac910bcfe0e9dbc}
 
 \item 
-bool \textbf{A\_\-fail}\label{classASCbase_1_1SurfDepsJoints_8e1af1869bbb14062be507b84e4bdc6f}
+bool \textbf{A\_\-fail}\label{classSimSite3D_1_1SurfDepsJoints_8e1af1869bbb14062be507b84e4bdc6f}
 
 \item 
-\bf{prot\_\-joint\_\-dep} \& \textbf{A\_\-joints}\label{classASCbase_1_1SurfDepsJoints_3e32f0537b15aed5ccea9e14243a8890}
+\bf{prot\_\-joint\_\-dep} \& \textbf{A\_\-joints}\label{classSimSite3D_1_1SurfDepsJoints_3e32f0537b15aed5ccea9e14243a8890}
 
 \item 
-std::vector$<$ int $>$ \textbf{A\_\-vert\_\-idz}\label{classASCbase_1_1SurfDepsJoints_75401efca3702db87fda5af198caf69e}
+std::vector$<$ int $>$ \textbf{A\_\-vert\_\-idz}\label{classSimSite3D_1_1SurfDepsJoints_75401efca3702db87fda5af198caf69e}
 
 \item 
-std::map$<$ residue\_\-vci, \bf{pos\_\-dep\_\-on\_\-joints} $>$ \bf{A\_\-verts\_\-dep\_\-on\_\-joints}\label{classASCbase_1_1SurfDepsJoints_933c101738644962a378fb8cbf6293fe}
+std::map$<$ residue\_\-vci, \bf{pos\_\-dep\_\-on\_\-joints} $>$ \bf{A\_\-verts\_\-dep\_\-on\_\-joints}\label{classSimSite3D_1_1SurfDepsJoints_933c101738644962a378fb8cbf6293fe}
 
 \begin{CompactList}\small\item\em Mobile molecular surface vertices. \item\end{CompactList}\item 
-std::map$<$ residue\_\-vci, \bf{pos\_\-dep\_\-on\_\-joints} $>$ \bf{A\_\-atoms\_\-dep\_\-on\_\-joints}\label{classASCbase_1_1SurfDepsJoints_1505598190c319911892331ea8938359}
+std::map$<$ residue\_\-vci, \bf{pos\_\-dep\_\-on\_\-joints} $>$ \bf{A\_\-atoms\_\-dep\_\-on\_\-joints}\label{classSimSite3D_1_1SurfDepsJoints_1505598190c319911892331ea8938359}
 
 \begin{CompactList}\small\item\em Mobile protein atoms. \item\end{CompactList}\item 
-std::map$<$ residue\_\-vci, \bf{pos\_\-dep\_\-on\_\-joints} $>$ \bf{A\_\-hbond\_\-pts\_\-dep\_\-on\_\-joints}\label{classASCbase_1_1SurfDepsJoints_f73da4e07548a3bc9c43ac05a22c5c45}
+std::map$<$ residue\_\-vci, \bf{pos\_\-dep\_\-on\_\-joints} $>$ \bf{A\_\-hbond\_\-pts\_\-dep\_\-on\_\-joints}\label{classSimSite3D_1_1SurfDepsJoints_f73da4e07548a3bc9c43ac05a22c5c45}
 
-\begin{CompactList}\small\item\em Mobile hydrogen bond points (either from \doxyref{Hbond\-Points}{p.}{classASCbase_1_1HbondPoints} or Hbond\-Surfaces). \item\end{CompactList}\item 
-std::vector$<$ Model\-Hbond\-Surfaces::m\_\-surf\_\-vci $>$ \textbf{A\_\-mobile\_\-caps}\label{classASCbase_1_1SurfDepsJoints_ee798f376187502fce17ae15c1530a90}
+\begin{CompactList}\small\item\em Mobile hydrogen bond points (either from \doxyref{Hbond\-Points}{p.}{classSimSite3D_1_1HbondPoints} or Hbond\-Surfaces). \item\end{CompactList}\item 
+std::vector$<$ Model\-Hbond\-Surfaces::m\_\-surf\_\-vci $>$ \textbf{A\_\-mobile\_\-caps}\label{classSimSite3D_1_1SurfDepsJoints_ee798f376187502fce17ae15c1530a90}
 
 \item 
-std::map$<$ residue\_\-vci, bool $>$ \bf{A\_\-site\_\-residues}\label{classASCbase_1_1SurfDepsJoints_55c02394f1ff0c70089c654aecbaf204}
+std::map$<$ residue\_\-vci, bool $>$ \bf{A\_\-site\_\-residues}\label{classSimSite3D_1_1SurfDepsJoints_55c02394f1ff0c70089c654aecbaf204}
 
 \begin{CompactList}\small\item\em Used in testing Art\-Surf binding site atomic RMSD. \item\end{CompactList}\item 
-int \bf{A\_\-J\_\-nrows}\label{classASCbase_1_1SurfDepsJoints_a766d13c11a97f98c38185459a05fde4}
+int \bf{A\_\-J\_\-nrows}\label{classSimSite3D_1_1SurfDepsJoints_a766d13c11a97f98c38185459a05fde4}
 
 \begin{CompactList}\small\item\em Number of rows in the full Jacobian. \item\end{CompactList}\item 
-int \textbf{A\_\-J\_\-ncols}\label{classASCbase_1_1SurfDepsJoints_5c97058a99a82e417d13702ac1c6ea11}
+int \textbf{A\_\-J\_\-ncols}\label{classSimSite3D_1_1SurfDepsJoints_5c97058a99a82e417d13702ac1c6ea11}
 
 \item 
-int \textbf{A\_\-J\_\-cols\_\-in\_\-blocks} [3]\label{classASCbase_1_1SurfDepsJoints_485965d3c8d1774c9ec19326376350b2}
+int \textbf{A\_\-J\_\-cols\_\-in\_\-blocks} [3]\label{classSimSite3D_1_1SurfDepsJoints_485965d3c8d1774c9ec19326376350b2}
 
 \item 
-my\_\-float\_\-t $\ast$ \bf{A\_\-JJtranspose}\label{classASCbase_1_1SurfDepsJoints_08fbd7f761c675819074b12cebc2546b}
+my\_\-float\_\-t $\ast$ \bf{A\_\-JJtranspose}\label{classSimSite3D_1_1SurfDepsJoints_08fbd7f761c675819074b12cebc2546b}
 
 \begin{CompactList}\small\item\em Work space variable -- do not use ouside of class. \item\end{CompactList}\end{CompactItemize}
 
@@ -195,59 +195,59 @@ Atoms (joints) and surface vertices that depend on rotatable joints.
 
 
 \subsection{Member Function Documentation}
-\index{ASCbase::SurfDepsJoints@{ASCbase::Surf\-Deps\-Joints}!add_hbond_points@{add\_\-hbond\_\-points}}
-\index{add_hbond_points@{add\_\-hbond\_\-points}!ASCbase::SurfDepsJoints@{ASCbase::Surf\-Deps\-Joints}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Surf\-Deps\-Joints::add\_\-hbond\_\-points (Model\-Hbond\-Surfaces $\ast$ {\em hbond\_\-surfaces}, \bf{Hbond\-Points} $\ast$ {\em hbond\_\-pts}, const \bf{PDBStructure} $\ast$ {\em prot})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1SurfDepsJoints_64cae8b3b33bc5f0720b2fd0ece30b92}
+\index{SimSite3D::SurfDepsJoints@{SimSite3D::Surf\-Deps\-Joints}!add_hbond_points@{add\_\-hbond\_\-points}}
+\index{add_hbond_points@{add\_\-hbond\_\-points}!SimSite3D::SurfDepsJoints@{SimSite3D::Surf\-Deps\-Joints}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Surf\-Deps\-Joints::add\_\-hbond\_\-points (Model\-Hbond\-Surfaces $\ast$ {\em hbond\_\-surfaces}, \bf{Hbond\-Points} $\ast$ {\em hbond\_\-pts}, const \bf{PDBStructure} $\ast$ {\em prot})\hspace{0.3cm}{\tt  [private]}}\label{classSimSite3D_1_1SurfDepsJoints_64cae8b3b33bc5f0720b2fd0ece30b92}
 
 
 Add the points for the hbond groups in the binding site. 
 
 If hbond\_\-surfaces is not null, use the given hbond\_\-surfaces, otherwise use the hbond points.
 
-NOTE: hbond\_\-surfaces will be used to move side chains, hbond\_\-pts are NOT used to move sidechains but will \char`\"{}go along for the ride\char`\"{} if hbond\_\-surfaces are not used. \index{ASCbase::SurfDepsJoints@{ASCbase::Surf\-Deps\-Joints}!add_mol_surf_vertices@{add\_\-mol\_\-surf\_\-vertices}}
-\index{add_mol_surf_vertices@{add\_\-mol\_\-surf\_\-vertices}!ASCbase::SurfDepsJoints@{ASCbase::Surf\-Deps\-Joints}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Surf\-Deps\-Joints::add\_\-mol\_\-surf\_\-vertices (geometry::Transformable\-Trimesh $\ast$ {\em surf}, \bf{PDBStructure} $\ast$ {\em prot})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1SurfDepsJoints_6486c83e3b26177a18146ff3c02fd99e}
+NOTE: hbond\_\-surfaces will be used to move side chains, hbond\_\-pts are NOT used to move sidechains but will \char`\"{}go along for the ride\char`\"{} if hbond\_\-surfaces are not used. \index{SimSite3D::SurfDepsJoints@{SimSite3D::Surf\-Deps\-Joints}!add_mol_surf_vertices@{add\_\-mol\_\-surf\_\-vertices}}
+\index{add_mol_surf_vertices@{add\_\-mol\_\-surf\_\-vertices}!SimSite3D::SurfDepsJoints@{SimSite3D::Surf\-Deps\-Joints}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Surf\-Deps\-Joints::add\_\-mol\_\-surf\_\-vertices (geometry::Transformable\-Trimesh $\ast$ {\em surf}, \bf{PDBStructure} $\ast$ {\em prot})\hspace{0.3cm}{\tt  [private]}}\label{classSimSite3D_1_1SurfDepsJoints_6486c83e3b26177a18146ff3c02fd99e}
 
 
-Add the vertices for the given molecular surface to the points that can move \index{ASCbase::SurfDepsJoints@{ASCbase::Surf\-Deps\-Joints}!apply_hbond_pts_pinvJ_to_grad@{apply\_\-hbond\_\-pts\_\-pinvJ\_\-to\_\-grad}}
-\index{apply_hbond_pts_pinvJ_to_grad@{apply\_\-hbond\_\-pts\_\-pinvJ\_\-to\_\-grad}!ASCbase::SurfDepsJoints@{ASCbase::Surf\-Deps\-Joints}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ASCbase::Surf\-Deps\-Joints::apply\_\-hbond\_\-pts\_\-pinv\-J\_\-to\_\-grad (const my\_\-float\_\-t $\ast$ {\em grad\_\-F}, my\_\-float\_\-t $\ast$ {\em Q})\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1SurfDepsJoints_a7f58f0be3da964c49b2cbfbceff3fe9}
+Add the vertices for the given molecular surface to the points that can move \index{SimSite3D::SurfDepsJoints@{SimSite3D::Surf\-Deps\-Joints}!apply_hbond_pts_pinvJ_to_grad@{apply\_\-hbond\_\-pts\_\-pinvJ\_\-to\_\-grad}}
+\index{apply_hbond_pts_pinvJ_to_grad@{apply\_\-hbond\_\-pts\_\-pinvJ\_\-to\_\-grad}!SimSite3D::SurfDepsJoints@{SimSite3D::Surf\-Deps\-Joints}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void SimSite3D::Surf\-Deps\-Joints::apply\_\-hbond\_\-pts\_\-pinv\-J\_\-to\_\-grad (const my\_\-float\_\-t $\ast$ {\em grad\_\-F}, my\_\-float\_\-t $\ast$ {\em Q})\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1SurfDepsJoints_a7f58f0be3da964c49b2cbfbceff3fe9}
 
 
 Wrapper to compute\_\-portion\_\-pinv\-Jtrans\_\-times\_\-grad for hbond cap pts. 
 
-Assumptions: len(grad\_\-F) $>$= 3$\ast$(A\_\-J\_\-cols\_\-in\_\-blocks[1]) len(Q) $>$= A\_\-J\_\-nrows \index{ASCbase::SurfDepsJoints@{ASCbase::Surf\-Deps\-Joints}!apply_verts_pinvJ_to_grad@{apply\_\-verts\_\-pinvJ\_\-to\_\-grad}}
-\index{apply_verts_pinvJ_to_grad@{apply\_\-verts\_\-pinvJ\_\-to\_\-grad}!ASCbase::SurfDepsJoints@{ASCbase::Surf\-Deps\-Joints}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ASCbase::Surf\-Deps\-Joints::apply\_\-verts\_\-pinv\-J\_\-to\_\-grad (const my\_\-float\_\-t $\ast$ {\em grad\_\-F}, my\_\-float\_\-t $\ast$ {\em Q})\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1SurfDepsJoints_ce7a325c8a075b2b7e22e35dfea71fb0}
+Assumptions: len(grad\_\-F) $>$= 3$\ast$(A\_\-J\_\-cols\_\-in\_\-blocks[1]) len(Q) $>$= A\_\-J\_\-nrows \index{SimSite3D::SurfDepsJoints@{SimSite3D::Surf\-Deps\-Joints}!apply_verts_pinvJ_to_grad@{apply\_\-verts\_\-pinvJ\_\-to\_\-grad}}
+\index{apply_verts_pinvJ_to_grad@{apply\_\-verts\_\-pinvJ\_\-to\_\-grad}!SimSite3D::SurfDepsJoints@{SimSite3D::Surf\-Deps\-Joints}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void SimSite3D::Surf\-Deps\-Joints::apply\_\-verts\_\-pinv\-J\_\-to\_\-grad (const my\_\-float\_\-t $\ast$ {\em grad\_\-F}, my\_\-float\_\-t $\ast$ {\em Q})\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1SurfDepsJoints_ce7a325c8a075b2b7e22e35dfea71fb0}
 
 
 Wrapper to compute\_\-portion\_\-pinv\-Jtrans\_\-times\_\-grad for vertices. 
 
-Assumptions: len(grad\_\-F) $>$= 3$\ast$(A\_\-J\_\-cols\_\-in\_\-blocks[0]) len(Q) $>$= A\_\-J\_\-nrows \index{ASCbase::SurfDepsJoints@{ASCbase::Surf\-Deps\-Joints}!compute_portion_of_J@{compute\_\-portion\_\-of\_\-J}}
-\index{compute_portion_of_J@{compute\_\-portion\_\-of\_\-J}!ASCbase::SurfDepsJoints@{ASCbase::Surf\-Deps\-Joints}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Surf\-Deps\-Joints::compute\_\-portion\_\-of\_\-J (res\_\-to\_\-verts\_\-mi {\em pts\_\-begin}, res\_\-to\_\-verts\_\-mi {\em pts\_\-end})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1SurfDepsJoints_79bc9ba45d611ddd45a01d0c99e19e24}
+Assumptions: len(grad\_\-F) $>$= 3$\ast$(A\_\-J\_\-cols\_\-in\_\-blocks[0]) len(Q) $>$= A\_\-J\_\-nrows \index{SimSite3D::SurfDepsJoints@{SimSite3D::Surf\-Deps\-Joints}!compute_portion_of_J@{compute\_\-portion\_\-of\_\-J}}
+\index{compute_portion_of_J@{compute\_\-portion\_\-of\_\-J}!SimSite3D::SurfDepsJoints@{SimSite3D::Surf\-Deps\-Joints}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Surf\-Deps\-Joints::compute\_\-portion\_\-of\_\-J (res\_\-to\_\-verts\_\-mi {\em pts\_\-begin}, res\_\-to\_\-verts\_\-mi {\em pts\_\-end})\hspace{0.3cm}{\tt  [private]}}\label{classSimSite3D_1_1SurfDepsJoints_79bc9ba45d611ddd45a01d0c99e19e24}
 
 
-Compute the large portion of the Jacobian that pertains to the given map \index{ASCbase::SurfDepsJoints@{ASCbase::Surf\-Deps\-Joints}!compute_portion_pinvJtrans_times_grad@{compute\_\-portion\_\-pinvJtrans\_\-times\_\-grad}}
-\index{compute_portion_pinvJtrans_times_grad@{compute\_\-portion\_\-pinvJtrans\_\-times\_\-grad}!ASCbase::SurfDepsJoints@{ASCbase::Surf\-Deps\-Joints}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Surf\-Deps\-Joints::compute\_\-portion\_\-pinv\-Jtrans\_\-times\_\-grad (res\_\-to\_\-verts\_\-mi {\em pts\_\-begin}, res\_\-to\_\-verts\_\-mi {\em pts\_\-end}, const my\_\-float\_\-t $\ast$ {\em grad\_\-F}, my\_\-float\_\-t $\ast$ {\em Q})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1SurfDepsJoints_0b743cae3eca94b42f4f182358c524f1}
+Compute the large portion of the Jacobian that pertains to the given map \index{SimSite3D::SurfDepsJoints@{SimSite3D::Surf\-Deps\-Joints}!compute_portion_pinvJtrans_times_grad@{compute\_\-portion\_\-pinvJtrans\_\-times\_\-grad}}
+\index{compute_portion_pinvJtrans_times_grad@{compute\_\-portion\_\-pinvJtrans\_\-times\_\-grad}!SimSite3D::SurfDepsJoints@{SimSite3D::Surf\-Deps\-Joints}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Surf\-Deps\-Joints::compute\_\-portion\_\-pinv\-Jtrans\_\-times\_\-grad (res\_\-to\_\-verts\_\-mi {\em pts\_\-begin}, res\_\-to\_\-verts\_\-mi {\em pts\_\-end}, const my\_\-float\_\-t $\ast$ {\em grad\_\-F}, my\_\-float\_\-t $\ast$ {\em Q})\hspace{0.3cm}{\tt  [private]}}\label{classSimSite3D_1_1SurfDepsJoints_0b743cae3eca94b42f4f182358c524f1}
 
 
-Note: this function does not initialize Q as we may wish to accumulate contributions to the \char`\"{}force\char`\"{} on Q \index{ASCbase::SurfDepsJoints@{ASCbase::Surf\-Deps\-Joints}!determine_hbond_dep@{determine\_\-hbond\_\-dep}}
-\index{determine_hbond_dep@{determine\_\-hbond\_\-dep}!ASCbase::SurfDepsJoints@{ASCbase::Surf\-Deps\-Joints}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Surf\-Deps\-Joints::determine\_\-hbond\_\-dep (hbond\_\-ideal\_\-pt\_\-vci {\em ideal\_\-pt}, const \bf{PDBStructure} $\ast$ {\em prot}, residue\_\-vci $\ast$ {\em res\_\-out})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1SurfDepsJoints_e25caf5b0be0b43623f19662fa7e24da}
+Note: this function does not initialize Q as we may wish to accumulate contributions to the \char`\"{}force\char`\"{} on Q \index{SimSite3D::SurfDepsJoints@{SimSite3D::Surf\-Deps\-Joints}!determine_hbond_dep@{determine\_\-hbond\_\-dep}}
+\index{determine_hbond_dep@{determine\_\-hbond\_\-dep}!SimSite3D::SurfDepsJoints@{SimSite3D::Surf\-Deps\-Joints}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Surf\-Deps\-Joints::determine\_\-hbond\_\-dep (hbond\_\-ideal\_\-pt\_\-vci {\em ideal\_\-pt}, const \bf{PDBStructure} $\ast$ {\em prot}, residue\_\-vci $\ast$ {\em res\_\-out})\hspace{0.3cm}{\tt  [private]}}\label{classSimSite3D_1_1SurfDepsJoints_e25caf5b0be0b43623f19662fa7e24da}
 
 
-Add joint dependencies for the points associated with the hbond ideal point \index{ASCbase::SurfDepsJoints@{ASCbase::Surf\-Deps\-Joints}!site_atomic_rmsd@{site\_\-atomic\_\-rmsd}}
-\index{site_atomic_rmsd@{site\_\-atomic\_\-rmsd}!ASCbase::SurfDepsJoints@{ASCbase::Surf\-Deps\-Joints}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}my\_\-float\_\-t ASCbase::Surf\-Deps\-Joints::site\_\-atomic\_\-rmsd (const \bf{PDBStructure} \& {\em dset\_\-prot}) const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1SurfDepsJoints_168e00afbc445928ccb8801624733c4f}
+Add joint dependencies for the points associated with the hbond ideal point \index{SimSite3D::SurfDepsJoints@{SimSite3D::Surf\-Deps\-Joints}!site_atomic_rmsd@{site\_\-atomic\_\-rmsd}}
+\index{site_atomic_rmsd@{site\_\-atomic\_\-rmsd}!SimSite3D::SurfDepsJoints@{SimSite3D::Surf\-Deps\-Joints}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}my\_\-float\_\-t SimSite3D::Surf\-Deps\-Joints::site\_\-atomic\_\-rmsd (const \bf{PDBStructure} \& {\em dset\_\-prot}) const\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1SurfDepsJoints_168e00afbc445928ccb8801624733c4f}
 
 
 Compute the atomic rmsd for the query and dataset residues. 
 
 WARNING! at the present this is only valid for proteins with the same residues ...
 
-Note: At the present it is very inefficient, but I don't want to miss anything and don't have the time to code it correctly. The problem is \doxyref{PDBStructure}{p.}{classASCbase_1_1PDBStructure} does not place any guarentees on the ordering of residues with respect to chain\-ID, residue number, and i\-Code 
+Note: At the present it is very inefficient, but I don't want to miss anything and don't have the time to code it correctly. The problem is \doxyref{PDBStructure}{p.}{classSimSite3D_1_1PDBStructure} does not place any guarentees on the ordering of residues with respect to chain\-ID, residue number, and i\-Code 
 
 The documentation for this class was generated from the following files:\begin{CompactItemize}
 \item 

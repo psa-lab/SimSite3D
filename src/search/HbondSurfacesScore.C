@@ -1,7 +1,7 @@
 
 #include <HbondSurfacesScore.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 const std::string HbondSurfacesScore::A_fname = "HbondSurfacesScore.C";
 //const my_float_t HbondSurfacesScore::A_max_corr_dist = 1.0;

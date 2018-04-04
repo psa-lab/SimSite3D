@@ -1,8 +1,8 @@
 import os
 from numpy import *
-from ASCbasePy import sitemaps
-from ASCbasePy import search
-from ASCbasePy import utils
+from SimSite3DPy import sitemaps
+from SimSite3DPy import search
+from SimSite3DPy import utils
 params_cc = search.parameters()
 
 datasets = [ "adenines", "pterins", "inhibited_gst" ]

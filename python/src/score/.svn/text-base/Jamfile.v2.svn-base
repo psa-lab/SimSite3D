@@ -3,10 +3,10 @@ local ASCBASE_INSTALL_DIR = [ os.environ  ASCBASE_INSTALL_DIR ] ;
 
 # Extension build rules -- 
 python-extension _parameters 
-  : ParametersPy.cc /ASCbasePy//score_lib ;
+  : ParametersPy.cc /SimSite3DPy//score_lib ;
 python-extension _ProtLigScore
-  : ProtLigScorePy.cc /ASCbasePy//score_lib ;
+  : ProtLigScorePy.cc /SimSite3DPy//score_lib ;
 
 # Install rules
-install $(ASCBASE_INSTALL_DIR)/ASCbasePy/score 
+install $(ASCBASE_INSTALL_DIR)/SimSite3DPy/score 
   : _parameters _ProtLigScore ;

@@ -2,7 +2,7 @@
  * Copyright (c) 2010, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -23,7 +23,7 @@
 //#include <Sitemap.H>
 #include <ModelSitemap.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! Used when user wants to score the sites as given -- generally not
 //! useful in the case of a standard screening dataset
@@ -54,5 +54,5 @@ public:
   }
 
 };
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

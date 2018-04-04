@@ -3,7 +3,7 @@
 
 #include <hbond_triads.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 class HbondBase{
 public:
@@ -74,6 +74,6 @@ private:
   static std::vector<residue_type> A_handled_residues;
 };
 
-} // end namespace ASCbase
+} // end namespace SimSite3D
 
 #endif

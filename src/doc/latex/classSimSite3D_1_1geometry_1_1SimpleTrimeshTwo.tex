@@ -1,5 +1,5 @@
-\section{ASCbase::geometry::Simple\-Trimesh\-Two Class Reference}
-\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo}\index{ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::SimpleTrimeshTwo}}
+\section{SimSite3D::geometry::Simple\-Trimesh\-Two Class Reference}
+\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo}\index{SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::SimpleTrimeshTwo}}
 Simple surface class built to contain basic features of a triangle mesh.  
 
 
@@ -8,97 +8,97 @@ Simple surface class built to contain basic features of a triangle mesh.
 \subsection*{Public Types}
 \begin{CompactItemize}
 \item 
-typedef std::vector$<$ \bf{triangle\_\-t} $>$ \bf{face\_\-vec}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_ec05b95a341017a23bdde9bf620ebd9d}
+typedef std::vector$<$ \bf{triangle\_\-t} $>$ \bf{face\_\-vec}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_ec05b95a341017a23bdde9bf620ebd9d}
 
 \begin{CompactList}\small\item\em Vector of faces (triangles). \item\end{CompactList}\item 
-typedef face\_\-vec::iterator \textbf{face\_\-vi}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_9f9179ecbefd0b14eb5b29e70bb525fd}
+typedef face\_\-vec::iterator \textbf{face\_\-vi}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_9f9179ecbefd0b14eb5b29e70bb525fd}
 
 \item 
-typedef face\_\-vec::const\_\-iterator \textbf{face\_\-vci}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_c9438f49aea92dbb9ad4f32ba5e032e5}
+typedef face\_\-vec::const\_\-iterator \textbf{face\_\-vci}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_c9438f49aea92dbb9ad4f32ba5e032e5}
 
 \item 
-typedef std::map$<$ const my\_\-float\_\-t $\ast$, std::vector$<$ face\_\-vi $>$ $>$ \textbf{vert\_\-face\_\-map}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_3af2a848c69967b35e02a7f3a7f5b93e}
+typedef std::map$<$ const my\_\-float\_\-t $\ast$, std::vector$<$ face\_\-vi $>$ $>$ \textbf{vert\_\-face\_\-map}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_3af2a848c69967b35e02a7f3a7f5b93e}
 
 \item 
-typedef vert\_\-face\_\-map::iterator \textbf{vert\_\-face\_\-mi}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_a582b60e306ca9d1cd1c26c4e93f27a0}
+typedef vert\_\-face\_\-map::iterator \textbf{vert\_\-face\_\-mi}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_a582b60e306ca9d1cd1c26c4e93f27a0}
 
 \item 
-typedef vert\_\-face\_\-map::const\_\-iterator \textbf{vert\_\-face\_\-mci}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_e129ee7a79ee1a610e15d68f0b04f559}
+typedef vert\_\-face\_\-map::const\_\-iterator \textbf{vert\_\-face\_\-mci}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_e129ee7a79ee1a610e15d68f0b04f559}
 
 \end{CompactItemize}
 \subsection*{Public Member Functions}
 \begin{CompactItemize}
 \item 
-\bf{Simple\-Trimesh\-Two} (const std::string fname, const bool load\_\-mutable\_\-faces=false)\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_b97e238865058c9209bb15c60535d08f}
+\bf{Simple\-Trimesh\-Two} (const std::string fname, const bool load\_\-mutable\_\-faces=false)\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_b97e238865058c9209bb15c60535d08f}
 
 \begin{CompactList}\small\item\em Load MSMS vert file using fname + \char`\"{}.vert\char`\"{}. \item\end{CompactList}\item 
-virtual \bf{$\sim$Simple\-Trimesh\-Two} ()\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_55ef71beb5a8ecd64e57dca7f11e5d27}
+virtual \bf{$\sim$Simple\-Trimesh\-Two} ()\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_55ef71beb5a8ecd64e57dca7f11e5d27}
 
 \begin{CompactList}\small\item\em Basic destruction. \item\end{CompactList}\item 
-const my\_\-float\_\-t $\ast$ \bf{vertices\_\-begin} () const \label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_78f4469ff88513c39e96132017c319e6}
+const my\_\-float\_\-t $\ast$ \bf{vertices\_\-begin} () const \label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_78f4469ff88513c39e96132017c319e6}
 
 \begin{CompactList}\small\item\em Get a pointer to the beginning of the vertices array. \item\end{CompactList}\item 
-size\_\-t \bf{number\_\-of\_\-vertices} () const \label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_8c0fc77ff8dd00a812bb4fdc2358c95c}
+size\_\-t \bf{number\_\-of\_\-vertices} () const \label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_8c0fc77ff8dd00a812bb4fdc2358c95c}
 
 \begin{CompactList}\small\item\em Number of vertices in the array (array size is 3$\ast$number\_\-of\_\-vertices). \item\end{CompactList}\item 
 const my\_\-float\_\-t $\ast$ \bf{normals\_\-begin} () const 
 \item 
-face\_\-vci \textbf{faces\_\-begin} () const \label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_214a85d1202d05e1f104322fe9e2496f}
+face\_\-vci \textbf{faces\_\-begin} () const \label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_214a85d1202d05e1f104322fe9e2496f}
 
 \item 
-face\_\-vci \textbf{faces\_\-end} () const \label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_3f250221a3eadd745219cc7865475fc9}
+face\_\-vci \textbf{faces\_\-end} () const \label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_3f250221a3eadd745219cc7865475fc9}
 
 \item 
-const size\_\-t \textbf{number\_\-of\_\-faces} () const \label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_8e65a9b44ae0f2edb2814bf382636488}
+const size\_\-t \textbf{number\_\-of\_\-faces} () const \label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_8e65a9b44ae0f2edb2814bf382636488}
 
 \item 
-virtual void \bf{transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_b0eec9fa72b96f2a62c1f116bd93a661}
+virtual void \bf{transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_b0eec9fa72b96f2a62c1f116bd93a661}
 
 \begin{CompactList}\small\item\em Apply the transform VR + T to the vertices V. \item\end{CompactList}\item 
-virtual void \bf{inverse\_\-transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_984f0b676e30e0e507e3cda27316ceea}
+virtual void \bf{inverse\_\-transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_984f0b676e30e0e507e3cda27316ceea}
 
 \begin{CompactList}\small\item\em Apply the transform (V-T)R.t to the vertices V, where R.t is R transposed. \item\end{CompactList}\item 
-void \bf{revert} ()\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_925bef71cba895382a4620e52ae4316e}
+void \bf{revert} ()\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_925bef71cba895382a4620e52ae4316e}
 
 \begin{CompactList}\small\item\em Revert the vertices to the saved positions. \item\end{CompactList}\item 
 virtual void \bf{get\_\-current\_\-inverse\_\-3D\_\-transform} (Quaternion $\ast$Q, my\_\-float\_\-t $\ast$T) const 
 \item 
-virtual bool \textbf{closest\_\-point} (const my\_\-float\_\-t $\ast$pt, my\_\-float\_\-t $\ast$dist, my\_\-float\_\-t $\ast$cp, const my\_\-float\_\-t max\_\-dist=2.0) const \label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_518278360584dcb1c13344689a62e3f9}
+virtual bool \textbf{closest\_\-point} (const my\_\-float\_\-t $\ast$pt, my\_\-float\_\-t $\ast$dist, my\_\-float\_\-t $\ast$cp, const my\_\-float\_\-t max\_\-dist=2.0) const \label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_518278360584dcb1c13344689a62e3f9}
 
 \item 
 virtual bool \bf{compare} (const my\_\-float\_\-t $\ast$other\_\-vert\_\-begin, const uint num\_\-other\_\-vert, my\_\-float\_\-t $\ast$closest\_\-pts, my\_\-float\_\-t $\ast$dists, const my\_\-float\_\-t $\ast$other\_\-normals\_\-begin=0, my\_\-float\_\-t $\ast$best\_\-Ns=0, my\_\-float\_\-t $\ast$N\_\-dists=0, const my\_\-float\_\-t max\_\-dist=my\_\-float\_\-max) const 
 \begin{CompactList}\small\item\em Find closest point on surface mesh for the given point (pt). \item\end{CompactList}\item 
 void \bf{compute\_\-features} (const my\_\-float\_\-t $\ast$dists, const my\_\-float\_\-t max\_\-dist, const my\_\-float\_\-t $\ast$norm\_\-dots, my\_\-float\_\-t $\ast$vertex\_\-count, my\_\-float\_\-t $\ast$face\_\-count, my\_\-float\_\-t $\ast$RMSE, my\_\-float\_\-t $\ast$RMS\_\-norm\_\-err, my\_\-float\_\-t $\ast$area, my\_\-float\_\-t $\ast$max\_\-q\_\-pt\_\-dist\_\-p) const 
 \begin{CompactList}\small\item\em compute features for an alignment \item\end{CompactList}\item 
-my\_\-float\_\-t \bf{max\_\-dist\_\-to\_\-centroid} () const \label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_84a7994256c468de4923e4cb062582b7}
+my\_\-float\_\-t \bf{max\_\-dist\_\-to\_\-centroid} () const \label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_84a7994256c468de4923e4cb062582b7}
 
 \begin{CompactList}\small\item\em Get the maximum allowed distance from centroid. \item\end{CompactList}\item 
-bool \bf{fail} () const \label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_b72565f595d0855f744b944d3f7eaf5b}
+bool \bf{fail} () const \label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_b72565f595d0855f744b944d3f7eaf5b}
 
 \begin{CompactList}\small\item\em Returns true if something went wrong, otherwise false. \item\end{CompactList}\item 
 void \bf{compute\_\-close\_\-point} (const my\_\-float\_\-t $\ast$pt, const my\_\-float\_\-t $\ast$v0, const my\_\-float\_\-t $\ast$v1, const my\_\-float\_\-t $\ast$v2, const my\_\-float\_\-t prev\_\-best\_\-d, my\_\-float\_\-t $\ast$best\_\-d, my\_\-float\_\-t $\ast$closest\_\-pt) const 
 \begin{CompactList}\small\item\em Wrapper to call corresponding\_\-point and update closest\_\-pt and best dist. \item\end{CompactList}\item 
-bool \bf{write} (const std::string ofname) const \label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_4d86adb16d5464d99550bb826db10d51}
+bool \bf{write} (const std::string ofname) const \label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_4d86adb16d5464d99550bb826db10d51}
 
 \begin{CompactList}\small\item\em Write the vert \& face files. \item\end{CompactList}\item 
-bool \textbf{remove\_\-small\_\-triangles} ()\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_b0a5b063bc1990180216eb8971d08595}
+bool \textbf{remove\_\-small\_\-triangles} ()\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_b0a5b063bc1990180216eb8971d08595}
 
 \item 
-const my\_\-float\_\-t \textbf{get\_\-total\_\-SA} () const \label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_5147d4bb728ecc4302a4750073d23e8a}
+const my\_\-float\_\-t \textbf{get\_\-total\_\-SA} () const \label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_5147d4bb728ecc4302a4750073d23e8a}
 
 \end{CompactItemize}
 \subsection*{Protected Member Functions}
 \begin{CompactItemize}
 \item 
-void \textbf{set\_\-fail\_\-flag} ()\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_34482bae5d76b139413cbb0c4dccf896}
+void \textbf{set\_\-fail\_\-flag} ()\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_34482bae5d76b139413cbb0c4dccf896}
 
 \item 
 bool \bf{read\_\-face\_\-file} (const std::string fname, bool check\_\-vertex\_\-order, bool compute\_\-max\_\-dist\_\-to\_\-centroid)
 \item 
-virtual void \bf{init\_\-triangle\_\-data\_\-structure} (const uint num\_\-vert, const uint num\_\-tri)\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_15e4bc317ef6f01d9d59798708dd0a9a}
+virtual void \bf{init\_\-triangle\_\-data\_\-structure} (const uint num\_\-vert, const uint num\_\-tri)\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_15e4bc317ef6f01d9d59798708dd0a9a}
 
 \begin{CompactList}\small\item\em Initialize the triangle storage. \item\end{CompactList}\item 
-virtual void \bf{update\_\-triangle\_\-data\_\-structure} (const uint tri\_\-idx, const uint $\ast$vert\_\-idz, const my\_\-float\_\-t $\ast$$\ast$vertices, const my\_\-float\_\-t $\ast$$\ast$normals)\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_1e6fafae2016945f5e855765a456e1fd}
+virtual void \bf{update\_\-triangle\_\-data\_\-structure} (const uint tri\_\-idx, const uint $\ast$vert\_\-idz, const my\_\-float\_\-t $\ast$$\ast$vertices, const my\_\-float\_\-t $\ast$$\ast$normals)\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_1e6fafae2016945f5e855765a456e1fd}
 
 \begin{CompactList}\small\item\em Add a triangle to the triangle storage. \item\end{CompactList}\item 
 bool \bf{update\_\-closest\_\-pt} (my\_\-float\_\-t $\ast$best\_\-d, my\_\-float\_\-t $\ast$closest\_\-pt, const my\_\-float\_\-t d, const my\_\-float\_\-t $\ast$cp) const 
@@ -108,34 +108,34 @@ my\_\-float\_\-t $\ast$ \bf{mutable\_\-vertices\_\-begin} ()
 \subsection*{Private Types}
 \begin{CompactItemize}
 \item 
-typedef std::vector$<$ \bf{mutable\_\-face\_\-t} $>$ \bf{mutable\_\-face\_\-vec}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_820d124a6a7b91ebcec829990f741e39}
+typedef std::vector$<$ \bf{mutable\_\-face\_\-t} $>$ \bf{mutable\_\-face\_\-vec}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_820d124a6a7b91ebcec829990f741e39}
 
 \begin{CompactList}\small\item\em Vector of mutable faces (triangles). \item\end{CompactList}\item 
-typedef mutable\_\-face\_\-vec::iterator \textbf{mutable\_\-face\_\-vi}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_67e69e3a888c0c160c3f6ce71a68244d}
+typedef mutable\_\-face\_\-vec::iterator \textbf{mutable\_\-face\_\-vi}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_67e69e3a888c0c160c3f6ce71a68244d}
 
 \item 
-typedef mutable\_\-face\_\-vec::const\_\-iterator \textbf{mutable\_\-face\_\-vci}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_3940973197f37f724d808e3d50a24058}
+typedef mutable\_\-face\_\-vec::const\_\-iterator \textbf{mutable\_\-face\_\-vci}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_3940973197f37f724d808e3d50a24058}
 
 \item 
-typedef std::map$<$ const my\_\-float\_\-t $\ast$, std::vector$<$ mutable\_\-face\_\-vi $>$ $>$ \textbf{mutable\_\-vert\_\-face\_\-map}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_27881edcabffbac65061128ca312d097}
+typedef std::map$<$ const my\_\-float\_\-t $\ast$, std::vector$<$ mutable\_\-face\_\-vi $>$ $>$ \textbf{mutable\_\-vert\_\-face\_\-map}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_27881edcabffbac65061128ca312d097}
 
 \item 
-typedef mutable\_\-vert\_\-face\_\-map::iterator \textbf{mutable\_\-vert\_\-face\_\-mi}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_0d3a0a32929910b60583da6bd9445f85}
+typedef mutable\_\-vert\_\-face\_\-map::iterator \textbf{mutable\_\-vert\_\-face\_\-mi}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_0d3a0a32929910b60583da6bd9445f85}
 
 \item 
-typedef mutable\_\-vert\_\-face\_\-map::const\_\-iterator \textbf{mutable\_\-vert\_\-face\_\-mci}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_1bab1411a23f6ed3b44f498bce0132a4}
+typedef mutable\_\-vert\_\-face\_\-map::const\_\-iterator \textbf{mutable\_\-vert\_\-face\_\-mci}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_1bab1411a23f6ed3b44f498bce0132a4}
 
 \end{CompactItemize}
 \subsection*{Private Member Functions}
 \begin{CompactItemize}
 \item 
-void \bf{init} ()\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_5f901fae358571cee8e66c7f4480e4f6}
+void \bf{init} ()\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_5f901fae358571cee8e66c7f4480e4f6}
 
 \begin{CompactList}\small\item\em Initialize class variables. \item\end{CompactList}\item 
-bool \bf{read\_\-vert\_\-file} (const std::string fname)\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_32143f4bf17902caa35ffd5951dd9b95}
+bool \bf{read\_\-vert\_\-file} (const std::string fname)\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_32143f4bf17902caa35ffd5951dd9b95}
 
 \begin{CompactList}\small\item\em Read an MSMS vert input file and store the vertices and normals. \item\end{CompactList}\item 
-void \bf{compute\_\-areas} ()\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_46ee622d183ec4cdf3f7b37e490e8c45}
+void \bf{compute\_\-areas} ()\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_46ee622d183ec4cdf3f7b37e490e8c45}
 
 \begin{CompactList}\small\item\em Compute the area of the triangles. \item\end{CompactList}\item 
 bool \bf{load\_\-mutable\_\-faces} (const std::string faces\_\-fname)
@@ -143,31 +143,31 @@ bool \bf{load\_\-mutable\_\-faces} (const std::string faces\_\-fname)
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
-size\_\-t \bf{A\_\-num\_\-verts}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_a490f1dccbf7067fcdc19db0f6501cc2}
+size\_\-t \bf{A\_\-num\_\-verts}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_a490f1dccbf7067fcdc19db0f6501cc2}
 
 \begin{CompactList}\small\item\em Number of vertices (and normals). \item\end{CompactList}\item 
-my\_\-float\_\-t $\ast$ \bf{A\_\-vertices}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_5392ac1e8187163453ee7747239595bb}
+my\_\-float\_\-t $\ast$ \bf{A\_\-vertices}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_5392ac1e8187163453ee7747239595bb}
 
 \begin{CompactList}\small\item\em Vertices array -- 3$\ast$A\_\-num\_\-verts. \item\end{CompactList}\item 
-my\_\-float\_\-t $\ast$ \bf{A\_\-normals}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_114534e67258df0c622185754cc4c68a}
+my\_\-float\_\-t $\ast$ \bf{A\_\-normals}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_114534e67258df0c622185754cc4c68a}
 
 \begin{CompactList}\small\item\em Normals array -- 3$\ast$A\_\-num\_\-verts. \item\end{CompactList}\item 
-my\_\-float\_\-t $\ast$ \textbf{A\_\-original\_\-vertices}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_52aed34d252b1f014b4e35b465dc1390}
+my\_\-float\_\-t $\ast$ \textbf{A\_\-original\_\-vertices}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_52aed34d252b1f014b4e35b465dc1390}
 
 \item 
-my\_\-float\_\-t $\ast$ \textbf{A\_\-original\_\-normals}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_a9e5923eab5e801a941a3babc6e1dbce}
+my\_\-float\_\-t $\ast$ \textbf{A\_\-original\_\-normals}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_a9e5923eab5e801a941a3babc6e1dbce}
 
 \item 
-my\_\-float\_\-t \bf{A\_\-max\_\-dist\_\-to\_\-cent}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_8aa0b21c34497bc3cefd99416dcaf28b}
+my\_\-float\_\-t \bf{A\_\-max\_\-dist\_\-to\_\-cent}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_8aa0b21c34497bc3cefd99416dcaf28b}
 
 \begin{CompactList}\small\item\em Maximum distance from a triangle centroid to one of its vertices. \item\end{CompactList}\item 
-\bf{face\_\-vec} \bf{A\_\-triangles}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_b820c45884fc49cf977b91b04435acb2}
+\bf{face\_\-vec} \bf{A\_\-triangles}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_b820c45884fc49cf977b91b04435acb2}
 
 \begin{CompactList}\small\item\em Triangle storage. \item\end{CompactList}\item 
-bool \textbf{A\_\-fail}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_dcacbf7733d856f2a2a4d02e36cb6ce0}
+bool \textbf{A\_\-fail}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_dcacbf7733d856f2a2a4d02e36cb6ce0}
 
 \item 
-\bf{mutable\_\-face\_\-vec} \textbf{A\_\-mutable\_\-faces}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_2b5adc945a54bbd3e91a89c5a56f51c1}
+\bf{mutable\_\-face\_\-vec} \textbf{A\_\-mutable\_\-faces}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_2b5adc945a54bbd3e91a89c5a56f51c1}
 
 \end{CompactItemize}
 \subsection*{Classes}
@@ -187,57 +187,57 @@ Simple surface class built to contain basic features of a triangle mesh.
 
 
 \subsection{Member Function Documentation}
-\index{ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}!compare@{compare}}
-\index{compare@{compare}!ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Simple\-Trimesh\-Two::compare (const my\_\-float\_\-t $\ast$ {\em other\_\-vert\_\-begin}, const uint {\em num\_\-other\_\-vert}, my\_\-float\_\-t $\ast$ {\em closest\_\-pts}, my\_\-float\_\-t $\ast$ {\em dists}, const my\_\-float\_\-t $\ast$ {\em other\_\-normals\_\-begin} = {\tt 0}, my\_\-float\_\-t $\ast$ {\em best\_\-Ns} = {\tt 0}, my\_\-float\_\-t $\ast$ {\em N\_\-dists} = {\tt 0}, const my\_\-float\_\-t {\em max\_\-dist} = {\tt my\_\-float\_\-max}) const\hspace{0.3cm}{\tt  [virtual]}}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_6a394127681e1e61e8ce2e14e6a6d8ae}
+\index{SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}!compare@{compare}}
+\index{compare@{compare}!SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Simple\-Trimesh\-Two::compare (const my\_\-float\_\-t $\ast$ {\em other\_\-vert\_\-begin}, const uint {\em num\_\-other\_\-vert}, my\_\-float\_\-t $\ast$ {\em closest\_\-pts}, my\_\-float\_\-t $\ast$ {\em dists}, const my\_\-float\_\-t $\ast$ {\em other\_\-normals\_\-begin} = {\tt 0}, my\_\-float\_\-t $\ast$ {\em best\_\-Ns} = {\tt 0}, my\_\-float\_\-t $\ast$ {\em N\_\-dists} = {\tt 0}, const my\_\-float\_\-t {\em max\_\-dist} = {\tt my\_\-float\_\-max}) const\hspace{0.3cm}{\tt  [virtual]}}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_6a394127681e1e61e8ce2e14e6a6d8ae}
 
 
 Find closest point on surface mesh for the given point (pt). 
 
-This method is inefficient since it checks each triangle in the mesh to find the closest point for each input vertex. This function exists to help with prototyping and as a fallback, simpler method to check that the more advanced methods still compute the closest point. In particular, we do the most straightforward and naive check of each triangle without first checking vertex distances, etc. \index{ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}!compute_close_point@{compute\_\-close\_\-point}}
-\index{compute_close_point@{compute\_\-close\_\-point}!ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Simple\-Trimesh\-Two::compute\_\-close\_\-point (const my\_\-float\_\-t $\ast$ {\em pt}, const my\_\-float\_\-t $\ast$ {\em v0}, const my\_\-float\_\-t $\ast$ {\em v1}, const my\_\-float\_\-t $\ast$ {\em v2}, const my\_\-float\_\-t {\em prev\_\-best\_\-d}, my\_\-float\_\-t $\ast$ {\em best\_\-d}, my\_\-float\_\-t $\ast$ {\em closest\_\-pt}) const}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_acb3a26966405908d642026fe52e2395}
+This method is inefficient since it checks each triangle in the mesh to find the closest point for each input vertex. This function exists to help with prototyping and as a fallback, simpler method to check that the more advanced methods still compute the closest point. In particular, we do the most straightforward and naive check of each triangle without first checking vertex distances, etc. \index{SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}!compute_close_point@{compute\_\-close\_\-point}}
+\index{compute_close_point@{compute\_\-close\_\-point}!SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Simple\-Trimesh\-Two::compute\_\-close\_\-point (const my\_\-float\_\-t $\ast$ {\em pt}, const my\_\-float\_\-t $\ast$ {\em v0}, const my\_\-float\_\-t $\ast$ {\em v1}, const my\_\-float\_\-t $\ast$ {\em v2}, const my\_\-float\_\-t {\em prev\_\-best\_\-d}, my\_\-float\_\-t $\ast$ {\em best\_\-d}, my\_\-float\_\-t $\ast$ {\em closest\_\-pt}) const}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_acb3a26966405908d642026fe52e2395}
 
 
 Wrapper to call corresponding\_\-point and update closest\_\-pt and best dist. 
 
-This function is not required to be public, but it doesn't matter since it doesn't modify any class variables. \index{ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}!compute_features@{compute\_\-features}}
-\index{compute_features@{compute\_\-features}!ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Simple\-Trimesh\-Two::compute\_\-features (const my\_\-float\_\-t $\ast$ {\em dists}, const my\_\-float\_\-t {\em max\_\-dist}, const my\_\-float\_\-t $\ast$ {\em norm\_\-dots}, my\_\-float\_\-t $\ast$ {\em vertex\_\-count}, my\_\-float\_\-t $\ast$ {\em face\_\-count}, my\_\-float\_\-t $\ast$ {\em RMSE}, my\_\-float\_\-t $\ast$ {\em RMS\_\-norm\_\-err}, my\_\-float\_\-t $\ast$ {\em area}, my\_\-float\_\-t $\ast$ {\em max\_\-q\_\-pt\_\-dist\_\-p}) const}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_dc04eadf0d6585ebd118e6b3fd76402e}
+This function is not required to be public, but it doesn't matter since it doesn't modify any class variables. \index{SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}!compute_features@{compute\_\-features}}
+\index{compute_features@{compute\_\-features}!SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Simple\-Trimesh\-Two::compute\_\-features (const my\_\-float\_\-t $\ast$ {\em dists}, const my\_\-float\_\-t {\em max\_\-dist}, const my\_\-float\_\-t $\ast$ {\em norm\_\-dots}, my\_\-float\_\-t $\ast$ {\em vertex\_\-count}, my\_\-float\_\-t $\ast$ {\em face\_\-count}, my\_\-float\_\-t $\ast$ {\em RMSE}, my\_\-float\_\-t $\ast$ {\em RMS\_\-norm\_\-err}, my\_\-float\_\-t $\ast$ {\em area}, my\_\-float\_\-t $\ast$ {\em max\_\-q\_\-pt\_\-dist\_\-p}) const}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_dc04eadf0d6585ebd118e6b3fd76402e}
 
 
 compute features for an alignment 
 
-Assumes the array dists is of the same length as the number of vertices \index{ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}!get_current_inverse_3D_transform@{get\_\-current\_\-inverse\_\-3D\_\-transform}}
-\index{get_current_inverse_3D_transform@{get\_\-current\_\-inverse\_\-3D\_\-transform}!ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void ASCbase::geometry::Simple\-Trimesh\-Two::get\_\-current\_\-inverse\_\-3D\_\-transform (Quaternion $\ast$ {\em Q}, my\_\-float\_\-t $\ast$ {\em T}) const\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_3fcbc1c1ac5c6e9443bfcf6c98a8c7c4}
+Assumes the array dists is of the same length as the number of vertices \index{SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}!get_current_inverse_3D_transform@{get\_\-current\_\-inverse\_\-3D\_\-transform}}
+\index{get_current_inverse_3D_transform@{get\_\-current\_\-inverse\_\-3D\_\-transform}!SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void SimSite3D::geometry::Simple\-Trimesh\-Two::get\_\-current\_\-inverse\_\-3D\_\-transform (Quaternion $\ast$ {\em Q}, my\_\-float\_\-t $\ast$ {\em T}) const\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_3fcbc1c1ac5c6e9443bfcf6c98a8c7c4}
 
 
-The reason we find the transform from the current back to original is Sim\-Site3D moves the query to the db reference frame. The user typically wants to align all dbas hits to the query reference frame. Thus we compute current -$>$ original positions. \index{ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}!load_mutable_faces@{load\_\-mutable\_\-faces}}
-\index{load_mutable_faces@{load\_\-mutable\_\-faces}!ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Simple\-Trimesh\-Two::load\_\-mutable\_\-faces (const std::string {\em faces\_\-fname})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_95efedbd9a7a3bb583b5e604eeed7015}
+The reason we find the transform from the current back to original is Sim\-Site3D moves the query to the db reference frame. The user typically wants to align all dbas hits to the query reference frame. Thus we compute current -$>$ original positions. \index{SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}!load_mutable_faces@{load\_\-mutable\_\-faces}}
+\index{load_mutable_faces@{load\_\-mutable\_\-faces}!SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Simple\-Trimesh\-Two::load\_\-mutable\_\-faces (const std::string {\em faces\_\-fname})\hspace{0.3cm}{\tt  [private]}}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_95efedbd9a7a3bb583b5e604eeed7015}
 
 
-Load the faces in a mutable data structure so that we can modify the vertices, faces, and associated pointers during mesh adjustments \index{ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}!mutable_vertices_begin@{mutable\_\-vertices\_\-begin}}
-\index{mutable_vertices_begin@{mutable\_\-vertices\_\-begin}!ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}my\_\-float\_\-t$\ast$ ASCbase::geometry::Simple\-Trimesh\-Two::mutable\_\-vertices\_\-begin ()\hspace{0.3cm}{\tt  [inline, protected]}}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_18ef85d591b174d42f848ede475e2268}
+Load the faces in a mutable data structure so that we can modify the vertices, faces, and associated pointers during mesh adjustments \index{SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}!mutable_vertices_begin@{mutable\_\-vertices\_\-begin}}
+\index{mutable_vertices_begin@{mutable\_\-vertices\_\-begin}!SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}my\_\-float\_\-t$\ast$ SimSite3D::geometry::Simple\-Trimesh\-Two::mutable\_\-vertices\_\-begin ()\hspace{0.3cm}{\tt  [inline, protected]}}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_18ef85d591b174d42f848ede475e2268}
 
 
 Get a non-constant pointer to the beginning of the vertices array. 
 
-I am unsure of the \char`\"{}correct\char`\"{} way to tell the g++ compiler which of the vertices begin functions we want -- it always chooses the unconstant one with the same name \index{ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}!normals_begin@{normals\_\-begin}}
-\index{normals_begin@{normals\_\-begin}!ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t$\ast$ ASCbase::geometry::Simple\-Trimesh\-Two::normals\_\-begin () const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_b217b72c8e69c61f286c958da6439093}
+I am unsure of the \char`\"{}correct\char`\"{} way to tell the g++ compiler which of the vertices begin functions we want -- it always chooses the unconstant one with the same name \index{SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}!normals_begin@{normals\_\-begin}}
+\index{normals_begin@{normals\_\-begin}!SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t$\ast$ SimSite3D::geometry::Simple\-Trimesh\-Two::normals\_\-begin () const\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_b217b72c8e69c61f286c958da6439093}
 
 
-Get a pointer to the beginning of the normals array; number of normals is the same as number of vertices \index{ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}!read_face_file@{read\_\-face\_\-file}}
-\index{read_face_file@{read\_\-face\_\-file}!ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Simple\-Trimesh\-Two::read\_\-face\_\-file (const std::string {\em fname}, bool {\em check\_\-vertex\_\-order}, bool {\em compute\_\-max\_\-dist\_\-to\_\-centroid})\hspace{0.3cm}{\tt  [protected]}}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_81ecdfec18b36033de2e791107dfe69f}
+Get a pointer to the beginning of the normals array; number of normals is the same as number of vertices \index{SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}!read_face_file@{read\_\-face\_\-file}}
+\index{read_face_file@{read\_\-face\_\-file}!SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Simple\-Trimesh\-Two::read\_\-face\_\-file (const std::string {\em fname}, bool {\em check\_\-vertex\_\-order}, bool {\em compute\_\-max\_\-dist\_\-to\_\-centroid})\hspace{0.3cm}{\tt  [protected]}}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_81ecdfec18b36033de2e791107dfe69f}
 
 
-Read an MSMS face file and build the triangles. If check\_\-vertex\_\-order, make sure the vertices have the correct order or swap them. \index{ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}!update_closest_pt@{update\_\-closest\_\-pt}}
-\index{update_closest_pt@{update\_\-closest\_\-pt}!ASCbase::geometry::SimpleTrimeshTwo@{ASCbase::geometry::Simple\-Trimesh\-Two}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool ASCbase::geometry::Simple\-Trimesh\-Two::update\_\-closest\_\-pt (my\_\-float\_\-t $\ast$ {\em best\_\-d}, my\_\-float\_\-t $\ast$ {\em closest\_\-pt}, const my\_\-float\_\-t {\em d}, const my\_\-float\_\-t $\ast$ {\em cp}) const\hspace{0.3cm}{\tt  [inline, protected]}}\label{classASCbase_1_1geometry_1_1SimpleTrimeshTwo_2112115ad368fa95eda1bfd1bc585674}
+Read an MSMS face file and build the triangles. If check\_\-vertex\_\-order, make sure the vertices have the correct order or swap them. \index{SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}!update_closest_pt@{update\_\-closest\_\-pt}}
+\index{update_closest_pt@{update\_\-closest\_\-pt}!SimSite3D::geometry::SimpleTrimeshTwo@{SimSite3D::geometry::Simple\-Trimesh\-Two}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool SimSite3D::geometry::Simple\-Trimesh\-Two::update\_\-closest\_\-pt (my\_\-float\_\-t $\ast$ {\em best\_\-d}, my\_\-float\_\-t $\ast$ {\em closest\_\-pt}, const my\_\-float\_\-t {\em d}, const my\_\-float\_\-t $\ast$ {\em cp}) const\hspace{0.3cm}{\tt  [inline, protected]}}\label{classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo_2112115ad368fa95eda1bfd1bc585674}
 
 
 Simple function to update closest point and distance. 

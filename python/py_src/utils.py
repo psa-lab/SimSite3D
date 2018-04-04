@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #
-# $Source: /psa/share/repository/pfizer_proj/python/ASCbase/utils.py,v $
+# $Source: /psa/share/repository/pfizer_proj/python/SimSite3D/utils.py,v $
 # $Revision: 1.4 $
 # $Author: vanvoor4 $
 # $Date: 2008/11/18 15:40:32 $
@@ -10,7 +10,7 @@
 # Added parameters.py
 #
 # Revision 1.3  2008/01/22 16:46:56  vanvoor4
-# Changed to reflect the more recent method of handling the ASCbase
+# Changed to reflect the more recent method of handling the SimSite3D
 # environment.  At this time the course of action is
 # 0) Get $ASCBASE_INSTALL_DIR value
 # 1) read the /etc/ascbase/ascbase.conf file if it exists

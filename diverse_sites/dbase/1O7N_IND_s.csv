@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!-- Note: no xml namespace for now -->
-<ASCbase_sitemap>
+<SimSite3D_sitemap>
 <!--
 # gen_points (SimSite3D) 4.1-rc3 sitemap labels file
 # Date: Thu Jul  1 12:42:04 2010
@@ -71,9 +71,9 @@
 # 5) Residue number + insertion code (if it is not a space char)
 # 6) Atom name
 # 7) Atom number (serial)
-# 8) Hbond point number (for the given atom) - ASCbase internal use
-# 9) Point position  (ASCbase internal use)
-# 10) Carbon neighbor atom number  (ASCbase internal use)
+# 8) Hbond point number (for the given atom) - SimSite3D internal use
+# 9) Point position  (SimSite3D internal use)
+# 10) Carbon neighbor atom number  (SimSite3D internal use)
 -->
 <hydrogen_bond_points>
 2001|ASN201_A_O/1D|A|ASN|201|O|1573|2|14.176 51.804 84.998 |1572|
@@ -127,4 +127,4 @@
 6.000 6.000 4.000 6.000 13 6.000 6.000 4.000 6.000 6.000
 419 731 1.5 244.161 4.0
 </features_scales>
-</ASCbase_sitemap>
+</SimSite3D_sitemap>

@@ -16,7 +16,7 @@
 <a name="l00003"></a>00003 <span class="preprocessor"></span>
 <a name="l00004"></a>00004 <span class="preprocessor">#include &lt;SimpleTrimeshTwo.H&gt;</span>
 <a name="l00005"></a>00005 
-<a name="l00006"></a>00006 <span class="keyword">namespace </span>ASCbase{
+<a name="l00006"></a>00006 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00007"></a>00007 <span class="keyword">namespace </span>geometry{
 <a name="l00008"></a>00008 
 <a name="l00009"></a>00009 <span class="keyword">class </span>TransformableTrimesh : <span class="keyword">public</span> SimpleTrimeshTwo{
@@ -25,9 +25,9 @@
 <a name="l00013"></a>00013 
 <a name="l00016"></a>00016   TransformableTrimesh(<span class="keyword">const</span> std::string fname,
 <a name="l00017"></a>00017                        <span class="keyword">const</span> <span class="keywordtype">bool</span> check_vertex_order=<span class="keyword">true</span>)
-<a name="l00018"></a>00018     : <a class="code" href="classASCbase_1_1geometry_1_1SimpleTrimeshTwo.html#b97e238865058c9209bb15c60535d08f">SimpleTrimeshTwo</a>(fname)
+<a name="l00018"></a>00018     : <a class="code" href="classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo.html#b97e238865058c9209bb15c60535d08f">SimpleTrimeshTwo</a>(fname)
 <a name="l00019"></a>00019   { 
-<a name="l00020"></a>00020     <span class="keywordflow">if</span>(!<a class="code" href="classASCbase_1_1geometry_1_1SimpleTrimeshTwo.html#81ecdfec18b36033de2e791107dfe69f">read_face_file</a>(fname, check_vertex_order, <span class="keyword">false</span>)){
+<a name="l00020"></a>00020     <span class="keywordflow">if</span>(!<a class="code" href="classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo.html#81ecdfec18b36033de2e791107dfe69f">read_face_file</a>(fname, check_vertex_order, <span class="keyword">false</span>)){
 <a name="l00021"></a>00021       set_fail_flag();
 <a name="l00022"></a>00022       <span class="keywordflow">return</span>;
 <a name="l00023"></a>00023     }
@@ -41,11 +41,11 @@
 <a name="l00032"></a>00032 
 <a name="l00036"></a>00036   my_float_t*
 <a name="l00037"></a>00037   mutable_vertices_begin()
-<a name="l00038"></a>00038   { <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1geometry_1_1SimpleTrimeshTwo.html#18ef85d591b174d42f848ede475e2268">SimpleTrimeshTwo::mutable_vertices_begin</a>(); }
+<a name="l00038"></a>00038   { <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo.html#18ef85d591b174d42f848ede475e2268">SimpleTrimeshTwo::mutable_vertices_begin</a>(); }
 <a name="l00039"></a>00039 
 <a name="l00040"></a>00040 <span class="preprocessor">#if 0</span>
 <a name="l00041"></a>00041 <span class="preprocessor"></span>  <span class="keywordtype">bool</span>
-<a name="l00042"></a>00042   <a class="code" href="classASCbase_1_1geometry_1_1SimpleTrimeshTwo.html#6a394127681e1e61e8ce2e14e6a6d8ae">compare</a>(<span class="keyword">const</span> my_float_t *other_vert_begin, <span class="keyword">const</span> uint num_other_vert,
+<a name="l00042"></a>00042   <a class="code" href="classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo.html#6a394127681e1e61e8ce2e14e6a6d8ae">compare</a>(<span class="keyword">const</span> my_float_t *other_vert_begin, <span class="keyword">const</span> uint num_other_vert,
 <a name="l00043"></a>00043           my_float_t *closest_pts, my_float_t *dists,
 <a name="l00044"></a>00044           <span class="keyword">const</span> my_float_t max_dist = my_float_max)<span class="keyword"> const</span>
 <a name="l00045"></a>00045 <span class="keyword">  </span>{
@@ -59,7 +59,7 @@
 <a name="l00053"></a>00053     <span class="keywordflow">for</span>(<span class="keyword">const</span> my_float_t *v = other_vert_begin; v &lt; other_vert_end; v += 3){
 <a name="l00054"></a>00054       face_vci face;
 <a name="l00055"></a>00055       <span class="keywordflow">for</span>(face = faces_begin(); face &lt; faces_end(); ++face){
-<a name="l00056"></a>00056         <a class="code" href="classASCbase_1_1geometry_1_1SimpleTrimeshTwo.html#acb3a26966405908d642026fe52e2395">compute_close_point</a>(v, face-&gt;vertices[0], face-&gt;vertices[1], 
+<a name="l00056"></a>00056         <a class="code" href="classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo.html#acb3a26966405908d642026fe52e2395">compute_close_point</a>(v, face-&gt;vertices[0], face-&gt;vertices[1], 
 <a name="l00057"></a>00057                             face-&gt;vertices[2], d, cp);
 <a name="l00058"></a>00058       }
 <a name="l00059"></a>00059 
@@ -82,7 +82,7 @@
 <a name="l00076"></a>00076     my_float_t area;
 <a name="l00077"></a>00077   }triangle_t;
 <a name="l00078"></a>00078 
-<a name="l00079"></a>00079   <span class="keyword">typedef</span> std::vector&lt;triangle_t&gt; <a class="code" href="classASCbase_1_1geometry_1_1SimpleTrimeshTwo.html#ec05b95a341017a23bdde9bf620ebd9d">face_vec</a>;
+<a name="l00079"></a>00079   <span class="keyword">typedef</span> std::vector&lt;triangle_t&gt; <a class="code" href="classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo.html#ec05b95a341017a23bdde9bf620ebd9d">face_vec</a>;
 <a name="l00080"></a>00080   <span class="keyword">typedef</span> face_vec::iterator face_vi;
 <a name="l00081"></a>00081   <span class="keyword">typedef</span> face_vec::const_iterator face_vci;
 <a name="l00082"></a>00082   <span class="keyword">typedef</span> std::map&lt;const my_float_t*, std::vector&lt;face_vci&gt; &gt; vert_face_map;
@@ -91,9 +91,9 @@
 <a name="l00085"></a>00085 
 <a name="l00087"></a>00087 
 <a name="l00090"></a>00090   TransformableTrimesh(<span class="keyword">const</span> std::string fname)
-<a name="l00091"></a>00091     : <a class="code" href="classASCbase_1_1geometry_1_1SimpleTrimeshTwo.html#b97e238865058c9209bb15c60535d08f">SimpleTrimeshTwo</a>(fname)
+<a name="l00091"></a>00091     : <a class="code" href="classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo.html#b97e238865058c9209bb15c60535d08f">SimpleTrimeshTwo</a>(fname)
 <a name="l00092"></a>00092   { 
-<a name="l00093"></a>00093     <span class="keywordflow">if</span>(!<a class="code" href="classASCbase_1_1geometry_1_1SimpleTrimeshTwo.html#81ecdfec18b36033de2e791107dfe69f">read_face_file</a>(fname, <span class="keyword">false</span>, <span class="keyword">false</span>)){
+<a name="l00093"></a>00093     <span class="keywordflow">if</span>(!<a class="code" href="classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo.html#81ecdfec18b36033de2e791107dfe69f">read_face_file</a>(fname, <span class="keyword">false</span>, <span class="keyword">false</span>)){
 <a name="l00094"></a>00094       set_fail_flag();
 <a name="l00095"></a>00095       <span class="keywordflow">return</span>;
 <a name="l00096"></a>00096     }
@@ -107,7 +107,7 @@
 <a name="l00104"></a>00104 
 <a name="l00106"></a>00106 
 <a name="l00113"></a>00113   <span class="keywordtype">bool</span>
-<a name="l00114"></a>00114   <a class="code" href="classASCbase_1_1geometry_1_1SimpleTrimeshTwo.html#6a394127681e1e61e8ce2e14e6a6d8ae">compare</a>(<span class="keyword">const</span> my_float_t *other_vert_begin, <span class="keyword">const</span> uint num_other_vert,
+<a name="l00114"></a>00114   <a class="code" href="classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo.html#6a394127681e1e61e8ce2e14e6a6d8ae">compare</a>(<span class="keyword">const</span> my_float_t *other_vert_begin, <span class="keyword">const</span> uint num_other_vert,
 <a name="l00115"></a>00115           my_float_t *closest_pts, my_float_t *dists,
 <a name="l00116"></a>00116           <span class="keyword">const</span> my_float_t max_dist = my_float_max)<span class="keyword"> const</span>
 <a name="l00117"></a>00117 <span class="keyword">  </span>{
@@ -120,7 +120,7 @@
 <a name="l00124"></a>00124     <span class="keywordflow">for</span>(<span class="keyword">const</span> my_float_t *v = other_vert_begin; v &lt; other_vert_end; v += 3){
 <a name="l00125"></a>00125       face_vci face;
 <a name="l00126"></a>00126       <span class="keywordflow">for</span>(face = A_triangles.begin(); face &lt; A_triangles.end(); ++face){
-<a name="l00127"></a>00127         <a class="code" href="classASCbase_1_1geometry_1_1SimpleTrimeshTwo.html#acb3a26966405908d642026fe52e2395">compute_close_point</a>(v, face-&gt;vertices[0], face-&gt;vertices[1], 
+<a name="l00127"></a>00127         <a class="code" href="classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo.html#acb3a26966405908d642026fe52e2395">compute_close_point</a>(v, face-&gt;vertices[0], face-&gt;vertices[1], 
 <a name="l00128"></a>00128                             face-&gt;vertices[2], d, cp);
 <a name="l00129"></a>00129       }
 <a name="l00130"></a>00130       d += 1;
@@ -131,13 +131,13 @@
 <a name="l00135"></a>00135 
 <a name="l00136"></a>00136 <span class="keyword">private</span>:
 <a name="l00138"></a>00138   <span class="keywordtype">void</span>
-<a name="l00139"></a>00139   <a class="code" href="classASCbase_1_1geometry_1_1SimpleTrimeshTwo.html#15e4bc317ef6f01d9d59798708dd0a9a">init_triangle_data_structure</a>(<span class="keyword">const</span> uint num_vert, <span class="keyword">const</span> uint num_tri)
+<a name="l00139"></a>00139   <a class="code" href="classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo.html#15e4bc317ef6f01d9d59798708dd0a9a">init_triangle_data_structure</a>(<span class="keyword">const</span> uint num_vert, <span class="keyword">const</span> uint num_tri)
 <a name="l00140"></a>00140   {
 <a name="l00141"></a>00141     A_triangles.reserve(num_tri);
 <a name="l00142"></a>00142   }
 <a name="l00143"></a>00143 
 <a name="l00145"></a>00145   <span class="keywordtype">void</span>
-<a name="l00146"></a>00146   <a class="code" href="classASCbase_1_1geometry_1_1SimpleTrimeshTwo.html#1e6fafae2016945f5e855765a456e1fd">update_triangle_data_structure</a>(<span class="keyword">const</span> uint tri_idx, <span class="keyword">const</span> uint *vert_idz,
+<a name="l00146"></a>00146   <a class="code" href="classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo.html#1e6fafae2016945f5e855765a456e1fd">update_triangle_data_structure</a>(<span class="keyword">const</span> uint tri_idx, <span class="keyword">const</span> uint *vert_idz,
 <a name="l00147"></a>00147                                  <span class="keyword">const</span> my_float_t **vertices,
 <a name="l00148"></a>00148                                  <span class="keyword">const</span> my_float_t **normals)
 <a name="l00149"></a>00149   {
@@ -161,13 +161,13 @@
 <a name="l00168"></a>00168     }
 <a name="l00169"></a>00169   }
 <a name="l00170"></a>00170 
-<a name="l00171"></a>00171   <a class="code" href="classASCbase_1_1geometry_1_1SimpleTrimeshTwo.html#ec05b95a341017a23bdde9bf620ebd9d">face_vec</a> A_triangles;              
+<a name="l00171"></a>00171   <a class="code" href="classSimSite3D_1_1geometry_1_1SimpleTrimeshTwo.html#ec05b95a341017a23bdde9bf620ebd9d">face_vec</a> A_triangles;              
 <a name="l00172"></a>00172   vert_face_map A_map_vert_to_faces; 
 <a name="l00173"></a>00173 };
 <a name="l00174"></a>00174 <span class="preprocessor">#endif</span>
 <a name="l00175"></a>00175 <span class="preprocessor"></span>
 <a name="l00176"></a>00176 } <span class="comment">// end namespace geometry</span>
-<a name="l00177"></a>00177 } <span class="comment">// end namespace ASCbase</span>
+<a name="l00177"></a>00177 } <span class="comment">// end namespace SimSite3D</span>
 <a name="l00178"></a>00178 <span class="preprocessor">#endif</span>
 </pre></div><hr size="1"><address style="align: right;"><small>Generated on Tue Apr 3 23:09:18 2012 for simsite3d by&nbsp;
 <a href="http://www.doxygen.org/index.html">

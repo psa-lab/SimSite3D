@@ -1,7 +1,7 @@
 #include <sstream>
 #include <PDBStructure.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 typedef struct{
   const atom_type *atoms;

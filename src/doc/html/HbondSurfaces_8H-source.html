@@ -19,30 +19,30 @@
 <a name="l00006"></a>00006 <span class="preprocessor">#include &lt;BaseParameters.H&gt;</span>
 <a name="l00007"></a>00007 <span class="preprocessor">#include &lt;HbondBase.H&gt;</span>
 <a name="l00008"></a>00008 
-<a name="l00009"></a>00009 <span class="keyword">namespace </span>ASCbase{
+<a name="l00009"></a>00009 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00010"></a>00010 
 <a name="l00013"></a>00013 
-<a name="l00023"></a><a class="code" href="classASCbase_1_1hbond__surface__t.html">00023</a> <span class="keyword">class </span><a class="code" href="classASCbase_1_1hbond__surface__t.html">hbond_surface_t</a> : <span class="keyword">public</span> <a class="code" href="classASCbase_1_1hbond__ideal__pt__base.html">hbond_ideal_pt_base</a>{
+<a name="l00023"></a><a class="code" href="classSimSite3D_1_1hbond__surface__t.html">00023</a> <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1hbond__surface__t.html">hbond_surface_t</a> : <span class="keyword">public</span> <a class="code" href="classSimSite3D_1_1hbond__ideal__pt__base.html">hbond_ideal_pt_base</a>{
 <a name="l00024"></a>00024 <span class="keyword">public</span>: 
-<a name="l00026"></a><a class="code" href="classASCbase_1_1hbond__surface__t.html#9e357e26963a25f5d34f8ead0e7154b8">00026</a>   <a class="code" href="classASCbase_1_1hbond__surface__t.html#9e357e26963a25f5d34f8ead0e7154b8">hbond_surface_t</a>(<span class="keyword">const</span> atom_vci hbond_atom, <span class="keyword">const</span> atom_vci C_nbr_atom,
+<a name="l00026"></a><a class="code" href="classSimSite3D_1_1hbond__surface__t.html#9e357e26963a25f5d34f8ead0e7154b8">00026</a>   <a class="code" href="classSimSite3D_1_1hbond__surface__t.html#9e357e26963a25f5d34f8ead0e7154b8">hbond_surface_t</a>(<span class="keyword">const</span> atom_vci hbond_atom, <span class="keyword">const</span> atom_vci C_nbr_atom,
 <a name="l00027"></a>00027                   <span class="keyword">const</span> atom_vci second_nbr_atom, 
-<a name="l00028"></a>00028                   <a class="code" href="classASCbase_1_1BoundingVolume.html">BoundingVolume</a> &amp;site_vol, <span class="keyword">const</span> <span class="keywordtype">int</span> cap_number,
+<a name="l00028"></a>00028                   <a class="code" href="classSimSite3D_1_1BoundingVolume.html">BoundingVolume</a> &amp;site_vol, <span class="keyword">const</span> <span class="keywordtype">int</span> cap_number,
 <a name="l00029"></a>00029                   <span class="keyword">const</span> <span class="keywordtype">bool</span> include_metals = <span class="keyword">false</span>,
 <a name="l00030"></a>00030                   <span class="keyword">const</span> alloc_t a = ALLOC_POSITION)
-<a name="l00031"></a>00031     : <a class="code" href="classASCbase_1_1hbond__ideal__pt__base.html">hbond_ideal_pt_base</a>(hbond_atom, C_nbr_atom, second_nbr_atom, site_vol,
+<a name="l00031"></a>00031     : <a class="code" href="classSimSite3D_1_1hbond__ideal__pt__base.html">hbond_ideal_pt_base</a>(hbond_atom, C_nbr_atom, second_nbr_atom, site_vol,
 <a name="l00032"></a>00032                           cap_number, include_metals, a),
-<a name="l00033"></a>00033       A_surf(hbond_atom-&gt;pos, <a class="code" href="classASCbase_1_1hbond__surface__t.html#5779dc1ca7f6d66ef343d01ba14978b8">SURF_SPHERE_RAD</a>)
+<a name="l00033"></a>00033       A_surf(hbond_atom-&gt;pos, <a class="code" href="classSimSite3D_1_1hbond__surface__t.html#5779dc1ca7f6d66ef343d01ba14978b8">SURF_SPHERE_RAD</a>)
 <a name="l00034"></a>00034   {
 <a name="l00035"></a>00035   }
 <a name="l00036"></a>00036 
-<a name="l00038"></a>00038   <a class="code" href="classASCbase_1_1hbond__surface__t.html#9e357e26963a25f5d34f8ead0e7154b8">hbond_surface_t</a>(<span class="keyword">const</span> std::string&amp; data_line, <a class="code" href="classASCbase_1_1PDBBase.html">PDBBase</a>&amp; prot_atoms);
+<a name="l00038"></a>00038   <a class="code" href="classSimSite3D_1_1hbond__surface__t.html#9e357e26963a25f5d34f8ead0e7154b8">hbond_surface_t</a>(<span class="keyword">const</span> std::string&amp; data_line, <a class="code" href="classSimSite3D_1_1PDBBase.html">PDBBase</a>&amp; prot_atoms);
 <a name="l00039"></a>00039 
-<a name="l00040"></a>00040   <a class="code" href="classASCbase_1_1hbond__surface__t.html#9e357e26963a25f5d34f8ead0e7154b8">hbond_surface_t</a>(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1hbond__surface__t.html">hbond_surface_t</a>&amp; src)
-<a name="l00041"></a>00041     : <a class="code" href="classASCbase_1_1hbond__ideal__pt__base.html">hbond_ideal_pt_base</a>(src)
+<a name="l00040"></a>00040   <a class="code" href="classSimSite3D_1_1hbond__surface__t.html#9e357e26963a25f5d34f8ead0e7154b8">hbond_surface_t</a>(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1hbond__surface__t.html">hbond_surface_t</a>&amp; src)
+<a name="l00041"></a>00041     : <a class="code" href="classSimSite3D_1_1hbond__ideal__pt__base.html">hbond_ideal_pt_base</a>(src)
 <a name="l00042"></a>00042   { do_copy(src); }
 <a name="l00043"></a>00043 
-<a name="l00044"></a>00044   <span class="keyword">const</span> <a class="code" href="classASCbase_1_1hbond__surface__t.html#9e357e26963a25f5d34f8ead0e7154b8">hbond_surface_t</a>&amp;
-<a name="l00045"></a>00045   operator=(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1hbond__surface__t.html#9e357e26963a25f5d34f8ead0e7154b8">hbond_surface_t</a>&amp; src)
+<a name="l00044"></a>00044   <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1hbond__surface__t.html#9e357e26963a25f5d34f8ead0e7154b8">hbond_surface_t</a>&amp;
+<a name="l00045"></a>00045   operator=(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1hbond__surface__t.html#9e357e26963a25f5d34f8ead0e7154b8">hbond_surface_t</a>&amp; src)
 <a name="l00046"></a>00046   {
 <a name="l00047"></a>00047     <span class="keywordflow">if</span>(<span class="keyword">this</span> != &amp;src){
 <a name="l00048"></a>00048       do_copy(src);
@@ -51,7 +51,7 @@
 <a name="l00051"></a>00051     <span class="keywordflow">return</span> *<span class="keyword">this</span>;
 <a name="l00052"></a>00052   }
 <a name="l00053"></a>00053 
-<a name="l00054"></a>00054   <span class="keyword">virtual</span> ~<a class="code" href="classASCbase_1_1hbond__surface__t.html#9e357e26963a25f5d34f8ead0e7154b8">hbond_surface_t</a>()
+<a name="l00054"></a>00054   <span class="keyword">virtual</span> ~<a class="code" href="classSimSite3D_1_1hbond__surface__t.html#9e357e26963a25f5d34f8ead0e7154b8">hbond_surface_t</a>()
 <a name="l00055"></a>00055   { ; }
 <a name="l00056"></a>00056 
 <a name="l00057"></a>00057   <span class="keywordtype">bool</span>
@@ -77,20 +77,20 @@
 <a name="l00077"></a>00077 
 <a name="l00078"></a>00078 <span class="keyword">private</span>:
 <a name="l00079"></a>00079   <span class="keywordtype">void</span> 
-<a name="l00080"></a>00080   do_copy(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1hbond__surface__t.html#9e357e26963a25f5d34f8ead0e7154b8">hbond_surface_t</a>&amp; src)
+<a name="l00080"></a>00080   do_copy(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1hbond__surface__t.html#9e357e26963a25f5d34f8ead0e7154b8">hbond_surface_t</a>&amp; src)
 <a name="l00081"></a>00081   {
 <a name="l00082"></a>00082     A_surf = src.A_surf;
 <a name="l00083"></a>00083     A_cut_plane = src.A_cut_plane;
-<a name="l00084"></a>00084     <a class="code" href="classASCbase_1_1hbond__surface__t.html#83046f180c928461d3f67c4b3b81554c">A_cap_plane_rad</a> = src.A_cap_plane_rad;
+<a name="l00084"></a>00084     <a class="code" href="classSimSite3D_1_1hbond__surface__t.html#83046f180c928461d3f67c4b3b81554c">A_cap_plane_rad</a> = src.A_cap_plane_rad;
 <a name="l00085"></a>00085     A_circles = std::vector&lt;geometry::iCircle&gt;(src.A_circles.begin(), 
 <a name="l00086"></a>00086                                                src.A_circles.end());
 <a name="l00087"></a>00087   }
 <a name="l00088"></a>00088 
 <a name="l00089"></a>00089   geometry::sphere_t A_surf;
 <a name="l00090"></a>00090   geometry::plane_t A_cut_plane;
-<a name="l00091"></a><a class="code" href="classASCbase_1_1hbond__surface__t.html#83046f180c928461d3f67c4b3b81554c">00091</a>   my_float_t <a class="code" href="classASCbase_1_1hbond__surface__t.html#83046f180c928461d3f67c4b3b81554c">A_cap_plane_rad</a>; 
+<a name="l00091"></a><a class="code" href="classSimSite3D_1_1hbond__surface__t.html#83046f180c928461d3f67c4b3b81554c">00091</a>   my_float_t <a class="code" href="classSimSite3D_1_1hbond__surface__t.html#83046f180c928461d3f67c4b3b81554c">A_cap_plane_rad</a>; 
 <a name="l00092"></a>00092   std::vector&lt;geometry::iCircle&gt; A_circles;
-<a name="l00093"></a><a class="code" href="classASCbase_1_1hbond__surface__t.html#5779dc1ca7f6d66ef343d01ba14978b8">00093</a>   <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classASCbase_1_1hbond__surface__t.html#5779dc1ca7f6d66ef343d01ba14978b8">SURF_SPHERE_RAD</a>;  
+<a name="l00093"></a><a class="code" href="classSimSite3D_1_1hbond__surface__t.html#5779dc1ca7f6d66ef343d01ba14978b8">00093</a>   <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classSimSite3D_1_1hbond__surface__t.html#5779dc1ca7f6d66ef343d01ba14978b8">SURF_SPHERE_RAD</a>;  
 <a name="l00094"></a>00094 };
 <a name="l00095"></a>00095 
 <a name="l00096"></a>00096 <span class="keyword">typedef</span> std::vector&lt;hbond_surface_t&gt;::iterator hbond_surf_vi;
@@ -104,7 +104,7 @@
 <a name="l00104"></a>00104   <span class="keyword">typedef</span> <span class="keyword">typename</span> std::vector&lt;surf_class&gt;::iterator            surfaces_vi;
 <a name="l00105"></a>00105   <span class="keyword">typedef</span> <span class="keyword">typename</span> std::vector&lt;surf_class&gt;::const_iterator      surfaces_vci;
 <a name="l00106"></a>00106 
-<a name="l00107"></a>00107   HbondSurfaces(<span class="keyword">const</span> std::string fname, <a class="code" href="classASCbase_1_1PDBBase.html">PDBBase</a>&amp; rad_atoms,
+<a name="l00107"></a>00107   HbondSurfaces(<span class="keyword">const</span> std::string fname, <a class="code" href="classSimSite3D_1_1PDBBase.html">PDBBase</a>&amp; rad_atoms,
 <a name="l00108"></a>00108                 <span class="keyword">const</span> verbose_level_t verbosity = VERBOSE_SILENT)
 <a name="l00109"></a>00109   {
 <a name="l00110"></a>00110     std::ifstream surf_caps_file;
@@ -164,7 +164,7 @@
 <a name="l00168"></a>00168 };
 <a name="l00169"></a>00169 
 <a name="l00170"></a>00170 
-<a name="l00171"></a>00171 } <span class="comment">// end namespace ASCbase</span>
+<a name="l00171"></a>00171 } <span class="comment">// end namespace SimSite3D</span>
 <a name="l00172"></a>00172 
 <a name="l00173"></a>00173 <span class="preprocessor">#endif</span>
 </pre></div><hr size="1"><address style="align: right;"><small>Generated on Tue Apr 3 23:09:18 2012 for simsite3d by&nbsp;

@@ -1,13 +1,13 @@
 #!/usr/bin/python
 #
-# $Source: /psa/share/repository/pfizer_proj/python/ASCbase/utils.py,v $
+# $Source: /psa/share/repository/pfizer_proj/python/SimSite3D/utils.py,v $
 # $Revision: 1.4 $
 # $Author: vanvoor4 $
 # $Date: 2008-11-18 15:40:32 $
 #
 # $Log: not supported by cvs2svn $
 # Revision 1.3  2008/01/22 16:46:56  vanvoor4
-# Changed to reflect the more recent method of handling the ASCbase
+# Changed to reflect the more recent method of handling the SimSite3D
 # environment.  At this time the course of action is
 # 0) Get $ASCBASE_INSTALL_DIR value
 # 1) read the /etc/ascbase/ascbase.conf file if it exists
@@ -42,7 +42,7 @@ class directories:
     if(self.proj_dir == None):
       return None
 
-    #self.config_dir = self.proj_dir + "/ASCbaseSoftParams"
+    #self.config_dir = self.proj_dir + "/SimSite3DSoftParams"
     #if(check_install_dirs and not os.path.isdir(self.config_dir)):
       #print >> sys.stderr, "The directory \"" + self.config_dir + \
         #"\" does not exist"

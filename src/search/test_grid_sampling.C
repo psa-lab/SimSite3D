@@ -2,7 +2,7 @@
  * Copyright (c) 2010, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -19,7 +19,7 @@
 #include <NoTier1Score.H>
 #include <HbondSurfacesScore.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 template < class tier1_SF, class tier2_SF, typename align_T >
 class GridSamplingAndScoring : 

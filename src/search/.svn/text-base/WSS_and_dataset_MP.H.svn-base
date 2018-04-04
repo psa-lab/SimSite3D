@@ -1,7 +1,7 @@
 /******************************************************************************
  * Copyright (c) 2011, Jeff Van Voorst
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -21,7 +21,7 @@
 #include <RigidAlignWithDsetMP.H>
 #include <cassert>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! Weight interaction NN interaction pair sums
 class WSS_and_dataset_MP : public WeightedSumsScore{
@@ -97,5 +97,5 @@ public:
 private:
 
 };
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

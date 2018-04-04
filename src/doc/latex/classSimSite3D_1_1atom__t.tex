@@ -1,143 +1,143 @@
-\section{ASCbase::atom\_\-t Class Reference}
-\label{classASCbase_1_1atom__t}\index{ASCbase::atom_t@{ASCbase::atom\_\-t}}
-Generic atom type which uses the \doxyref{point\_\-t}{p.}{classASCbase_1_1point__t} class to store its position.  
+\section{SimSite3D::atom\_\-t Class Reference}
+\label{classSimSite3D_1_1atom__t}\index{SimSite3D::atom_t@{SimSite3D::atom\_\-t}}
+Generic atom type which uses the \doxyref{point\_\-t}{p.}{classSimSite3D_1_1point__t} class to store its position.  
 
 
 {\tt \#include $<$atom.H$>$}
 
-Inheritance diagram for ASCbase::atom\_\-t::\begin{figure}[H]
+Inheritance diagram for SimSite3D::atom\_\-t::\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2cm]{classASCbase_1_1atom__t}
+\includegraphics[height=2cm]{classSimSite3D_1_1atom__t}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{CompactItemize}
 \item 
-\textbf{atom\_\-t} (alloc\_\-t a=ALLOC\_\-POSITION)\label{classASCbase_1_1atom__t_ba80852410e7bad5e93cae7e65e00d4b}
+\textbf{atom\_\-t} (alloc\_\-t a=ALLOC\_\-POSITION)\label{classSimSite3D_1_1atom__t_ba80852410e7bad5e93cae7e65e00d4b}
 
 \item 
-\textbf{atom\_\-t} (const \bf{atom\_\-t} \&a)\label{classASCbase_1_1atom__t_a27845e51201a1929c21ebcf7fa92a89}
+\textbf{atom\_\-t} (const \bf{atom\_\-t} \&a)\label{classSimSite3D_1_1atom__t_a27845e51201a1929c21ebcf7fa92a89}
 
 \item 
-const \bf{atom\_\-t} \& \textbf{operator=} (const \bf{atom\_\-t} \&a)\label{classASCbase_1_1atom__t_aebc062942c27c6a4ecc451e95e0ca51}
+const \bf{atom\_\-t} \& \textbf{operator=} (const \bf{atom\_\-t} \&a)\label{classSimSite3D_1_1atom__t_aebc062942c27c6a4ecc451e95e0ca51}
 
 \item 
-const bool \bf{is\_\-water} () const \label{classASCbase_1_1atom__t_77399ac0cfa6b5d267e92b9d476a2465}
+const bool \bf{is\_\-water} () const \label{classSimSite3D_1_1atom__t_77399ac0cfa6b5d267e92b9d476a2465}
 
 \begin{CompactList}\small\item\em Allows flexibility in how waters are designated. \item\end{CompactList}\item 
-const bool \bf{is\_\-metal} () const \label{classASCbase_1_1atom__t_4e560e164d125669d08aa9525d34216e}
+const bool \bf{is\_\-metal} () const \label{classSimSite3D_1_1atom__t_4e560e164d125669d08aa9525d34216e}
 
 \begin{CompactList}\small\item\em Allows flexibility in how metals are designated. \item\end{CompactList}\item 
-const bool \textbf{is\_\-nitrogen} () const \label{classASCbase_1_1atom__t_bee03028777568b3e13d6c757d0cfd17}
+const bool \textbf{is\_\-nitrogen} () const \label{classSimSite3D_1_1atom__t_bee03028777568b3e13d6c757d0cfd17}
 
 \item 
-const bool \textbf{is\_\-oxygen} () const \label{classASCbase_1_1atom__t_0c4ce066143157a201c9504bb0778d0f}
+const bool \textbf{is\_\-oxygen} () const \label{classSimSite3D_1_1atom__t_0c4ce066143157a201c9504bb0778d0f}
 
 \item 
-const bool \textbf{is\_\-hydrophobic} () const \label{classASCbase_1_1atom__t_c151b67632a833125bc4edd7eeaa079c}
+const bool \textbf{is\_\-hydrophobic} () const \label{classSimSite3D_1_1atom__t_c151b67632a833125bc4edd7eeaa079c}
 
 \item 
-const bool \textbf{is\_\-hbonder} () const \label{classASCbase_1_1atom__t_b5818f32a48da4ef0da634e9c5d52ccb}
+const bool \textbf{is\_\-hbonder} () const \label{classSimSite3D_1_1atom__t_b5818f32a48da4ef0da634e9c5d52ccb}
 
 \end{CompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{CompactItemize}
 \item 
-static bool \bf{cmp} (const \bf{atom\_\-t} \&A, const \bf{atom\_\-t} \&B)\label{classASCbase_1_1atom__t_0e4ddf2772215a45e107615b3a144537}
+static bool \bf{cmp} (const \bf{atom\_\-t} \&A, const \bf{atom\_\-t} \&B)\label{classSimSite3D_1_1atom__t_0e4ddf2772215a45e107615b3a144537}
 
 \begin{CompactList}\small\item\em Allows sorting of an atom\_\-vec\_\-t by atom number. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Public Attributes}
 \begin{CompactItemize}
 \item 
-uint \bf{atom\_\-num}\label{classASCbase_1_1atom__t_9a854374ed82fbc5e7f29690cd7f2418}
+uint \bf{atom\_\-num}\label{classSimSite3D_1_1atom__t_9a854374ed82fbc5e7f29690cd7f2418}
 
 \begin{CompactList}\small\item\em Atom (serial) number. \item\end{CompactList}\item 
-uint \bf{res\_\-num}\label{classASCbase_1_1atom__t_4a643f052098c53dd7cfe1e6f17462a0}
+uint \bf{res\_\-num}\label{classSimSite3D_1_1atom__t_4a643f052098c53dd7cfe1e6f17462a0}
 
 \begin{CompactList}\small\item\em Residue number. \item\end{CompactList}\item 
-atom\_\-type \bf{name}\label{classASCbase_1_1atom__t_8d17fc5f8e49ef5e1bea2e89a0b6e600}
+atom\_\-type \bf{name}\label{classSimSite3D_1_1atom__t_8d17fc5f8e49ef5e1bea2e89a0b6e600}
 
 \begin{CompactList}\small\item\em Atom type. \item\end{CompactList}\item 
-residue\_\-type \bf{res}\label{classASCbase_1_1atom__t_b3b7b5f7e8172387dd581dcacc4a9f72}
+residue\_\-type \bf{res}\label{classSimSite3D_1_1atom__t_b3b7b5f7e8172387dd581dcacc4a9f72}
 
 \begin{CompactList}\small\item\em Residue type. \item\end{CompactList}\item 
-char \bf{chain\-ID}\label{classASCbase_1_1atom__t_b4a4060dde7bf73e494332146ed5ca92}
+char \bf{chain\-ID}\label{classSimSite3D_1_1atom__t_b4a4060dde7bf73e494332146ed5ca92}
 
 \begin{CompactList}\small\item\em Chain id. \item\end{CompactList}\item 
-char \bf{alt\-Loc}\label{classASCbase_1_1atom__t_7e7d73ecb81a7923c92284e4c86bfc5c}
+char \bf{alt\-Loc}\label{classSimSite3D_1_1atom__t_7e7d73ecb81a7923c92284e4c86bfc5c}
 
 \begin{CompactList}\small\item\em Alterate location code. \item\end{CompactList}\item 
-char \bf{i\-Code}\label{classASCbase_1_1atom__t_f7a846d9ffb1b0caf8a7b7b88bcf2f32}
+char \bf{i\-Code}\label{classSimSite3D_1_1atom__t_f7a846d9ffb1b0caf8a7b7b88bcf2f32}
 
 \begin{CompactList}\small\item\em Insertion code. \item\end{CompactList}\item 
-my\_\-float\_\-t \bf{occupancy}\label{classASCbase_1_1atom__t_e9d0dc62c74dc8e3cf8c4a8d9866170a}
+my\_\-float\_\-t \bf{occupancy}\label{classSimSite3D_1_1atom__t_e9d0dc62c74dc8e3cf8c4a8d9866170a}
 
 \begin{CompactList}\small\item\em Occupancy value. \item\end{CompactList}\item 
-my\_\-float\_\-t \bf{temp\-Factor}\label{classASCbase_1_1atom__t_6a08edf1e9a8fc861d434a81e306da39}
+my\_\-float\_\-t \bf{temp\-Factor}\label{classSimSite3D_1_1atom__t_6a08edf1e9a8fc861d434a81e306da39}
 
 \begin{CompactList}\small\item\em Temperature factor. \item\end{CompactList}\item 
-orbit\_\-type \bf{orbit}\label{classASCbase_1_1atom__t_0a438d9b577cedf15ac1629c3067e2a7}
+orbit\_\-type \bf{orbit}\label{classSimSite3D_1_1atom__t_0a438d9b577cedf15ac1629c3067e2a7}
 
 \begin{CompactList}\small\item\em Atom hybridization/orbital. \item\end{CompactList}\item 
-my\_\-float\_\-t \bf{vdw\_\-radius}\label{classASCbase_1_1atom__t_1beb46018c79fd73df622a22540c341a}
+my\_\-float\_\-t \bf{vdw\_\-radius}\label{classSimSite3D_1_1atom__t_1beb46018c79fd73df622a22540c341a}
 
 \begin{CompactList}\small\item\em Atom's Van der Waals radius. \item\end{CompactList}\item 
-std::string \bf{name\_\-str}\label{classASCbase_1_1atom__t_bb5f12af2e89540a14e1d2ed78905a97}
+std::string \bf{name\_\-str}\label{classSimSite3D_1_1atom__t_bb5f12af2e89540a14e1d2ed78905a97}
 
 \begin{CompactList}\small\item\em For PDB HETATMs', PDB Hs' and mol2 atoms' names. \item\end{CompactList}\item 
-std::string \bf{res\_\-str}\label{classASCbase_1_1atom__t_16c11a15f4136c3d4bb29e9abd6fa719}
+std::string \bf{res\_\-str}\label{classSimSite3D_1_1atom__t_16c11a15f4136c3d4bb29e9abd6fa719}
 
 \begin{CompactList}\small\item\em For PDB HETATMs. \item\end{CompactList}\item 
-bool \bf{is\_\-hetero}\label{classASCbase_1_1atom__t_d4583a7bfb72db12ae7eccbb2c232714}
+bool \bf{is\_\-hetero}\label{classSimSite3D_1_1atom__t_d4583a7bfb72db12ae7eccbb2c232714}
 
 \begin{CompactList}\small\item\em True implies PDB HETATM, otherwise false. \item\end{CompactList}\item 
-interaction\-Type \bf{act\_\-type}\label{classASCbase_1_1atom__t_0649f5881857d9437b85dfec852f5a88}
+interaction\-Type \bf{act\_\-type}\label{classSimSite3D_1_1atom__t_0649f5881857d9437b85dfec852f5a88}
 
 \begin{CompactList}\small\item\em Donor, acceptor, doneptor, hphob, or nothing. \item\end{CompactList}\item 
-my\_\-float\_\-t \bf{charge}\label{classASCbase_1_1atom__t_5b15b577b1e6874f1ca87a3a972ba212}
+my\_\-float\_\-t \bf{charge}\label{classSimSite3D_1_1atom__t_5b15b577b1e6874f1ca87a3a972ba212}
 
-\begin{CompactList}\small\item\em Protein charges + ASCbase summed atomic charges on ligands. \item\end{CompactList}\item 
-my\_\-float\_\-t \bf{orig\_\-charge}\label{classASCbase_1_1atom__t_1bdb3b1e702e49621bcbcfcee908e9c6}
+\begin{CompactList}\small\item\em Protein charges + SimSite3D summed atomic charges on ligands. \item\end{CompactList}\item 
+my\_\-float\_\-t \bf{orig\_\-charge}\label{classSimSite3D_1_1atom__t_1bdb3b1e702e49621bcbcfcee908e9c6}
 
 \begin{CompactList}\small\item\em Hold the ligand atomic charges as read in. \item\end{CompactList}\item 
-int \bf{subst\_\-id}\label{classASCbase_1_1atom__t_6e71b7884ac0a9e5526ce40f2a807cf9}
+int \bf{subst\_\-id}\label{classSimSite3D_1_1atom__t_6e71b7884ac0a9e5526ce40f2a807cf9}
 
 \begin{CompactList}\small\item\em mol2 junk -- ignored for now \item\end{CompactList}\item 
-std::string \bf{subst\_\-name}\label{classASCbase_1_1atom__t_41715c0d9c29a54ee6b8b1fe979c49b6}
+std::string \bf{subst\_\-name}\label{classSimSite3D_1_1atom__t_41715c0d9c29a54ee6b8b1fe979c49b6}
 
 \begin{CompactList}\small\item\em mol2 junk -- ignored for now \item\end{CompactList}\item 
-int \bf{hydro}\label{classASCbase_1_1atom__t_f1eaec85b84f948e97692a58dbfa2526}
+int \bf{hydro}\label{classSimSite3D_1_1atom__t_f1eaec85b84f948e97692a58dbfa2526}
 
 \begin{CompactList}\small\item\em Hydrophobicity value. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Static Public Attributes}
 \begin{CompactItemize}
 \item 
-static const \bf{atom\_\-t} \bf{NULL\_\-ATOM}\label{classASCbase_1_1atom__t_3bdee8ba5c2e5b44c68458d9640f1051}
+static const \bf{atom\_\-t} \bf{NULL\_\-ATOM}\label{classSimSite3D_1_1atom__t_3bdee8ba5c2e5b44c68458d9640f1051}
 
 \begin{CompactList}\small\item\em the \char`\"{}standard\char`\"{} null atom \item\end{CompactList}\item 
-static const \bf{point\_\-storage}$<$ \bf{atom\_\-t} $>$ \bf{NULL\_\-ATOM\_\-VECTOR}\label{classASCbase_1_1atom__t_7d84cd97fa838e1ab2452a1794e723bc}
+static const \bf{point\_\-storage}$<$ \bf{atom\_\-t} $>$ \bf{NULL\_\-ATOM\_\-VECTOR}\label{classSimSite3D_1_1atom__t_7d84cd97fa838e1ab2452a1794e723bc}
 
 \begin{CompactList}\small\item\em the \char`\"{}standard\char`\"{} null atom vector \item\end{CompactList}\item 
-static const \bf{point\_\-storage}$<$ \bf{atom\_\-t} $>$::const\_\-iterator \bf{NULL\_\-ATOM\_\-VCI} = atom\_\-t::NULL\_\-ATOM\_\-VECTOR.begin()\label{classASCbase_1_1atom__t_6006207a0eed1857af230dca1dadc4a1}
+static const \bf{point\_\-storage}$<$ \bf{atom\_\-t} $>$::const\_\-iterator \bf{NULL\_\-ATOM\_\-VCI} = atom\_\-t::NULL\_\-ATOM\_\-VECTOR.begin()\label{classSimSite3D_1_1atom__t_6006207a0eed1857af230dca1dadc4a1}
 
 \begin{CompactList}\small\item\em the \char`\"{}standard\char`\"{} null atom vector constant iterator \item\end{CompactList}\end{CompactItemize}
 \subsection*{Private Member Functions}
 \begin{CompactItemize}
 \item 
-void \textbf{do\_\-copy} (const \bf{atom\_\-t} \&a)\label{classASCbase_1_1atom__t_e3e92a459d6ad8b6a37fd2a3d7197324}
+void \textbf{do\_\-copy} (const \bf{atom\_\-t} \&a)\label{classSimSite3D_1_1atom__t_e3e92a459d6ad8b6a37fd2a3d7197324}
 
 \end{CompactItemize}
 \subsection*{Friends}
 \begin{CompactItemize}
 \item 
-std::ostream \& \textbf{operator$<$$<$} (std::ostream \&out, const \bf{atom\_\-t} \&a)\label{classASCbase_1_1atom__t_d16a721f1511a95a28b046847e2d137e}
+std::ostream \& \textbf{operator$<$$<$} (std::ostream \&out, const \bf{atom\_\-t} \&a)\label{classSimSite3D_1_1atom__t_d16a721f1511a95a28b046847e2d137e}
 
 \end{CompactItemize}
 
 
 \subsection{Detailed Description}
-Generic atom type which uses the \doxyref{point\_\-t}{p.}{classASCbase_1_1point__t} class to store its position. 
+Generic atom type which uses the \doxyref{point\_\-t}{p.}{classSimSite3D_1_1point__t} class to store its position. 
 
 
 

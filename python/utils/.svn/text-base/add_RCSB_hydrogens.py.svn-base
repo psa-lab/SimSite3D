@@ -3,7 +3,7 @@ import tempfile
 import re
 from sys import stderr
 from numpy import *
-from ASCbasePy import *
+from SimSite3DPy import *
 
 # The openeye modules (wrappers to C++ libraries) are stored somewhere on
 # the PSA system.  When writing this script they resided at

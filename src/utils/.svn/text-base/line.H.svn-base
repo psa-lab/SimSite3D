@@ -5,7 +5,7 @@
 #include <string_basics.H>
 #include <math_basics.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 namespace geometry{
 
 class line_t{
@@ -104,6 +104,6 @@ private:
 };
 
 } // end namespace geometry
-} // end namespace ASCbase
+} // end namespace SimSite3D
 
 #endif

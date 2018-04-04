@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -32,7 +32,7 @@
 <a name="l00019"></a>00019 <span class="preprocessor">#include &lt;ProtLigScore.H&gt;</span>
 <a name="l00020"></a>00020 <span class="preprocessor">#include &lt;ProtLigScoreParameters.H&gt;</span>
 <a name="l00021"></a>00021 
-<a name="l00022"></a>00022 <span class="keyword">namespace </span>ASCbase{
+<a name="l00022"></a>00022 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00023"></a>00023 
 <a name="l00024"></a>00024 <span class="keyword">class </span>ProtLigActTable{
 <a name="l00025"></a>00025 
@@ -103,7 +103,7 @@
 <a name="l00090"></a>00090     map_i = s_info.hphob_SC_begin();
 <a name="l00091"></a>00091     <span class="keywordflow">for</span>( ; map_i != s_info.hphob_SC_end(); ++map_i){
 <a name="l00092"></a>00092       atom_vci SC_CB = hphob_SC_to_atom(map_i-&gt;first);
-<a name="l00093"></a>00093       <span class="keywordflow">if</span>(SC_CB == <a class="code" href="classASCbase_1_1atom__t.html#6006207a0eed1857af230dca1dadc4a1">atom_t::NULL_ATOM_VCI</a>) <span class="keywordflow">continue</span>;
+<a name="l00093"></a>00093       <span class="keywordflow">if</span>(SC_CB == <a class="code" href="classSimSite3D_1_1atom__t.html#6006207a0eed1857af230dca1dadc4a1">atom_t::NULL_ATOM_VCI</a>) <span class="keywordflow">continue</span>;
 <a name="l00094"></a>00094 
 <a name="l00095"></a>00095       size_t idx = SC_CB - A_prot-&gt;atoms_begin();
 <a name="l00096"></a>00096       ++(*(A_col_sums.begin() + idx));
@@ -129,13 +129,13 @@
 <a name="l00116"></a>00116       atom_vci atom = A_prot-&gt;atoms_begin() + idx;
 <a name="l00117"></a>00117       
 <a name="l00118"></a>00118       <span class="keywordflow">if</span>(atom-&gt;chainID != <span class="charliteral">' '</span>) out &lt;&lt; <span class="stringliteral">"("</span> &lt;&lt; atom-&gt;chainID &lt;&lt; <span class="stringliteral">")"</span>;
-<a name="l00119"></a>00119       out &lt;&lt; <a class="code" href="classASCbase_1_1PDB__residues.html#d17b8fa8fe06ed333b7d35510ee05b01">PDB_residues::residue_to_string</a>(atom-&gt;res) &lt;&lt; atom-&gt;res_num;
+<a name="l00119"></a>00119       out &lt;&lt; <a class="code" href="classSimSite3D_1_1PDB__residues.html#d17b8fa8fe06ed333b7d35510ee05b01">PDB_residues::residue_to_string</a>(atom-&gt;res) &lt;&lt; atom-&gt;res_num;
 <a name="l00120"></a>00120       <span class="keywordflow">if</span>(atom-&gt;iCode != <span class="charliteral">' '</span>) out &lt;&lt; atom-&gt;iCode;
 <a name="l00121"></a>00121 
 <a name="l00122"></a>00122       <span class="comment">// CB is placeholder atom for hydrophobic sidechain</span>
 <a name="l00123"></a>00123       <span class="keywordflow">if</span>(atom-&gt;name == CB) out &lt;&lt; <span class="stringliteral">" SC"</span> &lt;&lt; delim;
 <a name="l00124"></a>00124       <span class="comment">// Polar interaction</span>
-<a name="l00125"></a>00125       <span class="keywordflow">else</span> out &lt;&lt; <span class="stringliteral">" "</span> &lt;&lt; <a class="code" href="classASCbase_1_1PDB__residues.html#7776d1c208963a0f70edc290f5317b9b">PDB_residues::atom_to_string</a>(atom-&gt;name) &lt;&lt; delim;
+<a name="l00125"></a>00125       <span class="keywordflow">else</span> out &lt;&lt; <span class="stringliteral">" "</span> &lt;&lt; <a class="code" href="classSimSite3D_1_1PDB__residues.html#7776d1c208963a0f70edc290f5317b9b">PDB_residues::atom_to_string</a>(atom-&gt;name) &lt;&lt; delim;
 <a name="l00126"></a>00126     }
 <a name="l00127"></a>00127     out &lt;&lt; <span class="stringliteral">"\n"</span>;
 <a name="l00128"></a>00128 
@@ -181,7 +181,7 @@
 <a name="l00168"></a>00168     <span class="keywordflow">if</span>(my_iter == A_hphob_SC_to_atom.end()){
 <a name="l00169"></a>00169       <span class="keywordflow">if</span>(res-&gt;name != GLY &amp;&amp; res-&gt;name != SER)
 <a name="l00170"></a>00170         std::cerr &lt;&lt; <span class="stringliteral">"Unknown residue in hphob_SC_to_atom\n"</span>;
-<a name="l00171"></a>00171       <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1atom__t.html#6006207a0eed1857af230dca1dadc4a1">atom_t::NULL_ATOM_VCI</a>;
+<a name="l00171"></a>00171       <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1atom__t.html#6006207a0eed1857af230dca1dadc4a1">atom_t::NULL_ATOM_VCI</a>;
 <a name="l00172"></a>00172     }
 <a name="l00173"></a>00173     <span class="keywordflow">return</span> my_iter-&gt;second;
 <a name="l00174"></a>00174   }
@@ -256,7 +256,7 @@
 <a name="l00243"></a>00243   <span class="keywordflow">return</span> 0; 
 <a name="l00244"></a>00244 }
 <a name="l00245"></a>00245 <span class="preprocessor">#endif</span>
-<a name="l00246"></a>00246 <span class="preprocessor"></span>} <span class="comment">// end namespace ASCbase</span>
+<a name="l00246"></a>00246 <span class="preprocessor"></span>} <span class="comment">// end namespace SimSite3D</span>
 </pre></div><hr size="1"><address style="align: right;"><small>Generated on Tue Apr 3 23:09:18 2012 for simsite3d by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>

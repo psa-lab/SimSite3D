@@ -3,7 +3,7 @@
 
 #include <ScoreMapBase.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 class align_w_pl_score_t : public rigid_align_t{
 public:
@@ -95,5 +95,5 @@ private:
   }
 
 };
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

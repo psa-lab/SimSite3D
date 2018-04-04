@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -26,7 +26,7 @@
 #include <mat_ops.H>
 #include <Search.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 const std::string Search::A_fname = "Search.C";
 
 Search::Search(const SearchParameters* args_in)
@@ -139,7 +139,7 @@ Search::get_timer_and_write_to_file()
   std::ostringstream ostr;
   ostr << std::left << std::fixed;
   ostr.precision(2);
-  ostr << "# ASCbase timing statistics:\n";
+  ostr << "# SimSite3D timing statistics:\n";
   ostr << std::setw(50) << "#   Wall clock time:" << real << " sec.\n";
   ostr << std::setw(50) << "#   CPU time:" << prof << " sec.\n";
   ostr << std::setw(50) << "#   User time:" << virt << " sec.\n";

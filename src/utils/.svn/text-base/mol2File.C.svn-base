@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -24,7 +24,7 @@
 #include <set>
 #include <stack>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 const my_float_t mol2File::ATOMS_TOO_CLOSE = 1.75;
 const my_float_t mol2File::ATOMS_TOO_FAR = 4.5;
@@ -352,7 +352,7 @@ mol2File::write(const std::string ofname)
 
   if(is_frag_file){
     char tmp[80];
-    out << "# ASCbase fragment of " << name() << "\n"
+    out << "# SimSite3D fragment of " << name() << "\n"
         << "# Created: " << Timer::get_local_time(tmp, 80) << "\n";
   }
 
@@ -1261,7 +1261,7 @@ mol2File::write(std::string fname)
   std::ofstream mol2_file;
   if(!open_ofstream(mol2_file, fname)) return false;
 
-  mol2_file << "# Created by ASCbase::site_dock\n"
+  mol2_file << "# Created by SimSite3D::site_dock\n"
             << "# Date: " << Timer::get_local_time() << "\n\n";
 
   // Count total number of bonds;

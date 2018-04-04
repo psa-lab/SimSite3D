@@ -1,7 +1,7 @@
 #include <boost/python.hpp>
 #include <Timer.H>
 using namespace boost::python;
-using ASCbase::Timer;
+using SimSite3D::Timer;
 
 object
 wrap(Timer& T)

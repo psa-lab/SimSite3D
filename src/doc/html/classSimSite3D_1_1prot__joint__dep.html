@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
-<title>simsite3d: ASCbase::prot_joint_dep Class Reference</title>
+<title>simsite3d: SimSite3D::prot_joint_dep Class Reference</title>
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="tabs.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -18,196 +18,196 @@
     <li><a href="functions.html"><span>Class&nbsp;Members</span></a></li>
   </ul></div>
 <div class="nav">
-<b>ASCbase</b>::<a class="el" href="classASCbase_1_1prot__joint__dep.html">prot_joint_dep</a></div>
-<h1>ASCbase::prot_joint_dep Class Reference</h1><!-- doxytag: class="ASCbase::prot_joint_dep" -->Class to handle mobile residues -- rotatable joints for each residue.  
+<b>SimSite3D</b>::<a class="el" href="classSimSite3D_1_1prot__joint__dep.html">prot_joint_dep</a></div>
+<h1>SimSite3D::prot_joint_dep Class Reference</h1><!-- doxytag: class="SimSite3D::prot_joint_dep" -->Class to handle mobile residues -- rotatable joints for each residue.  
 <a href="#_details">More...</a>
 <p>
 <code>#include &lt;<a class="el" href="prot__joint__dep_8H-source.html">prot_joint_dep.H</a>&gt;</code>
 <p>
-<a href="classASCbase_1_1prot__joint__dep-members.html">List of all members.</a><table border="0" cellpadding="0" cellspacing="0">
+<a href="classSimSite3D_1_1prot__joint__dep-members.html">List of all members.</a><table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
 <tr><td colspan="2"><br><h2>Public Types</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="9e36ead4cfdfc490f727f6c417480421"></a><!-- doxytag: member="ASCbase::prot_joint_dep::joint_dep_tbl_atom_lvl" ref="9e36ead4cfdfc490f727f6c417480421" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="9e36ead4cfdfc490f727f6c417480421"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::joint_dep_tbl_atom_lvl" ref="9e36ead4cfdfc490f727f6c417480421" args="" -->
 typedef std::map&lt; atom_type,<br>
  std::vector&lt; atom_type &gt; &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>joint_dep_tbl_atom_lvl</b></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ea37de1c525672bf30521e8e97282cb4"></a><!-- doxytag: member="ASCbase::prot_joint_dep::joint_dep_tbl_res_lvl" ref="ea37de1c525672bf30521e8e97282cb4" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ea37de1c525672bf30521e8e97282cb4"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::joint_dep_tbl_res_lvl" ref="ea37de1c525672bf30521e8e97282cb4" args="" -->
 typedef std::map&lt; residue_type,<br>
  joint_dep_tbl_atom_lvl &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>joint_dep_tbl_res_lvl</b></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ff1116a39fb38afeaa53971b2b39cfa1"></a><!-- doxytag: member="ASCbase::prot_joint_dep::res_to_joints_mci" ref="ff1116a39fb38afeaa53971b2b39cfa1" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ff1116a39fb38afeaa53971b2b39cfa1"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::res_to_joints_mci" ref="ff1116a39fb38afeaa53971b2b39cfa1" args="" -->
 typedef std::map&lt; residue_vci,<br>
- <a class="el" href="classASCbase_1_1residue__joints.html">residue_joints</a> &gt;::const_iterator&nbsp;</td><td class="memItemRight" valign="bottom"><b>res_to_joints_mci</b></td></tr>
+ <a class="el" href="classSimSite3D_1_1residue__joints.html">residue_joints</a> &gt;::const_iterator&nbsp;</td><td class="memItemRight" valign="bottom"><b>res_to_joints_mci</b></td></tr>
 
 <tr><td colspan="2"><br><h2>Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1prot__joint__dep.html#a1cb25bee328bc154ca8fe35044b4c28">add_residue_info</a> (const <a class="el" href="classASCbase_1_1PDBStructure.html">PDBStructure</a> *prot, residue_vci res, const <a class="el" href="classASCbase_1_1residue__joints.html">residue_joints</a> **j)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1prot__joint__dep.html#a1cb25bee328bc154ca8fe35044b4c28">add_residue_info</a> (const <a class="el" href="classSimSite3D_1_1PDBStructure.html">PDBStructure</a> *prot, residue_vci res, const <a class="el" href="classSimSite3D_1_1residue__joints.html">residue_joints</a> **j)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Add mobile atoms (based on bond network not other constraints).  <a href="#a1cb25bee328bc154ca8fe35044b4c28"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4c89eabdd2a06a9ad881fec55aff32d6"></a><!-- doxytag: member="ASCbase::prot_joint_dep::joints_begin" ref="4c89eabdd2a06a9ad881fec55aff32d6" args="() const " -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4c89eabdd2a06a9ad881fec55aff32d6"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::joints_begin" ref="4c89eabdd2a06a9ad881fec55aff32d6" args="() const " -->
 res_to_joints_mci&nbsp;</td><td class="memItemRight" valign="bottom"><b>joints_begin</b> () const </td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="49c901cd2d806782ed5be925e93ea72d"></a><!-- doxytag: member="ASCbase::prot_joint_dep::joints_end" ref="49c901cd2d806782ed5be925e93ea72d" args="() const " -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="49c901cd2d806782ed5be925e93ea72d"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::joints_end" ref="49c901cd2d806782ed5be925e93ea72d" args="() const " -->
 res_to_joints_mci&nbsp;</td><td class="memItemRight" valign="bottom"><b>joints_end</b> () const </td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="6eb47defc3517af3de338df188ba0993"></a><!-- doxytag: member="ASCbase::prot_joint_dep::get_joints_info" ref="6eb47defc3517af3de338df188ba0993" args="(residue_type res_name)" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="6eb47defc3517af3de338df188ba0993"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::get_joints_info" ref="6eb47defc3517af3de338df188ba0993" args="(residue_type res_name)" -->
 const joint_deps_t &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><b>get_joints_info</b> (residue_type res_name)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ae8b48cbd3294ff3ec1b40cc637c2db0"></a><!-- doxytag: member="ASCbase::prot_joint_dep::fail" ref="ae8b48cbd3294ff3ec1b40cc637c2db0" args="()" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ae8b48cbd3294ff3ec1b40cc637c2db0"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::fail" ref="ae8b48cbd3294ff3ec1b40cc637c2db0" args="()" -->
 const bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>fail</b> ()</td></tr>
 
 <tr><td colspan="2"><br><h2>Private Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4f10e02931d487269a4987cfb6408791"></a><!-- doxytag: member="ASCbase::prot_joint_dep::init" ref="4f10e02931d487269a4987cfb6408791" args="()" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4f10e02931d487269a4987cfb6408791"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::init" ref="4f10e02931d487269a4987cfb6408791" args="()" -->
 void&nbsp;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 
 <tr><td colspan="2"><br><h2>Private Attributes</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="54fd130e58b3deeb5f66dc94eb02b99a"></a><!-- doxytag: member="ASCbase::prot_joint_dep::A_fail" ref="54fd130e58b3deeb5f66dc94eb02b99a" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="54fd130e58b3deeb5f66dc94eb02b99a"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::A_fail" ref="54fd130e58b3deeb5f66dc94eb02b99a" args="" -->
 bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>A_fail</b></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="db46d04a0979968d80e81663454c2d5e"></a><!-- doxytag: member="ASCbase::prot_joint_dep::A_atoms_dep_on_joint" ref="db46d04a0979968d80e81663454c2d5e" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="db46d04a0979968d80e81663454c2d5e"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::A_atoms_dep_on_joint" ref="db46d04a0979968d80e81663454c2d5e" args="" -->
 joint_dep_tbl_res_lvl&nbsp;</td><td class="memItemRight" valign="bottom"><b>A_atoms_dep_on_joint</b></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="5a8e3059f806f770411915200b7caddd"></a><!-- doxytag: member="ASCbase::prot_joint_dep::A_unknown_residue_vec" ref="5a8e3059f806f770411915200b7caddd" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="5a8e3059f806f770411915200b7caddd"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::A_unknown_residue_vec" ref="5a8e3059f806f770411915200b7caddd" args="" -->
 std::vector&lt; atom_type &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>A_unknown_residue_vec</b></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="aef12ef042d6d8a16e19265d3b17b47e"></a><!-- doxytag: member="ASCbase::prot_joint_dep::A_unknown_atom_vec" ref="aef12ef042d6d8a16e19265d3b17b47e" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="aef12ef042d6d8a16e19265d3b17b47e"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::A_unknown_atom_vec" ref="aef12ef042d6d8a16e19265d3b17b47e" args="" -->
 std::vector&lt; atom_type &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>A_unknown_atom_vec</b></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="970b14f7c96ce896be316d66ce1a797b"></a><!-- doxytag: member="ASCbase::prot_joint_dep::A_res_map" ref="970b14f7c96ce896be316d66ce1a797b" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="970b14f7c96ce896be316d66ce1a797b"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::A_res_map" ref="970b14f7c96ce896be316d66ce1a797b" args="" -->
 std::map&lt; residue_type, joint_deps_t &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>A_res_map</b></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b28915bf49d2cb1789e3620d989daa07"></a><!-- doxytag: member="ASCbase::prot_joint_dep::A_joint_blocks" ref="b28915bf49d2cb1789e3620d989daa07" args="" -->
-std::map&lt; residue_vci, <a class="el" href="classASCbase_1_1residue__joints.html">residue_joints</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1prot__joint__dep.html#b28915bf49d2cb1789e3620d989daa07">A_joint_blocks</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b28915bf49d2cb1789e3620d989daa07"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::A_joint_blocks" ref="b28915bf49d2cb1789e3620d989daa07" args="" -->
+std::map&lt; residue_vci, <a class="el" href="classSimSite3D_1_1residue__joints.html">residue_joints</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1prot__joint__dep.html#b28915bf49d2cb1789e3620d989daa07">A_joint_blocks</a></td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Groups of consecutive rows that correspond to joints from one residue -- ordered by residue number and chainID. <br></td></tr>
 <tr><td colspan="2"><br><h2>Static Private Attributes</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="bdfba272e362e3aaec7a1c7a4a236413"></a><!-- doxytag: member="ASCbase::prot_joint_dep::ALA_atoms" ref="bdfba272e362e3aaec7a1c7a4a236413" args="[]" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="bdfba272e362e3aaec7a1c7a4a236413"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::ALA_atoms" ref="bdfba272e362e3aaec7a1c7a4a236413" args="[]" -->
 static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>ALA_atoms</b> [] = {N, CA, C, O, CB}</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>ARG_atoms</b> []</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c42be93f2786f326aa7ca4900a243568"></a><!-- doxytag: member="ASCbase::prot_joint_dep::ASN_atoms" ref="c42be93f2786f326aa7ca4900a243568" args="[]" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c42be93f2786f326aa7ca4900a243568"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::ASN_atoms" ref="c42be93f2786f326aa7ca4900a243568" args="[]" -->
 static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>ASN_atoms</b> [] = {N, CA, C, O, CB, CG, OD1, ND2}</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="98f917b5a699f9f048933fbec9170136"></a><!-- doxytag: member="ASCbase::prot_joint_dep::ASP_atoms" ref="98f917b5a699f9f048933fbec9170136" args="[]" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="98f917b5a699f9f048933fbec9170136"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::ASP_atoms" ref="98f917b5a699f9f048933fbec9170136" args="[]" -->
 static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>ASP_atoms</b> [] = {N, CA, C, O, CB, CG, OD1, OD2}</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ff8c1b4fd6995e071efd57c053760338"></a><!-- doxytag: member="ASCbase::prot_joint_dep::CYS_atoms" ref="ff8c1b4fd6995e071efd57c053760338" args="[]" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ff8c1b4fd6995e071efd57c053760338"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::CYS_atoms" ref="ff8c1b4fd6995e071efd57c053760338" args="[]" -->
 static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>CYS_atoms</b> [] = {N, CA, C, O, CB, SG}</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>GLN_atoms</b> []</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>GLU_atoms</b> []</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="388d19cb5bb2bdbc270b4b6c82b406f3"></a><!-- doxytag: member="ASCbase::prot_joint_dep::GLY_atoms" ref="388d19cb5bb2bdbc270b4b6c82b406f3" args="[]" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="388d19cb5bb2bdbc270b4b6c82b406f3"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::GLY_atoms" ref="388d19cb5bb2bdbc270b4b6c82b406f3" args="[]" -->
 static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>GLY_atoms</b> [] = {N, CA, C, O}</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>HIS_atoms</b> []</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="3b3e44de9218be85c84ab92e07cd306e"></a><!-- doxytag: member="ASCbase::prot_joint_dep::ILE_atoms" ref="3b3e44de9218be85c84ab92e07cd306e" args="[]" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="3b3e44de9218be85c84ab92e07cd306e"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::ILE_atoms" ref="3b3e44de9218be85c84ab92e07cd306e" args="[]" -->
 static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>ILE_atoms</b> [] = {N, CA, C, O, CB, CG1, CG2, CD1}</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d9b51ba5dbb4d4e87307d7919cd28e25"></a><!-- doxytag: member="ASCbase::prot_joint_dep::LEU_atoms" ref="d9b51ba5dbb4d4e87307d7919cd28e25" args="[]" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d9b51ba5dbb4d4e87307d7919cd28e25"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::LEU_atoms" ref="d9b51ba5dbb4d4e87307d7919cd28e25" args="[]" -->
 static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>LEU_atoms</b> [] = {N, CA, C, O, CB, CG, CD1, CD2}</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d85c7a75fc06cce60194df94c98a670e"></a><!-- doxytag: member="ASCbase::prot_joint_dep::LYS_atoms" ref="d85c7a75fc06cce60194df94c98a670e" args="[]" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d85c7a75fc06cce60194df94c98a670e"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::LYS_atoms" ref="d85c7a75fc06cce60194df94c98a670e" args="[]" -->
 static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>LYS_atoms</b> [] = {N, CA, C, O, CB, CG, CD, CE, NZ}</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b88f61ad6c202cec8d2d4c9862d42b56"></a><!-- doxytag: member="ASCbase::prot_joint_dep::MET_atoms" ref="b88f61ad6c202cec8d2d4c9862d42b56" args="[]" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b88f61ad6c202cec8d2d4c9862d42b56"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::MET_atoms" ref="b88f61ad6c202cec8d2d4c9862d42b56" args="[]" -->
 static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>MET_atoms</b> [] = {N, CA, C, O, CB, CG, SD, CE}</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>PHE_atoms</b> []</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a047cddbe0cb0dae3c19407fe6b5b9f8"></a><!-- doxytag: member="ASCbase::prot_joint_dep::PRO_atoms" ref="a047cddbe0cb0dae3c19407fe6b5b9f8" args="[]" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a047cddbe0cb0dae3c19407fe6b5b9f8"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::PRO_atoms" ref="a047cddbe0cb0dae3c19407fe6b5b9f8" args="[]" -->
 static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>PRO_atoms</b> [] = {N, CA, C, O, CB, CG, CD}</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="83654fa964913525ee564c1a83d3dbcf"></a><!-- doxytag: member="ASCbase::prot_joint_dep::SER_atoms" ref="83654fa964913525ee564c1a83d3dbcf" args="[]" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="83654fa964913525ee564c1a83d3dbcf"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::SER_atoms" ref="83654fa964913525ee564c1a83d3dbcf" args="[]" -->
 static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>SER_atoms</b> [] = {N, CA, C, O, CB, OG}</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="2dc4ca2d156eb27d696d35c740bcb34e"></a><!-- doxytag: member="ASCbase::prot_joint_dep::THR_atoms" ref="2dc4ca2d156eb27d696d35c740bcb34e" args="[]" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="2dc4ca2d156eb27d696d35c740bcb34e"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::THR_atoms" ref="2dc4ca2d156eb27d696d35c740bcb34e" args="[]" -->
 static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>THR_atoms</b> [] = {N, CA, C, O, CB, OG1, CG2}</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>TRP_atoms</b> []</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>TYR_atoms</b> []</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="da6c6ceab748e553c5695344c58aefff"></a><!-- doxytag: member="ASCbase::prot_joint_dep::VAL_atoms" ref="da6c6ceab748e553c5695344c58aefff" args="[]" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="da6c6ceab748e553c5695344c58aefff"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::VAL_atoms" ref="da6c6ceab748e553c5695344c58aefff" args="[]" -->
 static const atom_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>VAL_atoms</b> [] = {N, CA, C, O, CB, CG1, CG2}</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="952dbe38f8ad0b8127729d6ba84b97d7"></a><!-- doxytag: member="ASCbase::prot_joint_dep::ALA_deps" ref="952dbe38f8ad0b8127729d6ba84b97d7" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="952dbe38f8ad0b8127729d6ba84b97d7"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::ALA_deps" ref="952dbe38f8ad0b8127729d6ba84b97d7" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>ALA_deps</b> = { ALA_atoms, 0, 5 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="65fd4251f4a673b01a07a682cbfb1ffa"></a><!-- doxytag: member="ASCbase::prot_joint_dep::ARG_deps" ref="65fd4251f4a673b01a07a682cbfb1ffa" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="65fd4251f4a673b01a07a682cbfb1ffa"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::ARG_deps" ref="65fd4251f4a673b01a07a682cbfb1ffa" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>ARG_deps</b> = { ARG_atoms, 3, 11 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="08ae4d6148c80f98f5f95041a478fac8"></a><!-- doxytag: member="ASCbase::prot_joint_dep::ASN_deps" ref="08ae4d6148c80f98f5f95041a478fac8" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="08ae4d6148c80f98f5f95041a478fac8"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::ASN_deps" ref="08ae4d6148c80f98f5f95041a478fac8" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>ASN_deps</b> = { ASN_atoms, 2, 8 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="fac607dcac19d1c84d54597b95f6ec02"></a><!-- doxytag: member="ASCbase::prot_joint_dep::ASP_deps" ref="fac607dcac19d1c84d54597b95f6ec02" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="fac607dcac19d1c84d54597b95f6ec02"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::ASP_deps" ref="fac607dcac19d1c84d54597b95f6ec02" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>ASP_deps</b> = { ASP_atoms, 2, 8 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="18d22c4d1a2f061809bb89d552fcc14d"></a><!-- doxytag: member="ASCbase::prot_joint_dep::CYS_deps" ref="18d22c4d1a2f061809bb89d552fcc14d" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="18d22c4d1a2f061809bb89d552fcc14d"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::CYS_deps" ref="18d22c4d1a2f061809bb89d552fcc14d" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>CYS_deps</b> = { CYS_atoms, 1, 6 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4aefee35dbad6c943d8ce73ebb68b2d6"></a><!-- doxytag: member="ASCbase::prot_joint_dep::GLN_deps" ref="4aefee35dbad6c943d8ce73ebb68b2d6" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4aefee35dbad6c943d8ce73ebb68b2d6"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::GLN_deps" ref="4aefee35dbad6c943d8ce73ebb68b2d6" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>GLN_deps</b> = { GLN_atoms, 3, 9 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="9753dde7e298c1584ce0af03816b28bb"></a><!-- doxytag: member="ASCbase::prot_joint_dep::GLU_deps" ref="9753dde7e298c1584ce0af03816b28bb" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="9753dde7e298c1584ce0af03816b28bb"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::GLU_deps" ref="9753dde7e298c1584ce0af03816b28bb" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>GLU_deps</b> = { GLU_atoms, 3, 9 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="99d499534c8f02f34e09069f6b25fed6"></a><!-- doxytag: member="ASCbase::prot_joint_dep::GLY_deps" ref="99d499534c8f02f34e09069f6b25fed6" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="99d499534c8f02f34e09069f6b25fed6"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::GLY_deps" ref="99d499534c8f02f34e09069f6b25fed6" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>GLY_deps</b> = { GLY_atoms, 0, 4 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="18e7ac5f3c807b3070349b7074d69504"></a><!-- doxytag: member="ASCbase::prot_joint_dep::HIS_deps" ref="18e7ac5f3c807b3070349b7074d69504" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="18e7ac5f3c807b3070349b7074d69504"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::HIS_deps" ref="18e7ac5f3c807b3070349b7074d69504" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>HIS_deps</b> = { HIS_atoms, 2, 10 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c3e9e61ad80c5f1ef124520c55d0d2c3"></a><!-- doxytag: member="ASCbase::prot_joint_dep::ILE_deps" ref="c3e9e61ad80c5f1ef124520c55d0d2c3" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c3e9e61ad80c5f1ef124520c55d0d2c3"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::ILE_deps" ref="c3e9e61ad80c5f1ef124520c55d0d2c3" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>ILE_deps</b> = { ILE_atoms, 2, 8 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4283688178a143eb12c945d4498d4ea5"></a><!-- doxytag: member="ASCbase::prot_joint_dep::LEU_deps" ref="4283688178a143eb12c945d4498d4ea5" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4283688178a143eb12c945d4498d4ea5"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::LEU_deps" ref="4283688178a143eb12c945d4498d4ea5" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>LEU_deps</b> = { LEU_atoms, 2, 8 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e4498e5c919a95e72910c9b127b86253"></a><!-- doxytag: member="ASCbase::prot_joint_dep::LYS_deps" ref="e4498e5c919a95e72910c9b127b86253" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e4498e5c919a95e72910c9b127b86253"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::LYS_deps" ref="e4498e5c919a95e72910c9b127b86253" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>LYS_deps</b> = { LYS_atoms, 4, 9 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e872ffbde7c5e3b7a70ed361b3a34bdd"></a><!-- doxytag: member="ASCbase::prot_joint_dep::MET_deps" ref="e872ffbde7c5e3b7a70ed361b3a34bdd" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e872ffbde7c5e3b7a70ed361b3a34bdd"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::MET_deps" ref="e872ffbde7c5e3b7a70ed361b3a34bdd" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>MET_deps</b> = { MET_atoms, 3, 8 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b11dbf3a7007396f15fa2b20c477abd9"></a><!-- doxytag: member="ASCbase::prot_joint_dep::PHE_deps" ref="b11dbf3a7007396f15fa2b20c477abd9" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b11dbf3a7007396f15fa2b20c477abd9"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::PHE_deps" ref="b11dbf3a7007396f15fa2b20c477abd9" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>PHE_deps</b> = { PHE_atoms, 2, 11 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b4938e30da71c81440ddd1e3ddbe69cb"></a><!-- doxytag: member="ASCbase::prot_joint_dep::PRO_deps" ref="b4938e30da71c81440ddd1e3ddbe69cb" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b4938e30da71c81440ddd1e3ddbe69cb"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::PRO_deps" ref="b4938e30da71c81440ddd1e3ddbe69cb" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>PRO_deps</b> = { PRO_atoms, 0, 7 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f381c853c58c15f7edf528bc97b0f433"></a><!-- doxytag: member="ASCbase::prot_joint_dep::SER_deps" ref="f381c853c58c15f7edf528bc97b0f433" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f381c853c58c15f7edf528bc97b0f433"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::SER_deps" ref="f381c853c58c15f7edf528bc97b0f433" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>SER_deps</b> = { SER_atoms, 1, 6 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="88aae83dea1f46fe3290472bda94d3ac"></a><!-- doxytag: member="ASCbase::prot_joint_dep::THR_deps" ref="88aae83dea1f46fe3290472bda94d3ac" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="88aae83dea1f46fe3290472bda94d3ac"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::THR_deps" ref="88aae83dea1f46fe3290472bda94d3ac" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>THR_deps</b> = { THR_atoms, 1, 7 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="6c55f10b16638027e48422d5d544dc6c"></a><!-- doxytag: member="ASCbase::prot_joint_dep::TRP_deps" ref="6c55f10b16638027e48422d5d544dc6c" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="6c55f10b16638027e48422d5d544dc6c"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::TRP_deps" ref="6c55f10b16638027e48422d5d544dc6c" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>TRP_deps</b> = { TRP_atoms, 2, 14 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="3c8b12464a851cee0321652191b8fea8"></a><!-- doxytag: member="ASCbase::prot_joint_dep::TYR_deps" ref="3c8b12464a851cee0321652191b8fea8" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="3c8b12464a851cee0321652191b8fea8"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::TYR_deps" ref="3c8b12464a851cee0321652191b8fea8" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>TYR_deps</b> = { TYR_atoms, 2, 12 }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ccabd31547bdfb65023bff5e09bc9aaa"></a><!-- doxytag: member="ASCbase::prot_joint_dep::VAL_deps" ref="ccabd31547bdfb65023bff5e09bc9aaa" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ccabd31547bdfb65023bff5e09bc9aaa"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::VAL_deps" ref="ccabd31547bdfb65023bff5e09bc9aaa" args="" -->
 static const joint_deps_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>VAL_deps</b> = { VAL_atoms, 1, 7 }</td></tr>
 
 </table>
 <hr><a name="_details"></a><h2>Detailed Description</h2>
 Class to handle mobile residues -- rotatable joints for each residue. 
 <p>
-Build the data structure based using <a class="el" href="classASCbase_1_1prot__joint__dep.html#a1cb25bee328bc154ca8fe35044b4c28">add_residue_info()</a> Get the joints using get_joints() and check that the returned iterator is valid by comparing it against joints_end() 
+Build the data structure based using <a class="el" href="classSimSite3D_1_1prot__joint__dep.html#a1cb25bee328bc154ca8fe35044b4c28">add_residue_info()</a> Get the joints using get_joints() and check that the returned iterator is valid by comparing it against joints_end() 
 <p>
 <hr><h2>Member Function Documentation</h2>
-<a class="anchor" name="a1cb25bee328bc154ca8fe35044b4c28"></a><!-- doxytag: member="ASCbase::prot_joint_dep::add_residue_info" ref="a1cb25bee328bc154ca8fe35044b4c28" args="(const PDBStructure *prot, residue_vci res, const residue_joints **j)" -->
+<a class="anchor" name="a1cb25bee328bc154ca8fe35044b4c28"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::add_residue_info" ref="a1cb25bee328bc154ca8fe35044b4c28" args="(const PDBStructure *prot, residue_vci res, const residue_joints **j)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool prot_joint_dep::add_residue_info           </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASCbase_1_1PDBStructure.html">PDBStructure</a> *&nbsp;</td>
+          <td class="paramtype">const <a class="el" href="classSimSite3D_1_1PDBStructure.html">PDBStructure</a> *&nbsp;</td>
           <td class="paramname"> <em>prot</em>, </td>
         </tr>
         <tr>
@@ -219,7 +219,7 @@ Build the data structure based using <a class="el" href="classASCbase_1_1prot__j
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classASCbase_1_1residue__joints.html">residue_joints</a> **&nbsp;</td>
+          <td class="paramtype">const <a class="el" href="classSimSite3D_1_1residue__joints.html">residue_joints</a> **&nbsp;</td>
           <td class="paramname"> <em>j</em></td><td>&nbsp;</td>
         </tr>
         <tr>
@@ -238,7 +238,7 @@ Do not use this to add neighboring residues which we will hold fixed.
 </div>
 </div><p>
 <hr><h2>Member Data Documentation</h2>
-<a class="anchor" name="e9694a2c1acdb92adcceaf04b49437bd"></a><!-- doxytag: member="ASCbase::prot_joint_dep::ARG_atoms" ref="e9694a2c1acdb92adcceaf04b49437bd" args="[]" -->
+<a class="anchor" name="e9694a2c1acdb92adcceaf04b49437bd"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::ARG_atoms" ref="e9694a2c1acdb92adcceaf04b49437bd" args="[]" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -255,7 +255,7 @@ Do not use this to add neighboring residues which we will hold fixed.
 </pre></div>
 </div>
 </div><p>
-<a class="anchor" name="778a227bc6f21f9df7ad071cb28a0fe4"></a><!-- doxytag: member="ASCbase::prot_joint_dep::GLN_atoms" ref="778a227bc6f21f9df7ad071cb28a0fe4" args="[]" -->
+<a class="anchor" name="778a227bc6f21f9df7ad071cb28a0fe4"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::GLN_atoms" ref="778a227bc6f21f9df7ad071cb28a0fe4" args="[]" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -272,7 +272,7 @@ Do not use this to add neighboring residues which we will hold fixed.
 </pre></div>
 </div>
 </div><p>
-<a class="anchor" name="f126d6eee30314bf4d880970cf51c135"></a><!-- doxytag: member="ASCbase::prot_joint_dep::GLU_atoms" ref="f126d6eee30314bf4d880970cf51c135" args="[]" -->
+<a class="anchor" name="f126d6eee30314bf4d880970cf51c135"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::GLU_atoms" ref="f126d6eee30314bf4d880970cf51c135" args="[]" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -289,7 +289,7 @@ Do not use this to add neighboring residues which we will hold fixed.
 </pre></div>
 </div>
 </div><p>
-<a class="anchor" name="027525d3ce56e48660760c3af223a4fa"></a><!-- doxytag: member="ASCbase::prot_joint_dep::HIS_atoms" ref="027525d3ce56e48660760c3af223a4fa" args="[]" -->
+<a class="anchor" name="027525d3ce56e48660760c3af223a4fa"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::HIS_atoms" ref="027525d3ce56e48660760c3af223a4fa" args="[]" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -306,7 +306,7 @@ Do not use this to add neighboring residues which we will hold fixed.
 </pre></div>
 </div>
 </div><p>
-<a class="anchor" name="e9f5147ed18c5265759259b4c6a4f575"></a><!-- doxytag: member="ASCbase::prot_joint_dep::PHE_atoms" ref="e9f5147ed18c5265759259b4c6a4f575" args="[]" -->
+<a class="anchor" name="e9f5147ed18c5265759259b4c6a4f575"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::PHE_atoms" ref="e9f5147ed18c5265759259b4c6a4f575" args="[]" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -323,7 +323,7 @@ Do not use this to add neighboring residues which we will hold fixed.
 </pre></div>
 </div>
 </div><p>
-<a class="anchor" name="195efde1d5901fe270a4be8c743e4a89"></a><!-- doxytag: member="ASCbase::prot_joint_dep::TRP_atoms" ref="195efde1d5901fe270a4be8c743e4a89" args="[]" -->
+<a class="anchor" name="195efde1d5901fe270a4be8c743e4a89"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::TRP_atoms" ref="195efde1d5901fe270a4be8c743e4a89" args="[]" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -340,7 +340,7 @@ Do not use this to add neighboring residues which we will hold fixed.
 </pre></div>
 </div>
 </div><p>
-<a class="anchor" name="34a462915415a32e12a514d8ac434638"></a><!-- doxytag: member="ASCbase::prot_joint_dep::TYR_atoms" ref="34a462915415a32e12a514d8ac434638" args="[]" -->
+<a class="anchor" name="34a462915415a32e12a514d8ac434638"></a><!-- doxytag: member="SimSite3D::prot_joint_dep::TYR_atoms" ref="34a462915415a32e12a514d8ac434638" args="[]" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">

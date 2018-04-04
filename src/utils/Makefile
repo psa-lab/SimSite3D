@@ -50,9 +50,9 @@ mkinstalldirs = $(install_sh) -d
 CONFIG_CLEAN_FILES =
 LIBRARIES = $(noinst_LIBRARIES)
 ARFLAGS = cru
-libASCbaseSoftwareUtils_a_AR = $(AR) $(ARFLAGS)
-libASCbaseSoftwareUtils_a_LIBADD =
-am_libASCbaseSoftwareUtils_a_OBJECTS = BaseParameters.$(OBJEXT) \
+libSimSite3DSoftwareUtils_a_AR = $(AR) $(ARFLAGS)
+libSimSite3DSoftwareUtils_a_LIBADD =
+am_libSimSite3DSoftwareUtils_a_OBJECTS = BaseParameters.$(OBJEXT) \
 	string_basics.$(OBJEXT) stream_basics.$(OBJEXT) \
 	DiscreteSphere.$(OBJEXT) AtomTypes.$(OBJEXT) atom.$(OBJEXT) \
 	PDB_residues.$(OBJEXT) PDB_metals.$(OBJEXT) \
@@ -65,19 +65,19 @@ am_libASCbaseSoftwareUtils_a_OBJECTS = BaseParameters.$(OBJEXT) \
 	HbondGeometry.$(OBJEXT) prot_joint_dep.$(OBJEXT) \
 	VertAttrib.$(OBJEXT) FaceAttrib.$(OBJEXT) \
 	SimpleTrimeshThree.$(OBJEXT) ImmovableTrimeshThree.$(OBJEXT)
-libASCbaseSoftwareUtils_a_OBJECTS =  \
-	$(am_libASCbaseSoftwareUtils_a_OBJECTS)
+libSimSite3DSoftwareUtils_a_OBJECTS =  \
+	$(am_libSimSite3DSoftwareUtils_a_OBJECTS)
 PROGRAMS = $(noinst_PROGRAMS)
 am_compare_surfaces_OBJECTS = compare_surfaces.$(OBJEXT)
 compare_surfaces_OBJECTS = $(am_compare_surfaces_OBJECTS)
 am__DEPENDENCIES_1 =
-compare_surfaces_DEPENDENCIES = libASCbaseSoftwareUtils.a \
+compare_surfaces_DEPENDENCIES = libSimSite3DSoftwareUtils.a \
 	$(am__DEPENDENCIES_1)
 am_compute_dihedral_angles_OBJECTS =  \
 	compute_dihedral_angles.$(OBJEXT)
 compute_dihedral_angles_OBJECTS =  \
 	$(am_compute_dihedral_angles_OBJECTS)
-compute_dihedral_angles_DEPENDENCIES = libASCbaseSoftwareUtils.a \
+compute_dihedral_angles_DEPENDENCIES = libSimSite3DSoftwareUtils.a \
 	$(am__DEPENDENCIES_1)
 DEFAULT_INCLUDES = -I. -I$(srcdir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
@@ -90,9 +90,9 @@ LTCXXCOMPILE = $(LIBTOOL) --tag=CXX --mode=compile $(CXX) $(DEFS) \
 CXXLD = $(CXX)
 CXXLINK = $(LIBTOOL) --tag=CXX --mode=link $(CXXLD) $(AM_CXXFLAGS) \
 	$(CXXFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
-SOURCES = $(libASCbaseSoftwareUtils_a_SOURCES) \
+SOURCES = $(libSimSite3DSoftwareUtils_a_SOURCES) \
 	$(compare_surfaces_SOURCES) $(compute_dihedral_angles_SOURCES)
-DIST_SOURCES = $(libASCbaseSoftwareUtils_a_SOURCES) \
+DIST_SOURCES = $(libSimSite3DSoftwareUtils_a_SOURCES) \
 	$(compare_surfaces_SOURCES) $(compute_dihedral_angles_SOURCES)
 ETAGS = etags
 CTAGS = ctags
@@ -200,8 +200,8 @@ sharedstatedir = ${prefix}/com
 sysconfdir = ${prefix}/etc
 target_alias = 
 INCLUDES = -I.
-noinst_LIBRARIES = libASCbaseSoftwareUtils.a
-libASCbaseSoftwareUtils_a_SOURCES = BaseParameters.C string_basics.C \
+noinst_LIBRARIES = libSimSite3DSoftwareUtils.a
+libSimSite3DSoftwareUtils_a_SOURCES = BaseParameters.C string_basics.C \
 	stream_basics.C DiscreteSphere.C AtomTypes.C atom.C PDB_residues.C \
 	PDB_metals.C PDBHetatmTypes.C Quaternion.C math_basics.C \
 	param_tools.C my_float_array.C mat_ops.C Timer.C CoordFile.C PDBBase.C \
@@ -210,9 +210,9 @@ libASCbaseSoftwareUtils_a_SOURCES = BaseParameters.C string_basics.C \
         VertAttrib.C FaceAttrib.C SimpleTrimeshThree.C ImmovableTrimeshThree.C
 
 compare_surfaces_SOURCES = compare_surfaces.C
-compare_surfaces_LDADD = libASCbaseSoftwareUtils.a -lm $(POPT)
+compare_surfaces_LDADD = libSimSite3DSoftwareUtils.a -lm $(POPT)
 compute_dihedral_angles_SOURCES = compute_dihedral_angles.C
-compute_dihedral_angles_LDADD = libASCbaseSoftwareUtils.a -lm $(POPT)
+compute_dihedral_angles_LDADD = libSimSite3DSoftwareUtils.a -lm $(POPT)
 all: all-am
 
 .SUFFIXES:
@@ -249,10 +249,10 @@ $(ACLOCAL_M4):  $(am__aclocal_m4_deps)
 
 clean-noinstLIBRARIES:
 	-test -z "$(noinst_LIBRARIES)" || rm -f $(noinst_LIBRARIES)
-libASCbaseSoftwareUtils.a: $(libASCbaseSoftwareUtils_a_OBJECTS) $(libASCbaseSoftwareUtils_a_DEPENDENCIES) 
-	-rm -f libASCbaseSoftwareUtils.a
-	$(libASCbaseSoftwareUtils_a_AR) libASCbaseSoftwareUtils.a $(libASCbaseSoftwareUtils_a_OBJECTS) $(libASCbaseSoftwareUtils_a_LIBADD)
-	$(RANLIB) libASCbaseSoftwareUtils.a
+libSimSite3DSoftwareUtils.a: $(libSimSite3DSoftwareUtils_a_OBJECTS) $(libSimSite3DSoftwareUtils_a_DEPENDENCIES) 
+	-rm -f libSimSite3DSoftwareUtils.a
+	$(libSimSite3DSoftwareUtils_a_AR) libSimSite3DSoftwareUtils.a $(libSimSite3DSoftwareUtils_a_OBJECTS) $(libSimSite3DSoftwareUtils_a_LIBADD)
+	$(RANLIB) libSimSite3DSoftwareUtils.a
 
 clean-noinstPROGRAMS:
 	@list='$(noinst_PROGRAMS)'; for p in $$list; do \

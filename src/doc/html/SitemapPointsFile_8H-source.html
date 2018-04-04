@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -54,35 +54,35 @@
 <a name="l00041"></a>00041 <span class="preprocessor">#include &lt;HbondPoints.H&gt;</span>
 <a name="l00042"></a>00042 <span class="preprocessor">#include &lt;HphobPoints.H&gt;</span>
 <a name="l00043"></a>00043 
-<a name="l00044"></a>00044 <span class="keyword">namespace </span>ASCbase{
+<a name="l00044"></a>00044 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00045"></a>00045 
-<a name="l00047"></a><a class="code" href="classASCbase_1_1SitemapPointsFile.html">00047</a>   <span class="keyword">class </span><a class="code" href="classASCbase_1_1SitemapPointsFile.html">SitemapPointsFile</a> : <span class="keyword">public</span> <a class="code" href="classASCbase_1_1PDBBase.html">PDBBase</a> {
+<a name="l00047"></a><a class="code" href="classSimSite3D_1_1SitemapPointsFile.html">00047</a>   <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1SitemapPointsFile.html">SitemapPointsFile</a> : <span class="keyword">public</span> <a class="code" href="classSimSite3D_1_1PDBBase.html">PDBBase</a> {
 <a name="l00048"></a>00048   <span class="keyword">public</span>:
-<a name="l00050"></a>00050     <a class="code" href="classASCbase_1_1SitemapPointsFile.html#db5b966cb4e3f26a969479259b7a63b5">SitemapPointsFile</a>();
+<a name="l00050"></a>00050     <a class="code" href="classSimSite3D_1_1SitemapPointsFile.html#db5b966cb4e3f26a969479259b7a63b5">SitemapPointsFile</a>();
 <a name="l00051"></a>00051 
-<a name="l00053"></a>00053     <a class="code" href="classASCbase_1_1SitemapPointsFile.html#db5b966cb4e3f26a969479259b7a63b5">SitemapPointsFile</a>(<span class="keyword">const</span> std::string filename, 
+<a name="l00053"></a>00053     <a class="code" href="classSimSite3D_1_1SitemapPointsFile.html#db5b966cb4e3f26a969479259b7a63b5">SitemapPointsFile</a>(<span class="keyword">const</span> std::string filename, 
 <a name="l00054"></a>00054                       <span class="keyword">const</span> verbose_level_t verbosity = VERBOSE_SILENT);
 <a name="l00055"></a>00055 
-<a name="l00056"></a>00056     ~<a class="code" href="classASCbase_1_1SitemapPointsFile.html">SitemapPointsFile</a>();
+<a name="l00056"></a>00056     ~<a class="code" href="classSimSite3D_1_1SitemapPointsFile.html">SitemapPointsFile</a>();
 <a name="l00057"></a>00057 
-<a name="l00059"></a>00059     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1SitemapPointsFile.html#0f7b8e2ccb3f1dc27fcc4720b0ae14c5">add_points</a>(<span class="keyword">const</span> hbond_fit_pt_vci _begin, <span class="keyword">const</span> hbond_fit_pt_vci _end);
+<a name="l00059"></a>00059     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1SitemapPointsFile.html#0f7b8e2ccb3f1dc27fcc4720b0ae14c5">add_points</a>(<span class="keyword">const</span> hbond_fit_pt_vci _begin, <span class="keyword">const</span> hbond_fit_pt_vci _end);
 <a name="l00060"></a>00060 
-<a name="l00062"></a>00062     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1SitemapPointsFile.html#0f7b8e2ccb3f1dc27fcc4720b0ae14c5">add_points</a>(<span class="keyword">const</span> hphob_point_lci _begin, <span class="keyword">const</span> hphob_point_lci _end);
+<a name="l00062"></a>00062     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1SitemapPointsFile.html#0f7b8e2ccb3f1dc27fcc4720b0ae14c5">add_points</a>(<span class="keyword">const</span> hphob_point_lci _begin, <span class="keyword">const</span> hphob_point_lci _end);
 <a name="l00063"></a>00063 
 <a name="l00064"></a>00064     <span class="keyword">const</span> uint num_polar_points()<span class="keyword"> const </span>
 <a name="l00065"></a>00065 <span class="keyword">    </span>{ 
-<a name="l00066"></a>00066       <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1SitemapPointsFile.html#b3c2f62fc9252fb70d4287d889c7b9fa">counts</a>[0] + <a class="code" href="classASCbase_1_1SitemapPointsFile.html#b3c2f62fc9252fb70d4287d889c7b9fa">counts</a>[1] + <a class="code" href="classASCbase_1_1SitemapPointsFile.html#b3c2f62fc9252fb70d4287d889c7b9fa">counts</a>[2]; 
+<a name="l00066"></a>00066       <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1SitemapPointsFile.html#b3c2f62fc9252fb70d4287d889c7b9fa">counts</a>[0] + <a class="code" href="classSimSite3D_1_1SitemapPointsFile.html#b3c2f62fc9252fb70d4287d889c7b9fa">counts</a>[1] + <a class="code" href="classSimSite3D_1_1SitemapPointsFile.html#b3c2f62fc9252fb70d4287d889c7b9fa">counts</a>[2]; 
 <a name="l00067"></a>00067     }
 <a name="l00068"></a>00068 
 <a name="l00069"></a>00069     <span class="keyword">const</span> uint num_hphobic_points()<span class="keyword"> const </span>
 <a name="l00070"></a>00070 <span class="keyword">    </span>{ 
-<a name="l00071"></a>00071       <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1SitemapPointsFile.html#b3c2f62fc9252fb70d4287d889c7b9fa">counts</a>[3];
+<a name="l00071"></a>00071       <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1SitemapPointsFile.html#b3c2f62fc9252fb70d4287d889c7b9fa">counts</a>[3];
 <a name="l00072"></a>00072     }
 <a name="l00073"></a>00073   <span class="keyword">private</span>:
 <a name="l00075"></a>00075 <span class="comment">//    bool read_header(std::ifstream &amp;fin);</span>
 <a name="l00076"></a>00076 
-<a name="l00077"></a><a class="code" href="classASCbase_1_1SitemapPointsFile.html#b3c2f62fc9252fb70d4287d889c7b9fa">00077</a>     std::vector&lt;uint&gt; <a class="code" href="classASCbase_1_1SitemapPointsFile.html#b3c2f62fc9252fb70d4287d889c7b9fa">counts</a>;  
-<a name="l00078"></a><a class="code" href="classASCbase_1_1SitemapPointsFile.html#3c2df5c3e3de9995d61644c28d181c42">00078</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classASCbase_1_1SitemapPointsFile.html#3c2df5c3e3de9995d61644c28d181c42">_fname</a>;  
+<a name="l00077"></a><a class="code" href="classSimSite3D_1_1SitemapPointsFile.html#b3c2f62fc9252fb70d4287d889c7b9fa">00077</a>     std::vector&lt;uint&gt; <a class="code" href="classSimSite3D_1_1SitemapPointsFile.html#b3c2f62fc9252fb70d4287d889c7b9fa">counts</a>;  
+<a name="l00078"></a><a class="code" href="classSimSite3D_1_1SitemapPointsFile.html#3c2df5c3e3de9995d61644c28d181c42">00078</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classSimSite3D_1_1SitemapPointsFile.html#3c2df5c3e3de9995d61644c28d181c42">_fname</a>;  
 <a name="l00079"></a>00079   };
 <a name="l00080"></a>00080 }
 <a name="l00081"></a>00081 

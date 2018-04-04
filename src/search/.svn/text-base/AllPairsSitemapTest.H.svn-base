@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -21,7 +21,7 @@
 #include <ModelSitemap.H>
 #include <hash_class.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! A test model sitemap used to determine how the "best" we can do
 //! given certain tolerances on triangle matches (not triangle sizes)
@@ -119,6 +119,6 @@ private:
   static const std::string A_fname;   //!< Source file name
 };
 
-} // end namespace ASCbase
+} // end namespace SimSite3D
 
 #endif

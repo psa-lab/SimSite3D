@@ -8,12 +8,12 @@
 #include <DistanceArray.H>
 #include <Timer.H>
 
-using namespace ASCbase;
-using ASCbase::geometry::DistanceArray;
-using ASCbase::geometry::SimpleTrimeshTwo;
-using ASCbase::geometry::TransformableTrimesh;
-using ASCbase::geometry::ImmovableTrimesh;
-using ASCbase::geometry::ImmovableTrimeshThree;
+using namespace SimSite3D;
+using SimSite3D::geometry::DistanceArray;
+using SimSite3D::geometry::SimpleTrimeshTwo;
+using SimSite3D::geometry::TransformableTrimesh;
+using SimSite3D::geometry::ImmovableTrimesh;
+using SimSite3D::geometry::ImmovableTrimeshThree;
 
 void 
 get_extents(const SimpleTrimeshTwo &mesh, my_float_t *min_c, my_float_t *max_c);

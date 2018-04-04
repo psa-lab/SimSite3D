@@ -1,7 +1,7 @@
 
 #include <ProtLigActTable.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 void
 ProtLigActTable::build_hphob_SC_to_atom_map(PDBStructure &prot)

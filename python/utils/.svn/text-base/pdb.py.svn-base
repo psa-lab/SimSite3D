@@ -32,7 +32,7 @@ class metal_lookup:
     self.table = {}
     # must be a better way to have a data file read at run time
     fname = os.environ["ASCBASE_INSTALL_DIR"]
-    fname += "/ASCbasePy/utils/pdb_metals.csv"
+    fname += "/SimSite3DPy/utils/pdb_metals.csv"
     infile = open(fname, "r")
 
     for line in infile:
@@ -83,7 +83,7 @@ class residue_lookup:
   
     # must be a better way to have a data file read at run time
     infile = \
-      open(os.environ["ASCBASE_INSTALL_DIR"] + "/ASCbasePy/utils/pdb_residues.csv", "r")
+      open(os.environ["ASCBASE_INSTALL_DIR"] + "/SimSite3DPy/utils/pdb_residues.csv", "r")
 #"/home/vanvoor4/code/python/trunk/coord_files/pdb_residues.csv", "r") 
 
     main_chain = {}
@@ -563,7 +563,7 @@ Making up our own HET entry
 Maybe it corresponds to a MODRES record or it is one of the standard
 amino or nucleic acids?""" % (line.strip("\n"))
 
-      self.add_HET_record("HET    %3s  %s%4d%s      1     Added by ASCbasePy" % \
+      self.add_HET_record("HET    %3s  %s%4d%s      1     Added by SimSite3DPy" % \
                           (hetatm.resName, hetatm.chainID, hetatm.resSeq, 
                            hetatm.iCode))
     self.HET_records[idx].atoms.append(hetatm) 

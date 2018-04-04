@@ -1,7 +1,7 @@
 #include <HbondSurfaces.H>
 #include <sstream>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 const my_float_t hbond_surface_t::SURF_SPHERE_RAD = 3.0;
 

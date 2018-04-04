@@ -21,7 +21,7 @@
 # the status is caught here
 #
 # Revision 1.2  2007/10/02 18:42:47  vanvoor4
-# Modified to use ASCbase.utils functions
+# Modified to use SimSite3D.utils functions
 #
 # Revision 1.1  2007/09/26 14:34:50  vanvoor4
 # Initial checkin
@@ -34,7 +34,7 @@ import os
 import sys
 
 print "-" * 80
-print sys.argv[0], "(ASCbase Software 3.3)"
+print sys.argv[0], "(SimSite3D Software 3.3)"
 print """Copyright (C) 2006-2009, Michigan State University (MSU) Board of Trustees.
 All rights reserved.
 

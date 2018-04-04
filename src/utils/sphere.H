@@ -6,7 +6,7 @@
 #include <string_basics.H>
 #include <math_basics.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 namespace geometry{
 
 class sphere_t{
@@ -881,7 +881,7 @@ private:
 
 
 } // end namespace utils
-} // end namespace ASCbase
+} // end namespace SimSite3D
 
 
 #endif

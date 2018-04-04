@@ -1,5 +1,5 @@
-from ASCbasePy.utils._math import *
-from ASCbasePy.utils import mol2
+from SimSite3DPy.utils._math import *
+from SimSite3DPy.utils import mol2
 from numpy import *
     
 ################################################################################

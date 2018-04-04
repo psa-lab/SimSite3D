@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -38,25 +38,25 @@
 <a name="l00025"></a>00025 <span class="preprocessor">#include &lt;CoordFile.H&gt;</span>
 <a name="l00026"></a>00026 <span class="preprocessor">#include &lt;BoundingVolume.H&gt;</span>
 <a name="l00027"></a>00027 
-<a name="l00028"></a>00028 <span class="keyword">namespace </span>ASCbase{
+<a name="l00028"></a>00028 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00029"></a>00029 
-<a name="l00031"></a><a class="code" href="structASCbase_1_1mol2__bond__t.html">00031</a>   <span class="keyword">typedef</span> <span class="keyword">struct</span>{
-<a name="l00032"></a><a class="code" href="structASCbase_1_1mol2__bond__t.html#777a617664920a145b9140c075474cdb">00032</a>     bond_type type;   
-<a name="l00033"></a><a class="code" href="structASCbase_1_1mol2__bond__t.html#aec7cb5b3bf6df2d4366f5368df5aef1">00033</a>     <span class="keywordtype">int</span> atom_num1;    
-<a name="l00034"></a><a class="code" href="structASCbase_1_1mol2__bond__t.html#27316559fbc429818786482aa159c1e1">00034</a>     <span class="keywordtype">int</span> atom_num2;    
-<a name="l00035"></a><a class="code" href="structASCbase_1_1mol2__bond__t.html#435f1fb617a87b857af38482c60cfa4e">00035</a>     std::string status_bits; 
-<a name="l00036"></a>00036   }<a class="code" href="structASCbase_1_1mol2__bond__t.html">mol2_bond_t</a>;
+<a name="l00031"></a><a class="code" href="structSimSite3D_1_1mol2__bond__t.html">00031</a>   <span class="keyword">typedef</span> <span class="keyword">struct</span>{
+<a name="l00032"></a><a class="code" href="structSimSite3D_1_1mol2__bond__t.html#777a617664920a145b9140c075474cdb">00032</a>     bond_type type;   
+<a name="l00033"></a><a class="code" href="structSimSite3D_1_1mol2__bond__t.html#aec7cb5b3bf6df2d4366f5368df5aef1">00033</a>     <span class="keywordtype">int</span> atom_num1;    
+<a name="l00034"></a><a class="code" href="structSimSite3D_1_1mol2__bond__t.html#27316559fbc429818786482aa159c1e1">00034</a>     <span class="keywordtype">int</span> atom_num2;    
+<a name="l00035"></a><a class="code" href="structSimSite3D_1_1mol2__bond__t.html#435f1fb617a87b857af38482c60cfa4e">00035</a>     std::string status_bits; 
+<a name="l00036"></a>00036   }<a class="code" href="structSimSite3D_1_1mol2__bond__t.html">mol2_bond_t</a>;
 <a name="l00037"></a>00037 
 <a name="l00038"></a>00038   <span class="keyword">typedef</span> std::vector&lt;mol2_bond_t&gt;              mol2_bond_vec;
 <a name="l00039"></a>00039   <span class="keyword">typedef</span> mol2_bond_vec::iterator               mol2_bond_vi;
 <a name="l00040"></a>00040   <span class="keyword">typedef</span> mol2_bond_vec::const_iterator         mol2_bond_vci;
 <a name="l00041"></a>00041 
 <a name="l00043"></a>00043 
-<a name="l00052"></a><a class="code" href="classASCbase_1_1mol2File.html">00052</a>   <span class="keyword">class </span><a class="code" href="classASCbase_1_1mol2File.html">mol2File</a> : <span class="keyword">public</span> <a class="code" href="classASCbase_1_1CoordFile.html">CoordFile</a>{
+<a name="l00052"></a><a class="code" href="classSimSite3D_1_1mol2File.html">00052</a>   <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1mol2File.html">mol2File</a> : <span class="keyword">public</span> <a class="code" href="classSimSite3D_1_1CoordFile.html">CoordFile</a>{
 <a name="l00053"></a>00053   <span class="keyword">public</span>:
 <a name="l00054"></a>00054 
 <a name="l00056"></a>00056 
-<a name="l00059"></a>00059     <a class="code" href="classASCbase_1_1mol2File.html#9abfe2130ac705d98538e620541dbc28">mol2File</a>(<span class="keyword">const</span> std::string filename,
+<a name="l00059"></a>00059     <a class="code" href="classSimSite3D_1_1mol2File.html#9abfe2130ac705d98538e620541dbc28">mol2File</a>(<span class="keyword">const</span> std::string filename,
 <a name="l00060"></a>00060              <span class="keyword">const</span> verbose_level_t verbosity = VERBOSE_SILENT);
 <a name="l00061"></a>00061 
 <a name="l00062"></a>00062 <span class="comment">/*</span>
@@ -66,37 +66,37 @@
 <a name="l00066"></a>00066 
 <a name="l00068"></a>00068 
 <a name="l00076"></a>00076 <span class="comment">//    mol2File(const mol2File&amp; src, const CoordFile &amp;site_pts,</span>
-<a name="l00077"></a>00077     <a class="code" href="classASCbase_1_1mol2File.html#9abfe2130ac705d98538e620541dbc28">mol2File</a>(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1mol2File.html">mol2File</a>&amp; src, <span class="keyword">const</span> <a class="code" href="classASCbase_1_1BoundingVolume.html">BoundingVolume</a> &amp;site_vol,
-<a name="l00078"></a>00078              <span class="keyword">const</span> <a class="code" href="classASCbase_1_1CoordFile.html">CoordFile</a>&amp; prot_atoms, <span class="keyword">const</span> uint min_num_atoms,
+<a name="l00077"></a>00077     <a class="code" href="classSimSite3D_1_1mol2File.html#9abfe2130ac705d98538e620541dbc28">mol2File</a>(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1mol2File.html">mol2File</a>&amp; src, <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1BoundingVolume.html">BoundingVolume</a> &amp;site_vol,
+<a name="l00078"></a>00078              <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1CoordFile.html">CoordFile</a>&amp; prot_atoms, <span class="keyword">const</span> uint min_num_atoms,
 <a name="l00079"></a>00079              <span class="keyword">const</span> my_float_t* R, <span class="keyword">const</span> my_float_t* T);
 <a name="l00080"></a>00080 
-<a name="l00082"></a>00082     <a class="code" href="classASCbase_1_1mol2File.html#c3c8ecaa09091961a32c131c2e9199f3">~mol2File</a>();
+<a name="l00082"></a>00082     <a class="code" href="classSimSite3D_1_1mol2File.html#c3c8ecaa09091961a32c131c2e9199f3">~mol2File</a>();
 <a name="l00083"></a>00083 
-<a name="l00084"></a>00084     <span class="keywordtype">void</span> <a class="code" href="classASCbase_1_1mol2File.html#8621701ac72363cd41e08123cb4929af">report_stats</a>(std::ostream&amp; out);
+<a name="l00084"></a>00084     <span class="keywordtype">void</span> <a class="code" href="classSimSite3D_1_1mol2File.html#8621701ac72363cd41e08123cb4929af">report_stats</a>(std::ostream&amp; out);
 <a name="l00085"></a>00085 
-<a name="l00087"></a>00087     <span class="keywordtype">void</span> <a class="code" href="classASCbase_1_1mol2File.html#4df38db9db07af42b91db5fd0519d78a">revert_positions</a>();
+<a name="l00087"></a>00087     <span class="keywordtype">void</span> <a class="code" href="classSimSite3D_1_1mol2File.html#4df38db9db07af42b91db5fd0519d78a">revert_positions</a>();
 <a name="l00088"></a>00088 
 <a name="l00090"></a>00090 
 <a name="l00093"></a>00093     <span class="keywordtype">bool</span> 
-<a name="l00094"></a>00094     <a class="code" href="classASCbase_1_1mol2File.html#050d5348e9f9a59de0949a66acab96de">write</a>(std::string ofname);
+<a name="l00094"></a>00094     <a class="code" href="classSimSite3D_1_1mol2File.html#050d5348e9f9a59de0949a66acab96de">write</a>(std::string ofname);
 <a name="l00095"></a>00095 
 <a name="l00097"></a>00097     <span class="keyword">const</span> uint 
-<a name="l00098"></a>00098     <a class="code" href="classASCbase_1_1mol2File.html#ac4b079f975345f69ad63b689f6bb3f5">num_heavy_atoms</a>();
+<a name="l00098"></a>00098     <a class="code" href="classSimSite3D_1_1mol2File.html#ac4b079f975345f69ad63b689f6bb3f5">num_heavy_atoms</a>();
 <a name="l00099"></a>00099 
 <a name="l00102"></a>00102 
 <a name="l00107"></a>00107     std::vector&lt;bool&gt;::const_iterator
-<a name="l00108"></a><a class="code" href="classASCbase_1_1mol2File.html#27ca8161c7d240a8331a56912047dde0">00108</a>     <a class="code" href="classASCbase_1_1mol2File.html#27ca8161c7d240a8331a56912047dde0">frag_atoms_flags_beg</a>()
-<a name="l00109"></a>00109     { <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1mol2File.html#ce4ef757c3a959846fc802b6c9ac5cf7">frag_atoms</a>.begin(); }
+<a name="l00108"></a><a class="code" href="classSimSite3D_1_1mol2File.html#27ca8161c7d240a8331a56912047dde0">00108</a>     <a class="code" href="classSimSite3D_1_1mol2File.html#27ca8161c7d240a8331a56912047dde0">frag_atoms_flags_beg</a>()
+<a name="l00109"></a>00109     { <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1mol2File.html#ce4ef757c3a959846fc802b6c9ac5cf7">frag_atoms</a>.begin(); }
 <a name="l00110"></a>00110 
 <a name="l00113"></a>00113     std::vector&lt;bool&gt;::const_iterator
-<a name="l00114"></a><a class="code" href="classASCbase_1_1mol2File.html#a7662a32085ef964254c0f36285f9fb0">00114</a>     <a class="code" href="classASCbase_1_1mol2File.html#a7662a32085ef964254c0f36285f9fb0">frag_atoms_flags_end</a>()
-<a name="l00115"></a>00115     { <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1mol2File.html#ce4ef757c3a959846fc802b6c9ac5cf7">frag_atoms</a>.end(); }
+<a name="l00114"></a><a class="code" href="classSimSite3D_1_1mol2File.html#a7662a32085ef964254c0f36285f9fb0">00114</a>     <a class="code" href="classSimSite3D_1_1mol2File.html#a7662a32085ef964254c0f36285f9fb0">frag_atoms_flags_end</a>()
+<a name="l00115"></a>00115     { <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1mol2File.html#ce4ef757c3a959846fc802b6c9ac5cf7">frag_atoms</a>.end(); }
 <a name="l00116"></a>00116 
 <a name="l00120"></a>00120     <span class="keyword">const</span> std::vector&lt;atom_vci&gt;&amp;
-<a name="l00121"></a><a class="code" href="classASCbase_1_1mol2File.html#c112d4a0eaca36f7ffa1d635ab30a13f">00121</a>     <a class="code" href="classASCbase_1_1mol2File.html#c112d4a0eaca36f7ffa1d635ab30a13f">get_nbrs</a>(<span class="keyword">const</span> atom_vci atom)<span class="keyword"> const </span>
+<a name="l00121"></a><a class="code" href="classSimSite3D_1_1mol2File.html#c112d4a0eaca36f7ffa1d635ab30a13f">00121</a>     <a class="code" href="classSimSite3D_1_1mol2File.html#c112d4a0eaca36f7ffa1d635ab30a13f">get_nbrs</a>(<span class="keyword">const</span> atom_vci atom)<span class="keyword"> const </span>
 <a name="l00122"></a>00122 <span class="keyword">    </span>{
 <a name="l00123"></a>00123       <span class="keywordflow">if</span>(atom &lt; atoms_begin() || atom &gt;= atoms_end()){
-<a name="l00124"></a>00124         warn(<a class="code" href="classASCbase_1_1mol2File.html#b7069d02b480b1de4486d2a9c5665fa1">_fname</a>, <span class="stringliteral">"get_nbrs"</span>, <span class="stringliteral">"Atom is not in the molecule"</span>);
+<a name="l00124"></a>00124         warn(<a class="code" href="classSimSite3D_1_1mol2File.html#b7069d02b480b1de4486d2a9c5665fa1">_fname</a>, <span class="stringliteral">"get_nbrs"</span>, <span class="stringliteral">"Atom is not in the molecule"</span>);
 <a name="l00125"></a>00125         <span class="keywordflow">return</span> A_nbrs_vec.back();
 <a name="l00126"></a>00126       }
 <a name="l00127"></a>00127       <span class="keywordflow">return</span> *(A_nbrs_vec.begin() + (atom - atoms_begin()));
@@ -107,7 +107,7 @@
 <a name="l00132"></a>00132     atom_type_to_str(<span class="keyword">const</span> atom_vci atom)
 <a name="l00133"></a>00133     { 
 <a name="l00134"></a>00134       <span class="keyword">typedef</span> std::map&lt;orbit_type, std::string&gt; orbit_lvl;
-<a name="l00135"></a>00135       <span class="keywordflow">if</span>(atom_types_to_str.size() == 0) <a class="code" href="classASCbase_1_1mol2File.html#d0e57ec2d4706d8b22375a55aed5d71e">init_atom_types_to_str</a>();
+<a name="l00135"></a>00135       <span class="keywordflow">if</span>(atom_types_to_str.size() == 0) <a class="code" href="classSimSite3D_1_1mol2File.html#d0e57ec2d4706d8b22375a55aed5d71e">init_atom_types_to_str</a>();
 <a name="l00136"></a>00136       std::map&lt;atom_type, orbit_lvl&gt;::const_iterator atom_iter;
 <a name="l00137"></a>00137       atom_iter = atom_types_to_str.find(atom-&gt;name);
 <a name="l00138"></a>00138       <span class="keywordflow">if</span>(atom_iter == atom_types_to_str.end()) <span class="keywordflow">return</span> <span class="stringliteral">"Du.UNK"</span>;
@@ -121,32 +121,32 @@
 <a name="l00146"></a>00146     calc_charge_sums();
 <a name="l00147"></a>00147 
 <a name="l00148"></a>00148   <span class="keyword">private</span>:
-<a name="l00150"></a><a class="code" href="structASCbase_1_1mol2File_1_1nbr__bond__type.html">00150</a>     <span class="keyword">typedef</span> <span class="keyword">struct</span>{
+<a name="l00150"></a><a class="code" href="structSimSite3D_1_1mol2File_1_1nbr__bond__type.html">00150</a>     <span class="keyword">typedef</span> <span class="keyword">struct</span>{
 <a name="l00151"></a>00151       atom_vci nbr;
 <a name="l00152"></a>00152       bond_type bond;
-<a name="l00153"></a>00153     }<a class="code" href="structASCbase_1_1mol2File_1_1nbr__bond__type.html">nbr_bond_type</a>;
+<a name="l00153"></a>00153     }<a class="code" href="structSimSite3D_1_1mol2File_1_1nbr__bond__type.html">nbr_bond_type</a>;
 <a name="l00154"></a>00154 
-<a name="l00157"></a>00157     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1mol2File.html#da164682f58d1e4539666d13de03fb9a">read_data</a>(std::ifstream &amp;mol2_file);
+<a name="l00157"></a>00157     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1mol2File.html#da164682f58d1e4539666d13de03fb9a">read_data</a>(std::ifstream &amp;mol2_file);
 <a name="l00158"></a>00158 
-<a name="l00160"></a>00160     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1mol2File.html#89e45a813cec79c2e095a5bfd8a77f67">read_molecule_section</a>(std::ifstream &amp;mol2_file,
+<a name="l00160"></a>00160     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1mol2File.html#89e45a813cec79c2e095a5bfd8a77f67">read_molecule_section</a>(std::ifstream &amp;mol2_file,
 <a name="l00161"></a>00161                                uint* num_atoms_out,
 <a name="l00162"></a>00162                                uint* num_bonds_out);
 <a name="l00163"></a>00163 
-<a name="l00165"></a>00165     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1mol2File.html#01383b135389cc03960445865d57fe87">read_atom_section</a>(std::ifstream &amp;mol2_file, <span class="keyword">const</span> uint <a class="code" href="classASCbase_1_1CoordFile.html#acec4ad5461784995b4fb15bb97e34d4">num_atoms</a>);
+<a name="l00165"></a>00165     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1mol2File.html#01383b135389cc03960445865d57fe87">read_atom_section</a>(std::ifstream &amp;mol2_file, <span class="keyword">const</span> uint <a class="code" href="classSimSite3D_1_1CoordFile.html#acec4ad5461784995b4fb15bb97e34d4">num_atoms</a>);
 <a name="l00166"></a>00166 
-<a name="l00168"></a>00168     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1mol2File.html#aebc4bf5f53617b0e6014300bd40e608">read_bond_section</a>(std::ifstream &amp;mol2_file, <span class="keyword">const</span> uint num_bonds);
+<a name="l00168"></a>00168     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1mol2File.html#aebc4bf5f53617b0e6014300bd40e608">read_bond_section</a>(std::ifstream &amp;mol2_file, <span class="keyword">const</span> uint num_bonds);
 <a name="l00169"></a>00169 
-<a name="l00171"></a>00171     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1mol2File.html#d8c08befaed6c64a8752e5f6f43b63f0">look_up_atom_by_string</a>(<span class="keyword">const</span> std::string atom_str, <a class="code" href="classASCbase_1_1atom__t.html">atom_t</a>* atom);
+<a name="l00171"></a>00171     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1mol2File.html#d8c08befaed6c64a8752e5f6f43b63f0">look_up_atom_by_string</a>(<span class="keyword">const</span> std::string atom_str, <a class="code" href="classSimSite3D_1_1atom__t.html">atom_t</a>* atom);
 <a name="l00172"></a>00172    
-<a name="l00174"></a>00174     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1mol2File.html#632bf1f1d3c95fd67ab1799753309a78">look_up_bond_by_string</a>(<span class="keyword">const</span> std::string bond_str, <a class="code" href="structASCbase_1_1mol2__bond__t.html">mol2_bond_t</a>* bond);
+<a name="l00174"></a>00174     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1mol2File.html#632bf1f1d3c95fd67ab1799753309a78">look_up_bond_by_string</a>(<span class="keyword">const</span> std::string bond_str, <a class="code" href="structSimSite3D_1_1mol2__bond__t.html">mol2_bond_t</a>* bond);
 <a name="l00175"></a>00175 
-<a name="l00177"></a>00177     <span class="keywordtype">void</span> <a class="code" href="classASCbase_1_1mol2File.html#29239519d712966a47a89c6658952ade">init_atom_table_by_string</a>();
+<a name="l00177"></a>00177     <span class="keywordtype">void</span> <a class="code" href="classSimSite3D_1_1mol2File.html#29239519d712966a47a89c6658952ade">init_atom_table_by_string</a>();
 <a name="l00178"></a>00178 
-<a name="l00180"></a>00180     <span class="keywordtype">void</span> <a class="code" href="classASCbase_1_1mol2File.html#2cf17eb0c5a571259113af56b98ef615">init_bond_table_by_string</a>();
+<a name="l00180"></a>00180     <span class="keywordtype">void</span> <a class="code" href="classSimSite3D_1_1mol2File.html#2cf17eb0c5a571259113af56b98ef615">init_bond_table_by_string</a>();
 <a name="l00181"></a>00181  
-<a name="l00183"></a>00183     <span class="keywordtype">void</span> <a class="code" href="classASCbase_1_1mol2File.html#3bc5899510eadb43c23f2ab11393baa9">init_bond_types_to_str</a>();
+<a name="l00183"></a>00183     <span class="keywordtype">void</span> <a class="code" href="classSimSite3D_1_1mol2File.html#3bc5899510eadb43c23f2ab11393baa9">init_bond_types_to_str</a>();
 <a name="l00184"></a>00184  
-<a name="l00187"></a>00187     <span class="keywordtype">void</span> <a class="code" href="classASCbase_1_1mol2File.html#d0e57ec2d4706d8b22375a55aed5d71e">init_atom_types_to_str</a>();
+<a name="l00187"></a>00187     <span class="keywordtype">void</span> <a class="code" href="classSimSite3D_1_1mol2File.html#d0e57ec2d4706d8b22375a55aed5d71e">init_atom_types_to_str</a>();
 <a name="l00188"></a>00188 
 <a name="l00189"></a>00189     <span class="keywordtype">void</span> add_bond(<span class="keyword">const</span> uint a1, <span class="keyword">const</span> uint a2, <span class="keyword">const</span> bond_type type,
 <a name="l00190"></a>00190                   <span class="keyword">const</span> std::string status_bits);
@@ -164,17 +164,17 @@
 <a name="l00202"></a>00202     std::map&lt;bond_type, std::string&gt; bond_types_to_str;
 <a name="l00203"></a>00203     std::map&lt;atom_type, std::map&lt;orbit_type, std::string&gt; &gt; atom_types_to_str;
 <a name="l00204"></a>00204     std::vector&lt;std::string&gt; rest_of_lines; 
-<a name="l00205"></a><a class="code" href="classASCbase_1_1mol2File.html#1a674f42d6702f792adfa852a48f24eb">00205</a>     mol2_bond_vec <a class="code" href="classASCbase_1_1mol2File.html#1a674f42d6702f792adfa852a48f24eb">bonds</a>;
+<a name="l00205"></a><a class="code" href="classSimSite3D_1_1mol2File.html#1a674f42d6702f792adfa852a48f24eb">00205</a>     mol2_bond_vec <a class="code" href="classSimSite3D_1_1mol2File.html#1a674f42d6702f792adfa852a48f24eb">bonds</a>;
 <a name="l00206"></a>00206     <span class="keywordtype">bool</span> atom_ids_are_consecutive;
-<a name="l00207"></a><a class="code" href="classASCbase_1_1mol2File.html#c3b92d4de315f32a750cf70bf3e776a5">00207</a>     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1mol2File.html#c3b92d4de315f32a750cf70bf3e776a5">is_frag_file</a>;     
+<a name="l00207"></a><a class="code" href="classSimSite3D_1_1mol2File.html#c3b92d4de315f32a750cf70bf3e776a5">00207</a>     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1mol2File.html#c3b92d4de315f32a750cf70bf3e776a5">is_frag_file</a>;     
 <a name="l00208"></a>00208     uint a_num_heavy_atoms;
-<a name="l00209"></a><a class="code" href="classASCbase_1_1mol2File.html#ce4ef757c3a959846fc802b6c9ac5cf7">00209</a>     std::vector&lt;bool&gt; <a class="code" href="classASCbase_1_1mol2File.html#ce4ef757c3a959846fc802b6c9ac5cf7">frag_atoms</a>; 
+<a name="l00209"></a><a class="code" href="classSimSite3D_1_1mol2File.html#ce4ef757c3a959846fc802b6c9ac5cf7">00209</a>     std::vector&lt;bool&gt; <a class="code" href="classSimSite3D_1_1mol2File.html#ce4ef757c3a959846fc802b6c9ac5cf7">frag_atoms</a>; 
 <a name="l00210"></a>00210     <span class="comment">//std::multimap&lt;atom_vci, nbr_bond_type&gt; A_nbrs_map;</span>
 <a name="l00211"></a>00211     std::vector&lt;std::vector&lt;atom_vci&gt; &gt; A_nbrs_vec;
 <a name="l00212"></a>00212 
 <a name="l00213"></a>00213     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t ATOMS_TOO_FAR;
 <a name="l00214"></a>00214     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t ATOMS_TOO_CLOSE;
-<a name="l00215"></a><a class="code" href="classASCbase_1_1mol2File.html#b7069d02b480b1de4486d2a9c5665fa1">00215</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classASCbase_1_1mol2File.html#b7069d02b480b1de4486d2a9c5665fa1">_fname</a>;  
+<a name="l00215"></a><a class="code" href="classSimSite3D_1_1mol2File.html#b7069d02b480b1de4486d2a9c5665fa1">00215</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classSimSite3D_1_1mol2File.html#b7069d02b480b1de4486d2a9c5665fa1">_fname</a>;  
 <a name="l00216"></a>00216     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t MINIMAL_CHARGE;
 <a name="l00217"></a>00217   };
 <a name="l00218"></a>00218 }

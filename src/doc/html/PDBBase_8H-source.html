@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -34,7 +34,7 @@
 <a name="l00021"></a>00021 <span class="preprocessor"></span><span class="preprocessor">#include &lt;types.H&gt;</span>
 <a name="l00022"></a>00022 <span class="preprocessor">#include &lt;CoordFile.H&gt;</span>
 <a name="l00023"></a>00023 
-<a name="l00024"></a>00024 <span class="keyword">namespace </span>ASCbase{
+<a name="l00024"></a>00024 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00025"></a>00025 
 <a name="l00027"></a>00027   <span class="keyword">typedef</span> <span class="keyword">enum</span>{
 <a name="l00028"></a>00028     PDB_NOT_ATOM_RECORD, 
@@ -47,25 +47,25 @@
 <a name="l00035"></a>00035     PDB_HEAVY_HET
 <a name="l00036"></a>00036   }pdb_record_type;
 <a name="l00037"></a>00037 
-<a name="l00039"></a><a class="code" href="classASCbase_1_1PDBBase.html">00039</a>   <span class="keyword">class </span><a class="code" href="classASCbase_1_1PDBBase.html">PDBBase</a> : <span class="keyword">public</span> <a class="code" href="classASCbase_1_1CoordFile.html">CoordFile</a>{
+<a name="l00039"></a><a class="code" href="classSimSite3D_1_1PDBBase.html">00039</a>   <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1PDBBase.html">PDBBase</a> : <span class="keyword">public</span> <a class="code" href="classSimSite3D_1_1CoordFile.html">CoordFile</a>{
 <a name="l00040"></a>00040   <span class="keyword">public</span>:
 <a name="l00041"></a>00041 
-<a name="l00043"></a><a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html">00043</a>     <span class="keyword">struct </span><a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html">modres_record_type</a>{
-<a name="l00044"></a><a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#6a68803756d56ad22aa52b64a0ff3c5c">00044</a>       std::string <a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#6a68803756d56ad22aa52b64a0ff3c5c">idCode</a>;   
-<a name="l00045"></a><a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#bed137d971bf629a1ae314a15abe02a0">00045</a>       std::string <a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#bed137d971bf629a1ae314a15abe02a0">resName</a>;  
-<a name="l00046"></a><a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#4646af5f898e7f605c660c6a03e99326">00046</a>       <span class="keywordtype">char</span> <a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#4646af5f898e7f605c660c6a03e99326">chainID</a>;         
-<a name="l00047"></a><a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#8e7203fd189ff474fb4df62d4c7370a5">00047</a>       uint <a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#8e7203fd189ff474fb4df62d4c7370a5">seqNum</a>;          
-<a name="l00048"></a><a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#ce2a7c9abb09dbdb2e3bcef4e4d8452c">00048</a>       <span class="keywordtype">char</span> <a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#ce2a7c9abb09dbdb2e3bcef4e4d8452c">iCode</a>;           
-<a name="l00049"></a><a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#875e1b41b9c3d177a3d41bbe4d629ea1">00049</a>       residue_type <a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#875e1b41b9c3d177a3d41bbe4d629ea1">stdRes</a>;  
-<a name="l00050"></a><a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#765eead7dea06482d5b3fe2dbcd4eed0">00050</a>       std::string <a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#765eead7dea06482d5b3fe2dbcd4eed0">comment</a>;  
+<a name="l00043"></a><a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html">00043</a>     <span class="keyword">struct </span><a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html">modres_record_type</a>{
+<a name="l00044"></a><a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#6a68803756d56ad22aa52b64a0ff3c5c">00044</a>       std::string <a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#6a68803756d56ad22aa52b64a0ff3c5c">idCode</a>;   
+<a name="l00045"></a><a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#bed137d971bf629a1ae314a15abe02a0">00045</a>       std::string <a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#bed137d971bf629a1ae314a15abe02a0">resName</a>;  
+<a name="l00046"></a><a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#4646af5f898e7f605c660c6a03e99326">00046</a>       <span class="keywordtype">char</span> <a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#4646af5f898e7f605c660c6a03e99326">chainID</a>;         
+<a name="l00047"></a><a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#8e7203fd189ff474fb4df62d4c7370a5">00047</a>       uint <a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#8e7203fd189ff474fb4df62d4c7370a5">seqNum</a>;          
+<a name="l00048"></a><a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#ce2a7c9abb09dbdb2e3bcef4e4d8452c">00048</a>       <span class="keywordtype">char</span> <a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#ce2a7c9abb09dbdb2e3bcef4e4d8452c">iCode</a>;           
+<a name="l00049"></a><a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#875e1b41b9c3d177a3d41bbe4d629ea1">00049</a>       residue_type <a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#875e1b41b9c3d177a3d41bbe4d629ea1">stdRes</a>;  
+<a name="l00050"></a><a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#765eead7dea06482d5b3fe2dbcd4eed0">00050</a>       std::string <a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#765eead7dea06482d5b3fe2dbcd4eed0">comment</a>;  
 <a name="l00051"></a>00051 
 <a name="l00052"></a>00052       <span class="keywordtype">bool</span>
 <a name="l00053"></a>00053       contains(atom_vci atom)<span class="keyword"> const</span>
 <a name="l00054"></a>00054 <span class="keyword">      </span>{
-<a name="l00055"></a>00055         <span class="keywordflow">if</span>(atom-&gt;res_num != <a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#8e7203fd189ff474fb4df62d4c7370a5">seqNum</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00056"></a>00056         <span class="keywordflow">if</span>(atom-&gt;chainID != <a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#4646af5f898e7f605c660c6a03e99326">chainID</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00057"></a>00057         <span class="keywordflow">if</span>(atom-&gt;res_str != <a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#bed137d971bf629a1ae314a15abe02a0">resName</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00058"></a>00058         <span class="keywordflow">if</span>(atom-&gt;iCode != <a class="code" href="structASCbase_1_1PDBBase_1_1modres__record__type.html#ce2a7c9abb09dbdb2e3bcef4e4d8452c">iCode</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00055"></a>00055         <span class="keywordflow">if</span>(atom-&gt;res_num != <a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#8e7203fd189ff474fb4df62d4c7370a5">seqNum</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00056"></a>00056         <span class="keywordflow">if</span>(atom-&gt;chainID != <a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#4646af5f898e7f605c660c6a03e99326">chainID</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00057"></a>00057         <span class="keywordflow">if</span>(atom-&gt;res_str != <a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#bed137d971bf629a1ae314a15abe02a0">resName</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00058"></a>00058         <span class="keywordflow">if</span>(atom-&gt;iCode != <a class="code" href="structSimSite3D_1_1PDBBase_1_1modres__record__type.html#ce2a7c9abb09dbdb2e3bcef4e4d8452c">iCode</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00059"></a>00059         <span class="keywordflow">return</span> <span class="keyword">true</span>;
 <a name="l00060"></a>00060       }
 <a name="l00061"></a>00061     };
@@ -73,31 +73,31 @@
 <a name="l00063"></a>00063     <span class="keyword">typedef</span> modres_record_vec::iterator modres_record_vi;
 <a name="l00064"></a>00064     <span class="keyword">typedef</span> modres_record_vec::const_iterator modres_record_vci;
 <a name="l00065"></a>00065 
-<a name="l00067"></a><a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html">00067</a>     <span class="keyword">struct </span><a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html">het_record_type</a>{
-<a name="l00068"></a><a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#38f67500111621ed6aa96f49a1ccc566">00068</a>       std::string <a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#38f67500111621ed6aa96f49a1ccc566">hetID</a>;    
-<a name="l00069"></a><a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#f375324a95c74d9124203d8a099db88f">00069</a>       <span class="keywordtype">char</span> <a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#f375324a95c74d9124203d8a099db88f">chainID</a>;         
-<a name="l00070"></a><a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#7e67fcacb534bfc058abb1f17f495dad">00070</a>       uint <a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#7e67fcacb534bfc058abb1f17f495dad">seqNum</a>;          
-<a name="l00071"></a><a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#e9c3b632888b75ee4aee65efe7b421ab">00071</a>       <span class="keywordtype">char</span> <a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#e9c3b632888b75ee4aee65efe7b421ab">iCode</a>;           
-<a name="l00072"></a><a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#62ab9f80b81042ccc0e0781c40d6d9be">00072</a>       uint <a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#62ab9f80b81042ccc0e0781c40d6d9be">numHetAtoms</a>;     
-<a name="l00073"></a><a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#3d9324eb71930e1e35944cd9d9c08f51">00073</a>       std::string <a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#3d9324eb71930e1e35944cd9d9c08f51">text</a>;     
+<a name="l00067"></a><a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html">00067</a>     <span class="keyword">struct </span><a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html">het_record_type</a>{
+<a name="l00068"></a><a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#38f67500111621ed6aa96f49a1ccc566">00068</a>       std::string <a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#38f67500111621ed6aa96f49a1ccc566">hetID</a>;    
+<a name="l00069"></a><a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#f375324a95c74d9124203d8a099db88f">00069</a>       <span class="keywordtype">char</span> <a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#f375324a95c74d9124203d8a099db88f">chainID</a>;         
+<a name="l00070"></a><a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#7e67fcacb534bfc058abb1f17f495dad">00070</a>       uint <a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#7e67fcacb534bfc058abb1f17f495dad">seqNum</a>;          
+<a name="l00071"></a><a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#e9c3b632888b75ee4aee65efe7b421ab">00071</a>       <span class="keywordtype">char</span> <a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#e9c3b632888b75ee4aee65efe7b421ab">iCode</a>;           
+<a name="l00072"></a><a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#62ab9f80b81042ccc0e0781c40d6d9be">00072</a>       uint <a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#62ab9f80b81042ccc0e0781c40d6d9be">numHetAtoms</a>;     
+<a name="l00073"></a><a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#3d9324eb71930e1e35944cd9d9c08f51">00073</a>       std::string <a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#3d9324eb71930e1e35944cd9d9c08f51">text</a>;     
 <a name="l00074"></a>00074 
 <a name="l00075"></a>00075       <span class="keywordtype">bool</span>
 <a name="l00076"></a>00076       contains(atom_vci atom)<span class="keyword"> const</span>
 <a name="l00077"></a>00077 <span class="keyword">      </span>{
-<a name="l00078"></a>00078         <span class="keywordflow">if</span>(<a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#7e67fcacb534bfc058abb1f17f495dad">seqNum</a> != atom-&gt;res_num) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00079"></a>00079         <span class="keywordflow">if</span>(<a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#f375324a95c74d9124203d8a099db88f">chainID</a> != atom-&gt;chainID) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00080"></a>00080         <span class="keywordflow">if</span>(<a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#38f67500111621ed6aa96f49a1ccc566">hetID</a> != atom-&gt;res_str) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00081"></a>00081         <span class="keywordflow">if</span>(<a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#e9c3b632888b75ee4aee65efe7b421ab">iCode</a> != atom-&gt;iCode) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00078"></a>00078         <span class="keywordflow">if</span>(<a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#7e67fcacb534bfc058abb1f17f495dad">seqNum</a> != atom-&gt;res_num) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00079"></a>00079         <span class="keywordflow">if</span>(<a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#f375324a95c74d9124203d8a099db88f">chainID</a> != atom-&gt;chainID) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00080"></a>00080         <span class="keywordflow">if</span>(<a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#38f67500111621ed6aa96f49a1ccc566">hetID</a> != atom-&gt;res_str) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00081"></a>00081         <span class="keywordflow">if</span>(<a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#e9c3b632888b75ee4aee65efe7b421ab">iCode</a> != atom-&gt;iCode) <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00082"></a>00082         <span class="keywordflow">return</span> <span class="keyword">true</span>;
 <a name="l00083"></a>00083       }
 <a name="l00084"></a>00084 
 <a name="l00085"></a>00085       <span class="keywordtype">bool</span>
-<a name="l00086"></a>00086       contains(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1atom__t.html">atom_t</a>&amp; atom)<span class="keyword"> const</span>
+<a name="l00086"></a>00086       contains(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1atom__t.html">atom_t</a>&amp; atom)<span class="keyword"> const</span>
 <a name="l00087"></a>00087 <span class="keyword">      </span>{
-<a name="l00088"></a>00088         <span class="keywordflow">if</span>(<a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#7e67fcacb534bfc058abb1f17f495dad">seqNum</a> != atom.<a class="code" href="classASCbase_1_1atom__t.html#4a643f052098c53dd7cfe1e6f17462a0">res_num</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00089"></a>00089         <span class="keywordflow">if</span>(<a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#f375324a95c74d9124203d8a099db88f">chainID</a> != atom.<a class="code" href="classASCbase_1_1atom__t.html#b4a4060dde7bf73e494332146ed5ca92">chainID</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00090"></a>00090         <span class="keywordflow">if</span>(<a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#38f67500111621ed6aa96f49a1ccc566">hetID</a> != atom.<a class="code" href="classASCbase_1_1atom__t.html#16c11a15f4136c3d4bb29e9abd6fa719">res_str</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00091"></a>00091         <span class="keywordflow">if</span>(<a class="code" href="structASCbase_1_1PDBBase_1_1het__record__type.html#e9c3b632888b75ee4aee65efe7b421ab">iCode</a> != atom.<a class="code" href="classASCbase_1_1atom__t.html#f7a846d9ffb1b0caf8a7b7b88bcf2f32">iCode</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00088"></a>00088         <span class="keywordflow">if</span>(<a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#7e67fcacb534bfc058abb1f17f495dad">seqNum</a> != atom.<a class="code" href="classSimSite3D_1_1atom__t.html#4a643f052098c53dd7cfe1e6f17462a0">res_num</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00089"></a>00089         <span class="keywordflow">if</span>(<a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#f375324a95c74d9124203d8a099db88f">chainID</a> != atom.<a class="code" href="classSimSite3D_1_1atom__t.html#b4a4060dde7bf73e494332146ed5ca92">chainID</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00090"></a>00090         <span class="keywordflow">if</span>(<a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#38f67500111621ed6aa96f49a1ccc566">hetID</a> != atom.<a class="code" href="classSimSite3D_1_1atom__t.html#16c11a15f4136c3d4bb29e9abd6fa719">res_str</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00091"></a>00091         <span class="keywordflow">if</span>(<a class="code" href="structSimSite3D_1_1PDBBase_1_1het__record__type.html#e9c3b632888b75ee4aee65efe7b421ab">iCode</a> != atom.<a class="code" href="classSimSite3D_1_1atom__t.html#f7a846d9ffb1b0caf8a7b7b88bcf2f32">iCode</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00092"></a>00092         <span class="keywordflow">return</span> <span class="keyword">true</span>;
 <a name="l00093"></a>00093       }
 <a name="l00094"></a>00094     };
@@ -105,82 +105,82 @@
 <a name="l00096"></a>00096     <span class="keyword">typedef</span> het_record_vec::iterator het_record_vi;
 <a name="l00097"></a>00097     <span class="keyword">typedef</span> het_record_vec::const_iterator het_record_vci;
 <a name="l00098"></a>00098 
-<a name="l00100"></a>00100     <a class="code" href="classASCbase_1_1PDBBase.html#b8a7226b098f891fff8a84c8efac0e94">PDBBase</a>();
+<a name="l00100"></a>00100     <a class="code" href="classSimSite3D_1_1PDBBase.html#b8a7226b098f891fff8a84c8efac0e94">PDBBase</a>();
 <a name="l00101"></a>00101 
 <a name="l00103"></a>00103 
-<a name="l00109"></a>00109     <a class="code" href="classASCbase_1_1PDBBase.html#b8a7226b098f891fff8a84c8efac0e94">PDBBase</a>(<span class="keyword">const</span> std::string filename,
+<a name="l00109"></a>00109     <a class="code" href="classSimSite3D_1_1PDBBase.html#b8a7226b098f891fff8a84c8efac0e94">PDBBase</a>(<span class="keyword">const</span> std::string filename,
 <a name="l00110"></a>00110             <span class="keyword">const</span> verbose_level_t verbosity = VERBOSE_SILENT);
 <a name="l00111"></a>00111 
-<a name="l00113"></a>00113     <a class="code" href="classASCbase_1_1PDBBase.html#d5a3b091d8d5a6e718a8ed91b2d3720d">~PDBBase</a>();
+<a name="l00113"></a>00113     <a class="code" href="classSimSite3D_1_1PDBBase.html#d5a3b091d8d5a6e718a8ed91b2d3720d">~PDBBase</a>();
 <a name="l00114"></a>00114 
 <a name="l00116"></a>00116 
 <a name="l00120"></a>00120     <span class="keywordtype">bool</span> 
-<a name="l00121"></a>00121     <a class="code" href="classASCbase_1_1PDBBase.html#e8b78da086bcde015d96f7ac19387925">write</a>(<span class="keyword">const</span> std::string filename);
+<a name="l00121"></a>00121     <a class="code" href="classSimSite3D_1_1PDBBase.html#e8b78da086bcde015d96f7ac19387925">write</a>(<span class="keyword">const</span> std::string filename);
 <a name="l00122"></a>00122 
 <a name="l00124"></a>00124     <span class="keyword">const</span> <span class="keywordtype">bool</span>
-<a name="l00125"></a>00125     <a class="code" href="classASCbase_1_1PDBBase.html#3a17f60455b5bb35305dd7a4405930dd">const_write</a>(<span class="keyword">const</span> std::string filename) <span class="keyword">const</span>;
+<a name="l00125"></a>00125     <a class="code" href="classSimSite3D_1_1PDBBase.html#3a17f60455b5bb35305dd7a4405930dd">const_write</a>(<span class="keyword">const</span> std::string filename) <span class="keyword">const</span>;
 <a name="l00126"></a>00126 
 <a name="l00128"></a>00128 
-<a name="l00134"></a>00134     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1PDBBase.html#62a92225b2ba833627563c54efd11b7c">write_xyzr</a>(std::ostream &amp;out, <span class="keywordtype">bool</span> include_metals,
+<a name="l00134"></a>00134     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1PDBBase.html#62a92225b2ba833627563c54efd11b7c">write_xyzr</a>(std::ostream &amp;out, <span class="keywordtype">bool</span> include_metals,
 <a name="l00135"></a>00135                     <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;waters);
 <a name="l00136"></a>00136 
 <a name="l00138"></a>00138 
-<a name="l00141"></a>00141     <span class="keywordtype">void</span> <a class="code" href="classASCbase_1_1PDBBase.html#e2de6eb8e6bd77dcca5d0b86847db355">set_header</a>(<span class="keyword">const</span> std::string h);
+<a name="l00141"></a>00141     <span class="keywordtype">void</span> <a class="code" href="classSimSite3D_1_1PDBBase.html#e2de6eb8e6bd77dcca5d0b86847db355">set_header</a>(<span class="keyword">const</span> std::string h);
 <a name="l00142"></a>00142 
-<a name="l00144"></a><a class="code" href="classASCbase_1_1PDBBase.html#7918cb94d1deb47d69fef5816e7a7782">00144</a>     <span class="keywordtype">void</span> <a class="code" href="classASCbase_1_1PDBBase.html#7918cb94d1deb47d69fef5816e7a7782">report_stats</a>(std::ostream&amp; out) {;}
+<a name="l00144"></a><a class="code" href="classSimSite3D_1_1PDBBase.html#7918cb94d1deb47d69fef5816e7a7782">00144</a>     <span class="keywordtype">void</span> <a class="code" href="classSimSite3D_1_1PDBBase.html#7918cb94d1deb47d69fef5816e7a7782">report_stats</a>(std::ostream&amp; out) {;}
 <a name="l00145"></a>00145 
 <a name="l00147"></a>00147 
-<a name="l00154"></a>00154     <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1PDBBase.html#6ac23db47cc859ba574c999d40d52039">is_hydrogen</a>(<span class="keyword">const</span> std::string <a class="code" href="classASCbase_1_1CoordFile.html#687a29cf9f287acaa3919c7cd11a1474">name</a>);
+<a name="l00154"></a>00154     <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1PDBBase.html#6ac23db47cc859ba574c999d40d52039">is_hydrogen</a>(<span class="keyword">const</span> std::string <a class="code" href="classSimSite3D_1_1CoordFile.html#687a29cf9f287acaa3919c7cd11a1474">name</a>);
 <a name="l00155"></a>00155 
 <a name="l00158"></a>00158 
-<a name="l00162"></a>00162     <span class="keyword">static</span> pdb_record_type <a class="code" href="classASCbase_1_1PDBBase.html#9ca7950fae493f47aa2fedb86a797d50">get_record_type</a>(<span class="keyword">const</span> std::string line);
+<a name="l00162"></a>00162     <span class="keyword">static</span> pdb_record_type <a class="code" href="classSimSite3D_1_1PDBBase.html#9ca7950fae493f47aa2fedb86a797d50">get_record_type</a>(<span class="keyword">const</span> std::string line);
 <a name="l00163"></a>00163 
 <a name="l00164"></a>00164     modres_record_vci
 <a name="l00165"></a>00165     modres_records_begin()<span class="keyword"> const</span>
-<a name="l00166"></a>00166 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1PDBBase.html#6c966a768459840b7a19eacabd51d099">A_modres_records</a>.begin(); }
+<a name="l00166"></a>00166 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1PDBBase.html#6c966a768459840b7a19eacabd51d099">A_modres_records</a>.begin(); }
 <a name="l00167"></a>00167 
 <a name="l00168"></a>00168     modres_record_vci
 <a name="l00169"></a>00169     modres_records_end()<span class="keyword"> const</span>
-<a name="l00170"></a>00170 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1PDBBase.html#6c966a768459840b7a19eacabd51d099">A_modres_records</a>.end(); }
+<a name="l00170"></a>00170 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1PDBBase.html#6c966a768459840b7a19eacabd51d099">A_modres_records</a>.end(); }
 <a name="l00171"></a>00171 
 <a name="l00172"></a>00172     het_record_vci
 <a name="l00173"></a>00173     het_records_begin()<span class="keyword"> const</span>
-<a name="l00174"></a>00174 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1PDBBase.html#611f815d363ce445712c8a0bf4facbb4">A_het_records</a>.begin(); }
+<a name="l00174"></a>00174 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1PDBBase.html#611f815d363ce445712c8a0bf4facbb4">A_het_records</a>.begin(); }
 <a name="l00175"></a>00175 
 <a name="l00176"></a>00176     het_record_vci
 <a name="l00177"></a>00177     het_records_end()<span class="keyword"> const</span>
-<a name="l00178"></a>00178 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1PDBBase.html#611f815d363ce445712c8a0bf4facbb4">A_het_records</a>.end(); }
+<a name="l00178"></a>00178 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1PDBBase.html#611f815d363ce445712c8a0bf4facbb4">A_het_records</a>.end(); }
 <a name="l00179"></a>00179 
 <a name="l00180"></a>00180   <span class="keyword">protected</span>:
 <a name="l00182"></a>00182     <span class="keywordtype">bool</span> 
-<a name="l00183"></a><a class="code" href="classASCbase_1_1PDBBase.html#2c065e3bb88a3da81ba55ed4f02b3998">00183</a>     <a class="code" href="classASCbase_1_1PDBBase.html#2c065e3bb88a3da81ba55ed4f02b3998">read_data</a>(std::ifstream &amp;fin)
+<a name="l00183"></a><a class="code" href="classSimSite3D_1_1PDBBase.html#2c065e3bb88a3da81ba55ed4f02b3998">00183</a>     <a class="code" href="classSimSite3D_1_1PDBBase.html#2c065e3bb88a3da81ba55ed4f02b3998">read_data</a>(std::ifstream &amp;fin)
 <a name="l00184"></a>00184     {
-<a name="l00185"></a>00185       <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1PDBBase.html#2c065e3bb88a3da81ba55ed4f02b3998">read_data</a>(fin, <span class="keyword">false</span>);
+<a name="l00185"></a>00185       <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1PDBBase.html#2c065e3bb88a3da81ba55ed4f02b3998">read_data</a>(fin, <span class="keyword">false</span>);
 <a name="l00186"></a>00186     }
 <a name="l00187"></a>00187 
 <a name="l00190"></a>00190 
-<a name="l00196"></a>00196     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1PDBBase.html#2c065e3bb88a3da81ba55ed4f02b3998">read_data</a>(std::ifstream &amp;fin, <span class="keyword">const</span> <span class="keywordtype">bool</span> ignore_altLocs);
+<a name="l00196"></a>00196     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1PDBBase.html#2c065e3bb88a3da81ba55ed4f02b3998">read_data</a>(std::ifstream &amp;fin, <span class="keyword">const</span> <span class="keywordtype">bool</span> ignore_altLocs);
 <a name="l00197"></a>00197 
 <a name="l00200"></a>00200 
 <a name="l00204"></a>00204     <span class="keywordtype">void</span>
-<a name="l00205"></a>00205     <a class="code" href="classASCbase_1_1PDBBase.html#e15bcd15e9d3d97f9b85f43a50557db7">add_het_record</a>(atom_vci atom);
+<a name="l00205"></a>00205     <a class="code" href="classSimSite3D_1_1PDBBase.html#e15bcd15e9d3d97f9b85f43a50557db7">add_het_record</a>(atom_vci atom);
 <a name="l00206"></a>00206 
 <a name="l00207"></a>00207   <span class="keyword">private</span>:
 <a name="l00208"></a>00208 
 <a name="l00211"></a>00211 
-<a name="l00220"></a>00220     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1PDBBase.html#2b49fed724fd6cc31ddd3eb804f7d89c">get_res_info</a>(<span class="keyword">const</span> std::string atom_name, <span class="keyword">const</span> std::string res_name, 
-<a name="l00221"></a>00221                       <a class="code" href="classASCbase_1_1atom__t.html">atom_t</a>* atom);
+<a name="l00220"></a>00220     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1PDBBase.html#2b49fed724fd6cc31ddd3eb804f7d89c">get_res_info</a>(<span class="keyword">const</span> std::string atom_name, <span class="keyword">const</span> std::string res_name, 
+<a name="l00221"></a>00221                       <a class="code" href="classSimSite3D_1_1atom__t.html">atom_t</a>* atom);
 <a name="l00222"></a>00222 
 <a name="l00224"></a>00224     <span class="keywordtype">void</span>
-<a name="l00225"></a>00225     <a class="code" href="classASCbase_1_1PDBBase.html#709ac8acd5d42fa1ffbb4b51c1251b03">read_het_record</a>(std::string&amp; het_line);
+<a name="l00225"></a>00225     <a class="code" href="classSimSite3D_1_1PDBBase.html#709ac8acd5d42fa1ffbb4b51c1251b03">read_het_record</a>(std::string&amp; het_line);
 <a name="l00226"></a>00226  
 <a name="l00228"></a>00228     <span class="keywordtype">void</span> 
-<a name="l00229"></a>00229     <a class="code" href="classASCbase_1_1PDBBase.html#b2935390dde55dd39526a43decee1eb7">read_modres_record</a>(std::string&amp; modres_line);
+<a name="l00229"></a>00229     <a class="code" href="classSimSite3D_1_1PDBBase.html#b2935390dde55dd39526a43decee1eb7">read_modres_record</a>(std::string&amp; modres_line);
 <a name="l00230"></a>00230 
-<a name="l00231"></a><a class="code" href="classASCbase_1_1PDBBase.html#611f815d363ce445712c8a0bf4facbb4">00231</a>     het_record_vec <a class="code" href="classASCbase_1_1PDBBase.html#611f815d363ce445712c8a0bf4facbb4">A_het_records</a>; 
-<a name="l00232"></a><a class="code" href="classASCbase_1_1PDBBase.html#6c966a768459840b7a19eacabd51d099">00232</a>     modres_record_vec <a class="code" href="classASCbase_1_1PDBBase.html#6c966a768459840b7a19eacabd51d099">A_modres_records</a>;  
-<a name="l00233"></a><a class="code" href="classASCbase_1_1PDBBase.html#d97d60e884704fd46ee09111846b0989">00233</a>     std::string <a class="code" href="classASCbase_1_1PDBBase.html#d97d60e884704fd46ee09111846b0989">A_header</a>;    
-<a name="l00234"></a><a class="code" href="classASCbase_1_1PDBBase.html#2abb2396c1c8ad545d6e463a8690043b">00234</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classASCbase_1_1PDBBase.html#2abb2396c1c8ad545d6e463a8690043b">A_fname</a>;  
+<a name="l00231"></a><a class="code" href="classSimSite3D_1_1PDBBase.html#611f815d363ce445712c8a0bf4facbb4">00231</a>     het_record_vec <a class="code" href="classSimSite3D_1_1PDBBase.html#611f815d363ce445712c8a0bf4facbb4">A_het_records</a>; 
+<a name="l00232"></a><a class="code" href="classSimSite3D_1_1PDBBase.html#6c966a768459840b7a19eacabd51d099">00232</a>     modres_record_vec <a class="code" href="classSimSite3D_1_1PDBBase.html#6c966a768459840b7a19eacabd51d099">A_modres_records</a>;  
+<a name="l00233"></a><a class="code" href="classSimSite3D_1_1PDBBase.html#d97d60e884704fd46ee09111846b0989">00233</a>     std::string <a class="code" href="classSimSite3D_1_1PDBBase.html#d97d60e884704fd46ee09111846b0989">A_header</a>;    
+<a name="l00234"></a><a class="code" href="classSimSite3D_1_1PDBBase.html#2abb2396c1c8ad545d6e463a8690043b">00234</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classSimSite3D_1_1PDBBase.html#2abb2396c1c8ad545d6e463a8690043b">A_fname</a>;  
 <a name="l00235"></a>00235   };
 <a name="l00236"></a>00236   
 <a name="l00237"></a>00237 }

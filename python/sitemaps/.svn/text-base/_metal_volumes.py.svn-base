@@ -1,5 +1,5 @@
-import ASCbasePy
-from ASCbasePy import utils
+import SimSite3DPy
+from SimSite3DPy import utils
 from numpy import *
 
 class metal_info:

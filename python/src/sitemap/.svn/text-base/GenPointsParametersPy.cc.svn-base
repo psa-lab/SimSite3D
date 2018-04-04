@@ -2,7 +2,7 @@
 #include <GenPointsParameters.H>
 
 using namespace boost::python;
-using ASCbase::GenPointsParameters;
+using SimSite3D::GenPointsParameters;
 
 class verify_wrapper{
 public:
@@ -15,7 +15,7 @@ public:
 
 BOOST_PYTHON_MODULE(_parameters)
 {
-  class_<GenPointsParameters, bases<ASCbase::BaseParameters> >
+  class_<GenPointsParameters, bases<SimSite3D::BaseParameters> >
     ("parameters", init< > ())
     .def("verify_params", &verify_wrapper::verify_params)
     .def_readwrite("pts_fname", &GenPointsParameters::pts_fname)

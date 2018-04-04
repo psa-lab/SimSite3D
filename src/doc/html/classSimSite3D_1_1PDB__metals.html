@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
-<title>simsite3d: ASCbase::PDB_metals Class Reference</title>
+<title>simsite3d: SimSite3D::PDB_metals Class Reference</title>
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="tabs.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -18,52 +18,52 @@
     <li><a href="functions.html"><span>Class&nbsp;Members</span></a></li>
   </ul></div>
 <div class="nav">
-<b>ASCbase</b>::<a class="el" href="classASCbase_1_1PDB__metals.html">PDB_metals</a></div>
-<h1>ASCbase::PDB_metals Class Reference</h1><!-- doxytag: class="ASCbase::PDB_metals" -->Simple class to facilitate lookup of metals using 4 char PDB metal names.  
+<b>SimSite3D</b>::<a class="el" href="classSimSite3D_1_1PDB__metals.html">PDB_metals</a></div>
+<h1>SimSite3D::PDB_metals Class Reference</h1><!-- doxytag: class="SimSite3D::PDB_metals" -->Simple class to facilitate lookup of metals using 4 char PDB metal names.  
 <a href="#_details">More...</a>
 <p>
 <code>#include &lt;<a class="el" href="PDB__metals_8H-source.html">PDB_metals.H</a>&gt;</code>
 <p>
-<a href="classASCbase_1_1PDB__metals-members.html">List of all members.</a><table border="0" cellpadding="0" cellspacing="0">
+<a href="classSimSite3D_1_1PDB__metals-members.html">List of all members.</a><table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
 <tr><td colspan="2"><br><h2>Static Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">static const <a class="el" href="structASCbase_1_1pdb__metal__info__t.html">pdb_metal_info_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1PDB__metals.html#ee311afb288f71f33ef60d4079bcd407">lookup</a> (const std::string metal_name, const std::string metal_res, metal_warn_type warn_if_unknown=WARN_UKNOWN_METALS)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static const <a class="el" href="structSimSite3D_1_1pdb__metal__info__t.html">pdb_metal_info_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1PDB__metals.html#ee311afb288f71f33ef60d4079bcd407">lookup</a> (const std::string metal_name, const std::string metal_res, metal_warn_type warn_if_unknown=WARN_UKNOWN_METALS)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Look up metal info for the given 4 char PDB metal name.  <a href="#ee311afb288f71f33ef60d4079bcd407"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">static const <a class="el" href="structASCbase_1_1pdb__metal__info__t.html">pdb_metal_info_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1PDB__metals.html#e7a2d62b17ce424ac6a13cac851638bf">lookup</a> (const atom_type metal, metal_warn_type warn_if_unknown=WARN_UKNOWN_METALS)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static const <a class="el" href="structSimSite3D_1_1pdb__metal__info__t.html">pdb_metal_info_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1PDB__metals.html#e7a2d62b17ce424ac6a13cac851638bf">lookup</a> (const atom_type metal, metal_warn_type warn_if_unknown=WARN_UKNOWN_METALS)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Look up metal info for the atom_type.  <a href="#e7a2d62b17ce424ac6a13cac851638bf"></a><br></td></tr>
 <tr><td colspan="2"><br><h2>Static Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ccfed2ea9c7249c7a3c8c2f9b6a896fe"></a><!-- doxytag: member="ASCbase::PDB_metals::MAX_METAL_1_SQUARED_LENGTH" ref="ccfed2ea9c7249c7a3c8c2f9b6a896fe" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ccfed2ea9c7249c7a3c8c2f9b6a896fe"></a><!-- doxytag: member="SimSite3D::PDB_metals::MAX_METAL_1_SQUARED_LENGTH" ref="ccfed2ea9c7249c7a3c8c2f9b6a896fe" args="" -->
 static const my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>MAX_METAL_1_SQUARED_LENGTH</b> = 2.9 * 2.9</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="41d57fb651b1afe0b2bdb68a51ff5642"></a><!-- doxytag: member="ASCbase::PDB_metals::MAX_METAL_2_SQUARED_LENGTH" ref="41d57fb651b1afe0b2bdb68a51ff5642" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="41d57fb651b1afe0b2bdb68a51ff5642"></a><!-- doxytag: member="SimSite3D::PDB_metals::MAX_METAL_2_SQUARED_LENGTH" ref="41d57fb651b1afe0b2bdb68a51ff5642" args="" -->
 static const my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>MAX_METAL_2_SQUARED_LENGTH</b> = 2.6 * 2.6</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="085856c7568fa2d9d9c2ef26fe41df1f"></a><!-- doxytag: member="ASCbase::PDB_metals::MIN_METAL_1_SQUARED_LENGTH" ref="085856c7568fa2d9d9c2ef26fe41df1f" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="085856c7568fa2d9d9c2ef26fe41df1f"></a><!-- doxytag: member="SimSite3D::PDB_metals::MIN_METAL_1_SQUARED_LENGTH" ref="085856c7568fa2d9d9c2ef26fe41df1f" args="" -->
 static const my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>MIN_METAL_1_SQUARED_LENGTH</b> = 2.0 * 2.0</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d83053987cd3dedfc2dd399d6aa8881c"></a><!-- doxytag: member="ASCbase::PDB_metals::MIN_METAL_2_SQUARED_LENGTH" ref="d83053987cd3dedfc2dd399d6aa8881c" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d83053987cd3dedfc2dd399d6aa8881c"></a><!-- doxytag: member="SimSite3D::PDB_metals::MIN_METAL_2_SQUARED_LENGTH" ref="d83053987cd3dedfc2dd399d6aa8881c" args="" -->
 static const my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>MIN_METAL_2_SQUARED_LENGTH</b> = 1.7 * 1.7</td></tr>
 
 <tr><td colspan="2"><br><h2>Static Private Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4ffdb3ab19bc7e0cada024aad6a67e4f"></a><!-- doxytag: member="ASCbase::PDB_metals::set_metal_res_names" ref="4ffdb3ab19bc7e0cada024aad6a67e4f" args="()" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4ffdb3ab19bc7e0cada024aad6a67e4f"></a><!-- doxytag: member="SimSite3D::PDB_metals::set_metal_res_names" ref="4ffdb3ab19bc7e0cada024aad6a67e4f" args="()" -->
 static void&nbsp;</td><td class="memItemRight" valign="bottom"><b>set_metal_res_names</b> ()</td></tr>
 
 <tr><td colspan="2"><br><h2>Static Private Attributes</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="fa89d3ce277a4a989980b06aeaacea34"></a><!-- doxytag: member="ASCbase::PDB_metals::A_metal_res_names" ref="fa89d3ce277a4a989980b06aeaacea34" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="fa89d3ce277a4a989980b06aeaacea34"></a><!-- doxytag: member="SimSite3D::PDB_metals::A_metal_res_names" ref="fa89d3ce277a4a989980b06aeaacea34" args="" -->
 static std::map&lt; atom_type,<br>
  std::vector&lt; std::string &gt; &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>A_metal_res_names</b></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c28f7415de1f2b6dec44ff26bd6698a1"></a><!-- doxytag: member="ASCbase::PDB_metals::A_metal_array_size" ref="c28f7415de1f2b6dec44ff26bd6698a1" args="" -->
-static const uint&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1PDB__metals.html#c28f7415de1f2b6dec44ff26bd6698a1">A_metal_array_size</a> = 11</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c28f7415de1f2b6dec44ff26bd6698a1"></a><!-- doxytag: member="SimSite3D::PDB_metals::A_metal_array_size" ref="c28f7415de1f2b6dec44ff26bd6698a1" args="" -->
+static const uint&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1PDB__metals.html#c28f7415de1f2b6dec44ff26bd6698a1">A_metal_array_size</a> = 11</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Number of els in metal array. <br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">static const <a class="el" href="structASCbase_1_1pdb__metal__info__t.html">pdb_metal_info_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1PDB__metals.html#c8b5b8eb8f21b989c996ca5be4fb4773">A_metal_array</a> []</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static const <a class="el" href="structSimSite3D_1_1pdb__metal__info__t.html">pdb_metal_info_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1PDB__metals.html#c8b5b8eb8f21b989c996ca5be4fb4773">A_metal_array</a> []</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Array holding metal info.  <a href="#c8b5b8eb8f21b989c996ca5be4fb4773"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="04a5ba744abde48e1a57da373dd6d1d2"></a><!-- doxytag: member="ASCbase::PDB_metals::A_fname" ref="04a5ba744abde48e1a57da373dd6d1d2" args="" -->
-static const std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1PDB__metals.html#04a5ba744abde48e1a57da373dd6d1d2">A_fname</a> = &quot;PDB_metals.C&quot;</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="04a5ba744abde48e1a57da373dd6d1d2"></a><!-- doxytag: member="SimSite3D::PDB_metals::A_fname" ref="04a5ba744abde48e1a57da373dd6d1d2" args="" -->
+static const std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1PDB__metals.html#04a5ba744abde48e1a57da373dd6d1d2">A_fname</a> = &quot;PDB_metals.C&quot;</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Name of the source file. <br></td></tr>
 </table>
@@ -71,12 +71,12 @@ static const std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a c
 Simple class to facilitate lookup of metals using 4 char PDB metal names. 
 <p>
 <hr><h2>Member Function Documentation</h2>
-<a class="anchor" name="e7a2d62b17ce424ac6a13cac851638bf"></a><!-- doxytag: member="ASCbase::PDB_metals::lookup" ref="e7a2d62b17ce424ac6a13cac851638bf" args="(const atom_type metal, metal_warn_type warn_if_unknown=WARN_UKNOWN_METALS)" -->
+<a class="anchor" name="e7a2d62b17ce424ac6a13cac851638bf"></a><!-- doxytag: member="SimSite3D::PDB_metals::lookup" ref="e7a2d62b17ce424ac6a13cac851638bf" args="(const atom_type metal, metal_warn_type warn_if_unknown=WARN_UKNOWN_METALS)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structASCbase_1_1pdb__metal__info__t.html">pdb_metal_info_t</a> * PDB_metals::lookup           </td>
+          <td class="memname">const <a class="el" href="structSimSite3D_1_1pdb__metal__info__t.html">pdb_metal_info_t</a> * PDB_metals::lookup           </td>
           <td>(</td>
           <td class="paramtype">const atom_type&nbsp;</td>
           <td class="paramname"> <em>metal</em>, </td>
@@ -110,12 +110,12 @@ NOTE: because of the small number of elements in the table (at this point 9 meta
 
 </div>
 </div><p>
-<a class="anchor" name="ee311afb288f71f33ef60d4079bcd407"></a><!-- doxytag: member="ASCbase::PDB_metals::lookup" ref="ee311afb288f71f33ef60d4079bcd407" args="(const std::string metal_name, const std::string metal_res, metal_warn_type warn_if_unknown=WARN_UKNOWN_METALS)" -->
+<a class="anchor" name="ee311afb288f71f33ef60d4079bcd407"></a><!-- doxytag: member="SimSite3D::PDB_metals::lookup" ref="ee311afb288f71f33ef60d4079bcd407" args="(const std::string metal_name, const std::string metal_res, metal_warn_type warn_if_unknown=WARN_UKNOWN_METALS)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structASCbase_1_1pdb__metal__info__t.html">pdb_metal_info_t</a> * PDB_metals::lookup           </td>
+          <td class="memname">const <a class="el" href="structSimSite3D_1_1pdb__metal__info__t.html">pdb_metal_info_t</a> * PDB_metals::lookup           </td>
           <td>(</td>
           <td class="paramtype">const std::string&nbsp;</td>
           <td class="paramname"> <em>metal_name</em>, </td>
@@ -156,12 +156,12 @@ NOTE: because of the small number of elements in the table (at this point 9 meta
 </div>
 </div><p>
 <hr><h2>Member Data Documentation</h2>
-<a class="anchor" name="c8b5b8eb8f21b989c996ca5be4fb4773"></a><!-- doxytag: member="ASCbase::PDB_metals::A_metal_array" ref="c8b5b8eb8f21b989c996ca5be4fb4773" args="[]" -->
+<a class="anchor" name="c8b5b8eb8f21b989c996ca5be4fb4773"></a><!-- doxytag: member="SimSite3D::PDB_metals::A_metal_array" ref="c8b5b8eb8f21b989c996ca5be4fb4773" args="[]" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structASCbase_1_1pdb__metal__info__t.html">pdb_metal_info_t</a> <a class="el" href="classASCbase_1_1PDB__metals.html#c8b5b8eb8f21b989c996ca5be4fb4773">PDB_metals::A_metal_array</a><code> [static, private]</code>          </td>
+          <td class="memname">const <a class="el" href="structSimSite3D_1_1pdb__metal__info__t.html">pdb_metal_info_t</a> <a class="el" href="classSimSite3D_1_1PDB__metals.html#c8b5b8eb8f21b989c996ca5be4fb4773">PDB_metals::A_metal_array</a><code> [static, private]</code>          </td>
         </tr>
       </table>
 </div>

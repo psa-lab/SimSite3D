@@ -19,7 +19,7 @@
 # Revision 1.1  2007/02/07 15:10:48  vanvoor4
 # Initial checkin of a potential useless file.  At checkin time, the ligand
 # fragments are already moved to the query coordinates by the C++ part of
-# ASCbase
+# SimSite3D
 #
 #
 #
@@ -74,7 +74,7 @@ close RESULTS;
 ############################################
 sub get_directories{
 
-  # Directory where ASCbase is installed
+  # Directory where SimSite3D is installed
   $dirs->{project} = $ENV{'ASCBASE_SOFTWARE_DIR'} or croak "ERROR: " .
     "environment variable ASCBASE_SOFTWARE_DIR is not set\n";
   # Added so that it can be changed if needed.
@@ -84,7 +84,7 @@ sub get_directories{
   # Directory holding the Pfizer ligand mol2 files
   $dirs->{ligands} = $ENV{'LIGAND_CRYSTAL_STRUCTURES_DIR'} or croak "ERROR: ".
     "environment variable LIGAND_CRYSTAL_STRUCTURES_DIR is not set\n";
-  # Directory holding the searchable ASCbase sitemap pdb files
+  # Directory holding the searchable SimSite3D sitemap pdb files
   $dirs->{search} = $ENV{'ASCBASE_SITEMAPS_DIR'} or croak "ERROR: ".
     "environment variable ASCBASE_SITEMAPS_DIR is not set\n";
 
@@ -105,7 +105,7 @@ sub translate_pdb{
   ############# PRINT HEADER SO WE KNOW WHERE THIS FILE ORIGINATED
   print OUT "REMARK 10\n";
   print OUT "REMARK 10 COMPOUND\n";
-  print OUT "REMARK 10 Moved by ASCbase from original crystallographic coordinates to those\n";
+  print OUT "REMARK 10 Moved by SimSite3D from original crystallographic coordinates to those\n";
   print OUT "REMARK 10 of $query_name\n";
 
   while(<IN>){
@@ -144,9 +144,9 @@ sub translate_mol2{
     or croak "Unable to open the pdb file $mol2_out for writing: $!\n"; 
 
   ############# PRINT HEADER SO WE KNOW WHERE THIS FILE ORIGINATED
-  print OUT "# Modified by ASCbase: \n";
+  print OUT "# Modified by SimSite3D: \n";
   print OUT "# Moved from crystallographic coordinates to those\n";
-  print OUT "# of the query from ASCbase\n";
+  print OUT "# of the query from SimSite3D\n";
 
   # spin till find MOLECULE section
   while(<IN>){

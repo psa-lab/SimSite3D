@@ -9,7 +9,7 @@
 # Minimum number of atoms required in a fragment: 5
 # Average distance metric error tolerance:        0.3
 # Average least squares error tolerance:          0.3
-# ASCbase timing statistics:
+# SimSite3D timing statistics:
 #   Wall clock time:                              2.43 sec.
 #   CPU time:                                     2.42 sec.
 #   User time:                                    2.42 sec.
@@ -20,7 +20,7 @@
 #
 # Fields:
 # 1) Name of ligand fragment corresponding to the score record (line)
-# 2) Normalized ASCbase alignment score of target to query
+# 2) Normalized SimSite3D alignment score of target to query
 # 3) Rotation matrix to align target to query
 # 4) Translation vector to move target to query
 # 5) Match print of the query's sitemap points satisfied by sitemap points

@@ -4,7 +4,7 @@
 #include <SimpleTrimeshThree.H>
 #include <FaceBins.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 namespace geometry{
 
 #if 0
@@ -91,5 +91,5 @@ private:
 };
 
 } // end namespace geometry
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

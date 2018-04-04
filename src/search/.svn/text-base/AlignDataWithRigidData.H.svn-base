@@ -3,7 +3,7 @@
 
 #include <ScoreMapBase.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 class align_w_rigid_data_t : public rigid_align_t{
 public:
@@ -87,8 +87,8 @@ public:
   {
     std::string tmp;
     if(normalize_score)
-      tmp = "Normalized ASCbase initial alignment score of target to query";
-    else tmp = "Raw ASCbase initial alignment score of target to query";
+      tmp = "Normalized SimSite3D initial alignment score of target to query";
+    else tmp = "Raw SimSite3D initial alignment score of target to query";
     fields->push_back(tmp);
   
     fields->push_back("Initial alignment rotation matrix (before ICP/IK");
@@ -130,6 +130,6 @@ private:
   }
 };
 
-} // end namespace ASCbase
+} // end namespace SimSite3D
 
 #endif

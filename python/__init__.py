@@ -1,4 +1,4 @@
-r"""Python routines and C++ extension modules for ASCbasePy
+r"""Python routines and C++ extension modules for SimSite3DPy
 """
 
 import utils

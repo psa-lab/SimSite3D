@@ -1,5 +1,5 @@
-\section{ASCbase::Hphob\-Points Class Reference}
-\label{classASCbase_1_1HphobPoints}\index{ASCbase::HphobPoints@{ASCbase::HphobPoints}}
+\section{SimSite3D::Hphob\-Points Class Reference}
+\label{classSimSite3D_1_1HphobPoints}\index{SimSite3D::HphobPoints@{SimSite3D::HphobPoints}}
 Generate/Load hydrophobic points into a list.  
 
 
@@ -8,40 +8,40 @@ Generate/Load hydrophobic points into a list.
 \subsection*{Public Member Functions}
 \begin{CompactItemize}
 \item 
-\bf{Hphob\-Points} (std::istream \&in, const uint num\_\-lines, \bf{PDBBase} \&atoms, \bf{PDBBase} \&points)\label{classASCbase_1_1HphobPoints_1b600a08832fe2d624022f19b9e1cbf4}
+\bf{Hphob\-Points} (std::istream \&in, const uint num\_\-lines, \bf{PDBBase} \&atoms, \bf{PDBBase} \&points)\label{classSimSite3D_1_1HphobPoints_1b600a08832fe2d624022f19b9e1cbf4}
 
 \begin{CompactList}\small\item\em Default constructor to read hphob points from a sitemap file set. \item\end{CompactList}\item 
-\bf{Hphob\-Points} (const \bf{Gen\-Points\-Parameters::hphob\_\-method\_\-t} method\_\-in, const double cluster\_\-diameter\_\-in=3.5, const sphere\_\-sample\_\-level\_\-t sample\_\-level\_\-in=DISCRETE\_\-SPHERE\_\-LEVEL\_\-ZERO)\label{classASCbase_1_1HphobPoints_570ce01d0cd1e8f1d59b93a48a2d4beb}
+\bf{Hphob\-Points} (const \bf{Gen\-Points\-Parameters::hphob\_\-method\_\-t} method\_\-in, const double cluster\_\-diameter\_\-in=3.5, const sphere\_\-sample\_\-level\_\-t sample\_\-level\_\-in=DISCRETE\_\-SPHERE\_\-LEVEL\_\-ZERO)\label{classSimSite3D_1_1HphobPoints_570ce01d0cd1e8f1d59b93a48a2d4beb}
 
 \begin{CompactList}\small\item\em Default constructor to generate hphob points. \item\end{CompactList}\item 
-void \textbf{init\_\-positions\_\-octree} (const my\_\-float\_\-t max\_\-dist, const my\_\-float\_\-t min\_\-side\_\-len, const uint max\_\-numel)\label{classASCbase_1_1HphobPoints_07a9f3bb6d8abbbcb7622e420f912bfc}
+void \textbf{init\_\-positions\_\-octree} (const my\_\-float\_\-t max\_\-dist, const my\_\-float\_\-t min\_\-side\_\-len, const uint max\_\-numel)\label{classSimSite3D_1_1HphobPoints_07a9f3bb6d8abbbcb7622e420f912bfc}
 
 \item 
-hphob\_\-point\_\-lci \bf{begin} () const \label{classASCbase_1_1HphobPoints_5f178bbf8869f527b842cbda666e8348}
+hphob\_\-point\_\-lci \bf{begin} () const \label{classSimSite3D_1_1HphobPoints_5f178bbf8869f527b842cbda666e8348}
 
 \begin{CompactList}\small\item\em Get a const iterator to the first hphob point. \item\end{CompactList}\item 
-hphob\_\-point\_\-lci \bf{end} () const \label{classASCbase_1_1HphobPoints_980fffa0fabdd65b40ceec84c06067fc}
+hphob\_\-point\_\-lci \bf{end} () const \label{classSimSite3D_1_1HphobPoints_980fffa0fabdd65b40ceec84c06067fc}
 
 \begin{CompactList}\small\item\em Get a const iterator to one past the last hphob point. \item\end{CompactList}\item 
-void \bf{transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classASCbase_1_1HphobPoints_1dbaaf75ee974e4153e58d4ad0d4abd3}
+void \bf{transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classSimSite3D_1_1HphobPoints_1dbaaf75ee974e4153e58d4ad0d4abd3}
 
 \begin{CompactList}\small\item\em Transform the hphob points given R and T. \item\end{CompactList}\item 
 void \bf{inverse\_\-transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)
 \item 
-void \bf{revert} ()\label{classASCbase_1_1HphobPoints_65c9e7ac92b005e6c0fc1e9995b94351}
+void \bf{revert} ()\label{classSimSite3D_1_1HphobPoints_65c9e7ac92b005e6c0fc1e9995b94351}
 
 \begin{CompactList}\small\item\em Revert the hphob points as read in or as created? \item\end{CompactList}\item 
-hphob\_\-point\_\-lci \textbf{closest\_\-point} (const my\_\-float\_\-t $\ast$pos, my\_\-float\_\-t $\ast$d) const \label{classASCbase_1_1HphobPoints_3ccf4d89489adac1124e765a9493b604}
+hphob\_\-point\_\-lci \textbf{closest\_\-point} (const my\_\-float\_\-t $\ast$pos, my\_\-float\_\-t $\ast$d) const \label{classSimSite3D_1_1HphobPoints_3ccf4d89489adac1124e765a9493b604}
 
 \item 
 my\_\-float\_\-t \bf{compute\_\-RMSD} () const 
 \item 
 size\_\-t \bf{size} () const 
 \begin{CompactList}\small\item\em Number of hphob points. \item\end{CompactList}\item 
-bool \textbf{gen\_\-points} (const interact\_\-atoms\_\-vec \&hphob\_\-atoms, const hphob\_\-triad\_\-vec \&hphob\_\-triads, const std::vector$<$ atom\_\-vci $>$ \&rad\_\-atoms, \bf{Bounding\-Volume} $\ast$site\_\-vol)\label{classASCbase_1_1HphobPoints_09a7d1b1f0b101a6adbfa39e8cac7c6e}
+bool \textbf{gen\_\-points} (const interact\_\-atoms\_\-vec \&hphob\_\-atoms, const hphob\_\-triad\_\-vec \&hphob\_\-triads, const std::vector$<$ atom\_\-vci $>$ \&rad\_\-atoms, \bf{Bounding\-Volume} $\ast$site\_\-vol)\label{classSimSite3D_1_1HphobPoints_09a7d1b1f0b101a6adbfa39e8cac7c6e}
 
 \item 
-void \textbf{cull\_\-too\_\-close\_\-to\_\-polar} (hbond\_\-fit\_\-pt\_\-vci hbonds\_\-begin, hbond\_\-fit\_\-pt\_\-vci hbonds\_\-end)\label{classASCbase_1_1HphobPoints_6ab0f4ed3f5b7ae8b84288b71ebc8311}
+void \textbf{cull\_\-too\_\-close\_\-to\_\-polar} (hbond\_\-fit\_\-pt\_\-vci hbonds\_\-begin, hbond\_\-fit\_\-pt\_\-vci hbonds\_\-end)\label{classSimSite3D_1_1HphobPoints_6ab0f4ed3f5b7ae8b84288b71ebc8311}
 
 \item 
 void \bf{get\_\-current\_\-inverse\_\-3D\_\-transform} (Quaternion $\ast$Q, my\_\-float\_\-t $\ast$T) const 
@@ -49,64 +49,64 @@ void \bf{get\_\-current\_\-inverse\_\-3D\_\-transform} (Quaternion $\ast$Q, my\_
 \subsection*{Static Public Member Functions}
 \begin{CompactItemize}
 \item 
-static bool \textbf{atom\_\-is\_\-hphob} (const residue\_\-type res, const atom\_\-type atom, const hphob\_\-triad\_\-t $\ast$$\ast$triad\_\-ptr)\label{classASCbase_1_1HphobPoints_f0aded6fe4d43082ae2eec98b78e4c8b}
+static bool \textbf{atom\_\-is\_\-hphob} (const residue\_\-type res, const atom\_\-type atom, const hphob\_\-triad\_\-t $\ast$$\ast$triad\_\-ptr)\label{classSimSite3D_1_1HphobPoints_f0aded6fe4d43082ae2eec98b78e4c8b}
 
 \end{CompactItemize}
 \subsection*{Private Member Functions}
 \begin{CompactItemize}
 \item 
-bool \textbf{grid\_\-point\_\-methods} (const std::vector$<$ atom\_\-vci $>$ \&rad\_\-atoms, \bf{Bounding\-Volume} $\ast$site\_\-vol)\label{classASCbase_1_1HphobPoints_e735089461a76a86bda11000aa4ee0e7}
+bool \textbf{grid\_\-point\_\-methods} (const std::vector$<$ atom\_\-vci $>$ \&rad\_\-atoms, \bf{Bounding\-Volume} $\ast$site\_\-vol)\label{classSimSite3D_1_1HphobPoints_e735089461a76a86bda11000aa4ee0e7}
 
 \item 
-bool \textbf{pseudo\_\-surface\_\-points} (const interact\_\-atoms\_\-vec \&hphob\_\-atoms, const hphob\_\-triad\_\-vec \&hphob\_\-triads, const std::vector$<$ atom\_\-vci $>$ \&rad\_\-atoms, \bf{Bounding\-Volume} $\ast$site\_\-vol)\label{classASCbase_1_1HphobPoints_6d66bc1b44810ac36026c71f7eebcbeb}
+bool \textbf{pseudo\_\-surface\_\-points} (const interact\_\-atoms\_\-vec \&hphob\_\-atoms, const hphob\_\-triad\_\-vec \&hphob\_\-triads, const std::vector$<$ atom\_\-vci $>$ \&rad\_\-atoms, \bf{Bounding\-Volume} $\ast$site\_\-vol)\label{classSimSite3D_1_1HphobPoints_6d66bc1b44810ac36026c71f7eebcbeb}
 
 \item 
-bool \textbf{get\_\-hphobic\_\-atoms} (const std::vector$<$ atom\_\-vci $>$ \&rad\_\-atoms)\label{classASCbase_1_1HphobPoints_8f92e0433c19f069aef713485e1e60d7}
+bool \textbf{get\_\-hphobic\_\-atoms} (const std::vector$<$ atom\_\-vci $>$ \&rad\_\-atoms)\label{classSimSite3D_1_1HphobPoints_8f92e0433c19f069aef713485e1e60d7}
 
 \item 
-void \textbf{add\_\-point} (const my\_\-float\_\-t $\ast$pos, \bf{hphob\_\-point\_\-vec} $\ast$pts\_\-vec)\label{classASCbase_1_1HphobPoints_ce1ced666cfe3a8dd21195605609af1d}
+void \textbf{add\_\-point} (const my\_\-float\_\-t $\ast$pos, \bf{hphob\_\-point\_\-vec} $\ast$pts\_\-vec)\label{classSimSite3D_1_1HphobPoints_ce1ced666cfe3a8dd21195605609af1d}
 
 \item 
-void \textbf{add\_\-point} (const my\_\-float\_\-t $\ast$pos, \bf{hphob\_\-point\_\-list} $\ast$pts\_\-list)\label{classASCbase_1_1HphobPoints_8b20d2a672fc333c8ea5be0f1edf3bcc}
+void \textbf{add\_\-point} (const my\_\-float\_\-t $\ast$pos, \bf{hphob\_\-point\_\-list} $\ast$pts\_\-list)\label{classSimSite3D_1_1HphobPoints_8b20d2a672fc333c8ea5be0f1edf3bcc}
 
 \end{CompactItemize}
 \subsection*{Static Private Member Functions}
 \begin{CompactItemize}
 \item 
-static void \textbf{init\_\-hphob\_\-nbrs\_\-tbl} ()\label{classASCbase_1_1HphobPoints_370c8b40fcd5b0ff04da11eac6697463}
+static void \textbf{init\_\-hphob\_\-nbrs\_\-tbl} ()\label{classSimSite3D_1_1HphobPoints_370c8b40fcd5b0ff04da11eac6697463}
 
 \end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
-\bf{Gen\-Points\-Parameters::hphob\_\-method\_\-t} \textbf{method}\label{classASCbase_1_1HphobPoints_11e6f8bf6d7faea419a39d6621f92326}
+\bf{Gen\-Points\-Parameters::hphob\_\-method\_\-t} \textbf{method}\label{classSimSite3D_1_1HphobPoints_11e6f8bf6d7faea419a39d6621f92326}
 
 \item 
-sphere\_\-sample\_\-level\_\-t \textbf{sphere\_\-sample\_\-level}\label{classASCbase_1_1HphobPoints_4ff1dda43958356e4730427317c5da34}
+sphere\_\-sample\_\-level\_\-t \textbf{sphere\_\-sample\_\-level}\label{classSimSite3D_1_1HphobPoints_4ff1dda43958356e4730427317c5da34}
 
 \item 
-double \textbf{cluster\_\-diameter}\label{classASCbase_1_1HphobPoints_888ec8caee69ebb771ec15f155da32cc}
+double \textbf{cluster\_\-diameter}\label{classSimSite3D_1_1HphobPoints_888ec8caee69ebb771ec15f155da32cc}
 
 \item 
-\bf{hphob\_\-point\_\-list} \textbf{points}\label{classASCbase_1_1HphobPoints_1c0b6a46ce1914e4d1e6778d6fbb04ad}
+\bf{hphob\_\-point\_\-list} \textbf{points}\label{classSimSite3D_1_1HphobPoints_1c0b6a46ce1914e4d1e6778d6fbb04ad}
 
 \end{CompactItemize}
 \subsection*{Static Private Attributes}
 \begin{CompactItemize}
 \item 
-static hphob\_\-triad\_\-map\_\-t \textbf{hphob\_\-nbrs\_\-tbl}\label{classASCbase_1_1HphobPoints_d3f1bba26bfaeb8e8db124fea2c9a646}
+static hphob\_\-triad\_\-map\_\-t \textbf{hphob\_\-nbrs\_\-tbl}\label{classSimSite3D_1_1HphobPoints_d3f1bba26bfaeb8e8db124fea2c9a646}
 
 \item 
-static const my\_\-float\_\-t \bf{MIN\_\-HYDRO\_\-DIST} = 3.0\label{classASCbase_1_1HphobPoints_5c0af7f8cf548ab24531b2fc4d154c56}
+static const my\_\-float\_\-t \bf{MIN\_\-HYDRO\_\-DIST} = 3.0\label{classSimSite3D_1_1HphobPoints_5c0af7f8cf548ab24531b2fc4d154c56}
 
 \begin{CompactList}\small\item\em closest a template point can be to center of any protein atom \item\end{CompactList}\item 
-static const my\_\-float\_\-t \bf{MAX\_\-HYDRO\_\-DIST} = 4.5\label{classASCbase_1_1HphobPoints_39c4760c7bb2cc947393f964a14682cd}
+static const my\_\-float\_\-t \bf{MAX\_\-HYDRO\_\-DIST} = 4.5\label{classSimSite3D_1_1HphobPoints_39c4760c7bb2cc947393f964a14682cd}
 
 \begin{CompactList}\small\item\em farthest a template point can be from the center of any protein atom \item\end{CompactList}\item 
-static const my\_\-float\_\-t \textbf{HPHIL\_\-CUTOFF} = 100\label{classASCbase_1_1HphobPoints_f28d83c9e72324ac0c9e1879a83eb071}
+static const my\_\-float\_\-t \textbf{HPHIL\_\-CUTOFF} = 100\label{classSimSite3D_1_1HphobPoints_f28d83c9e72324ac0c9e1879a83eb071}
 
 \item 
-static const std::string \bf{A\_\-fname} = \char`\"{}Hphob\-Points.C\char`\"{}\label{classASCbase_1_1HphobPoints_df2c547cffadaeb60355a7695a1a330b}
+static const std::string \bf{A\_\-fname} = \char`\"{}Hphob\-Points.C\char`\"{}\label{classSimSite3D_1_1HphobPoints_df2c547cffadaeb60355a7695a1a330b}
 
 \begin{CompactList}\small\item\em Name of the source file. \item\end{CompactList}\end{CompactItemize}
 
@@ -117,24 +117,24 @@ Generate/Load hydrophobic points into a list.
 
 
 \subsection{Member Function Documentation}
-\index{ASCbase::HphobPoints@{ASCbase::Hphob\-Points}!compute_RMSD@{compute\_\-RMSD}}
-\index{compute_RMSD@{compute\_\-RMSD}!ASCbase::HphobPoints@{ASCbase::Hphob\-Points}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}my\_\-float\_\-t ASCbase::Hphob\-Points::compute\_\-RMSD () const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1HphobPoints_747fff02a3a0463f032470212a50e9e6}
+\index{SimSite3D::HphobPoints@{SimSite3D::Hphob\-Points}!compute_RMSD@{compute\_\-RMSD}}
+\index{compute_RMSD@{compute\_\-RMSD}!SimSite3D::HphobPoints@{SimSite3D::Hphob\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}my\_\-float\_\-t SimSite3D::Hphob\-Points::compute\_\-RMSD () const\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1HphobPoints_747fff02a3a0463f032470212a50e9e6}
 
 
-Compute the root mean squared deviation (RMSD) between the current and orignial positions of the hydrophobic points \index{ASCbase::HphobPoints@{ASCbase::Hphob\-Points}!get_current_inverse_3D_transform@{get\_\-current\_\-inverse\_\-3D\_\-transform}}
-\index{get_current_inverse_3D_transform@{get\_\-current\_\-inverse\_\-3D\_\-transform}!ASCbase::HphobPoints@{ASCbase::Hphob\-Points}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ASCbase::Hphob\-Points::get\_\-current\_\-inverse\_\-3D\_\-transform (Quaternion $\ast$ {\em Q}, my\_\-float\_\-t $\ast$ {\em T}) const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1HphobPoints_130111b0a5617851d7ffde3387c48b80}
+Compute the root mean squared deviation (RMSD) between the current and orignial positions of the hydrophobic points \index{SimSite3D::HphobPoints@{SimSite3D::Hphob\-Points}!get_current_inverse_3D_transform@{get\_\-current\_\-inverse\_\-3D\_\-transform}}
+\index{get_current_inverse_3D_transform@{get\_\-current\_\-inverse\_\-3D\_\-transform}!SimSite3D::HphobPoints@{SimSite3D::Hphob\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void SimSite3D::Hphob\-Points::get\_\-current\_\-inverse\_\-3D\_\-transform (Quaternion $\ast$ {\em Q}, my\_\-float\_\-t $\ast$ {\em T}) const\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1HphobPoints_130111b0a5617851d7ffde3387c48b80}
 
 
-Get transform to move current points to original position of the points \index{ASCbase::HphobPoints@{ASCbase::Hphob\-Points}!inverse_transform@{inverse\_\-transform}}
-\index{inverse_transform@{inverse\_\-transform}!ASCbase::HphobPoints@{ASCbase::Hphob\-Points}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ASCbase::Hphob\-Points::inverse\_\-transform (const my\_\-float\_\-t $\ast$ {\em R}, const my\_\-float\_\-t $\ast$ {\em T})\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1HphobPoints_116528abe8dfc536c786ac885e87dc02}
+Get transform to move current points to original position of the points \index{SimSite3D::HphobPoints@{SimSite3D::Hphob\-Points}!inverse_transform@{inverse\_\-transform}}
+\index{inverse_transform@{inverse\_\-transform}!SimSite3D::HphobPoints@{SimSite3D::Hphob\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void SimSite3D::Hphob\-Points::inverse\_\-transform (const my\_\-float\_\-t $\ast$ {\em R}, const my\_\-float\_\-t $\ast$ {\em T})\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1HphobPoints_116528abe8dfc536c786ac885e87dc02}
 
 
-Transform the hphob points by the inverse transform of the transform given by R and T \index{ASCbase::HphobPoints@{ASCbase::Hphob\-Points}!size@{size}}
-\index{size@{size}!ASCbase::HphobPoints@{ASCbase::Hphob\-Points}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}size\_\-t ASCbase::Hphob\-Points::size () const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1HphobPoints_b1837926d048082c5aaf03d5cd3346cd}
+Transform the hphob points by the inverse transform of the transform given by R and T \index{SimSite3D::HphobPoints@{SimSite3D::Hphob\-Points}!size@{size}}
+\index{size@{size}!SimSite3D::HphobPoints@{SimSite3D::Hphob\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}size\_\-t SimSite3D::Hphob\-Points::size () const\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1HphobPoints_b1837926d048082c5aaf03d5cd3346cd}
 
 
 Number of hphob points. 

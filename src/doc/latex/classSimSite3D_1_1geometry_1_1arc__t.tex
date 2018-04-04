@@ -1,5 +1,5 @@
-\section{ASCbase::geometry::arc\_\-t Class Reference}
-\label{classASCbase_1_1geometry_1_1arc__t}\index{ASCbase::geometry::arc_t@{ASCbase::geometry::arc\_\-t}}
+\section{SimSite3D::geometry::arc\_\-t Class Reference}
+\label{classSimSite3D_1_1geometry_1_1arc__t}\index{SimSite3D::geometry::arc_t@{SimSite3D::geometry::arc\_\-t}}
 Computational analytic representation of a 3D arc.  
 
 
@@ -8,65 +8,65 @@ Computational analytic representation of a 3D arc.
 \subsection*{Public Member Functions}
 \begin{CompactItemize}
 \item 
-\bf{arc\_\-t} (const sphere\_\-t \&S, const my\_\-float\_\-t $\ast$end\_\-pt0, const my\_\-float\_\-t $\ast$mid\_\-pt, const my\_\-float\_\-t $\ast$end\_\-pt1)\label{classASCbase_1_1geometry_1_1arc__t_fd9cea33957ae88b1f380bf809cbbff6}
+\bf{arc\_\-t} (const sphere\_\-t \&S, const my\_\-float\_\-t $\ast$end\_\-pt0, const my\_\-float\_\-t $\ast$mid\_\-pt, const my\_\-float\_\-t $\ast$end\_\-pt1)\label{classSimSite3D_1_1geometry_1_1arc__t_fd9cea33957ae88b1f380bf809cbbff6}
 
 \begin{CompactList}\small\item\em Initialize the arc by a sphere \& arc end points \& arc mid point. \item\end{CompactList}\item 
-\bf{arc\_\-t} (const \bf{arc\_\-t} \&src)\label{classASCbase_1_1geometry_1_1arc__t_18b1410a465b4add59d54d8654bf8842}
+\bf{arc\_\-t} (const \bf{arc\_\-t} \&src)\label{classSimSite3D_1_1geometry_1_1arc__t_18b1410a465b4add59d54d8654bf8842}
 
 \begin{CompactList}\small\item\em Copy constructor. \item\end{CompactList}\item 
-const \bf{arc\_\-t} \& \textbf{operator=} (const \bf{arc\_\-t} \&src)\label{classASCbase_1_1geometry_1_1arc__t_3b16dc08c008f6d80be326665a19a1a1}
+const \bf{arc\_\-t} \& \textbf{operator=} (const \bf{arc\_\-t} \&src)\label{classSimSite3D_1_1geometry_1_1arc__t_3b16dc08c008f6d80be326665a19a1a1}
 
 \item 
-const bool \bf{contains} (const my\_\-float\_\-t $\ast$pt) const \label{classASCbase_1_1geometry_1_1arc__t_01ba159b58239264350e90caa746dca7}
+const bool \bf{contains} (const my\_\-float\_\-t $\ast$pt) const \label{classSimSite3D_1_1geometry_1_1arc__t_01ba159b58239264350e90caa746dca7}
 
 \begin{CompactList}\small\item\em Is point contained in arc? \item\end{CompactList}\item 
 void \bf{intersection} (const \bf{arc\_\-t} \&other, std::vector$<$ \bf{arc\_\-t} $>$ $\ast$I\_\-arcs)
 \item 
-const bool \textbf{operator==} (const \bf{arc\_\-t} \&other)\label{classASCbase_1_1geometry_1_1arc__t_b08aec83d224c06d7b35f6fdcc70d478}
+const bool \textbf{operator==} (const \bf{arc\_\-t} \&other)\label{classSimSite3D_1_1geometry_1_1arc__t_b08aec83d224c06d7b35f6fdcc70d478}
 
 \item 
-const my\_\-float\_\-t $\ast$ \textbf{end\_\-pts} () const \label{classASCbase_1_1geometry_1_1arc__t_1aa54d4a368b5f54286d5b1a2694da6e}
+const my\_\-float\_\-t $\ast$ \textbf{end\_\-pts} () const \label{classSimSite3D_1_1geometry_1_1arc__t_1aa54d4a368b5f54286d5b1a2694da6e}
 
 \item 
 const my\_\-float\_\-t $\ast$ \bf{get\_\-mid\_\-pt} () const 
 \item 
-const my\_\-float\_\-t $\ast$ \textbf{in\_\-dir} () const \label{classASCbase_1_1geometry_1_1arc__t_6d0b6a1eaa18fda15db3053be0a6c6f6}
+const my\_\-float\_\-t $\ast$ \textbf{in\_\-dir} () const \label{classSimSite3D_1_1geometry_1_1arc__t_6d0b6a1eaa18fda15db3053be0a6c6f6}
 
 \end{CompactItemize}
 \subsection*{Private Member Functions}
 \begin{CompactItemize}
 \item 
-void \bf{arc\_\-mid\_\-point} (const my\_\-float\_\-t $\ast$end\_\-pt0, const my\_\-float\_\-t $\ast$end\_\-pt1, my\_\-float\_\-t $\ast$mid\_\-pt, my\_\-float\_\-t $\ast$mid\_\-pt\_\-dir)\label{classASCbase_1_1geometry_1_1arc__t_bf87d7083d0b036b8aa49a8f76091462}
+void \bf{arc\_\-mid\_\-point} (const my\_\-float\_\-t $\ast$end\_\-pt0, const my\_\-float\_\-t $\ast$end\_\-pt1, my\_\-float\_\-t $\ast$mid\_\-pt, my\_\-float\_\-t $\ast$mid\_\-pt\_\-dir)\label{classSimSite3D_1_1geometry_1_1arc__t_bf87d7083d0b036b8aa49a8f76091462}
 
 \begin{CompactList}\small\item\em Compute the mid point of an arc. \item\end{CompactList}\item 
-void \textbf{compute\_\-overlap} (const my\_\-float\_\-t $\ast$self\_\-end\_\-pt, const my\_\-float\_\-t $\ast$other\_\-end\_\-pt, std::vector$<$ \bf{arc\_\-t} $>$ $\ast$I\_\-arcs, my\_\-float\_\-t $\ast$my\_\-dir)\label{classASCbase_1_1geometry_1_1arc__t_ec22f353635ed13d58a1f0eacd704ffd}
+void \textbf{compute\_\-overlap} (const my\_\-float\_\-t $\ast$self\_\-end\_\-pt, const my\_\-float\_\-t $\ast$other\_\-end\_\-pt, std::vector$<$ \bf{arc\_\-t} $>$ $\ast$I\_\-arcs, my\_\-float\_\-t $\ast$my\_\-dir)\label{classSimSite3D_1_1geometry_1_1arc__t_ec22f353635ed13d58a1f0eacd704ffd}
 
 \item 
-void \textbf{do\_\-copy} (const \bf{arc\_\-t} \&src)\label{classASCbase_1_1geometry_1_1arc__t_c999379b32c2d80997fd5cdb3503693f}
+void \textbf{do\_\-copy} (const \bf{arc\_\-t} \&src)\label{classSimSite3D_1_1geometry_1_1arc__t_c999379b32c2d80997fd5cdb3503693f}
 
 \end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
-sphere\_\-t \bf{A\_\-S}\label{classASCbase_1_1geometry_1_1arc__t_61808b252a9a77e07388ef89cb717781}
+sphere\_\-t \bf{A\_\-S}\label{classSimSite3D_1_1geometry_1_1arc__t_61808b252a9a77e07388ef89cb717781}
 
 \begin{CompactList}\small\item\em Sphere on which the arc lies. \item\end{CompactList}\item 
-my\_\-float\_\-t \bf{A\_\-end\_\-pts} [6]\label{classASCbase_1_1geometry_1_1arc__t_23ed7beb59a38ee8e970536506e46429}
+my\_\-float\_\-t \bf{A\_\-end\_\-pts} [6]\label{classSimSite3D_1_1geometry_1_1arc__t_23ed7beb59a38ee8e970536506e46429}
 
 \begin{CompactList}\small\item\em End points of the arc. \item\end{CompactList}\item 
-my\_\-float\_\-t \bf{A\_\-mid\_\-pt} [3]\label{classASCbase_1_1geometry_1_1arc__t_abb892372174ae16d4485cd46ceb5aac}
+my\_\-float\_\-t \bf{A\_\-mid\_\-pt} [3]\label{classSimSite3D_1_1geometry_1_1arc__t_abb892372174ae16d4485cd46ceb5aac}
 
 \begin{CompactList}\small\item\em Mid point of the arc. \item\end{CompactList}\item 
-my\_\-float\_\-t \bf{A\_\-in\_\-dir} [3]\label{classASCbase_1_1geometry_1_1arc__t_a945c545c3b2ac14757f8cc6bf9326df}
+my\_\-float\_\-t \bf{A\_\-in\_\-dir} [3]\label{classSimSite3D_1_1geometry_1_1arc__t_a945c545c3b2ac14757f8cc6bf9326df}
 
 \begin{CompactList}\small\item\em vector; S.center -$>$ mid\_\-pt \item\end{CompactList}\item 
-my\_\-float\_\-t \bf{A\_\-chord\_\-mid\_\-pt} [3]\label{classASCbase_1_1geometry_1_1arc__t_e5da612f0b29559898b76854005028f7}
+my\_\-float\_\-t \bf{A\_\-chord\_\-mid\_\-pt} [3]\label{classSimSite3D_1_1geometry_1_1arc__t_e5da612f0b29559898b76854005028f7}
 
 \begin{CompactList}\small\item\em Mid point of chord defined by end\_\-pts. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Friends}
 \begin{CompactItemize}
 \item 
-std::ostream \& \textbf{operator$<$$<$} (std::ostream \&out, const \bf{arc\_\-t} \&A)\label{classASCbase_1_1geometry_1_1arc__t_448902453ee3eb5a63e4bcfd54c2c5b8}
+std::ostream \& \textbf{operator$<$$<$} (std::ostream \&out, const \bf{arc\_\-t} \&A)\label{classSimSite3D_1_1geometry_1_1arc__t_448902453ee3eb5a63e4bcfd54c2c5b8}
 
 \end{CompactItemize}
 
@@ -77,14 +77,14 @@ Computational analytic representation of a 3D arc.
 
 
 \subsection{Member Function Documentation}
-\index{ASCbase::geometry::arc_t@{ASCbase::geometry::arc\_\-t}!get_mid_pt@{get\_\-mid\_\-pt}}
-\index{get_mid_pt@{get\_\-mid\_\-pt}!ASCbase::geometry::arc_t@{ASCbase::geometry::arc\_\-t}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t$\ast$ ASCbase::geometry::arc\_\-t::get\_\-mid\_\-pt () const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1geometry_1_1arc__t_86f92d310b8cc785ae09c45201f97258}
+\index{SimSite3D::geometry::arc_t@{SimSite3D::geometry::arc\_\-t}!get_mid_pt@{get\_\-mid\_\-pt}}
+\index{get_mid_pt@{get\_\-mid\_\-pt}!SimSite3D::geometry::arc_t@{SimSite3D::geometry::arc\_\-t}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t$\ast$ SimSite3D::geometry::arc\_\-t::get\_\-mid\_\-pt () const\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1geometry_1_1arc__t_86f92d310b8cc785ae09c45201f97258}
 
 
-named get\_\-mid\_\-pt since I am too lazy to change all the local variables with the name mid\_\-pt \index{ASCbase::geometry::arc_t@{ASCbase::geometry::arc\_\-t}!intersection@{intersection}}
-\index{intersection@{intersection}!ASCbase::geometry::arc_t@{ASCbase::geometry::arc\_\-t}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ASCbase::geometry::arc\_\-t::intersection (const \bf{arc\_\-t} \& {\em other}, std::vector$<$ \bf{arc\_\-t} $>$ $\ast$ {\em I\_\-arcs})\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1geometry_1_1arc__t_05ed53967368242ccad327e056f1d897}
+named get\_\-mid\_\-pt since I am too lazy to change all the local variables with the name mid\_\-pt \index{SimSite3D::geometry::arc_t@{SimSite3D::geometry::arc\_\-t}!intersection@{intersection}}
+\index{intersection@{intersection}!SimSite3D::geometry::arc_t@{SimSite3D::geometry::arc\_\-t}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void SimSite3D::geometry::arc\_\-t::intersection (const \bf{arc\_\-t} \& {\em other}, std::vector$<$ \bf{arc\_\-t} $>$ $\ast$ {\em I\_\-arcs})\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1geometry_1_1arc__t_05ed53967368242ccad327e056f1d897}
 
 
 Assumption: Both arcs lie on the same circle 

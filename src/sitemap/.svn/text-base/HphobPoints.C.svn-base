@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -69,7 +69,7 @@
 #include <Quaternion.H>
 #include <HphobPoints.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 const std::string HphobPoints::A_fname = "HphobPoints.C";
 const my_float_t HphobPoints::MIN_HYDRO_DIST = 3.0;

@@ -1,17 +1,17 @@
-\section{ASCbase::geometry::Tri\-Mesh\-Sphere Class Reference}
-\label{classASCbase_1_1geometry_1_1TriMeshSphere}\index{ASCbase::geometry::TriMeshSphere@{ASCbase::geometry::TriMeshSphere}}
+\section{SimSite3D::geometry::Tri\-Mesh\-Sphere Class Reference}
+\label{classSimSite3D_1_1geometry_1_1TriMeshSphere}\index{SimSite3D::geometry::TriMeshSphere@{SimSite3D::geometry::TriMeshSphere}}
 {\tt \#include $<$Tri\-Mesh\-Sphere.H$>$}
 
 \subsection*{Public Types}
 \begin{CompactItemize}
 \item 
-typedef enum \bf{ASCbase::geometry::Tri\-Mesh\-Sphere::sphere\_\-init\_\-type} \bf{sphere\_\-init\_\-t}\label{classASCbase_1_1geometry_1_1TriMeshSphere_adaa2f3ea546c14705877efaba422ac5}
+typedef enum \bf{SimSite3D::geometry::Tri\-Mesh\-Sphere::sphere\_\-init\_\-type} \bf{sphere\_\-init\_\-t}\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_adaa2f3ea546c14705877efaba422ac5}
 
 \begin{CompactList}\small\item\em More descriptive method to denote initialization type for spherical mesh. \item\end{CompactList}\item 
-\textbf{FULL\_\-SPHERE}\label{classASCbase_1_1geometry_1_1TriMeshSphere_1b7e3821daf89de36b78b79203a320545ca923ad9ce9681e6173252423882a51}
+\textbf{FULL\_\-SPHERE}\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_1b7e3821daf89de36b78b79203a320545ca923ad9ce9681e6173252423882a51}
 
 \item 
-\textbf{SPHERICAL\_\-CAP}\label{classASCbase_1_1geometry_1_1TriMeshSphere_1b7e3821daf89de36b78b79203a3205441ddb124c602b61ac0a60de93ddc2f7d}
+\textbf{SPHERICAL\_\-CAP}\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_1b7e3821daf89de36b78b79203a3205441ddb124c602b61ac0a60de93ddc2f7d}
 
 \item 
 enum \bf{sphere\_\-init\_\-type} \{ \textbf{FULL\_\-SPHERE}, 
@@ -25,94 +25,94 @@ enum \bf{sphere\_\-init\_\-type} \{ \textbf{FULL\_\-SPHERE},
 \item 
 \bf{Tri\-Mesh\-Sphere} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T, const my\_\-float\_\-t $\ast$dir, const \bf{sphere\_\-init\_\-t} init\_\-obj, const my\_\-float\_\-t radius=3.0, const uint level=2)
 \item 
-\textbf{Tri\-Mesh\-Sphere} (const \bf{Tri\-Mesh\-Sphere} \&src)\label{classASCbase_1_1geometry_1_1TriMeshSphere_b6396ee2c69154d55a327987b04c56b7}
+\textbf{Tri\-Mesh\-Sphere} (const \bf{Tri\-Mesh\-Sphere} \&src)\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_b6396ee2c69154d55a327987b04c56b7}
 
 \item 
-\bf{Tri\-Mesh\-Sphere} \& \textbf{operator=} (const \bf{Tri\-Mesh\-Sphere} \&src)\label{classASCbase_1_1geometry_1_1TriMeshSphere_285b18dae29b3919d6516ced3f4a861c}
+\bf{Tri\-Mesh\-Sphere} \& \textbf{operator=} (const \bf{Tri\-Mesh\-Sphere} \&src)\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_285b18dae29b3919d6516ced3f4a861c}
 
 \item 
-void \textbf{transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classASCbase_1_1geometry_1_1TriMeshSphere_9e9bf1d856a40799f6fa385f8192427b}
+void \textbf{transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_9e9bf1d856a40799f6fa385f8192427b}
 
 \item 
-void \textbf{inverse\_\-transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classASCbase_1_1geometry_1_1TriMeshSphere_6a11da9e82a8ba89afb1ceaec4fd5e3e}
+void \textbf{inverse\_\-transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_6a11da9e82a8ba89afb1ceaec4fd5e3e}
 
 \item 
-void \textbf{revert} ()\label{classASCbase_1_1geometry_1_1TriMeshSphere_baa72acd8f2096aa9995855d5d8c1375}
+void \textbf{revert} ()\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_baa72acd8f2096aa9995855d5d8c1375}
 
 \item 
-void \textbf{adjust\_\-points} (\bf{hbond\_\-surface\_\-t} \&surf)\label{classASCbase_1_1geometry_1_1TriMeshSphere_a550da12f3d525e8dc9472bb5c590fb8}
+void \textbf{adjust\_\-points} (\bf{hbond\_\-surface\_\-t} \&surf)\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_a550da12f3d525e8dc9472bb5c590fb8}
 
 \item 
-my\_\-float\_\-t \textbf{complementary\_\-surface\_\-area} (const std::map$<$ vertex\_\-vci, bool $>$ \&kept\_\-vertices) const \label{classASCbase_1_1geometry_1_1TriMeshSphere_453ba64dab8da3831126f9d89c948db6}
+my\_\-float\_\-t \textbf{complementary\_\-surface\_\-area} (const std::map$<$ vertex\_\-vci, bool $>$ \&kept\_\-vertices) const \label{classSimSite3D_1_1geometry_1_1TriMeshSphere_453ba64dab8da3831126f9d89c948db6}
 
 \item 
-const vertex\_\-vci \bf{verts\_\-begin} () const \label{classASCbase_1_1geometry_1_1TriMeshSphere_3ee17324150856a0629eaf5eac7a388c}
+const vertex\_\-vci \bf{verts\_\-begin} () const \label{classSimSite3D_1_1geometry_1_1TriMeshSphere_3ee17324150856a0629eaf5eac7a388c}
 
 \begin{CompactList}\small\item\em Get a constant iterator to the first vertex in the vector. \item\end{CompactList}\item 
-const vertex\_\-vci \bf{verts\_\-end} () const \label{classASCbase_1_1geometry_1_1TriMeshSphere_edc98936bdb42ffbf98656b8caa6595a}
+const vertex\_\-vci \bf{verts\_\-end} () const \label{classSimSite3D_1_1geometry_1_1TriMeshSphere_edc98936bdb42ffbf98656b8caa6595a}
 
 \begin{CompactList}\small\item\em Get a constant iterator to the end of the vertex vector. \item\end{CompactList}\item 
-const uint \bf{num\_\-verts} () const \label{classASCbase_1_1geometry_1_1TriMeshSphere_8835cfe88ab71442635ab7d5f05c4767}
+const uint \bf{num\_\-verts} () const \label{classSimSite3D_1_1geometry_1_1TriMeshSphere_8835cfe88ab71442635ab7d5f05c4767}
 
 \begin{CompactList}\small\item\em Get the number of vertices in the surface. \item\end{CompactList}\item 
-void \bf{write} (std::ostream \&out, const interaction\-Type act\_\-type, const char delim='$|$') const \label{classASCbase_1_1geometry_1_1TriMeshSphere_dd30e7e90a9f41be6d54de06cba3d0f0}
+void \bf{write} (std::ostream \&out, const interaction\-Type act\_\-type, const char delim='$|$') const \label{classSimSite3D_1_1geometry_1_1TriMeshSphere_dd30e7e90a9f41be6d54de06cba3d0f0}
 
 \begin{CompactList}\small\item\em Write out the triangles in the mesh. \item\end{CompactList}\item 
-void \textbf{write\_\-msms\_\-headers} (std::ostream \&vert\_\-out, std::ostream \&face\_\-out) const \label{classASCbase_1_1geometry_1_1TriMeshSphere_b3552eec82a823e41ef9ed70504b7368}
+void \textbf{write\_\-msms\_\-headers} (std::ostream \&vert\_\-out, std::ostream \&face\_\-out) const \label{classSimSite3D_1_1geometry_1_1TriMeshSphere_b3552eec82a823e41ef9ed70504b7368}
 
 \item 
-void \textbf{write\_\-msms\_\-cap} (std::ostream \&vert\_\-out, std::ostream \&face\_\-out, const interaction\-Type act\_\-type) const \label{classASCbase_1_1geometry_1_1TriMeshSphere_3772f4f815c191e7fe24cca03e8f96e9}
+void \textbf{write\_\-msms\_\-cap} (std::ostream \&vert\_\-out, std::ostream \&face\_\-out, const interaction\-Type act\_\-type) const \label{classSimSite3D_1_1geometry_1_1TriMeshSphere_3772f4f815c191e7fe24cca03e8f96e9}
 
 \end{CompactItemize}
 \subsection*{Private Member Functions}
 \begin{CompactItemize}
 \item 
-void \textbf{init} ()\label{classASCbase_1_1geometry_1_1TriMeshSphere_08a7be3e5e7bed201fa7f24da0d18b47}
+void \textbf{init} ()\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_08a7be3e5e7bed201fa7f24da0d18b47}
 
 \item 
-void \bf{do\_\-copy} (const \bf{Tri\-Mesh\-Sphere} \&src)\label{classASCbase_1_1geometry_1_1TriMeshSphere_140990c6bc17c7f0f46950c2262fe0e5}
+void \bf{do\_\-copy} (const \bf{Tri\-Mesh\-Sphere} \&src)\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_140990c6bc17c7f0f46950c2262fe0e5}
 
 \begin{CompactList}\small\item\em The function that does all the work for copying the class. \item\end{CompactList}\item 
-void \textbf{set\_\-global\_\-pos} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T, const my\_\-float\_\-t $\ast$bond\_\-dir)\label{classASCbase_1_1geometry_1_1TriMeshSphere_dd481c24ae86c6ccab7eae4965d44beb}
+void \textbf{set\_\-global\_\-pos} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T, const my\_\-float\_\-t $\ast$bond\_\-dir)\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_dd481c24ae86c6ccab7eae4965d44beb}
 
 \item 
-void \textbf{init\_\-storages} (const my\_\-float\_\-t $\ast$pts, const uint npts, const uint $\ast$triangles, const uint ntris, const my\_\-float\_\-t radius)\label{classASCbase_1_1geometry_1_1TriMeshSphere_19b9aa460a8c48a1ebe6eff1c0ecee43}
+void \textbf{init\_\-storages} (const my\_\-float\_\-t $\ast$pts, const uint npts, const uint $\ast$triangles, const uint ntris, const my\_\-float\_\-t radius)\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_19b9aa460a8c48a1ebe6eff1c0ecee43}
 
 \item 
-void \textbf{A\_\-adjust\_\-points} (\bf{hbond\_\-surface\_\-t} \&surf, const uint $\ast$tri\_\-vert\_\-idz, const uint num\_\-tris)\label{classASCbase_1_1geometry_1_1TriMeshSphere_3cbe2b20213813abb31e070f5898d7b2}
+void \textbf{A\_\-adjust\_\-points} (\bf{hbond\_\-surface\_\-t} \&surf, const uint $\ast$tri\_\-vert\_\-idz, const uint num\_\-tris)\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_3cbe2b20213813abb31e070f5898d7b2}
 
 \item 
-void \textbf{add\_\-triangle} (const uint $\ast$idz)\label{classASCbase_1_1geometry_1_1TriMeshSphere_533c34ac5b9c4435802391c6e5329048}
+void \textbf{add\_\-triangle} (const uint $\ast$idz)\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_533c34ac5b9c4435802391c6e5329048}
 
 \item 
-void \textbf{setup\_\-vert\_\-to\_\-deltas\_\-map} ()\label{classASCbase_1_1geometry_1_1TriMeshSphere_bba5d7fbb2e79443cf7294b0fed4662c}
+void \textbf{setup\_\-vert\_\-to\_\-deltas\_\-map} ()\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_bba5d7fbb2e79443cf7294b0fed4662c}
 
 \end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
-const my\_\-float\_\-t $\ast$ \textbf{A\_\-local\_\-points}\label{classASCbase_1_1geometry_1_1TriMeshSphere_7ace9bbea8fff45d3dfb5d915adb664e}
+const my\_\-float\_\-t $\ast$ \textbf{A\_\-local\_\-points}\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_7ace9bbea8fff45d3dfb5d915adb664e}
 
 \item 
-uint \textbf{A\_\-npts}\label{classASCbase_1_1geometry_1_1TriMeshSphere_098883f74c0eed5ecc66f428f48d70a0}
+uint \textbf{A\_\-npts}\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_098883f74c0eed5ecc66f428f48d70a0}
 
 \item 
-const uint $\ast$ \textbf{A\_\-triangles}\label{classASCbase_1_1geometry_1_1TriMeshSphere_af90c5e36bec515b764a6394ba50ac4a}
+const uint $\ast$ \textbf{A\_\-triangles}\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_af90c5e36bec515b764a6394ba50ac4a}
 
 \item 
-uint \textbf{A\_\-num\_\-tris}\label{classASCbase_1_1geometry_1_1TriMeshSphere_0775a1f564a7b75cda3723d1a4806ceb}
+uint \textbf{A\_\-num\_\-tris}\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_0775a1f564a7b75cda3723d1a4806ceb}
 
 \item 
-\bf{dir\_\-point\_\-storage}$<$ \bf{vertex\_\-t} $>$ \textbf{A\_\-nodes}\label{classASCbase_1_1geometry_1_1TriMeshSphere_dbc874022d8fcc737354707cfaccb77d}
+\bf{dir\_\-point\_\-storage}$<$ \bf{vertex\_\-t} $>$ \textbf{A\_\-nodes}\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_dbc874022d8fcc737354707cfaccb77d}
 
 \item 
-triangle\_\-vec \textbf{A\_\-deltas}\label{classASCbase_1_1geometry_1_1TriMeshSphere_d5d4d2dcd06c55fc25e58b49be8c2de3}
+triangle\_\-vec \textbf{A\_\-deltas}\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_d5d4d2dcd06c55fc25e58b49be8c2de3}
 
 \item 
-std::map$<$ vertex\_\-vci, std::vector$<$ triangle\_\-vci $>$ $>$ \textbf{A\_\-verts\_\-to\_\-deltas\_\-map}\label{classASCbase_1_1geometry_1_1TriMeshSphere_bfb7fca04fe4b2c9245035607914dd47}
+std::map$<$ vertex\_\-vci, std::vector$<$ triangle\_\-vci $>$ $>$ \textbf{A\_\-verts\_\-to\_\-deltas\_\-map}\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_bfb7fca04fe4b2c9245035607914dd47}
 
 \item 
-half\_\-edge\_\-vec \textbf{A\_\-half\_\-edges}\label{classASCbase_1_1geometry_1_1TriMeshSphere_f808f7f4a48e4ad6ee7b24a1002fdfbd}
+half\_\-edge\_\-vec \textbf{A\_\-half\_\-edges}\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_f808f7f4a48e4ad6ee7b24a1002fdfbd}
 
 \end{CompactItemize}
 \subsection*{Static Private Attributes}
@@ -120,35 +120,35 @@ half\_\-edge\_\-vec \textbf{A\_\-half\_\-edges}\label{classASCbase_1_1geometry_1
 \item 
 static const my\_\-float\_\-t \textbf{A\_\-level1\_\-sphere\_\-points} [$\,$]
 \item 
-static const uint \textbf{A\_\-level1\_\-sphere\_\-npts} = 22\label{classASCbase_1_1geometry_1_1TriMeshSphere_6c2549e9daacf27c7cf15cb3eb7b7373}
+static const uint \textbf{A\_\-level1\_\-sphere\_\-npts} = 22\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_6c2549e9daacf27c7cf15cb3eb7b7373}
 
 \item 
-static const uint \textbf{A\_\-level1\_\-sphere\_\-triangles} [$\,$]\label{classASCbase_1_1geometry_1_1TriMeshSphere_278a1d74c086e8ebc40ef05d74b9ea15}
+static const uint \textbf{A\_\-level1\_\-sphere\_\-triangles} [$\,$]\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_278a1d74c086e8ebc40ef05d74b9ea15}
 
 \item 
-static const uint \textbf{A\_\-level1\_\-num\_\-sphere\_\-tris} = 40\label{classASCbase_1_1geometry_1_1TriMeshSphere_e42055072b403bf91bb04dfe81b8a77c}
+static const uint \textbf{A\_\-level1\_\-num\_\-sphere\_\-tris} = 40\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_e42055072b403bf91bb04dfe81b8a77c}
 
 \item 
-static const my\_\-float\_\-t \textbf{A\_\-level2\_\-sphere\_\-points} [$\,$]\label{classASCbase_1_1geometry_1_1TriMeshSphere_9218b68dfd06e39789b926138618dfeb}
+static const my\_\-float\_\-t \textbf{A\_\-level2\_\-sphere\_\-points} [$\,$]\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_9218b68dfd06e39789b926138618dfeb}
 
 \item 
-static const uint \textbf{A\_\-level2\_\-sphere\_\-npts} = 82\label{classASCbase_1_1geometry_1_1TriMeshSphere_6c493b2654c01b707878f88a76cb12bb}
+static const uint \textbf{A\_\-level2\_\-sphere\_\-npts} = 82\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_6c493b2654c01b707878f88a76cb12bb}
 
 \item 
-static const uint \textbf{A\_\-level2\_\-sphere\_\-triangles} [$\,$]\label{classASCbase_1_1geometry_1_1TriMeshSphere_334f79d29df15c86e07a9b2f771436b5}
+static const uint \textbf{A\_\-level2\_\-sphere\_\-triangles} [$\,$]\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_334f79d29df15c86e07a9b2f771436b5}
 
 \item 
-static const uint \textbf{A\_\-level2\_\-num\_\-sphere\_\-tris} = 160\label{classASCbase_1_1geometry_1_1TriMeshSphere_e8608fc384f66ad810567214a8a65328}
+static const uint \textbf{A\_\-level2\_\-num\_\-sphere\_\-tris} = 160\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_e8608fc384f66ad810567214a8a65328}
 
 \item 
 static const my\_\-float\_\-t \textbf{A\_\-level2\_\-cap\_\-points} [$\,$]
 \item 
-static const uint \textbf{A\_\-level2\_\-cap\_\-npts} = 16\label{classASCbase_1_1geometry_1_1TriMeshSphere_72717de0132dc9de41615e95777e78d1}
+static const uint \textbf{A\_\-level2\_\-cap\_\-npts} = 16\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_72717de0132dc9de41615e95777e78d1}
 
 \item 
 static const uint \textbf{A\_\-level2\_\-cap\_\-triangles} [$\,$]
 \item 
-static const uint \textbf{A\_\-level2\_\-num\_\-cap\_\-tris} = 20\label{classASCbase_1_1geometry_1_1TriMeshSphere_852532701e612513420c5cfcee27edfc}
+static const uint \textbf{A\_\-level2\_\-num\_\-cap\_\-tris} = 20\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_852532701e612513420c5cfcee27edfc}
 
 \end{CompactItemize}
 
@@ -159,22 +159,22 @@ Straightforward class to work with a mesh sphere that has portions of it occlude
 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{ASCbase::geometry::TriMeshSphere@{ASCbase::geometry::Tri\-Mesh\-Sphere}!TriMeshSphere@{TriMeshSphere}}
-\index{TriMeshSphere@{TriMeshSphere}!ASCbase::geometry::TriMeshSphere@{ASCbase::geometry::Tri\-Mesh\-Sphere}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ASCbase::geometry::Tri\-Mesh\-Sphere::Tri\-Mesh\-Sphere ()\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1geometry_1_1TriMeshSphere_1e6bc0c8cf5b808ab92acbbf0648ac4c}
+\index{SimSite3D::geometry::TriMeshSphere@{SimSite3D::geometry::Tri\-Mesh\-Sphere}!TriMeshSphere@{TriMeshSphere}}
+\index{TriMeshSphere@{TriMeshSphere}!SimSite3D::geometry::TriMeshSphere@{SimSite3D::geometry::Tri\-Mesh\-Sphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}SimSite3D::geometry::Tri\-Mesh\-Sphere::Tri\-Mesh\-Sphere ()\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_1e6bc0c8cf5b808ab92acbbf0648ac4c}
 
 
-Default constructor -- allows class to be an object in another class before one knows the values for the sphere \index{ASCbase::geometry::TriMeshSphere@{ASCbase::geometry::Tri\-Mesh\-Sphere}!TriMeshSphere@{TriMeshSphere}}
-\index{TriMeshSphere@{TriMeshSphere}!ASCbase::geometry::TriMeshSphere@{ASCbase::geometry::Tri\-Mesh\-Sphere}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Tri\-Mesh\-Sphere::Tri\-Mesh\-Sphere (const my\_\-float\_\-t $\ast$ {\em R}, const my\_\-float\_\-t $\ast$ {\em T}, const my\_\-float\_\-t $\ast$ {\em dir}, const \bf{sphere\_\-init\_\-t} {\em init\_\-obj}, const my\_\-float\_\-t {\em radius} = {\tt 3.0}, const uint {\em level} = {\tt 2})}\label{classASCbase_1_1geometry_1_1TriMeshSphere_e64b7ebd41fc3709a78a96c0ef36df88}
+Default constructor -- allows class to be an object in another class before one knows the values for the sphere \index{SimSite3D::geometry::TriMeshSphere@{SimSite3D::geometry::Tri\-Mesh\-Sphere}!TriMeshSphere@{TriMeshSphere}}
+\index{TriMeshSphere@{TriMeshSphere}!SimSite3D::geometry::TriMeshSphere@{SimSite3D::geometry::Tri\-Mesh\-Sphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Tri\-Mesh\-Sphere::Tri\-Mesh\-Sphere (const my\_\-float\_\-t $\ast$ {\em R}, const my\_\-float\_\-t $\ast$ {\em T}, const my\_\-float\_\-t $\ast$ {\em dir}, const \bf{sphere\_\-init\_\-t} {\em init\_\-obj}, const my\_\-float\_\-t {\em radius} = {\tt 3.0}, const uint {\em level} = {\tt 2})}\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_e64b7ebd41fc3709a78a96c0ef36df88}
 
 
 Constructor to generate a mesh representation of a sphere or part of sphere depending on the init\_\-obj variable. 
 
 \subsection{Member Data Documentation}
-\index{ASCbase::geometry::TriMeshSphere@{ASCbase::geometry::Tri\-Mesh\-Sphere}!A_level1_sphere_points@{A\_\-level1\_\-sphere\_\-points}}
-\index{A_level1_sphere_points@{A\_\-level1\_\-sphere\_\-points}!ASCbase::geometry::TriMeshSphere@{ASCbase::geometry::Tri\-Mesh\-Sphere}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t Tri\-Mesh\-Sphere::A\_\-level1\_\-sphere\_\-points\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1geometry_1_1TriMeshSphere_3f273941f74164c78f9338072e17f6e1}
+\index{SimSite3D::geometry::TriMeshSphere@{SimSite3D::geometry::Tri\-Mesh\-Sphere}!A_level1_sphere_points@{A\_\-level1\_\-sphere\_\-points}}
+\index{A_level1_sphere_points@{A\_\-level1\_\-sphere\_\-points}!SimSite3D::geometry::TriMeshSphere@{SimSite3D::geometry::Tri\-Mesh\-Sphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t Tri\-Mesh\-Sphere::A\_\-level1\_\-sphere\_\-points\hspace{0.3cm}{\tt  [static, private]}}\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_3f273941f74164c78f9338072e17f6e1}
 
 
 \textbf{Initial value:}
@@ -204,9 +204,9 @@ Constructor to generate a mesh representation of a sphere or part of sphere depe
     0.000000,0.809017,-0.587785
   }
 \end{verbatim}\end{Code}
-\index{ASCbase::geometry::TriMeshSphere@{ASCbase::geometry::Tri\-Mesh\-Sphere}!A_level2_cap_points@{A\_\-level2\_\-cap\_\-points}}
-\index{A_level2_cap_points@{A\_\-level2\_\-cap\_\-points}!ASCbase::geometry::TriMeshSphere@{ASCbase::geometry::Tri\-Mesh\-Sphere}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t Tri\-Mesh\-Sphere::A\_\-level2\_\-cap\_\-points\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1geometry_1_1TriMeshSphere_a007ec03a3a5930ee56566c87f2a2772}
+\index{SimSite3D::geometry::TriMeshSphere@{SimSite3D::geometry::Tri\-Mesh\-Sphere}!A_level2_cap_points@{A\_\-level2\_\-cap\_\-points}}
+\index{A_level2_cap_points@{A\_\-level2\_\-cap\_\-points}!SimSite3D::geometry::TriMeshSphere@{SimSite3D::geometry::Tri\-Mesh\-Sphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t Tri\-Mesh\-Sphere::A\_\-level2\_\-cap\_\-points\hspace{0.3cm}{\tt  [static, private]}}\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_a007ec03a3a5930ee56566c87f2a2772}
 
 
 \textbf{Initial value:}
@@ -230,9 +230,9 @@ Constructor to generate a mesh representation of a sphere or part of sphere depe
     0.500000,0.700629,-0.509037
   }
 \end{verbatim}\end{Code}
-\index{ASCbase::geometry::TriMeshSphere@{ASCbase::geometry::Tri\-Mesh\-Sphere}!A_level2_cap_triangles@{A\_\-level2\_\-cap\_\-triangles}}
-\index{A_level2_cap_triangles@{A\_\-level2\_\-cap\_\-triangles}!ASCbase::geometry::TriMeshSphere@{ASCbase::geometry::Tri\-Mesh\-Sphere}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const uint Tri\-Mesh\-Sphere::A\_\-level2\_\-cap\_\-triangles\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1geometry_1_1TriMeshSphere_58db5fd91484c9fd014384310be33341}
+\index{SimSite3D::geometry::TriMeshSphere@{SimSite3D::geometry::Tri\-Mesh\-Sphere}!A_level2_cap_triangles@{A\_\-level2\_\-cap\_\-triangles}}
+\index{A_level2_cap_triangles@{A\_\-level2\_\-cap\_\-triangles}!SimSite3D::geometry::TriMeshSphere@{SimSite3D::geometry::Tri\-Mesh\-Sphere}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const uint Tri\-Mesh\-Sphere::A\_\-level2\_\-cap\_\-triangles\hspace{0.3cm}{\tt  [static, private]}}\label{classSimSite3D_1_1geometry_1_1TriMeshSphere_58db5fd91484c9fd014384310be33341}
 
 
 \textbf{Initial value:}

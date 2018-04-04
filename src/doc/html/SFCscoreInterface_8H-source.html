@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -54,29 +54,29 @@
 <a name="l00041"></a>00041 <span class="preprocessor"></span>
 <a name="l00042"></a>00042 <span class="preprocessor">#include &lt;ExternalScoringFunction.H&gt;</span>
 <a name="l00043"></a>00043 
-<a name="l00044"></a>00044 <span class="keyword">namespace </span>ASCbase{
+<a name="l00044"></a>00044 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00045"></a>00045 
 <a name="l00047"></a>00047 
-<a name="l00050"></a><a class="code" href="classASCbase_1_1SFCscoreInterface.html">00050</a>   <span class="keyword">class </span><a class="code" href="classASCbase_1_1SFCscoreInterface.html">SFCscoreInterface</a> : <span class="keyword">public</span> <a class="code" href="classASCbase_1_1ExternalScoringFunction.html">ExternalScoringFunction</a>{
+<a name="l00050"></a><a class="code" href="classSimSite3D_1_1SFCscoreInterface.html">00050</a>   <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1SFCscoreInterface.html">SFCscoreInterface</a> : <span class="keyword">public</span> <a class="code" href="classSimSite3D_1_1ExternalScoringFunction.html">ExternalScoringFunction</a>{
 <a name="l00051"></a>00051   <span class="keyword">public</span>:
 <a name="l00053"></a>00053 
-<a name="l00056"></a>00056     <a class="code" href="classASCbase_1_1SFCscoreInterface.html#3ce57c925d03cb064b4360006f2aded7">SFCscoreInterface</a>(std::string cmdline);
+<a name="l00056"></a>00056     <a class="code" href="classSimSite3D_1_1SFCscoreInterface.html#3ce57c925d03cb064b4360006f2aded7">SFCscoreInterface</a>(std::string cmdline);
 <a name="l00057"></a>00057 
-<a name="l00059"></a><a class="code" href="classASCbase_1_1SFCscoreInterface.html#a845154d606be294b33e129f424fffee">00059</a>     <a class="code" href="classASCbase_1_1SFCscoreInterface.html#a845154d606be294b33e129f424fffee">~SFCscoreInterface</a>() {;}
+<a name="l00059"></a><a class="code" href="classSimSite3D_1_1SFCscoreInterface.html#a845154d606be294b33e129f424fffee">00059</a>     <a class="code" href="classSimSite3D_1_1SFCscoreInterface.html#a845154d606be294b33e129f424fffee">~SFCscoreInterface</a>() {;}
 <a name="l00060"></a>00060 
 <a name="l00062"></a>00062 
-<a name="l00069"></a>00069     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1SFCscoreInterface.html#354838006d3b086f93b7245cf0223a70">score</a>(std::string prot_path, std::string lig_path, 
+<a name="l00069"></a>00069     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1SFCscoreInterface.html#354838006d3b086f93b7245cf0223a70">score</a>(std::string prot_path, std::string lig_path, 
 <a name="l00070"></a>00070                std::vector&lt;my_float_t&gt; *scores);
 <a name="l00071"></a>00071 
 <a name="l00073"></a>00073 
-<a name="l00078"></a>00078     <span class="keywordtype">void</span> <a class="code" href="classASCbase_1_1SFCscoreInterface.html#00c2a69a8732cc3eae24ed2bb61dc638">sf_names</a>(std::vector&lt;std::string&gt; *names);
+<a name="l00078"></a>00078     <span class="keywordtype">void</span> <a class="code" href="classSimSite3D_1_1SFCscoreInterface.html#00c2a69a8732cc3eae24ed2bb61dc638">sf_names</a>(std::vector&lt;std::string&gt; *names);
 <a name="l00079"></a>00079 
 <a name="l00080"></a>00080   <span class="keyword">private</span>:
-<a name="l00081"></a><a class="code" href="classASCbase_1_1SFCscoreInterface.html#98919969ba57e3e42b90acb6be87344f">00081</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classASCbase_1_1SFCscoreInterface.html#98919969ba57e3e42b90acb6be87344f">_fname</a>; 
-<a name="l00082"></a><a class="code" href="classASCbase_1_1SFCscoreInterface.html#f5e8e5ccda0fe051ec010930c9145036">00082</a>     std::vector&lt;std::string&gt; <a class="code" href="classASCbase_1_1SFCscoreInterface.html#f5e8e5ccda0fe051ec010930c9145036">sfc_names</a>; 
+<a name="l00081"></a><a class="code" href="classSimSite3D_1_1SFCscoreInterface.html#98919969ba57e3e42b90acb6be87344f">00081</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classSimSite3D_1_1SFCscoreInterface.html#98919969ba57e3e42b90acb6be87344f">_fname</a>; 
+<a name="l00082"></a><a class="code" href="classSimSite3D_1_1SFCscoreInterface.html#f5e8e5ccda0fe051ec010930c9145036">00082</a>     std::vector&lt;std::string&gt; <a class="code" href="classSimSite3D_1_1SFCscoreInterface.html#f5e8e5ccda0fe051ec010930c9145036">sfc_names</a>; 
 <a name="l00083"></a>00083 
 <a name="l00085"></a>00085 
-<a name="l00095"></a>00095     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1SFCscoreInterface.html#f137ba2029c31c5344839b3e1862a1c4">get_scoring_functions</a>(std::string spf_fname);
+<a name="l00095"></a>00095     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1SFCscoreInterface.html#f137ba2029c31c5344839b3e1862a1c4">get_scoring_functions</a>(std::string spf_fname);
 <a name="l00096"></a>00096   };
 <a name="l00097"></a>00097 }
 <a name="l00098"></a>00098 <span class="preprocessor">#endif</span>

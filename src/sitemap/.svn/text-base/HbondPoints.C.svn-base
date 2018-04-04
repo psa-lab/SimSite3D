@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -71,7 +71,7 @@
  * type to avoid conflict with the point_t already in ../basics/types.H.
  * In the future it may be worth the time to look at this more closely
  * and merge the two types if possible.
- * Also removed the PDB namespace and use ASCbase instead.
+ * Also removed the PDB namespace and use SimSite3D instead.
  *
  * Revision 1.3  2006/11/16 20:24:25  vanvoor4
  * Removed debug statements
@@ -94,7 +94,7 @@
 #include <iomanip>
 #include <PDB_metals.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 const my_float_t HbondPoints::MAXRADDIST = 9.0;
 const my_float_t HbondPoints::MAXBINDDIST = 5.0;

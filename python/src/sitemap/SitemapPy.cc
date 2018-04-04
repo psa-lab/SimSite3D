@@ -2,9 +2,9 @@
 #include <Sitemap.H>
 
 using namespace boost::python;
-using ASCbase::Sitemap;
-using ASCbase::HbondPoints;
-using ASCbase::GenPointsParameters;
+using SimSite3D::Sitemap;
+using SimSite3D::HbondPoints;
+using SimSite3D::GenPointsParameters;
 
 // From Py++
 typedef HbondPoints const & ( Sitemap::*hbond_points_function_type )(  ) const;
@@ -13,10 +13,10 @@ BOOST_PYTHON_MODULE(_Sitemap)
 {
   class_<Sitemap>("sitemap", 
 		  init<const std::string, const std::string, 
-		       const ASCbase::BaseParameters&, const bool >())
+		       const SimSite3D::BaseParameters&, const bool >())
     .def(init<const GenPointsParameters&>())
     .def(init<const std::string, const std::string, 
-         const ASCbase::BaseParameters&, const bool, const bool, const bool>())
+         const SimSite3D::BaseParameters&, const bool, const bool, const bool>())
     // Something screwy with the conversion of this function -- 
     // the Python function is returning True when Sitemap::A_fail is false
     //.def("fail", &Sitemap::fail)

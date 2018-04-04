@@ -5,7 +5,7 @@
 #include <line.H>
 #include <HbondSurfaces.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 namespace geometry{
 
 //! forward declaration of vertex_t for half_edge_t
@@ -492,6 +492,6 @@ private:
 
 
 } // end namespace geometry
-} // end namespace ASCbase
+} // end namespace SimSite3D
 
 #endif

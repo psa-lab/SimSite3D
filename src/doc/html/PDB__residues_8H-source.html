@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -46,7 +46,7 @@
 <a name="l00033"></a>00033 <span class="comment"> * included only by the mol2 classes.</span>
 <a name="l00034"></a>00034 <span class="comment"> *</span>
 <a name="l00035"></a>00035 <span class="comment"> * Revision 1.3  2007/10/11 16:05:13  vanvoor4</span>
-<a name="l00036"></a>00036 <span class="comment"> * Added ASCbase namespace</span>
+<a name="l00036"></a>00036 <span class="comment"> * Added SimSite3D namespace</span>
 <a name="l00037"></a>00037 <span class="comment"> *</span>
 <a name="l00038"></a>00038 <span class="comment"> * Revision 1.2  2007/08/24 15:26:49  vanvoor4</span>
 <a name="l00039"></a>00039 <span class="comment"> * Updated to reflect the vdw radii in Tripos FF and Li &amp; Nussinov (1998)</span>
@@ -66,7 +66,7 @@
 <a name="l00053"></a>00053 <span class="preprocessor">#include &lt;types.H&gt;</span>
 <a name="l00054"></a>00054 <span class="preprocessor">#include &lt;point.H&gt;</span>
 <a name="l00055"></a>00055 
-<a name="l00056"></a>00056 <span class="keyword">namespace </span>ASCbase{
+<a name="l00056"></a>00056 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00057"></a>00057 
 <a name="l00059"></a>00059   <span class="keyword">typedef</span> <span class="keyword">enum</span> residue_type_enum{
 <a name="l00060"></a>00060     NULL_RESIDUE = 0,
@@ -101,16 +101,16 @@
 <a name="l00089"></a>00089     RESIDUE_ENUM_END   
 <a name="l00090"></a>00090   }residue_type;
 <a name="l00091"></a>00091 
-<a name="l00093"></a><a class="code" href="structASCbase_1_1residue__conv__type.html">00093</a>   <span class="keyword">typedef</span> <span class="keyword">struct</span>{
+<a name="l00093"></a><a class="code" href="structSimSite3D_1_1residue__conv__type.html">00093</a>   <span class="keyword">typedef</span> <span class="keyword">struct</span>{
 <a name="l00094"></a>00094     residue_type residue;
 <a name="l00095"></a>00095     std::string name;
-<a name="l00096"></a>00096   }<a class="code" href="structASCbase_1_1residue__conv__type.html">residue_conv_type</a>;
+<a name="l00096"></a>00096   }<a class="code" href="structSimSite3D_1_1residue__conv__type.html">residue_conv_type</a>;
 <a name="l00097"></a>00097 
-<a name="l00100"></a><a class="code" href="structASCbase_1_1pdb__hphob__type.html">00100</a>   <span class="keyword">typedef</span> <span class="keyword">struct</span>{
+<a name="l00100"></a><a class="code" href="structSimSite3D_1_1pdb__hphob__type.html">00100</a>   <span class="keyword">typedef</span> <span class="keyword">struct</span>{
 <a name="l00101"></a>00101     residue_type residue;
 <a name="l00102"></a>00102     atom_type atom;
-<a name="l00103"></a><a class="code" href="structASCbase_1_1pdb__hphob__type.html#a159bae42d7108f85a2b1067fae5a251">00103</a>     <span class="keywordtype">int</span> hydrophobicity;  
-<a name="l00104"></a>00104   }<a class="code" href="structASCbase_1_1pdb__hphob__type.html">pdb_hphob_type</a>;
+<a name="l00103"></a><a class="code" href="structSimSite3D_1_1pdb__hphob__type.html#a159bae42d7108f85a2b1067fae5a251">00103</a>     <span class="keywordtype">int</span> hydrophobicity;  
+<a name="l00104"></a>00104   }<a class="code" href="structSimSite3D_1_1pdb__hphob__type.html">pdb_hphob_type</a>;
 <a name="l00105"></a>00105   <span class="keyword">typedef</span> std::map&lt;atom_type, int&gt; hphob_tbl_atom_lvl;
 <a name="l00106"></a>00106   <span class="keyword">typedef</span> std::map&lt;residue_type, hphob_tbl_atom_lvl&gt; hphob_tbl_res_lvl;
 <a name="l00107"></a>00107 
@@ -119,19 +119,19 @@
 <a name="l00110"></a>00110     SILENTLY_IGNORE_UNKNOWN_RESIDUES
 <a name="l00111"></a>00111   }residue_warn_type;
 <a name="l00112"></a>00112 
-<a name="l00115"></a><a class="code" href="structASCbase_1_1pdb__atom__info__t.html">00115</a>   <span class="keyword">typedef</span> <span class="keyword">struct</span>{
-<a name="l00116"></a><a class="code" href="structASCbase_1_1pdb__atom__info__t.html#5c36c5c8f4e3e90d5cd92dc4aacb5256">00116</a>     std::string pdb_atom_str;   
-<a name="l00117"></a><a class="code" href="structASCbase_1_1pdb__atom__info__t.html#9b3d5dd5a58707f7df56b34ccd3001dd">00117</a>     std::string pdb_res_str;    
-<a name="l00118"></a><a class="code" href="structASCbase_1_1pdb__atom__info__t.html#561bfb1b2bef5880d0accf3c7c4563c4">00118</a>     atom_type atom;             
-<a name="l00119"></a><a class="code" href="structASCbase_1_1pdb__atom__info__t.html#85202b305d0450723fd5493b5bbdc1b4">00119</a>     residue_type res;           
-<a name="l00120"></a><a class="code" href="structASCbase_1_1pdb__atom__info__t.html#0247ef763a73651c46417102552e3c22">00120</a>     my_float_t vdw_radius;      
-<a name="l00121"></a><a class="code" href="structASCbase_1_1pdb__atom__info__t.html#85cd46506603f9e16859ffb4eb8253f3">00121</a>     my_float_t ms_atm_radius;   
-<a name="l00122"></a><a class="code" href="structASCbase_1_1pdb__atom__info__t.html#ba6f5c5fe03c00f9a45a75435002ade7">00122</a>     orbit_type orbit;           
-<a name="l00123"></a><a class="code" href="structASCbase_1_1pdb__atom__info__t.html#75a6aa3b87f2a951f126b02ec1c695b4">00123</a>     atom_level_type level;      
-<a name="l00124"></a><a class="code" href="structASCbase_1_1pdb__atom__info__t.html#357e6b496c8772df38cea08b87ffc6ef">00124</a>     interactionType act_type;   
-<a name="l00125"></a><a class="code" href="structASCbase_1_1pdb__atom__info__t.html#29b41a3b93a3cae5f1a339eba15fffe2">00125</a>     my_float_t charge;          
+<a name="l00115"></a><a class="code" href="structSimSite3D_1_1pdb__atom__info__t.html">00115</a>   <span class="keyword">typedef</span> <span class="keyword">struct</span>{
+<a name="l00116"></a><a class="code" href="structSimSite3D_1_1pdb__atom__info__t.html#5c36c5c8f4e3e90d5cd92dc4aacb5256">00116</a>     std::string pdb_atom_str;   
+<a name="l00117"></a><a class="code" href="structSimSite3D_1_1pdb__atom__info__t.html#9b3d5dd5a58707f7df56b34ccd3001dd">00117</a>     std::string pdb_res_str;    
+<a name="l00118"></a><a class="code" href="structSimSite3D_1_1pdb__atom__info__t.html#561bfb1b2bef5880d0accf3c7c4563c4">00118</a>     atom_type atom;             
+<a name="l00119"></a><a class="code" href="structSimSite3D_1_1pdb__atom__info__t.html#85202b305d0450723fd5493b5bbdc1b4">00119</a>     residue_type res;           
+<a name="l00120"></a><a class="code" href="structSimSite3D_1_1pdb__atom__info__t.html#0247ef763a73651c46417102552e3c22">00120</a>     my_float_t vdw_radius;      
+<a name="l00121"></a><a class="code" href="structSimSite3D_1_1pdb__atom__info__t.html#85cd46506603f9e16859ffb4eb8253f3">00121</a>     my_float_t ms_atm_radius;   
+<a name="l00122"></a><a class="code" href="structSimSite3D_1_1pdb__atom__info__t.html#ba6f5c5fe03c00f9a45a75435002ade7">00122</a>     orbit_type orbit;           
+<a name="l00123"></a><a class="code" href="structSimSite3D_1_1pdb__atom__info__t.html#75a6aa3b87f2a951f126b02ec1c695b4">00123</a>     atom_level_type level;      
+<a name="l00124"></a><a class="code" href="structSimSite3D_1_1pdb__atom__info__t.html#357e6b496c8772df38cea08b87ffc6ef">00124</a>     interactionType act_type;   
+<a name="l00125"></a><a class="code" href="structSimSite3D_1_1pdb__atom__info__t.html#29b41a3b93a3cae5f1a339eba15fffe2">00125</a>     my_float_t charge;          
 <a name="l00126"></a>00126     my_float_t hydro;
-<a name="l00127"></a>00127   }<a class="code" href="structASCbase_1_1pdb__atom__info__t.html">pdb_atom_info_t</a>;
+<a name="l00127"></a>00127   }<a class="code" href="structSimSite3D_1_1pdb__atom__info__t.html">pdb_atom_info_t</a>;
 <a name="l00128"></a>00128   <span class="keyword">typedef</span> std::map&lt;std::string, const pdb_atom_info_t*&gt; str_tbl_res_lvl;
 <a name="l00129"></a>00129   <span class="keyword">typedef</span> std::map&lt;std::string, str_tbl_res_lvl&gt; atom_table_t;
 <a name="l00130"></a>00130 
@@ -139,23 +139,23 @@
 <a name="l00132"></a>00132   <span class="keyword">typedef</span> std::map&lt;atom_type, enum_tbl_res_lvl&gt; atom_enum_table_t;
 <a name="l00133"></a>00133   
 <a name="l00136"></a>00136 
-<a name="l00149"></a><a class="code" href="classASCbase_1_1PDB__residues.html">00149</a>   <span class="keyword">class </span><a class="code" href="classASCbase_1_1PDB__residues.html">PDB_residues</a>{
+<a name="l00149"></a><a class="code" href="classSimSite3D_1_1PDB__residues.html">00149</a>   <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1PDB__residues.html">PDB_residues</a>{
 <a name="l00150"></a>00150   <span class="keyword">public</span>:
-<a name="l00152"></a>00152     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structASCbase_1_1pdb__atom__info__t.html">pdb_atom_info_t</a>*
-<a name="l00153"></a><a class="code" href="classASCbase_1_1PDB__residues.html#de442e4bc404da4062cfcd6e454296e1">00153</a>     <a class="code" href="classASCbase_1_1PDB__residues.html#de442e4bc404da4062cfcd6e454296e1">get_atom_info</a>(<span class="keyword">const</span> std::string atom_str, <span class="keyword">const</span> std::string res_str)
+<a name="l00152"></a>00152     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structSimSite3D_1_1pdb__atom__info__t.html">pdb_atom_info_t</a>*
+<a name="l00153"></a><a class="code" href="classSimSite3D_1_1PDB__residues.html#de442e4bc404da4062cfcd6e454296e1">00153</a>     <a class="code" href="classSimSite3D_1_1PDB__residues.html#de442e4bc404da4062cfcd6e454296e1">get_atom_info</a>(<span class="keyword">const</span> std::string atom_str, <span class="keyword">const</span> std::string res_str)
 <a name="l00154"></a>00154     {
-<a name="l00155"></a>00155       <span class="keywordflow">if</span>(!<a class="code" href="classASCbase_1_1PDB__residues.html#9a981fa9a9bd789110356942cfc403fe">residue_table</a>.size()) <a class="code" href="classASCbase_1_1PDB__residues.html#0bb938a071dfd70c2620ca490bc761cb">PDB_residues::build_res_tables</a>();
-<a name="l00156"></a>00156       atom_table_t::const_iterator a_iter = <a class="code" href="classASCbase_1_1PDB__residues.html#9a981fa9a9bd789110356942cfc403fe">residue_table</a>.find(atom_str);
-<a name="l00157"></a>00157       <span class="keywordflow">if</span>(a_iter == <a class="code" href="classASCbase_1_1PDB__residues.html#9a981fa9a9bd789110356942cfc403fe">residue_table</a>.end()) <span class="keywordflow">return</span> 0;
+<a name="l00155"></a>00155       <span class="keywordflow">if</span>(!<a class="code" href="classSimSite3D_1_1PDB__residues.html#9a981fa9a9bd789110356942cfc403fe">residue_table</a>.size()) <a class="code" href="classSimSite3D_1_1PDB__residues.html#0bb938a071dfd70c2620ca490bc761cb">PDB_residues::build_res_tables</a>();
+<a name="l00156"></a>00156       atom_table_t::const_iterator a_iter = <a class="code" href="classSimSite3D_1_1PDB__residues.html#9a981fa9a9bd789110356942cfc403fe">residue_table</a>.find(atom_str);
+<a name="l00157"></a>00157       <span class="keywordflow">if</span>(a_iter == <a class="code" href="classSimSite3D_1_1PDB__residues.html#9a981fa9a9bd789110356942cfc403fe">residue_table</a>.end()) <span class="keywordflow">return</span> 0;
 <a name="l00158"></a>00158       str_tbl_res_lvl::const_iterator res_iter = a_iter-&gt;second.find(res_str);
 <a name="l00159"></a>00159       <span class="keywordflow">if</span>(res_iter == a_iter-&gt;second.end()) <span class="keywordflow">return</span> 0;
 <a name="l00160"></a>00160       <span class="keywordflow">return</span> res_iter-&gt;second;
 <a name="l00161"></a>00161     }
 <a name="l00162"></a>00162 
-<a name="l00164"></a>00164     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structASCbase_1_1pdb__atom__info__t.html">pdb_atom_info_t</a>*
-<a name="l00165"></a><a class="code" href="classASCbase_1_1PDB__residues.html#af86442358d5e0e48c2597cc70842a50">00165</a>     <a class="code" href="classASCbase_1_1PDB__residues.html#de442e4bc404da4062cfcd6e454296e1">get_atom_info</a>(<span class="keyword">const</span> atom_type atom, residue_type residue)
+<a name="l00164"></a>00164     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structSimSite3D_1_1pdb__atom__info__t.html">pdb_atom_info_t</a>*
+<a name="l00165"></a><a class="code" href="classSimSite3D_1_1PDB__residues.html#af86442358d5e0e48c2597cc70842a50">00165</a>     <a class="code" href="classSimSite3D_1_1PDB__residues.html#de442e4bc404da4062cfcd6e454296e1">get_atom_info</a>(<span class="keyword">const</span> atom_type atom, residue_type residue)
 <a name="l00166"></a>00166     {
-<a name="l00167"></a>00167       <span class="keywordflow">if</span>(!residue_type_table.size()) <a class="code" href="classASCbase_1_1PDB__residues.html#0bb938a071dfd70c2620ca490bc761cb">PDB_residues::build_res_tables</a>();
+<a name="l00167"></a>00167       <span class="keywordflow">if</span>(!residue_type_table.size()) <a class="code" href="classSimSite3D_1_1PDB__residues.html#0bb938a071dfd70c2620ca490bc761cb">PDB_residues::build_res_tables</a>();
 <a name="l00168"></a>00168       atom_enum_table_t::const_iterator a_iter = residue_type_table.find(atom);
 <a name="l00169"></a>00169       <span class="keywordflow">if</span>(a_iter == residue_type_table.end()) <span class="keywordflow">return</span> 0;
 <a name="l00170"></a>00170       enum_tbl_res_lvl::const_iterator res_iter = a_iter-&gt;second.find(residue);
@@ -181,11 +181,11 @@
 <a name="l00190"></a>00190       <span class="keywordflow">return</span> a_iter-&gt;second;
 <a name="l00191"></a>00191     }
 <a name="l00192"></a>00192 
-<a name="l00194"></a>00194     <span class="keyword">static</span> residue_type <a class="code" href="classASCbase_1_1PDB__residues.html#08074264e135aee3ba43dcee9a9da5b0">string_to_residue</a>(<span class="keyword">const</span> std::string res_name);
+<a name="l00194"></a>00194     <span class="keyword">static</span> residue_type <a class="code" href="classSimSite3D_1_1PDB__residues.html#08074264e135aee3ba43dcee9a9da5b0">string_to_residue</a>(<span class="keyword">const</span> std::string res_name);
 <a name="l00195"></a>00195  
-<a name="l00197"></a>00197     <span class="keyword">static</span> std::string <a class="code" href="classASCbase_1_1PDB__residues.html#d17b8fa8fe06ed333b7d35510ee05b01">residue_to_string</a>(<span class="keyword">const</span> residue_type res);
+<a name="l00197"></a>00197     <span class="keyword">static</span> std::string <a class="code" href="classSimSite3D_1_1PDB__residues.html#d17b8fa8fe06ed333b7d35510ee05b01">residue_to_string</a>(<span class="keyword">const</span> residue_type res);
 <a name="l00198"></a>00198 
-<a name="l00200"></a>00200     <span class="keyword">static</span> std::string <a class="code" href="classASCbase_1_1PDB__residues.html#7776d1c208963a0f70edc290f5317b9b">atom_to_string</a>(<span class="keyword">const</span> atom_type atom);
+<a name="l00200"></a>00200     <span class="keyword">static</span> std::string <a class="code" href="classSimSite3D_1_1PDB__residues.html#7776d1c208963a0f70edc290f5317b9b">atom_to_string</a>(<span class="keyword">const</span> atom_type atom);
 <a name="l00201"></a>00201 
 <a name="l00202"></a>00202   <span class="keyword">private</span>:
 <a name="l00203"></a>00203     PDB_residues()
@@ -194,31 +194,31 @@
 <a name="l00206"></a>00206     PDB_residues(<span class="keyword">const</span> PDB_residues &amp;)
 <a name="l00207"></a>00207     { ; }
 <a name="l00208"></a>00208 
-<a name="l00210"></a>00210     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classASCbase_1_1PDB__residues.html#0bb938a071dfd70c2620ca490bc761cb">build_res_tables</a>();
+<a name="l00210"></a>00210     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classSimSite3D_1_1PDB__residues.html#0bb938a071dfd70c2620ca490bc761cb">build_res_tables</a>();
 <a name="l00211"></a>00211 
-<a name="l00213"></a>00213     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classASCbase_1_1PDB__residues.html#cebf2dfefa17acc3f1d43defd1ac7197">build_res_conv_maps</a>();
+<a name="l00213"></a>00213     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classSimSite3D_1_1PDB__residues.html#cebf2dfefa17acc3f1d43defd1ac7197">build_res_conv_maps</a>();
 <a name="l00214"></a>00214 
-<a name="l00216"></a>00216     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classASCbase_1_1PDB__residues.html#d644f1a2ffd15ffc31eb06f9de21a4b2">build_atom_conv_map</a>();
+<a name="l00216"></a>00216     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classSimSite3D_1_1PDB__residues.html#d644f1a2ffd15ffc31eb06f9de21a4b2">build_atom_conv_map</a>();
 <a name="l00217"></a>00217   
 <a name="l00218"></a>00218     <span class="keyword">static</span> <span class="keywordtype">void</span> build_atom_hphob_map();
 <a name="l00219"></a>00219 
-<a name="l00220"></a><a class="code" href="classASCbase_1_1PDB__residues.html#9a981fa9a9bd789110356942cfc403fe">00220</a>     <span class="keyword">static</span> atom_table_t <a class="code" href="classASCbase_1_1PDB__residues.html#9a981fa9a9bd789110356942cfc403fe">residue_table</a>;   
+<a name="l00220"></a><a class="code" href="classSimSite3D_1_1PDB__residues.html#9a981fa9a9bd789110356942cfc403fe">00220</a>     <span class="keyword">static</span> atom_table_t <a class="code" href="classSimSite3D_1_1PDB__residues.html#9a981fa9a9bd789110356942cfc403fe">residue_table</a>;   
 <a name="l00221"></a>00221     <span class="keyword">static</span> atom_enum_table_t residue_type_table;
 <a name="l00222"></a>00222     <span class="keyword">static</span> std::map&lt;residue_type, std::string&gt; A_residue_to_string;
 <a name="l00223"></a>00223     <span class="keyword">static</span> std::map&lt;std::string, residue_type&gt; A_string_to_residue;
 <a name="l00224"></a>00224     <span class="keyword">static</span> std::map&lt;atom_type, std::string&gt; A_atom_to_string;
 <a name="l00225"></a>00225     <span class="keyword">static</span> hphob_tbl_res_lvl A_hydrophobic_value;
 <a name="l00226"></a>00226 
-<a name="l00227"></a>00227     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structASCbase_1_1pdb__atom__info__t.html">pdb_atom_info_t</a> Pro_main_chain_N;
+<a name="l00227"></a>00227     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structSimSite3D_1_1pdb__atom__info__t.html">pdb_atom_info_t</a> Pro_main_chain_N;
 <a name="l00228"></a>00228     <span class="keyword">static</span> <span class="keyword">const</span> uint A_res_conv_array_size;
-<a name="l00229"></a>00229     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structASCbase_1_1residue__conv__type.html">residue_conv_type</a> A_res_conv_array[]; 
-<a name="l00230"></a><a class="code" href="classASCbase_1_1PDB__residues.html#30b9f32457869af112beb27bee963c4d">00230</a>     <span class="keyword">static</span> <span class="keyword">const</span> uint <a class="code" href="classASCbase_1_1PDB__residues.html#30b9f32457869af112beb27bee963c4d">A_res_array_size</a>;   
-<a name="l00231"></a><a class="code" href="classASCbase_1_1PDB__residues.html#7b64a47671ba736cf508b89f59b17fab">00231</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structASCbase_1_1pdb__atom__info__t.html">pdb_atom_info_t</a> <a class="code" href="classASCbase_1_1PDB__residues.html#7b64a47671ba736cf508b89f59b17fab">A_res_array</a>[]; 
+<a name="l00229"></a>00229     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structSimSite3D_1_1residue__conv__type.html">residue_conv_type</a> A_res_conv_array[]; 
+<a name="l00230"></a><a class="code" href="classSimSite3D_1_1PDB__residues.html#30b9f32457869af112beb27bee963c4d">00230</a>     <span class="keyword">static</span> <span class="keyword">const</span> uint <a class="code" href="classSimSite3D_1_1PDB__residues.html#30b9f32457869af112beb27bee963c4d">A_res_array_size</a>;   
+<a name="l00231"></a><a class="code" href="classSimSite3D_1_1PDB__residues.html#7b64a47671ba736cf508b89f59b17fab">00231</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structSimSite3D_1_1pdb__atom__info__t.html">pdb_atom_info_t</a> <a class="code" href="classSimSite3D_1_1PDB__residues.html#7b64a47671ba736cf508b89f59b17fab">A_res_array</a>[]; 
 <a name="l00232"></a>00232     <span class="keyword">static</span> <span class="keyword">const</span> uint A_atom_conv_array_size;
-<a name="l00233"></a>00233     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structASCbase_1_1atom__conv__type.html">atom_conv_type</a> A_atom_conv_array[];
+<a name="l00233"></a>00233     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structSimSite3D_1_1atom__conv__type.html">atom_conv_type</a> A_atom_conv_array[];
 <a name="l00234"></a>00234     <span class="keyword">static</span> <span class="keyword">const</span> size_t A_hphob_val_array_size;
-<a name="l00235"></a>00235     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structASCbase_1_1pdb__hphob__type.html">pdb_hphob_type</a> A_hphob_val_array[];
-<a name="l00236"></a><a class="code" href="classASCbase_1_1PDB__residues.html#0b71b0db5fafc2e45019bd1e91f97484">00236</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classASCbase_1_1PDB__residues.html#0b71b0db5fafc2e45019bd1e91f97484">A_fname</a>;   
+<a name="l00235"></a>00235     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structSimSite3D_1_1pdb__hphob__type.html">pdb_hphob_type</a> A_hphob_val_array[];
+<a name="l00236"></a><a class="code" href="classSimSite3D_1_1PDB__residues.html#0b71b0db5fafc2e45019bd1e91f97484">00236</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classSimSite3D_1_1PDB__residues.html#0b71b0db5fafc2e45019bd1e91f97484">A_fname</a>;   
 <a name="l00237"></a>00237   };
 <a name="l00238"></a>00238 }
 <a name="l00239"></a>00239 <span class="preprocessor">#endif</span>

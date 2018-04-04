@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -49,7 +49,7 @@
 #include <basics.H>
 #include <BaseParameters.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! A data class (public members) used to hide the details, from the main
 //! application source, needed to get the parameters. 
@@ -63,7 +63,7 @@ public:
     PRINT_INTERACTIONS
   }popt_args_t;
 
-  //! To be used by the ASCbasePy score.parameters module
+  //! To be used by the SimSite3DPy score.parameters module
   ProtLigScoreParameters();
 
   //! Set the score parameters using the values in argv
@@ -98,5 +98,5 @@ private:
   
   static const std::string A_fname; //!< Name of source file
 };
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

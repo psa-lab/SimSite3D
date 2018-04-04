@@ -1,6 +1,6 @@
 import sys
 from numpy import *
-from ASCbasePy import *
+from SimSite3DPy import *
 
 # debugging modules
 from pymol import cmd
@@ -606,7 +606,7 @@ class hbond_surf_caps:
 #
 #    ideal_pts_fname = "/home/vanvoor4/code/SimSite3D/trunk/params/"
 #    ideal_pts_fname += "new_optimum_hbonds.dat"
-#    ideal_pts = ASCbasePy.sitemaps.hbond_ideal_pts(ideal_pts_fname)
+#    ideal_pts = SimSite3DPy.sitemaps.hbond_ideal_pts(ideal_pts_fname)
 #    hbond_triplets = ideal_pts.get_polar_atom_triplets(prot, site_vol)
 
 #    my_caps = []

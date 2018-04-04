@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -25,7 +25,7 @@
 #include <math_basics.H>
 #include <my_float_array.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! Divide up the space based on a coordinate aligned grid
 /*! Assumptions:
@@ -516,5 +516,5 @@ private:
   std::vector<three_idz> A_orig_bin_idz;
 
 };
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

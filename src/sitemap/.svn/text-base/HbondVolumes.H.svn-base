@@ -5,7 +5,7 @@
 
 
 
-namespace ASCbase{
+namespace SimSite3D{
 
   class hbond_volume_t : public hbond_ideal_pt_base{
   public: 
@@ -32,6 +32,6 @@ namespace ASCbase{
   };
 
 
-} // end namespace ASCbase
+} // end namespace SimSite3D
 
 #endif

@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -20,7 +20,7 @@
 
 #include <SitesScoreBase.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! Weight interaction NN interaction pair sums
 class WeightedSumsScore : public SitesScoreBase{
@@ -287,5 +287,5 @@ private:
   static const my_float_t SCALED_CONSTANT_TERM;        //!< Constant obtained from the regresion method for scaled terms
   static const my_float_t A_max_dist;           //!< Max distance for corresponding points
 };
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

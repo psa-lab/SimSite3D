@@ -30,7 +30,7 @@
 #include <ProtLigActTable.H>
 #include <ProtLigScoreParameters.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 typedef struct{
   std::string lig_id;

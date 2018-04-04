@@ -4,7 +4,7 @@
 #include <SimpleTrimeshTwo.H>
 #include <DistanceArray.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 namespace geometry{
 
 //! Simple derived class that gives us a unique number for 2/3rds of triangle
@@ -435,5 +435,5 @@ private:
 };
 
 } // end namespace geometry
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

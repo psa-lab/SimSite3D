@@ -4,7 +4,7 @@
 #include <SimpleTrimeshTwo.H>
 
 
-using namespace ASCbase::geometry;
+using namespace SimSite3D::geometry;
 
 
 SimpleTrimeshTwo::SimpleTrimeshTwo(const std::string fname,

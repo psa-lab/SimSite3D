@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -46,40 +46,40 @@
 <a name="l00033"></a>00033 <span class="preprocessor">#include &lt;hbond_points.H&gt;</span>
 <a name="l00034"></a>00034 <span class="preprocessor">#include &lt;dir_point_storage.H&gt;</span>
 <a name="l00035"></a>00035 
-<a name="l00036"></a>00036 <span class="keyword">namespace </span>ASCbase{
+<a name="l00036"></a>00036 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00037"></a>00037 
 <a name="l00039"></a>00039 
-<a name="l00044"></a><a class="code" href="classASCbase_1_1WaterPoints.html">00044</a>   <span class="keyword">class </span><a class="code" href="classASCbase_1_1WaterPoints.html">WaterPoints</a>{
+<a name="l00044"></a><a class="code" href="classSimSite3D_1_1WaterPoints.html">00044</a>   <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1WaterPoints.html">WaterPoints</a>{
 <a name="l00045"></a>00045   <span class="keyword">public</span>: 
-<a name="l00047"></a>00047     <a class="code" href="classASCbase_1_1WaterPoints.html#1e8c62ea849bff31c173ef1aeb4a0793">WaterPoints</a>();
+<a name="l00047"></a>00047     <a class="code" href="classSimSite3D_1_1WaterPoints.html#1e8c62ea849bff31c173ef1aeb4a0793">WaterPoints</a>();
 <a name="l00048"></a>00048 
-<a name="l00049"></a>00049     ~<a class="code" href="classASCbase_1_1WaterPoints.html">WaterPoints</a>()
+<a name="l00049"></a>00049     ~<a class="code" href="classSimSite3D_1_1WaterPoints.html">WaterPoints</a>()
 <a name="l00050"></a>00050     { ; }
 <a name="l00051"></a>00051 
 <a name="l00054"></a>00054     <span class="keywordtype">void</span> 
-<a name="l00055"></a><a class="code" href="classASCbase_1_1WaterPoints.html#28e85993b24ad7d2d9f690972b399d19">00055</a>     <a class="code" href="classASCbase_1_1WaterPoints.html#28e85993b24ad7d2d9f690972b399d19">transform</a>(<span class="keyword">const</span> my_float_t* R, <span class="keyword">const</span> my_float_t* T)
+<a name="l00055"></a><a class="code" href="classSimSite3D_1_1WaterPoints.html#28e85993b24ad7d2d9f690972b399d19">00055</a>     <a class="code" href="classSimSite3D_1_1WaterPoints.html#28e85993b24ad7d2d9f690972b399d19">transform</a>(<span class="keyword">const</span> my_float_t* R, <span class="keyword">const</span> my_float_t* T)
 <a name="l00056"></a>00056     {
-<a name="l00057"></a>00057       water_pts.<a class="code" href="classASCbase_1_1dir__point__storage.html#b0c2ba79d23e1ff94801a636ffa00709">transform</a>(R, T);
-<a name="l00058"></a>00058       water_ideal_pts.<a class="code" href="classASCbase_1_1dir__point__storage.html#b0c2ba79d23e1ff94801a636ffa00709">transform</a>(R, T);
+<a name="l00057"></a>00057       water_pts.<a class="code" href="classSimSite3D_1_1dir__point__storage.html#b0c2ba79d23e1ff94801a636ffa00709">transform</a>(R, T);
+<a name="l00058"></a>00058       water_ideal_pts.<a class="code" href="classSimSite3D_1_1dir__point__storage.html#b0c2ba79d23e1ff94801a636ffa00709">transform</a>(R, T);
 <a name="l00059"></a>00059     }
 <a name="l00060"></a>00060 
 <a name="l00063"></a>00063     <span class="keywordtype">void</span> 
-<a name="l00064"></a><a class="code" href="classASCbase_1_1WaterPoints.html#af926b1ccfc8db7ae215209d006e338b">00064</a>     <a class="code" href="classASCbase_1_1WaterPoints.html#af926b1ccfc8db7ae215209d006e338b">inverse_transform</a>(<span class="keyword">const</span> my_float_t* R, <span class="keyword">const</span> my_float_t* T)
+<a name="l00064"></a><a class="code" href="classSimSite3D_1_1WaterPoints.html#af926b1ccfc8db7ae215209d006e338b">00064</a>     <a class="code" href="classSimSite3D_1_1WaterPoints.html#af926b1ccfc8db7ae215209d006e338b">inverse_transform</a>(<span class="keyword">const</span> my_float_t* R, <span class="keyword">const</span> my_float_t* T)
 <a name="l00065"></a>00065     {
-<a name="l00066"></a>00066       water_pts.<a class="code" href="classASCbase_1_1dir__point__storage.html#9c93359e8483342fc61d185dee3c8dde">inverse_transform</a>(R, T);
-<a name="l00067"></a>00067       water_ideal_pts.<a class="code" href="classASCbase_1_1dir__point__storage.html#9c93359e8483342fc61d185dee3c8dde">inverse_transform</a>(R, T);
+<a name="l00066"></a>00066       water_pts.<a class="code" href="classSimSite3D_1_1dir__point__storage.html#9c93359e8483342fc61d185dee3c8dde">inverse_transform</a>(R, T);
+<a name="l00067"></a>00067       water_ideal_pts.<a class="code" href="classSimSite3D_1_1dir__point__storage.html#9c93359e8483342fc61d185dee3c8dde">inverse_transform</a>(R, T);
 <a name="l00068"></a>00068     }
 <a name="l00069"></a>00069  
 <a name="l00072"></a>00072     <span class="keywordtype">void</span> 
-<a name="l00073"></a><a class="code" href="classASCbase_1_1WaterPoints.html#ecc516195eeee66daeb5232b79566bb3">00073</a>     <a class="code" href="classASCbase_1_1WaterPoints.html#ecc516195eeee66daeb5232b79566bb3">revert</a>()
+<a name="l00073"></a><a class="code" href="classSimSite3D_1_1WaterPoints.html#ecc516195eeee66daeb5232b79566bb3">00073</a>     <a class="code" href="classSimSite3D_1_1WaterPoints.html#ecc516195eeee66daeb5232b79566bb3">revert</a>()
 <a name="l00074"></a>00074     {
-<a name="l00075"></a>00075       water_pts.<a class="code" href="classASCbase_1_1dir__point__storage.html#c6e015f5121222c68569ae80e5863fc4">revert</a>();
-<a name="l00076"></a>00076       water_ideal_pts.<a class="code" href="classASCbase_1_1dir__point__storage.html#c6e015f5121222c68569ae80e5863fc4">revert</a>();
+<a name="l00075"></a>00075       water_pts.<a class="code" href="classSimSite3D_1_1dir__point__storage.html#c6e015f5121222c68569ae80e5863fc4">revert</a>();
+<a name="l00076"></a>00076       water_ideal_pts.<a class="code" href="classSimSite3D_1_1dir__point__storage.html#c6e015f5121222c68569ae80e5863fc4">revert</a>();
 <a name="l00077"></a>00077     }
 <a name="l00078"></a>00078 
 <a name="l00079"></a>00079     hbond_ideal_pt_vec::const_iterator
 <a name="l00080"></a>00080     ideal_pts_begin()<span class="keyword"> const</span>
-<a name="l00081"></a>00081 <span class="keyword">    </span>{ <span class="keywordflow">return</span> water_ideal_pts.<a class="code" href="classASCbase_1_1point__storage.html#137cc46a9b6a9eed4a2966b1c2652802">begin</a>(); }
+<a name="l00081"></a>00081 <span class="keyword">    </span>{ <span class="keywordflow">return</span> water_ideal_pts.<a class="code" href="classSimSite3D_1_1point__storage.html#137cc46a9b6a9eed4a2966b1c2652802">begin</a>(); }
 <a name="l00082"></a>00082 
 <a name="l00083"></a>00083     hbond_ideal_pt_vec::const_iterator
 <a name="l00084"></a>00084     ideal_pts_end()<span class="keyword"> const</span>
@@ -89,9 +89,9 @@
 <a name="l00088"></a>00088     hbond_fit_pt_vec water_pts;
 <a name="l00089"></a>00089     hbond_ideal_pt_vec water_ideal_pts; 
 <a name="l00090"></a>00090   
-<a name="l00091"></a><a class="code" href="classASCbase_1_1WaterPoints.html#a96d16672c2be18eb651e9594045a30d">00091</a>     <span class="keyword">static</span> <span class="keyword">const</span> uint <a class="code" href="classASCbase_1_1WaterPoints.html#a96d16672c2be18eb651e9594045a30d">num_pts</a>;  
-<a name="l00092"></a><a class="code" href="classASCbase_1_1WaterPoints.html#00f83dfce139f11e124c5258a68ffc7b">00092</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classASCbase_1_1WaterPoints.html#00f83dfce139f11e124c5258a68ffc7b">relative_pos</a>[];  
-<a name="l00093"></a><a class="code" href="classASCbase_1_1WaterPoints.html#9983412b6966d9c04890f819f3512332">00093</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classASCbase_1_1WaterPoints.html#9983412b6966d9c04890f819f3512332">relative_dir</a>[];  
+<a name="l00091"></a><a class="code" href="classSimSite3D_1_1WaterPoints.html#a96d16672c2be18eb651e9594045a30d">00091</a>     <span class="keyword">static</span> <span class="keyword">const</span> uint <a class="code" href="classSimSite3D_1_1WaterPoints.html#a96d16672c2be18eb651e9594045a30d">num_pts</a>;  
+<a name="l00092"></a><a class="code" href="classSimSite3D_1_1WaterPoints.html#00f83dfce139f11e124c5258a68ffc7b">00092</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classSimSite3D_1_1WaterPoints.html#00f83dfce139f11e124c5258a68ffc7b">relative_pos</a>[];  
+<a name="l00093"></a><a class="code" href="classSimSite3D_1_1WaterPoints.html#9983412b6966d9c04890f819f3512332">00093</a>     <span class="keyword">static</span> <span class="keyword">const</span> my_float_t <a class="code" href="classSimSite3D_1_1WaterPoints.html#9983412b6966d9c04890f819f3512332">relative_dir</a>[];  
 <a name="l00094"></a>00094   };
 <a name="l00095"></a>00095 
 <a name="l00096"></a>00096 }

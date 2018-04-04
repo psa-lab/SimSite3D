@@ -18,7 +18,7 @@ def setup_directories(base_dir, mode):
 
 def add_rand_aligns(dbase_site, align_method, aligns, centroid, 
                     num_rand_aligns):
-  from ASCbasePy import search
+  from SimSite3DPy import search
 
   # Add the Identity alignment as well
   id_align_mthd = search.IdentityAlignment()
@@ -47,7 +47,7 @@ def add_rand_aligns(dbase_site, align_method, aligns, centroid,
 
 
 def copy_search_params(params_py):
-  from ASCbasePy import search
+  from SimSite3DPy import search
   params_cc = search.parameters()
 
 #(params.num_rand_aligns > 0):
@@ -88,7 +88,7 @@ if(proj_dir == None):
   sys.exit(1)
 
 sys.path.append(proj_dir + "/python")
-from ASCbasePy import *
+from SimSite3DPy import *
 
 # Handle command line parameters
 params = parameters.search_parameters()

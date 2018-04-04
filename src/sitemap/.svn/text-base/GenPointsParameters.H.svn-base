@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -23,7 +23,7 @@
 #include <BaseParameters.H>
 #include <DiscreteSphere.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
   //! A data class (public members) used to hide the details, from the main
   //! application source, needed to get the parameters. 
@@ -64,7 +64,7 @@ namespace ASCbase{
       USE_BOUNDING_BOX_FOR_SITE_VOLUME
     }popt_flag_t;
 
-    //! To be used by the ASCbasePy search.parameters module
+    //! To be used by the SimSite3DPy search.parameters module
     GenPointsParameters();
 
     GenPointsParameters(const int argc, const char** argv);

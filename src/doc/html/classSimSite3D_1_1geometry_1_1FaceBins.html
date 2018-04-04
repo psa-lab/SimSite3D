@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
-<title>simsite3d: ASCbase::geometry::FaceBins Class Reference</title>
+<title>simsite3d: SimSite3D::geometry::FaceBins Class Reference</title>
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="tabs.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -18,94 +18,94 @@
     <li><a href="functions.html"><span>Class&nbsp;Members</span></a></li>
   </ul></div>
 <div class="nav">
-<b>ASCbase</b>::<b>geometry</b>::<a class="el" href="classASCbase_1_1geometry_1_1FaceBins.html">FaceBins</a></div>
-<h1>ASCbase::geometry::FaceBins Class Reference</h1><!-- doxytag: class="ASCbase::geometry::FaceBins" --><code>#include &lt;<a class="el" href="FaceBins_8H-source.html">FaceBins.H</a>&gt;</code>
+<b>SimSite3D</b>::<b>geometry</b>::<a class="el" href="classSimSite3D_1_1geometry_1_1FaceBins.html">FaceBins</a></div>
+<h1>SimSite3D::geometry::FaceBins Class Reference</h1><!-- doxytag: class="SimSite3D::geometry::FaceBins" --><code>#include &lt;<a class="el" href="FaceBins_8H-source.html">FaceBins.H</a>&gt;</code>
 <p>
-<a href="classASCbase_1_1geometry_1_1FaceBins-members.html">List of all members.</a><table border="0" cellpadding="0" cellspacing="0">
+<a href="classSimSite3D_1_1geometry_1_1FaceBins-members.html">List of all members.</a><table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
 <tr><td colspan="2"><br><h2>Public Types</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a3dce5cb791c141498e19582ec6082ff"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::bin_vec" ref="a3dce5cb791c141498e19582ec6082ff" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a3dce5cb791c141498e19582ec6082ff"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::bin_vec" ref="a3dce5cb791c141498e19582ec6082ff" args="" -->
 typedef std::vector&lt; std::vector&lt;<br>
- <a class="el" href="classASCbase_1_1geometry_1_1FaceAttrib.html#842f81a96ce61b0118b03ee349c53bb8">FaceAttrib::vci</a> &gt; &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>bin_vec</b></td></tr>
+ <a class="el" href="classSimSite3D_1_1geometry_1_1FaceAttrib.html#842f81a96ce61b0118b03ee349c53bb8">FaceAttrib::vci</a> &gt; &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>bin_vec</b></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b18d45138a3d245ded25a784d1b08024"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::bin_vi" ref="b18d45138a3d245ded25a784d1b08024" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b18d45138a3d245ded25a784d1b08024"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::bin_vi" ref="b18d45138a3d245ded25a784d1b08024" args="" -->
 typedef bin_vec::iterator&nbsp;</td><td class="memItemRight" valign="bottom"><b>bin_vi</b></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="dce15524d5ca553395257c9fbc9bfd8a"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::bin_vci" ref="dce15524d5ca553395257c9fbc9bfd8a" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="dce15524d5ca553395257c9fbc9bfd8a"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::bin_vci" ref="dce15524d5ca553395257c9fbc9bfd8a" args="" -->
 typedef bin_vec::const_iterator&nbsp;</td><td class="memItemRight" valign="bottom"><b>bin_vci</b></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="58e128fd98431ca4cb237fd525fdaa60"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::bin2vert_mmap" ref="58e128fd98431ca4cb237fd525fdaa60" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="58e128fd98431ca4cb237fd525fdaa60"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::bin2vert_mmap" ref="58e128fd98431ca4cb237fd525fdaa60" args="" -->
 typedef std::multimap&lt; bin_vci,<br>
  const my_float_t * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>bin2vert_mmap</b></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f1db25ac06e59f0cb4b24474a2b9d0c3"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::bin2vert_mmci" ref="f1db25ac06e59f0cb4b24474a2b9d0c3" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f1db25ac06e59f0cb4b24474a2b9d0c3"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::bin2vert_mmci" ref="f1db25ac06e59f0cb4b24474a2b9d0c3" args="" -->
 typedef bin2vert_mmap::const_iterator&nbsp;</td><td class="memItemRight" valign="bottom"><b>bin2vert_mmci</b></td></tr>
 
 <tr><td colspan="2"><br><h2>Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1geometry_1_1FaceBins.html#b059699dc81548d3ee80cb8d194a4445">FaceBins</a> ()</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1geometry_1_1FaceBins.html#b059699dc81548d3ee80cb8d194a4445">FaceBins</a> ()</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4c2d64589bee14f2d5e6f8bf95c10ca4"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::FaceBins" ref="4c2d64589bee14f2d5e6f8bf95c10ca4" args="(VertAttrib::vci verts_begin, VertAttrib::vci verts_end, FaceAttrib::vci faces_begin, FaceAttrib::vci faces_end, const my_float_t bin_width, const my_float_t max_dist)" -->
-&nbsp;</td><td class="memItemRight" valign="bottom"><b>FaceBins</b> (<a class="el" href="classASCbase_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">VertAttrib::vci</a> verts_begin, <a class="el" href="classASCbase_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">VertAttrib::vci</a> verts_end, <a class="el" href="classASCbase_1_1geometry_1_1FaceAttrib.html#842f81a96ce61b0118b03ee349c53bb8">FaceAttrib::vci</a> faces_begin, <a class="el" href="classASCbase_1_1geometry_1_1FaceAttrib.html#842f81a96ce61b0118b03ee349c53bb8">FaceAttrib::vci</a> faces_end, const my_float_t bin_width, const my_float_t max_dist)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4c2d64589bee14f2d5e6f8bf95c10ca4"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::FaceBins" ref="4c2d64589bee14f2d5e6f8bf95c10ca4" args="(VertAttrib::vci verts_begin, VertAttrib::vci verts_end, FaceAttrib::vci faces_begin, FaceAttrib::vci faces_end, const my_float_t bin_width, const my_float_t max_dist)" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>FaceBins</b> (<a class="el" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">VertAttrib::vci</a> verts_begin, <a class="el" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">VertAttrib::vci</a> verts_end, <a class="el" href="classSimSite3D_1_1geometry_1_1FaceAttrib.html#842f81a96ce61b0118b03ee349c53bb8">FaceAttrib::vci</a> faces_begin, <a class="el" href="classSimSite3D_1_1geometry_1_1FaceAttrib.html#842f81a96ce61b0118b03ee349c53bb8">FaceAttrib::vci</a> faces_end, const my_float_t bin_width, const my_float_t max_dist)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d19badcdb6aa99d802205df2449c3ee7"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::setup_grid" ref="d19badcdb6aa99d802205df2449c3ee7" args="(VertAttrib::vci verts_begin, VertAttrib::vci verts_end, FaceAttrib::vci faces_begin, FaceAttrib::vci faces_end, const my_float_t bin_width, const my_float_t max_dist)" -->
-void&nbsp;</td><td class="memItemRight" valign="bottom"><b>setup_grid</b> (<a class="el" href="classASCbase_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">VertAttrib::vci</a> verts_begin, <a class="el" href="classASCbase_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">VertAttrib::vci</a> verts_end, <a class="el" href="classASCbase_1_1geometry_1_1FaceAttrib.html#842f81a96ce61b0118b03ee349c53bb8">FaceAttrib::vci</a> faces_begin, <a class="el" href="classASCbase_1_1geometry_1_1FaceAttrib.html#842f81a96ce61b0118b03ee349c53bb8">FaceAttrib::vci</a> faces_end, const my_float_t bin_width, const my_float_t max_dist)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d19badcdb6aa99d802205df2449c3ee7"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::setup_grid" ref="d19badcdb6aa99d802205df2449c3ee7" args="(VertAttrib::vci verts_begin, VertAttrib::vci verts_end, FaceAttrib::vci faces_begin, FaceAttrib::vci faces_end, const my_float_t bin_width, const my_float_t max_dist)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>setup_grid</b> (<a class="el" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">VertAttrib::vci</a> verts_begin, <a class="el" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">VertAttrib::vci</a> verts_end, <a class="el" href="classSimSite3D_1_1geometry_1_1FaceAttrib.html#842f81a96ce61b0118b03ee349c53bb8">FaceAttrib::vci</a> faces_begin, <a class="el" href="classSimSite3D_1_1geometry_1_1FaceAttrib.html#842f81a96ce61b0118b03ee349c53bb8">FaceAttrib::vci</a> faces_end, const my_float_t bin_width, const my_float_t max_dist)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="3363105babb3c5ac2014cf56c86c2f37"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::get_min_max_coords" ref="3363105babb3c5ac2014cf56c86c2f37" args="(VertAttrib::vci verts_begin, VertAttrib::vci verts_end, my_float_t *min_pos, my_float_t *max_pos)" -->
-void&nbsp;</td><td class="memItemRight" valign="bottom"><b>get_min_max_coords</b> (<a class="el" href="classASCbase_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">VertAttrib::vci</a> verts_begin, <a class="el" href="classASCbase_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">VertAttrib::vci</a> verts_end, my_float_t *min_pos, my_float_t *max_pos)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="3363105babb3c5ac2014cf56c86c2f37"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::get_min_max_coords" ref="3363105babb3c5ac2014cf56c86c2f37" args="(VertAttrib::vci verts_begin, VertAttrib::vci verts_end, my_float_t *min_pos, my_float_t *max_pos)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>get_min_max_coords</b> (<a class="el" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">VertAttrib::vci</a> verts_begin, <a class="el" href="classSimSite3D_1_1geometry_1_1VertAttrib.html#1e901e3461cadbcb3783f47d9b9cb3fb">VertAttrib::vci</a> verts_end, my_float_t *min_pos, my_float_t *max_pos)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d00b418f2769fad3b4f2411283818bb0"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::determine_space" ref="d00b418f2769fad3b4f2411283818bb0" args="(const my_float_t *min_pos, const my_float_t *max_pos, my_float_t *min_corner, my_float_t *max_corner, int *num_bins)" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d00b418f2769fad3b4f2411283818bb0"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::determine_space" ref="d00b418f2769fad3b4f2411283818bb0" args="(const my_float_t *min_pos, const my_float_t *max_pos, my_float_t *min_corner, my_float_t *max_corner, int *num_bins)" -->
 void&nbsp;</td><td class="memItemRight" valign="bottom"><b>determine_space</b> (const my_float_t *min_pos, const my_float_t *max_pos, my_float_t *min_corner, my_float_t *max_corner, int *num_bins)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="af9ff3db3104f3f0c7a8fa05b32f188c"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::populate_grid" ref="af9ff3db3104f3f0c7a8fa05b32f188c" args="(FaceAttrib::vci faces_begin, FaceAttrib::vci faces_end, const my_float_t max_dist, bin_vec *bins)" -->
-void&nbsp;</td><td class="memItemRight" valign="bottom"><b>populate_grid</b> (<a class="el" href="classASCbase_1_1geometry_1_1FaceAttrib.html#842f81a96ce61b0118b03ee349c53bb8">FaceAttrib::vci</a> faces_begin, <a class="el" href="classASCbase_1_1geometry_1_1FaceAttrib.html#842f81a96ce61b0118b03ee349c53bb8">FaceAttrib::vci</a> faces_end, const my_float_t max_dist, bin_vec *bins)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="af9ff3db3104f3f0c7a8fa05b32f188c"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::populate_grid" ref="af9ff3db3104f3f0c7a8fa05b32f188c" args="(FaceAttrib::vci faces_begin, FaceAttrib::vci faces_end, const my_float_t max_dist, bin_vec *bins)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>populate_grid</b> (<a class="el" href="classSimSite3D_1_1geometry_1_1FaceAttrib.html#842f81a96ce61b0118b03ee349c53bb8">FaceAttrib::vci</a> faces_begin, <a class="el" href="classSimSite3D_1_1geometry_1_1FaceAttrib.html#842f81a96ce61b0118b03ee349c53bb8">FaceAttrib::vci</a> faces_end, const my_float_t max_dist, bin_vec *bins)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="334984c474fa134ceb52b605585784f9"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::get_bin" ref="334984c474fa134ceb52b605585784f9" args="(const my_float_t *pt) const " -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="334984c474fa134ceb52b605585784f9"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::get_bin" ref="334984c474fa134ceb52b605585784f9" args="(const my_float_t *pt) const " -->
 bin_vci&nbsp;</td><td class="memItemRight" valign="bottom"><b>get_bin</b> (const my_float_t *pt) const </td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d5ea38b17d0b71c1b782f2c1491622d2"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::get_bins" ref="d5ea38b17d0b71c1b782f2c1491622d2" args="(const my_float_t *vert_begin, const uint num_vert, bin2vert_mmap *pts_in_bins) const " -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d5ea38b17d0b71c1b782f2c1491622d2"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::get_bins" ref="d5ea38b17d0b71c1b782f2c1491622d2" args="(const my_float_t *vert_begin, const uint num_vert, bin2vert_mmap *pts_in_bins) const " -->
 void&nbsp;</td><td class="memItemRight" valign="bottom"><b>get_bins</b> (const my_float_t *vert_begin, const uint num_vert, bin2vert_mmap *pts_in_bins) const </td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="03cd049c988e3cecd9d0fa8a9a035043"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::bins_begin" ref="03cd049c988e3cecd9d0fa8a9a035043" args="() const " -->
-bin_vci&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1geometry_1_1FaceBins.html#03cd049c988e3cecd9d0fa8a9a035043">bins_begin</a> () const </td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="03cd049c988e3cecd9d0fa8a9a035043"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::bins_begin" ref="03cd049c988e3cecd9d0fa8a9a035043" args="() const " -->
+bin_vci&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1geometry_1_1FaceBins.html#03cd049c988e3cecd9d0fa8a9a035043">bins_begin</a> () const </td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constant iterator to first bin in the vector. <br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="1e5f80ab1a6e5cf04415c80b8c8e6cc5"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::bins_end" ref="1e5f80ab1a6e5cf04415c80b8c8e6cc5" args="() const " -->
-bin_vci&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1geometry_1_1FaceBins.html#1e5f80ab1a6e5cf04415c80b8c8e6cc5">bins_end</a> () const </td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="1e5f80ab1a6e5cf04415c80b8c8e6cc5"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::bins_end" ref="1e5f80ab1a6e5cf04415c80b8c8e6cc5" args="() const " -->
+bin_vci&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1geometry_1_1FaceBins.html#1e5f80ab1a6e5cf04415c80b8c8e6cc5">bins_end</a> () const </td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constant iterator to one past the last bin in the vector. <br></td></tr>
 <tr><td colspan="2"><br><h2>Private Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f81405e328ea773342dc75e8a343ee6b"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::init" ref="f81405e328ea773342dc75e8a343ee6b" args="()" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f81405e328ea773342dc75e8a343ee6b"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::init" ref="f81405e328ea773342dc75e8a343ee6b" args="()" -->
 void&nbsp;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d2ef0a7082f69f208e9fc3a7f28dd4c3"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::subdivide_bins" ref="d2ef0a7082f69f208e9fc3a7f28dd4c3" args="(const bin_vec &amp;bins_in, bin_vec *bins_out, const my_float_t max_dist, const size_t dim)" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d2ef0a7082f69f208e9fc3a7f28dd4c3"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::subdivide_bins" ref="d2ef0a7082f69f208e9fc3a7f28dd4c3" args="(const bin_vec &amp;bins_in, bin_vec *bins_out, const my_float_t max_dist, const size_t dim)" -->
 void&nbsp;</td><td class="memItemRight" valign="bottom"><b>subdivide_bins</b> (const bin_vec &amp;bins_in, bin_vec *bins_out, const my_float_t max_dist, const size_t dim)</td></tr>
 
 <tr><td colspan="2"><br><h2>Private Attributes</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="0481f2a87485d01a65aab4f8b687efca"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::A_max_dist" ref="0481f2a87485d01a65aab4f8b687efca" args="" -->
-my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1geometry_1_1FaceBins.html#0481f2a87485d01a65aab4f8b687efca">A_max_dist</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="0481f2a87485d01a65aab4f8b687efca"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::A_max_dist" ref="0481f2a87485d01a65aab4f8b687efca" args="" -->
+my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1geometry_1_1FaceBins.html#0481f2a87485d01a65aab4f8b687efca">A_max_dist</a></td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Maximum distance for grid to be valid. <br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c3aa84da4207c9573aaef792e2988134"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::A_bin_width" ref="c3aa84da4207c9573aaef792e2988134" args="" -->
-my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1geometry_1_1FaceBins.html#c3aa84da4207c9573aaef792e2988134">A_bin_width</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c3aa84da4207c9573aaef792e2988134"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::A_bin_width" ref="c3aa84da4207c9573aaef792e2988134" args="" -->
+my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1geometry_1_1FaceBins.html#c3aa84da4207c9573aaef792e2988134">A_bin_width</a></td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Side length of a bin. <br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4e1b856ab3efe9b683ed2a614be70271"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::A_bin_width_inv" ref="4e1b856ab3efe9b683ed2a614be70271" args="" -->
-my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASCbase_1_1geometry_1_1FaceBins.html#4e1b856ab3efe9b683ed2a614be70271">A_bin_width_inv</a></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4e1b856ab3efe9b683ed2a614be70271"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::A_bin_width_inv" ref="4e1b856ab3efe9b683ed2a614be70271" args="" -->
+my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimSite3D_1_1geometry_1_1FaceBins.html#4e1b856ab3efe9b683ed2a614be70271">A_bin_width_inv</a></td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">multiplicative inverse (1 over) side length <br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="6858beab5909ad54778a973fa8079ad4"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::A_upper_corner" ref="6858beab5909ad54778a973fa8079ad4" args="[3]" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="6858beab5909ad54778a973fa8079ad4"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::A_upper_corner" ref="6858beab5909ad54778a973fa8079ad4" args="[3]" -->
 my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>A_upper_corner</b> [3]</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="5f44b49a5e0e0429df1d46ee850f40fc"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::A_lower_corner" ref="5f44b49a5e0e0429df1d46ee850f40fc" args="[3]" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="5f44b49a5e0e0429df1d46ee850f40fc"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::A_lower_corner" ref="5f44b49a5e0e0429df1d46ee850f40fc" args="[3]" -->
 my_float_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>A_lower_corner</b> [3]</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="71718aed789247b496f94743d98be593"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::A_num_bins" ref="71718aed789247b496f94743d98be593" args="[3]" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="71718aed789247b496f94743d98be593"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::A_num_bins" ref="71718aed789247b496f94743d98be593" args="[3]" -->
 int&nbsp;</td><td class="memItemRight" valign="bottom"><b>A_num_bins</b> [3]</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4155b182937c0d808db7b4719be36c29"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::A_bins" ref="4155b182937c0d808db7b4719be36c29" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4155b182937c0d808db7b4719be36c29"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::A_bins" ref="4155b182937c0d808db7b4719be36c29" args="" -->
 bin_vec&nbsp;</td><td class="memItemRight" valign="bottom"><b>A_bins</b></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="8cd2197a8b71449917ef608aa8bedd11"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::A_bins_are_setup" ref="8cd2197a8b71449917ef608aa8bedd11" args="" -->
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="8cd2197a8b71449917ef608aa8bedd11"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::A_bins_are_setup" ref="8cd2197a8b71449917ef608aa8bedd11" args="" -->
 bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>A_bins_are_setup</b></td></tr>
 
 </table>
@@ -113,12 +113,12 @@ bool&nbsp;</td><td class="memItemRight" valign="bottom"><b>A_bins_are_setup</b><
 Make this a simple class to get it workiing -- then template it for generic associated datatype(s) -- keep all functions here for now because if we use templates gcc requires them in header anyhow 
 <p>
 <hr><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" name="b059699dc81548d3ee80cb8d194a4445"></a><!-- doxytag: member="ASCbase::geometry::FaceBins::FaceBins" ref="b059699dc81548d3ee80cb8d194a4445" args="()" -->
+<a class="anchor" name="b059699dc81548d3ee80cb8d194a4445"></a><!-- doxytag: member="SimSite3D::geometry::FaceBins::FaceBins" ref="b059699dc81548d3ee80cb8d194a4445" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ASCbase::geometry::FaceBins::FaceBins           </td>
+          <td class="memname">SimSite3D::geometry::FaceBins::FaceBins           </td>
           <td>(</td>
           <td class="paramname">          </td>
           <td>&nbsp;)&nbsp;</td>

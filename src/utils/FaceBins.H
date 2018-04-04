@@ -3,7 +3,7 @@
 
 #include <FaceAttrib.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 namespace geometry{
 
 //! Make this a simple class to get it workiing -- then template it for generic
@@ -208,5 +208,5 @@ private:
   //std::vector<my_float_t *> A_bins;
 };
 } // end namespace geometry
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

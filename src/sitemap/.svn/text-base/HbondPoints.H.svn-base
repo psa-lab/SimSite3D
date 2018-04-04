@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -28,7 +28,7 @@
 #include <hbond_points.H>
 #include <WaterPoints.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
   typedef struct {
     std::vector<my_float_t> alphas;
@@ -63,7 +63,7 @@ namespace ASCbase{
      * (keyed by the PDB residue name/type).
      *
      * @param density How coarse or finely to lay down template points
-     * @param param_path Path to the ASCbase parameters directory
+     * @param param_path Path to the SimSite3D parameters directory
      * @param vol_in Reference to the template bounding volume
      */
     HbondPoints(const GenPointsParameters::hbond_method_t hbond_density, 
@@ -285,7 +285,7 @@ namespace ASCbase{
     //! Add template points for "included" metal atoms that have the potential
     //! to interact with molecules in the sitemap volume
     /*! This method is similar to that of SLIDE with a couple of exceptions:
-     * 1) To stay consistent with the ASCbase handling of points, no template
+     * 1) To stay consistent with the SimSite3D handling of points, no template
      *    points can be closer than 2.5 (A) to the center of a metal atom 
      *    (except for the template points arising from a given metal atom).
      * 2) The distribution of points on the sphere is somewhat different and
@@ -342,7 +342,7 @@ namespace ASCbase{
     //! Read in the ideal and favored hbond angles for the binding residues
     /*!
      * @param hbond_density Sampling density for hbond angles
-     * @param param_path Path to the ASCbase parameters directory
+     * @param param_path Path to the SimSite3D parameters directory
      * @return True if both files were found and had no parsing errors, 
      *         otherwise false
      */

@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -32,7 +32,7 @@
  * S.O2 was here in first place
  *
  * Revision 1.2  2007/10/11 16:03:04  vanvoor4
- * Added ASCbase namespace and changed AM to AMIDE
+ * Added SimSite3D namespace and changed AM to AMIDE
  *
  * Revision 1.1  2007/08/21 15:38:14  vanvoor4
  * Initial checkin
@@ -47,7 +47,7 @@
 
 #include <AtomTypes.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
   //!<Sybil bond types
   typedef enum mol2_bond_enum{

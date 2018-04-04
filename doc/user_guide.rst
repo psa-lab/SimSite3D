@@ -154,18 +154,18 @@ We will go through line by line to repeat what is shown.
   # Average distance metric error tolerance:        0.3
   # Average least squares error tolerance:          0.3
   # Highly hydrophobic query pocket:                Yes
-  # ASCbase timing statistics:
+  # SimSite3D timing statistics:
   #   Wall clock time:                              11.64 sec.
   #   CPU time:                                     11.63 sec.
   #   User time:                                    11.58 sec.
   #   Kernel time:                                  0.05 sec.
   # Scoring function terms were scaled:             No
   # Max dist between corresponding surface points:  1.5
-  # ASCbase alignments scores are not normalized
+  # SimSite3D alignments scores are not normalized
   #
   # Fields:
   # 1 ) Name of ligand fragment corresponding to the score record (line)
-  # 2 ) Raw ASCbase alignment score of target to query
+  # 2 ) Raw SimSite3D alignment score of target to query
   # 3 ) Rotation matrix to align target to query
   # 4 ) Translation vector to move target to query
   # 5 ) Match print of the query's sitemap points satisfied by sitemap points

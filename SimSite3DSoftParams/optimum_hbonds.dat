@@ -38,7 +38,7 @@ ARG,N,H,2,240,0,
 
 HIS,N,U,1,120,0,
 
-# NOTE: ASCbase is hard-coded to consider the placement of template points
+# NOTE: SimSite3D is hard-coded to consider the placement of template points
 # for ARG N? to be the same as that for TRP N?
 TRP,N,H,1,120,0,
 

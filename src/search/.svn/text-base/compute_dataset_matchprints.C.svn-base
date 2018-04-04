@@ -32,7 +32,7 @@
 #include <NoTier1Score.H>
 #include <Search.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 class compute_dataset_matchprints : public Search{
 public:

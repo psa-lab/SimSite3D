@@ -32,7 +32,7 @@
 #include <HbondSurfacesScore.H>
 #include <ICPSites.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 template < class tier1_SF, class tier2_SF, typename align_T >
 class ScoreWithWeightedICP : 

@@ -1,6 +1,6 @@
 #include <SurfDepsJoints.H>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 SurfDepsJoints::SurfDepsJoints(prot_joint_dep &joints, PDBStructure *prot,
                                geometry::TransformableTrimesh *surf,

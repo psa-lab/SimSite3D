@@ -1,132 +1,132 @@
-\section{ASCbase::Model\-Sitemap Class Reference}
-\label{classASCbase_1_1ModelSitemap}\index{ASCbase::ModelSitemap@{ASCbase::ModelSitemap}}
+\section{SimSite3D::Model\-Sitemap Class Reference}
+\label{classSimSite3D_1_1ModelSitemap}\index{SimSite3D::ModelSitemap@{SimSite3D::ModelSitemap}}
 {\tt \#include $<$Model\-Sitemap.H$>$}
 
-Inheritance diagram for ASCbase::Model\-Sitemap::\begin{figure}[H]
+Inheritance diagram for SimSite3D::Model\-Sitemap::\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3cm]{classASCbase_1_1ModelSitemap}
+\includegraphics[height=3cm]{classSimSite3D_1_1ModelSitemap}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{CompactItemize}
 \item 
-\textbf{Model\-Sitemap} (const std::string path, const std::string struct\_\-id, const \bf{Base\-Parameters} \&args, const my\_\-float\_\-t max\_\-corr\_\-surf\_\-pt\_\-dist, const bool normalize=true, const bool load\_\-hbond\_\-surfaces=false, const bool hydrophobic\_\-query=false)\label{classASCbase_1_1ModelSitemap_867ff44d757f97682de8c12b548058f4}
+\textbf{Model\-Sitemap} (const std::string path, const std::string struct\_\-id, const \bf{Base\-Parameters} \&args, const my\_\-float\_\-t max\_\-corr\_\-surf\_\-pt\_\-dist, const bool normalize=true, const bool load\_\-hbond\_\-surfaces=false, const bool hydrophobic\_\-query=false)\label{classSimSite3D_1_1ModelSitemap_867ff44d757f97682de8c12b548058f4}
 
 \item 
 virtual bool \bf{get\_\-bucket\_\-iters} (const uint c, const my\_\-float\_\-t perimeter, const my\_\-float\_\-t max\_\-len, const my\_\-float\_\-t min\_\-len, bucket\_\-vci $\ast$bucket\_\-begin, bucket\_\-vci $\ast$bucket\_\-end)
 \begin{CompactList}\small\item\em Given c,p,l,s get the iterators for the corresponding bucket. \item\end{CompactList}\item 
-bool \textbf{report\_\-table\_\-stats} (std::ostream \&out)\label{classASCbase_1_1ModelSitemap_c9b820c6a0aac00bed61c1767a18bd40}
+bool \textbf{report\_\-table\_\-stats} (std::ostream \&out)\label{classSimSite3D_1_1ModelSitemap_c9b820c6a0aac00bed61c1767a18bd40}
 
 \item 
-void \textbf{init\_\-positions\_\-octrees} (const my\_\-float\_\-t max\_\-dist, const my\_\-float\_\-t min\_\-side\_\-len, const uint max\_\-numel)\label{classASCbase_1_1ModelSitemap_c311885477fa9cb1e5ce25b1453cbde7}
+void \textbf{init\_\-positions\_\-octrees} (const my\_\-float\_\-t max\_\-dist, const my\_\-float\_\-t min\_\-side\_\-len, const uint max\_\-numel)\label{classSimSite3D_1_1ModelSitemap_c311885477fa9cb1e5ce25b1453cbde7}
 
 \item 
-void \textbf{transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T, const bool transform\_\-mesh=true, const bool transform\_\-hbond\_\-surfaces=true)\label{classASCbase_1_1ModelSitemap_2dccb51b62022b4e1d71ec357560f63b}
+void \textbf{transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T, const bool transform\_\-mesh=true, const bool transform\_\-hbond\_\-surfaces=true)\label{classSimSite3D_1_1ModelSitemap_2dccb51b62022b4e1d71ec357560f63b}
 
 \item 
-void \textbf{inverse\_\-transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T, const bool transform\_\-mesh=true, const bool transform\_\-hbond\_\-surfaces=true)\label{classASCbase_1_1ModelSitemap_962f9d9c2cd80c7266aa6adda57d0717}
+void \textbf{inverse\_\-transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T, const bool transform\_\-mesh=true, const bool transform\_\-hbond\_\-surfaces=true)\label{classSimSite3D_1_1ModelSitemap_962f9d9c2cd80c7266aa6adda57d0717}
 
 \item 
-void \textbf{revert} (const bool transform\_\-mesh=true, const bool transform\_\-hbond\_\-surfaces=true)\label{classASCbase_1_1ModelSitemap_ee7e2c3271b9e278ce926db772cb71ad}
+void \textbf{revert} (const bool transform\_\-mesh=true, const bool transform\_\-hbond\_\-surfaces=true)\label{classSimSite3D_1_1ModelSitemap_ee7e2c3271b9e278ce926db772cb71ad}
 
 \item 
 void \bf{get\_\-current\_\-inverse\_\-3D\_\-transform} (Quaternion $\ast$Q, my\_\-float\_\-t $\ast$T) const 
 \item 
-const Model\-Hbond\-Surfaces $\ast$ \textbf{model\_\-hbond\_\-surfaces} () const \label{classASCbase_1_1ModelSitemap_c98f29ad6b6476713cbafbbc54fc6b6f}
+const Model\-Hbond\-Surfaces $\ast$ \textbf{model\_\-hbond\_\-surfaces} () const \label{classSimSite3D_1_1ModelSitemap_c98f29ad6b6476713cbafbbc54fc6b6f}
 
 \item 
-const geometry::Transformable\-Trimesh \& \bf{binding\_\-site\_\-mesh\_\-handle} () const \label{classASCbase_1_1ModelSitemap_e7a43b0f03d4dd823c0ede8d4cc29d46}
+const geometry::Transformable\-Trimesh \& \bf{binding\_\-site\_\-mesh\_\-handle} () const \label{classSimSite3D_1_1ModelSitemap_e7a43b0f03d4dd823c0ede8d4cc29d46}
 
 \begin{CompactList}\small\item\em A constant reference to the binding site mesh surface. \item\end{CompactList}\item 
 geometry::Transformable\-Trimesh \& \bf{mutable\_\-binding\_\-site\_\-mesh\_\-handle} ()
 \begin{CompactList}\small\item\em A reference to the binding site mesh surface (not constant). \item\end{CompactList}\item 
-Model\-Hbond\-Surfaces $\ast$ \textbf{mutable\_\-model\_\-hbond\_\-surfaces} ()\label{classASCbase_1_1ModelSitemap_60d3b8ec568b428b847592c596d24d8f}
+Model\-Hbond\-Surfaces $\ast$ \textbf{mutable\_\-model\_\-hbond\_\-surfaces} ()\label{classSimSite3D_1_1ModelSitemap_60d3b8ec568b428b847592c596d24d8f}
 
 \item 
-bool \textbf{write\_\-msms\_\-caps} (std::string \&ofname\_\-pref)\label{classASCbase_1_1ModelSitemap_8d878cece922995a4ca9309635814c75}
+bool \textbf{write\_\-msms\_\-caps} (std::string \&ofname\_\-pref)\label{classSimSite3D_1_1ModelSitemap_8d878cece922995a4ca9309635814c75}
 
 \item 
 void \bf{compute\_\-max\_\-feature\_\-vals} (std::vector$<$ my\_\-float\_\-t $>$ $\ast$max\_\-feat\_\-vals, const my\_\-float\_\-t max\_\-corr\_\-surf\_\-pt\_\-dist) const 
 \item 
-const std::vector$<$ my\_\-float\_\-t $>$ \& \bf{get\_\-max\_\-feature\_\-vals} () const \label{classASCbase_1_1ModelSitemap_cf9b0b90ec3550aa567f535cde6fe5e5}
+const std::vector$<$ my\_\-float\_\-t $>$ \& \bf{get\_\-max\_\-feature\_\-vals} () const \label{classSimSite3D_1_1ModelSitemap_cf9b0b90ec3550aa567f535cde6fe5e5}
 
 \begin{CompactList}\small\item\em Get a const ref to the vector holding the max feature values. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Static Public Attributes}
 \begin{CompactItemize}
 \item 
-static const int \bf{pmax} = static\_\-cast$<$int$>$(ceil(BUCKETS\_\-PER\_\-A\_\-PERIMETER $\ast$ (MAX\_\-PERIMETER - MIN\_\-PERIMETER)))\label{classASCbase_1_1ModelSitemap_a5634a6027959b45a3098bee1283166f}
+static const int \bf{pmax} = static\_\-cast$<$int$>$(ceil(BUCKETS\_\-PER\_\-A\_\-PERIMETER $\ast$ (MAX\_\-PERIMETER - MIN\_\-PERIMETER)))\label{classSimSite3D_1_1ModelSitemap_a5634a6027959b45a3098bee1283166f}
 
 \begin{CompactList}\small\item\em Maximum number of buckets for the perimeter. \item\end{CompactList}\item 
-static const int \bf{lmax} = static\_\-cast$<$int$>$(ceil(BUCKETS\_\-PER\_\-A\_\-LENGTH $\ast$ (MAX\_\-LONGEST\_\-SIDE - MIN\_\-LONGEST\_\-SIDE)))\label{classASCbase_1_1ModelSitemap_53d6aa7980a77592a0c27cd6fea4965f}
+static const int \bf{lmax} = static\_\-cast$<$int$>$(ceil(BUCKETS\_\-PER\_\-A\_\-LENGTH $\ast$ (MAX\_\-LONGEST\_\-SIDE - MIN\_\-LONGEST\_\-SIDE)))\label{classSimSite3D_1_1ModelSitemap_53d6aa7980a77592a0c27cd6fea4965f}
 
 \begin{CompactList}\small\item\em Maximum number of buckets for the longest side. \item\end{CompactList}\item 
-static const int \bf{smax} = static\_\-cast$<$int$>$(ceil(BUCKETS\_\-PER\_\-A\_\-LENGTH $\ast$ (MAX\_\-SHORTEST\_\-SIDE - MIN\_\-SHORTEST\_\-SIDE)))\label{classASCbase_1_1ModelSitemap_410c2a8f22da9fddc77937af1a2cb736}
+static const int \bf{smax} = static\_\-cast$<$int$>$(ceil(BUCKETS\_\-PER\_\-A\_\-LENGTH $\ast$ (MAX\_\-SHORTEST\_\-SIDE - MIN\_\-SHORTEST\_\-SIDE)))\label{classSimSite3D_1_1ModelSitemap_410c2a8f22da9fddc77937af1a2cb736}
 
 \begin{CompactList}\small\item\em Maximum number of buckets for the shortest side. \item\end{CompactList}\item 
-static const my\_\-float\_\-t \textbf{MIN\_\-PERIMETER} = 9.0\label{classASCbase_1_1ModelSitemap_b14c04394ceb79fd8365f3ce0162ccce}
+static const my\_\-float\_\-t \textbf{MIN\_\-PERIMETER} = 9.0\label{classSimSite3D_1_1ModelSitemap_b14c04394ceb79fd8365f3ce0162ccce}
 
 \item 
-static const my\_\-float\_\-t \textbf{MAX\_\-PERIMETER} = 13.0\label{classASCbase_1_1ModelSitemap_3fe698b97d315dfea97646abc9d24868}
+static const my\_\-float\_\-t \textbf{MAX\_\-PERIMETER} = 13.0\label{classSimSite3D_1_1ModelSitemap_3fe698b97d315dfea97646abc9d24868}
 
 \item 
-static const my\_\-float\_\-t \textbf{MIN\_\-LONGEST\_\-SIDE} = 3.5\label{classASCbase_1_1ModelSitemap_9362b8b3cc240e2b02f1ea446d3c1dbf}
+static const my\_\-float\_\-t \textbf{MIN\_\-LONGEST\_\-SIDE} = 3.5\label{classSimSite3D_1_1ModelSitemap_9362b8b3cc240e2b02f1ea446d3c1dbf}
 
 \item 
-static const my\_\-float\_\-t \textbf{MAX\_\-LONGEST\_\-SIDE} = 4.5\label{classASCbase_1_1ModelSitemap_92930656d9837c10aa47accb1540789d}
+static const my\_\-float\_\-t \textbf{MAX\_\-LONGEST\_\-SIDE} = 4.5\label{classSimSite3D_1_1ModelSitemap_92930656d9837c10aa47accb1540789d}
 
 \item 
-static const my\_\-float\_\-t \textbf{MIN\_\-SHORTEST\_\-SIDE} = 1.8\label{classASCbase_1_1ModelSitemap_7bbfb51cecd90e185e908181a32e8434}
+static const my\_\-float\_\-t \textbf{MIN\_\-SHORTEST\_\-SIDE} = 1.8\label{classSimSite3D_1_1ModelSitemap_7bbfb51cecd90e185e908181a32e8434}
 
 \item 
-static const my\_\-float\_\-t \textbf{MAX\_\-SHORTEST\_\-SIDE} = 3.5\label{classASCbase_1_1ModelSitemap_668d885229fbb9e4f5c551bdc58e6138}
+static const my\_\-float\_\-t \textbf{MAX\_\-SHORTEST\_\-SIDE} = 3.5\label{classSimSite3D_1_1ModelSitemap_668d885229fbb9e4f5c551bdc58e6138}
 
 \item 
-static const uint \textbf{BUCKETS\_\-PER\_\-A\_\-PERIMETER} = 2\label{classASCbase_1_1ModelSitemap_07f175688297c1a86d5e63f9498bf170}
+static const uint \textbf{BUCKETS\_\-PER\_\-A\_\-PERIMETER} = 2\label{classSimSite3D_1_1ModelSitemap_07f175688297c1a86d5e63f9498bf170}
 
 \item 
-static const uint \textbf{BUCKETS\_\-PER\_\-A\_\-LENGTH} = 4\label{classASCbase_1_1ModelSitemap_1c0326a773ef0fb7b1641888938f028b}
+static const uint \textbf{BUCKETS\_\-PER\_\-A\_\-LENGTH} = 4\label{classSimSite3D_1_1ModelSitemap_1c0326a773ef0fb7b1641888938f028b}
 
 \item 
-static const uint \textbf{NUMBER\_\-OF\_\-TYPE\_\-HASH\_\-CLASSES} = 10\label{classASCbase_1_1ModelSitemap_3904d4119e0cf9545db7500712f00e90}
+static const uint \textbf{NUMBER\_\-OF\_\-TYPE\_\-HASH\_\-CLASSES} = 10\label{classSimSite3D_1_1ModelSitemap_3904d4119e0cf9545db7500712f00e90}
 
 \item 
-static const std::string \bf{\_\-fname} = \char`\"{}Model\-Sitemap.C\char`\"{}\label{classASCbase_1_1ModelSitemap_7daed5db065d1e266a4e28ef06de4b7c}
+static const std::string \bf{\_\-fname} = \char`\"{}Model\-Sitemap.C\char`\"{}\label{classSimSite3D_1_1ModelSitemap_7daed5db065d1e266a4e28ef06de4b7c}
 
 \begin{CompactList}\small\item\em Source file name. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Private Member Functions}
 \begin{CompactItemize}
 \item 
-void \bf{clear} ()\label{classASCbase_1_1ModelSitemap_f67e8f1d3ea2c3611e8dce20551bd7b4}
+void \bf{clear} ()\label{classSimSite3D_1_1ModelSitemap_f67e8f1d3ea2c3611e8dce20551bd7b4}
 
-\begin{CompactList}\small\item\em Frees any allocated objects \& calls \doxyref{init()}{p.}{classASCbase_1_1ModelSitemap_1dcf42cb09e1769e6b5ca6a97cd91f33} afterwards. \item\end{CompactList}\item 
+\begin{CompactList}\small\item\em Frees any allocated objects \& calls \doxyref{init()}{p.}{classSimSite3D_1_1ModelSitemap_1dcf42cb09e1769e6b5ca6a97cd91f33} afterwards. \item\end{CompactList}\item 
 void \bf{init} ()
 \item 
-void \textbf{create\_\-index\_\-table} ()\label{classASCbase_1_1ModelSitemap_085049cd46d725e5cb50a36662d4b261}
+void \textbf{create\_\-index\_\-table} ()\label{classSimSite3D_1_1ModelSitemap_085049cd46d725e5cb50a36662d4b261}
 
 \item 
-void \textbf{compute\_\-combinations} (std::vector$<$ uint $>$ $\ast$arr\_\-p, int index, int length)\label{classASCbase_1_1ModelSitemap_f4420b2eeaebf9c570fdb2794a9da743}
+void \textbf{compute\_\-combinations} (std::vector$<$ uint $>$ $\ast$arr\_\-p, int index, int length)\label{classSimSite3D_1_1ModelSitemap_f4420b2eeaebf9c570fdb2794a9da743}
 
 \end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
-std::list$<$ \bf{triangle\_\-t} $>$ \textbf{triangles}\label{classASCbase_1_1ModelSitemap_d0e5aa42b68b421aaf34a12b86e17ae3}
+std::list$<$ \bf{triangle\_\-t} $>$ \textbf{triangles}\label{classSimSite3D_1_1ModelSitemap_d0e5aa42b68b421aaf34a12b86e17ae3}
 
 \item 
-index\_\-table\_\-t \textbf{index\_\-table}\label{classASCbase_1_1ModelSitemap_849c23d851fac3808d6149a8159c26d0}
+index\_\-table\_\-t \textbf{index\_\-table}\label{classSimSite3D_1_1ModelSitemap_849c23d851fac3808d6149a8159c26d0}
 
 \item 
-interact\_\-pts\_\-vci \bf{A\_\-pts\_\-begin}\label{classASCbase_1_1ModelSitemap_b6c180529920ca587be9eceb162a19b1}
+interact\_\-pts\_\-vci \bf{A\_\-pts\_\-begin}\label{classSimSite3D_1_1ModelSitemap_b6c180529920ca587be9eceb162a19b1}
 
 \begin{CompactList}\small\item\em Iterator to the first split point (orig positions). \item\end{CompactList}\item 
-Model\-Hbond\-Surfaces $\ast$ \textbf{A\_\-model\_\-hbond\_\-surfaces}\label{classASCbase_1_1ModelSitemap_48605cd2ecf6ceb6fc56e27d738abdfa}
+Model\-Hbond\-Surfaces $\ast$ \textbf{A\_\-model\_\-hbond\_\-surfaces}\label{classSimSite3D_1_1ModelSitemap_48605cd2ecf6ceb6fc56e27d738abdfa}
 
 \item 
-geometry::Transformable\-Trimesh $\ast$ \textbf{A\_\-binding\_\-site\_\-mesh}\label{classASCbase_1_1ModelSitemap_065aa316a78f8ce7f1b846e2b83c9fba}
+geometry::Transformable\-Trimesh $\ast$ \textbf{A\_\-binding\_\-site\_\-mesh}\label{classSimSite3D_1_1ModelSitemap_065aa316a78f8ce7f1b846e2b83c9fba}
 
 \item 
-std::vector$<$ my\_\-float\_\-t $>$ \textbf{A\_\-max\_\-feature\_\-vals}\label{classASCbase_1_1ModelSitemap_ef737af4095b44e2273910fd884d1e05}
+std::vector$<$ my\_\-float\_\-t $>$ \textbf{A\_\-max\_\-feature\_\-vals}\label{classSimSite3D_1_1ModelSitemap_ef737af4095b44e2273910fd884d1e05}
 
 \end{CompactItemize}
 
@@ -137,14 +137,14 @@ Create and provide an interface to the index table for the model (query) sitemap
 
 
 \subsection{Member Function Documentation}
-\index{ASCbase::ModelSitemap@{ASCbase::Model\-Sitemap}!compute_max_feature_vals@{compute\_\-max\_\-feature\_\-vals}}
-\index{compute_max_feature_vals@{compute\_\-max\_\-feature\_\-vals}!ASCbase::ModelSitemap@{ASCbase::Model\-Sitemap}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Model\-Sitemap::compute\_\-max\_\-feature\_\-vals (std::vector$<$ my\_\-float\_\-t $>$ $\ast$ {\em max\_\-feat\_\-vals}, const my\_\-float\_\-t {\em max\_\-corr\_\-surf\_\-pt\_\-dist}) const}\label{classASCbase_1_1ModelSitemap_7327ff0f1e5e36866aeed2e32dd2dabb}
+\index{SimSite3D::ModelSitemap@{SimSite3D::Model\-Sitemap}!compute_max_feature_vals@{compute\_\-max\_\-feature\_\-vals}}
+\index{compute_max_feature_vals@{compute\_\-max\_\-feature\_\-vals}!SimSite3D::ModelSitemap@{SimSite3D::Model\-Sitemap}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Model\-Sitemap::compute\_\-max\_\-feature\_\-vals (std::vector$<$ my\_\-float\_\-t $>$ $\ast$ {\em max\_\-feat\_\-vals}, const my\_\-float\_\-t {\em max\_\-corr\_\-surf\_\-pt\_\-dist}) const}\label{classSimSite3D_1_1ModelSitemap_7327ff0f1e5e36866aeed2e32dd2dabb}
 
 
-Compute the maximum value for each feature and store in the given vector \index{ASCbase::ModelSitemap@{ASCbase::Model\-Sitemap}!get_bucket_iters@{get\_\-bucket\_\-iters}}
-\index{get_bucket_iters@{get\_\-bucket\_\-iters}!ASCbase::ModelSitemap@{ASCbase::Model\-Sitemap}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Model\-Sitemap::get\_\-bucket\_\-iters (const uint {\em c}, const my\_\-float\_\-t {\em perimeter}, const my\_\-float\_\-t {\em max\_\-len}, const my\_\-float\_\-t {\em min\_\-len}, bucket\_\-vci $\ast$ {\em bucket\_\-begin}, bucket\_\-vci $\ast$ {\em bucket\_\-end})\hspace{0.3cm}{\tt  [virtual]}}\label{classASCbase_1_1ModelSitemap_c80869d4e5b99f09d776f48c157fd52c}
+Compute the maximum value for each feature and store in the given vector \index{SimSite3D::ModelSitemap@{SimSite3D::Model\-Sitemap}!get_bucket_iters@{get\_\-bucket\_\-iters}}
+\index{get_bucket_iters@{get\_\-bucket\_\-iters}!SimSite3D::ModelSitemap@{SimSite3D::Model\-Sitemap}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Model\-Sitemap::get\_\-bucket\_\-iters (const uint {\em c}, const my\_\-float\_\-t {\em perimeter}, const my\_\-float\_\-t {\em max\_\-len}, const my\_\-float\_\-t {\em min\_\-len}, bucket\_\-vci $\ast$ {\em bucket\_\-begin}, bucket\_\-vci $\ast$ {\em bucket\_\-end})\hspace{0.3cm}{\tt  [virtual]}}\label{classSimSite3D_1_1ModelSitemap_c80869d4e5b99f09d776f48c157fd52c}
 
 
 Given c,p,l,s get the iterators for the corresponding bucket. 
@@ -160,26 +160,26 @@ Given the indexes into the index table, set the pointers to the begin and end of
 \item[Returns:]true if bucket is nonempty \end{Desc}
 
 
-Reimplemented in \bf{ASCbase::All\-Pairs\-Sitemap\-Test} \doxyref{p.}{classASCbase_1_1AllPairsSitemapTest_662913221bdc0a3063def4d40dd0d6f5}.\index{ASCbase::ModelSitemap@{ASCbase::Model\-Sitemap}!get_current_inverse_3D_transform@{get\_\-current\_\-inverse\_\-3D\_\-transform}}
-\index{get_current_inverse_3D_transform@{get\_\-current\_\-inverse\_\-3D\_\-transform}!ASCbase::ModelSitemap@{ASCbase::Model\-Sitemap}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ASCbase::Model\-Sitemap::get\_\-current\_\-inverse\_\-3D\_\-transform (Quaternion $\ast$ {\em Q}, my\_\-float\_\-t $\ast$ {\em T}) const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1ModelSitemap_1081951b9ad9b1b6f26578a3c1d2a8f5}
+Reimplemented in \bf{SimSite3D::All\-Pairs\-Sitemap\-Test} \doxyref{p.}{classSimSite3D_1_1AllPairsSitemapTest_662913221bdc0a3063def4d40dd0d6f5}.\index{SimSite3D::ModelSitemap@{SimSite3D::Model\-Sitemap}!get_current_inverse_3D_transform@{get\_\-current\_\-inverse\_\-3D\_\-transform}}
+\index{get_current_inverse_3D_transform@{get\_\-current\_\-inverse\_\-3D\_\-transform}!SimSite3D::ModelSitemap@{SimSite3D::Model\-Sitemap}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void SimSite3D::Model\-Sitemap::get\_\-current\_\-inverse\_\-3D\_\-transform (Quaternion $\ast$ {\em Q}, my\_\-float\_\-t $\ast$ {\em T}) const\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1ModelSitemap_1081951b9ad9b1b6f26578a3c1d2a8f5}
 
 
-Get transform to move current hbond fit points to original position of the hbond fit points \index{ASCbase::ModelSitemap@{ASCbase::Model\-Sitemap}!init@{init}}
-\index{init@{init}!ASCbase::ModelSitemap@{ASCbase::Model\-Sitemap}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Model\-Sitemap::init ()\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1ModelSitemap_1dcf42cb09e1769e6b5ca6a97cd91f33}
+Get transform to move current hbond fit points to original position of the hbond fit points \index{SimSite3D::ModelSitemap@{SimSite3D::Model\-Sitemap}!init@{init}}
+\index{init@{init}!SimSite3D::ModelSitemap@{SimSite3D::Model\-Sitemap}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Model\-Sitemap::init ()\hspace{0.3cm}{\tt  [private]}}\label{classSimSite3D_1_1ModelSitemap_1dcf42cb09e1769e6b5ca6a97cd91f33}
 
 
 Initializes pointers to 0 and other variables to 0 or another useful value 
 
-Reimplemented from \bf{ASCbase::Sitemap} \doxyref{p.}{classASCbase_1_1Sitemap_2c579b022413645a8ecbdc4317117563}.\index{ASCbase::ModelSitemap@{ASCbase::Model\-Sitemap}!mutable_binding_site_mesh_handle@{mutable\_\-binding\_\-site\_\-mesh\_\-handle}}
-\index{mutable_binding_site_mesh_handle@{mutable\_\-binding\_\-site\_\-mesh\_\-handle}!ASCbase::ModelSitemap@{ASCbase::Model\-Sitemap}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}geometry::Transformable\-Trimesh\& ASCbase::Model\-Sitemap::mutable\_\-binding\_\-site\_\-mesh\_\-handle ()\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1ModelSitemap_0f9ee82ed7959390abd7d38ac7d73a50}
+Reimplemented from \bf{SimSite3D::Sitemap} \doxyref{p.}{classSimSite3D_1_1Sitemap_2c579b022413645a8ecbdc4317117563}.\index{SimSite3D::ModelSitemap@{SimSite3D::Model\-Sitemap}!mutable_binding_site_mesh_handle@{mutable\_\-binding\_\-site\_\-mesh\_\-handle}}
+\index{mutable_binding_site_mesh_handle@{mutable\_\-binding\_\-site\_\-mesh\_\-handle}!SimSite3D::ModelSitemap@{SimSite3D::Model\-Sitemap}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}geometry::Transformable\-Trimesh\& SimSite3D::Model\-Sitemap::mutable\_\-binding\_\-site\_\-mesh\_\-handle ()\hspace{0.3cm}{\tt  [inline]}}\label{classSimSite3D_1_1ModelSitemap_0f9ee82ed7959390abd7d38ac7d73a50}
 
 
 A reference to the binding site mesh surface (not constant). 
 
-Use this function with care -- at the present it should only be used when initializing a \doxyref{Surf\-Deps\-Joints}{p.}{classASCbase_1_1SurfDepsJoints} instance 
+Use this function with care -- at the present it should only be used when initializing a \doxyref{Surf\-Deps\-Joints}{p.}{classSimSite3D_1_1SurfDepsJoints} instance 
 
 The documentation for this class was generated from the following files:\begin{CompactItemize}
 \item 

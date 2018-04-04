@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 const std::string residue_joints::A_fname = "prot_joint_dep";
 

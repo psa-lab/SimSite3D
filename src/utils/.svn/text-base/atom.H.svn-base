@@ -2,7 +2,7 @@
  * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -50,7 +50,7 @@
 #include <PDB_residues.H>
 #include <point_storage.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 
 //! Generic atom type which uses the point_t class to store its position
@@ -80,7 +80,7 @@ public:
   }
 
   // Must be a faster way to copy, but copying should not play a sigificant 
-  // role in the speed for ASCbase
+  // role in the speed for SimSite3D
   atom_t(const atom_t& a) : point_t(a)
   {
     do_copy(a);
@@ -187,7 +187,7 @@ public:
   std::string res_str;   //!< For PDB HETATMs
   bool is_hetero;        //!< True implies PDB HETATM, otherwise false 
   interactionType act_type; //!< Donor, acceptor, doneptor, hphob, or nothing
-  my_float_t charge;     //!< Protein charges + ASCbase summed atomic charges on ligands
+  my_float_t charge;     //!< Protein charges + SimSite3D summed atomic charges on ligands
   my_float_t orig_charge;  //!< Hold the ligand atomic charges as read in
 
   int subst_id; //!< mol2 junk -- ignored for now
@@ -232,5 +232,5 @@ typedef atom_vec_t::const_iterator atom_vci;
 typedef std::map<uint, atom_vci> atom_map_t;
 
 
-} // end of namespace ASCbase
+} // end of namespace SimSite3D
 #endif

@@ -4,7 +4,7 @@
 #include <iomanip>
 #include <map>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 
 int main(int argc, char** argv)
 {

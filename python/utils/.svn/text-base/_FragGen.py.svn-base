@@ -1,5 +1,5 @@
 import os, sys
-import ASCbasePy
+import SimSite3DPy
 
 ################################################################################
 
@@ -51,7 +51,7 @@ class FragGen:
 
       # Load the ideal cif and use it to convert the pdb hetgrp to sdf format
       my_cif = \
-        ASCbasePy.utils.pdb_cif.molecule("%s/%s.cif" % (cif_ligs_dir, lig_id))
+        SimSite3DPy.utils.pdb_cif.molecule("%s/%s.cif" % (cif_ligs_dir, lig_id))
       if(my_cif.fail): 
         print "Could not load the molecule: %s/%s.cif" % (cif_ligs_dir, lig_id)
         continue
@@ -111,7 +111,7 @@ class FragGen:
       else: sdf_frag_fname = frag_fname[:-3] + "sdf"
      
       q_sdf_file = open(sdf_frag_fname, "w+")
-      my_cif = ASCbasePy.utils.pdb_cif.molecule(frag_fname)
+      my_cif = SimSite3DPy.utils.pdb_cif.molecule(frag_fname)
       if(my_cif.fail): 
         print "Warning!  Unable to convert", frag_fname, "to .sdf format"
         return False
@@ -156,7 +156,7 @@ class FragGen:
     os.system(Screen_cmd)
     
     print "\nSorting the ligands by %s score\n" % (metric)
-    hits = ASCbasePy.utils.sdf.sdf_molecules("tmp_unsorted.sdf")
+    hits = SimSite3DPy.utils.sdf.sdf_molecules("tmp_unsorted.sdf")
     hits.sort_by_score(score_type=metric)
     out_file = open(res_fname, "w+")
     for my_mol in hits.mols: print >> out_file, my_mol
@@ -177,7 +177,7 @@ class FragGen:
       else: sdf_lig_fname = lig_fname[:-3] + "sdf"
      
       q_sdf_file = open(sdf_lig_fname, "w+")
-      my_cif = ASCbasePy.utils.pdb_cif.molecule(lig_fname)
+      my_cif = SimSite3DPy.utils.pdb_cif.molecule(lig_fname)
       if(my_cif.fail): 
         print "Warning!  Unable to convert", lig_fname, "to .sdf format"
         return ""
@@ -223,7 +223,7 @@ class FragGen:
 #  for lig_id in lig_ids:
 #    # Load the ideal cif and use it to convert the pdb hetgrp to sdf format
 #    my_cif = \
-#      ASCbasePy.utils.pdb_cif.molecule("%s/%s.cif" % (cif_ligs_dir, lig_id))
+#      SimSite3DPy.utils.pdb_cif.molecule("%s/%s.cif" % (cif_ligs_dir, lig_id))
 #    if(my_cif.fail): 
 #      print "Could not load the molecule: %s/%s.cif" % (cif_ligs_dir, lig_id)
 #      continue
@@ -238,7 +238,7 @@ class FragGen:
 #  #
 #  frag_fname = "%s.sdf" % (query_lig_id)
 #  q_sdf_file = open(frag_fname, "w+")
-#  my_cif = ASCbasePy.utils.pdb_cif.molecule(cif_lig_fname)
+#  my_cif = SimSite3DPy.utils.pdb_cif.molecule(cif_lig_fname)
 #  if(my_cif.fail): sys.exit(-1)
 #  my_chem_comp = my_cif.chemical_component
 #  my_sdf = my_chem_comp.to_sdf()
@@ -255,7 +255,7 @@ class FragGen:
 #    else: frag_fname = cif_frag_fname[:-3] + "sdf"
 #
 #    q_sdf_file = open(frag_fname, "w+")
-#    my_cif = ASCbasePy.utils.pdb_cif.molecule(cif_frag_fname)
+#    my_cif = SimSite3DPy.utils.pdb_cif.molecule(cif_frag_fname)
 #    if(my_cif.fail): sys.exit(-1)
 #    my_chem_comp = my_cif.chemical_component
 #    my_sdf = my_chem_comp.to_sdf()
@@ -311,7 +311,7 @@ class FragGen:
 #  
 #  print "\nSorting the ligands by Substructure score\n"
 #  SubStruct_hits = \
-#    ASCbasePy.utils.sdf.sdf_molecules(query_lig_id + "_SubStruct_unsorted.sdf")
+#    SimSite3DPy.utils.sdf.sdf_molecules(query_lig_id + "_SubStruct_unsorted.sdf")
 #  SubStruct_hits.sort_by_score(score_type="SuperStructure")
 #  out_file = open(query_lig_id + "_SubStruct_sorted.sdf", "w+")
 #  for my_mol in SubStruct_hits.mols: print >> out_file, my_mol
@@ -327,12 +327,12 @@ class FragGen:
 #  
 #  print "\nSorting the ligands by Tanimoto score\n"
 #  Tanimoto_hits = \
-#    ASCbasePy.utils.sdf.sdf_molecules(query_lig_id + "_Tanimoto_unsorted.sdf")
+#    SimSite3DPy.utils.sdf.sdf_molecules(query_lig_id + "_Tanimoto_unsorted.sdf")
 #  Tanimoto_hits.sort_by_score(score_type="Tanimoto")
 #  out_file = open(query_lig_id + "_Tanimoto_sorted.sdf", "w+")
 #  for my_mol in Tanimoto_hits.mols: print >> out_file, my_mol
 #  os.unlink(query_lig_id + "_Tanimoto_unsorted.sdf")
 #  
-#  return (ASCbasePy.utils.sdf.sdf_molecules(query_lig_id + "_Frag_matches.sdf"),
+#  return (SimSite3DPy.utils.sdf.sdf_molecules(query_lig_id + "_Frag_matches.sdf"),
 #          SubStruct_hits, Tanimoto_hits) 
 ###  print "\nFinished screening the ligands\n"

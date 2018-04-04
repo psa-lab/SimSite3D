@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -51,10 +51,10 @@
 <a name="l00038"></a>00038 <span class="preprocessor">#include &lt;string&gt;</span>
 <a name="l00039"></a>00039 <span class="preprocessor">#include &lt;map&gt;</span>
 <a name="l00040"></a>00040 
-<a name="l00041"></a>00041 <span class="keyword">namespace </span>ASCbase{
+<a name="l00041"></a>00041 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00042"></a>00042 
 <a name="l00045"></a>00045 
-<a name="l00051"></a><a class="code" href="classASCbase_1_1BaseParameters.html">00051</a>   <span class="keyword">class </span><a class="code" href="classASCbase_1_1BaseParameters.html">BaseParameters</a>{
+<a name="l00051"></a><a class="code" href="classSimSite3D_1_1BaseParameters.html">00051</a>   <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1BaseParameters.html">BaseParameters</a>{
 <a name="l00052"></a>00052   <span class="keyword">public</span>:
 <a name="l00053"></a>00053     <span class="keyword">typedef</span> <span class="keyword">enum</span>{
 <a name="l00054"></a>00054       FATAL_ERROR,
@@ -64,24 +64,24 @@
 <a name="l00058"></a>00058       READY
 <a name="l00059"></a>00059     }status_t;
 <a name="l00060"></a>00060 
-<a name="l00061"></a>00061     <a class="code" href="classASCbase_1_1BaseParameters.html">BaseParameters</a>();
+<a name="l00061"></a>00061     <a class="code" href="classSimSite3D_1_1BaseParameters.html">BaseParameters</a>();
 <a name="l00062"></a>00062 
-<a name="l00063"></a>00063     ~<a class="code" href="classASCbase_1_1BaseParameters.html">BaseParameters</a>()
+<a name="l00063"></a>00063     ~<a class="code" href="classSimSite3D_1_1BaseParameters.html">BaseParameters</a>()
 <a name="l00064"></a>00064     { ; }
 <a name="l00065"></a>00065 
 <a name="l00066"></a>00066     <span class="keyword">static</span> <span class="keywordtype">bool</span> get_env_var(<span class="keyword">const</span> std::string var, std::string *val);
 <a name="l00067"></a>00067 
 <a name="l00068"></a>00068     status_t
 <a name="l00069"></a>00069     status()<span class="keyword"> const</span>
-<a name="l00070"></a>00070 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1BaseParameters.html#552075c2455c9ce279594f9d620de06a">A_status</a>; }
+<a name="l00070"></a>00070 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1BaseParameters.html#552075c2455c9ce279594f9d620de06a">A_status</a>; }
 <a name="l00071"></a>00071 
-<a name="l00072"></a><a class="code" href="classASCbase_1_1BaseParameters.html#4812fa282e2ba266dbfa064182b594b9">00072</a>     std::string <a class="code" href="classASCbase_1_1BaseParameters.html#4812fa282e2ba266dbfa064182b594b9">dbase_sites</a>;    
-<a name="l00073"></a><a class="code" href="classASCbase_1_1BaseParameters.html#d6b47ad4d8d7460817551da93171de4a">00073</a>     std::string <a class="code" href="classASCbase_1_1BaseParameters.html#d6b47ad4d8d7460817551da93171de4a">dbase_ligs</a>;     
-<a name="l00074"></a><a class="code" href="classASCbase_1_1BaseParameters.html#fbb9b1185a994a991c0e68c30fa637b6">00074</a>     std::string <a class="code" href="classASCbase_1_1BaseParameters.html#fbb9b1185a994a991c0e68c30fa637b6">dbase_prots</a>;    
-<a name="l00075"></a><a class="code" href="classASCbase_1_1BaseParameters.html#89d38ef4448211e8ae3a63988e62f158">00075</a>     std::string <a class="code" href="classASCbase_1_1BaseParameters.html#89d38ef4448211e8ae3a63988e62f158">diverse_sites</a>;  
-<a name="l00076"></a><a class="code" href="classASCbase_1_1BaseParameters.html#7431a50f3120b7f9f74026ad2c10b1a2">00076</a>     std::string <a class="code" href="classASCbase_1_1BaseParameters.html#7431a50f3120b7f9f74026ad2c10b1a2">diverse_ligs</a>;
-<a name="l00077"></a><a class="code" href="classASCbase_1_1BaseParameters.html#96522745ba23c6aac7d9258d65aac545">00077</a>     std::string <a class="code" href="classASCbase_1_1BaseParameters.html#96522745ba23c6aac7d9258d65aac545">proj_output</a>; 
-<a name="l00078"></a><a class="code" href="classASCbase_1_1BaseParameters.html#96aa06a7fff08e400ec92d0ada56b786">00078</a>     std::string <a class="code" href="classASCbase_1_1BaseParameters.html#96aa06a7fff08e400ec92d0ada56b786">scratch_dir</a>; 
+<a name="l00072"></a><a class="code" href="classSimSite3D_1_1BaseParameters.html#4812fa282e2ba266dbfa064182b594b9">00072</a>     std::string <a class="code" href="classSimSite3D_1_1BaseParameters.html#4812fa282e2ba266dbfa064182b594b9">dbase_sites</a>;    
+<a name="l00073"></a><a class="code" href="classSimSite3D_1_1BaseParameters.html#d6b47ad4d8d7460817551da93171de4a">00073</a>     std::string <a class="code" href="classSimSite3D_1_1BaseParameters.html#d6b47ad4d8d7460817551da93171de4a">dbase_ligs</a>;     
+<a name="l00074"></a><a class="code" href="classSimSite3D_1_1BaseParameters.html#fbb9b1185a994a991c0e68c30fa637b6">00074</a>     std::string <a class="code" href="classSimSite3D_1_1BaseParameters.html#fbb9b1185a994a991c0e68c30fa637b6">dbase_prots</a>;    
+<a name="l00075"></a><a class="code" href="classSimSite3D_1_1BaseParameters.html#89d38ef4448211e8ae3a63988e62f158">00075</a>     std::string <a class="code" href="classSimSite3D_1_1BaseParameters.html#89d38ef4448211e8ae3a63988e62f158">diverse_sites</a>;  
+<a name="l00076"></a><a class="code" href="classSimSite3D_1_1BaseParameters.html#7431a50f3120b7f9f74026ad2c10b1a2">00076</a>     std::string <a class="code" href="classSimSite3D_1_1BaseParameters.html#7431a50f3120b7f9f74026ad2c10b1a2">diverse_ligs</a>;
+<a name="l00077"></a><a class="code" href="classSimSite3D_1_1BaseParameters.html#96522745ba23c6aac7d9258d65aac545">00077</a>     std::string <a class="code" href="classSimSite3D_1_1BaseParameters.html#96522745ba23c6aac7d9258d65aac545">proj_output</a>; 
+<a name="l00078"></a><a class="code" href="classSimSite3D_1_1BaseParameters.html#96aa06a7fff08e400ec92d0ada56b786">00078</a>     std::string <a class="code" href="classSimSite3D_1_1BaseParameters.html#96aa06a7fff08e400ec92d0ada56b786">scratch_dir</a>; 
 <a name="l00079"></a>00079 
 <a name="l00080"></a>00080     <span class="comment">// for now we keep this around till we fold the information into </span>
 <a name="l00081"></a>00081     <span class="comment">// header files.</span>
@@ -99,7 +99,7 @@
 <a name="l00093"></a>00093     <span class="keywordtype">void</span>
 <a name="l00094"></a>00094     print_version(std::ostream &amp;out, std::string prog_name);
 <a name="l00095"></a>00095 
-<a name="l00096"></a><a class="code" href="classASCbase_1_1BaseParameters.html#552075c2455c9ce279594f9d620de06a">00096</a>     status_t <a class="code" href="classASCbase_1_1BaseParameters.html#552075c2455c9ce279594f9d620de06a">A_status</a>;  
+<a name="l00096"></a><a class="code" href="classSimSite3D_1_1BaseParameters.html#552075c2455c9ce279594f9d620de06a">00096</a>     status_t <a class="code" href="classSimSite3D_1_1BaseParameters.html#552075c2455c9ce279594f9d620de06a">A_status</a>;  
 <a name="l00097"></a>00097 
 <a name="l00098"></a>00098   <span class="keyword">private</span>:
 <a name="l00099"></a>00099 
@@ -109,7 +109,7 @@
 <a name="l00103"></a>00103 
 <a name="l00104"></a>00104 
 <a name="l00105"></a>00105     std::map&lt;std::string, std::string*&gt; A_str_to_var;
-<a name="l00106"></a><a class="code" href="classASCbase_1_1BaseParameters.html#41d22522d6af1b42c1ae142bba6190ca">00106</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classASCbase_1_1BaseParameters.html#41d22522d6af1b42c1ae142bba6190ca">A_fname</a>;  
+<a name="l00106"></a><a class="code" href="classSimSite3D_1_1BaseParameters.html#41d22522d6af1b42c1ae142bba6190ca">00106</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classSimSite3D_1_1BaseParameters.html#41d22522d6af1b42c1ae142bba6190ca">A_fname</a>;  
 <a name="l00107"></a>00107   };
 <a name="l00108"></a>00108 }
 <a name="l00109"></a>00109 <span class="preprocessor">#endif</span>

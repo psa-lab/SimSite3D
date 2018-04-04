@@ -15,7 +15,7 @@
 <a name="l00002"></a>00002 <span class="comment"> * Copyright (c) 2006,2007, Michigan State University (MSU) Board of Trustees.</span>
 <a name="l00003"></a>00003 <span class="comment"> *   All rights reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> *</span>
-<a name="l00005"></a>00005 <span class="comment"> * This file is part of the ASCbase Software project.</span>
+<a name="l00005"></a>00005 <span class="comment"> * This file is part of the SimSite3D Software project.</span>
 <a name="l00006"></a>00006 <span class="comment"> *</span>
 <a name="l00007"></a>00007 <span class="comment"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
 <a name="l00008"></a>00008 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
@@ -47,14 +47,14 @@
 <a name="l00034"></a>00034 <span class="preprocessor">#include &lt;ModelSiteRMSD.H&gt;</span>
 <a name="l00035"></a>00035 <span class="preprocessor">#include &lt;AllPairsSitemapTest.H&gt;</span>
 <a name="l00036"></a>00036 
-<a name="l00037"></a>00037 <span class="keyword">namespace </span>ASCbase{
+<a name="l00037"></a>00037 <span class="keyword">namespace </span>SimSite3D{
 <a name="l00038"></a>00038  
 <a name="l00039"></a>00039 <span class="preprocessor">#if 0 </span>
 <a name="l00040"></a>00040 <span class="preprocessor"></span>  <span class="keyword">template</span> &lt; <span class="keyword">typename</span> align_T &gt;
 <a name="l00041"></a>00041   <span class="keyword">struct </span>align_impl;
 <a name="l00042"></a>00042 <span class="preprocessor">#endif</span>
 <a name="l00043"></a>00043 <span class="preprocessor"></span>
-<a name="l00045"></a><a class="code" href="classASCbase_1_1Search.html">00045</a>   <span class="keyword">class </span><a class="code" href="classASCbase_1_1Search.html">Search</a>{
+<a name="l00045"></a><a class="code" href="classSimSite3D_1_1Search.html">00045</a>   <span class="keyword">class </span><a class="code" href="classSimSite3D_1_1Search.html">Search</a>{
 <a name="l00046"></a>00046   <span class="keyword">public</span>:
 <a name="l00047"></a>00047 
 <a name="l00048"></a>00048     <span class="keyword">typedef</span> <span class="keyword">enum</span> align_method_enum{
@@ -66,23 +66,23 @@
 <a name="l00054"></a>00054       GRID_SAMPLING
 <a name="l00055"></a>00055     }align_method_t;
 <a name="l00056"></a>00056 
-<a name="l00058"></a>00058     <a class="code" href="classASCbase_1_1Search.html#ff7b007d7a7b19f5009d205ec68ce465">Search</a>(<span class="keyword">const</span> <a class="code" href="classASCbase_1_1SearchParameters.html">SearchParameters</a>* args_in);
+<a name="l00058"></a>00058     <a class="code" href="classSimSite3D_1_1Search.html#ff7b007d7a7b19f5009d205ec68ce465">Search</a>(<span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1SearchParameters.html">SearchParameters</a>* args_in);
 <a name="l00059"></a>00059 
-<a name="l00061"></a>00061     <span class="keyword">virtual</span> <a class="code" href="classASCbase_1_1Search.html#4cdd25e61eac9ffe50b2aaa79a8a728b">~Search</a>();
+<a name="l00061"></a>00061     <span class="keyword">virtual</span> <a class="code" href="classSimSite3D_1_1Search.html#4cdd25e61eac9ffe50b2aaa79a8a728b">~Search</a>();
 <a name="l00062"></a>00062 
 <a name="l00064"></a>00064 
 <a name="l00069"></a>00069     <span class="keywordtype">bool</span> 
-<a name="l00070"></a>00070     <a class="code" href="classASCbase_1_1Search.html#051f1638b64fb50b60b1b6dd5f10305e">run</a>();
+<a name="l00070"></a>00070     <a class="code" href="classSimSite3D_1_1Search.html#051f1638b64fb50b60b1b6dd5f10305e">run</a>();
 <a name="l00071"></a>00071 
 <a name="l00073"></a>00073 
 <a name="l00076"></a>00076     <span class="keywordtype">bool</span> 
-<a name="l00077"></a><a class="code" href="classASCbase_1_1Search.html#829f1f284ce32f03af0d34bdf6ccfab4">00077</a>     <a class="code" href="classASCbase_1_1Search.html#829f1f284ce32f03af0d34bdf6ccfab4">fail</a>()<span class="keyword"> const </span>
-<a name="l00078"></a>00078 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1Search.html#658d52e28d45179d6b9d1d6a205215ea">A_fail</a>; }
+<a name="l00077"></a><a class="code" href="classSimSite3D_1_1Search.html#829f1f284ce32f03af0d34bdf6ccfab4">00077</a>     <a class="code" href="classSimSite3D_1_1Search.html#829f1f284ce32f03af0d34bdf6ccfab4">fail</a>()<span class="keyword"> const </span>
+<a name="l00078"></a>00078 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1Search.html#658d52e28d45179d6b9d1d6a205215ea">A_fail</a>; }
 <a name="l00079"></a>00079 
 <a name="l00081"></a>00081     <span class="keyword">static</span> <span class="keywordtype">bool</span> 
-<a name="l00082"></a>00082     <a class="code" href="classASCbase_1_1Search.html#04389ee319e0961afe77b5c5f4f93a70">setup_directories</a>(std::string base_dir, mode_t mode);
+<a name="l00082"></a>00082     <a class="code" href="classSimSite3D_1_1Search.html#04389ee319e0961afe77b5c5f4f93a70">setup_directories</a>(std::string base_dir, mode_t mode);
 <a name="l00083"></a>00083 
-<a name="l00084"></a>00084     <span class="keyword">const</span> <a class="code" href="classASCbase_1_1SearchParameters.html">SearchParameters</a>*
+<a name="l00084"></a>00084     <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1SearchParameters.html">SearchParameters</a>*
 <a name="l00085"></a>00085     args()<span class="keyword"> const </span>
 <a name="l00086"></a>00086 <span class="keyword">    </span>{ <span class="keywordflow">return</span> A_args; } 
 <a name="l00087"></a>00087 
@@ -98,7 +98,7 @@
 <a name="l00098"></a>00098   <span class="keyword">protected</span>:
 <a name="l00099"></a>00099     ModelSitemap* 
 <a name="l00100"></a>00100     model()
-<a name="l00101"></a>00101     { <span class="keywordflow">return</span> <a class="code" href="classASCbase_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>; }
+<a name="l00101"></a>00101     { <span class="keywordflow">return</span> <a class="code" href="classSimSite3D_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>; }
 <a name="l00102"></a>00102 
 <a name="l00103"></a>00103     <span class="keywordtype">void</span>
 <a name="l00104"></a>00104     start_timer()
@@ -108,42 +108,42 @@
 <a name="l00108"></a>00108     get_timer_and_write_to_file();
 <a name="l00109"></a>00109 
 <a name="l00110"></a>00110     <span class="keyword">template</span> &lt; <span class="keyword">typename</span> align_T&gt; <span class="keywordtype">bool</span>
-<a name="l00111"></a>00111     <a class="code" href="classASCbase_1_1Search.html#051f1638b64fb50b60b1b6dd5f10305e">run</a>(std::vector&lt;align_T&gt; *alignments, <span class="keyword">const</span> align_method_t align_method)
+<a name="l00111"></a>00111     <a class="code" href="classSimSite3D_1_1Search.html#051f1638b64fb50b60b1b6dd5f10305e">run</a>(std::vector&lt;align_T&gt; *alignments, <span class="keyword">const</span> align_method_t align_method)
 <a name="l00112"></a>00112     {
 <a name="l00113"></a>00113       <span class="comment">// Call the scoring method with the desired scoring class</span>
 <a name="l00114"></a>00114       <span class="keywordflow">if</span>(A_args-&gt;score_str.length() == 0 ||
 <a name="l00115"></a>00115          A_args-&gt;score_str == <span class="stringliteral">"default"</span>){
 <a name="l00116"></a>00116         std::cout &lt;&lt; <span class="stringliteral">"using default scoring method\n"</span>; 
-<a name="l00117"></a>00117         <a class="code" href="classASCbase_1_1Search.html#1da1018845426f8b1ebfcf3388d6dbed">score</a>(alignments, align_method, 
+<a name="l00117"></a>00117         <a class="code" href="classSimSite3D_1_1Search.html#1da1018845426f8b1ebfcf3388d6dbed">score</a>(alignments, align_method, 
 <a name="l00118"></a>00118               <span class="keyword">new</span> ScoreRigidAlignments&lt; WeightedSumsScore, point_and_surf_score,
-<a name="l00119"></a>00119                                         align_T &gt;(<a class="code" href="classASCbase_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>, *A_args));
+<a name="l00119"></a>00119                                         align_T &gt;(<a class="code" href="classSimSite3D_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>, *A_args));
 <a name="l00120"></a>00120       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(A_args-&gt;score_str == <span class="stringliteral">"WeightedSumsScore"</span>){
 <a name="l00121"></a>00121         std::cout &lt;&lt; <span class="stringliteral">"using site map points only scoring method\n"</span>;
-<a name="l00122"></a>00122         <a class="code" href="classASCbase_1_1Search.html#1da1018845426f8b1ebfcf3388d6dbed">score</a>(alignments, align_method,
+<a name="l00122"></a>00122         <a class="code" href="classSimSite3D_1_1Search.html#1da1018845426f8b1ebfcf3388d6dbed">score</a>(alignments, align_method,
 <a name="l00123"></a>00123               <span class="keyword">new</span> ScoreRigidAlignments&lt; NoTier1Score, WeightedSumsScore,
-<a name="l00124"></a>00124                                         align_T &gt;(<a class="code" href="classASCbase_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>, *A_args));
+<a name="l00124"></a>00124                                         align_T &gt;(<a class="code" href="classSimSite3D_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>, *A_args));
 <a name="l00125"></a>00125       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(A_args-&gt;score_str == <span class="stringliteral">"point_and_surf_score"</span>){
 <a name="l00126"></a>00126         std::cout &lt;&lt; <span class="stringliteral">"using site points and surface scoring method and fine tuning of the best alignment\n"</span>;
-<a name="l00127"></a>00127         <a class="code" href="classASCbase_1_1Search.html#1da1018845426f8b1ebfcf3388d6dbed">score</a>(alignments, align_method,
+<a name="l00127"></a>00127         <a class="code" href="classSimSite3D_1_1Search.html#1da1018845426f8b1ebfcf3388d6dbed">score</a>(alignments, align_method,
 <a name="l00128"></a>00128               <span class="keyword">new</span> ScoreRigidAlignments&lt; NoTier1Score, point_and_surf_score,
-<a name="l00129"></a>00129                                         align_T &gt;(<a class="code" href="classASCbase_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>, *A_args));
+<a name="l00129"></a>00129                                         align_T &gt;(<a class="code" href="classSimSite3D_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>, *A_args));
 <a name="l00130"></a>00130       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(A_args-&gt;score_str == <span class="stringliteral">"HbondSurfacesScore"</span> ||
 <a name="l00131"></a>00131                A_args-&gt;use_hbond_surfaces){
 <a name="l00132"></a>00132         std::cout &lt;&lt; <span class="stringliteral">"Using hbond caps+ scoring method -- training method\n"</span>;
-<a name="l00133"></a>00133         <a class="code" href="classASCbase_1_1Search.html#1da1018845426f8b1ebfcf3388d6dbed">score</a>(alignments, align_method,
+<a name="l00133"></a>00133         <a class="code" href="classSimSite3D_1_1Search.html#1da1018845426f8b1ebfcf3388d6dbed">score</a>(alignments, align_method,
 <a name="l00134"></a>00134               <span class="keyword">new</span> ScoreRigidAlignments&lt; NoTier1Score, HbondSurfacesScore,
-<a name="l00135"></a>00135                                         align_T &gt;(<a class="code" href="classASCbase_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>, *A_args));
+<a name="l00135"></a>00135                                         align_T &gt;(<a class="code" href="classSimSite3D_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>, *A_args));
 <a name="l00136"></a>00136       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(A_args-&gt;score_str == <span class="stringliteral">"ModelSiteRMSD"</span>){
 <a name="l00137"></a>00137         std::cout &lt;&lt; <span class="stringliteral">"Only computing the RMSD of the alignments\n"</span>
 <a name="l00138"></a>00138                   &lt;&lt; <span class="stringliteral">"NOTE: this requires that the sites are already aligned\n\n"</span>;
-<a name="l00139"></a>00139         <a class="code" href="classASCbase_1_1Search.html#1da1018845426f8b1ebfcf3388d6dbed">score</a>(alignments, align_method,
+<a name="l00139"></a>00139         <a class="code" href="classSimSite3D_1_1Search.html#1da1018845426f8b1ebfcf3388d6dbed">score</a>(alignments, align_method,
 <a name="l00140"></a>00140               <span class="keyword">new</span> ScoreRigidAlignments&lt; NoTier1Score, ModelSiteRMSD,
-<a name="l00141"></a>00141                                         align_T &gt;(<a class="code" href="classASCbase_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>, *A_args));
+<a name="l00141"></a>00141                                         align_T &gt;(<a class="code" href="classSimSite3D_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>, *A_args));
 <a name="l00142"></a>00142       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(A_args-&gt;score_str == <span class="stringliteral">"sample_all_triangles"</span>){
 <a name="l00143"></a>00143         std::cout &lt;&lt; <span class="stringliteral">"This is a RESEARCH METHOD: it computes the RMSD for each all reasonable triangle matchs relative to the query and database starting positions -- it only makes sense in when the input sites are already aligned\n\n\n"</span>;
-<a name="l00144"></a>00144         <a class="code" href="classASCbase_1_1Search.html#1da1018845426f8b1ebfcf3388d6dbed">score</a>(alignments, align_method,
+<a name="l00144"></a>00144         <a class="code" href="classSimSite3D_1_1Search.html#1da1018845426f8b1ebfcf3388d6dbed">score</a>(alignments, align_method,
 <a name="l00145"></a>00145               <span class="keyword">new</span> ScoreRigidAlignments&lt; NoTier1Score, ModelSiteRMSD,
-<a name="l00146"></a>00146                                         align_T &gt;(<a class="code" href="classASCbase_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>, *A_args));
+<a name="l00146"></a>00146                                         align_T &gt;(<a class="code" href="classSimSite3D_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>, *A_args));
 <a name="l00147"></a>00147       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(A_args-&gt;score_str == <span class="stringliteral">"SiteIntersectionVolume"</span>){
 <a name="l00148"></a>00148         std::cout &lt;&lt; <span class="stringliteral">"THIS WAS REMOVED -- volume estimate must be much faster than site point score and spherical volumes are too much of an over estimate\n"</span>;
 <a name="l00149"></a>00149     <span class="comment">//    std::cout &lt;&lt; "Only computes the percentage of the query site volume estimate in the intersection of query site and dbase site\n\n";</span>
@@ -155,62 +155,62 @@
 <a name="l00155"></a>00155              &lt;&lt; <span class="stringliteral">"  Supported methods are:\n"</span>
 <a name="l00156"></a>00156              &lt;&lt; <span class="stringliteral">"    point_and_surf_score (Default)\n"</span>
 <a name="l00157"></a>00157              &lt;&lt; <span class="stringliteral">"    WeightedSumsScore (Faster than default, but less accurate)\n"</span>;
-<a name="l00158"></a>00158         err_msg(<a class="code" href="classASCbase_1_1Search.html#f7e20ddc101c1e6165e3b00a2e0eeb82">A_fname</a>, <span class="stringliteral">"run()"</span>, ostr.str());
+<a name="l00158"></a>00158         err_msg(<a class="code" href="classSimSite3D_1_1Search.html#f7e20ddc101c1e6165e3b00a2e0eeb82">A_fname</a>, <span class="stringliteral">"run()"</span>, ostr.str());
 <a name="l00159"></a>00159         <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00160"></a>00160       }
 <a name="l00161"></a>00161       <span class="keywordflow">return</span> <span class="keyword">true</span>;
 <a name="l00162"></a>00162     }
 <a name="l00163"></a>00163 
 <a name="l00166"></a>00166     <span class="keyword">template</span> &lt;<span class="keyword">typename</span> scoring_T, <span class="keyword">typename</span> align_T&gt; <span class="keywordtype">bool</span>
-<a name="l00167"></a><a class="code" href="classASCbase_1_1Search.html#1da1018845426f8b1ebfcf3388d6dbed">00167</a>     <a class="code" href="classASCbase_1_1Search.html#1da1018845426f8b1ebfcf3388d6dbed">score</a>(std::vector&lt;align_T&gt; *alignments, <span class="keyword">const</span> align_method_t align_method, 
+<a name="l00167"></a><a class="code" href="classSimSite3D_1_1Search.html#1da1018845426f8b1ebfcf3388d6dbed">00167</a>     <a class="code" href="classSimSite3D_1_1Search.html#1da1018845426f8b1ebfcf3388d6dbed">score</a>(std::vector&lt;align_T&gt; *alignments, <span class="keyword">const</span> align_method_t align_method, 
 <a name="l00168"></a>00168           scoring_T* score_method)
 <a name="l00169"></a>00169     {
 <a name="l00170"></a>00170       std::ofstream results_out;
-<a name="l00171"></a>00171       <span class="keywordflow">if</span>(!open_ofstream(results_out, A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#51c7063e6085b9aa32527a64206ecfdc">ofname</a>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00171"></a>00171       <span class="keywordflow">if</span>(!open_ofstream(results_out, A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#51c7063e6085b9aa32527a64206ecfdc">ofname</a>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00172"></a>00172 <span class="comment">//      if(A_args-&gt;save_rigid_scores &amp;&amp; </span>
 <a name="l00173"></a>00173 <span class="comment">//         !open_ofstream(rigid_results_out, A_args-&gt;ofname + ".rigid")) </span>
 <a name="l00174"></a>00174 <span class="comment">//        return false;</span>
-<a name="l00175"></a>00175       A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#c3a3ee055bce67d5d055a7a0a939c860">report_parameters</a>(results_out);
+<a name="l00175"></a>00175       A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#c3a3ee055bce67d5d055a7a0a939c860">report_parameters</a>(results_out);
 <a name="l00176"></a>00176 <span class="comment">//      A_args-&gt;report_parameters(rigid_results_out);</span>
 <a name="l00177"></a>00177     
-<a name="l00178"></a>00178       std::string sf_file = A_args-&gt;<a class="code" href="classASCbase_1_1BaseParameters.html#6fc273afb61ac03e5e733e704b9003d5">install_dir</a>;
-<a name="l00179"></a>00179       sf_file += <span class="stringliteral">"/ASCbaseSoftParams/ext_prot_lig_score_fcns.conf"</span>;
-<a name="l00180"></a>00180       <span class="keywordflow">if</span>(A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#31b913ee478296612756c9b25b34465d">ext_score_method</a>.length() == 0){
+<a name="l00178"></a>00178       std::string sf_file = A_args-&gt;<a class="code" href="classSimSite3D_1_1BaseParameters.html#6fc273afb61ac03e5e733e704b9003d5">install_dir</a>;
+<a name="l00179"></a>00179       sf_file += <span class="stringliteral">"/SimSite3DSoftParams/ext_prot_lig_score_fcns.conf"</span>;
+<a name="l00180"></a>00180       <span class="keywordflow">if</span>(A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#31b913ee478296612756c9b25b34465d">ext_score_method</a>.length() == 0){
 <a name="l00181"></a>00181         <span class="keywordflow">if</span>(!score_method-&gt;set_external_scoring_method(sf_file, <span class="stringliteral">"default"</span>)) 
 <a name="l00182"></a>00182           <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00183"></a>00183       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(!score_method-&gt;set_external_scoring_method(sf_file, A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#31b913ee478296612756c9b25b34465d">ext_score_method</a>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00183"></a>00183       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(!score_method-&gt;set_external_scoring_method(sf_file, A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#31b913ee478296612756c9b25b34465d">ext_score_method</a>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00184"></a>00184       score_method-&gt;write_score_header(results_out);
 <a name="l00185"></a>00185 <span class="comment">//      score_method-&gt;write_score_header(rigid_results_out);</span>
 <a name="l00186"></a>00186    
 <a name="l00187"></a>00187       <span class="comment">// Compare a pair of sitemaps</span>
-<a name="l00188"></a>00188       <span class="keywordflow">if</span>(A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#c70448bc467a512efafbf3b952770550">dbase_file_name</a>.length()){
+<a name="l00188"></a>00188       <span class="keywordflow">if</span>(A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#c70448bc467a512efafbf3b952770550">dbase_file_name</a>.length()){
 <a name="l00189"></a>00189         std::string path;
 <a name="l00190"></a>00190         std::string struct_id;
-<a name="l00191"></a>00191         get_path_and_struct_id(A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#c70448bc467a512efafbf3b952770550">dbase_file_name</a>, &amp;path, &amp;struct_id);
+<a name="l00191"></a>00191         get_path_and_struct_id(A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#c70448bc467a512efafbf3b952770550">dbase_file_name</a>, &amp;path, &amp;struct_id);
 <a name="l00192"></a>00192         alignments-&gt;clear();
-<a name="l00193"></a>00193         <a class="code" href="classASCbase_1_1Search.html#fd59641ac1b15dd60260cdc03455068d">align_and_score_dset_site</a>(alignments, score_method, align_method, path, 
+<a name="l00193"></a>00193         <a class="code" href="classSimSite3D_1_1Search.html#fd59641ac1b15dd60260cdc03455068d">align_and_score_dset_site</a>(alignments, score_method, align_method, path, 
 <a name="l00194"></a>00194                                   struct_id, results_out);
 <a name="l00195"></a>00195  
 <a name="l00196"></a>00196       <span class="comment">// Blast model against structures in the database index file</span>
-<a name="l00197"></a>00197       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#48d9df89d360efd9b57b8917aae33712">db_index_fname</a>.length()){
+<a name="l00197"></a>00197       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#48d9df89d360efd9b57b8917aae33712">db_index_fname</a>.length()){
 <a name="l00198"></a>00198         std::ifstream db_idx_file;
-<a name="l00199"></a>00199         <span class="keywordflow">if</span>(!open_ifstream(db_idx_file, A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#48d9df89d360efd9b57b8917aae33712">db_index_fname</a>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00200"></a>00200         std::cout &lt;&lt; <span class="stringliteral">"Searching the database: ("</span> &lt;&lt; A_args-&gt;<a class="code" href="classASCbase_1_1BaseParameters.html#4812fa282e2ba266dbfa064182b594b9">dbase_sites</a> 
+<a name="l00199"></a>00199         <span class="keywordflow">if</span>(!open_ifstream(db_idx_file, A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#48d9df89d360efd9b57b8917aae33712">db_index_fname</a>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00200"></a>00200         std::cout &lt;&lt; <span class="stringliteral">"Searching the database: ("</span> &lt;&lt; A_args-&gt;<a class="code" href="classSimSite3D_1_1BaseParameters.html#4812fa282e2ba266dbfa064182b594b9">dbase_sites</a> 
 <a name="l00201"></a>00201                   &lt;&lt; <span class="stringliteral">")\nUsing the database index file: ("</span> 
-<a name="l00202"></a>00202                   &lt;&lt; A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#48d9df89d360efd9b57b8917aae33712">db_index_fname</a> &lt;&lt; <span class="stringliteral">")\n"</span>;
+<a name="l00202"></a>00202                   &lt;&lt; A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#48d9df89d360efd9b57b8917aae33712">db_index_fname</a> &lt;&lt; <span class="stringliteral">")\n"</span>;
 <a name="l00203"></a>00203        
 <a name="l00204"></a>00204         <span class="comment">// Note: if this ever gets used in a nonsecure environment, we will</span>
 <a name="l00205"></a>00205         <span class="comment">// want to limit the number of lines read </span>
 <a name="l00206"></a>00206         std::vector&lt;std::string&gt; struct_ids;
 <a name="l00207"></a>00207         <span class="comment">// Use the entire file</span>
-<a name="l00208"></a>00208         <span class="keywordflow">if</span>(A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#2cd53037b00008f5039381a00085f93d">db_start</a> == 0 &amp;&amp; A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#b12f931a64c6d18141bb94cb283c1543">db_stop</a> == 0){
+<a name="l00208"></a>00208         <span class="keywordflow">if</span>(A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#2cd53037b00008f5039381a00085f93d">db_start</a> == 0 &amp;&amp; A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#b12f931a64c6d18141bb94cb283c1543">db_stop</a> == 0){
 <a name="l00209"></a>00209           std::cout &lt;&lt; <span class="stringliteral">"Using all of the structures in the index file\n"</span>;
 <a name="l00210"></a>00210           <span class="keywordflow">for</span>(std::string line; std::getline(db_idx_file, line); )
 <a name="l00211"></a>00211             struct_ids.push_back(line);
 <a name="l00212"></a>00212         <span class="comment">// Use dbstart &amp;&amp; dbstop</span>
 <a name="l00213"></a>00213         }<span class="keywordflow">else</span>{
-<a name="l00214"></a>00214           <span class="keyword">const</span> <span class="keywordtype">int</span> dbstart = A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#2cd53037b00008f5039381a00085f93d">db_start</a>;
-<a name="l00215"></a>00215           <span class="keyword">const</span> <span class="keywordtype">int</span> dbstop =  A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#b12f931a64c6d18141bb94cb283c1543">db_stop</a>;
+<a name="l00214"></a>00214           <span class="keyword">const</span> <span class="keywordtype">int</span> dbstart = A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#2cd53037b00008f5039381a00085f93d">db_start</a>;
+<a name="l00215"></a>00215           <span class="keyword">const</span> <span class="keywordtype">int</span> dbstop =  A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#b12f931a64c6d18141bb94cb283c1543">db_stop</a>;
 <a name="l00216"></a>00216           std::string line;
 <a name="l00217"></a>00217           <span class="keywordtype">int</span> lineno = 1;
 <a name="l00218"></a>00218           <span class="keywordflow">for</span>( ; std::getline(db_idx_file, line) &amp;&amp; lineno &lt;= dbstop; ++lineno)
@@ -222,8 +222,8 @@
 <a name="l00224"></a>00224         std::vector&lt;std::string&gt;::const_iterator st_iter = struct_ids.begin();
 <a name="l00225"></a>00225         <span class="keywordflow">for</span>( ; st_iter &lt; struct_ids.end(); ++st_iter){
 <a name="l00226"></a>00226           alignments-&gt;clear();
-<a name="l00227"></a>00227           <a class="code" href="classASCbase_1_1Search.html#fd59641ac1b15dd60260cdc03455068d">align_and_score_dset_site</a>(alignments, score_method, align_method, 
-<a name="l00228"></a>00228                                     A_args-&gt;<a class="code" href="classASCbase_1_1BaseParameters.html#4812fa282e2ba266dbfa064182b594b9">dbase_sites</a>, *st_iter,
+<a name="l00227"></a>00227           <a class="code" href="classSimSite3D_1_1Search.html#fd59641ac1b15dd60260cdc03455068d">align_and_score_dset_site</a>(alignments, score_method, align_method, 
+<a name="l00228"></a>00228                                     A_args-&gt;<a class="code" href="classSimSite3D_1_1BaseParameters.html#4812fa282e2ba266dbfa064182b594b9">dbase_sites</a>, *st_iter,
 <a name="l00229"></a>00229                                     results_out);
 <a name="l00230"></a>00230         }
 <a name="l00231"></a>00231 
@@ -231,18 +231,18 @@
 <a name="l00233"></a>00233       }<span class="keywordflow">else</span>{
 <a name="l00234"></a>00234         <span class="comment">// Get a listing of all the files in dbase_dir</span>
 <a name="l00235"></a>00235         <span class="keyword">struct </span>dirent **dbfilelist;
-<a name="l00236"></a>00236         <span class="keywordtype">int</span> n = scandir(A_args-&gt;<a class="code" href="classASCbase_1_1BaseParameters.html#4812fa282e2ba266dbfa064182b594b9">dbase_sites</a>.c_str(), &amp;dbfilelist, 0, 0);
+<a name="l00236"></a>00236         <span class="keywordtype">int</span> n = scandir(A_args-&gt;<a class="code" href="classSimSite3D_1_1BaseParameters.html#4812fa282e2ba266dbfa064182b594b9">dbase_sites</a>.c_str(), &amp;dbfilelist, 0, 0);
 <a name="l00237"></a>00237         <span class="keywordflow">if</span>(n &lt; 0){
 <a name="l00238"></a>00238           <span class="keywordtype">int</span> errsv = errno;
 <a name="l00239"></a>00239           std::cerr &lt;&lt; <span class="stringliteral">"Unable to get a listing of the files to search.\n"</span>
 <a name="l00240"></a>00240                     &lt;&lt; <span class="stringliteral">"Scandir failed: "</span> &lt;&lt; strerror(errsv);
 <a name="l00241"></a>00241           <span class="keywordflow">if</span>(errsv == ENOENT)
-<a name="l00242"></a>00242             std::cerr &lt;&lt; <span class="stringliteral">" ("</span> &lt;&lt; A_args-&gt;<a class="code" href="classASCbase_1_1BaseParameters.html#4812fa282e2ba266dbfa064182b594b9">dbase_sites</a>.c_str() &lt;&lt; <span class="stringliteral">")"</span>;
+<a name="l00242"></a>00242             std::cerr &lt;&lt; <span class="stringliteral">" ("</span> &lt;&lt; A_args-&gt;<a class="code" href="classSimSite3D_1_1BaseParameters.html#4812fa282e2ba266dbfa064182b594b9">dbase_sites</a>.c_str() &lt;&lt; <span class="stringliteral">")"</span>;
 <a name="l00243"></a>00243           std::cerr &lt;&lt; <span class="stringliteral">"\n"</span>;
 <a name="l00244"></a>00244           <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00245"></a>00245         }
 <a name="l00246"></a>00246 
-<a name="l00247"></a>00247         std::cout &lt;&lt; <span class="stringliteral">"Searching the database: ("</span> &lt;&lt; A_args-&gt;<a class="code" href="classASCbase_1_1BaseParameters.html#4812fa282e2ba266dbfa064182b594b9">dbase_sites</a> 
+<a name="l00247"></a>00247         std::cout &lt;&lt; <span class="stringliteral">"Searching the database: ("</span> &lt;&lt; A_args-&gt;<a class="code" href="classSimSite3D_1_1BaseParameters.html#4812fa282e2ba266dbfa064182b594b9">dbase_sites</a> 
 <a name="l00248"></a>00248                   &lt;&lt; <span class="stringliteral">")\n"</span>;
 <a name="l00249"></a>00249     
 <a name="l00250"></a>00250         <span class="comment">// The tag denoting a sitemap labels file is the suffix "_s.csv".</span>
@@ -258,8 +258,8 @@
 <a name="l00260"></a>00260           struct_id.erase(struct_id.end() - 6, struct_id.end());
 <a name="l00261"></a>00261     
 <a name="l00262"></a>00262           alignments-&gt;clear();
-<a name="l00263"></a>00263           <a class="code" href="classASCbase_1_1Search.html#fd59641ac1b15dd60260cdc03455068d">align_and_score_dset_site</a>(alignments, score_method, align_method, 
-<a name="l00264"></a>00264                                     A_args-&gt;<a class="code" href="classASCbase_1_1BaseParameters.html#4812fa282e2ba266dbfa064182b594b9">dbase_sites</a>, struct_id,
+<a name="l00263"></a>00263           <a class="code" href="classSimSite3D_1_1Search.html#fd59641ac1b15dd60260cdc03455068d">align_and_score_dset_site</a>(alignments, score_method, align_method, 
+<a name="l00264"></a>00264                                     A_args-&gt;<a class="code" href="classSimSite3D_1_1BaseParameters.html#4812fa282e2ba266dbfa064182b594b9">dbase_sites</a>, struct_id,
 <a name="l00265"></a>00265                                     results_out);
 <a name="l00266"></a>00266           free(dbfilelist[n]);
 <a name="l00267"></a>00267         }
@@ -269,25 +269,25 @@
 <a name="l00271"></a>00271     
 <a name="l00272"></a>00272       <span class="comment">// Need to check if this is a "normalization" run or "actual" run</span>
 <a name="l00273"></a>00273       std::vector&lt;std::string&gt; tokens;
-<a name="l00274"></a>00274       string_tok(A_args-&gt;<a class="code" href="classASCbase_1_1BaseParameters.html#96522745ba23c6aac7d9258d65aac545">proj_output</a>, &amp;tokens, <span class="charliteral">'/'</span>);
-<a name="l00275"></a>00275       <span class="keywordflow">if</span>(tokens.back().substr(0,13) != <span class="stringliteral">".ASCbase_tmp_"</span>)
+<a name="l00274"></a>00274       string_tok(A_args-&gt;<a class="code" href="classSimSite3D_1_1BaseParameters.html#96522745ba23c6aac7d9258d65aac545">proj_output</a>, &amp;tokens, <span class="charliteral">'/'</span>);
+<a name="l00275"></a>00275       <span class="keywordflow">if</span>(tokens.back().substr(0,13) != <span class="stringliteral">".SimSite3D_tmp_"</span>)
 <a name="l00276"></a>00276         std::cout &lt;&lt; <span class="stringliteral">"You may find the results of your search in\n  "</span>
-<a name="l00277"></a>00277                   &lt;&lt; A_args-&gt;<a class="code" href="classASCbase_1_1BaseParameters.html#96522745ba23c6aac7d9258d65aac545">proj_output</a> &lt;&lt; <span class="stringliteral">"\n"</span>;
+<a name="l00277"></a>00277                   &lt;&lt; A_args-&gt;<a class="code" href="classSimSite3D_1_1BaseParameters.html#96522745ba23c6aac7d9258d65aac545">proj_output</a> &lt;&lt; <span class="stringliteral">"\n"</span>;
 <a name="l00278"></a>00278      
 <a name="l00279"></a>00279       <span class="keywordflow">return</span> <span class="keyword">true</span>;
 <a name="l00280"></a>00280     }
 <a name="l00281"></a>00281 
 <a name="l00283"></a>00283     <span class="keywordtype">bool</span>
-<a name="l00284"></a><a class="code" href="classASCbase_1_1Search.html#8d8972c7e6cab00f3251285af696d902">00284</a>     <a class="code" href="classASCbase_1_1Search.html#8d8972c7e6cab00f3251285af696d902">set_alignment_method</a>(align_method_t *align_method)
+<a name="l00284"></a><a class="code" href="classSimSite3D_1_1Search.html#8d8972c7e6cab00f3251285af696d902">00284</a>     <a class="code" href="classSimSite3D_1_1Search.html#8d8972c7e6cab00f3251285af696d902">set_alignment_method</a>(align_method_t *align_method)
 <a name="l00285"></a>00285     {
 <a name="l00286"></a>00286       *align_method = UNKNOWN_ALIGNMENT_METHOD;
-<a name="l00287"></a>00287       <span class="keywordflow">if</span>(A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#5a36fe41006109a902194d9e2cf39e1a">alignments_fname</a>.length()){
+<a name="l00287"></a>00287       <span class="keywordflow">if</span>(A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#5a36fe41006109a902194d9e2cf39e1a">alignments_fname</a>.length()){
 <a name="l00288"></a>00288         *align_method = FROM_RESULTS_FILE;
 <a name="l00289"></a>00289         std::cout &lt;&lt; <span class="stringliteral">"NOTE: using given results file ("</span>
-<a name="l00290"></a>00290                   &lt;&lt; A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#5a36fe41006109a902194d9e2cf39e1a">alignments_fname</a> &lt;&lt; <span class="stringliteral">") for alignments\n"</span>;
-<a name="l00291"></a>00291       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#1cb575b033f4db440a377d4ea8332929">align_to_query</a>){
+<a name="l00290"></a>00290                   &lt;&lt; A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#5a36fe41006109a902194d9e2cf39e1a">alignments_fname</a> &lt;&lt; <span class="stringliteral">") for alignments\n"</span>;
+<a name="l00291"></a>00291       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#1cb575b033f4db440a377d4ea8332929">align_to_query</a>){
 <a name="l00292"></a>00292         *align_method = TRIANGLE_MATCHES;
-<a name="l00293"></a>00293       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>( A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#019cff6f0e6b9d6028f7e9fab62e62b6">num_rand_aligns</a>){
+<a name="l00293"></a>00293       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>( A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#019cff6f0e6b9d6028f7e9fab62e62b6">num_rand_aligns</a>){
 <a name="l00294"></a>00294         *align_method = RANDOM_SAMPLING;
 <a name="l00295"></a>00295         <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00296"></a>00296       }<span class="keywordflow">else</span>{
@@ -297,11 +297,11 @@
 <a name="l00300"></a>00300     }
 <a name="l00301"></a>00301 
 <a name="l00302"></a>00302   <span class="keyword">private</span>:
-<a name="l00304"></a>00304     <span class="keywordtype">void</span> <a class="code" href="classASCbase_1_1Search.html#2249af437ccb9705517b8ad80a6a0564">init_vars</a>();
+<a name="l00304"></a>00304     <span class="keywordtype">void</span> <a class="code" href="classSimSite3D_1_1Search.html#2249af437ccb9705517b8ad80a6a0564">init_vars</a>();
 <a name="l00305"></a>00305 
 <a name="l00309"></a>00309 
 <a name="l00312"></a>00312     <span class="keyword">template</span> &lt; <span class="keyword">typename</span> scoring_T, <span class="keyword">typename</span> align_T &gt; <span class="keywordtype">bool</span>
-<a name="l00313"></a><a class="code" href="classASCbase_1_1Search.html#fd59641ac1b15dd60260cdc03455068d">00313</a>     <a class="code" href="classASCbase_1_1Search.html#fd59641ac1b15dd60260cdc03455068d">align_and_score_dset_site</a>(std::vector&lt;align_T&gt; *alignments, 
+<a name="l00313"></a><a class="code" href="classSimSite3D_1_1Search.html#fd59641ac1b15dd60260cdc03455068d">00313</a>     <a class="code" href="classSimSite3D_1_1Search.html#fd59641ac1b15dd60260cdc03455068d">align_and_score_dset_site</a>(std::vector&lt;align_T&gt; *alignments, 
 <a name="l00314"></a>00314                               scoring_T *score_method,
 <a name="l00315"></a>00315                               <span class="keyword">const</span> align_method_t align_method,
 <a name="l00316"></a>00316                               <span class="keyword">const</span> std::string target_sitemap_path,
@@ -309,20 +309,20 @@
 <a name="l00318"></a>00318                               std::ofstream&amp; results_out)
 <a name="l00319"></a>00319     {
 <a name="l00320"></a>00320       <span class="comment">// 1 Load target sitemap</span>
-<a name="l00321"></a>00321       <a class="code" href="classASCbase_1_1DbaseSitemap.html">DbaseSitemap</a> dbase_site(target_sitemap_path, struct_id, *A_args,
-<a name="l00322"></a>00322                               A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#ac2413e22df6100db6b73f5920cc9ddd">max_corr_surf_pt_dist</a>,
-<a name="l00323"></a>00323                               A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#44592b748c47ab06a54c680635dc0795">check_all_triangles</a>, 
-<a name="l00324"></a>00324                               A_args-&gt;<a class="code" href="classASCbase_1_1SearchParameters.html#1c517ad691e1606cce4cdfac986067b0">use_hbond_surfaces</a>);
-<a name="l00325"></a>00325       <span class="keywordflow">if</span>(dbase_site.<a class="code" href="classASCbase_1_1Sitemap.html#1a15e9045f766ba8e80f6411513de6ac">fail</a>()){
+<a name="l00321"></a>00321       <a class="code" href="classSimSite3D_1_1DbaseSitemap.html">DbaseSitemap</a> dbase_site(target_sitemap_path, struct_id, *A_args,
+<a name="l00322"></a>00322                               A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#ac2413e22df6100db6b73f5920cc9ddd">max_corr_surf_pt_dist</a>,
+<a name="l00323"></a>00323                               A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#44592b748c47ab06a54c680635dc0795">check_all_triangles</a>, 
+<a name="l00324"></a>00324                               A_args-&gt;<a class="code" href="classSimSite3D_1_1SearchParameters.html#1c517ad691e1606cce4cdfac986067b0">use_hbond_surfaces</a>);
+<a name="l00325"></a>00325       <span class="keywordflow">if</span>(dbase_site.<a class="code" href="classSimSite3D_1_1Sitemap.html#1a15e9045f766ba8e80f6411513de6ac">fail</a>()){
 <a name="l00326"></a>00326         std::string msg = <span class="stringliteral">"Failed to initialize the sitemap:\n\t"</span>;
-<a name="l00327"></a>00327         err_msg(<a class="code" href="classASCbase_1_1Search.html#f7e20ddc101c1e6165e3b00a2e0eeb82">A_fname</a>, <span class="stringliteral">"align_and_score_target"</span>, 
+<a name="l00327"></a>00327         err_msg(<a class="code" href="classSimSite3D_1_1Search.html#f7e20ddc101c1e6165e3b00a2e0eeb82">A_fname</a>, <span class="stringliteral">"align_and_score_target"</span>, 
 <a name="l00328"></a>00328                 msg + target_sitemap_path + <span class="stringliteral">"/"</span> + struct_id);
 <a name="l00329"></a>00329         <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00330"></a>00330       }
 <a name="l00331"></a>00331 
 <a name="l00332"></a>00332       <span class="comment">// 2 Generate alignments to move target to query</span>
-<a name="l00333"></a>00333       <a class="code" href="classASCbase_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>-&gt;<a class="code" href="classASCbase_1_1ModelSitemap.html#ee7e2c3271b9e278ce926db772cb71ad">revert</a>(<span class="keyword">true</span>, <span class="keyword">true</span>);
-<a name="l00334"></a>00334       align(<a class="code" href="classASCbase_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>, dbase_site, alignments, align_method);
+<a name="l00333"></a>00333       <a class="code" href="classSimSite3D_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>-&gt;<a class="code" href="classSimSite3D_1_1ModelSitemap.html#ee7e2c3271b9e278ce926db772cb71ad">revert</a>(<span class="keyword">true</span>, <span class="keyword">true</span>);
+<a name="l00334"></a>00334       align(<a class="code" href="classSimSite3D_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>, dbase_site, alignments, align_method);
 <a name="l00335"></a>00335 
 <a name="l00336"></a>00336       <span class="comment">// 3 Score all alignments</span>
 <a name="l00337"></a>00337       score_method-&gt;score_alignments(*alignments, &amp;dbase_site, results_out);
@@ -330,19 +330,19 @@
 <a name="l00339"></a>00339     }
 <a name="l00340"></a>00340 
 <a name="l00341"></a>00341     <span class="keyword">template</span> &lt; <span class="keyword">typename</span> align_T &gt; <span class="keywordtype">bool</span>
-<a name="l00342"></a>00342     align(<a class="code" href="classASCbase_1_1ModelSitemap.html">ModelSitemap</a> *query_site, <a class="code" href="classASCbase_1_1Sitemap.html">Sitemap</a> &amp;dset_site, 
+<a name="l00342"></a>00342     align(<a class="code" href="classSimSite3D_1_1ModelSitemap.html">ModelSitemap</a> *query_site, <a class="code" href="classSimSite3D_1_1Sitemap.html">Sitemap</a> &amp;dset_site, 
 <a name="l00343"></a>00343           std::vector&lt;align_T&gt; *alignments, <span class="keyword">const</span> align_method_t align_method)
 <a name="l00344"></a>00344     {
 <a name="l00345"></a>00345       <span class="keywordflow">if</span>(align_method == NO_ALIGNMENT){
-<a name="l00346"></a>00346         <a class="code" href="classASCbase_1_1IdentityAlignment.html">IdentityAlignment</a> my_align;
-<a name="l00347"></a>00347         my_align.<a class="code" href="classASCbase_1_1IdentityAlignment.html#3ac828753736d937a23ff2f92394ecc3">align</a>(query_site, dset_site, alignments);
+<a name="l00346"></a>00346         <a class="code" href="classSimSite3D_1_1IdentityAlignment.html">IdentityAlignment</a> my_align;
+<a name="l00347"></a>00347         my_align.<a class="code" href="classSimSite3D_1_1IdentityAlignment.html#3ac828753736d937a23ff2f92394ecc3">align</a>(query_site, dset_site, alignments);
 <a name="l00348"></a>00348       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(align_method == TRIANGLE_MATCHES){
 <a name="l00349"></a>00349         MatchTriangles my_align(A_args-&gt;dmetol, A_args-&gt;lsetol, 
 <a name="l00350"></a>00350                                 A_args-&gt;allow_hphob_triangles);
-<a name="l00351"></a>00351         my_align.<a class="code" href="classASCbase_1_1IdentityAlignment.html#3ac828753736d937a23ff2f92394ecc3">align</a>(query_site, dset_site, alignments);
+<a name="l00351"></a>00351         my_align.<a class="code" href="classSimSite3D_1_1IdentityAlignment.html#3ac828753736d937a23ff2f92394ecc3">align</a>(query_site, dset_site, alignments);
 <a name="l00352"></a>00352       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(align_method == FROM_RESULTS_FILE){
 <a name="l00353"></a>00353         AlignmentsFromResultsFile my_align(A_args-&gt;alignments_fname);
-<a name="l00354"></a>00354         my_align.<a class="code" href="classASCbase_1_1IdentityAlignment.html#3ac828753736d937a23ff2f92394ecc3">align</a>(query_site, dset_site, alignments);
+<a name="l00354"></a>00354         my_align.<a class="code" href="classSimSite3D_1_1IdentityAlignment.html#3ac828753736d937a23ff2f92394ecc3">align</a>(query_site, dset_site, alignments);
 <a name="l00355"></a>00355       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(align_method == RANDOM_SAMPLING){
 <a name="l00356"></a>00356         std::cout &lt;&lt; <span class="stringliteral">"Unimplemented sampling method -- cannot continue\n"</span>;
 <a name="l00357"></a>00357         <span class="keywordflow">return</span> <span class="keyword">false</span>;
@@ -358,20 +358,20 @@
 <a name="l00367"></a>00367     }
 <a name="l00368"></a>00368 
 <a name="l00369"></a>00369 
-<a name="l00370"></a><a class="code" href="classASCbase_1_1Search.html#658d52e28d45179d6b9d1d6a205215ea">00370</a>     <span class="keywordtype">bool</span> <a class="code" href="classASCbase_1_1Search.html#658d52e28d45179d6b9d1d6a205215ea">A_fail</a>;              
-<a name="l00371"></a>00371     <span class="keyword">const</span> <a class="code" href="classASCbase_1_1SearchParameters.html">SearchParameters</a>* A_args;  
-<a name="l00372"></a><a class="code" href="classASCbase_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">00372</a>     <a class="code" href="classASCbase_1_1ModelSitemap.html">ModelSitemap</a>* <a class="code" href="classASCbase_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>;   
-<a name="l00373"></a>00373     <a class="code" href="classASCbase_1_1Timer.html">Timer</a> A_timer;
+<a name="l00370"></a><a class="code" href="classSimSite3D_1_1Search.html#658d52e28d45179d6b9d1d6a205215ea">00370</a>     <span class="keywordtype">bool</span> <a class="code" href="classSimSite3D_1_1Search.html#658d52e28d45179d6b9d1d6a205215ea">A_fail</a>;              
+<a name="l00371"></a>00371     <span class="keyword">const</span> <a class="code" href="classSimSite3D_1_1SearchParameters.html">SearchParameters</a>* A_args;  
+<a name="l00372"></a><a class="code" href="classSimSite3D_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">00372</a>     <a class="code" href="classSimSite3D_1_1ModelSitemap.html">ModelSitemap</a>* <a class="code" href="classSimSite3D_1_1Search.html#7b57373932f92cce7ab4bf5148851ede">A_model</a>;   
+<a name="l00373"></a>00373     <a class="code" href="classSimSite3D_1_1Timer.html">Timer</a> A_timer;
 <a name="l00374"></a>00374 
-<a name="l00375"></a><a class="code" href="classASCbase_1_1Search.html#f7e20ddc101c1e6165e3b00a2e0eeb82">00375</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classASCbase_1_1Search.html#f7e20ddc101c1e6165e3b00a2e0eeb82">A_fname</a>;  
+<a name="l00375"></a><a class="code" href="classSimSite3D_1_1Search.html#f7e20ddc101c1e6165e3b00a2e0eeb82">00375</a>     <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="classSimSite3D_1_1Search.html#f7e20ddc101c1e6165e3b00a2e0eeb82">A_fname</a>;  
 <a name="l00376"></a>00376   };
 <a name="l00377"></a>00377 
 <a name="l00378"></a>00378 <span class="preprocessor">#if 0</span>
 <a name="l00380"></a>00380 <span class="preprocessor">  template &lt; typename align_T &gt;</span>
-<a name="l00381"></a>00381 <span class="preprocessor"></span>  <span class="keyword">struct </span><a class="code" href="structASCbase_1_1align__impl.html">align_impl</a>
+<a name="l00381"></a>00381 <span class="preprocessor"></span>  <span class="keyword">struct </span><a class="code" href="structSimSite3D_1_1align__impl.html">align_impl</a>
 <a name="l00382"></a>00382   {
 <a name="l00383"></a>00383     <span class="comment">// Overload this function</span>
-<a name="l00384"></a>00384     <span class="keyword">static</span> <span class="keywordtype">bool</span> align(<a class="code" href="classASCbase_1_1Sitemap.html">Sitemap</a>&amp; dset_site, std::vector&lt;align_T&gt; *alignments);
+<a name="l00384"></a>00384     <span class="keyword">static</span> <span class="keywordtype">bool</span> align(<a class="code" href="classSimSite3D_1_1Sitemap.html">Sitemap</a>&amp; dset_site, std::vector&lt;align_T&gt; *alignments);
 <a name="l00385"></a>00385   };
 <a name="l00386"></a>00386 <span class="preprocessor">#endif</span>
 <a name="l00387"></a>00387 <span class="preprocessor"></span>

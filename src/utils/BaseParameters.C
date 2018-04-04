@@ -32,7 +32,7 @@
 #include <stream_basics.H>
 #include <cstdlib>
 
-using namespace ASCbase;
+using namespace SimSite3D;
 typedef std::pair<std::string, std::string*> str_var_pair;
 const std::string BaseParameters::A_fname = "BaseParameters.C";
 

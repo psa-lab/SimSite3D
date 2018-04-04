@@ -1,4 +1,4 @@
 NOTE:
  
-These python files are here as wrappers for ASCbase installs that do not 
-have the Python portion of ASCbase (ASCbasePy) installed.
+These python files are here as wrappers for SimSite3D installs that do not 
+have the Python portion of SimSite3D (SimSite3DPy) installed.

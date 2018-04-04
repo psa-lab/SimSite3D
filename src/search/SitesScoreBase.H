@@ -2,7 +2,7 @@
  * Copyright (c) 2010, Michigan State University (MSU) Board of Trustees.
  *   All rights reserved.
  *
- * This file is part of the ASCbase Software project.
+ * This file is part of the SimSite3D Software project.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -23,7 +23,7 @@
 #include <DbaseSitemap.H>
 #include <ScoreMapBase.H>
 
-namespace ASCbase{
+namespace SimSite3D{
 
 //! Base class for scoring two (aligned) sites 
 /*! This class defines the interface required for a class to be able to be
@@ -142,5 +142,5 @@ public:
 private:
   bool A_scale_terms;
 };
-} // end namespace ASCbase
+} // end namespace SimSite3D
 #endif

@@ -26,7 +26,7 @@ if(not os.path.exists(dirs.diverse_dir)):
 #if(os.path.isdir("autom4te.cache")):
 #  utils.system("/bin/rm -rf autom4te.cache")
 #
-#print "initializing ASCbase C/C++ install environment... "
+#print "initializing SimSite3D C/C++ install environment... "
 ## shouldn't always call flush but the commands won't go in order
 #sys.stdout.flush()
 #if(not utils.system("/usr/bin/aclocal")):
@@ -38,18 +38,18 @@ if(not os.path.exists(dirs.diverse_dir)):
 #if(not utils.system("/usr/bin/autoconf")):
 #  sys.exit(1)
 #
-#print "configuring ASCbase C/C++ install environment... "
+#print "configuring SimSite3D C/C++ install environment... "
 #sys.stdout.flush()
 #if(not utils.system("./configure --prefix=\"" + dirs.proj_dir + "\"")):
 #  sys.exit(1)
-#print "building ASCbase C/C++ executables... "
+#print "building SimSite3D C/C++ executables... "
 #sys.stdout.flush()
 #if(not utils.system("/usr/bin/make install")):
 #  sys.exit(1)
 #
-#print "copying ASCbase python directory...",
+#print "copying SimSite3D python directory...",
 #sys.stdout.flush()
-#shutil.copy("python/py_src/non_ASCbasePy_auto_gen_sitemaps.py", 
+#shutil.copy("python/py_src/non_SimSite3DPy_auto_gen_sitemaps.py", 
 #            dirs.proj_dir + "/bin/auto_gen_sitemaps.py");
 # Do not want to blow away the python directory if we are installing to the 
 # current directory -- if this becomes a problem, we should look at how to
@@ -71,9 +71,9 @@ if(not utils.system("/usr/bin/make install")):
 print "finished"
 sys.stdout.flush()
 
-print "setting up ASCbase parameters directory...",
+print "setting up SimSite3D parameters directory...",
 sys.stdout.flush()
-params_dir = dirs.proj_dir + "/ASCbaseSoftParams"
+params_dir = dirs.proj_dir + "/SimSite3DSoftParams"
 if(not os.path.isdir(params_dir)):
   os.mkdir(params_dir, dir_mode)
 shutil.copy("params/optimum_hbonds.dat", params_dir);
@@ -87,7 +87,7 @@ shutil.copy("params/ascbase.conf",
 print "finished"
 sys.stdout.flush()
 
-print "copying ASCbase examples directory...",
+print "copying SimSite3D examples directory...",
 sys.stdout.flush()
 if(os.getcwd() != dirs.proj_dir):
   if(os.path.isdir(dirs.proj_dir + "/examples")):
@@ -117,12 +117,12 @@ sys.stdout.flush()
 #print "  The file diverse_ligands.tgz should be extracted to " + \
   #"$ASCBASE_DIVERSE_LIGS\n\n"
 
-print "Please consult the ASCbase Quick Guide for help in configuring and",
-print "using the\nASCbase software tools"
-print "To configure ASCbase, two examples files are included:"
-print "  An example ASCbase configuration file is:"
+print "Please consult the SimSite3D Quick Guide for help in configuring and",
+print "using the\nSimSite3D software tools"
+print "To configure SimSite3D, two examples files are included:"
+print "  An example SimSite3D configuration file is:"
 print "    " + params_dir + "/ascbase.conf.example"
 print "  An example external prot-lig scoring functions config file is:"
 print "    " + params_dir + "/ext_pro_lig_score_fcns.conf.example\n\n"
 print "To get started, you may look at the examples in\n  " + \
-  dirs.proj_dir + "/examples\n  and peruse the ASCbase quick guide\n";
+  dirs.proj_dir + "/examples\n  and peruse the SimSite3D quick guide\n";

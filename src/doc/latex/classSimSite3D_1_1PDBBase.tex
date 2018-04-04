@@ -1,70 +1,70 @@
-\section{ASCbase::PDBBase Class Reference}
-\label{classASCbase_1_1PDBBase}\index{ASCbase::PDBBase@{ASCbase::PDBBase}}
+\section{SimSite3D::PDBBase Class Reference}
+\label{classSimSite3D_1_1PDBBase}\index{SimSite3D::PDBBase@{SimSite3D::PDBBase}}
 Base class for reading and writing PDB coordinate files.  
 
 
 {\tt \#include $<$PDBBase.H$>$}
 
-Inheritance diagram for ASCbase::PDBBase::\begin{figure}[H]
+Inheritance diagram for SimSite3D::PDBBase::\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3cm]{classASCbase_1_1PDBBase}
+\includegraphics[height=3cm]{classSimSite3D_1_1PDBBase}
 \end{center}
 \end{figure}
 \subsection*{Public Types}
 \begin{CompactItemize}
 \item 
-typedef std::vector$<$ \bf{modres\_\-record\_\-type} $>$ \textbf{modres\_\-record\_\-vec}\label{classASCbase_1_1PDBBase_8d5d34b3f2916c01b64e7bc31036098b}
+typedef std::vector$<$ \bf{modres\_\-record\_\-type} $>$ \textbf{modres\_\-record\_\-vec}\label{classSimSite3D_1_1PDBBase_8d5d34b3f2916c01b64e7bc31036098b}
 
 \item 
-typedef modres\_\-record\_\-vec::iterator \textbf{modres\_\-record\_\-vi}\label{classASCbase_1_1PDBBase_350b2317b7319d666ec8e5f63d604f75}
+typedef modres\_\-record\_\-vec::iterator \textbf{modres\_\-record\_\-vi}\label{classSimSite3D_1_1PDBBase_350b2317b7319d666ec8e5f63d604f75}
 
 \item 
-typedef modres\_\-record\_\-vec::const\_\-iterator \textbf{modres\_\-record\_\-vci}\label{classASCbase_1_1PDBBase_c99c0ff276ac01a6424628da2c659872}
+typedef modres\_\-record\_\-vec::const\_\-iterator \textbf{modres\_\-record\_\-vci}\label{classSimSite3D_1_1PDBBase_c99c0ff276ac01a6424628da2c659872}
 
 \item 
-typedef std::vector$<$ \bf{het\_\-record\_\-type} $>$ \textbf{het\_\-record\_\-vec}\label{classASCbase_1_1PDBBase_61db0e7bba877dddbc56ffcfde427b23}
+typedef std::vector$<$ \bf{het\_\-record\_\-type} $>$ \textbf{het\_\-record\_\-vec}\label{classSimSite3D_1_1PDBBase_61db0e7bba877dddbc56ffcfde427b23}
 
 \item 
-typedef het\_\-record\_\-vec::iterator \textbf{het\_\-record\_\-vi}\label{classASCbase_1_1PDBBase_04bbb2851e1d5cb94623b22c6290efe8}
+typedef het\_\-record\_\-vec::iterator \textbf{het\_\-record\_\-vi}\label{classSimSite3D_1_1PDBBase_04bbb2851e1d5cb94623b22c6290efe8}
 
 \item 
-typedef het\_\-record\_\-vec::const\_\-iterator \textbf{het\_\-record\_\-vci}\label{classASCbase_1_1PDBBase_da9851127724fcf51ca15403d73f3803}
+typedef het\_\-record\_\-vec::const\_\-iterator \textbf{het\_\-record\_\-vci}\label{classSimSite3D_1_1PDBBase_da9851127724fcf51ca15403d73f3803}
 
 \end{CompactItemize}
 \subsection*{Public Member Functions}
 \begin{CompactItemize}
 \item 
-\bf{PDBBase} ()\label{classASCbase_1_1PDBBase_b8a7226b098f891fff8a84c8efac0e94}
+\bf{PDBBase} ()\label{classSimSite3D_1_1PDBBase_b8a7226b098f891fff8a84c8efac0e94}
 
 \begin{CompactList}\small\item\em Typically used to create a PDB file. \item\end{CompactList}\item 
 \bf{PDBBase} (const std::string filename, const verbose\_\-level\_\-t verbosity=VERBOSE\_\-SILENT)
 \begin{CompactList}\small\item\em Read in a PDB file. \item\end{CompactList}\item 
-\bf{$\sim$PDBBase} ()\label{classASCbase_1_1PDBBase_d5a3b091d8d5a6e718a8ed91b2d3720d}
+\bf{$\sim$PDBBase} ()\label{classSimSite3D_1_1PDBBase_d5a3b091d8d5a6e718a8ed91b2d3720d}
 
 \begin{CompactList}\small\item\em Do nothing destructor. \item\end{CompactList}\item 
 bool \bf{write} (const std::string filename)
 \begin{CompactList}\small\item\em Write the atoms to file in PDB format. \item\end{CompactList}\item 
-const bool \bf{const\_\-write} (const std::string filename) const \label{classASCbase_1_1PDBBase_3a17f60455b5bb35305dd7a4405930dd}
+const bool \bf{const\_\-write} (const std::string filename) const \label{classSimSite3D_1_1PDBBase_3a17f60455b5bb35305dd7a4405930dd}
 
 \begin{CompactList}\small\item\em entire existence is for debugging const pointers to pdb files \item\end{CompactList}\item 
 bool \bf{write\_\-xyzr} (std::ostream \&out, bool include\_\-metals, const std::vector$<$ std::string $>$ \&waters)
 \begin{CompactList}\small\item\em Write as xyzr lines (coordinates + radius). \item\end{CompactList}\item 
 void \bf{set\_\-header} (const std::string h)
 \begin{CompactList}\small\item\em Set the header. \item\end{CompactList}\item 
-void \bf{report\_\-stats} (std::ostream \&out)\label{classASCbase_1_1PDBBase_7918cb94d1deb47d69fef5816e7a7782}
+void \bf{report\_\-stats} (std::ostream \&out)\label{classSimSite3D_1_1PDBBase_7918cb94d1deb47d69fef5816e7a7782}
 
 \begin{CompactList}\small\item\em does nothing \item\end{CompactList}\item 
-modres\_\-record\_\-vci \textbf{modres\_\-records\_\-begin} () const \label{classASCbase_1_1PDBBase_011323485c71328e19088a1d63b7529c}
+modres\_\-record\_\-vci \textbf{modres\_\-records\_\-begin} () const \label{classSimSite3D_1_1PDBBase_011323485c71328e19088a1d63b7529c}
 
 \item 
-modres\_\-record\_\-vci \textbf{modres\_\-records\_\-end} () const \label{classASCbase_1_1PDBBase_9c75df999d4d3b5e2cf6ca398c9c37c0}
+modres\_\-record\_\-vci \textbf{modres\_\-records\_\-end} () const \label{classSimSite3D_1_1PDBBase_9c75df999d4d3b5e2cf6ca398c9c37c0}
 
 \item 
-het\_\-record\_\-vci \textbf{het\_\-records\_\-begin} () const \label{classASCbase_1_1PDBBase_123db222cea71e537c127ead94792cd1}
+het\_\-record\_\-vci \textbf{het\_\-records\_\-begin} () const \label{classSimSite3D_1_1PDBBase_123db222cea71e537c127ead94792cd1}
 
 \item 
-het\_\-record\_\-vci \textbf{het\_\-records\_\-end} () const \label{classASCbase_1_1PDBBase_51ffbc4c560c201e959f162221bf9cd0}
+het\_\-record\_\-vci \textbf{het\_\-records\_\-end} () const \label{classSimSite3D_1_1PDBBase_51ffbc4c560c201e959f162221bf9cd0}
 
 \end{CompactItemize}
 \subsection*{Static Public Member Functions}
@@ -77,7 +77,7 @@ static pdb\_\-record\_\-type \bf{get\_\-record\_\-type} (const std::string line)
 \subsection*{Protected Member Functions}
 \begin{CompactItemize}
 \item 
-bool \bf{read\_\-data} (std::ifstream \&fin)\label{classASCbase_1_1PDBBase_2c065e3bb88a3da81ba55ed4f02b3998}
+bool \bf{read\_\-data} (std::ifstream \&fin)\label{classSimSite3D_1_1PDBBase_2c065e3bb88a3da81ba55ed4f02b3998}
 
 \begin{CompactList}\small\item\em This is cheating, but .... I need a quick and dirty way to do this atm. \item\end{CompactList}\item 
 bool \bf{read\_\-data} (std::ifstream \&fin, const bool ignore\_\-alt\-Locs)
@@ -89,28 +89,28 @@ void \bf{add\_\-het\_\-record} (atom\_\-vci atom)
 \item 
 bool \bf{get\_\-res\_\-info} (const std::string atom\_\-name, const std::string res\_\-name, \bf{atom\_\-t} $\ast$atom)
 \item 
-void \bf{read\_\-het\_\-record} (std::string \&het\_\-line)\label{classASCbase_1_1PDBBase_709ac8acd5d42fa1ffbb4b51c1251b03}
+void \bf{read\_\-het\_\-record} (std::string \&het\_\-line)\label{classSimSite3D_1_1PDBBase_709ac8acd5d42fa1ffbb4b51c1251b03}
 
 \begin{CompactList}\small\item\em Read a HET record and store it in the het record vector. \item\end{CompactList}\item 
-void \bf{read\_\-modres\_\-record} (std::string \&modres\_\-line)\label{classASCbase_1_1PDBBase_b2935390dde55dd39526a43decee1eb7}
+void \bf{read\_\-modres\_\-record} (std::string \&modres\_\-line)\label{classSimSite3D_1_1PDBBase_b2935390dde55dd39526a43decee1eb7}
 
 \begin{CompactList}\small\item\em Read a MODRES record and store it in the modres record vector. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
-het\_\-record\_\-vec \bf{A\_\-het\_\-records}\label{classASCbase_1_1PDBBase_611f815d363ce445712c8a0bf4facbb4}
+het\_\-record\_\-vec \bf{A\_\-het\_\-records}\label{classSimSite3D_1_1PDBBase_611f815d363ce445712c8a0bf4facbb4}
 
 \begin{CompactList}\small\item\em Vector of \char`\"{}HET   \char`\"{} records. \item\end{CompactList}\item 
-modres\_\-record\_\-vec \bf{A\_\-modres\_\-records}\label{classASCbase_1_1PDBBase_6c966a768459840b7a19eacabd51d099}
+modres\_\-record\_\-vec \bf{A\_\-modres\_\-records}\label{classSimSite3D_1_1PDBBase_6c966a768459840b7a19eacabd51d099}
 
 \begin{CompactList}\small\item\em Vector of MODRES records. \item\end{CompactList}\item 
-std::string \bf{A\_\-header}\label{classASCbase_1_1PDBBase_d97d60e884704fd46ee09111846b0989}
+std::string \bf{A\_\-header}\label{classSimSite3D_1_1PDBBase_d97d60e884704fd46ee09111846b0989}
 
 \begin{CompactList}\small\item\em String holding the header info. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Static Private Attributes}
 \begin{CompactItemize}
 \item 
-static const std::string \bf{A\_\-fname} = \char`\"{}PDBBase.C\char`\"{}\label{classASCbase_1_1PDBBase_2abb2396c1c8ad545d6e463a8690043b}
+static const std::string \bf{A\_\-fname} = \char`\"{}PDBBase.C\char`\"{}\label{classSimSite3D_1_1PDBBase_2abb2396c1c8ad545d6e463a8690043b}
 
 \begin{CompactList}\small\item\em Name of source file. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Classes}
@@ -128,9 +128,9 @@ Base class for reading and writing PDB coordinate files.
 
 
 \subsection{Constructor \& Destructor Documentation}
-\index{ASCbase::PDBBase@{ASCbase::PDBBase}!PDBBase@{PDBBase}}
-\index{PDBBase@{PDBBase}!ASCbase::PDBBase@{ASCbase::PDBBase}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}PDBBase::PDBBase (const std::string {\em filename}, const verbose\_\-level\_\-t {\em verbosity} = {\tt VERBOSE\_\-SILENT})}\label{classASCbase_1_1PDBBase_d4be3eb331549cbbe0cbed8c74e89817}
+\index{SimSite3D::PDBBase@{SimSite3D::PDBBase}!PDBBase@{PDBBase}}
+\index{PDBBase@{PDBBase}!SimSite3D::PDBBase@{SimSite3D::PDBBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}PDBBase::PDBBase (const std::string {\em filename}, const verbose\_\-level\_\-t {\em verbosity} = {\tt VERBOSE\_\-SILENT})}\label{classSimSite3D_1_1PDBBase_d4be3eb331549cbbe0cbed8c74e89817}
 
 
 Read in a PDB file. 
@@ -145,14 +145,14 @@ After a successful call to this constructor, the heavy atoms will be accessible 
 
 
 \subsection{Member Function Documentation}
-\index{ASCbase::PDBBase@{ASCbase::PDBBase}!add_het_record@{add\_\-het\_\-record}}
-\index{add_het_record@{add\_\-het\_\-record}!ASCbase::PDBBase@{ASCbase::PDBBase}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void PDBBase::add\_\-het\_\-record (atom\_\-vci {\em atom})\hspace{0.3cm}{\tt  [protected]}}\label{classASCbase_1_1PDBBase_e15bcd15e9d3d97f9b85f43a50557db7}
+\index{SimSite3D::PDBBase@{SimSite3D::PDBBase}!add_het_record@{add\_\-het\_\-record}}
+\index{add_het_record@{add\_\-het\_\-record}!SimSite3D::PDBBase@{SimSite3D::PDBBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void PDBBase::add\_\-het\_\-record (atom\_\-vci {\em atom})\hspace{0.3cm}{\tt  [protected]}}\label{classSimSite3D_1_1PDBBase_e15bcd15e9d3d97f9b85f43a50557db7}
 
 
-A number of pdb files do not have HET entries for 1 or more of the HET groups \index{ASCbase::PDBBase@{ASCbase::PDBBase}!get_record_type@{get\_\-record\_\-type}}
-\index{get_record_type@{get\_\-record\_\-type}!ASCbase::PDBBase@{ASCbase::PDBBase}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}pdb\_\-record\_\-type PDBBase::get\_\-record\_\-type (const std::string {\em line})\hspace{0.3cm}{\tt  [static]}}\label{classASCbase_1_1PDBBase_9ca7950fae493f47aa2fedb86a797d50}
+A number of pdb files do not have HET entries for 1 or more of the HET groups \index{SimSite3D::PDBBase@{SimSite3D::PDBBase}!get_record_type@{get\_\-record\_\-type}}
+\index{get_record_type@{get\_\-record\_\-type}!SimSite3D::PDBBase@{SimSite3D::PDBBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}pdb\_\-record\_\-type PDBBase::get\_\-record\_\-type (const std::string {\em line})\hspace{0.3cm}{\tt  [static]}}\label{classSimSite3D_1_1PDBBase_9ca7950fae493f47aa2fedb86a797d50}
 
 
 \begin{Desc}
@@ -162,9 +162,9 @@ A number of pdb files do not have HET entries for 1 or more of the HET groups \i
 \end{Desc}
 \begin{Desc}
 \item[Returns:]PDB atom line type (not atom line, hetatm, atom or hydrogen) \end{Desc}
-\index{ASCbase::PDBBase@{ASCbase::PDBBase}!get_res_info@{get\_\-res\_\-info}}
-\index{get_res_info@{get\_\-res\_\-info}!ASCbase::PDBBase@{ASCbase::PDBBase}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool PDBBase::get\_\-res\_\-info (const std::string {\em atom\_\-name}, const std::string {\em res\_\-name}, \bf{atom\_\-t} $\ast$ {\em atom})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1PDBBase_2b49fed724fd6cc31ddd3eb804f7d89c}
+\index{SimSite3D::PDBBase@{SimSite3D::PDBBase}!get_res_info@{get\_\-res\_\-info}}
+\index{get_res_info@{get\_\-res\_\-info}!SimSite3D::PDBBase@{SimSite3D::PDBBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool PDBBase::get\_\-res\_\-info (const std::string {\em atom\_\-name}, const std::string {\em res\_\-name}, \bf{atom\_\-t} $\ast$ {\em atom})\hspace{0.3cm}{\tt  [private]}}\label{classSimSite3D_1_1PDBBase_2b49fed724fd6cc31ddd3eb804f7d89c}
 
 
 Given an atom string an residue string, load the Van Der Waals radius, residue enum, atom enum and atom orbit into the given atom structure.
@@ -174,9 +174,9 @@ Given an atom string an residue string, load the Van Der Waals radius, residue e
 \begin{description}
 \item[{\em atom\_\-name}]4 char atom string \item[{\em res\_\-name}]3 char residue string \item[{\em atom}]Pointer to an atom structure return True if the given residue and atom strings are in table, else false \end{description}
 \end{Desc}
-\index{ASCbase::PDBBase@{ASCbase::PDBBase}!is_hydrogen@{is\_\-hydrogen}}
-\index{is_hydrogen@{is\_\-hydrogen}!ASCbase::PDBBase@{ASCbase::PDBBase}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool PDBBase::is\_\-hydrogen (const std::string {\em name})\hspace{0.3cm}{\tt  [static]}}\label{classASCbase_1_1PDBBase_6ac23db47cc859ba574c999d40d52039}
+\index{SimSite3D::PDBBase@{SimSite3D::PDBBase}!is_hydrogen@{is\_\-hydrogen}}
+\index{is_hydrogen@{is\_\-hydrogen}!SimSite3D::PDBBase@{SimSite3D::PDBBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool PDBBase::is\_\-hydrogen (const std::string {\em name})\hspace{0.3cm}{\tt  [static]}}\label{classSimSite3D_1_1PDBBase_6ac23db47cc859ba574c999d40d52039}
 
 
 True if the pdb atom name is a hydrogen atom, else false. 
@@ -190,9 +190,9 @@ Caution: you can't just test column 14 or you will remove metals like Rh, Cd, Pd
 \end{Desc}
 \begin{Desc}
 \item[Returns:]True if is hydrogen, else false \end{Desc}
-\index{ASCbase::PDBBase@{ASCbase::PDBBase}!read_data@{read\_\-data}}
-\index{read_data@{read\_\-data}!ASCbase::PDBBase@{ASCbase::PDBBase}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool PDBBase::read\_\-data (std::ifstream \& {\em fin}, const bool {\em ignore\_\-alt\-Locs})\hspace{0.3cm}{\tt  [protected]}}\label{classASCbase_1_1PDBBase_b11b6aca971d2ce849b16ae28c9f366f}
+\index{SimSite3D::PDBBase@{SimSite3D::PDBBase}!read_data@{read\_\-data}}
+\index{read_data@{read\_\-data}!SimSite3D::PDBBase@{SimSite3D::PDBBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool PDBBase::read\_\-data (std::ifstream \& {\em fin}, const bool {\em ignore\_\-alt\-Locs})\hspace{0.3cm}{\tt  [protected]}}\label{classSimSite3D_1_1PDBBase_b11b6aca971d2ce849b16ae28c9f366f}
 
 
 \begin{Desc}
@@ -202,9 +202,9 @@ Caution: you can't just test column 14 or you will remove metals like Rh, Cd, Pd
 \end{Desc}
 \begin{Desc}
 \item[Returns:]True if no error occured during reading, else false \end{Desc}
-\index{ASCbase::PDBBase@{ASCbase::PDBBase}!set_header@{set\_\-header}}
-\index{set_header@{set\_\-header}!ASCbase::PDBBase@{ASCbase::PDBBase}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void PDBBase::set\_\-header (const std::string {\em h})}\label{classASCbase_1_1PDBBase_e2de6eb8e6bd77dcca5d0b86847db355}
+\index{SimSite3D::PDBBase@{SimSite3D::PDBBase}!set_header@{set\_\-header}}
+\index{set_header@{set\_\-header}!SimSite3D::PDBBase@{SimSite3D::PDBBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void PDBBase::set\_\-header (const std::string {\em h})}\label{classSimSite3D_1_1PDBBase_e2de6eb8e6bd77dcca5d0b86847db355}
 
 
 Set the header. 
@@ -214,9 +214,9 @@ Set the header.
 \begin{description}
 \item[{\em h}]Header to write first in PDB file \end{description}
 \end{Desc}
-\index{ASCbase::PDBBase@{ASCbase::PDBBase}!write@{write}}
-\index{write@{write}!ASCbase::PDBBase@{ASCbase::PDBBase}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool PDBBase::write (const std::string {\em filename})\hspace{0.3cm}{\tt  [virtual]}}\label{classASCbase_1_1PDBBase_e8b78da086bcde015d96f7ac19387925}
+\index{SimSite3D::PDBBase@{SimSite3D::PDBBase}!write@{write}}
+\index{write@{write}!SimSite3D::PDBBase@{SimSite3D::PDBBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool PDBBase::write (const std::string {\em filename})\hspace{0.3cm}{\tt  [virtual]}}\label{classSimSite3D_1_1PDBBase_e8b78da086bcde015d96f7ac19387925}
 
 
 Write the atoms to file in PDB format. 
@@ -230,9 +230,9 @@ Write the atoms to file in PDB format.
 \item[Returns:]True if file could be opened for writing, else false \end{Desc}
 
 
-Implements \bf{ASCbase::Coord\-File} \doxyref{p.}{classASCbase_1_1CoordFile_dca3f5f45c21f85215dc380e2152b613}.\index{ASCbase::PDBBase@{ASCbase::PDBBase}!write_xyzr@{write\_\-xyzr}}
-\index{write_xyzr@{write\_\-xyzr}!ASCbase::PDBBase@{ASCbase::PDBBase}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool PDBBase::write\_\-xyzr (std::ostream \& {\em out}, bool {\em include\_\-metals}, const std::vector$<$ std::string $>$ \& {\em waters})}\label{classASCbase_1_1PDBBase_62a92225b2ba833627563c54efd11b7c}
+Implements \bf{SimSite3D::Coord\-File} \doxyref{p.}{classSimSite3D_1_1CoordFile_dca3f5f45c21f85215dc380e2152b613}.\index{SimSite3D::PDBBase@{SimSite3D::PDBBase}!write_xyzr@{write\_\-xyzr}}
+\index{write_xyzr@{write\_\-xyzr}!SimSite3D::PDBBase@{SimSite3D::PDBBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool PDBBase::write\_\-xyzr (std::ostream \& {\em out}, bool {\em include\_\-metals}, const std::vector$<$ std::string $>$ \& {\em waters})}\label{classSimSite3D_1_1PDBBase_62a92225b2ba833627563c54efd11b7c}
 
 
 Write as xyzr lines (coordinates + radius). 

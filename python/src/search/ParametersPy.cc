@@ -3,7 +3,7 @@
 #include <SearchParameters.H>
 
 using namespace boost::python;
-using ASCbase::SearchParameters;
+using SimSite3D::SearchParameters;
 
 class params_out_wrap{
 public:
@@ -25,7 +25,7 @@ public:
   }
 
   static void
-  score_aligns(T& S, ASCbase::rigid_align_vec& aligns,
+  score_aligns(T& S, SimSite3D::rigid_align_vec& aligns,
                Sitemap* search, stl_ofstream& out)
   {
     S.score_alignments(aligns, search, out.get());
@@ -36,7 +36,7 @@ public:
 
 BOOST_PYTHON_MODULE(_parameters)
 {
-  class_<SearchParameters, bases<ASCbase::BaseParameters> >
+  class_<SearchParameters, bases<SimSite3D::BaseParameters> >
     ("parameters", init< > ())
     .def("report", &params_out_wrap::report)
     // We won't be using this variable from the python interface

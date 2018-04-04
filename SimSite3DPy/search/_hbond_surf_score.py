@@ -1,4 +1,4 @@
-from ASCbasePy import utils, sitemaps
+from SimSite3DPy import utils, sitemaps
 from numpy import *
 from sys import stderr
 
@@ -44,7 +44,7 @@ class hbond_surf_score:
       5) Sum of linear error * dot product weighted matches
       6) Sum of squared error * dot product weighted matches
     """
-    from ASCbasePy.sitemaps import ACCEPTOR, DONOR, DONEPTOR
+    from SimSite3DPy.sitemaps import ACCEPTOR, DONOR, DONEPTOR
 
     sq_tol = tol*tol
 
@@ -152,10 +152,10 @@ class hbond_surf_score:
 
 if(__name__ == "__main__"):
   import sys
-  from ASCbasePy import parameters 
-  from ASCbasePy.search import ModelSitemap 
-  from ASCbasePy.search import vector_less__rigid_align_t__greater_
-  from ASCbasePy.search import IdentityAlignment
+  from SimSite3DPy import parameters 
+  from SimSite3DPy.search import ModelSitemap 
+  from SimSite3DPy.search import vector_less__rigid_align_t__greater_
+  from SimSite3DPy.search import IdentityAlignment
 
   params = parameters.search_parameters()
   rv = params.cmdline_options(sys.argv)

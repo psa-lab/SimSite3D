@@ -66,7 +66,7 @@ so that we use this version of boost::python and the right python library::
   # We had to build boost using the alternate install of Python for ....
   lib boost_python : : <file>/soft/linux64/boost_1_48_0/stage/lib/libboost_python.so ;
 
-  # These are dependencies for ASCbase -- if someone felt the need they could
+  # These are dependencies for SimSite3D -- if someone felt the need they could
   # only link them where needed.
   lib blas : : <file>/usr/lib64/libblas.so.3 ;
   lib lapack : : <file>/usr/lib64/liblapack.so.3 ;

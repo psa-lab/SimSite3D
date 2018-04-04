@@ -1,0 +1,9 @@
+You should now populate your master file ./index.rst and create other documentation
+source files. Use the Makefile to build the docs, like so:
+   make builder
+   where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
+
+
+run sphinx-build -b html <sourcedir> <builddir>
+
+run sphinx-build -b html . _build/html

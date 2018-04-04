@@ -1,0 +1,81 @@
+\section{ASCbase::Copy\-Tier1Score$<$ tier1\_\-SF $>$ Class Template Reference}
+\label{classASCbase_1_1CopyTier1Score}\index{ASCbase::CopyTier1Score@{ASCbase::CopyTier1Score}}
+Returns the tier1 score as the score for the current tier.  
+
+
+{\tt \#include $<$Copy\-Tier1Score.H$>$}
+
+Inheritance diagram for ASCbase::Copy\-Tier1Score$<$ tier1\_\-SF $>$::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classASCbase_1_1CopyTier1Score}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+typedef tier1\_\-SF::score\_\-cmp \textbf{score\_\-cmp}\label{classASCbase_1_1CopyTier1Score_ded00eb4e145997b1fefe85de8ff6cda}
+
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{Copy\-Tier1Score} ()\label{classASCbase_1_1CopyTier1Score_ff90861b236ad558abc3611850be5eba}
+
+\begin{CompactList}\small\item\em Default constructor for site map point scoring of (aligned) sitemaps. \item\end{CompactList}\item 
+\bf{$\sim$Copy\-Tier1Score} ()\label{classASCbase_1_1CopyTier1Score_cc3a6cf33a8c57db5d39627596a4b8d9}
+
+\begin{CompactList}\small\item\em basic destruction \item\end{CompactList}\item 
+my\_\-float\_\-t \bf{score} (const \bf{Model\-Sitemap} \&model, const \bf{Dbase\-Sitemap} \&dbase, rigid\_\-align\_\-vi scores)
+\begin{CompactList}\small\item\em Returns score from tier1. \item\end{CompactList}\item 
+bool \bf{uses\_\-surface\_\-mesh} ()
+\item 
+bool \bf{uses\_\-hbond\_\-surfaces} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class tier1\_\-SF$>$ class ASCbase::Copy\-Tier1Score$<$ tier1\_\-SF $>$}
+
+Returns the tier1 score as the score for the current tier. 
+
+Used to fill in C++ template parameters if we have only 1 tiered scoring
+
+NOTE: the template parameter MUST be the scoring function class used for tier1 
+
+
+
+\subsection{Member Function Documentation}
+\index{ASCbase::CopyTier1Score@{ASCbase::Copy\-Tier1Score}!score@{score}}
+\index{score@{score}!ASCbase::CopyTier1Score@{ASCbase::Copy\-Tier1Score}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class tier1\_\-SF$>$ my\_\-float\_\-t \bf{ASCbase::Copy\-Tier1Score}$<$ tier1\_\-SF $>$::score (const \bf{Model\-Sitemap} \& {\em model}, const \bf{Dbase\-Sitemap} \& {\em dbase}, rigid\_\-align\_\-vi {\em scores})\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1CopyTier1Score_d503e8416d1f09bf0c807fd92495e145}
+
+
+Returns score from tier1. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em model}]Const ref to the model site \item[{\em dbase}]Const ref to the sitemap aligned to the model sitemap \item[{\em scores}]iterator to the score data class \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]score from tier1 (scores-$>$tier1\_\-score) \end{Desc}
+\index{ASCbase::CopyTier1Score@{ASCbase::Copy\-Tier1Score}!uses_hbond_surfaces@{uses\_\-hbond\_\-surfaces}}
+\index{uses_hbond_surfaces@{uses\_\-hbond\_\-surfaces}!ASCbase::CopyTier1Score@{ASCbase::Copy\-Tier1Score}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class tier1\_\-SF$>$ bool \bf{ASCbase::Copy\-Tier1Score}$<$ tier1\_\-SF $>$::uses\_\-hbond\_\-surfaces ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classASCbase_1_1CopyTier1Score_79790bb098d9f4d8c49951458c155534}
+
+
+Derived class should return false, unless the derived class is using the hydrogen bond surface caps 
+
+Reimplemented from \bf{ASCbase::Sites\-Score\-Base} \doxyref{p.}{classASCbase_1_1SitesScoreBase_a7a5fcc3e24663874f8066c00089f3cf}.\index{ASCbase::CopyTier1Score@{ASCbase::Copy\-Tier1Score}!uses_surface_mesh@{uses\_\-surface\_\-mesh}}
+\index{uses_surface_mesh@{uses\_\-surface\_\-mesh}!ASCbase::CopyTier1Score@{ASCbase::Copy\-Tier1Score}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class tier1\_\-SF$>$ bool \bf{ASCbase::Copy\-Tier1Score}$<$ tier1\_\-SF $>$::uses\_\-surface\_\-mesh ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classASCbase_1_1CopyTier1Score_507e5fdffb914519b624cf87b7470479}
+
+
+Derived class should return false, unless, the site's surface needs to be to be rotated and translated 
+
+Reimplemented from \bf{ASCbase::Sites\-Score\-Base} \doxyref{p.}{classASCbase_1_1SitesScoreBase_ae4a2a1ae9113bcad0535593c210030f}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Copy\-Tier1Score.H\end{CompactItemize}

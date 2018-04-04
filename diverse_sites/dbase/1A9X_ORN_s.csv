@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Note: no xml namespace for now -->
+<ASCbase_sitemap>
+<!--
+# gen_points (SimSite3D) 4.1-rc3 sitemap labels file
+# Date: Thu Jul  1 13:02:29 2010
+-->
+<protein_structure_file>
+  1A9X_ORN_p.pdb
+</protein_structure_file>
+<ligand_file>
+  1A9X_ORN_l.mol2
+</ligand_file>
+<mol_surf>
+  <probe_radius>1.400</probe_radius>
+  <density>1.000</density>
+</mol_surf>
+<site_vol_est>
+<sphere><center>32.4873 14.6912 53.6415</center><radius>5.88637</radius></sphere>
+</site_vol_est>
+<volume_type>
+<sphere><center>30.713 13.551 52.382</center><radius>3</radius></sphere>
+<sphere><center>31.462 14.695 51.912</center><radius>3</radius></sphere>
+<sphere><center>32.881 14.518 52.384</center><radius>3</radius></sphere>
+<sphere><center>33.378 15.447 53.444</center><radius>3</radius></sphere>
+<sphere><center>34.736 15.95 53.033</center><radius>3</radius></sphere>
+<sphere><center>35.937 15.273 53.617</center><radius>3</radius></sphere>
+<sphere><center>31.5 14.53 50.402</center><radius>3</radius></sphere>
+<sphere><center>32.243 13.633 49.899</center><radius>3</radius></sphere>
+<sphere><center>31.077 15.446 49.642</center><radius>3</radius></sphere>
+
+</volume_type>
+<!--
+# Normalization stats:
+# 1) Mean score of sitemap against normalization database
+# 2) Stdev of scores of sitemap against normalization database
+#
+# Note:  If the mean is 0 and the stdev is -1, the sitemap normalization
+#        statistics were not computed.
+-->
+<normalization_stats>
+  0.000 -1.000
+</normalization_stats>
+<!--
+# Hydrophobic pocket normalization stats:
+# Normalization stats using hydrophobic_query flag
+# 1) Mean score of sitemap against normalization database
+# 2) Stdev of scores of sitemap against normalization database
+#
+# Note:  If the mean is 0 and the stdev is -1, the sitemap normalization
+#        statistics were not computed using the hydrophobic_query flag.
+-->
+<hphob_norm_stats>
+  0.0 -1.0
+</hphob_norm_stats>
+<!--
+# Point counts:
+# 1) Number of polar points
+# 2) Number of hydrophobic points
+-->
+<point_counts>
+  32 6
+</point_counts>
+<!--
+# Fields in hydrogen bond section
+# 1) Sitemap point number
+# 2) Associated atom string (res, res num, iCode, chain id, atom name and
+#    sitemap point descriptor)
+# 3) Chain ID
+# 4) Residue name
+# 5) Residue number + insertion code (if it is not a space char)
+# 6) Atom name
+# 7) Atom number (serial)
+# 8) Hbond point number (for the given atom) - ASCbase internal use
+# 9) Point position  (ASCbase internal use)
+# 10) Carbon neighbor atom number  (ASCbase internal use)
+-->
+<hydrogen_bond_points>
+2001|GLU783_A_OE2/1D|A|GLU|783|OE2|5954|1|33.548 13.395 50.665 |5952|
+2002|GLU783_A_OE2/2D|A|GLU|783|OE2|5954|1|33.548 13.395 50.665 |5952|
+2003|GLU783_A_OE2/3D|A|GLU|783|OE2|5954|1|33.548 13.395 50.665 |5952|
+2004|ASP791_A_O/1D|A|ASP|791|O|6003|1|34.272 17.953 52.702 |6002|
+2005|ASP791_A_O/2D|A|ASP|791|O|6003|1|34.272 17.953 52.702 |6002|
+2006|GLU892_A_OE1/1D|A|GLU|892|OE1|6790|2|36.667 15.082 53.464 |6789|
+2007|GLU892_A_OE1/2D|A|GLU|892|OE1|6790|2|36.667 15.082 53.464 |6789|
+2008|PRO905_A_O/1D|A|PRO|905|O|6889|2|29.922 16.792 48.238 |6888|
+2009|TYR1040_A_O/1D|A|TYR|1040|O|7943|1|28.186 13.831 53.677 |7942|
+2010|TYR1040_A_O/2D|A|TYR|1040|O|7943|1|28.186 13.831 53.677 |7942|
+2011|TYR1040_A_O/3D|A|TYR|1040|O|7943|1|28.186 13.831 53.677 |7942|
+2012|TYR1040_A_O/4D|A|TYR|1040|O|7943|2|31.452 13.440 51.663 |7942|
+2013|TYR1040_A_O/5D|A|TYR|1040|O|7943|2|31.452 13.440 51.663 |7942|
+2014|TYR1040_A_O/6D|A|TYR|1040|O|7943|2|31.452 13.440 51.663 |7942|
+2015|TYR1040_A_O/7D|A|TYR|1040|O|7943|2|31.452 13.440 51.663 |7942|
+2016|ASP1041_A_OD1/1D|A|ASP|1041|OD1|7958|1|30.990 13.105 51.601 |7957|
+2017|ASP1041_A_OD1/2D|A|ASP|1041|OD1|7958|1|30.990 13.105 51.601 |7957|
+1001|THR1042_A_N/1A|A|THR|1042|N|7960|1|33.034 13.365 49.595 |7954|
+1002|THR1042_A_N/2A|A|THR|1042|N|7960|1|33.034 13.365 49.595 |7954|
+1003|THR1042_A_N/3A|A|THR|1042|N|7960|1|33.034 13.365 49.595 |7954|
+1004|THR1042_A_N/4A|A|THR|1042|N|7960|1|33.034 13.365 49.595 |7954|
+1005|THR1042_A_N/5A|A|THR|1042|N|7960|1|33.034 13.365 49.595 |7954|
+1006|THR1042_A_N/6A|A|THR|1042|N|7960|1|33.034 13.365 49.595 |7954|
+1007|THR1042_A_N/7A|A|THR|1042|N|7960|1|33.034 13.365 49.595 |7954|
+3001|THR1042_A_OG1/1N|A|THR|1042|OG1|7965|3|31.956 14.456 49.810 |7964|
+3002|THR1042_A_OG1/2N|A|THR|1042|OG1|7965|3|31.956 14.456 49.810 |7964|
+3003|THR1042_A_OG1/3N|A|THR|1042|OG1|7965|3|31.956 14.456 49.810 |7964|
+1008|THR1043_A_N/1A|A|THR|1043|N|7967|1|32.334 11.088 48.634 |7962|
+3004|THR1043_A_OG1/1N|A|THR|1043|OG1|7972|3|34.038 12.222 49.244 |7971|
+3005|THR1043_A_OG1/2N|A|THR|1043|OG1|7972|3|34.038 12.222 49.244 |7971|
+3006|THR1043_A_OG1/3N|A|THR|1043|OG1|7972|3|34.038 12.222 49.244 |7971|
+3007|THR1043_A_OG1/4N|A|THR|1043|OG1|7972|3|34.038 12.222 49.244 |7971|
+</hydrogen_bond_points>
+<!--
+# Fields in hydrophobic points section
+# 1) Sitemap point number
+# 2) Associated atoms' strings
+-->
+<hydrophobic_points>
+1|VAL893_A_CG2_LEU895_A_CD1|
+2|LEU895_A_CD1_LEU907_A_CD2|
+3|LEU895_A_CD1_LEU907_A_CG_LEU907_A_CD1_LEU907_A_CD2|
+4|GLU783_A_CG_LEU907_A_CG_LEU907_A_CD1_LEU907_A_CD2|
+5|LEU895_A_CD1_LEU907_A_CB_LEU907_A_CG_LEU907_A_CD1_LEU907_A_CD2|
+6|TYR1040_A_CD2_TYR1040_A_CE2|
+</hydrophobic_points>
+<!--
+# Note: These are the largest values for the features of the sitemap when
+ # compared with itself
+# Features
+# 0) Closest polar sum
+# 1) polar mismatch sum
+# 2) AA DD sum
+# 3) NA AN ND DN NN sum
+# 4) hphob count
+# 5) Unsat query polar 
+# 6) best polar sum
+# 7) best AA DD sum
+# 8) best NA AN ND DN NN sum
+# 9) best unsat polar
+# 10) number of query surface points within 1.5 (A) of db surface
+# 11) number of query faces with all 3 vertices within 1.5 (A) of db surface
+# 12) RMSE of query points to db surf (each point must be within 1.5 (A) )
+# 13) area of faces in 11
+# 14) RMSE of query normals to db surf normals
+-->
+<features_scales>
+32.000 32.000 25.000 32.000 6 32.000 32.000 25.000 32.000 32.000
+431 771 1.5 257.282 4.0
+</features_scales>
+</ASCbase_sitemap>

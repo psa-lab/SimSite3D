@@ -1,0 +1,248 @@
+\section{ASCbase::mol2File Class Reference}
+\label{classASCbase_1_1mol2File}\index{ASCbase::mol2File@{ASCbase::mol2File}}
+Read and write mol2 files and perform various operations.  
+
+
+{\tt \#include $<$mol2File.H$>$}
+
+Inheritance diagram for ASCbase::mol2File::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classASCbase_1_1mol2File}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{mol2File} (const std::string filename, const verbose\_\-level\_\-t verbosity=VERBOSE\_\-SILENT)
+\begin{CompactList}\small\item\em Constructor -- reads in the file and sets up the structure. \item\end{CompactList}\item 
+\bf{mol2File} (const \bf{mol2File} \&src, const \bf{Bounding\-Volume} \&site\_\-vol, const \bf{Coord\-File} \&prot\_\-atoms, const uint min\_\-num\_\-atoms, const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)
+\begin{CompactList}\small\item\em Copy constructor -- fragments the ligand. \item\end{CompactList}\item 
+\bf{$\sim$mol2File} ()\label{classASCbase_1_1mol2File_c3c8ecaa09091961a32c131c2e9199f3}
+
+\begin{CompactList}\small\item\em Do nothin dstor. \item\end{CompactList}\item 
+void \bf{report\_\-stats} (std::ostream \&out)
+\begin{CompactList}\small\item\em Each derived class should support some routine to report on the file. \item\end{CompactList}\item 
+void \bf{revert\_\-positions} ()\label{classASCbase_1_1mol2File_4df38db9db07af42b91db5fd0519d78a}
+
+\begin{CompactList}\small\item\em Set the current positions to those read from file (original positions). \item\end{CompactList}\item 
+bool \bf{write} (std::string ofname)
+\begin{CompactList}\small\item\em Write the molecule(s) to the specified file. \item\end{CompactList}\item 
+const uint \bf{num\_\-heavy\_\-atoms} ()\label{classASCbase_1_1mol2File_ac4b079f975345f69ad63b689f6bb3f5}
+
+\begin{CompactList}\small\item\em Get the number of heavy atoms in the molecule(s). \item\end{CompactList}\item 
+std::vector$<$ bool $>$::const\_\-iterator \bf{frag\_\-atoms\_\-flags\_\-beg} ()
+\item 
+std::vector$<$ bool $>$::const\_\-iterator \bf{frag\_\-atoms\_\-flags\_\-end} ()
+\item 
+const std::vector$<$ atom\_\-vci $>$ \& \bf{get\_\-nbrs} (const atom\_\-vci atom) const 
+\item 
+std::string \textbf{atom\_\-type\_\-to\_\-str} (const atom\_\-vci atom)\label{classASCbase_1_1mol2File_a835e7086af8dd4ea8e315b58666324d}
+
+\item 
+bool \textbf{calc\_\-charge\_\-sums} ()\label{classASCbase_1_1mol2File_cd1b6001933a4461f79c35d2ed482daa}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+bool \bf{read\_\-data} (std::ifstream \&mol2\_\-file)
+\item 
+bool \bf{read\_\-molecule\_\-section} (std::ifstream \&mol2\_\-file, uint $\ast$num\_\-atoms\_\-out, uint $\ast$num\_\-bonds\_\-out)\label{classASCbase_1_1mol2File_89e45a813cec79c2e095a5bfd8a77f67}
+
+\begin{CompactList}\small\item\em Read the first molecule section. \item\end{CompactList}\item 
+bool \bf{read\_\-atom\_\-section} (std::ifstream \&mol2\_\-file, const uint num\_\-atoms)\label{classASCbase_1_1mol2File_01383b135389cc03960445865d57fe87}
+
+\begin{CompactList}\small\item\em Read the first atom section after the first molecule section. \item\end{CompactList}\item 
+bool \bf{read\_\-bond\_\-section} (std::ifstream \&mol2\_\-file, const uint num\_\-bonds)\label{classASCbase_1_1mol2File_aebc4bf5f53617b0e6014300bd40e608}
+
+\begin{CompactList}\small\item\em Read the first bond section after the first atom section. \item\end{CompactList}\item 
+bool \bf{look\_\-up\_\-atom\_\-by\_\-string} (const std::string atom\_\-str, \bf{atom\_\-t} $\ast$atom)\label{classASCbase_1_1mol2File_d8c08befaed6c64a8752e5f6f43b63f0}
+
+\begin{CompactList}\small\item\em Given mol2 atom and orbital string, get internal info on atom. \item\end{CompactList}\item 
+bool \bf{look\_\-up\_\-bond\_\-by\_\-string} (const std::string bond\_\-str, \bf{mol2\_\-bond\_\-t} $\ast$bond)\label{classASCbase_1_1mol2File_632bf1f1d3c95fd67ab1799753309a78}
+
+\begin{CompactList}\small\item\em Given mol2 bond string, get internal bond type. \item\end{CompactList}\item 
+void \bf{init\_\-atom\_\-table\_\-by\_\-string} ()\label{classASCbase_1_1mol2File_29239519d712966a47a89c6658952ade}
+
+\begin{CompactList}\small\item\em Setup the map used to look up atom info based on mol2 atom and orbital. \item\end{CompactList}\item 
+void \bf{init\_\-bond\_\-table\_\-by\_\-string} ()\label{classASCbase_1_1mol2File_2cf17eb0c5a571259113af56b98ef615}
+
+\begin{CompactList}\small\item\em Setup the map to convert from mol2 bond string to internal bond type. \item\end{CompactList}\item 
+void \bf{init\_\-bond\_\-types\_\-to\_\-str} ()\label{classASCbase_1_1mol2File_3bc5899510eadb43c23f2ab11393baa9}
+
+\begin{CompactList}\small\item\em Setup the map to convert from interal bond type to mol2 bond string. \item\end{CompactList}\item 
+void \bf{init\_\-atom\_\-types\_\-to\_\-str} ()
+\item 
+void \textbf{add\_\-bond} (const uint a1, const uint a2, const bond\_\-type type, const std::string status\_\-bits)\label{classASCbase_1_1mol2File_e16024d1b4aa6847320f9014ef056929}
+
+\item 
+bool \textbf{assign\_\-act\_\-types} ()\label{classASCbase_1_1mol2File_c82eec85dee77e4c25da6d769f7d4c0e}
+
+\item 
+void \textbf{generate\_\-nbrs\_\-vec} ()\label{classASCbase_1_1mol2File_cb742dce4a6b0b2ecc060efa71831672}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+std::string \textbf{A\_\-mol\_\-name}\label{classASCbase_1_1mol2File_4a239c4b6ef9219e5a6e1bcaf24abd6b}
+
+\item 
+std::string \textbf{A\_\-mol\_\-type}\label{classASCbase_1_1mol2File_0c181617cd1dfdba0349866cd0c50228}
+
+\item 
+std::string \textbf{A\_\-charge\_\-type}\label{classASCbase_1_1mol2File_26ec305f2afdc4dcc89b393583a1a3ff}
+
+\item 
+std::map$<$ std::string, const mol2\_\-atom\_\-info\_\-t $\ast$ $>$ \textbf{atoms\_\-by\_\-type\_\-str}\label{classASCbase_1_1mol2File_fe494476e111dd553575e619b05c152c}
+
+\item 
+std::map$<$ std::string, bond\_\-type $>$ \textbf{bonds\_\-by\_\-type\_\-str}\label{classASCbase_1_1mol2File_109be33ef75390bd6ecfd089047d089d}
+
+\item 
+std::map$<$ bond\_\-type, std::string $>$ \textbf{bond\_\-types\_\-to\_\-str}\label{classASCbase_1_1mol2File_272cffb8d8134d3479509dffd2d713c7}
+
+\item 
+std::map$<$ atom\_\-type, std::map$<$ orbit\_\-type, std::string $>$ $>$ \textbf{atom\_\-types\_\-to\_\-str}\label{classASCbase_1_1mol2File_e2f2b5510e400d2f8bffb5f4960a70f7}
+
+\item 
+std::vector$<$ std::string $>$ \textbf{rest\_\-of\_\-lines}\label{classASCbase_1_1mol2File_fac5b8259ea43796ddf98642432d513b}
+
+\item 
+mol2\_\-bond\_\-vec \bf{bonds}\label{classASCbase_1_1mol2File_1a674f42d6702f792adfa852a48f24eb}
+
+\begin{CompactList}\small\item\em Rest of the atom lines. \item\end{CompactList}\item 
+bool \textbf{atom\_\-ids\_\-are\_\-consecutive}\label{classASCbase_1_1mol2File_799f9c155bbe3f70a26fd8a2cfa2b3ab}
+
+\item 
+bool \bf{is\_\-frag\_\-file}\label{classASCbase_1_1mol2File_c3b92d4de315f32a750cf70bf3e776a5}
+
+\begin{CompactList}\small\item\em True if the molecule is a fragment, else false. \item\end{CompactList}\item 
+uint \textbf{a\_\-num\_\-heavy\_\-atoms}\label{classASCbase_1_1mol2File_4ed3d8244528aa77369514f27b4d417d}
+
+\item 
+std::vector$<$ bool $>$ \bf{frag\_\-atoms}\label{classASCbase_1_1mol2File_ce4ef757c3a959846fc802b6c9ac5cf7}
+
+\begin{CompactList}\small\item\em Bool string of atoms present in fragment. \item\end{CompactList}\item 
+std::vector$<$ std::vector$<$ atom\_\-vci $>$ $>$ \textbf{A\_\-nbrs\_\-vec}\label{classASCbase_1_1mol2File_5527c87e8143a7c1d88929a5059f21e5}
+
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static const my\_\-float\_\-t \textbf{ATOMS\_\-TOO\_\-FAR} = 4.5\label{classASCbase_1_1mol2File_64a9ac2baaaca25e2390a71920193994}
+
+\item 
+static const my\_\-float\_\-t \textbf{ATOMS\_\-TOO\_\-CLOSE} = 1.75\label{classASCbase_1_1mol2File_d4e8c046a3d397bb31c2e490bbde6827}
+
+\item 
+static const std::string \bf{\_\-fname} = \char`\"{}mol2File.C\char`\"{}\label{classASCbase_1_1mol2File_b7069d02b480b1de4486d2a9c5665fa1}
+
+\begin{CompactList}\small\item\em Name of source file. \item\end{CompactList}\item 
+static const my\_\-float\_\-t \textbf{MINIMAL\_\-CHARGE} = 0.5\label{classASCbase_1_1mol2File_f3f904ef0e8e6cd03c3eadb901a83534}
+
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \bf{nbr\_\-bond\_\-type}
+\begin{CompactList}\small\item\em Simple temporary type to store bond info in a vector. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Read and write mol2 files and perform various operations. 
+
+This class has 2 constructors. The first is to read the molecule(s) from a given file. The second constructor is a copy constructor and requires a protein and sitemap. This copy constructor discards all ligand atoms (in the copy) that are not within 2.0 (A) of any template point. These atoms are then checked to ensure that they do not significantly overlap with the protein. All of the ligand fragments are checked to ensure that they each have at least N connected heavy atoms. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ASCbase::mol2File@{ASCbase::mol2File}!mol2File@{mol2File}}
+\index{mol2File@{mol2File}!ASCbase::mol2File@{ASCbase::mol2File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}mol2File::mol2File (const std::string {\em filename}, const verbose\_\-level\_\-t {\em verbosity} = {\tt VERBOSE\_\-SILENT})}\label{classASCbase_1_1mol2File_9abfe2130ac705d98538e620541dbc28}
+
+
+Constructor -- reads in the file and sets up the structure. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em filename}]Path of the mol2 file to read \end{description}
+\end{Desc}
+\index{ASCbase::mol2File@{ASCbase::mol2File}!mol2File@{mol2File}}
+\index{mol2File@{mol2File}!ASCbase::mol2File@{ASCbase::mol2File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}mol2File::mol2File (const \bf{mol2File} \& {\em src}, const \bf{Bounding\-Volume} \& {\em site\_\-vol}, const \bf{Coord\-File} \& {\em prot\_\-atoms}, const uint {\em min\_\-num\_\-atoms}, const my\_\-float\_\-t $\ast$ {\em R}, const my\_\-float\_\-t $\ast$ {\em T})}\label{classASCbase_1_1mol2File_b890d66be2effc7b300ec625c87a014c}
+
+
+Copy constructor -- fragments the ligand. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em src}]Reference to the full ligand to copy (search ligand) \item[{\em site\_\-vol}]Reference to the sitemap volume estimate \item[{\em prot\_\-atoms}]Reference to the query protein atoms \item[{\em min\_\-num\_\-atoms}]Minimum number of atoms in a ligand fragment \item[{\em R}]Rotation matrix to move ligand to the model ref. frame \item[{\em T}]Translation vector to move ligand to the model ref. frame \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{ASCbase::mol2File@{ASCbase::mol2File}!frag_atoms_flags_beg@{frag\_\-atoms\_\-flags\_\-beg}}
+\index{frag_atoms_flags_beg@{frag\_\-atoms\_\-flags\_\-beg}!ASCbase::mol2File@{ASCbase::mol2File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$bool$>$::const\_\-iterator ASCbase::mol2File::frag\_\-atoms\_\-flags\_\-beg ()\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1mol2File_27ca8161c7d240a8331a56912047dde0}
+
+
+The vector referred to is of the same length as the number of atoms in the \char`\"{}original\char`\"{} ligand. The nth bool is true or false if the nth ligand atom is in a ligand fragment or is not in a ligand fragment respectively. \index{ASCbase::mol2File@{ASCbase::mol2File}!frag_atoms_flags_end@{frag\_\-atoms\_\-flags\_\-end}}
+\index{frag_atoms_flags_end@{frag\_\-atoms\_\-flags\_\-end}!ASCbase::mol2File@{ASCbase::mol2File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$bool$>$::const\_\-iterator ASCbase::mol2File::frag\_\-atoms\_\-flags\_\-end ()\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1mol2File_a7662a32085ef964254c0f36285f9fb0}
+
+
+Get a const iterator to the end of the boolean vector denoting which atoms of the full ligand were kept. \index{ASCbase::mol2File@{ASCbase::mol2File}!get_nbrs@{get\_\-nbrs}}
+\index{get_nbrs@{get\_\-nbrs}!ASCbase::mol2File@{ASCbase::mol2File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const std::vector$<$atom\_\-vci$>$\& ASCbase::mol2File::get\_\-nbrs (const atom\_\-vci {\em atom}) const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1mol2File_c112d4a0eaca36f7ffa1d635ab30a13f}
+
+
+Get the neighbors of atom in this molecule. If someone wants to pass in an atom from another molecule, they will get rewarded with a const ref to an empty vector. \index{ASCbase::mol2File@{ASCbase::mol2File}!init_atom_types_to_str@{init\_\-atom\_\-types\_\-to\_\-str}}
+\index{init_atom_types_to_str@{init\_\-atom\_\-types\_\-to\_\-str}!ASCbase::mol2File@{ASCbase::mol2File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void mol2File::init\_\-atom\_\-types\_\-to\_\-str ()\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1mol2File_d0e57ec2d4706d8b22375a55aed5d71e}
+
+
+Setup the map to convert from internal atom and orbital to mol2 atom string \index{ASCbase::mol2File@{ASCbase::mol2File}!read_data@{read\_\-data}}
+\index{read_data@{read\_\-data}!ASCbase::mol2File@{ASCbase::mol2File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool mol2File::read\_\-data (std::ifstream \& {\em mol2\_\-file})\hspace{0.3cm}{\tt  [private, virtual]}}\label{classASCbase_1_1mol2File_da164682f58d1e4539666d13de03fb9a}
+
+
+Top level read function -- read in the molecule(s) from the file passed to the constructor 
+
+Implements \bf{ASCbase::Coord\-File} \doxyref{p.}{classASCbase_1_1CoordFile_1fdc54fd347269643062dee5418859a5}.\index{ASCbase::mol2File@{ASCbase::mol2File}!report_stats@{report\_\-stats}}
+\index{report_stats@{report\_\-stats}!ASCbase::mol2File@{ASCbase::mol2File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void mol2File::report\_\-stats (std::ostream \& {\em out})\hspace{0.3cm}{\tt  [virtual]}}\label{classASCbase_1_1mol2File_8621701ac72363cd41e08123cb4929af}
+
+
+Each derived class should support some routine to report on the file. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em out}]Reference to the ostream to write the report \end{description}
+\end{Desc}
+
+
+Implements \bf{ASCbase::Coord\-File} \doxyref{p.}{classASCbase_1_1CoordFile_a2153c9f750dd76c3b533f9e03bd8f05}.\index{ASCbase::mol2File@{ASCbase::mol2File}!write@{write}}
+\index{write@{write}!ASCbase::mol2File@{ASCbase::mol2File}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool mol2File::write (std::string {\em ofname})\hspace{0.3cm}{\tt  [virtual]}}\label{classASCbase_1_1mol2File_050d5348e9f9a59de0949a66acab96de}
+
+
+Write the molecule(s) to the specified file. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ofname}]Name of the file to write molecule(s) \end{description}
+\end{Desc}
+
+
+Implements \bf{ASCbase::Coord\-File} \doxyref{p.}{classASCbase_1_1CoordFile_dca3f5f45c21f85215dc380e2152b613}.
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+mol2File.H\item 
+mol2File.C\end{CompactItemize}

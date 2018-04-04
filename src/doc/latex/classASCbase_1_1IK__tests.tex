@@ -1,0 +1,89 @@
+\section{ASCbase::IK\_\-tests Class Reference}
+\label{classASCbase_1_1IK__tests}\index{ASCbase::IK_tests@{ASCbase::IK\_\-tests}}
+Testing/Validation class for surface deformations and hbonds moving.  
+
+
+{\tt \#include $<$IK\_\-tests.H$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{IK\_\-tests} (const \bf{Search\-Parameters} \&args)\label{classASCbase_1_1IK__tests_89ac913085506be49f734d9d3fbc5d19}
+
+\begin{CompactList}\small\item\em Only allowed Cstor for search\_\-sitemaps. \item\end{CompactList}\item 
+\bf{$\sim$IK\_\-tests} ()\label{classASCbase_1_1IK__tests_280f1a906f3d73ddd2037c2bbbaf0533}
+
+\begin{CompactList}\small\item\em Free up the user\_\-args structure. \item\end{CompactList}\item 
+void \bf{test\_\-moving\_\-stuff} (const \bf{Search\-Parameters} \&args\_\-in)
+\begin{CompactList}\small\item\em Big messy test function. \item\end{CompactList}\item 
+void \bf{run} (\bf{Model\-Sitemap} $\ast$model\_\-site, const \bf{Dbase\-Sitemap} \&dbase\_\-site, \bf{rigid\_\-align\_\-t} $\ast$align, const std::string db\_\-struct\_\-id, std::ostream \&out)
+\begin{CompactList}\small\item\em Run flexibility using the current orientation of the model site. \item\end{CompactList}\item 
+my\_\-float\_\-t \textbf{compute\_\-initial\_\-atomic\_\-rmsd} (\bf{Model\-Sitemap} $\ast$model\_\-site, const \bf{Dbase\-Sitemap} \&dbase\_\-site, \bf{rigid\_\-align\_\-t} $\ast$align)\label{classASCbase_1_1IK__tests_5748368e2908160b96bcabb654fdcbe6}
+
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static const my\_\-float\_\-t \textbf{max\_\-atom\_\-dist\_\-for\_\-checking\_\-vdw\_\-overlap} ()\label{classASCbase_1_1IK__tests_06c9e7b5b2840ca8d74bd6582d883c83}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+\bf{Sites\-Score\-Base} $\ast$ \textbf{A\_\-site\_\-score\_\-p}\label{classASCbase_1_1IK__tests_d39cab900cbb424c333c3c51dbbecc0c}
+
+\item 
+bool \textbf{A\_\-uses\_\-site\_\-surface}\label{classASCbase_1_1IK__tests_b047df9991ddc5f5cfbdd35b245dac06}
+
+\item 
+bool \bf{A\_\-uses\_\-hbond\_\-surfaces}\label{classASCbase_1_1IK__tests_d7947e90a6605298f42be161830ec40e}
+
+\begin{CompactList}\small\item\em Art\-Surf includes site surface. \item\end{CompactList}\item 
+bool \bf{A\_\-hbond\_\-caps\_\-ICP}\label{classASCbase_1_1IK__tests_c47ea936905f2ff6b2815129ad205395}
+
+\begin{CompactList}\small\item\em Art\-Surt includes hbond caps. \item\end{CompactList}\item 
+my\_\-float\_\-t \textbf{A\_\-ICP\_\-surf\_\-pt\_\-W}\label{classASCbase_1_1IK__tests_f66ad10a0abe61813e9cc2dd01887cb1}
+
+\item 
+my\_\-float\_\-t \textbf{A\_\-ICP\_\-hb\_\-cap\_\-pt\_\-W}\label{classASCbase_1_1IK__tests_1096e6e78d144f78bf891188b0a5e18f}
+
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static const my\_\-float\_\-t \bf{MAX\_\-ATOM\_\-DIST\_\-TO\_\-CHECK\_\-VDW\_\-OVERLAP} = 4.5\label{classASCbase_1_1IK__tests_229bfd4bf67a0a8a73322015a0307c22}
+
+\begin{CompactList}\small\item\em Maximum distance between any 2 to require checking of intersection of Van der Waals spheres. \item\end{CompactList}\item 
+static const std::string \textbf{A\_\-fname} = \char`\"{}IK\_\-tests.C\char`\"{}\label{classASCbase_1_1IK__tests_2f41807950842f871a832e69ae666921}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Testing/Validation class for surface deformations and hbonds moving. 
+
+
+
+\subsection{Member Function Documentation}
+\index{ASCbase::IK_tests@{ASCbase::IK\_\-tests}!run@{run}}
+\index{run@{run}!ASCbase::IK_tests@{ASCbase::IK\_\-tests}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void IK\_\-tests::run (\bf{Model\-Sitemap} $\ast$ {\em model\_\-site}, const \bf{Dbase\-Sitemap} \& {\em dbase\_\-site}, \bf{rigid\_\-align\_\-t} $\ast$ {\em align}, const std::string {\em db\_\-struct\_\-id}, std::ostream \& {\em out})}\label{classASCbase_1_1IK__tests_fac5e4fb00a62ec37cc72f53ebb20cfd}
+
+
+Run flexibility using the current orientation of the model site. 
+
+Assumption: ICP steps have been done to get binding site into a good correspondence 
+
+std::cout $<$$<$ vdw\_\-rad\_\-sum - atomic\_\-dist $<$$<$ \char`\"{} \char`\"{}; \index{ASCbase::IK_tests@{ASCbase::IK\_\-tests}!test_moving_stuff@{test\_\-moving\_\-stuff}}
+\index{test_moving_stuff@{test\_\-moving\_\-stuff}!ASCbase::IK_tests@{ASCbase::IK\_\-tests}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void IK\_\-tests::test\_\-moving\_\-stuff (const \bf{Search\-Parameters} \& {\em args\_\-in})}\label{classASCbase_1_1IK__tests_f4fdeb2d068d4b958a999d2c2673c183}
+
+
+Big messy test function. 
+
+Assumes that args() contains both query and db sites (i.e. no dataset searching) 
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+IK\_\-tests.H\item 
+IK\_\-tests.C\end{CompactItemize}

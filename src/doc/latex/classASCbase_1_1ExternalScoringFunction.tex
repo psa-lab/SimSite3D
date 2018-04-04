@@ -1,0 +1,124 @@
+\section{ASCbase::External\-Scoring\-Function Class Reference}
+\label{classASCbase_1_1ExternalScoringFunction}\index{ASCbase::ExternalScoringFunction@{ASCbase::ExternalScoringFunction}}
+Base class: wrapper and parser for external scoring functions.  
+
+
+{\tt \#include $<$External\-Scoring\-Function.H$>$}
+
+Inheritance diagram for ASCbase::External\-Scoring\-Function::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classASCbase_1_1ExternalScoringFunction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{External\-Scoring\-Function} (std::string cmdline)
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+virtual \bf{$\sim$External\-Scoring\-Function} ()\label{classASCbase_1_1ExternalScoringFunction_c25fb9a4cc68a0608fff4a937fcbf713}
+
+\begin{CompactList}\small\item\em Virtual destruction. \item\end{CompactList}\item 
+bool \bf{fail} () const \label{classASCbase_1_1ExternalScoringFunction_e7dd0614a84935bf33ca60bc32fbe2bf}
+
+\begin{CompactList}\small\item\em Determine if calling score will actually do something. \item\end{CompactList}\item 
+virtual bool \bf{score} (std::string prot\_\-path, std::string lig\_\-path, std::vector$<$ my\_\-float\_\-t $>$ $\ast$scores)=0
+\begin{CompactList}\small\item\em Score protein-ligand pair using chosen external scoring method. \item\end{CompactList}\item 
+virtual void \bf{sf\_\-names} (std::vector$<$ std::string $>$ $\ast$names)=0
+\begin{CompactList}\small\item\em Get the name(s) of the external scoring function(s) used. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+bool \bf{run} (std::string prot\_\-path, std::string lig\_\-path)
+\begin{CompactList}\small\item\em Run the chosen external scoring method. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+bool \bf{a\_\-fail}\label{classASCbase_1_1ExternalScoringFunction_2d87c7620eaa9033fcde870432b39485}
+
+\begin{CompactList}\small\item\em True means unable to run or failure occured. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+std::vector$<$ std::string $>$ \textbf{cmdline\_\-toks}\label{classASCbase_1_1ExternalScoringFunction_4aa21826b34ff982e3924f6f74480bad}
+
+\item 
+std::vector$<$ std::string $>$::const\_\-iterator \textbf{prot\_\-str\_\-iter}\label{classASCbase_1_1ExternalScoringFunction_c5c1b5c0cf714978ff2c3b669033c2f0}
+
+\item 
+std::vector$<$ std::string $>$::const\_\-iterator \textbf{lig\_\-str\_\-iter}\label{classASCbase_1_1ExternalScoringFunction_9f0e031e5f90ee140083e81ae450ae93}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Base class: wrapper and parser for external scoring functions. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ASCbase::ExternalScoringFunction@{ASCbase::External\-Scoring\-Function}!ExternalScoringFunction@{ExternalScoringFunction}}
+\index{ExternalScoringFunction@{ExternalScoringFunction}!ASCbase::ExternalScoringFunction@{ASCbase::External\-Scoring\-Function}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}External\-Scoring\-Function::External\-Scoring\-Function (std::string {\em cmdline})}\label{classASCbase_1_1ExternalScoringFunction_11f4a861421bbc7a766a72b0b6ce3b42}
+
+
+Constructor. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em cmdline}]Command line to run the chosen external protein-ligand scoring function with the variables \$PROTEIN and \$LIGAND denoting where to stuff the values for the proteins and ligands to score. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{ASCbase::ExternalScoringFunction@{ASCbase::External\-Scoring\-Function}!run@{run}}
+\index{run@{run}!ASCbase::ExternalScoringFunction@{ASCbase::External\-Scoring\-Function}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool External\-Scoring\-Function::run (std::string {\em prot\_\-path}, std::string {\em lig\_\-path})\hspace{0.3cm}{\tt  [protected]}}\label{classASCbase_1_1ExternalScoringFunction_118e501c983ee3c61747b40741c776ff}
+
+
+Run the chosen external scoring method. 
+
+Run the chosen external scoring method \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em prot\_\-path}]String holding the path of the protein PDB file \item[{\em lig\_\-path}]String holding the path of the ligand mol2 file \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]True if prot\_\-path and lig\_\-path exist and are not directories, otherwise false \end{Desc}
+\index{ASCbase::ExternalScoringFunction@{ASCbase::External\-Scoring\-Function}!score@{score}}
+\index{score@{score}!ASCbase::ExternalScoringFunction@{ASCbase::External\-Scoring\-Function}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool ASCbase::External\-Scoring\-Function::score (std::string {\em prot\_\-path}, std::string {\em lig\_\-path}, std::vector$<$ my\_\-float\_\-t $>$ $\ast$ {\em scores})\hspace{0.3cm}{\tt  [pure virtual]}}\label{classASCbase_1_1ExternalScoringFunction_d0e70f7569b5746af85eebc1208afa2a}
+
+
+Score protein-ligand pair using chosen external scoring method. 
+
+Score using chosen external scoring method -- force derived classes to override with their version. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em prot\_\-path}]String holding the path of the protein PDB file \item[{\em lig\_\-path}]String holding the path of the ligand mol2 file \item[{\em scores}]Pointer to vector holding the scores of the pair \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]True if prot\_\-path and lig\_\-path exist and are not directories, otherwise false \end{Desc}
+
+
+Implemented in \bf{ASCbase::Drug\-Score\-Interface} \doxyref{p.}{classASCbase_1_1DrugScoreInterface_dc18368127b62019d1af8c158ba61517}, and \bf{ASCbase::SFCscore\-Interface} \doxyref{p.}{classASCbase_1_1SFCscoreInterface_354838006d3b086f93b7245cf0223a70}.\index{ASCbase::ExternalScoringFunction@{ASCbase::External\-Scoring\-Function}!sf_names@{sf\_\-names}}
+\index{sf_names@{sf\_\-names}!ASCbase::ExternalScoringFunction@{ASCbase::External\-Scoring\-Function}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void ASCbase::External\-Scoring\-Function::sf\_\-names (std::vector$<$ std::string $>$ $\ast$ {\em names})\hspace{0.3cm}{\tt  [pure virtual]}}\label{classASCbase_1_1ExternalScoringFunction_3db07e1e70e4946b507c9b320a124b8b}
+
+
+Get the name(s) of the external scoring function(s) used. 
+
+To be overloaded by the derived classes \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em names}]Pointer to vector of strings holding the names of the scoring function(s) in the same order as the scores stored in the ext\_\-scores vector in \doxyref{rigid\_\-align\_\-t}{p.}{classASCbase_1_1rigid__align__t} \end{description}
+\end{Desc}
+
+
+Implemented in \bf{ASCbase::Drug\-Score\-Interface} \doxyref{p.}{classASCbase_1_1DrugScoreInterface_f58148608722e9454c2f3e108bfc98f5}, and \bf{ASCbase::SFCscore\-Interface} \doxyref{p.}{classASCbase_1_1SFCscoreInterface_00c2a69a8732cc3eae24ed2bb61dc638}.
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+External\-Scoring\-Function.H\item 
+External\-Scoring\-Function.C\end{CompactItemize}

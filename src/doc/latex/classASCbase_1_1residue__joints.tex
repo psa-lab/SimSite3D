@@ -1,0 +1,136 @@
+\section{ASCbase::residue\_\-joints Class Reference}
+\label{classASCbase_1_1residue__joints}\index{ASCbase::residue_joints@{ASCbase::residue\_\-joints}}
+Data class to store the joints of one residue.  
+
+
+{\tt \#include $<$prot\_\-joint\_\-dep.H$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{residue\_\-joints} ()
+\item 
+\bf{residue\_\-joints} (const \bf{PDBStructure} $\ast$prot, residue\_\-vci res, const joint\_\-deps\_\-t \&res\_\-joints\_\-info)\label{classASCbase_1_1residue__joints_8c38f7e8122a28e0153347a1dfe1b30c}
+
+\begin{CompactList}\small\item\em Default constructor for a given residue. \item\end{CompactList}\item 
+\bf{residue\_\-joints} (const \bf{residue\_\-joints} \&other)\label{classASCbase_1_1residue__joints_f449cdad0ca876373713c618657b0015}
+
+\begin{CompactList}\small\item\em Basic copy constructor. \item\end{CompactList}\item 
+const \bf{residue\_\-joints} \& \bf{operator=} (const \bf{residue\_\-joints} \&other)\label{classASCbase_1_1residue__joints_a2cac3126dd4e9d9909fca1d3de2a53a}
+
+\begin{CompactList}\small\item\em Basic assignment operator. \item\end{CompactList}\item 
+\bf{$\sim$residue\_\-joints} ()\label{classASCbase_1_1residue__joints_d09831082869cc7230c1c6315615e33b}
+
+\begin{CompactList}\small\item\em Basic destructor. \item\end{CompactList}\item 
+void \bf{compute\_\-dihedral\_\-angles} (std::vector$<$ my\_\-float\_\-t $>$ $\ast$angles) const \label{classASCbase_1_1residue__joints_43413c481de3d0a00b610b8c445405cd}
+
+\begin{CompactList}\small\item\em Compute the so called phi, psi, and chi angles of the residue. \item\end{CompactList}\item 
+bool \bf{compute\_\-current\_\-axes\_\-of\_\-rotation} (my\_\-float\_\-t $\ast$rot\_\-axes, int $\ast$num\_\-axes, const int array\_\-len) const 
+\item 
+const int \textbf{num\_\-joints} () const \label{classASCbase_1_1residue__joints_6220137846303fb3cf73b4c02caaffd9}
+
+\item 
+const std::vector$<$ my\_\-float\_\-t $>$ \& \textbf{orig\_\-joint\_\-angles} () const \label{classASCbase_1_1residue__joints_45063f6a978d049bf4f5292b08241a93}
+
+\item 
+const bool \textbf{fail} ()\label{classASCbase_1_1residue__joints_fa5def7bc8d49c67da7ddc906f045c24}
+
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+std::vector$<$ atom\_\-type $>$ \textbf{joint\_\-labels}\label{classASCbase_1_1residue__joints_61eee08b238efdfad0ec815eb47b0d26}
+
+\item 
+std::vector$<$ const my\_\-float\_\-t $\ast$ $>$ \bf{joint\_\-centers}\label{classASCbase_1_1residue__joints_a548886503607e03cdce112eb9ac92c9}
+
+\begin{CompactList}\small\item\em Includes the CA position and one atom past the last joint. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+bool \textbf{check\_\-atom} (residue\_\-vci res, atom\_\-vci c\_\-atom, atom\_\-vci atoms\_\-end, atom\_\-type expected\_\-atom\_\-name)\label{classASCbase_1_1residue__joints_50f6fddea71680a7b814c8a1bf81e9c5}
+
+\item 
+void \textbf{do\_\-copy} (const \bf{residue\_\-joints} \&other)\label{classASCbase_1_1residue__joints_c48e538e71f2124731442e6d045710d5}
+
+\item 
+void \bf{init} ()\label{classASCbase_1_1residue__joints_8b3d0cf768de75423ff97aefdac11477}
+
+\begin{CompactList}\small\item\em Initialize class variables. \item\end{CompactList}\item 
+my\_\-float\_\-t \bf{compute\_\-dihedral\_\-angle} (const my\_\-float\_\-t $\ast$A, const my\_\-float\_\-t $\ast$B, const my\_\-float\_\-t $\ast$C) const 
+\begin{CompactList}\small\item\em Compute the dihedral angle for the directional bond chain A, B, C. \item\end{CompactList}\item 
+void \bf{warn\_\-cannot\_\-compute\_\-dihedral} (residue\_\-vci res, std::string angle\_\-name)\label{classASCbase_1_1residue__joints_49fe835a4836859911cf6ce15b275b51}
+
+\begin{CompactList}\small\item\em A simple warning function to clean up the flow of the code. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+residue\_\-type \textbf{A\_\-res\-Name}\label{classASCbase_1_1residue__joints_21497636be77aa78b659e24b4d60e350}
+
+\item 
+int \textbf{A\_\-num\_\-joints}\label{classASCbase_1_1residue__joints_bf4d7f0a200401c847a809f999ae2971}
+
+\item 
+bool \textbf{A\_\-fail}\label{classASCbase_1_1residue__joints_774042aeeddefb94221a85aef2a03eae}
+
+\item 
+const atom\_\-type $\ast$ \textbf{A\_\-atom\_\-names}\label{classASCbase_1_1residue__joints_5a33d4f7989653cd612fe8b6295e40a8}
+
+\item 
+const my\_\-float\_\-t $\ast$ \textbf{A\_\-atoms\_\-pos\_\-begin}\label{classASCbase_1_1residue__joints_36c3c3466b89a15fa509d32a83d97b9b}
+
+\item 
+const my\_\-float\_\-t $\ast$ \textbf{A\_\-atoms\_\-pos\_\-end}\label{classASCbase_1_1residue__joints_ae2d9bc7ca8ff776d6e1f46feb0c3f49}
+
+\item 
+const my\_\-float\_\-t $\ast$ \textbf{A\_\-prev\_\-res\_\-C\_\-pos}\label{classASCbase_1_1residue__joints_8fd8e62a05624a315c33809c1cf1bfb0}
+
+\item 
+const my\_\-float\_\-t $\ast$ \textbf{A\_\-next\_\-res\_\-N\_\-pos}\label{classASCbase_1_1residue__joints_c695ff8ec00bd34f913a43fe8087e7fa}
+
+\item 
+std::vector$<$ my\_\-float\_\-t $>$ \textbf{A\_\-orig\_\-joint\_\-angles}\label{classASCbase_1_1residue__joints_e0ccbfe40d2d00392c4d921188ad6361}
+
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static const std::string \textbf{A\_\-fname} = \char`\"{}prot\_\-joint\_\-dep\char`\"{}\label{classASCbase_1_1residue__joints_e39bf1e8f574aad44de1a4614d83a659}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Data class to store the joints of one residue. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ASCbase::residue_joints@{ASCbase::residue\_\-joints}!residue_joints@{residue\_\-joints}}
+\index{residue_joints@{residue\_\-joints}!ASCbase::residue_joints@{ASCbase::residue\_\-joints}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ASCbase::residue\_\-joints::residue\_\-joints ()\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1residue__joints_1a5a5d456651261c8cfa2f1588f829de}
+
+
+Default constructor -- used by maps, etc before applying the assignment operator 
+
+\subsection{Member Function Documentation}
+\index{ASCbase::residue_joints@{ASCbase::residue\_\-joints}!compute_current_axes_of_rotation@{compute\_\-current\_\-axes\_\-of\_\-rotation}}
+\index{compute_current_axes_of_rotation@{compute\_\-current\_\-axes\_\-of\_\-rotation}!ASCbase::residue_joints@{ASCbase::residue\_\-joints}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool residue\_\-joints::compute\_\-current\_\-axes\_\-of\_\-rotation (my\_\-float\_\-t $\ast$ {\em rot\_\-axes}, int $\ast$ {\em num\_\-axes}, const int {\em array\_\-len}) const}\label{classASCbase_1_1residue__joints_3a4671e36329ec606cfb9b1c91c7b334}
+
+
+We need this function because we are relying on shallow copies (pointers rather) to atomic positions. Using this function makes it a bit less likely to have stale axes of rotation, rather than requiring explicit update of class variables after each moving of atoms (local and global). \index{ASCbase::residue_joints@{ASCbase::residue\_\-joints}!compute_dihedral_angle@{compute\_\-dihedral\_\-angle}}
+\index{compute_dihedral_angle@{compute\_\-dihedral\_\-angle}!ASCbase::residue_joints@{ASCbase::residue\_\-joints}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}my\_\-float\_\-t residue\_\-joints::compute\_\-dihedral\_\-angle (const my\_\-float\_\-t $\ast$ {\em A}, const my\_\-float\_\-t $\ast$ {\em B}, const my\_\-float\_\-t $\ast$ {\em C}) const\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1residue__joints_23107db1da4a4930345c2d1dacd44194}
+
+
+Compute the dihedral angle for the directional bond chain A, B, C. 
+
+\begin{Desc}
+\item[Returns:]The dihedral angle in [-pi, pi] \end{Desc}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+prot\_\-joint\_\-dep.H\item 
+prot\_\-joint\_\-dep.C\end{CompactItemize}

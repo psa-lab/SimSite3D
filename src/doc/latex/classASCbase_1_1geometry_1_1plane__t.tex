@@ -1,0 +1,77 @@
+\section{ASCbase::geometry::plane\_\-t Class Reference}
+\label{classASCbase_1_1geometry_1_1plane__t}\index{ASCbase::geometry::plane_t@{ASCbase::geometry::plane\_\-t}}
+Computational representation of an analyticaly defined 3D plane.  
+
+
+{\tt \#include $<$sphere.H$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{plane\_\-t} ()\label{classASCbase_1_1geometry_1_1plane__t_6a96b14a51383e4f04b440fa4f89ce72}
+
+\begin{CompactList}\small\item\em Default constructor. \item\end{CompactList}\item 
+\textbf{plane\_\-t} (const my\_\-float\_\-t $\ast$N, const my\_\-float\_\-t $\ast$P0)\label{classASCbase_1_1geometry_1_1plane__t_e9e131b4396c0cfd95ca45fe5e10c7fc}
+
+\item 
+\textbf{plane\_\-t} (const my\_\-float\_\-t $\ast$N, const my\_\-float\_\-t d)\label{classASCbase_1_1geometry_1_1plane__t_59a4c03593f8738e75c8058bca6ae3b5}
+
+\item 
+\textbf{plane\_\-t} (const \bf{plane\_\-t} \&src)\label{classASCbase_1_1geometry_1_1plane__t_3bcc78fa427df47158b7a929f5daf4f5}
+
+\item 
+const \bf{plane\_\-t} \& \textbf{operator=} (const \bf{plane\_\-t} \&src)\label{classASCbase_1_1geometry_1_1plane__t_52998da3f919f0dc7ad81b41ff06a6fa}
+
+\item 
+my\_\-float\_\-t \textbf{signed\_\-dist} (const my\_\-float\_\-t $\ast$pt) const \label{classASCbase_1_1geometry_1_1plane__t_d07a8d10378c09fa6e685ac904c2646d}
+
+\item 
+void \bf{intersection} (const \bf{plane\_\-t} \&other, my\_\-float\_\-t $\ast$m, my\_\-float\_\-t $\ast$b)
+\begin{CompactList}\small\item\em Plane - plane intersection. \item\end{CompactList}\item 
+const my\_\-float\_\-t $\ast$ \textbf{normal} () const \label{classASCbase_1_1geometry_1_1plane__t_46707f1b4f2a00ea36fc49e783d153b9}
+
+\item 
+const my\_\-float\_\-t $\ast$ \textbf{point} () const \label{classASCbase_1_1geometry_1_1plane__t_85dd05c8e741d2bb84bdf62e00831108}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{do\_\-copy} (const \bf{plane\_\-t} \&src)\label{classASCbase_1_1geometry_1_1plane__t_07d9042854d890d0f1f6d67b24005944}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+my\_\-float\_\-t \bf{A\_\-N} [3]\label{classASCbase_1_1geometry_1_1plane__t_729fc8d83f6730ffccbf6ebfddaf8f77}
+
+\begin{CompactList}\small\item\em Unit normal to the plane. \item\end{CompactList}\item 
+my\_\-float\_\-t \bf{A\_\-P0} [3]\label{classASCbase_1_1geometry_1_1plane__t_9b2e543bd396510e30f8c38b95c13b43}
+
+\begin{CompactList}\small\item\em Point on the plane -- might be full of garbage. \item\end{CompactList}\item 
+my\_\-float\_\-t \bf{A\_\-d}\label{classASCbase_1_1geometry_1_1plane__t_d8acc9a64d3c29dd0f25e9a681dcb343}
+
+\begin{CompactList}\small\item\em The d in the plane equation NX + d = 0. \item\end{CompactList}\item 
+bool \textbf{A\_\-P0\_\-is\_\-defined}\label{classASCbase_1_1geometry_1_1plane__t_0d32a9703fc45b724246c824c20b8af9}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Computational representation of an analyticaly defined 3D plane. 
+
+
+
+\subsection{Member Function Documentation}
+\index{ASCbase::geometry::plane_t@{ASCbase::geometry::plane\_\-t}!intersection@{intersection}}
+\index{intersection@{intersection}!ASCbase::geometry::plane_t@{ASCbase::geometry::plane\_\-t}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ASCbase::geometry::plane\_\-t::intersection (const \bf{plane\_\-t} \& {\em other}, my\_\-float\_\-t $\ast$ {\em m}, my\_\-float\_\-t $\ast$ {\em b})\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1geometry_1_1plane__t_aad5de4249d5e30464f69e0280f62fd3}
+
+
+Plane - plane intersection. 
+
+Numerical approximation to intersection via Mathworld plane-plane page replace this with SVD or other linear solution to [N1,N2]$^\wedge$T x = -[d1;d2] 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sphere.H\end{CompactItemize}

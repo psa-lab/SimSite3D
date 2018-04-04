@@ -1,0 +1,34 @@
+search_sitemaps can be run in one of two modes:
+	1) Compare two sitemaps.
+	2) Blast one sitemap against a directory of sitemaps.
+
+(1) To compare two sitemaps you can invoke search_sitemaps by listing
+the names of the two sitemaps.
+(2) To compare one (query) sitemap against a database (directory) of sitemaps 
+you need to list only the query sitemap as a argument to search_sitemaps.
+
+In this example, we compare the ATP sites of the pdb crystal structures
+1eqm and 1b38.  To run the comparision, type:
+	"search_sitemaps in/1b38_atp_s.csv in/1ua2_atp_s.csv"
+When finshed (typically a few minutes), you can find the output in the directory
+$PROJ_OUTPUT/1b38_atp_results.  An example output directory and an example
+DrugScore 1.2 score file may be found in the out directory.  (Note:  because 
+two "full" binding sites were compared, the ligand and ligand fragment files in 
+the directories 1b38_atp/moved_ligands and 1b38_atp/ligand_fragments 
+respectively are the same).
+
+DrugScore:  DrugScore 1.2 writes out 3 files for each comparison (scoring). 
+A log file, an info file and a score file.  Because 3 files are written for
+each site in a search, a large number of files are generated.  For this reason,
+the default action of ASCbase is to read the score from the DrugScore score 
+file and delete the DrugScore files.
+
+SFCscore:  Please refer the Quick Guide for information on how to setup the 
+interface to SFCscore (because of the large number of options to SFCscore
+the methods to setup the interface are not discussed here).
+
+Molecular Graphics:  You may visualize the ligand "hit" by along with its 
+reference by viewing the protein, reference ligand and hit ligand 
+(in/1b38_atp_p.pdb, in/1b38_atp_l.mol2, 
+$PROJ_OUTPUT/1b38_atp_results/ligand_fragments/1ua2_atp_0001_ASCbase_frag_l.mol2
+respectively).

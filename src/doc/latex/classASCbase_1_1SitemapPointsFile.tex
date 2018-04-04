@@ -1,0 +1,57 @@
+\section{ASCbase::Sitemap\-Points\-File Class Reference}
+\label{classASCbase_1_1SitemapPointsFile}\index{ASCbase::SitemapPointsFile@{ASCbase::SitemapPointsFile}}
+Creation and storage of sitemap points files.  
+
+
+{\tt \#include $<$Sitemap\-Points\-File.H$>$}
+
+Inheritance diagram for ASCbase::Sitemap\-Points\-File::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classASCbase_1_1SitemapPointsFile}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{Sitemap\-Points\-File} ()\label{classASCbase_1_1SitemapPointsFile_db5b966cb4e3f26a969479259b7a63b5}
+
+\begin{CompactList}\small\item\em Cstr to create a sitemap points file. \item\end{CompactList}\item 
+\bf{Sitemap\-Points\-File} (const std::string filename, const verbose\_\-level\_\-t verbosity=VERBOSE\_\-SILENT)\label{classASCbase_1_1SitemapPointsFile_5f355b3286eaea41596b433e8d5cd476}
+
+\begin{CompactList}\small\item\em Cstr to load an existing sitemap points file. \item\end{CompactList}\item 
+bool \bf{add\_\-points} (const hbond\_\-fit\_\-pt\_\-vci \_\-begin, const hbond\_\-fit\_\-pt\_\-vci \_\-end)\label{classASCbase_1_1SitemapPointsFile_0f7b8e2ccb3f1dc27fcc4720b0ae14c5}
+
+\begin{CompactList}\small\item\em Add hydrogen bonding points. \item\end{CompactList}\item 
+bool \bf{add\_\-points} (const hphob\_\-point\_\-lci \_\-begin, const hphob\_\-point\_\-lci \_\-end)\label{classASCbase_1_1SitemapPointsFile_5dd5cd935f9623f2e8e3ce4051c156ba}
+
+\begin{CompactList}\small\item\em Add hydrophobic points. \item\end{CompactList}\item 
+const uint \textbf{num\_\-polar\_\-points} () const \label{classASCbase_1_1SitemapPointsFile_4a9728a68610afe41d65332ff73bcbf2}
+
+\item 
+const uint \textbf{num\_\-hphobic\_\-points} () const \label{classASCbase_1_1SitemapPointsFile_5d261bb85ca34bf9797ab126d8c46960}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+std::vector$<$ uint $>$ \bf{counts}\label{classASCbase_1_1SitemapPointsFile_b3c2f62fc9252fb70d4287d889c7b9fa}
+
+\begin{CompactList}\small\item\em Shamelessly assumes header comes before data. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static const std::string \bf{\_\-fname} = \char`\"{}Sitemap\-Points\-File.C\char`\"{}\label{classASCbase_1_1SitemapPointsFile_3c2df5c3e3de9995d61644c28d181c42}
+
+\begin{CompactList}\small\item\em Source file name. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Creation and storage of sitemap points files. 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Sitemap\-Points\-File.H\item 
+Sitemap\-Points\-File.C\end{CompactItemize}

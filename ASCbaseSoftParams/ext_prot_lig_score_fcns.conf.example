@@ -1,0 +1,34 @@
+%
+% NOTE: Each line is required to have exactly three (3) commas or it will be 
+% ignored.
+%
+% Columns with their intended data.
+% 1) Identifier (or scoring function name) for the given protein-ligand 
+%    external scoring function -- this is the identifier that will be used on 
+%    the search_sitemaps command line to select the given line.  Valid 
+%    characters are upper and lower case alphanumeric charcters and '_' and '-'.
+%    All other characters, including commas (which denote the end of a field) 
+%    are likely to have undefined results.
+% 2) The identifier for the scoring function type -- for example DrugScore or
+%    SFCscore.  This identifier is used internally by search_sitemaps and
+%    at present DrugScore, SFCscore and NONE are the supported types.  Support
+%    for additional scoring function types requires knowledge of the output
+%    method of the scoring function, how to parse that output and overloading
+%    the C++ ExternalScoringFunction class (in src/search) to provide that 
+%    support.
+% 3) Exact commandline to run for the external scoring function with the
+%    values of the $PROTEIN and $LIGAND variables determined by your search.  
+%    In particular, the $PROTEIN will be the subset of query protein residues 
+%    that are within interaction distance of the query protein binding site.
+%    Similarly, the $LIGAND will be those database ligand fragments for which 
+%    the corresponding database sitemap was similar enough to the query sitemap.
+%    Finally, we strongly encourage you to test your external scoring function 
+%    on one or more examples of ASCbase output before adding the external
+%    scoring function to this file.
+%    
+%
+NONE,NONE,/bin/false,
+DrugScore,DrugScore,/soft/linux/drugscore/bin/drugscore.lnx PAIR $PROTEIN $LIGAND > /dev/null,
+Affiscore,ProtLigScore,$ASCBASE_INSTALL_DIR/bin/prot_lig_score -p $PROTEIN -l $LIGAND
+Orientscore,ProtLigScore,$ASCBASE_INSTALL_DIR/bin/prot_lig_score -p $PROTEIN -l $LIGAND
+%SFCscore,SFCscore,/path/to/SFCscore/binary/sfcscore -p $PROTEIN -l $LIGAND /path/to/my/SFCscore/my_spf_file.spf,

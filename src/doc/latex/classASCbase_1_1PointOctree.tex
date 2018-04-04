@@ -1,0 +1,104 @@
+\section{ASCbase::Point\-Octree Class Reference}
+\label{classASCbase_1_1PointOctree}\index{ASCbase::PointOctree@{ASCbase::PointOctree}}
+Adaptive octree for the \doxyref{point\_\-t}{p.}{classASCbase_1_1point__t} datatype.  
+
+
+{\tt \#include $<$Point\-Octree.H$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+\textbf{NO\_\-INTERSECTION} = 0\label{classASCbase_1_1PointOctree_80fe7b8c8af1229786dbaecb7ccb309061dba93a370115c369fb1a8ae073b261}
+
+\item 
+\textbf{CENTER\_\-IN\_\-CUBE}\label{classASCbase_1_1PointOctree_80fe7b8c8af1229786dbaecb7ccb30909a3c5177988c3b9dc45660468e661efe}
+
+\item 
+\textbf{POSSIBLE\_\-INTERSECTION}\label{classASCbase_1_1PointOctree_80fe7b8c8af1229786dbaecb7ccb3090f06b63246103bc5a2673ff617e5b23ba}
+
+\item 
+\textbf{CUBE\_\-AND\_\-SPHERE\_\-INTERSECT}\label{classASCbase_1_1PointOctree_80fe7b8c8af1229786dbaecb7ccb3090e080c910e2c558e73ba9da4b7dee94a8}
+
+\item 
+enum \textbf{cube\_\-sphere\_\-intersect\_\-t} \{ \textbf{NO\_\-INTERSECTION} =  0, 
+\textbf{CENTER\_\-IN\_\-CUBE}, 
+\textbf{POSSIBLE\_\-INTERSECTION}, 
+\textbf{CUBE\_\-AND\_\-SPHERE\_\-INTERSECT}
+ \}
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{Point\-Octree} (atom\_\-vci first, atom\_\-vci last, const my\_\-float\_\-t min\_\-half\_\-width=4.5, const uint max\_\-numel=1)\label{classASCbase_1_1PointOctree_d4542cde89263eed14b44af4c3c1cabb}
+
+\item 
+void \textbf{get\_\-close\_\-points} (atom\_\-vci a, const my\_\-float\_\-t max\_\-dist, std::vector$<$ atom\_\-vci $>$ $\ast$close\_\-points)\label{classASCbase_1_1PointOctree_caf133dd6c8f3fcbbbe0835f0a0738ed}
+
+\item 
+void \textbf{get\_\-close\_\-points} (const octree\_\-node\_\-t$<$ atom\_\-vci $>$ $\ast$cnode, const my\_\-float\_\-t $\ast$pt, const my\_\-float\_\-t pt\_\-tol, std::vector$<$ atom\_\-vci $>$ $\ast$close\_\-points, int level)\label{classASCbase_1_1PointOctree_882dc85ada0fa27226db94d2a84f8caa}
+
+\item 
+void \textbf{bin\_\-trace} ()\label{classASCbase_1_1PointOctree_2a852ae8875370f5a3addd9ef4931770}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{build} (atom\_\-vci first, atom\_\-vci last)\label{classASCbase_1_1PointOctree_16d33c6f4d05a3fbb19d39ab6d70e342}
+
+\item 
+void \textbf{subdivide} (octree\_\-node\_\-t$<$ atom\_\-vci $>$ $\ast$cnode)\label{classASCbase_1_1PointOctree_8dbe0c4bb2a2914528f0cf9f66b08f59}
+
+\item 
+void \bf{free\_\-octree\_\-node} (octree\_\-node\_\-t$<$ atom\_\-vci $>$ $\ast$cnode)
+\item 
+cube\_\-sphere\_\-intersect\_\-t \textbf{point\_\-in\_\-cube} (const my\_\-float\_\-t $\ast$centroid, const my\_\-float\_\-t half\_\-width, const my\_\-float\_\-t $\ast$pt, const my\_\-float\_\-t radius)\label{classASCbase_1_1PointOctree_b3569e8b1ea100a74666ce00b0a7278f}
+
+\item 
+cube\_\-sphere\_\-intersect\_\-t \textbf{cube\_\-and\_\-sphere\_\-intersect} (const my\_\-float\_\-t $\ast$centroid, const my\_\-float\_\-t half\_\-width, const my\_\-float\_\-t $\ast$center, const my\_\-float\_\-t radius)\label{classASCbase_1_1PointOctree_1636cdd524d21fb60ad80b69ae78b042}
+
+\item 
+void \textbf{print\_\-bin\_\-trace} (const octree\_\-node\_\-t$<$ atom\_\-vci $>$ $\ast$cnode, int level)\label{classASCbase_1_1PointOctree_39e097047618b2c80bb6ea1f9e7a74a9}
+
+\item 
+bool \textbf{line\_\-in\_\-sphere} (const my\_\-float\_\-t $\ast$centroid, const my\_\-float\_\-t half\_\-width, const my\_\-float\_\-t $\ast$center, const my\_\-float\_\-t radius, const int idx, const my\_\-float\_\-t $\ast$sign)\label{classASCbase_1_1PointOctree_569358659a96ecc1de157cf5b4a9ddc1}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+octree\_\-node\_\-t$<$ atom\_\-vci $>$ \bf{A\_\-root}\label{classASCbase_1_1PointOctree_cf433700d8979b8a5531af09c1a722a5}
+
+\begin{CompactList}\small\item\em Root node of the tree. \item\end{CompactList}\item 
+uint \bf{A\_\-max\_\-numel}\label{classASCbase_1_1PointOctree_0e341947fdbf0da8c6507d6461c8ffe5}
+
+\begin{CompactList}\small\item\em Max number of elements in a cube at a level less than the max level. \item\end{CompactList}\item 
+my\_\-float\_\-t \bf{A\_\-min\_\-half\_\-width}\label{classASCbase_1_1PointOctree_ea82427ff395714332d21ff1ceac2716}
+
+\begin{CompactList}\small\item\em Smallest cube should be about this size. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static const std::string \bf{A\_\-fname}\label{classASCbase_1_1PointOctree_6b1e10ac2fe83f68cc03bdd24ec8d9ca}
+
+\begin{CompactList}\small\item\em Name of the source file. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Adaptive octree for the \doxyref{point\_\-t}{p.}{classASCbase_1_1point__t} datatype. 
+
+It is reasonably efficient when compared with brute force, but a few more checks and the number of returned points, etc would be reduced further. 
+
+
+
+\subsection{Member Function Documentation}
+\index{ASCbase::PointOctree@{ASCbase::Point\-Octree}!free_octree_node@{free\_\-octree\_\-node}}
+\index{free_octree_node@{free\_\-octree\_\-node}!ASCbase::PointOctree@{ASCbase::Point\-Octree}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ASCbase::Point\-Octree::free\_\-octree\_\-node (octree\_\-node\_\-t$<$ atom\_\-vci $>$ $\ast$ {\em cnode})\hspace{0.3cm}{\tt  [inline, private]}}\label{classASCbase_1_1PointOctree_312dabdbfa0177cf2336fe534032b811}
+
+
+This function was not tested enough and it should also be timed to check if it is really any faster than near\_\-by\_\-points for each point 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Point\-Octree.H\end{CompactItemize}

@@ -1,0 +1,99 @@
+\section{ASCbase::geometry::Distance\-Array Class Reference}
+\label{classASCbase_1_1geometry_1_1DistanceArray}\index{ASCbase::geometry::DistanceArray@{ASCbase::geometry::DistanceArray}}
+{\tt \#include $<$Distance\-Array.H$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+typedef std::vector$<$ std::vector$<$ const my\_\-float\_\-t $\ast$ $>$ $>$ \textbf{bin\_\-vec}\label{classASCbase_1_1geometry_1_1DistanceArray_c997ffd8bddac3ff42c7dbc23c39e47d}
+
+\item 
+typedef bin\_\-vec::const\_\-iterator \textbf{bin\_\-vci}\label{classASCbase_1_1geometry_1_1DistanceArray_4a9a352c0bef59cc6afd3288b7465c8c}
+
+\item 
+typedef std::multimap$<$ bin\_\-vci, const my\_\-float\_\-t $\ast$ $>$ \textbf{bin2vert\_\-mmap}\label{classASCbase_1_1geometry_1_1DistanceArray_60d957c24874b08bca3c6e3f00a09ce5}
+
+\item 
+typedef bin2vert\_\-mmap::const\_\-iterator \textbf{bin2vert\_\-mmci}\label{classASCbase_1_1geometry_1_1DistanceArray_ec84c66a10ac537a7e6f84c1d558224e}
+
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{Distance\-Array} ()
+\item 
+\textbf{Distance\-Array} (const my\_\-float\_\-t $\ast$positions, const uint num\_\-pos, const my\_\-float\_\-t bin\_\-width, const my\_\-float\_\-t max\_\-dist)\label{classASCbase_1_1geometry_1_1DistanceArray_3838bfe2441f1dd98f87689aea5cf16a}
+
+\item 
+void \textbf{setup\_\-grid} (const my\_\-float\_\-t $\ast$positions, const uint num\_\-pos, const my\_\-float\_\-t bin\_\-width, const my\_\-float\_\-t max\_\-dist)\label{classASCbase_1_1geometry_1_1DistanceArray_501f917f566d2ae25bb0649db73e7625}
+
+\item 
+void \textbf{get\_\-min\_\-max\_\-coords} (const my\_\-float\_\-t $\ast$positions, const uint num\_\-pos, my\_\-float\_\-t $\ast$min\_\-pos, my\_\-float\_\-t $\ast$max\_\-pos)\label{classASCbase_1_1geometry_1_1DistanceArray_43c86d0510bafc7dc0cac5b2cba570a7}
+
+\item 
+void \textbf{determine\_\-space} (const my\_\-float\_\-t $\ast$min\_\-pos, const my\_\-float\_\-t $\ast$max\_\-pos, my\_\-float\_\-t $\ast$min\_\-corner, my\_\-float\_\-t $\ast$max\_\-corner, int $\ast$num\_\-bins)\label{classASCbase_1_1geometry_1_1DistanceArray_a4cc0a8c9a2b2474b11a3b0ed4c5bedd}
+
+\item 
+void \textbf{populate\_\-grid} (const my\_\-float\_\-t $\ast$positions, const uint num\_\-pos, const my\_\-float\_\-t max\_\-dist, std::vector$<$ std::vector$<$ const my\_\-float\_\-t $\ast$ $>$ $>$ $\ast$bins)\label{classASCbase_1_1geometry_1_1DistanceArray_4c9b723809adef008c0b4ca51774f726}
+
+\item 
+bin\_\-vci \textbf{get\_\-bin} (const my\_\-float\_\-t $\ast$pt) const \label{classASCbase_1_1geometry_1_1DistanceArray_98eb2f3e69db33ab79650d39da540ebf}
+
+\item 
+void \textbf{get\_\-bins} (const my\_\-float\_\-t $\ast$vert\_\-begin, const uint num\_\-vert, bin2vert\_\-mmap $\ast$pts\_\-in\_\-bins) const \label{classASCbase_1_1geometry_1_1DistanceArray_d78373acb3f5018b62772ecb9668c20f}
+
+\item 
+bin\_\-vci \bf{bins\_\-end} () const \label{classASCbase_1_1geometry_1_1DistanceArray_c287afc60a8d74ad4123b0e6a8f54eea}
+
+\begin{CompactList}\small\item\em Constant iterator to one past the last bin in the vector. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{init} ()\label{classASCbase_1_1geometry_1_1DistanceArray_2750d605e1e1559a1af94773627ebf7e}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+my\_\-float\_\-t \bf{A\_\-max\_\-dist}\label{classASCbase_1_1geometry_1_1DistanceArray_8d48a1538dbd9906eb57f4ee7b366c66}
+
+\begin{CompactList}\small\item\em Maximum distance for grid to be valid. \item\end{CompactList}\item 
+my\_\-float\_\-t \bf{A\_\-bin\_\-width}\label{classASCbase_1_1geometry_1_1DistanceArray_3db71eff2a24debe8bbcfae462759b76}
+
+\begin{CompactList}\small\item\em Side length of a bin. \item\end{CompactList}\item 
+my\_\-float\_\-t \bf{A\_\-bin\_\-width\_\-inv}\label{classASCbase_1_1geometry_1_1DistanceArray_87ff0d438ee6643277aa4264f450cd0c}
+
+\begin{CompactList}\small\item\em multiplicative inverse (1 over) side length \item\end{CompactList}\item 
+my\_\-float\_\-t \textbf{A\_\-upper\_\-corner} [3]\label{classASCbase_1_1geometry_1_1DistanceArray_01a14247bcabaecf8e917b8aa5acf65a}
+
+\item 
+my\_\-float\_\-t \textbf{A\_\-lower\_\-corner} [3]\label{classASCbase_1_1geometry_1_1DistanceArray_8e955d0b3ebfb53e2ca6c19ee8983a29}
+
+\item 
+int \textbf{A\_\-num\_\-bins} [3]\label{classASCbase_1_1geometry_1_1DistanceArray_fbbb787940946323d4451b72fcedbfcf}
+
+\item 
+bin\_\-vec \textbf{A\_\-bins}\label{classASCbase_1_1geometry_1_1DistanceArray_d1d1803122cc7bfd7cce80e64afe297e}
+
+\item 
+bool \textbf{A\_\-bins\_\-are\_\-setup}\label{classASCbase_1_1geometry_1_1DistanceArray_2d5a5de8383858eddee83da5ad46887e}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Make this a simple class to get it workiing -- then template it for generic associated datatype(s) -- keep all functions here for now because if we use templates gcc requires them in header anyhow 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ASCbase::geometry::DistanceArray@{ASCbase::geometry::Distance\-Array}!DistanceArray@{DistanceArray}}
+\index{DistanceArray@{DistanceArray}!ASCbase::geometry::DistanceArray@{ASCbase::geometry::Distance\-Array}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ASCbase::geometry::Distance\-Array::Distance\-Array ()\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1geometry_1_1DistanceArray_2c29de984a15b6bd3269988d1296667b}
+
+
+Default constructor -- sometimes the array cannot be constructed at class construction 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Distance\-Array.H\end{CompactItemize}

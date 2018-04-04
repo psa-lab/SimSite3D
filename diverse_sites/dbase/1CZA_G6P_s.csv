@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Note: no xml namespace for now -->
+<ASCbase_sitemap>
+<!--
+# gen_points (SimSite3D) 4.1-rc3 sitemap labels file
+# Date: Thu Jul  1 13:04:06 2010
+-->
+<protein_structure_file>
+  1CZA_G6P_p.pdb
+</protein_structure_file>
+<ligand_file>
+  1CZA_G6P_l.mol2
+</ligand_file>
+<mol_surf>
+  <probe_radius>1.400</probe_radius>
+  <density>1.000</density>
+</mol_surf>
+<site_vol_est>
+<sphere><center>41.0596 41.1387 19.6866</center><radius>6.95283</radius></sphere>
+</site_vol_est>
+<volume_type>
+<sphere><center>42.191 38.948 19.062</center><radius>3</radius></sphere>
+<sphere><center>43.531 39.173 18.361</center><radius>3</radius></sphere>
+<sphere><center>44.179 40.394 19.05</center><radius>3</radius></sphere>
+<sphere><center>43.234 41.564 18.923</center><radius>3</radius></sphere>
+<sphere><center>41.846 41.226 19.497</center><radius>3</radius></sphere>
+<sphere><center>40.858 42.327 19.275</center><radius>3</radius></sphere>
+<sphere><center>41.566 37.807 18.303</center><radius>3</radius></sphere>
+<sphere><center>44.379 38.047 18.535</center><radius>3</radius></sphere>
+<sphere><center>45.441 40.691 18.465</center><radius>3</radius></sphere>
+<sphere><center>43.681 42.713 19.621</center><radius>3</radius></sphere>
+<sphere><center>41.336 40.06 18.789</center><radius>3</radius></sphere>
+<sphere><center>39.597 42.092 19.87</center><radius>3</radius></sphere>
+<sphere><center>39.34 42.309 21.439</center><radius>3</radius></sphere>
+<sphere><center>37.914 42.251 21.756</center><radius>3</radius></sphere>
+<sphere><center>39.738 43.696 21.857</center><radius>3</radius></sphere>
+<sphere><center>40.142 41.367 22.224</center><radius>3</radius></sphere>
+
+</volume_type>
+<!--
+# Normalization stats:
+# 1) Mean score of sitemap against normalization database
+# 2) Stdev of scores of sitemap against normalization database
+#
+# Note:  If the mean is 0 and the stdev is -1, the sitemap normalization
+#        statistics were not computed.
+-->
+<normalization_stats>
+  0.000 -1.000
+</normalization_stats>
+<!--
+# Hydrophobic pocket normalization stats:
+# Normalization stats using hydrophobic_query flag
+# 1) Mean score of sitemap against normalization database
+# 2) Stdev of scores of sitemap against normalization database
+#
+# Note:  If the mean is 0 and the stdev is -1, the sitemap normalization
+#        statistics were not computed using the hydrophobic_query flag.
+-->
+<hphob_norm_stats>
+  0.0 -1.0
+</hphob_norm_stats>
+<!--
+# Point counts:
+# 1) Number of polar points
+# 2) Number of hydrophobic points
+-->
+<point_counts>
+  46 2
+</point_counts>
+<!--
+# Fields in hydrogen bond section
+# 1) Sitemap point number
+# 2) Associated atom string (res, res num, iCode, chain id, atom name and
+#    sitemap point descriptor)
+# 3) Chain ID
+# 4) Residue name
+# 5) Residue number + insertion code (if it is not a space char)
+# 6) Atom name
+# 7) Atom number (serial)
+# 8) Hbond point number (for the given atom) - ASCbase internal use
+# 9) Point position  (ASCbase internal use)
+# 10) Carbon neighbor atom number  (ASCbase internal use)
+-->
+<hydrogen_bond_points>
+2001|ASP84_N_OD1/1D|N|ASP|84|OD1|562|2|43.744 39.258 19.258 |561|
+2002|ASP84_N_OD1/2D|N|ASP|84|OD1|562|2|43.744 39.258 19.258 |561|
+2003|ASP84_N_OD1/3D|N|ASP|84|OD1|562|2|43.744 39.258 19.258 |561|
+2004|ASP84_N_OD1/4D|N|ASP|84|OD1|562|2|43.744 39.258 19.258 |561|
+2005|ASP84_N_OD2/1D|N|ASP|84|OD2|563|2|44.696 41.488 19.442 |561|
+2006|ASP84_N_OD2/2D|N|ASP|84|OD2|563|2|44.696 41.488 19.442 |561|
+2007|ASP84_N_OD2/3D|N|ASP|84|OD2|563|2|44.696 41.488 19.442 |561|
+2008|ASP84_N_OD2/4D|N|ASP|84|OD2|563|2|44.696 41.488 19.442 |561|
+1001|SER88_N_N/1A|N|SER|88|N|580|1|40.012 41.835 21.895 |578|
+1002|SER88_N_N/2A|N|SER|88|N|580|1|40.012 41.835 21.895 |578|
+1003|SER88_N_N/3A|N|SER|88|N|580|1|40.012 41.835 21.895 |578|
+1004|SER88_N_N/4A|N|SER|88|N|580|1|40.012 41.835 21.895 |578|
+1005|SER88_N_N/5A|N|SER|88|N|580|1|40.012 41.835 21.895 |578|
+1006|SER88_N_N/6A|N|SER|88|N|580|1|40.012 41.835 21.895 |578|
+3001|SER88_N_OG/1N|N|SER|88|OG|585|3|40.438 41.255 21.900 |584|
+3002|SER88_N_OG/2N|N|SER|88|OG|585|3|40.438 41.255 21.900 |584|
+3003|SER88_N_OG/3N|N|SER|88|OG|585|3|40.438 41.255 21.900 |584|
+1007|SER89_N_N/1A|N|SER|89|N|586|1|42.617 40.415 22.903 |582|
+3004|SER155_N_OG/1N|N|SER|155|OG|1130|1|43.631 44.138 21.206 |1129|
+3005|SER155_N_OG/2N|N|SER|155|OG|1130|1|43.631 44.138 21.206 |1129|
+2009|ASP209_N_OD1/1D|N|ASP|209|OD1|1564|1|42.453 42.724 19.439 |1563|
+2010|ASP209_N_OD1/2D|N|ASP|209|OD1|1564|1|42.453 42.724 19.439 |1563|
+2011|ASP209_N_OD1/3D|N|ASP|209|OD1|1564|1|42.453 42.724 19.439 |1563|
+2012|ASP209_N_OD1/4D|N|ASP|209|OD1|1564|1|42.453 42.724 19.439 |1563|
+1008|THR232_N_N/1A|N|THR|232|N|1725|1|39.845 43.492 21.321 |1723|
+1009|THR232_N_N/2A|N|THR|232|N|1725|1|39.845 43.492 21.321 |1723|
+1010|THR232_N_N/3A|N|THR|232|N|1725|1|39.845 43.492 21.321 |1723|
+1011|THR232_N_N/4A|N|THR|232|N|1725|1|39.845 43.492 21.321 |1723|
+1012|THR232_N_N/5A|N|THR|232|N|1725|1|39.845 43.492 21.321 |1723|
+1013|THR232_N_N/6A|N|THR|232|N|1725|1|39.845 43.492 21.321 |1723|
+3006|THR232_N_OG1/1N|N|THR|232|OG1|1730|2|38.996 42.948 22.052 |1729|
+3007|THR232_N_OG1/2N|N|THR|232|OG1|1730|2|38.996 42.948 22.052 |1729|
+1014|GLY233_N_N/1A|N|GLY|233|N|1732|1|40.539 45.866 20.104 |1727|
+1015|GLY233_N_N/2A|N|GLY|233|N|1732|1|40.539 45.866 20.104 |1727|
+2013|ASP413_N_OD1/1D|N|ASP|413|OD1|3154|2|39.408 36.115 18.219 |3153|
+2014|ASP413_N_OD2/1D|N|ASP|413|OD2|3155|2|41.471 35.947 17.719 |3153|
+2015|ASP413_N_OD2/2D|N|ASP|413|OD2|3155|2|41.471 35.947 17.719 |3153|
+1016|SER415_N_N/1A|N|SER|415|N|3160|1|38.130 42.658 21.117 |3158|
+1017|SER415_N_N/2A|N|SER|415|N|3160|1|38.130 42.658 21.117 |3158|
+1018|SER415_N_N/3A|N|SER|415|N|3160|1|38.130 42.658 21.117 |3158|
+1019|SER415_N_N/4A|N|SER|415|N|3160|1|38.130 42.658 21.117 |3158|
+3008|SER415_N_OG/1N|N|SER|415|OG|3165|2|38.681 41.396 21.075 |3164|
+3009|SER415_N_OG/2N|N|SER|415|OG|3165|2|38.681 41.396 21.075 |3164|
+1020|SER449_N_N/1A|N|SER|449|N|3449|1|44.293 38.282 18.435 |3447|
+1021|SER449_N_N/2A|N|SER|449|N|3449|1|44.293 38.282 18.435 |3447|
+1022|SER449_N_N/3A|N|SER|449|N|3449|1|44.293 38.282 18.435 |3447|
+</hydrogen_bond_points>
+<!--
+# Fields in hydrophobic points section
+# 1) Sitemap point number
+# 2) Associated atoms' strings
+-->
+<hydrophobic_points>
+1|ASP209_N_CB_ILE229_N_CG2_ILE229_N_CD1_ASP413_N_CB|
+2|ILE229_N_CG2_ILE229_N_CD1_ASP413_N_CB|
+</hydrophobic_points>
+<!--
+# Note: These are the largest values for the features of the sitemap when
+ # compared with itself
+# Features
+# 0) Closest polar sum
+# 1) polar mismatch sum
+# 2) AA DD sum
+# 3) NA AN ND DN NN sum
+# 4) hphob count
+# 5) Unsat query polar 
+# 6) best polar sum
+# 7) best AA DD sum
+# 8) best NA AN ND DN NN sum
+# 9) best unsat polar
+# 10) number of query surface points within 1.5 (A) of db surface
+# 11) number of query faces with all 3 vertices within 1.5 (A) of db surface
+# 12) RMSE of query points to db surf (each point must be within 1.5 (A) )
+# 13) area of faces in 11
+# 14) RMSE of query normals to db surf normals
+-->
+<features_scales>
+46.000 46.000 37.000 46.000 2 46.000 46.000 37.000 46.000 46.000
+685 1196 1.5 408.819 4.0
+</features_scales>
+</ASCbase_sitemap>

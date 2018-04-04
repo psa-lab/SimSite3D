@@ -1,0 +1,67 @@
+\section{ASCbase::Dbase\-Sitemap Class Reference}
+\label{classASCbase_1_1DbaseSitemap}\index{ASCbase::DbaseSitemap@{ASCbase::DbaseSitemap}}
+Create and provide an interface to the database sitemaps.  
+
+
+{\tt \#include $<$Dbase\-Sitemap.H$>$}
+
+Inheritance diagram for ASCbase::Dbase\-Sitemap::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classASCbase_1_1DbaseSitemap}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{Dbase\-Sitemap} (const std::string path, const std::string struct\_\-id, const \bf{Base\-Parameters} \&args, const my\_\-float\_\-t max\_\-corr\_\-surf\_\-pt\_\-dist\_\-in=1.5, const bool check\_\-all\_\-triangles=false, const bool load\_\-hbond\_\-surfaces=false)\label{classASCbase_1_1DbaseSitemap_66fdd89eacf2de1b3b682dbb8cd56681}
+
+\item 
+const \bf{geometry::Simple\-Trimesh\-Two} \& \textbf{binding\_\-site\_\-mesh\_\-handle} () const \label{classASCbase_1_1DbaseSitemap_6dcc096074247d0908ae2304cd78d5af}
+
+\item 
+const my\_\-float\_\-t \textbf{max\_\-corr\_\-surf\_\-pt\_\-dist} () const \label{classASCbase_1_1DbaseSitemap_4e389bea3ac3be5083222a1697a6e7ee}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+bool \textbf{load\_\-surface\_\-mesh} (const std::string struct\_\-id, const bool check\_\-all\_\-triangles)\label{classASCbase_1_1DbaseSitemap_6e55d4c66285577dc9a0a0f1db0a1e1a}
+
+\item 
+void \bf{clear} ()\label{classASCbase_1_1DbaseSitemap_8ba30a5f3bd0d7efd0310c9b56b3a372}
+
+\begin{CompactList}\small\item\em Frees any allocated objects \& calls \doxyref{init()}{p.}{classASCbase_1_1DbaseSitemap_4ac128bcec4209d070338dd180ec144d} afterwards. \item\end{CompactList}\item 
+void \bf{init} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+my\_\-float\_\-t \textbf{A\_\-max\_\-corr\_\-surf\_\-pt\_\-dist}\label{classASCbase_1_1DbaseSitemap_173d970b1d207f6d75d31c3166abed17}
+
+\item 
+\bf{geometry::Simple\-Trimesh\-Two} $\ast$ \textbf{A\_\-binding\_\-site\_\-mesh}\label{classASCbase_1_1DbaseSitemap_52c241e9200f7168d030aad6716e046f}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Create and provide an interface to the database sitemaps. 
+
+We need this class because currently the database sitemaps require their surfaces stored using the Immovable\-Trimesh class 
+
+
+
+\subsection{Member Function Documentation}
+\index{ASCbase::DbaseSitemap@{ASCbase::Dbase\-Sitemap}!init@{init}}
+\index{init@{init}!ASCbase::DbaseSitemap@{ASCbase::Dbase\-Sitemap}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ASCbase::Dbase\-Sitemap::init ()\hspace{0.3cm}{\tt  [inline, private]}}\label{classASCbase_1_1DbaseSitemap_4ac128bcec4209d070338dd180ec144d}
+
+
+Initializes pointers to 0 and other variables to 0 or another useful value 
+
+Reimplemented from \bf{ASCbase::Sitemap} \doxyref{p.}{classASCbase_1_1Sitemap_2c579b022413645a8ecbdc4317117563}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Dbase\-Sitemap.H\end{CompactItemize}

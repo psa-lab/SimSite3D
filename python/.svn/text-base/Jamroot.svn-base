@@ -1,0 +1,97 @@
+project ASCbasePy
+  : requirements <include>/soft/linux64/boost_1_48_0
+  : requirements <include>../src/utils
+  : requirements <include>../src/sitemap
+  : requirements <include>../src/search
+  : requirements <include>../src/score
+  : requirements <library>/site-config//boost_python
+  : requirements <library>/site-config//popt
+  : requirements <library>/site-config//blas
+  : requirements <library>/site-config//lapack
+  : requirements <library>/ASCbasePy//../src/utils/libASCbaseSoftwareUtils.a
+  : default-build release
+  ;
+
+import os ;
+constant VIRTUAL_ENV : [ os.environ VIRTUAL_ENV ] ;
+constant ASCBASE_INSTALL_DIR : $(VIRTUAL_ENV)/lib/python2.7/site-packages ;
+import modules ;
+local ARGV = [ modules.peek : ARGV ] ;
+echo $(ARGV) ; 
+
+lib utils_lib
+  :   
+  : <file>../src/utils/libASCbaseSoftwareUtils.a
+  ;
+
+lib sitemaps_lib 
+  : 
+  : <file>../src/sitemap/libASCbaseSoftwareSitemaps.a
+  ;
+
+lib search_lib
+  :
+  : <file>../src/search/libASCbaseSoftwareSearch.a
+  ;
+
+lib score_lib
+  :
+  : <file>../src/score/libASCbaseSoftwareScore.a
+  ;
+
+build-project src/utils ;
+build-project src/sitemap ;
+build-project src/search ;
+build-project src/score ;
+
+install python_sources
+  : ./__init__.py ./utils/__init__.py ./sitemaps/__init__.py 
+    ./sitemaps/_utils.py ./sitemaps/_hbond_ideal_points.py 
+    ./sitemaps/_hbond_volumes.py ./sitemaps/_hbond_surf_caps.py 
+    ./sitemaps/_metal_volumes.py ./sitemaps/_metal_surfs.py
+    ./search/__init__.py ./search/_hbond_volume_score.py 
+    ./search/_hbond_surf_score.py
+    ./search/_IdentityAlignment.py ./search/_RandomAlignments.py
+    ./py_src/parameters.py ./py_src/__init__.py
+    ./utils/pdb.py ./utils/my_mol2.py ./utils/sdf.py ./utils/pdb_cif.py
+    ./utils/pdb_residues.csv ./utils/pdb_metals.csv ./utils/_spherical_grid.py 
+    ./utils/_math.py ./utils/matrix_pretty_printing.py ./utils/_quaternion.py 
+    ./utils/query_stats.py ./utils/volumes.py ./utils/add_RCSB_hydrogens.py
+    ./utils/misc_utils.py ./utils/move_residues.py ./utils/query_BindingMOAD.py
+    ./utils/_FragGen.py ./utils/RCSB_PDB_records.py ./utils/ssm_xml_results.py
+    ./utils/cgo_items.py ./utils/_TransformResults.py
+    ./score/__init__.py ./sitemaps/Sitemap.py
+    ./plotting/_LoadData.py ./plotting/__init__.py ./plotting/plot_matrices.py
+  : <location>$(ASCBASE_INSTALL_DIR)/ASCbasePy <install-source-root>.
+  ;
+
+#install python_sources2
+#  : ./py_src/_hits.py 
+#  : <location>$(ASCBASE_INSTALL_DIR)/ASCbasePy
+#  ;
+
+install pymol_scripts
+  : ./SimSite3D/__init__.py
+    ./SimSite3D/_xform_obj.py
+    ./SimSite3D/_site_map.py
+    ./SimSite3D/_hits.py
+    ./SimSite3D/PmwExtras/__init__.py
+    ./SimSite3D/PmwExtras/_DirBrowser.py
+    ./SimSite3D/PmwExtras/_FileDialog.py
+  : <location>$(ASCBASE_INSTALL_DIR)/ASCbasePy <install-source-root>.
+  ;
+
+install pymol_scripts2
+  : ./utils/pdb.py ./utils/pdb_residues.csv
+  : <location>$(ASCBASE_INSTALL_DIR)/ASCbasePy/SimSite3D
+  ;
+
+install pymol_plugins
+  : ./SimSite3D/SimSite3D_hits.py
+  : <location>$(ASCBASE_INSTALL_DIR)/ASCbasePy/PyMOL_plugins
+  ;
+
+install python_progs
+  : py_src/search_sitemaps.py py_src/auto_gen_sitemaps.py
+  : <location>$(ASCBASE_INSTALL_DIR)/bin
+  ;

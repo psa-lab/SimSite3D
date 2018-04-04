@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Note: no xml namespace for now -->
+<ASCbase_sitemap>
+<!--
+# gen_points (SimSite3D) 4.1-rc3 sitemap labels file
+# Date: Thu Jul  1 13:07:02 2010
+-->
+<protein_structure_file>
+  1MQO_CIT_p.pdb
+</protein_structure_file>
+<ligand_file>
+  1MQO_CIT_l.mol2
+</ligand_file>
+<mol_surf>
+  <probe_radius>1.400</probe_radius>
+  <density>1.000</density>
+</mol_surf>
+<site_vol_est>
+<sphere><center>12.5028 9.17387 25.9482</center><radius>5.78373</radius></sphere>
+</site_vol_est>
+<volume_type>
+<sphere><center>13.394 10.729 26.397</center><radius>3</radius></sphere>
+<sphere><center>13.933 10.152 25.404</center><radius>3</radius></sphere>
+<sphere><center>14.307 11.128 27.421</center><radius>3</radius></sphere>
+<sphere><center>11.917 10.993 26.657</center><radius>3</radius></sphere>
+<sphere><center>11.058 9.889 25.971</center><radius>3</radius></sphere>
+<sphere><center>11.498 9.639 24.594</center><radius>3</radius></sphere>
+<sphere><center>9.583 10.225 25.688</center><radius>3</radius></sphere>
+<sphere><center>8.653 9.045 25.88</center><radius>3</radius></sphere>
+<sphere><center>8.644 7.991 25.237</center><radius>3</radius></sphere>
+<sphere><center>7.663 9.134 26.832</center><radius>3</radius></sphere>
+<sphere><center>11.32 8.508 26.654</center><radius>3</radius></sphere>
+<sphere><center>11.359 8.516 27.942</center><radius>3</radius></sphere>
+<sphere><center>11.589 7.248 26.053</center><radius>3</radius></sphere>
+
+</volume_type>
+<!--
+# Normalization stats:
+# 1) Mean score of sitemap against normalization database
+# 2) Stdev of scores of sitemap against normalization database
+#
+# Note:  If the mean is 0 and the stdev is -1, the sitemap normalization
+#        statistics were not computed.
+-->
+<normalization_stats>
+  0.000 -1.000
+</normalization_stats>
+<!--
+# Hydrophobic pocket normalization stats:
+# Normalization stats using hydrophobic_query flag
+# 1) Mean score of sitemap against normalization database
+# 2) Stdev of scores of sitemap against normalization database
+#
+# Note:  If the mean is 0 and the stdev is -1, the sitemap normalization
+#        statistics were not computed using the hydrophobic_query flag.
+-->
+<hphob_norm_stats>
+  0.0 -1.0
+</hphob_norm_stats>
+<!--
+# Point counts:
+# 1) Number of polar points
+# 2) Number of hydrophobic points
+-->
+<point_counts>
+  17 15
+</point_counts>
+<!--
+# Fields in hydrogen bond section
+# 1) Sitemap point number
+# 2) Associated atom string (res, res num, iCode, chain id, atom name and
+#    sitemap point descriptor)
+# 3) Chain ID
+# 4) Residue name
+# 5) Residue number + insertion code (if it is not a space char)
+# 6) Atom name
+# 7) Atom number (serial)
+# 8) Hbond point number (for the given atom) - ASCbase internal use
+# 9) Point position  (ASCbase internal use)
+# 10) Carbon neighbor atom number  (ASCbase internal use)
+-->
+<hydrogen_bond_points>
+2001|CYS221_A_O/1D|A|CYS|221|O|1262|1|12.887 5.442 28.082 |1261|
+1001|LYS224_A_NZ/1A|A|LYS|224|NZ|1288|2|13.009 5.455 26.433 |1287|
+1002|LYS224_A_NZ/2A|A|LYS|224|NZ|1288|2|13.009 5.455 26.433 |1287|
+2002|LEU231_A_O/1D|A|LEU|231|O|1333|2|11.128 7.939 29.531 |1332|
+2003|LEU231_A_O/2D|A|LEU|231|O|1333|2|11.128 7.939 29.531 |1332|
+1003|ASN233_A_N/1A|A|ASN|233|N|1342|1|11.975 9.475 27.517 |1340|
+1004|ASN233_A_N/2A|A|ASN|233|N|1342|1|11.975 9.475 27.517 |1340|
+1005|ASN233_A_N/3A|A|ASN|233|N|1342|1|11.975 9.475 27.517 |1340|
+1006|ASN233_A_N/4A|A|ASN|233|N|1342|1|11.975 9.475 27.517 |1340|
+1007|ASN233_A_N/5A|A|ASN|233|N|1342|1|11.975 9.475 27.517 |1340|
+1008|ASN233_A_N/6A|A|ASN|233|N|1342|1|11.975 9.475 27.517 |1340|
+1009|ASN233_A_N/7A|A|ASN|233|N|1342|1|11.975 9.475 27.517 |1340|
+1010|ASN233_A_ND2/1A|A|ASN|233|ND2|1349|1|7.784 9.352 26.566 |1347|
+1011|ASN233_A_ND2/2A|A|ASN|233|ND2|1349|1|7.784 9.352 26.566 |1347|
+3001|HIS263_A_NE2/1N|A|HIS|263|NE2|1590|1|9.771 7.310 24.172 |1589|
+3002|HIS263_A_NE2/2N|A|HIS|263|NE2|1590|1|9.771 7.310 24.172 |1589|
+3003|HIS263_A_NE2/3N|A|HIS|263|NE2|1590|1|9.771 7.310 24.172 |1589|
+</hydrogen_bond_points>
+<!--
+# Fields in hydrophobic points section
+# 1) Sitemap point number
+# 2) Associated atoms' strings
+-->
+<hydrophobic_points>
+1|PHE61_A_CB_PHE61_A_CG_PHE61_A_CD1_PHE61_A_CD2_PHE61_A_CE1_PHE61_A_CE2_PHE61_A_CZ_TRP87_A_CZ3_TRP87_A_CH2|
+2|PHE61_A_CB_PHE61_A_CG_PHE61_A_CD1_PHE61_A_CD2_PHE61_A_CE1_PHE61_A_CE2_PHE61_A_CZ|
+3|PHE61_A_CB_PHE61_A_CG_PHE61_A_CD1_PHE61_A_CD2_PHE61_A_CE1_PHE61_A_CE2_PHE61_A_CZ_TRP87_A_CZ3_TRP87_A_CH2_ASP120_A_CB|
+4|PHE61_A_CB_PHE61_A_CG_PHE61_A_CD1_PHE61_A_CD2_PHE61_A_CE1_PHE61_A_CE2_PHE61_A_CZ_TRP87_A_CZ3|
+5|PHE61_A_CB_PHE61_A_CG_PHE61_A_CD1_PHE61_A_CD2_PHE61_A_CE2_VAL67_A_CG1|
+6|PHE61_A_CB_PHE61_A_CG_PHE61_A_CD1_PHE61_A_CD2_PHE61_A_CE1_PHE61_A_CE2_PHE61_A_CZ|
+7|PHE61_A_CB_PHE61_A_CG_PHE61_A_CD1_PHE61_A_CD2_PHE61_A_CE1_PHE61_A_CE2_PHE61_A_CZ|
+8|PHE61_A_CG_PHE61_A_CD2_PHE61_A_CE2_PHE61_A_CZ|
+9|PHE61_A_CB_PHE61_A_CG_PHE61_A_CD1_PHE61_A_CD2_PHE61_A_CE1_PHE61_A_CE2_PHE61_A_CZ|
+10|PHE61_A_CB_PHE61_A_CG_PHE61_A_CD1_PHE61_A_CD2_PHE61_A_CE1_PHE61_A_CE2_PHE61_A_CZ|
+11|VAL67_A_CG1_HIS263_A_CB|
+12|VAL67_A_CG1_TRP87_A_CH2|
+13|PHE61_A_CB_PHE61_A_CG_VAL67_A_CG1_TRP87_A_CZ3_TRP87_A_CH2|
+14|TRP87_A_CZ3_TRP87_A_CH2_ASP120_A_CB|
+15|PHE61_A_CG_PHE61_A_CD1_TRP87_A_CZ3_TRP87_A_CH2_ASP120_A_CB|
+</hydrophobic_points>
+<!--
+# Note: These are the largest values for the features of the sitemap when
+ # compared with itself
+# Features
+# 0) Closest polar sum
+# 1) polar mismatch sum
+# 2) AA DD sum
+# 3) NA AN ND DN NN sum
+# 4) hphob count
+# 5) Unsat query polar 
+# 6) best polar sum
+# 7) best AA DD sum
+# 8) best NA AN ND DN NN sum
+# 9) best unsat polar
+# 10) number of query surface points within 1.5 (A) of db surface
+# 11) number of query faces with all 3 vertices within 1.5 (A) of db surface
+# 12) RMSE of query points to db surf (each point must be within 1.5 (A) )
+# 13) area of faces in 11
+# 14) RMSE of query normals to db surf normals
+-->
+<features_scales>
+17.000 17.000 14.000 17.000 15 17.000 17.000 14.000 17.000 17.000
+532 943 1.5 324.577 4.0
+</features_scales>
+</ASCbase_sitemap>

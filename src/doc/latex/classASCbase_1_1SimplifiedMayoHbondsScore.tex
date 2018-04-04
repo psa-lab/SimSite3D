@@ -1,0 +1,98 @@
+\section{ASCbase::Simplified\-Mayo\-Hbonds\-Score Class Reference}
+\label{classASCbase_1_1SimplifiedMayoHbondsScore}\index{ASCbase::SimplifiedMayoHbondsScore@{ASCbase::SimplifiedMayoHbondsScore}}
+Base class for scoring rigid alignments of dbase sitemaps to a given model.  
+
+
+{\tt \#include $<$Simplified\-Mayo\-Hbonds\-Score.H$>$}
+
+Inheritance diagram for ASCbase::Simplified\-Mayo\-Hbonds\-Score::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classASCbase_1_1SimplifiedMayoHbondsScore}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{Simplified\-Mayo\-Hbonds\-Score} (\bf{Model\-Sitemap} $\ast$model\_\-in, const \bf{Search\-Parameters} \&params)
+\begin{CompactList}\small\item\em Default constructor for scoring methods of rigidly aligned sitemaps. \item\end{CompactList}\item 
+\bf{$\sim$Simplified\-Mayo\-Hbonds\-Score} ()\label{classASCbase_1_1SimplifiedMayoHbondsScore_079bccca92ecadc6a5dfc8752b2a71b2}
+
+\begin{CompactList}\small\item\em basic destruction \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+my\_\-float\_\-t \bf{score} (const \bf{Dbase\-Sitemap} \&search, rigid\_\-align\_\-vi scores)
+\begin{CompactList}\small\item\em Given an alignment of search to the query, score said alignment. \item\end{CompactList}\item 
+my\_\-float\_\-t \textbf{correspondences} (my\_\-float\_\-t $\ast$$\ast$query\_\-pts\_\-ptr, my\_\-float\_\-t $\ast$$\ast$db\_\-pts\_\-ptr, size\_\-t $\ast$npts)\label{classASCbase_1_1SimplifiedMayoHbondsScore_16a1511418e1434b8a9af2a4a45771fd}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+my\_\-float\_\-t \textbf{simp\_\-mayo\_\-fun} (hbond\_\-ideal\_\-pt\_\-vci M, hbond\_\-ideal\_\-pt\_\-vci S)\label{classASCbase_1_1SimplifiedMayoHbondsScore_98ffd12659a057084f2156f72ba62e98}
+
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static const my\_\-float\_\-t \textbf{V\_\-zero} = 8.0\label{classASCbase_1_1SimplifiedMayoHbondsScore_7fbedaf8d613548425a7927950ca6499}
+
+\item 
+static const my\_\-float\_\-t \textbf{d\_\-zero} = 2.8\label{classASCbase_1_1SimplifiedMayoHbondsScore_484beeed25a3dc66b615b45b965b4034}
+
+\item 
+static const my\_\-float\_\-t \textbf{d\_\-zero\_\-squared} = d\_\-zero$\ast$d\_\-zero\label{classASCbase_1_1SimplifiedMayoHbondsScore_ec8144f93af7dc412e9f1a8eec9871cd}
+
+\item 
+static const std::string \bf{A\_\-fname} = \char`\"{}Simplified\-Mayo\-Hbonds\-Score.C\char`\"{}\label{classASCbase_1_1SimplifiedMayoHbondsScore_f94c16b357f8c124b7dd01eb297ee0f0}
+
+\begin{CompactList}\small\item\em Source file name. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \textbf{S\_\-and\_\-M}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for scoring rigid alignments of dbase sitemaps to a given model. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ASCbase::SimplifiedMayoHbondsScore@{ASCbase::Simplified\-Mayo\-Hbonds\-Score}!SimplifiedMayoHbondsScore@{SimplifiedMayoHbondsScore}}
+\index{SimplifiedMayoHbondsScore@{SimplifiedMayoHbondsScore}!ASCbase::SimplifiedMayoHbondsScore@{ASCbase::Simplified\-Mayo\-Hbonds\-Score}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Simplified\-Mayo\-Hbonds\-Score::Simplified\-Mayo\-Hbonds\-Score (\bf{Model\-Sitemap} $\ast$ {\em model\_\-in}, const \bf{Search\-Parameters} \& {\em params})}\label{classASCbase_1_1SimplifiedMayoHbondsScore_70771cd00d33a3ee88c11bbb36ae5068}
+
+
+Default constructor for scoring methods of rigidly aligned sitemaps. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em model\_\-in}]Pointer to the model points (sitemap class) \item[{\em params}]Reference to the search's runtime parameters \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{ASCbase::SimplifiedMayoHbondsScore@{ASCbase::Simplified\-Mayo\-Hbonds\-Score}!score@{score}}
+\index{score@{score}!ASCbase::SimplifiedMayoHbondsScore@{ASCbase::Simplified\-Mayo\-Hbonds\-Score}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}my\_\-float\_\-t Simplified\-Mayo\-Hbonds\-Score::score (const \bf{Dbase\-Sitemap} \& {\em search}, rigid\_\-align\_\-vi {\em scores})\hspace{0.3cm}{\tt  [protected]}}\label{classASCbase_1_1SimplifiedMayoHbondsScore_855918f5ffd04e320e9270f07878fc75}
+
+
+Given an alignment of search to the query, score said alignment. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em search}]Pointer to the sitemap aligned to the model sitemap \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The score of the alignment \end{Desc}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Simplified\-Mayo\-Hbonds\-Score.H\item 
+Simplified\-Mayo\-Hbonds\-Score.C\end{CompactItemize}

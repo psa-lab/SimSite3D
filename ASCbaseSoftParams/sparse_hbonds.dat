@@ -1,0 +1,165 @@
+# WARNING!:  These hbond data files are highly structured--do not edit them.
+# If you insist you are doing so at your own risk.
+# 
+# Empty lines -- those which have only the '\n' character are used to
+# change sections.  The format of the lines is as follows:
+# The residues with these atom types |
+# The element name of the atom |
+# 1 -- atom is a donor, 2 -- atom is an acceptor, 3 atom is a doneptor |
+# The "in-plane" angle |
+# The "out-of-plane" angle |
+#
+# Note:  This method has one caveat, the sidechain atoms are all determined
+# by residue name and element type except for arginine.  In the case of 
+# arginine we need to check if the N is the epsilon nitrogen or not.  If an 
+# atom is the arginine epsilon nitrogen, we use the WR set of angles, and 
+# the other 2 Ns of the guanadinium group are specified by the NQR set.
+#
+# This is getting messy.  At the present the 3rd field is not used by 
+# SimSite3D, and should NOT be used for His residues.
+# The reason is NE2 has been changed to favor protonation over an unknown state # --  Discussion with Leslie and Matt based on 
+# Jack Kyte’s Structure in Protein Chemistry pKa diagram for the 
+# high-probability states of His around pH 7
+MAIN_CHAIN,O,LP,1,120,0,
+MAIN_CHAIN,O,LP,1,140,-30,
+MAIN_CHAIN,O,LP,1,140,0,
+MAIN_CHAIN,O,LP,1,140,30,
+MAIN_CHAIN,O,LP,1,160,0,
+MAIN_CHAIN,O,LP,1,180,0,
+MAIN_CHAIN,O,LP,2,200,0,
+MAIN_CHAIN,O,LP,2,220,-30,
+MAIN_CHAIN,O,LP,2,220,0,
+MAIN_CHAIN,O,LP,2,220,30,
+MAIN_CHAIN,O,LP,2,240,0,
+
+MAIN_CHAIN,N,H,1,100,0,
+MAIN_CHAIN,N,H,1,110,-30,
+MAIN_CHAIN,N,H,1,110,30,
+MAIN_CHAIN,N,H,1,120,0,
+MAIN_CHAIN,N,H,1,130,-30,
+MAIN_CHAIN,N,H,1,130,30,
+MAIN_CHAIN,N,H,1,140,0,
+
+ASP,O,LP,1,130,-30,
+ASP,O,LP,1,130,0,
+ASP,O,LP,1,130,30,
+ASP,O,LP,1,150,0,
+ASP,O,LP,2,230,0,
+ASP,O,LP,2,250,-30,
+ASP,O,LP,2,250,0,
+ASP,O,LP,2,250,30,
+
+GLU,O,LP,1,130,-30,
+GLU,O,LP,1,130,0,
+GLU,O,LP,1,130,30,
+GLU,O,LP,1,150,0,
+GLU,O,LP,2,230,0,
+GLU,O,LP,2,250,-30,
+GLU,O,LP,2,250,0,
+GLU,O,LP,2,250,30,
+
+ASN,O,LP,1,130,-30,
+ASN,O,LP,1,130,0,
+ASN,O,LP,1,130,30,
+ASN,O,LP,1,150,0,
+ASN,O,LP,2,230,0,
+ASN,O,LP,2,250,-30,
+ASN,O,LP,2,250,0,
+ASN,O,LP,2,250,30,
+
+GLN,O,LP,1,130,-30,
+GLN,O,LP,1,130,0,
+GLN,O,LP,1,130,30,
+GLN,O,LP,1,150,0,
+GLN,O,LP,2,230,0,
+GLN,O,LP,2,250,-30,
+GLN,O,LP,2,250,0,
+GLN,O,LP,2,250,30,
+
+ASN,N,H,1,100,0,
+ASN,N,H,1,120,-30,
+ASN,N,H,1,120,0,
+ASN,N,H,1,120,30,
+ASN,N,H,1,145,0,
+ASN,N,H,2,220,0,
+ASN,N,H,2,240,-30,
+ASN,N,H,2,240,0,
+ASN,N,H,2,240,30,
+
+GLN,N,H,1,100,0,
+GLN,N,H,1,120,-30,
+GLN,N,H,1,120,0,
+GLN,N,H,1,120,30,
+GLN,N,H,1,145,0,
+GLN,N,H,2,220,0,
+GLN,N,H,2,240,-30,
+GLN,N,H,2,240,0,
+GLN,N,H,2,240,30,
+
+ARG,N,H,1,100,0,
+ARG,N,H,1,120,-30,
+ARG,N,H,1,120,0,
+ARG,N,H,1,120,30,
+ARG,N,H,1,145,0,
+ARG,N,H,2,220,0,
+ARG,N,H,2,240,-30,
+ARG,N,H,2,240,0,
+ARG,N,H,2,240,30,
+
+HIS,N,U,1,100,0,
+HIS,N,U,1,110,-30,
+HIS,N,U,1,110,30,
+HIS,N,U,1,120,0,
+HIS,N,U,1,130,-30,
+HIS,N,U,1,130,30,
+HIS,N,U,1,140,0,
+
+TRP,N,H,1,100,-15,
+TRP,N,H,1,110,15,
+TRP,N,H,1,120,0,
+TRP,N,H,1,130,-15,
+TRP,N,H,1,140,15,
+
+TYR,O,U,1,110,-15,
+TYR,O,U,1,110,15,
+TYR,O,U,1,120,0,
+TYR,O,U,1,130,-15,
+TYR,O,U,1,130,15,
+TYR,O,U,2,230,-15,
+TYR,O,U,2,230,15,
+TYR,O,U,2,240,0,
+TYR,O,U,2,250,-15,
+TYR,O,U,2,250,15,
+
+SER,O,U,1,105,-10,
+SER,O,U,1,105,10,
+SER,O,U,2,105,120,
+SER,O,U,3,105,230,
+SER,O,U,3,105,250,
+SER,O,U,1,125,-10,
+SER,O,U,1,125,10,
+SER,O,U,2,125,120,
+SER,O,U,3,125,230,
+SER,O,U,3,125,250,
+
+THR,O,U,1,105,-10,
+THR,O,U,1,105,10,
+THR,O,U,2,105,120,
+THR,O,U,3,105,230,
+THR,O,U,3,105,250,
+THR,O,U,1,125,-10,
+THR,O,U,1,125,10,
+THR,O,U,2,125,120,
+THR,O,U,3,125,230,
+THR,O,U,3,125,250,
+
+LYS,N,H,1,100,-10,
+LYS,N,H,1,100,10,
+LYS,N,H,2,100,120,
+LYS,N,H,3,100,230,
+LYS,N,H,3,100,250,
+LYS,N,H,1,120,-10,
+LYS,N,H,1,120,10,
+LYS,N,H,2,120,120,
+LYS,N,H,3,120,230,
+LYS,N,H,3,120,250,

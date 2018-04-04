@@ -1,0 +1,192 @@
+\section{ASCbase::point\_\-bins$<$ \_\-Tp $>$ Class Template Reference}
+\label{classASCbase_1_1point__bins}\index{ASCbase::point_bins@{ASCbase::point\_\-bins}}
+Divide up the space based on a coordinate aligned grid.  
+
+
+{\tt \#include $<$point\_\-bins.H$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+typedef std::vector$<$ point\_\-bin\_\-t$<$ \_\-Tp $>$ $>$ \textbf{bin\_\-vec}\label{classASCbase_1_1point__bins_dfb6ebb20eb7f4497553a21504367efa}
+
+\item 
+typedef bin\_\-vec::iterator \textbf{bin\_\-vi}\label{classASCbase_1_1point__bins_2612ddc643a2f477309393a2c8ded71c}
+
+\item 
+typedef bin\_\-vec::const\_\-iterator \textbf{bin\_\-vci}\label{classASCbase_1_1point__bins_32892df5e6abb8c0d4241ef6ed439604}
+
+\item 
+typedef std::multimap$<$ bin\_\-vci, const my\_\-float\_\-t $\ast$ $>$ \textbf{bin2vert\_\-mmap}\label{classASCbase_1_1point__bins_39a6b59e9bbd2dea53aa1715e9729edf}
+
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{point\_\-bins} ()
+\item 
+\textbf{point\_\-bins} (\_\-Tp begin, \_\-Tp end, my\_\-float\_\-t bin\_\-width=4.5)\label{classASCbase_1_1point__bins_612dc97af37ea4512699f0fc0d47c61a}
+
+\item 
+\textbf{point\_\-bins} (const \bf{point\_\-bins}$<$ \_\-Tp $>$ \&other)\label{classASCbase_1_1point__bins_d2ed01481c90b33ff07f0668e039e89f}
+
+\item 
+const \bf{point\_\-bins} \& \textbf{operator=} (const \bf{point\_\-bins} \&other)\label{classASCbase_1_1point__bins_ec766713f1c00b6cca41d52940f91050}
+
+\item 
+void \textbf{setup\_\-grid} (\_\-Tp begin, \_\-Tp end, const my\_\-float\_\-t bin\_\-width)\label{classASCbase_1_1point__bins_8a32f681bd20aa78a9b1cd3c0773be1e}
+
+\item 
+void \bf{transform\_\-bins} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)
+\begin{CompactList}\small\item\em Transform the bins. \item\end{CompactList}\item 
+void \textbf{inverse\_\-transform\_\-bins} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classASCbase_1_1point__bins_ecf57c0678d1fec450842dfef3b81a97}
+
+\item 
+void \textbf{revert} ()\label{classASCbase_1_1point__bins_a68b236a6dcfb2a1d344ae6b2cf3a7e3}
+
+\item 
+void \textbf{get\_\-min\_\-max\_\-coords} (\_\-Tp begin, \_\-Tp end, my\_\-float\_\-t $\ast$min\_\-pos, my\_\-float\_\-t $\ast$max\_\-pos)\label{classASCbase_1_1point__bins_00ff5e0a19964585b8e01189e0ca0f82}
+
+\item 
+void \bf{determine\_\-space} (const my\_\-float\_\-t $\ast$min\_\-pos, const my\_\-float\_\-t $\ast$max\_\-pos, my\_\-float\_\-t $\ast$min\_\-corner, my\_\-float\_\-t $\ast$max\_\-corner, int $\ast$num\_\-bins)
+\item 
+void \textbf{populate\_\-grid} (\_\-Tp begin, \_\-Tp end, const my\_\-float\_\-t bin\_\-width, bin\_\-vec $\ast$bins)\label{classASCbase_1_1point__bins_6535d13b3b00438158656471f67a44c6}
+
+\item 
+void \textbf{get\_\-bin} (const my\_\-float\_\-t $\ast$pt, bin\_\-vci $\ast$nbrs, bin\_\-vci $\ast$moved\_\-nbrs) const \label{classASCbase_1_1point__bins_3efe4ebd6c36993e1be9802c8edf1c35}
+
+\item 
+bin\_\-vci \bf{bins\_\-end} () const \label{classASCbase_1_1point__bins_f9c9f7b5c7be74b76b0eba306879324d}
+
+\begin{CompactList}\small\item\em Constant iterator to one past the last bin in the vector. \item\end{CompactList}\item 
+bin\_\-vci \bf{moved\_\-bins\_\-end} () const \label{classASCbase_1_1point__bins_54a580e492ce7205e0bc5fc58f4bf26a}
+
+\begin{CompactList}\small\item\em Constant iterator to one past the last bin in the vector. \item\end{CompactList}\item 
+const bool \textbf{bins\_\-are\_\-setup} () const \label{classASCbase_1_1point__bins_c748633d67a3d339c7a895b43666aec1}
+
+\item 
+void \bf{update\_\-point\_\-bin} (\_\-Tp \&data)\label{classASCbase_1_1point__bins_e07134e8f4497da13dd6136bcb45602e}
+
+\begin{CompactList}\small\item\em Check if the given data point needs to have its bins updated. \item\end{CompactList}\item 
+void \textbf{remove\_\-moved\_\-points\_\-from\_\-bins} ()\label{classASCbase_1_1point__bins_5729496a671be351b0826b5452770e06}
+
+\item 
+void \textbf{write\_\-bounds} (std::ostream \&out) const \label{classASCbase_1_1point__bins_701b0831628d6b9e7e2b878da1488bd6}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{\_\-\_\-glibcpp\_\-class\_\-requires} (\_\-Tp, \_\-Forward\-Iterator\-Concept)\label{classASCbase_1_1point__bins_59eab23f4ede0549e5ca1a44b58f9588}
+
+\item 
+void \textbf{init} ()\label{classASCbase_1_1point__bins_2de8967933c976d7e8569695ced43111}
+
+\item 
+void \bf{do\_\-copy} (const \bf{point\_\-bins}$<$ \_\-Tp $>$ \&src)
+\begin{CompactList}\small\item\em Copies could be expensive, but depend greatly on the template parameter. \item\end{CompactList}\item 
+bool \textbf{get\_\-bin\_\-idz} (const my\_\-float\_\-t $\ast$pt, int $\ast$idx) const \label{classASCbase_1_1point__bins_1a6812d16a3aed4df67ea89b4ef3795b}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+\_\-Tp \textbf{A\_\-begin}\label{classASCbase_1_1point__bins_143c4437ed0bc651257efcfad94675da}
+
+\item 
+\_\-Tp \textbf{A\_\-end}\label{classASCbase_1_1point__bins_47b57104346abc683d5ab5158c42369d}
+
+\item 
+bool \textbf{A\_\-bins\_\-are\_\-setup}\label{classASCbase_1_1point__bins_7d80fecfcd4518db8d4a32cd093dfd4c}
+
+\item 
+my\_\-float\_\-t \bf{A\_\-bin\_\-width}\label{classASCbase_1_1point__bins_6ffd0913f0c0588e3c2ce19d1f4a96e3}
+
+\begin{CompactList}\small\item\em Side length of a bin. \item\end{CompactList}\item 
+my\_\-float\_\-t \bf{A\_\-bin\_\-width\_\-inv}\label{classASCbase_1_1point__bins_4fde2008e3f81fb68191c68127c20443}
+
+\begin{CompactList}\small\item\em multiplicative inverse (1 over) side length \item\end{CompactList}\item 
+my\_\-float\_\-t \textbf{A\_\-upper\_\-corner} [3]\label{classASCbase_1_1point__bins_313de0207d76bd11771307cf40f14729}
+
+\item 
+my\_\-float\_\-t \textbf{A\_\-lower\_\-corner} [3]\label{classASCbase_1_1point__bins_9ee31e608013306e3dd0416bd3813e84}
+
+\item 
+my\_\-float\_\-t \bf{A\_\-orig\_\-lower} [3]\label{classASCbase_1_1point__bins_274999e259918f2b0b5d3c2ba58435cb}
+
+\begin{CompactList}\small\item\em Save the original lower corner. \item\end{CompactList}\item 
+my\_\-float\_\-t \bf{A\_\-orig\_\-upper} [3]\label{classASCbase_1_1point__bins_6a3cf278675b515ed22a9bdfdf216784}
+
+\begin{CompactList}\small\item\em Save the original upper corner. \item\end{CompactList}\item 
+my\_\-float\_\-t \textbf{A\_\-plane\_\-normals} [9]\label{classASCbase_1_1point__bins_cebae3f68f32e3ad48fb3671718af31c}
+
+\item 
+bool \textbf{A\_\-bins\_\-are\_\-transformed}\label{classASCbase_1_1point__bins_86ca99c80831c972f89b0b20a185c519}
+
+\item 
+int \textbf{A\_\-num\_\-bins} [3]\label{classASCbase_1_1point__bins_0e3467b19cfeec3ac7590c10359489b9}
+
+\item 
+bin\_\-vec \textbf{A\_\-bins}\label{classASCbase_1_1point__bins_2297473c684667dd9f33619dabb50095}
+
+\item 
+bin\_\-vec \textbf{A\_\-bins\_\-of\_\-moved\_\-pts}\label{classASCbase_1_1point__bins_4fc0db7bdcd0d6ca24626a770899ec73}
+
+\item 
+std::vector$<$ three\_\-idz $>$ \textbf{A\_\-current\_\-bin\_\-idz}\label{classASCbase_1_1point__bins_2026dd01beaac118d479d1649ca4c1f4}
+
+\item 
+std::vector$<$ three\_\-idz $>$ \textbf{A\_\-orig\_\-bin\_\-idz}\label{classASCbase_1_1point__bins_01f7a076413e0ade2db4a8b808e18416}
+
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \textbf{point\_\-bin\_\-t}
+\item 
+struct \textbf{three\_\-idz}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \_\-Tp$>$ class ASCbase::point\_\-bins$<$ \_\-Tp $>$}
+
+Divide up the space based on a coordinate aligned grid. 
+
+Assumptions: The positions may be transformed via a rigid transformation. The type \_\-Tp has a field \char`\"{}pos\char`\"{} that holds the 3D position of the type. It is expected that this will be used for the query sites; for that reason it is not necessarily optimized for speed of construction. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ASCbase::point_bins@{ASCbase::point\_\-bins}!point_bins@{point\_\-bins}}
+\index{point_bins@{point\_\-bins}!ASCbase::point_bins@{ASCbase::point\_\-bins}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-Tp$>$ \bf{ASCbase::point\_\-bins}$<$ \_\-Tp $>$::\bf{point\_\-bins} ()\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1point__bins_3e8b2c7e86f5ee787cc71f32cc8619da}
+
+
+Default constructor -- sometimes the array cannot be constructed at class construction 
+
+\subsection{Member Function Documentation}
+\index{ASCbase::point_bins@{ASCbase::point\_\-bins}!determine_space@{determine\_\-space}}
+\index{determine_space@{determine\_\-space}!ASCbase::point_bins@{ASCbase::point\_\-bins}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-Tp$>$ void \bf{ASCbase::point\_\-bins}$<$ \_\-Tp $>$::determine\_\-space (const my\_\-float\_\-t $\ast$ {\em min\_\-pos}, const my\_\-float\_\-t $\ast$ {\em max\_\-pos}, my\_\-float\_\-t $\ast$ {\em min\_\-corner}, my\_\-float\_\-t $\ast$ {\em max\_\-corner}, int $\ast$ {\em num\_\-bins})\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1point__bins_d0e79de47eb796a1d310e8ecf3edf3b5}
+
+
+\index{ASCbase::point_bins@{ASCbase::point\_\-bins}!do_copy@{do\_\-copy}}
+\index{do_copy@{do\_\-copy}!ASCbase::point_bins@{ASCbase::point\_\-bins}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-Tp$>$ void \bf{ASCbase::point\_\-bins}$<$ \_\-Tp $>$::do\_\-copy (const \bf{point\_\-bins}$<$ \_\-Tp $>$ \& {\em src})\hspace{0.3cm}{\tt  [inline, private]}}\label{classASCbase_1_1point__bins_94b59a7f0902763acb6004b2f208418e}
+
+
+Copies could be expensive, but depend greatly on the template parameter. 
+
+We are assuming that most uses will have template parameters that are pointers or iterators (hence we assume \_\-Tp-$>$pos exists and is a valid 3D point). \index{ASCbase::point_bins@{ASCbase::point\_\-bins}!transform_bins@{transform\_\-bins}}
+\index{transform_bins@{transform\_\-bins}!ASCbase::point_bins@{ASCbase::point\_\-bins}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-Tp$>$ void \bf{ASCbase::point\_\-bins}$<$ \_\-Tp $>$::transform\_\-bins (const my\_\-float\_\-t $\ast$ {\em R}, const my\_\-float\_\-t $\ast$ {\em T})\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1point__bins_ae0c63c318c55d37a6abf7f8760f0bd9}
+
+
+Transform the bins. 
+
+NOTE: this does not transform the positions, and must be used in conjunction with moving of the positions 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+point\_\-bins.H\end{CompactItemize}

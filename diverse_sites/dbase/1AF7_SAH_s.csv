@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Note: no xml namespace for now -->
+<ASCbase_sitemap>
+<!--
+# gen_points (SimSite3D) 4.1-rc3 sitemap labels file
+# Date: Thu Jul  1 12:48:07 2010
+-->
+<protein_structure_file>
+  1AF7_SAH_p.pdb
+</protein_structure_file>
+<ligand_file>
+  1AF7_SAH_l.mol2
+</ligand_file>
+<mol_surf>
+  <probe_radius>1.400</probe_radius>
+  <density>1.000</density>
+</mol_surf>
+<site_vol_est>
+<sphere><center>25.8149 24.7215 45.9332</center><radius>11.614</radius></sphere>
+</site_vol_est>
+<volume_type>
+<sphere><center>28.278 22.089 42.163</center><radius>3</radius></sphere>
+<sphere><center>29.488 21.434 42.668</center><radius>3</radius></sphere>
+<sphere><center>29.726 21.81 44.151</center><radius>3</radius></sphere>
+<sphere><center>28.683 21.311 45.104</center><radius>3</radius></sphere>
+<sphere><center>29.002 21.575 46.887</center><radius>3</radius></sphere>
+<sphere><center>29.445 19.89 42.454</center><radius>3</radius></sphere>
+<sphere><center>28.509 19.436 41.756</center><radius>3</radius></sphere>
+<sphere><center>30.539 19.291 42.435</center><radius>3</radius></sphere>
+<sphere><center>27.523 22.491 47.244</center><radius>3</radius></sphere>
+<sphere><center>27.769 23.933 47.612</center><radius>3</radius></sphere>
+<sphere><center>26.52 24.624 47.766</center><radius>3</radius></sphere>
+<sphere><center>28.497 24.093 48.937</center><radius>3</radius></sphere>
+<sphere><center>29.856 24.454 48.697</center><radius>3</radius></sphere>
+<sphere><center>27.766 25.209 49.697</center><radius>3</radius></sphere>
+<sphere><center>28.567 26.253 50.207</center><radius>3</radius></sphere>
+<sphere><center>26.704 25.665 48.69</center><radius>3</radius></sphere>
+<sphere><center>25.426 26.097 49.245</center><radius>3</radius></sphere>
+<sphere><center>24.69 25.524 50.246</center><radius>3</radius></sphere>
+<sphere><center>23.62 26.204 50.573</center><radius>3</radius></sphere>
+<sphere><center>23.643 27.297 49.717</center><radius>3</radius></sphere>
+<sphere><center>22.807 28.424 49.601</center><radius>3</radius></sphere>
+<sphere><center>21.737 28.632 50.372</center><radius>3</radius></sphere>
+<sphere><center>23.12 29.342 48.665</center><radius>3</radius></sphere>
+<sphere><center>24.21 29.144 47.905</center><radius>3</radius></sphere>
+<sphere><center>25.087 28.128 47.929</center><radius>3</radius></sphere>
+<sphere><center>24.742 27.232 48.875</center><radius>3</radius></sphere>
+
+</volume_type>
+<!--
+# Normalization stats:
+# 1) Mean score of sitemap against normalization database
+# 2) Stdev of scores of sitemap against normalization database
+#
+# Note:  If the mean is 0 and the stdev is -1, the sitemap normalization
+#        statistics were not computed.
+-->
+<normalization_stats>
+  0.000 -1.000
+</normalization_stats>
+<!--
+# Hydrophobic pocket normalization stats:
+# Normalization stats using hydrophobic_query flag
+# 1) Mean score of sitemap against normalization database
+# 2) Stdev of scores of sitemap against normalization database
+#
+# Note:  If the mean is 0 and the stdev is -1, the sitemap normalization
+#        statistics were not computed using the hydrophobic_query flag.
+-->
+<hphob_norm_stats>
+  0.0 -1.0
+</hphob_norm_stats>
+<!--
+# Point counts:
+# 1) Number of polar points
+# 2) Number of hydrophobic points
+-->
+<point_counts>
+  66 16
+</point_counts>
+<!--
+# Fields in hydrogen bond section
+# 1) Sitemap point number
+# 2) Associated atom string (res, res num, iCode, chain id, atom name and
+#    sitemap point descriptor)
+# 3) Chain ID
+# 4) Residue name
+# 5) Residue number + insertion code (if it is not a space char)
+# 6) Atom name
+# 7) Atom number (serial)
+# 8) Hbond point number (for the given atom) - ASCbase internal use
+# 9) Point position  (ASCbase internal use)
+# 10) Carbon neighbor atom number  (ASCbase internal use)
+-->
+<hydrogen_bond_points>
+2001|ALA38__O/1D| |ALA|38|O|231|1|22.570 27.640 50.605 |230|
+2002|ALA38__O/2D| |ALA|38|O|231|1|22.570 27.640 50.605 |230|
+2003|ALA38__O/3D| |ALA|38|O|231|1|22.570 27.640 50.605 |230|
+2004|ALA38__O/4D| |ALA|38|O|231|1|22.570 27.640 50.605 |230|
+1001|THR91__N/1A| |THR|91|N|656|1|26.095 22.832 51.558 |651|
+2005|THR91__O/1D| |THR|91|O|659|1|25.729 21.290 49.932 |658|
+2006|THR91__O/2D| |THR|91|O|659|2|28.665 21.734 47.471 |658|
+2007|THR91__O/3D| |THR|91|O|659|2|28.665 21.734 47.471 |658|
+2008|THR91__O/4D| |THR|91|O|659|2|28.665 21.734 47.471 |658|
+2009|THR91__O/5D| |THR|91|O|659|2|28.665 21.734 47.471 |658|
+2010|THR91__O/6D| |THR|91|O|659|2|28.665 21.734 47.471 |658|
+2011|ASN92__OD1/1D| |ASN|92|OD1|669|1|29.690 25.337 48.816 |668|
+2012|ASN92__OD1/2D| |ASN|92|OD1|669|1|29.690 25.337 48.816 |668|
+2013|LEU93__O/1D| |LEU|93|O|674|1|28.153 18.574 47.302 |673|
+2014|LEU93__O/2D| |LEU|93|O|674|1|28.153 18.574 47.302 |673|
+2015|LEU93__O/3D| |LEU|93|O|674|1|28.153 18.574 47.302 |673|
+2016|LEU93__O/4D| |LEU|93|O|674|2|29.704 18.849 43.782 |673|
+3001|THR94__OG1/1N| |THR|94|OG1|684|2|30.501 19.253 41.990 |683|
+3002|THR94__OG1/2N| |THR|94|OG1|684|2|30.501 19.253 41.990 |683|
+2017|ALA95__O/1D| |ALA|95|O|689|1|31.833 18.995 40.769 |688|
+2018|ALA95__O/2D| |ALA|95|O|689|1|31.833 18.995 40.769 |688|
+1002|ARG98__NH1/1A| |ARG|98|NH1|722|1|31.269 18.698 42.706 |721|
+2019|ALA122__O/1D| |ALA|122|O|930|1|23.557 30.406 44.676 |929|
+2020|ALA122__O/2D| |ALA|122|O|930|2|25.757 27.837 46.529 |929|
+2021|ALA122__O/3D| |ALA|122|O|930|2|25.757 27.837 46.529 |929|
+2022|ALA122__O/4D| |ALA|122|O|930|2|25.757 27.837 46.529 |929|
+2023|ALA122__O/5D| |ALA|122|O|930|2|25.757 27.837 46.529 |929|
+2024|ALA123__O/1D| |ALA|123|O|935|1|27.618 22.089 42.907 |934|
+2025|ALA123__O/2D| |ALA|123|O|935|1|27.618 22.089 42.907 |934|
+2026|ALA123__O/3D| |ALA|123|O|935|1|27.618 22.089 42.907 |934|
+2027|ALA123__O/4D| |ALA|123|O|935|1|27.618 22.089 42.907 |934|
+2028|ALA123__O/5D| |ALA|123|O|935|2|31.309 23.032 42.309 |934|
+2029|ALA123__O/6D| |ALA|123|O|935|2|31.309 23.032 42.309 |934|
+2030|ALA123__O/7D| |ALA|123|O|935|2|31.309 23.032 42.309 |934|
+2031|GLU129__OE1/1D| |GLU|129|OE1|975|1|29.732 19.306 39.439 |974|
+2032|GLU129__OE2/1D| |GLU|129|OE2|976|2|25.986 24.117 40.474 |974|
+2033|ASP154__OD1/1D| |ASP|154|OD1|1161|2|28.706 25.636 50.222 |1160|
+2034|ASP154__OD1/2D| |ASP|154|OD1|1161|2|28.706 25.636 50.222 |1160|
+2035|ASP154__OD1/3D| |ASP|154|OD1|1161|2|28.706 25.636 50.222 |1160|
+2036|ASP154__OD2/1D| |ASP|154|OD2|1162|2|29.290 24.475 48.342 |1160|
+2037|ASP154__OD2/2D| |ASP|154|OD2|1162|2|29.290 24.475 48.342 |1160|
+2038|ASP154__OD2/3D| |ASP|154|OD2|1162|2|29.290 24.475 48.342 |1160|
+1003|ILE155__N/1A| |ILE|155|N|1163|1|26.873 27.510 48.614 |1157|
+1004|ILE155__N/2A| |ILE|155|N|1163|1|26.873 27.510 48.614 |1157|
+2039|VAL211__O/1D| |VAL|211|O|1623|2|24.575 29.719 48.543 |1622|
+2040|VAL211__O/2D| |VAL|211|O|1623|2|24.575 29.719 48.543 |1622|
+2041|VAL211__O/3D| |VAL|211|O|1623|2|24.575 29.719 48.543 |1622|
+2042|VAL211__O/4D| |VAL|211|O|1623|2|24.575 29.719 48.543 |1622|
+1005|LEU213__N/1A| |LEU|213|N|1635|1|23.359 29.290 48.679 |1629|
+1006|LEU213__N/2A| |LEU|213|N|1635|1|23.359 29.290 48.679 |1629|
+1007|LEU213__N/3A| |LEU|213|N|1635|1|23.359 29.290 48.679 |1629|
+1008|LEU213__N/4A| |LEU|213|N|1635|1|23.359 29.290 48.679 |1629|
+1009|LEU213__N/5A| |LEU|213|N|1635|1|23.359 29.290 48.679 |1629|
+1010|ARG230__N/1A| |ARG|230|N|1772|1|26.687 23.871 39.925 |1768|
+2043|ARG230__O/1D| |ARG|230|O|1775|1|27.484 23.526 42.322 |1774|
+2044|ARG230__O/2D| |ARG|230|O|1775|1|27.484 23.526 42.322 |1774|
+2045|ARG230__O/3D| |ARG|230|O|1775|1|27.484 23.526 42.322 |1774|
+2046|ARG230__O/4D| |ARG|230|O|1775|2|27.109 21.275 45.431 |1774|
+2047|ARG230__O/5D| |ARG|230|O|1775|2|27.109 21.275 45.431 |1774|
+1011|ARG230__NH2/1A| |ARG|230|NH2|1782|1|30.309 21.195 40.027 |1780|
+2048|ASN231__O/1D| |ASN|231|O|1786|1|27.861 18.484 46.772 |1785|
+2049|ASN231__O/2D| |ASN|231|O|1786|1|27.861 18.484 46.772 |1785|
+2050|ASN231__O/3D| |ASN|231|O|1786|1|27.861 18.484 46.772 |1785|
+2051|ASN231__O/4D| |ASN|231|O|1786|2|26.029 21.349 48.592 |1785|
+2052|ASN231__OD1/1D| |ASN|231|OD1|1789|1|28.776 18.847 40.927 |1788|
+2053|ASN231__OD1/2D| |ASN|231|OD1|1789|1|28.776 18.847 40.927 |1788|
+</hydrogen_bond_points>
+<!--
+# Fields in hydrophobic points section
+# 1) Sitemap point number
+# 2) Associated atoms' strings
+-->
+<hydrophobic_points>
+1|ALA38__CB_ILE40__CG1_ILE40__CD1_ILE155__CB_ILE155__CG1_ILE155__CG2_ILE155__CD1|
+2|ILE40__CG1_ILE40__CD1_TYR235__CD2_PHE236__CD1_PHE236__CE1_PHE236__CZ|
+3|ALA123__CB_VAL232__CB_VAL232__CG1_VAL232__CG2|
+4|ALA123__CB|
+5|ILE155__CB_ILE155__CG1_ILE155__CG2_ILE155__CD1|
+6|ILE40__CD1_ILE155__CB_ILE155__CG2|
+7|ALA38__CB_ILE40__CG1_ILE40__CD1_ILE155__CB_ILE155__CG1_ILE155__CG2_ILE155__CD1|
+8|ALA38__CB_ILE155__CB_ILE155__CG1_ILE155__CG2_ILE155__CD1|
+9|LEU213__CB_LEU213__CG_LEU213__CD2_VAL232__CB_VAL232__CG1_VAL232__CG2_PHE236__CE1_PHE236__CE2_PHE236__CZ|
+10|ALA38__CB_LEU214__CG_LEU214__CD2|
+11|VAL232__CB_VAL232__CG2_PHE236__CZ|
+12|ALA123__CB_VAL232__CB_VAL232__CG1_VAL232__CG2|
+13|ALA123__CB_LEU213__CD2_VAL232__CB_VAL232__CG1_VAL232__CG2|
+14|ALA123__CB_LEU213__CB_LEU213__CG_LEU213__CD2_VAL232__CB_VAL232__CG1_VAL232__CG2_PHE236__CE2_PHE236__CZ|
+15|ILE40__CG1_ILE40__CD1_VAL232__CG2_TYR235__CD2_TYR235__CE2_PHE236__CE1_PHE236__CZ|
+16|LEU213__CB_LEU213__CG_LEU213__CD2_LEU214__CD2_PHE236__CE1_PHE236__CE2_PHE236__CZ|
+</hydrophobic_points>
+<!--
+# Note: These are the largest values for the features of the sitemap when
+ # compared with itself
+# Features
+# 0) Closest polar sum
+# 1) polar mismatch sum
+# 2) AA DD sum
+# 3) NA AN ND DN NN sum
+# 4) hphob count
+# 5) Unsat query polar 
+# 6) best polar sum
+# 7) best AA DD sum
+# 8) best NA AN ND DN NN sum
+# 9) best unsat polar
+# 10) number of query surface points within 1.5 (A) of db surface
+# 11) number of query faces with all 3 vertices within 1.5 (A) of db surface
+# 12) RMSE of query points to db surf (each point must be within 1.5 (A) )
+# 13) area of faces in 11
+# 14) RMSE of query normals to db surf normals
+-->
+<features_scales>
+66.000 66.000 64.000 66.000 16 66.000 66.000 64.000 66.000 66.000
+914 1711 1.5 580.278 4.0
+</features_scales>
+</ASCbase_sitemap>

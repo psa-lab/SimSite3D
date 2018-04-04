@@ -1,0 +1,17 @@
+K 9
+copyright
+V 46
+(c) 2011 Jeffrey Van Voorst and Leslie A. Kuhn
+K 10
+svn:ignore
+V 59
+Makefile.in
+Makefile
+*~
+*.o
+prot_lig_score
+*.a
+.libs
+.deps
+
+END

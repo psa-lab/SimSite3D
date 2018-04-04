@@ -1,0 +1,77 @@
+\section{ASCbase::geometry::triangle\_\-t Class Reference}
+\label{classASCbase_1_1geometry_1_1triangle__t}\index{ASCbase::geometry::triangle_t@{ASCbase::geometry::triangle\_\-t}}
+Requires \doxyref{vertex\_\-t}{p.}{classASCbase_1_1geometry_1_1vertex__t} class and should be independent of vertex placement.  
+
+
+{\tt \#include $<$Tri\-Mesh\-Sphere.H$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{triangle\_\-t} (vertex\_\-vci a, vertex\_\-vci b, vertex\_\-vci c)\label{classASCbase_1_1geometry_1_1triangle__t_20cf34d2980bcba176b5f1a5974c9949}
+
+\item 
+\textbf{triangle\_\-t} (const \bf{triangle\_\-t} \&src)\label{classASCbase_1_1geometry_1_1triangle__t_6a32e06433ed8f97deba97528f2fc9eb}
+
+\item 
+const \bf{triangle\_\-t} \& \textbf{operator=} (const \bf{triangle\_\-t} \&src)\label{classASCbase_1_1geometry_1_1triangle__t_6b7f6f294ca61e81be773c4d94955caf}
+
+\item 
+bool \bf{contains} (const my\_\-float\_\-t $\ast$pt) const 
+\item 
+my\_\-float\_\-t \bf{face\_\-normal} (my\_\-float\_\-t $\ast$N)\label{classASCbase_1_1geometry_1_1triangle__t_5331997a2c7ee3c5f772d46e8e1a860c}
+
+\begin{CompactList}\small\item\em Compute the normal to the out facing triangle face. \item\end{CompactList}\item 
+std::vector$<$ vertex\_\-vci $>$::const\_\-iterator \textbf{vertices\_\-begin} () const \label{classASCbase_1_1geometry_1_1triangle__t_bbe6598e0017fb18899416403e149ff1}
+
+\item 
+std::vector$<$ vertex\_\-vci $>$::const\_\-iterator \textbf{vertices\_\-end} () const \label{classASCbase_1_1geometry_1_1triangle__t_295db5679d4a1a34fa659942226a1a2a}
+
+\item 
+my\_\-float\_\-t \textbf{area} () const \label{classASCbase_1_1geometry_1_1triangle__t_02c5681d05a731dfe88150aceacedd0c}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+bool \bf{contains} (const my\_\-float\_\-t $\ast$x, const my\_\-float\_\-t $\ast$y) const 
+\begin{CompactList}\small\item\em 2D version \item\end{CompactList}\item 
+void \textbf{do\_\-copy} (const \bf{triangle\_\-t} \&src)\label{classASCbase_1_1geometry_1_1triangle__t_53cc9666d4f501fc21bd146d2a94fe48}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+std::vector$<$ vertex\_\-vci $>$ \bf{A\_\-vertices}\label{classASCbase_1_1geometry_1_1triangle__t_c8cfb8905953a26c172c9c6b83f51d6a}
+
+\begin{CompactList}\small\item\em 3 vertices of the triangle \item\end{CompactList}\item 
+my\_\-float\_\-t \bf{A\_\-area}\label{classASCbase_1_1geometry_1_1triangle__t_e7585186eb0d6f2016c076237d872e1c}
+
+\begin{CompactList}\small\item\em Area of the triangle. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Requires \doxyref{vertex\_\-t}{p.}{classASCbase_1_1geometry_1_1vertex__t} class and should be independent of vertex placement. 
+
+Since this class is supposed to be independent of the vertices positions and normals, it is currently the users reponsibility to insure that the vertices and triangle are consistent. 
+
+
+
+\subsection{Member Function Documentation}
+\index{ASCbase::geometry::triangle_t@{ASCbase::geometry::triangle\_\-t}!contains@{contains}}
+\index{contains@{contains}!ASCbase::geometry::triangle_t@{ASCbase::geometry::triangle\_\-t}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool ASCbase::geometry::triangle\_\-t::contains (const my\_\-float\_\-t $\ast$ {\em x}, const my\_\-float\_\-t $\ast$ {\em y}) const\hspace{0.3cm}{\tt  [inline, private]}}\label{classASCbase_1_1geometry_1_1triangle__t_c0169da86ab7cf87febd87bec91456e8}
+
+
+2D version 
+
+From Usenet discussion on Barycentric Coordinates (Joseph O'Rourke, 1992) NOTE: for now, this function requires the points be ordered in a counterclockwise fashion \index{ASCbase::geometry::triangle_t@{ASCbase::geometry::triangle\_\-t}!contains@{contains}}
+\index{contains@{contains}!ASCbase::geometry::triangle_t@{ASCbase::geometry::triangle\_\-t}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool ASCbase::geometry::triangle\_\-t::contains (const my\_\-float\_\-t $\ast$ {\em pt}) const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1geometry_1_1triangle__t_e206410f4050312797009de5d6e3696d}
+
+
+3D version that drops the coordinate with the least variance and calls the 2D method 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Tri\-Mesh\-Sphere.H\end{CompactItemize}

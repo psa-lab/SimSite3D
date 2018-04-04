@@ -1,0 +1,125 @@
+\section{ASCbase::PDB\_\-residues Class Reference}
+\label{classASCbase_1_1PDB__residues}\index{ASCbase::PDB_residues@{ASCbase::PDB\_\-residues}}
+{\tt \#include $<$PDB\_\-residues.H$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static const \bf{pdb\_\-atom\_\-info\_\-t} $\ast$ \bf{get\_\-atom\_\-info} (const std::string atom\_\-str, const std::string res\_\-str)\label{classASCbase_1_1PDB__residues_de442e4bc404da4062cfcd6e454296e1}
+
+\begin{CompactList}\small\item\em Get the atom info based on residue and atom names. \item\end{CompactList}\item 
+static const \bf{pdb\_\-atom\_\-info\_\-t} $\ast$ \bf{get\_\-atom\_\-info} (const atom\_\-type atom, residue\_\-type residue)\label{classASCbase_1_1PDB__residues_af86442358d5e0e48c2597cc70842a50}
+
+\begin{CompactList}\small\item\em Get the atom info based on residue and atom types. \item\end{CompactList}\item 
+static int \textbf{get\_\-atom\_\-hydrophobicity} (const residue\_\-type res, const atom\_\-type atom)\label{classASCbase_1_1PDB__residues_4323c94f8f050549e74e8767ae6452eb}
+
+\item 
+static residue\_\-type \bf{string\_\-to\_\-residue} (const std::string res\_\-name)\label{classASCbase_1_1PDB__residues_08074264e135aee3ba43dcee9a9da5b0}
+
+\begin{CompactList}\small\item\em Convert from 3 char PDB residue string to ASCbase residue identifier. \item\end{CompactList}\item 
+static std::string \bf{residue\_\-to\_\-string} (const residue\_\-type res)\label{classASCbase_1_1PDB__residues_d17b8fa8fe06ed333b7d35510ee05b01}
+
+\begin{CompactList}\small\item\em Convert from ASCbase residue identifier to 3 char PDB residue string. \item\end{CompactList}\item 
+static std::string \bf{atom\_\-to\_\-string} (const atom\_\-type atom)\label{classASCbase_1_1PDB__residues_7776d1c208963a0f70edc290f5317b9b}
+
+\begin{CompactList}\small\item\em Convert from ASCbase PDB ATOM atom identifier to 4 char PDB atom string. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{PDB\_\-residues} (const \bf{PDB\_\-residues} \&)\label{classASCbase_1_1PDB__residues_6bfb18b097f98a13355953456193bccc}
+
+\end{CompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{CompactItemize}
+\item 
+static void \bf{build\_\-res\_\-tables} ()\label{classASCbase_1_1PDB__residues_0bb938a071dfd70c2620ca490bc761cb}
+
+\begin{CompactList}\small\item\em Populate the 2D map holding the atoms keyed by atom and residue id. \item\end{CompactList}\item 
+static void \bf{build\_\-res\_\-conv\_\-maps} ()\label{classASCbase_1_1PDB__residues_cebf2dfefa17acc3f1d43defd1ac7197}
+
+\begin{CompactList}\small\item\em Populate the maps to convert between 3 char PDB string and residue id. \item\end{CompactList}\item 
+static void \bf{build\_\-atom\_\-conv\_\-map} ()\label{classASCbase_1_1PDB__residues_d644f1a2ffd15ffc31eb06f9de21a4b2}
+
+\begin{CompactList}\small\item\em Populate the map to convert between atom id and 4 char PDB atom string. \item\end{CompactList}\item 
+static void \textbf{build\_\-atom\_\-hphob\_\-map} ()\label{classASCbase_1_1PDB__residues_998bba4236cd420ca3450d4a86318a4a}
+
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static atom\_\-table\_\-t \bf{residue\_\-table}\label{classASCbase_1_1PDB__residues_9a981fa9a9bd789110356942cfc403fe}
+
+\begin{CompactList}\small\item\em Array holding the PDB atom info for standard residues. \item\end{CompactList}\item 
+static atom\_\-enum\_\-table\_\-t \textbf{residue\_\-type\_\-table}\label{classASCbase_1_1PDB__residues_907ae9bfd49fdee76097eaa56d98b966}
+
+\item 
+static std::map$<$ residue\_\-type, std::string $>$ \textbf{A\_\-residue\_\-to\_\-string}\label{classASCbase_1_1PDB__residues_510e2d05ca2e160c6a06bdb72bc2609b}
+
+\item 
+static std::map$<$ std::string, residue\_\-type $>$ \textbf{A\_\-string\_\-to\_\-residue}\label{classASCbase_1_1PDB__residues_f9b818f81d1f59b9fdc4fa1265962f0b}
+
+\item 
+static std::map$<$ atom\_\-type, std::string $>$ \textbf{A\_\-atom\_\-to\_\-string}\label{classASCbase_1_1PDB__residues_b9ba65f4ec6b2908873dfed2a4894b71}
+
+\item 
+static hphob\_\-tbl\_\-res\_\-lvl \textbf{A\_\-hydrophobic\_\-value}\label{classASCbase_1_1PDB__residues_46f19f926c02ebd43964b49dcc94e096}
+
+\item 
+static const \bf{pdb\_\-atom\_\-info\_\-t} \textbf{Pro\_\-main\_\-chain\_\-N}
+\item 
+static const uint \textbf{A\_\-res\_\-conv\_\-array\_\-size} = 27\label{classASCbase_1_1PDB__residues_0902c72733b48df0d225a27d2f5b9bbb}
+
+\item 
+static const \bf{residue\_\-conv\_\-type} \textbf{A\_\-res\_\-conv\_\-array} [$\,$]\label{classASCbase_1_1PDB__residues_f83894746507999835fd03709cb7cb09}
+
+\item 
+static const uint \bf{A\_\-res\_\-array\_\-size} = 102\label{classASCbase_1_1PDB__residues_30b9f32457869af112beb27bee963c4d}
+
+\begin{CompactList}\small\item\em Number of els in residue array. \item\end{CompactList}\item 
+static const \bf{pdb\_\-atom\_\-info\_\-t} \bf{A\_\-res\_\-array} [$\,$]\label{classASCbase_1_1PDB__residues_7b64a47671ba736cf508b89f59b17fab}
+
+\begin{CompactList}\small\item\em Array holding residue info. \item\end{CompactList}\item 
+static const uint \textbf{A\_\-atom\_\-conv\_\-array\_\-size} = 42\label{classASCbase_1_1PDB__residues_90f14b7d94a4e172f99e1e68c41fa9d5}
+
+\item 
+static const \bf{atom\_\-conv\_\-type} \textbf{A\_\-atom\_\-conv\_\-array} [$\,$]\label{classASCbase_1_1PDB__residues_ba8d329e1c656046f504351cf5dbeeda}
+
+\item 
+static const size\_\-t \textbf{A\_\-hphob\_\-val\_\-array\_\-size} = 167\label{classASCbase_1_1PDB__residues_e5b8bfbc4c3ea26687e0ca82b1b44d45}
+
+\item 
+static const \bf{pdb\_\-hphob\_\-type} \textbf{A\_\-hphob\_\-val\_\-array} [$\,$]\label{classASCbase_1_1PDB__residues_e94cb2cd3cdf8c693adb2a7cddfd98be}
+
+\item 
+static const std::string \bf{A\_\-fname}\label{classASCbase_1_1PDB__residues_0b71b0db5fafc2e45019bd1e91f97484}
+
+\begin{CompactList}\small\item\em Name of the source file. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+PDB file van der Waals Radii Definitions and atom oribital types
+
+Taken from the Tripos force field [Clark et al 1989], with the changes listed in Table XI: The Minimum Radii of Atoms, of Li \& Nussinov (1998) \char`\"{}A Set of van der Waals and Coulombic Radii of Protein Atoms for Molecular and Solvent-Accessible Surface Calculation, Packing Evaluation, and Docking\char`\"{}, Proteins 32, 111-127.
+
+This set of radii is used since it is a set common to the Kuhn lab software and was/is used by Drug\-Score -- Gohlke, Hendlich and Klebe (2000) \char`\"{}Knowledge-based scoring function to predict protein-ligand interactions\char`\"{}, J. Mol. Biol., 295, 337-356. 
+
+
+
+\subsection{Member Data Documentation}
+\index{ASCbase::PDB_residues@{ASCbase::PDB\_\-residues}!Pro_main_chain_N@{Pro\_\-main\_\-chain\_\-N}}
+\index{Pro_main_chain_N@{Pro\_\-main\_\-chain\_\-N}!ASCbase::PDB_residues@{ASCbase::PDB\_\-residues}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const \bf{pdb\_\-atom\_\-info\_\-t} PDB\_\-residues::Pro\_\-main\_\-chain\_\-N\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1PDB__residues_cfc070f7fe10d5ab89d719e306d81485}
+
+
+\textbf{Initial value:}
+
+\begin{Code}\begin{verbatim}
+  {" N  ", "MAIN_CHAIN",  N  , MAIN_CHAIN, 1.43, 1.70, AMIDE, ALPHA, NOTHING, 
+    0.0 }
+\end{verbatim}\end{Code}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+PDB\_\-residues.H\item 
+PDB\_\-residues.C\end{CompactItemize}

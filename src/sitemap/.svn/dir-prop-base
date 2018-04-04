@@ -1,0 +1,23 @@
+K 9
+copyright
+V 46
+(c) 2011 Jeffrey Van Voorst and Leslie A. Kuhn
+K 10
+svn:ignore
+V 119
+*.o
+*.a
+*~
+.deps
+.libs
+Makefile
+Makefile.in
+comp_simple_rmsd
+comp_simple_site_rmsd
+gen_points
+bak
+*.gcno
+*.gcov
+*.gcda
+
+END

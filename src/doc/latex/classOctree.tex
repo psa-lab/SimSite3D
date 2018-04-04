@@ -1,0 +1,85 @@
+\section{Octree$<$ \_\-Tp, \_\-Sequence $>$ Class Template Reference}
+\label{classOctree}\index{Octree@{Octree}}
+Simple \doxyref{Octree}{p.}{classOctree} for any datatype with an associated 3D position.  
+
+
+{\tt \#include $<$Octree.H$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+typedef \_\-Sequence::value\_\-type \textbf{value\_\-type}\label{classOctree_8fb22bc26937ebd3f689f6cf2157d169}
+
+\item 
+typedef \_\-Sequence::const\_\-reference \textbf{const\_\-reference}\label{classOctree_4fd5790c52670b76c337bd9f08f294af}
+
+\item 
+typedef \_\-Sequence::const\_\-iterator \textbf{const\_\-iterator}\label{classOctree_28b30f494bae31705aeafb835c84daa8}
+
+\item 
+typedef \_\-Sequence \textbf{container\_\-type}\label{classOctree_07f30dd5b14c3ed60e709102145ca657}
+
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{Octree} (const my\_\-float\_\-t min\_\-side\_\-len, const uint max\_\-numel=10)\label{classOctree_7a2590d8a632a07c764f4ce12b5387b3}
+
+\item 
+void \bf{build} (const my\_\-float\_\-t $\ast$positions\_\-begin, const my\_\-float\_\-t $\ast$postions\_\-end, const my\_\-float\_\-t $\ast$centroid, const my\_\-float\_\-t root\_\-side\_\-len, const container\_\-type \&data)
+\item 
+void \textbf{subdivide} (octree\_\-data\_\-t$<$ const\_\-iterator $>$ $\ast$cnode, const std::vector$<$ uint $>$ \&idz, const my\_\-float\_\-t $\ast$positions\_\-begin, const my\_\-float\_\-t side\_\-len)\label{classOctree_6bd22d1eab32c1b4157b372b1995f637}
+
+\item 
+void \textbf{near\_\-by\_\-points} (const my\_\-float\_\-t $\ast$pos, const my\_\-float\_\-t max\_\-dist, std::vector$<$ const\_\-iterator $>$ $\ast$pts)\label{classOctree_56d4809d61e4396ec0f7de3752a1696f}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{get\_\-pts} (const octree\_\-data\_\-t$<$ const\_\-iterator $>$ $\ast$cnode, std::vector$<$ const\_\-iterator $>$ $\ast$pts)\label{classOctree_308aa449c617e4da347cdddeb4c5a4fb}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+octree\_\-data\_\-t$<$ const\_\-iterator $>$ \textbf{a\_\-root}\label{classOctree_bd808089dee00f6d036b20e47a1099ef}
+
+\item 
+my\_\-float\_\-t \textbf{a\_\-root\_\-side\_\-len}\label{classOctree_6f4d2a6b0ae3dae5c0d103e72b7d155f}
+
+\item 
+uint \bf{a\_\-max\_\-numel}\label{classOctree_063540cc5681b722efd0d70f07e45013}
+
+\begin{CompactList}\small\item\em Max number of elements in a cube at a level less than the max level. \item\end{CompactList}\item 
+my\_\-float\_\-t \bf{a\_\-min\_\-side\_\-len}\label{classOctree_136c30646be0d4e1aa9c58a19ff3054a}
+
+\begin{CompactList}\small\item\em Smallest cube should be about this size. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static const std::string \textbf{a\_\-fname}\label{classOctree_f38a8118bd2a10ecb2f346c56db21e1e}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \_\-Tp, typename \_\-Sequence = std::vector$<$\_\-Tp$>$$>$ class Octree$<$ \_\-Tp, \_\-Sequence $>$}
+
+Simple \doxyref{Octree}{p.}{classOctree} for any datatype with an associated 3D position. 
+
+It is reasonably efficient when compared with brute force, but a few more checks and the number of returned points, etc would be reduced further. 
+
+
+
+\subsection{Member Function Documentation}
+\index{Octree@{Octree}!build@{build}}
+\index{build@{build}!Octree@{Octree}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-Tp, typename \_\-Sequence = std::vector$<$\_\-Tp$>$$>$ void \bf{Octree}$<$ \_\-Tp, \_\-Sequence $>$::build (const my\_\-float\_\-t $\ast$ {\em positions\_\-begin}, const my\_\-float\_\-t $\ast$ {\em postions\_\-end}, const my\_\-float\_\-t $\ast$ {\em centroid}, const my\_\-float\_\-t {\em root\_\-side\_\-len}, const container\_\-type \& {\em data})\hspace{0.3cm}{\tt  [inline]}}\label{classOctree_e41543e337c9ddff155f432c6cfedb2a}
+
+
+The positions are used only in building of the tree and may or may not be stored in the data -- this is entirely up to the user of the class The assumption is that the number of positions is the same as the number of the items in data. Furthermore, the data must be stored in the container type used to construct the \doxyref{Octree}{p.}{classOctree} class 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Octree.H\end{CompactItemize}

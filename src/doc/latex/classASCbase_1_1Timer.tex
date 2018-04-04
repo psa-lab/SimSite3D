@@ -1,0 +1,180 @@
+\section{ASCbase::Timer Class Reference}
+\label{classASCbase_1_1Timer}\index{ASCbase::Timer@{ASCbase::Timer}}
+A Linux profile timer for sequential programs.  
+
+
+{\tt \#include $<$Timer.H$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{Timer} (int interval\_\-sec\_\-in=10)
+\begin{CompactList}\small\item\em Constructor, sets the timer interval. \item\end{CompactList}\item 
+\bf{$\sim$Timer} ()\label{classASCbase_1_1Timer_cd15e84294d41860cdd7a3094d3f44e3}
+
+\begin{CompactList}\small\item\em Do nothing destructor. \item\end{CompactList}\item 
+bool \bf{start} ()
+\begin{CompactList}\small\item\em Starts profile timer. \item\end{CompactList}\item 
+bool \bf{get} (double $\ast$real, double $\ast$virt, double $\ast$prof)
+\begin{CompactList}\small\item\em Gets the elapsed time in seconds. \item\end{CompactList}\item 
+bool \bf{fail} ()\label{classASCbase_1_1Timer_f493887703b0b619373eed9601c2d517}
+
+\begin{CompactList}\small\item\em True if an error had occured. \item\end{CompactList}\item 
+bool \bf{started} ()
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static std::string \bf{get\_\-local\_\-time} (char $\ast$buf, size\_\-t buf\_\-len)
+\begin{CompactList}\small\item\em Get the local time in a string format. \item\end{CompactList}\item 
+static void \bf{sig\_\-handler} (int signum, siginfo\_\-t $\ast$siginfo, void $\ast$ucontext)
+\begin{CompactList}\small\item\em The sig handler used when the timer expires. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{Timer} (const \bf{Timer} \&)
+\begin{CompactList}\small\item\em Privatized copy constructor. \item\end{CompactList}\item 
+bool \bf{get\_\-itimer} (double $\ast$rv, int which, long elapsed\_\-sec)\label{classASCbase_1_1Timer_9de292b90dfbc1e13c935e142d5925a0}
+
+\begin{CompactList}\small\item\em Get the elapsed time for \char`\"{}which\char`\"{} timer in seconds. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{CompactItemize}
+\item 
+static size\_\-t \bf{my\_\-strftime} (char $\ast$s, size\_\-t max, const char $\ast$fmt, const struct tm $\ast$tm)
+\begin{CompactList}\small\item\em Wrapper to eliminate buggy gcc warning about using \char`\"{}\%c\char`\"{} in strftime. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+bool \bf{A\_\-fail}\label{classASCbase_1_1Timer_7609083d78f0745bb5bcbf0901e9bcc2}
+
+\begin{CompactList}\small\item\em False implies no outstanding errors. \item\end{CompactList}\item 
+bool \bf{A\_\-started}\label{classASCbase_1_1Timer_213642a43dde180cf72016bd4d42a344}
+
+\begin{CompactList}\small\item\em True implies timers are running. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static long \bf{A\_\-timer\_\-interval\_\-sec} = 0\label{classASCbase_1_1Timer_a9d182c83c64a1f2736ed6db96ff4d5b}
+
+\begin{CompactList}\small\item\em Number of sec used to init a timer. \item\end{CompactList}\item 
+static long \bf{A\_\-real\_\-elapsed\_\-sec} = 0\label{classASCbase_1_1Timer_6198dfbf30712f92ba60374bdc7fb446}
+
+\begin{CompactList}\small\item\em real elapsed time not including timer \item\end{CompactList}\item 
+static long \bf{A\_\-virt\_\-elapsed\_\-sec} = 0\label{classASCbase_1_1Timer_641a06b85a83c8bfe6b5c868ef015160}
+
+\begin{CompactList}\small\item\em virtual elapsed time not including timer \item\end{CompactList}\item 
+static long \bf{A\_\-prof\_\-elapsed\_\-sec} = 0\label{classASCbase_1_1Timer_cd7832452dd43df2c4b55fad0d67f74c}
+
+\begin{CompactList}\small\item\em profile elapsed time not including timer \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A Linux profile timer for sequential programs. 
+
+This class has been updated to use sigaction() in the place of signal(). 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ASCbase::Timer@{ASCbase::Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!ASCbase::Timer@{ASCbase::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Timer::Timer (int {\em interval\_\-sec\_\-in} = {\tt 10})}\label{classASCbase_1_1Timer_122d59508cd380085fc87dc1755d4179}
+
+
+Constructor, sets the timer interval. 
+
+Sets the timer interval and initial timer to timer\_\-interval\_\-in
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em interval\_\-sec\_\-in}]Value for timer interval an initial timer \end{description}
+\end{Desc}
+\index{ASCbase::Timer@{ASCbase::Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!ASCbase::Timer@{ASCbase::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ASCbase::Timer::Timer (const \bf{Timer} \&)\hspace{0.3cm}{\tt  [inline, private]}}\label{classASCbase_1_1Timer_2b55a2346ab31964a25cb65907e62e99}
+
+
+Privatized copy constructor. 
+
+There is no valid reason to copy a timer class 
+
+\subsection{Member Function Documentation}
+\index{ASCbase::Timer@{ASCbase::Timer}!get@{get}}
+\index{get@{get}!ASCbase::Timer@{ASCbase::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Timer::get (double $\ast$ {\em real}, double $\ast$ {\em virt}, double $\ast$ {\em prof})}\label{classASCbase_1_1Timer_7943ae280c460242a3bb4c896ad80223}
+
+
+Gets the elapsed time in seconds. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em real}]Ptr to loc to store the elapsed real time \item[{\em virt}]Ptr to loc to store the elapsed virtual time \item[{\em prof}]Ptr to loc to store the elapsed profile time \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]True if !fail() and \doxyref{started()}{p.}{classASCbase_1_1Timer_e0aa8a339712737f79406a38a2aa3258} \end{Desc}
+\index{ASCbase::Timer@{ASCbase::Timer}!get_local_time@{get\_\-local\_\-time}}
+\index{get_local_time@{get\_\-local\_\-time}!ASCbase::Timer@{ASCbase::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}std::string Timer::get\_\-local\_\-time (char $\ast$ {\em buf}, size\_\-t {\em buf\_\-len})\hspace{0.3cm}{\tt  [static]}}\label{classASCbase_1_1Timer_4201c600a36475ddfeefa6def6aa610c}
+
+
+Get the local time in a string format. 
+
+Does not necessarily belong in the \doxyref{Timer}{p.}{classASCbase_1_1Timer} class, but currently this is as good a place as any.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em buf}]A Cstring used in the call to strftime \item[{\em buf\_\-len}]Length of the Cstring buf \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A string holding the broken down format of the local time. \end{Desc}
+\index{ASCbase::Timer@{ASCbase::Timer}!my_strftime@{my\_\-strftime}}
+\index{my_strftime@{my\_\-strftime}!ASCbase::Timer@{ASCbase::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static size\_\-t ASCbase::Timer::my\_\-strftime (char $\ast$ {\em s}, size\_\-t {\em max}, const char $\ast$ {\em fmt}, const struct tm $\ast$ {\em tm})\hspace{0.3cm}{\tt  [inline, static, private]}}\label{classASCbase_1_1Timer_e1235f2eabcca3f12ff7c61225bb7210}
+
+
+Wrapper to eliminate buggy gcc warning about using \char`\"{}\%c\char`\"{} in strftime. 
+
+From the man page for strftime: Some buggy versions of gcc complain about the use of c: warning: `c' yields only last 2 digits of year in some locales. Of course programmers are encouraged to use c, it gives the preferred date and time representation. One meets all kinds of strange obfuscations to circumvent this gcc problem. A relatively clean one is to add this intermediate function.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em s}]Character array of size max \item[{\em max}]Size of the array s \item[{\em fmt}]Format string \item[{\em tm}]The tm structure to convert to a string. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The number of chars written to s if the time fits, else 0. \end{Desc}
+\index{ASCbase::Timer@{ASCbase::Timer}!sig_handler@{sig\_\-handler}}
+\index{sig_handler@{sig\_\-handler}!ASCbase::Timer@{ASCbase::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Timer::sig\_\-handler (int {\em signum}, siginfo\_\-t $\ast$ {\em siginfo}, void $\ast$ {\em ucontext})\hspace{0.3cm}{\tt  [static]}}\label{classASCbase_1_1Timer_914aeaeacb811e85d426ae2867c9bc30}
+
+
+The sig handler used when the timer expires. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em signum}]The signal number passed to the sig handler \item[{\em siginfo}]Pointer to a siginfo\_\-t struct -- ignored by this function \item[{\em ucontext}]Void pointer to a ucontext\_\-t -- ignored by this function \end{description}
+\end{Desc}
+\index{ASCbase::Timer@{ASCbase::Timer}!start@{start}}
+\index{start@{start}!ASCbase::Timer@{ASCbase::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Timer::start ()}\label{classASCbase_1_1Timer_af02e2d4035c0e6c90223918e7b3c093}
+
+
+Starts profile timer. 
+
+\begin{Desc}
+\item[Returns:]True if timer was started, else false \end{Desc}
+\index{ASCbase::Timer@{ASCbase::Timer}!started@{started}}
+\index{started@{started}!ASCbase::Timer@{ASCbase::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool ASCbase::Timer::started ()\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1Timer_e0aa8a339712737f79406a38a2aa3258}
+
+
+True if timers have been started (i.e. \doxyref{start()}{p.}{classASCbase_1_1Timer_af02e2d4035c0e6c90223918e7b3c093} has been called successfully) 
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Timer.H\item 
+Timer.C\end{CompactItemize}

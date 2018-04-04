@@ -1,0 +1,101 @@
+# WARNING!:  These hbond data files are highly structured--do not edit them.
+# If you insist you are doing so at your own risk.
+# 
+# Empty lines -- those which have only the '\n' character are used to
+# change sections.  The format of the lines is as follows:
+# The residues with these atom types |
+# The element name of the atom |
+# 1 -- atom is a donor, 2 -- atom is an acceptor, 3 atom is a doneptor |
+# The "in-plane" angle |
+# The "out-of-plane" angle |
+#
+# Note:  This method has one caveat, the sidechain atoms are all determined
+# by residue name and element type except for arginine.  In the case of 
+# arginine we need to check if the N is the epsilon nitrogen or not.  If an 
+# atom is the arginine epsilon nitrogen, we use the WR set of angles, and 
+# the other 2 Ns of the guanadinium group are specified by the NQR set.
+#
+# This is getting messy.  At the present the 3rd field is not used by 
+# SimSite3D, and should NOT be used for His residues.
+# The reason is NE2 has been changed to favor protonation over an unknown state # --  Discussion with Leslie and Matt based on 
+# Jack Kyte’s Structure in Protein Chemistry pKa diagram for the 
+# high-probability states of His around pH 7
+MAIN_CHAIN,O,LP,1,120,0,
+MAIN_CHAIN,O,LP,1,140,0,
+MAIN_CHAIN,O,LP,2,220,0,
+MAIN_CHAIN,O,LP,2,240,0,
+
+MAIN_CHAIN,N,H,1,220,0,
+MAIN_CHAIN,N,H,1,240,0,
+MAIN_CHAIN,N,H,1,260,0,
+
+ASP,O,LP,1,110,0,
+ASP,O,LP,1,130,0,
+ASP,O,LP,2,220,0,
+ASP,O,LP,2,200,0,
+
+GLU,O,LP,1,110,0,
+GLU,O,LP,1,130,0,
+GLU,O,LP,2,220,0,
+GLU,O,LP,2,200,0,
+
+ASN,O,LP,1,110,0,
+ASN,O,LP,1,130,0,
+ASN,O,LP,2,220,0,
+ASN,O,LP,2,200,0,
+
+GLN,O,LP,1,110,0,
+GLN,O,LP,1,130,0,
+GLN,O,LP,2,220,0,
+GLN,O,LP,2,200,0,
+
+ASN,N,H,1,100,0,
+ASN,N,H,1,120,0,
+ASN,N,H,1,145,0,
+ASN,N,H,2,220,0,
+ASN,N,H,2,240,0,
+
+GLN,N,H,1,100,0,
+GLN,N,H,1,120,0,
+GLN,N,H,1,145,0,
+GLN,N,H,2,220,0,
+GLN,N,H,2,240,0,
+
+ARG,N,H,1,100,0,
+ARG,N,H,1,120,0,
+ARG,N,H,1,145,0,
+ARG,N,H,2,220,0,
+ARG,N,H,2,240,0,
+
+HIS,N,U,1,220,0,
+HIS,N,U,1,240,0,
+HIS,N,U,1,260,0,
+
+TRP,N,H,1,240,0,
+TRP,N,H,1,240,20,
+TRP,N,H,1,240,-20,
+
+TYR,O,U,1,100,0,
+TYR,O,U,1,120,0,
+TYR,O,U,1,140,0,
+TYR,O,U,2,220,0,
+TYR,O,U,2,240,0,
+TYR,O,U,2,260,0,
+
+SER,O,U,1,115,50,
+SER,O,U,1,115,70,
+SER,O,U,2,115,180,
+SER,O,U,3,115,290,
+SER,O,U,3,115,310,
+
+THR,O,U,1,115,50,
+THR,O,U,1,115,70,
+THR,O,U,2,115,180,
+THR,O,U,3,115,290,
+THR,O,U,3,115,310,
+
+LYS,N,H,1,110,50,
+LYS,N,H,1,110,70,
+LYS,N,H,2,110,180,
+LYS,N,H,3,110,290,
+LYS,N,H,3,110,310,

@@ -1,0 +1,112 @@
+\section{ASCbase::geometry::Simple\-Trimesh\-Three Class Reference}
+\label{classASCbase_1_1geometry_1_1SimpleTrimeshThree}\index{ASCbase::geometry::SimpleTrimeshThree@{ASCbase::geometry::SimpleTrimeshThree}}
+Simple surface class built to contain basic features of a triangle mesh.  
+
+
+{\tt \#include $<$Simple\-Trimesh\-Three.H$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{Simple\-Trimesh\-Three} ()\label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_188f1d854a84a1bc43b93ba69732ead9}
+
+\begin{CompactList}\small\item\em Default constructor -- initializes some class variables. \item\end{CompactList}\item 
+bool \textbf{read\_\-vert\_\-file} (const std::string fname, const bool sample\_\-surface=false)\label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_c9550b4265e3c6cdcaf8cb7ef4240421}
+
+\item 
+bool \textbf{read\_\-face\_\-file} (const std::string fname, std::vector$<$ Edge $>$ $\ast$edges, const bool check\_\-vertex\_\-order, const bool compute\_\-max\_\-dist\_\-to\_\-centroid)\label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_a2eef2ac284240c555bc43308012e375}
+
+\item 
+const bool \bf{fail} () const 
+\item 
+const size\_\-t \textbf{num\_\-verts} () const \label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_7357eadf46a005993e7bb4cb1525b3e7}
+
+\item 
+void \bf{initialize\_\-opt} (std::vector$<$ Edge $>$ \&edges)
+\item 
+const my\_\-float\_\-t \textbf{max\_\-dist\_\-to\_\-centroid} () const \label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_623a310518c90b27345b436082e5d5dc}
+
+\item 
+\bf{Vert\-Attrib::vci} \textbf{vertices\_\-begin} () const \label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_e80531bbf6af55529137b553dc205a61}
+
+\item 
+\bf{Vert\-Attrib::vci} \textbf{vertices\_\-end} () const \label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_a45c5de311686b10920adbdb4ede817a}
+
+\item 
+\bf{Face\-Attrib::vci} \textbf{faces\_\-begin} () const \label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_647b6b8412d82b702e5fe4b07ecf07d9}
+
+\item 
+\bf{Face\-Attrib::vci} \textbf{faces\_\-end} () const \label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_daf2e57ad4a17d02afaa8e62da5e2ce2}
+
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{set\_\-fail\_\-flag} ()\label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_0aee50a52a6b7dd7eb12de42e516f724}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+bool \bf{get\_\-faces} (const \bf{Vert\-Attrib::vi} \&central\_\-vert, const \bf{Face\-Attrib::vi} \&start\_\-face, std::vector$<$ \bf{Face\-Attrib::vi} $>$ $\ast$faces\_\-out, const bool skip\_\-first\_\-prev=false)
+\begin{CompactList}\small\item\em Get all the faces for the given vertex. \item\end{CompactList}\item 
+void \bf{get\_\-faces} (const Edge \&E, std::vector$<$ \bf{Face\-Attrib::vi} $>$ $\ast$faces\_\-out)\label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_b02e426e7faeba41f1b1814692130246}
+
+\begin{CompactList}\small\item\em This method will fail in the case of a \char`\"{}bad\char`\"{} mesh. \item\end{CompactList}\item 
+bool \textbf{get\_\-faces} (\bf{Face\-Attrib::vi} central\_\-face, std::vector$<$ \bf{Face\-Attrib::vi} $>$ $\ast$faces\_\-out)\label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_365bd9e32896d3f3601714a2111cfbe9}
+
+\item 
+void \textbf{face\_\-centroid} (const \bf{Vert\-Attrib::vi} $\ast$V, my\_\-float\_\-t $\ast$centroid)\label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_afdeeb98549efc087ee46a93a5bc4619}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+\bf{dir\_\-point\_\-storage}$<$ \bf{Vert\-Attrib} $>$ \textbf{A\_\-vertices}\label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_f8f2de92be2e2a5891d86f1a048869e2}
+
+\item 
+std::vector$<$ \bf{Face\-Attrib} $>$ \textbf{A\_\-faces}\label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_f5848e48e7d8ca9a90f658906b2fdbbb}
+
+\item 
+\bf{point\_\-storage}$<$ \bf{point\_\-t} $>$ \bf{A\_\-sample\_\-pts}\label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_17dfc1cc8ca141a236a54665b14c43eb}
+
+\begin{CompactList}\small\item\em Points. \item\end{CompactList}\item 
+my\_\-float\_\-t \textbf{A\_\-max\_\-dist\_\-to\_\-cent}\label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_5ca5a91997f308b970217f23fa51401c}
+
+\item 
+bool \textbf{A\_\-fail}\label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_773f3c715fcc91004e1fe529c0c79be2}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Simple surface class built to contain basic features of a triangle mesh. 
+
+
+
+\subsection{Member Function Documentation}
+\index{ASCbase::geometry::SimpleTrimeshThree@{ASCbase::geometry::Simple\-Trimesh\-Three}!fail@{fail}}
+\index{fail@{fail}!ASCbase::geometry::SimpleTrimeshThree@{ASCbase::geometry::Simple\-Trimesh\-Three}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const bool ASCbase::geometry::Simple\-Trimesh\-Three::fail () const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_2e9bb6efe1d7ed203ac88caa6a1e0b96}
+
+
+Check if class has failed -- if it has, this class's use at best will be undefined \index{ASCbase::geometry::SimpleTrimeshThree@{ASCbase::geometry::Simple\-Trimesh\-Three}!get_faces@{get\_\-faces}}
+\index{get_faces@{get\_\-faces}!ASCbase::geometry::SimpleTrimeshThree@{ASCbase::geometry::Simple\-Trimesh\-Three}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool ASCbase::geometry::Simple\-Trimesh\-Three::get\_\-faces (const \bf{Vert\-Attrib::vi} \& {\em central\_\-vert}, const \bf{Face\-Attrib::vi} \& {\em start\_\-face}, std::vector$<$ \bf{Face\-Attrib::vi} $>$ $\ast$ {\em faces\_\-out}, const bool {\em skip\_\-first\_\-prev} = {\tt false})\hspace{0.3cm}{\tt  [inline, private]}}\label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_f9a5290c66ae41e3683ca5a6c25ef0da}
+
+
+Get all the faces for the given vertex. 
+
+This method does not add the starting face First this method will check all the faces that can be found via the face-$>$next links. If a \char`\"{}null\char`\"{} face is found, it will check all the faces via the face-$>$prev links.
+
+This method will fail if the mesh is of poor quality and all of the faces cannot be found by both next and prev traversal \index{ASCbase::geometry::SimpleTrimeshThree@{ASCbase::geometry::Simple\-Trimesh\-Three}!initialize_opt@{initialize\_\-opt}}
+\index{initialize_opt@{initialize\_\-opt}!ASCbase::geometry::SimpleTrimeshThree@{ASCbase::geometry::Simple\-Trimesh\-Three}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Simple\-Trimesh\-Three::initialize\_\-opt (std::vector$<$ Edge $>$ \& {\em edges})}\label{classASCbase_1_1geometry_1_1SimpleTrimeshThree_788fe4d23d6d07ffc06b1d2bbd2128d2}
+
+
+Compute the energy at each vertex and add to a priority queue based on the estimated change in energy 
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Simple\-Trimesh\-Three.H\item 
+Simple\-Trimesh\-Three.C\end{CompactItemize}

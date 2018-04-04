@@ -1,0 +1,12 @@
+import os ;
+local ASCBASE_INSTALL_DIR = [ os.environ  ASCBASE_INSTALL_DIR ] ;
+
+# Extension build rules -- 
+python-extension _parameters 
+  : ParametersPy.cc /ASCbasePy//score_lib ;
+python-extension _ProtLigScore
+  : ProtLigScorePy.cc /ASCbasePy//score_lib ;
+
+# Install rules
+install $(ASCBASE_INSTALL_DIR)/ASCbasePy/score 
+  : _parameters _ProtLigScore ;

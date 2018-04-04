@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Note: no xml namespace for now -->
+<ASCbase_sitemap>
+<!--
+# gen_points (SimSite3D) 4.1-rc3 sitemap labels file
+# Date: Thu Jul  1 13:01:31 2010
+-->
+<protein_structure_file>
+  1GZ8_MBP_p.pdb
+</protein_structure_file>
+<ligand_file>
+  1GZ8_MBP_l.mol2
+</ligand_file>
+<mol_surf>
+  <probe_radius>1.400</probe_radius>
+  <density>1.000</density>
+</mol_surf>
+<site_vol_est>
+<sphere><center>-1.06648 27.1708 9.80917</center><radius>8.27226</radius></sphere>
+</site_vol_est>
+<volume_type>
+<sphere><center>1.945 29.163 6.453</center><radius>3</radius></sphere>
+<sphere><center>0.587 30.802 7.306</center><radius>3</radius></sphere>
+<sphere><center>-0.098 29.892 8.173</center><radius>3</radius></sphere>
+<sphere><center>-0.813 25.346 9.523</center><radius>3</radius></sphere>
+<sphere><center>-1.745 25.765 10.248</center><radius>3</radius></sphere>
+<sphere><center>-1.338 23.023 8.846</center><radius>3</radius></sphere>
+<sphere><center>-0.326 23.927 9.52</center><radius>3</radius></sphere>
+<sphere><center>-0.006 23.463 10.927</center><radius>3</radius></sphere>
+<sphere><center>-0.028 31.951 7.589</center><radius>3</radius></sphere>
+<sphere><center>1.61 30.448 6.495</center><radius>3</radius></sphere>
+<sphere><center>2.952 28.802 5.646</center><radius>3</radius></sphere>
+<sphere><center>1.321 28.241 7.247</center><radius>3</radius></sphere>
+<sphere><center>0.304 28.51 8.04</center><radius>3</radius></sphere>
+<sphere><center>-0.276 27.574 8.785</center><radius>3</radius></sphere>
+<sphere><center>-0.046 26.21 8.56</center><radius>3</radius></sphere>
+<sphere><center>-1.05 30.539 8.872</center><radius>3</radius></sphere>
+<sphere><center>-0.987 31.782 8.488</center><radius>3</radius></sphere>
+
+</volume_type>
+<!--
+# Normalization stats:
+# 1) Mean score of sitemap against normalization database
+# 2) Stdev of scores of sitemap against normalization database
+#
+# Note:  If the mean is 0 and the stdev is -1, the sitemap normalization
+#        statistics were not computed.
+-->
+<normalization_stats>
+  0.000 -1.000
+</normalization_stats>
+<!--
+# Hydrophobic pocket normalization stats:
+# Normalization stats using hydrophobic_query flag
+# 1) Mean score of sitemap against normalization database
+# 2) Stdev of scores of sitemap against normalization database
+#
+# Note:  If the mean is 0 and the stdev is -1, the sitemap normalization
+#        statistics were not computed using the hydrophobic_query flag.
+-->
+<hphob_norm_stats>
+  0.0 -1.0
+</hphob_norm_stats>
+<!--
+# Point counts:
+# 1) Number of polar points
+# 2) Number of hydrophobic points
+-->
+<point_counts>
+  32 23
+</point_counts>
+<!--
+# Fields in hydrogen bond section
+# 1) Sitemap point number
+# 2) Associated atom string (res, res num, iCode, chain id, atom name and
+#    sitemap point descriptor)
+# 3) Chain ID
+# 4) Residue name
+# 5) Residue number + insertion code (if it is not a space char)
+# 6) Atom name
+# 7) Atom number (serial)
+# 8) Hbond point number (for the given atom) - ASCbase internal use
+# 9) Point position  (ASCbase internal use)
+# 10) Carbon neighbor atom number  (ASCbase internal use)
+-->
+<hydrogen_bond_points>
+1001|GLU12_A_N/1A|A|GLU|12|N|92|1|-0.274 18.886 9.083 |90|
+2001|GLU12_A_O/1D|A|GLU|12|O|95|2|-2.172 21.773 13.243 |94|
+1002|LYS33_A_NZ/1A|A|LYS|33|NZ|262|1|-0.582 27.249 10.728 |261|
+1003|LYS33_A_NZ/2A|A|LYS|33|NZ|262|1|-0.582 27.249 10.728 |261|
+1004|LYS33_A_NZ/3A|A|LYS|33|NZ|262|1|-0.582 27.249 10.728 |261|
+1005|LYS33_A_NZ/4A|A|LYS|33|NZ|262|1|-0.582 27.249 10.728 |261|
+1006|LYS33_A_NZ/5A|A|LYS|33|NZ|262|3|-2.133 31.654 10.050 |261|
+1007|LYS33_A_NZ/6A|A|LYS|33|NZ|262|3|-2.133 31.654 10.050 |261|
+1008|LYS33_A_NZ/7A|A|LYS|33|NZ|262|3|-2.133 31.654 10.050 |261|
+1009|LYS33_A_NZ/8A|A|LYS|33|NZ|262|3|-2.133 31.654 10.050 |261|
+2002|GLU81_A_O/1D|A|GLU|81|O|589|1|-1.295 34.264 8.878 |588|
+2003|GLU81_A_O/2D|A|GLU|81|O|589|2|1.218 31.750 7.381 |588|
+2004|GLU81_A_O/3D|A|GLU|81|O|589|2|1.218 31.750 7.381 |588|
+2005|GLU81_A_O/4D|A|GLU|81|O|589|2|1.218 31.750 7.381 |588|
+2006|GLU81_A_O/5D|A|GLU|81|O|589|2|1.218 31.750 7.381 |588|
+1010|LEU83_A_N/1A|A|LEU|83|N|606|1|2.077 30.555 6.255 |597|
+1011|LEU83_A_N/2A|A|LEU|83|N|606|1|2.077 30.555 6.255 |597|
+1012|LEU83_A_N/3A|A|LEU|83|N|606|1|2.077 30.555 6.255 |597|
+1013|LEU83_A_N/4A|A|LEU|83|N|606|1|2.077 30.555 6.255 |597|
+2007|LEU83_A_O/1D|A|LEU|83|O|609|1|2.187 29.760 5.844 |608|
+2008|LEU83_A_O/2D|A|LEU|83|O|609|1|2.187 29.760 5.844 |608|
+2009|LEU83_A_O/3D|A|LEU|83|O|609|1|2.187 29.760 5.844 |608|
+2010|LEU83_A_O/4D|A|LEU|83|O|609|1|2.187 29.760 5.844 |608|
+2011|LEU83_A_O/5D|A|LEU|83|O|609|1|2.187 29.760 5.844 |608|
+2012|LEU83_A_O/6D|A|LEU|83|O|609|2|5.253 27.563 5.040 |608|
+2013|LEU83_A_O/7D|A|LEU|83|O|609|2|5.253 27.563 5.040 |608|
+2014|LEU83_A_O/8D|A|LEU|83|O|609|2|5.253 27.563 5.040 |608|
+2015|GLN131_A_O/1D|A|GLN|131|O|997|1|3.318 25.568 10.565 |996|
+2016|GLN131_A_O/2D|A|GLN|131|O|997|1|3.318 25.568 10.565 |996|
+2017|GLN131_A_O/3D|A|GLN|131|O|997|2|1.273 28.709 11.474 |996|
+2018|GLN131_A_OE1/1D|A|GLN|131|OE1|1001|2|-0.747 20.203 12.651 |1000|
+2019|ASP145_A_OD2/1D|A|ASP|145|OD2|1105|2|-3.940 26.918 11.187 |1103|
+</hydrogen_bond_points>
+<!--
+# Fields in hydrophobic points section
+# 1) Sitemap point number
+# 2) Associated atoms' strings
+-->
+<hydrophobic_points>
+1|ILE10_A_CB_ILE10_A_CG2_ILE10_A_CD1_VAL18_A_CB_VAL18_A_CG1_VAL18_A_CG2|
+2|ILE10_A_CB_ILE10_A_CG2|
+3|ILE10_A_CB_ILE10_A_CG1_ILE10_A_CG2_ILE10_A_CD1|
+4|ILE10_A_CB_ILE10_A_CG1_ILE10_A_CG2_ILE10_A_CD1_VAL18_A_CG1|
+5|ILE10_A_CB_ILE10_A_CG2_VAL18_A_CB_VAL18_A_CG1_VAL18_A_CG2|
+6|ILE10_A_CB_ILE10_A_CG1_ILE10_A_CG2_ILE10_A_CD1_VAL18_A_CB_VAL18_A_CG1_VAL18_A_CG2_ALA31_A_CB|
+7|ILE10_A_CB_ILE10_A_CG2_ILE10_A_CD1_VAL18_A_CB_VAL18_A_CG1_VAL18_A_CG2|
+8|VAL18_A_CB_VAL18_A_CG1_VAL18_A_CG2|
+9|ILE10_A_CG2_VAL18_A_CB_VAL18_A_CG1_VAL18_A_CG2|
+10|VAL18_A_CB_VAL18_A_CG1_VAL18_A_CG2_LYS33_A_CD|
+11|ILE10_A_CG1_ILE10_A_CG2_ILE10_A_CD1_VAL18_A_CG1_ALA31_A_CB_PHE82_A_CD1|
+12|ALA31_A_CB_VAL64_A_CG1_PHE80_A_CB_PHE80_A_CG_PHE80_A_CD1_PHE80_A_CD2|
+13|VAL18_A_CG1_ALA31_A_CB_LYS33_A_CG_LYS33_A_CD_PHE80_A_CB|
+14|ILE10_A_CD1_VAL18_A_CB_VAL18_A_CG1_ALA31_A_CB_LYS33_A_CG_LYS33_A_CD|
+15|ALA31_A_CB_LYS33_A_CG_LYS33_A_CD_PHE80_A_CB_PHE80_A_CG_PHE80_A_CD1|
+16|VAL64_A_CB_VAL64_A_CG1_VAL64_A_CG2_PHE80_A_CB_PHE80_A_CG_PHE80_A_CD1_PHE80_A_CD2_ALA144_A_CB|
+17|ALA31_A_CB_LYS33_A_CG_LYS33_A_CD_PHE80_A_CB_PHE80_A_CG_PHE80_A_CD1_PHE80_A_CD2|
+18|LEU83_A_CB_LEU83_A_CD1_LEU134_A_CG_LEU134_A_CD1_LEU134_A_CD2|
+19|VAL64_A_CB_VAL64_A_CG1_VAL64_A_CG2_LEU83_A_CB_LEU83_A_CD1_LEU134_A_CG_LEU134_A_CD1|
+20|VAL64_A_CB_VAL64_A_CG1_VAL64_A_CG2_LEU134_A_CG_LEU134_A_CD1_ALA144_A_CB|
+21|VAL64_A_CG1_LEU134_A_CG_LEU134_A_CD1_LEU134_A_CD2_ALA144_A_CB|
+22|VAL64_A_CB_VAL64_A_CG1_VAL64_A_CG2_PHE80_A_CG_PHE80_A_CD2_LEU134_A_CD1_ALA144_A_CB|
+23|VAL64_A_CB_VAL64_A_CG1_VAL64_A_CG2_LEU134_A_CG_LEU134_A_CD1_LEU134_A_CD2_ALA144_A_CB|
+</hydrophobic_points>
+<!--
+# Note: These are the largest values for the features of the sitemap when
+ # compared with itself
+# Features
+# 0) Closest polar sum
+# 1) polar mismatch sum
+# 2) AA DD sum
+# 3) NA AN ND DN NN sum
+# 4) hphob count
+# 5) Unsat query polar 
+# 6) best polar sum
+# 7) best AA DD sum
+# 8) best NA AN ND DN NN sum
+# 9) best unsat polar
+# 10) number of query surface points within 1.5 (A) of db surface
+# 11) number of query faces with all 3 vertices within 1.5 (A) of db surface
+# 12) RMSE of query points to db surf (each point must be within 1.5 (A) )
+# 13) area of faces in 11
+# 14) RMSE of query normals to db surf normals
+-->
+<features_scales>
+32.000 32.000 32.000 32.000 23 32.000 32.000 32.000 32.000 32.000
+513 906 1.5 337.885 4.0
+</features_scales>
+</ASCbase_sitemap>

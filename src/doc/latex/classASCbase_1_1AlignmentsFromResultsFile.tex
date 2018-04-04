@@ -1,0 +1,37 @@
+\section{ASCbase::Alignments\-From\-Results\-File Class Reference}
+\label{classASCbase_1_1AlignmentsFromResultsFile}\index{ASCbase::AlignmentsFromResultsFile@{ASCbase::AlignmentsFromResultsFile}}
+Class to score alignments in a given Sim\-Site3D results file.  
+
+
+{\tt \#include $<$Alignments\-From\-Results\-File.H$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{Alignments\-From\-Results\-File} (const std::string res\_\-fname)\label{classASCbase_1_1AlignmentsFromResultsFile_0834e02449a91cc81b01e44566b3ca9c}
+
+\begin{CompactList}\small\item\em Cstor. \item\end{CompactList}\item 
+virtual \bf{$\sim$Alignments\-From\-Results\-File} ()\label{classASCbase_1_1AlignmentsFromResultsFile_ac17079e981f15b11ff09284843f1c60}
+
+\begin{CompactList}\small\item\em basic destruction \item\end{CompactList}\item 
+template$<$typename align\_\-T$>$ bool \bf{align} (\bf{Model\-Sitemap} $\ast$query\_\-site, \bf{Sitemap} \&dset\_\-site, std::vector$<$ align\_\-T $>$ $\ast$alignments)\label{classASCbase_1_1AlignmentsFromResultsFile_8a607016b81b625aa0debaa1d469067d}
+
+\begin{CompactList}\small\item\em Required alignment method. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+std::string \textbf{A\_\-res\_\-fname}\label{classASCbase_1_1AlignmentsFromResultsFile_629d9546382d3f8879e8a324b392584e}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Class to score alignments in a given Sim\-Site3D results file. 
+
+NOTE: this method is inefficient in that it will scan the entire results file each time it is called -- this is to avoid the problem of very long results files that cannot fit in memory. 
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Alignments\-From\-Results\-File.H\end{CompactItemize}

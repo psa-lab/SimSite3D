@@ -1,0 +1,47 @@
+\section{ASCbase::PDBBase::modres\_\-record\_\-type Struct Reference}
+\label{structASCbase_1_1PDBBase_1_1modres__record__type}\index{ASCbase::PDBBase::modres_record_type@{ASCbase::PDBBase::modres\_\-record\_\-type}}
+Holds the information in one MODRES record (line).  
+
+
+{\tt \#include $<$PDBBase.H$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+bool \textbf{contains} (atom\_\-vci atom) const \label{structASCbase_1_1PDBBase_1_1modres__record__type_8ec38a410ab4be9f8eb84a219628efb3}
+
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+std::string \bf{id\-Code}\label{structASCbase_1_1PDBBase_1_1modres__record__type_6a68803756d56ad22aa52b64a0ff3c5c}
+
+\begin{CompactList}\small\item\em PDB ID code -- included for historical reasions? \item\end{CompactList}\item 
+std::string \bf{res\-Name}\label{structASCbase_1_1PDBBase_1_1modres__record__type_bed137d971bf629a1ae314a15abe02a0}
+
+\begin{CompactList}\small\item\em HET ID of the modified residue. \item\end{CompactList}\item 
+char \bf{chain\-ID}\label{structASCbase_1_1PDBBase_1_1modres__record__type_4646af5f898e7f605c660c6a03e99326}
+
+\begin{CompactList}\small\item\em Chain ID of the modified residue. \item\end{CompactList}\item 
+uint \bf{seq\-Num}\label{structASCbase_1_1PDBBase_1_1modres__record__type_8e7203fd189ff474fb4df62d4c7370a5}
+
+\begin{CompactList}\small\item\em Residue number of the modified residue. \item\end{CompactList}\item 
+char \bf{i\-Code}\label{structASCbase_1_1PDBBase_1_1modres__record__type_ce2a7c9abb09dbdb2e3bcef4e4d8452c}
+
+\begin{CompactList}\small\item\em Insertion code. \item\end{CompactList}\item 
+residue\_\-type \bf{std\-Res}\label{structASCbase_1_1PDBBase_1_1modres__record__type_875e1b41b9c3d177a3d41bbe4d629ea1}
+
+\begin{CompactList}\small\item\em Residue that was modified (1 of the 20 amino acids). \item\end{CompactList}\item 
+std::string \bf{comment}\label{structASCbase_1_1PDBBase_1_1modres__record__type_765eead7dea06482d5b3fe2dbcd4eed0}
+
+\begin{CompactList}\small\item\em Any pertinant comments -- usually type of modfication. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Holds the information in one MODRES record (line). 
+
+
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+PDBBase.H\end{CompactItemize}

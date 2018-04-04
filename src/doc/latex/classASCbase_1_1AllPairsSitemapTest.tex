@@ -1,0 +1,70 @@
+\section{ASCbase::All\-Pairs\-Sitemap\-Test Class Reference}
+\label{classASCbase_1_1AllPairsSitemapTest}\index{ASCbase::AllPairsSitemapTest@{ASCbase::AllPairsSitemapTest}}
+{\tt \#include $<$All\-Pairs\-Sitemap\-Test.H$>$}
+
+Inheritance diagram for ASCbase::All\-Pairs\-Sitemap\-Test::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classASCbase_1_1AllPairsSitemapTest}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{All\-Pairs\-Sitemap\-Test} (const std::string path, const std::string struct\_\-id, const \bf{Base\-Parameters} \&args, const bool normalize=false, const bool load\_\-hbond\_\-surfaces=false, const bool hydrophobic\_\-query=false)\label{classASCbase_1_1AllPairsSitemapTest_52089682608f8e316aebbea656518f15}
+
+\item 
+bool \bf{get\_\-bucket\_\-iters} (const uint c, const my\_\-float\_\-t perimeter, const my\_\-float\_\-t max\_\-len, const my\_\-float\_\-t min\_\-len, bucket\_\-vci $\ast$bucket\_\-begin, bucket\_\-vci $\ast$bucket\_\-end)
+\begin{CompactList}\small\item\em Given c,p,l,s get the iterators for the corresponding color bucket. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{create\_\-color\_\-bins} ()\label{classASCbase_1_1AllPairsSitemapTest_56096e393e198026ec9c90dc307114da}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+idx\_\-tbl\_\-lvl\_\-long \bf{A\_\-color\_\-bins}\label{classASCbase_1_1AllPairsSitemapTest_c51b3ea8452f20ddd328f0d87c45f931}
+
+\begin{CompactList}\small\item\em Abuse the name ... \item\end{CompactList}\item 
+std::list$<$ \bf{triangle\_\-t} $>$ \bf{A\_\-why\_\-use\_\-a\_\-list}\label{classASCbase_1_1AllPairsSitemapTest_9271d3343a1d725eaea89fbda620fd57}
+
+\begin{CompactList}\small\item\em A double pass is likely to be more efficient -- first populate the vector, then hold it constant while determining the iterators for each bin. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static const std::string \bf{A\_\-fname}\label{classASCbase_1_1AllPairsSitemapTest_3e83862c6f07ad04b38d29404760b5dc}
+
+\begin{CompactList}\small\item\em Source file name. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This class is implemented in a kludge manner so that the interface for get\_\-bucket\_\-iters is the same as that for Model\-Sitemaps. We don't really care about speed penalty here as it is not production code 
+
+
+
+\subsection{Member Function Documentation}
+\index{ASCbase::AllPairsSitemapTest@{ASCbase::All\-Pairs\-Sitemap\-Test}!get_bucket_iters@{get\_\-bucket\_\-iters}}
+\index{get_bucket_iters@{get\_\-bucket\_\-iters}!ASCbase::AllPairsSitemapTest@{ASCbase::All\-Pairs\-Sitemap\-Test}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool ASCbase::All\-Pairs\-Sitemap\-Test::get\_\-bucket\_\-iters (const uint {\em c}, const my\_\-float\_\-t {\em perimeter}, const my\_\-float\_\-t {\em max\_\-len}, const my\_\-float\_\-t {\em min\_\-len}, bucket\_\-vci $\ast$ {\em bucket\_\-begin}, bucket\_\-vci $\ast$ {\em bucket\_\-end})\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classASCbase_1_1AllPairsSitemapTest_662913221bdc0a3063def4d40dd0d6f5}
+
+
+Given c,p,l,s get the iterators for the corresponding color bucket. 
+
+Given a \char`\"{}color\char`\"{}, get all the triangles with that color via iterators to the begin and end of the bucket.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em c}]hash\_\-class index \item[{\em p}]perimeter level index -- not used in this class \item[{\em l}]longest edge length index -- not used in this class \item[{\em s}]shortest edge length index -- not used in this class \item[{\em bucket\_\-begin}]Pointer to the beginning of the bucket \item[{\em bucket\_\-end}]Pointer to the end of the bucket \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true if bucket is nonempty \end{Desc}
+
+
+Reimplemented from \bf{ASCbase::Model\-Sitemap} \doxyref{p.}{classASCbase_1_1ModelSitemap_c80869d4e5b99f09d776f48c157fd52c}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+All\-Pairs\-Sitemap\-Test.H\end{CompactItemize}

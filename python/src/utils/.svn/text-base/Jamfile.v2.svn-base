@@ -1,0 +1,28 @@
+import os ;
+local ASCBASE_INSTALL_DIR = [ os.environ  ASCBASE_INSTALL_DIR ] ;
+
+python-extension _base_parameters 
+  : BaseParametersPy.cc 
+  : <variant>release:<cxxflags>-O2 ;
+python-extension _stl_containers 
+  : stl_containers.cc 
+  : <variant>release:<cxxflags>-O2 ;
+python-extension _mol2File 
+  : mol2FilePy.cc 
+  : <variant>release:<cxxflags>-O2 ;
+python-extension _PDBStructure
+  : PDBStructurePy.cc
+  : <variant>release:<cxxflags>-O2 ;
+python-extension _atom 
+  : atomPy.cc 
+  : <variant>release:<cxxflags>-O2 ;
+python-extension _stream_basics 
+  : stream_basicsPy.cc 
+  : <variant>release:<cxxflags>-O2 ;
+python-extension _system_timers
+  : TimerPy.cc 
+  : <variant>release:<cxxflags>-O2 ;
+
+install $(ASCBASE_INSTALL_DIR)/ASCbasePy/utils 
+  : _base_parameters _atom _stl_containers _stream_basics _mol2File 
+    _PDBStructure _system_timers ;

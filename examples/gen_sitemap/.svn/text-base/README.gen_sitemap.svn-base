@@ -1,0 +1,24 @@
+gen_sitemap takes either 2 or 3 parameters.  The first parameter is the path to
+the protein file (in pdb format).  The second parameter is the path to the 
+ligand file (in mol2 format).  The optional third parameter can be used to
+specify the name of the generated sitemap file.  If the third parameter is
+specified, the sitemap file is stored relative to your current working
+directory.  If the third parameter is not specified, the sitemap file is
+stored in the current directory .
+
+Note:  You may specify proteins and ligands files that are in the directories
+$ASCBASE_DBASE_PROTS and $ASCBASE_DBASE_LIGS respectively by just giving their 
+name (e.g. 1eqm_atp_p.pdb).
+
+These examples directories correspond to an example of creating a site map for 
+the ATP binding site in the pdb structure 1eqm:
+
+The command to generate the ATP sitemap for 1eqm (from this directory) is:  
+	"gen_points -p in/1eqm_ADP_p.pdb -l in/1eqm_ADP_l.mol2 --msms_surf 1eqm_ADP_s.csv".
+
+To verify the results, you my use the command:
+	"diff 1eqm_ADP_s.csv out/1eqm_ADP_s.csv"
+	"diff 1eqm_ADP_s.pdb out/1eqm_ADP_s.pdb"
+	"diff 1eqm_ADP_a.pdb out/1eqm_ADP_a.pdb"
+to check if there are any differences between your sitemap, for the 1eqm
+ATP site, and the one provided in the out directory.

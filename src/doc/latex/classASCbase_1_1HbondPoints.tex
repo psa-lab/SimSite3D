@@ -1,0 +1,412 @@
+\section{ASCbase::Hbond\-Points Class Reference}
+\label{classASCbase_1_1HbondPoints}\index{ASCbase::HbondPoints@{ASCbase::HbondPoints}}
+{\tt \#include $<$Hbond\-Points.H$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{Hbond\-Points} (std::istream \&in, const uint num\_\-lines, \bf{PDBBase} \&rad\_\-atoms, \bf{PDBBase} \&points)
+\begin{CompactList}\small\item\em Build the hbonds\_\-pts vector from a stored sitemap. \item\end{CompactList}\item 
+\bf{Hbond\-Points} (const \bf{Gen\-Points\-Parameters::hbond\_\-method\_\-t} hbond\_\-density, const std::string param\_\-path, \bf{Bounding\-Volume} $\ast$vol\_\-in, const bool compute\_\-volume=false)
+\begin{CompactList}\small\item\em Basic constructor. \item\end{CompactList}\item 
+void \bf{find\_\-binding\_\-site\_\-hbonds} (const \bf{PDBStructure} $\ast$prot, const std::vector$<$ std::string $>$ \&H2O\_\-res\_\-names, const bool include\_\-metals, const interact\_\-atoms\_\-vec \&hbond\_\-atoms, std::vector$<$ atom\_\-vci $>$ $\ast$bind\_\-atoms, std::vector$<$ atom\_\-vci $>$ $\ast$rad\_\-atoms)
+\item 
+hbond\_\-ideal\_\-pt\_\-vci \bf{ideal\_\-pts\_\-beg} () const \label{classASCbase_1_1HbondPoints_cfc90ecdc78a82f1fc2cd6a3894f71f5}
+
+\begin{CompactList}\small\item\em Get a constant iterator to the first hbond ideal point. \item\end{CompactList}\item 
+hbond\_\-ideal\_\-pt\_\-vci \bf{ideal\_\-pts\_\-end} () const \label{classASCbase_1_1HbondPoints_dbcd5aa42ce40703760fab5195f15093}
+
+\begin{CompactList}\small\item\em Get a constant iterator to one past the last hbond ideal point. \item\end{CompactList}\item 
+hbond\_\-fit\_\-pt\_\-vci \bf{fit\_\-pts\_\-beg} () const \label{classASCbase_1_1HbondPoints_9bdd5a0296d972353e432b010b7964dd}
+
+\begin{CompactList}\small\item\em Get a constant iterator to the first hbond fit point. \item\end{CompactList}\item 
+hbond\_\-fit\_\-pt\_\-vci \bf{fit\_\-pts\_\-end} () const \label{classASCbase_1_1HbondPoints_2b5bf1df8a99b0f1b933526cca817e86}
+
+\begin{CompactList}\small\item\em Get a constant iterator to one past the last hbond fit point. \item\end{CompactList}\item 
+const size\_\-t \textbf{fit\_\-pts\_\-size} () const \label{classASCbase_1_1HbondPoints_0d26e83f90943a2e13158647cd11d0c7}
+
+\item 
+void \bf{transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)
+\item 
+void \bf{inverse\_\-transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)
+\item 
+void \bf{revert} ()
+\item 
+void \bf{get\_\-current\_\-inverse\_\-3D\_\-transform} (Quaternion $\ast$Q, my\_\-float\_\-t $\ast$T) const 
+\item 
+my\_\-float\_\-t \bf{compute\_\-RMSD} () const 
+\item 
+hbond\_\-fit\_\-pt\_\-vci \textbf{closest\_\-fit\_\-pt} (const my\_\-float\_\-t $\ast$pos, my\_\-float\_\-t $\ast$d) const \label{classASCbase_1_1HbondPoints_6ed493e533d9b4d58040452835edc0bf}
+
+\item 
+hbond\_\-ideal\_\-pt\_\-vci \textbf{closest\_\-ideal\_\-pt} (const my\_\-float\_\-t $\ast$pos, my\_\-float\_\-t $\ast$d) const \label{classASCbase_1_1HbondPoints_bb868c3415537bf4201293ed155f8de6}
+
+\item 
+void \textbf{close\_\-fit\_\-pts} (const my\_\-float\_\-t $\ast$pos, const my\_\-float\_\-t radius, hbond\_\-fit\_\-pt\_\-vec::float\_\-const\_\-iter\_\-map $\ast$pts\_\-map) const \label{classASCbase_1_1HbondPoints_199ab61731d64ddbc1f1693dc27b5b58}
+
+\item 
+bool \textbf{fail} ()\label{classASCbase_1_1HbondPoints_693b4ff8920d1fb4245f10bcc2210c36}
+
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static const atom\_\-vci \textbf{NO\_\-CARBON\_\-NEIGHBOR} = \bf{atom\_\-t::NULL\_\-ATOM\_\-VCI}\label{classASCbase_1_1HbondPoints_ada240a8c1e41ce847e1a4d02d08eba8}
+
+\end{CompactItemize}
+\subsection*{Private Types}
+\begin{CompactItemize}
+\item 
+typedef bool($\ast$) \textbf{add\_\-angles\_\-t} (std::map$<$ residue\_\-type, angles\_\-vec $>$ $\ast$angles, const std::vector$<$ std::string $>$ \&tokens)\label{classASCbase_1_1HbondPoints_7fcd7708b6fd8bdae05d31921b01749d}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \bf{get\_\-nearby\_\-waters} (const \bf{PDBStructure} $\ast$prot, const std::vector$<$ std::string $>$ \&H2O\_\-res, std::vector$<$ atom\_\-vci $>$ $\ast$nearby\_\-waters, std::vector$<$ atom\_\-vci $>$ $\ast$bind\_\-atoms, std::vector$<$ atom\_\-vci $>$ $\ast$rad\_\-atoms)
+\begin{CompactList}\small\item\em Get points for the specified waters near the binding site. \item\end{CompactList}\item 
+void \textbf{init\_\-iterators} (\bf{hbond\_\-ideal\_\-pt\_\-vec} $\ast$ideal\_\-pts\_\-p, \bf{hbond\_\-fit\_\-pt\_\-vec} $\ast$fit\_\-pts\_\-p, std::vector$<$ int $>$ num\_\-fit\_\-pts)\label{classASCbase_1_1HbondPoints_7409a5ed54b6b5a1091ec470222d8fff}
+
+\item 
+bool \bf{get\_\-atom\_\-hbonds} (const chain\_\-const\_\-iter chain, const residue\_\-vci residue, const atom\_\-vci B\_\-atom, const std::vector$<$ atom\_\-vci $>$ \&rad\_\-atoms, \bf{hbond\_\-ideal\_\-pt\_\-vec} $\ast$ideal\_\-pts\_\-p, \bf{hbond\_\-fit\_\-pt\_\-vec} $\ast$fit\_\-pts\_\-p, std::vector$<$ int $>$ $\ast$num\_\-fit\_\-pts)
+\begin{CompactList}\small\item\em Set down the potential hbonding template points for the given atom. \item\end{CompactList}\item 
+bool \bf{calc\_\-positions} (const atom\_\-vci atom, const atom\_\-vci carbon\_\-nbr, const hbond\_\-data\_\-t \&hbond\_\-info, const my\_\-float\_\-t $\ast$$\ast$positions, const std::vector$<$ atom\_\-vci $>$ \&rad\_\-atoms, \bf{hbond\_\-ideal\_\-pt\_\-vec} $\ast$ideal\_\-pts\_\-p, \bf{hbond\_\-fit\_\-pt\_\-vec} $\ast$fit\_\-pts\_\-p, std::vector$<$ int $>$ $\ast$num\_\-fit\_\-pts)
+\item 
+bool \textbf{calc\_\-volume} (const atom\_\-vci atom, const atom\_\-vci carbon\_\-nbr, const hbond\_\-data\_\-t \&hbond\_\-info, const my\_\-float\_\-t $\ast$$\ast$positions, const std::vector$<$ atom\_\-vci $>$ \&rad\_\-atoms)\label{classASCbase_1_1HbondPoints_68b193317365c110b4f395b82f918ec5}
+
+\item 
+void \textbf{compute\_\-offset} (const my\_\-float\_\-t bond\_\-len, const my\_\-float\_\-t alpha, const my\_\-float\_\-t beta, const atom\_\-vci atom, my\_\-float\_\-t $\ast$offset)\label{classASCbase_1_1HbondPoints_e49c038430c23fd41cec0f86a7f8d3a0}
+
+\item 
+void \bf{add\_\-water\_\-points} (const atom\_\-vci water\_\-O, const std::vector$<$ atom\_\-vci $>$ \&rad\_\-atoms, \bf{Water\-Points} $\ast$water\_\-hbond\_\-pts, \bf{hbond\_\-ideal\_\-pt\_\-vec} $\ast$ideal\_\-pts\_\-p, \bf{hbond\_\-fit\_\-pt\_\-vec} $\ast$fit\_\-pts\_\-p, std::vector$<$ int $>$ $\ast$num\_\-fit\_\-pts)
+\item 
+void \bf{add\_\-metal\_\-points} (const atom\_\-vci metal, const std::vector$<$ atom\_\-vci $>$ \&rad\_\-atoms, \bf{hbond\_\-ideal\_\-pt\_\-vec} $\ast$ideal\_\-pts\_\-p, \bf{hbond\_\-fit\_\-pt\_\-vec} $\ast$fit\_\-pts\_\-p, std::vector$<$ int $>$ $\ast$num\_\-fit\_\-pts)
+\item 
+void \bf{transform\_\-point} (const my\_\-float\_\-t bond\_\-len, const my\_\-float\_\-t alpha, const my\_\-float\_\-t beta, const my\_\-float\_\-t $\ast$R\_\-inv, my\_\-float\_\-t $\ast$pt)
+\begin{CompactList}\small\item\em Wrapper function to setup temporaries and transform a given point. \item\end{CompactList}\item 
+bool \bf{sidechain\_\-nhbr\_\-pos} (residue\_\-vci residue, const \bf{hbond\_\-triad\_\-t} \&triad, const my\_\-float\_\-t $\ast$$\ast$positions, atom\_\-vci $\ast$carbon\_\-nbr)
+\begin{CompactList}\small\item\em Given the hbond triad get the postions of the atoms nbr\_\-A and nbr\_\-C. \item\end{CompactList}\item 
+bool \bf{load\_\-hbond\_\-angles} (\bf{Gen\-Points\-Parameters::hbond\_\-method\_\-t} hbond\_\-density, std::string param\_\-path)
+\begin{CompactList}\small\item\em Read in the ideal and favored hbond angles for the binding residues. \item\end{CompactList}\item 
+bool \bf{read\_\-angles\_\-file} (std::string fname, add\_\-angles\_\-t add\_\-angles)
+\item 
+void \bf{build\_\-residue\_\-table} ()
+\item 
+bool \bf{add\_\-fit\_\-point} (const atom\_\-vci atom, const my\_\-float\_\-t $\ast$pt\_\-pos, const interaction\-Type pt\_\-act\_\-type, const std::vector$<$ atom\_\-vci $>$ \&rad\_\-atoms, \bf{hbond\_\-fit\_\-pt\_\-vec} $\ast$fit\_\-pts\_\-p)
+\item 
+void \bf{add\_\-ideal\_\-point} (const atom\_\-vci atom, const atom\_\-vci carbon\_\-nbr, const my\_\-float\_\-t $\ast$pt\_\-pos, const interaction\-Type pt\_\-act\_\-type, const uint pt\_\-num, const uint num\_\-pts, \bf{hbond\_\-ideal\_\-pt\_\-vec} $\ast$ideal\_\-pts\_\-p, std::vector$<$ int $>$ $\ast$num\_\-fit\_\-pts)
+\begin{CompactList}\small\item\em Add hbond ideal point to the ideal points vector. \item\end{CompactList}\item 
+bool \textbf{load\_\-carbon\_\-nbrs} (const std::string rad\_\-fname)\label{classASCbase_1_1HbondPoints_45d676fb5eb395fd2e4f61f94ea67e76}
+
+\end{CompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{CompactItemize}
+\item 
+static bool \textbf{add\_\-ideal\_\-angles} (std::map$<$ residue\_\-type, angles\_\-vec $>$ $\ast$angles, const std::vector$<$ std::string $>$ \&tokens)\label{classASCbase_1_1HbondPoints_1c14aa20232ac3a35eba9e30f38a1f80}
+
+\item 
+static bool \textbf{add\_\-favored\_\-angles} (std::map$<$ residue\_\-type, angles\_\-vec $>$ $\ast$angles, const std::vector$<$ std::string $>$ \&tokens)\label{classASCbase_1_1HbondPoints_21eb7ee3276d166291a4a4d9a92f3988}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+\bf{Bounding\-Volume} $\ast$ \bf{bounding\_\-volume}\label{classASCbase_1_1HbondPoints_b8bd71a270952792930378c3ff38468b}
+
+\begin{CompactList}\small\item\em Pointer to the template bounding volume. \item\end{CompactList}\item 
+\bf{hbond\_\-fit\_\-pt\_\-vec} \textbf{fit\_\-pts}\label{classASCbase_1_1HbondPoints_d57a41a394ef6493da286ca08693e4e7}
+
+\item 
+\bf{hbond\_\-ideal\_\-pt\_\-vec} \textbf{ideal\_\-pts}\label{classASCbase_1_1HbondPoints_35657ed1abbe90e1ba27730d228c184d}
+
+\item 
+std::map$<$ residue\_\-type, angles\_\-vec $>$ \bf{A\_\-O\_\-angles}\label{classASCbase_1_1HbondPoints_c8dbf8d8fe8853dd5e8b507cd67a4c7e}
+
+\begin{CompactList}\small\item\em O hbond angles table -- keyed by PDB residue. \item\end{CompactList}\item 
+std::map$<$ residue\_\-type, angles\_\-vec $>$ \bf{A\_\-N\_\-angles}\label{classASCbase_1_1HbondPoints_324506b3ad239e15f1f82c4b7219ca6a}
+
+\begin{CompactList}\small\item\em N hbond angles table -- keyed by PDB residue. \item\end{CompactList}\item 
+residue\_\-table\_\-t \bf{hbond\_\-residue\_\-table}\label{classASCbase_1_1HbondPoints_45a1db04f743d2c692fc6c84be45765f}
+
+\begin{CompactList}\small\item\em Table holding the Hbond geometry -- keyed by PDB residue -- for a given residue and atom. \item\end{CompactList}\item 
+bool \textbf{A\_\-fail}\label{classASCbase_1_1HbondPoints_4cae614e34c14cde3be1c4c794944c87}
+
+\item 
+bool \textbf{A\_\-compute\_\-volume}\label{classASCbase_1_1HbondPoints_1314acbf5e42587a66484b4c37e766e2}
+
+\item 
+\bf{my\_\-float\_\-array} \textbf{A\_\-hbond\_\-vol}\label{classASCbase_1_1HbondPoints_806e96a34dca894dadb4b5b97fbb4117}
+
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static const my\_\-float\_\-t \bf{MAXRADDIST} = 9.0\label{classASCbase_1_1HbondPoints_92890c70651529c4a1614cf1860ee411}
+
+\begin{CompactList}\small\item\em So called rad file distance. \item\end{CompactList}\item 
+static const my\_\-float\_\-t \bf{MAXBINDDIST} = 5.0\label{classASCbase_1_1HbondPoints_90584820c666418a18d36d3b8b84e5b8}
+
+\begin{CompactList}\small\item\em So called bind file distance. \item\end{CompactList}\item 
+static const my\_\-float\_\-t \bf{MIN\_\-VDW\_\-DIST} = 2.5\label{classASCbase_1_1HbondPoints_d891ae0c548a5c6850c3921581a98bb3}
+
+\begin{CompactList}\small\item\em Min distance for template pt to prot atom. \item\end{CompactList}\item 
+static const my\_\-float\_\-t \bf{MIN\_\-VDW\_\-DIST\_\-2}
+\begin{CompactList}\small\item\em Square of min vdw dist. \item\end{CompactList}\item 
+static const my\_\-float\_\-t \bf{MIN\_\-VDW\_\-DIST\_\-METAL} = 2.0\label{classASCbase_1_1HbondPoints_56639b91eee7ddcb46dc46952accc1e9}
+
+\begin{CompactList}\small\item\em Min distance for template pt to metal atom. \item\end{CompactList}\item 
+static const my\_\-float\_\-t \bf{MIN\_\-VDW\_\-DIST\_\-METAL\_\-2}
+\begin{CompactList}\small\item\em Square of min vdw dist to metals. \item\end{CompactList}\item 
+static const std::string \bf{\_\-fname} = \char`\"{}Hbond\-Points.C\char`\"{}\label{classASCbase_1_1HbondPoints_47f608875e817aa6b3ebf9a3c21b731f}
+
+\begin{CompactList}\small\item\em \char`\"{}Hbond\-Points.C\char`\"{} \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Compute the hydrogen bonding template points based on the protein residues in the binding site. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!HbondPoints@{HbondPoints}}
+\index{HbondPoints@{HbondPoints}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Hbond\-Points::Hbond\-Points (std::istream \& {\em in}, const uint {\em num\_\-lines}, \bf{PDBBase} \& {\em rad\_\-atoms}, \bf{PDBBase} \& {\em points})}\label{classASCbase_1_1HbondPoints_da198374071ef598a898466343ca4d17}
+
+
+Build the hbonds\_\-pts vector from a stored sitemap. 
+
+This needs to be updated at some point so that the atoms and points are correctly typed -- so that there is no possiblity of passing in the wrong arguments \index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!HbondPoints@{HbondPoints}}
+\index{HbondPoints@{HbondPoints}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Hbond\-Points::Hbond\-Points (const \bf{Gen\-Points\-Parameters::hbond\_\-method\_\-t} {\em hbond\_\-density}, const std::string {\em param\_\-path}, \bf{Bounding\-Volume} $\ast$ {\em vol\_\-in}, const bool {\em compute\_\-volume} = {\tt false})}\label{classASCbase_1_1HbondPoints_ffcbf1d30cd9190ad924c5a263f387c6}
+
+
+Basic constructor. 
+
+Sets a pointer to the bounding volume, loads the parameters for the hbond geometry from parameter files and builds the parameters table (keyed by the PDB residue name/type).
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em density}]How coarse or finely to lay down template points \item[{\em param\_\-path}]Path to the ASCbase parameters directory \item[{\em vol\_\-in}]Reference to the template bounding volume \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!add_fit_point@{add\_\-fit\_\-point}}
+\index{add_fit_point@{add\_\-fit\_\-point}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Hbond\-Points::add\_\-fit\_\-point (const atom\_\-vci {\em atom}, const my\_\-float\_\-t $\ast$ {\em pt\_\-pos}, const interaction\-Type {\em pt\_\-act\_\-type}, const std::vector$<$ atom\_\-vci $>$ \& {\em rad\_\-atoms}, \bf{hbond\_\-fit\_\-pt\_\-vec} $\ast$ {\em fit\_\-pts\_\-p})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1HbondPoints_14615a8c95ec86228c24de2b96dab9eb}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em atom}]Iterator to the atom that could make the interaction \item[{\em pt\_\-pos}]Position of the template point \item[{\em pt\_\-act\_\-type}]Interaction type of the template point \item[{\em rad\_\-atoms}]Atoms near the binding site \item[{\em fit\_\-pts\_\-p}]Pointer to the vector holding the hbond fit points \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]True if point was added to the fit points vector, else false \end{Desc}
+\index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!add_ideal_point@{add\_\-ideal\_\-point}}
+\index{add_ideal_point@{add\_\-ideal\_\-point}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Hbond\-Points::add\_\-ideal\_\-point (const atom\_\-vci {\em atom}, const atom\_\-vci {\em carbon\_\-nbr}, const my\_\-float\_\-t $\ast$ {\em pt\_\-pos}, const interaction\-Type {\em pt\_\-act\_\-type}, const uint {\em pt\_\-num}, const uint {\em num\_\-pts}, \bf{hbond\_\-ideal\_\-pt\_\-vec} $\ast$ {\em ideal\_\-pts\_\-p}, std::vector$<$ int $>$ $\ast$ {\em num\_\-fit\_\-pts})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1HbondPoints_7a16d0105816da029d43b16136fa67f8}
+
+
+Add hbond ideal point to the ideal points vector. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em atom}]Iterator to the atom that could make the interaction \item[{\em pt\_\-pos}]Position of the template point \item[{\em pt\_\-act\_\-type}]Interaction type of the template point \item[{\em pt\_\-num}]Ideal point number \item[{\em num\_\-pts}]Number of fit points corresponding to the ideal point \item[{\em ideal\_\-pts\_\-p}]Pointer to the vector holding the hbond fit points \item[{\em num\_\-fit\_\-pts}]Vector holding the number of fit points for each ideal point \end{description}
+\end{Desc}
+\index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!add_metal_points@{add\_\-metal\_\-points}}
+\index{add_metal_points@{add\_\-metal\_\-points}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Hbond\-Points::add\_\-metal\_\-points (const atom\_\-vci {\em metal}, const std::vector$<$ atom\_\-vci $>$ \& {\em rad\_\-atoms}, \bf{hbond\_\-ideal\_\-pt\_\-vec} $\ast$ {\em ideal\_\-pts\_\-p}, \bf{hbond\_\-fit\_\-pt\_\-vec} $\ast$ {\em fit\_\-pts\_\-p}, std::vector$<$ int $>$ $\ast$ {\em num\_\-fit\_\-pts})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1HbondPoints_a51c90df30b66be9745fe00ea616d5be}
+
+
+This method is similar to that of SLIDE with a couple of exceptions: 1) To stay consistent with the ASCbase handling of points, no template points can be closer than 2.5 (A) to the center of a metal atom (except for the template points arising from a given metal atom). 2) The distribution of points on the sphere is somewhat different and arises from a systematic discretization of a sphere
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em metal}]Iterator to the metal atom that needs template points \item[{\em rad\_\-atoms}]Vector holding the rad atoms \item[{\em ideal\_\-pts\_\-p}]Pointer to the vector holding the ideal hbond points \item[{\em fit\_\-pts\_\-p}]Pointer to the vector holding the hbond points for fitting \item[{\em num\_\-fit\_\-pts}]Pointer to the vector holding the number of fit points for a given object (metal atom, lone pair or hydrogen atom). \end{description}
+\end{Desc}
+\index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!add_water_points@{add\_\-water\_\-points}}
+\index{add_water_points@{add\_\-water\_\-points}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Hbond\-Points::add\_\-water\_\-points (const atom\_\-vci {\em water\_\-O}, const std::vector$<$ atom\_\-vci $>$ \& {\em rad\_\-atoms}, \bf{Water\-Points} $\ast$ {\em water\_\-hbond\_\-pts}, \bf{hbond\_\-ideal\_\-pt\_\-vec} $\ast$ {\em ideal\_\-pts\_\-p}, \bf{hbond\_\-fit\_\-pt\_\-vec} $\ast$ {\em fit\_\-pts\_\-p}, std::vector$<$ int $>$ $\ast$ {\em num\_\-fit\_\-pts})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1HbondPoints_94654be41f529fa7a22c08ff9f422e50}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em water\_\-O}]Iterator to the water oxygen atom that requires template points \item[{\em rad\_\-atoms}]Vector holding the rad atoms \item[{\em water\_\-hbond\_\-pts}]Class to get the water hbond points \item[{\em ideal\_\-pts\_\-p}]Pointer to the vector holding the ideal hbond points \item[{\em fit\_\-pts\_\-p}]Pointer to the vector holding the hbond points for fitting \item[{\em num\_\-fit\_\-pts}]Pointer to the vector holding the number of fit points for a given object (metal atom, lone pair or hydrogen atom). \end{description}
+\end{Desc}
+\index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!build_residue_table@{build\_\-residue\_\-table}}
+\index{build_residue_table@{build\_\-residue\_\-table}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Hbond\-Points::build\_\-residue\_\-table ()\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1HbondPoints_1d461841f496a487d56a8041b3443fc1}
+
+
+Build a table keyed by residue type that holds the residues and corresponding atoms which have been parameterized to make hbonds \index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!calc_positions@{calc\_\-positions}}
+\index{calc_positions@{calc\_\-positions}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Hbond\-Points::calc\_\-positions (const atom\_\-vci {\em atom}, const atom\_\-vci {\em carbon\_\-nbr}, const hbond\_\-data\_\-t \& {\em hbond\_\-info}, const my\_\-float\_\-t $\ast$$\ast$ {\em positions}, const std::vector$<$ atom\_\-vci $>$ \& {\em rad\_\-atoms}, \bf{hbond\_\-ideal\_\-pt\_\-vec} $\ast$ {\em ideal\_\-pts\_\-p}, \bf{hbond\_\-fit\_\-pt\_\-vec} $\ast$ {\em fit\_\-pts\_\-p}, std::vector$<$ int $>$ $\ast$ {\em num\_\-fit\_\-pts})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1HbondPoints_04d88991f26fd35fddb13e8fd9b24a02}
+
+
+Given the hbonding atom and 2 of its neighbors, compute the template points by transforming the angles and distances from the model to the structure file coordinates of the given atoms.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em atom}]The N or O atom requiring hbond template points \item[{\em hbond\_\-info}]Struct with the atom name, favored angles, interaction distance and template point type \item[{\em positions}]Array holding the positions of neighbor atom A, current N or O and neighbor atom C \item[{\em rad\_\-atoms}]Vector denoting the rad atoms \item[{\em ideal\_\-pts\_\-p}]Pointer to the vector holding the ideal hbond points \item[{\em fit\_\-pts\_\-p}]Pointer to the vector holding the hbond points for fitting \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Currently returns true \end{Desc}
+\index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!compute_RMSD@{compute\_\-RMSD}}
+\index{compute_RMSD@{compute\_\-RMSD}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}my\_\-float\_\-t ASCbase::Hbond\-Points::compute\_\-RMSD () const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1HbondPoints_ff599a0e97c9b535f644765f8a63be1f}
+
+
+Compute the root mean squared deviation (RMSD) between the current and orignial positions of the fit points \index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!find_binding_site_hbonds@{find\_\-binding\_\-site\_\-hbonds}}
+\index{find_binding_site_hbonds@{find\_\-binding\_\-site\_\-hbonds}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Hbond\-Points::find\_\-binding\_\-site\_\-hbonds (const \bf{PDBStructure} $\ast$ {\em prot}, const std::vector$<$ std::string $>$ \& {\em H2O\_\-res\_\-names}, const bool {\em include\_\-metals}, const interact\_\-atoms\_\-vec \& {\em hbond\_\-atoms}, std::vector$<$ atom\_\-vci $>$ $\ast$ {\em bind\_\-atoms}, std::vector$<$ atom\_\-vci $>$ $\ast$ {\em rad\_\-atoms})}\label{classASCbase_1_1HbondPoints_4ac75a890a38f90de37bd4793da50fef}
+
+
+Get the rad and binding site atoms and compute the hbond positions for the binding site residues.
+
+This method represents an initial attempt at getting water conserved water molecules and required metals as part of the binding site. If waters or metals are included, all waters or metals respectively in the protein structure file and near the binding site will be considered as \char`\"{}part of the protein\char`\"{}.
+
+Inclusion of water molecules requires correct protonation and orientation of all water molecules in the binding site.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-begin}]Const iterator to the first protein chain \item[{\em \_\-end}]Const iterator to the last+1 protein chain \item[{\em H2O\_\-res\_\-names}]The names of the water residues in the protein structure to include as \char`\"{}part of the protein\char`\"{}. \item[{\em include\_\-metals}]True implies include all metal atoms in the the protein structure as \char`\"{}part of the protein\char`\"{}. \item[{\em bind\_\-atoms}]Pointer to a vector to store the binding site protein atoms \end{description}
+\end{Desc}
+\index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!get_atom_hbonds@{get\_\-atom\_\-hbonds}}
+\index{get_atom_hbonds@{get\_\-atom\_\-hbonds}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Hbond\-Points::get\_\-atom\_\-hbonds (const chain\_\-const\_\-iter {\em chain}, const residue\_\-vci {\em residue}, const atom\_\-vci {\em B\_\-atom}, const std::vector$<$ atom\_\-vci $>$ \& {\em rad\_\-atoms}, \bf{hbond\_\-ideal\_\-pt\_\-vec} $\ast$ {\em ideal\_\-pts\_\-p}, \bf{hbond\_\-fit\_\-pt\_\-vec} $\ast$ {\em fit\_\-pts\_\-p}, std::vector$<$ int $>$ $\ast$ {\em num\_\-fit\_\-pts})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1HbondPoints_097c5b40240e8c09fe3bbb18fde8f373}
+
+
+Set down the potential hbonding template points for the given atom. 
+
+Using the given atom and residue, set down the hbond template points for that atom and remove those template points with heavy overlap of of the protein
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em chain}]Const iterator to the current chain \item[{\em residue}]Const iterator to the current residue \item[{\em B\_\-atom}]Const iterator to the N or O atom requiring template points \item[{\em rad\_\-atoms}]Const vector specifying the rad atoms \item[{\em ideal\_\-pts\_\-p}]Pointer to the vector holding the ideal hbond points \item[{\em fit\_\-pts\_\-p}]Pointer to the vector holding the hbond points for fitting \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]False if we could not lay down template points for the given N or O (not including mainchain Ns and Os) \end{Desc}
+\index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!get_current_inverse_3D_transform@{get\_\-current\_\-inverse\_\-3D\_\-transform}}
+\index{get_current_inverse_3D_transform@{get\_\-current\_\-inverse\_\-3D\_\-transform}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ASCbase::Hbond\-Points::get\_\-current\_\-inverse\_\-3D\_\-transform (Quaternion $\ast$ {\em Q}, my\_\-float\_\-t $\ast$ {\em T}) const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1HbondPoints_315af5cac9bd9bbd51d52bd2539ed075}
+
+
+Get transform to move current fit points to original position of the fit points \index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!get_nearby_waters@{get\_\-nearby\_\-waters}}
+\index{get_nearby_waters@{get\_\-nearby\_\-waters}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Hbond\-Points::get\_\-nearby\_\-waters (const \bf{PDBStructure} $\ast$ {\em prot}, const std::vector$<$ std::string $>$ \& {\em H2O\_\-res}, std::vector$<$ atom\_\-vci $>$ $\ast$ {\em nearby\_\-waters}, std::vector$<$ atom\_\-vci $>$ $\ast$ {\em bind\_\-atoms}, std::vector$<$ atom\_\-vci $>$ $\ast$ {\em rad\_\-atoms})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1HbondPoints_ff5ef9470438e55c45d421cafde76651}
+
+
+Get points for the specified waters near the binding site. 
+
+Check if water atoms are near the binding site based on the location of the oxygen atoms of H2O -- assume that if a chain\-ID is specified with the water residue \#, the chain\-ID always preceeds the residue \#. Similarly if an insertion code (i\-Code) is specified with a water residue \#, the i\-Code always follows the residue \# \index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!inverse_transform@{inverse\_\-transform}}
+\index{inverse_transform@{inverse\_\-transform}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ASCbase::Hbond\-Points::inverse\_\-transform (const my\_\-float\_\-t $\ast$ {\em R}, const my\_\-float\_\-t $\ast$ {\em T})\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1HbondPoints_f9c02371e09065fb1099aa0a0921b4c4}
+
+
+Transform the positions of the hbond points and rotate their associated normal vectors (directions) by the inverse transform \index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!load_hbond_angles@{load\_\-hbond\_\-angles}}
+\index{load_hbond_angles@{load\_\-hbond\_\-angles}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Hbond\-Points::load\_\-hbond\_\-angles (\bf{Gen\-Points\-Parameters::hbond\_\-method\_\-t} {\em hbond\_\-density}, std::string {\em param\_\-path})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1HbondPoints_9c96fe73b65271a49aebf9e4f17fc787}
+
+
+Read in the ideal and favored hbond angles for the binding residues. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em hbond\_\-density}]Sampling density for hbond angles \item[{\em param\_\-path}]Path to the ASCbase parameters directory \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]True if both files were found and had no parsing errors, otherwise false \end{Desc}
+\index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!read_angles_file@{read\_\-angles\_\-file}}
+\index{read_angles_file@{read\_\-angles\_\-file}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Hbond\-Points::read\_\-angles\_\-file (std::string {\em fname}, add\_\-angles\_\-t {\em add\_\-angles})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1HbondPoints_dd0d8a2958197f4affccd88818d0f90c}
+
+
+Two types of angle files should be read. One is the ideal angles file that is expected to have only the angles for which the DHA and HAP (hydrogen-acceptor-preacceptor) angles are optimum (typically angle DHA = Pi). Only one angle pair per H or lone pair is expected -- specifying more than one angle pair per H or lone pair will yield undetermined results.
+
+The second angles file should be one which holds one or more angle pairs for a given lone pair or H. The angle pairs represent a discrete sampling of the favorable angles allowed/used by a given lone pair or H. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fname}]Path to the hbond angles parameter file \item[{\em add\_\-angles}]Pointer to the function to use to load the angles. The current options are add\_\-ideal\_\-angles() or add\_\-favored\_\-angles(). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]True if the file exists and no parsing errors occured, otherwise false \end{Desc}
+\index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!revert@{revert}}
+\index{revert@{revert}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ASCbase::Hbond\-Points::revert ()\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1HbondPoints_cf6e668fee3d6d59bb7a1205db1c8a84}
+
+
+Revert the positions of the hbond points and rotate their associated normal vectors (directions) to the positions and normals first stored. \index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!sidechain_nhbr_pos@{sidechain\_\-nhbr\_\-pos}}
+\index{sidechain_nhbr_pos@{sidechain\_\-nhbr\_\-pos}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Hbond\-Points::sidechain\_\-nhbr\_\-pos (residue\_\-vci {\em residue}, const \bf{hbond\_\-triad\_\-t} \& {\em triad}, const my\_\-float\_\-t $\ast$$\ast$ {\em positions}, atom\_\-vci $\ast$ {\em carbon\_\-nbr})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1HbondPoints_d0b52b652b7ec3367efa7d507b10d663}
+
+
+Given the hbond triad get the postions of the atoms nbr\_\-A and nbr\_\-C. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em residue}]Const iterator to the current residue \item[{\em triad}]Const reference to the current atom triplet \item[{\em positions}]Pointer to array to store the positions for nbr\_\-A and nbr\_\-C \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]True if both neighbors were found (in the given residue), else return false. \end{Desc}
+\index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!transform@{transform}}
+\index{transform@{transform}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ASCbase::Hbond\-Points::transform (const my\_\-float\_\-t $\ast$ {\em R}, const my\_\-float\_\-t $\ast$ {\em T})\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1HbondPoints_2b4848ccd8ce2fed483e32ac356ebe12}
+
+
+Transform the positions of the hbond points and rotate their associated normal vectors (directions) \index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!transform_point@{transform\_\-point}}
+\index{transform_point@{transform\_\-point}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void ASCbase::Hbond\-Points::transform\_\-point (const my\_\-float\_\-t {\em bond\_\-len}, const my\_\-float\_\-t {\em alpha}, const my\_\-float\_\-t {\em beta}, const my\_\-float\_\-t $\ast$ {\em R\_\-inv}, my\_\-float\_\-t $\ast$ {\em pt})\hspace{0.3cm}{\tt  [private]}}\label{classASCbase_1_1HbondPoints_ddac8742752fc700af5512d4ee7b4d75}
+
+
+Wrapper function to setup temporaries and transform a given point. 
+
+This functions main purpose is to reduce the number of lines in calc\_\-positions
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em bond\_\-len}]Distance to put template points from interacting heavy atom's center \item[{\em alpha}]In-plane angle \item[{\em beta}]Out-of-plane angle \item[{\em R\_\-inv}]The rotation matrix used to rotate the point -- named R inverse because of the construction of this matrix was by first finding R (in calc\_\-positions). \item[{\em pt}]The point to rotate \end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!MIN_VDW_DIST_2@{MIN\_\-VDW\_\-DIST\_\-2}}
+\index{MIN_VDW_DIST_2@{MIN\_\-VDW\_\-DIST\_\-2}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t \bf{Hbond\-Points::MIN\_\-VDW\_\-DIST\_\-2}\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1HbondPoints_c3782b5110cb3ebf7c9c81fe98bac1a8}
+
+
+\textbf{Initial value:}
+
+\begin{Code}\begin{verbatim} 
+  HbondPoints::MIN_VDW_DIST * HbondPoints::MIN_VDW_DIST
+\end{verbatim}\end{Code}
+Square of min vdw dist. 
+
+\index{ASCbase::HbondPoints@{ASCbase::Hbond\-Points}!MIN_VDW_DIST_METAL_2@{MIN\_\-VDW\_\-DIST\_\-METAL\_\-2}}
+\index{MIN_VDW_DIST_METAL_2@{MIN\_\-VDW\_\-DIST\_\-METAL\_\-2}!ASCbase::HbondPoints@{ASCbase::Hbond\-Points}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t \bf{Hbond\-Points::MIN\_\-VDW\_\-DIST\_\-METAL\_\-2}\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1HbondPoints_9fbe94d92727f2f547b3cc0bf6b5543a}
+
+
+\textbf{Initial value:}
+
+\begin{Code}\begin{verbatim} 
+  HbondPoints::MIN_VDW_DIST_METAL * HbondPoints::MIN_VDW_DIST_METAL
+\end{verbatim}\end{Code}
+Square of min vdw dist to metals. 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Hbond\-Points.H\item 
+Hbond\-Points.C\end{CompactItemize}

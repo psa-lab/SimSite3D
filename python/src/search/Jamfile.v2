@@ -1,0 +1,31 @@
+import os ;
+local ASCBASE_INSTALL_DIR = [ os.environ  ASCBASE_INSTALL_DIR ] ;
+
+# Extension build rules -- 
+python-extension _parameters 
+  : ParametersPy.cc /ASCbasePy//search_lib ;
+python-extension _ModelSitemap 
+  : ModelSitemapPy.cc /ASCbasePy//search_lib /ASCbasePy//sitemaps_lib ;
+python-extension _DbaseSitemap 
+  : DbaseSitemapPy.cc /ASCbasePy//search_lib /ASCbasePy//sitemaps_lib ;
+python-extension _MatchTriangles
+  : MatchTrianglesPy.cc /ASCbasePy//search_lib /ASCbasePy//sitemaps_lib ;
+python-extension _ScoreMapBase
+  : ScoreMapBasePy.cc /ASCbasePy//search_lib /ASCbasePy//sitemaps_lib ;
+python-extension _WeightedSumsScore
+  : WeightedSumsScorePy.cc /ASCbasePy//search_lib /ASCbasePy//score_lib 
+    /ASCbasePy//sitemaps_lib /ASCbasePy//lapack /ASCbasePy//blas ;
+python-extension _point_and_surf_score
+  : point_and_surf_scorePy.cc /ASCbasePy//search_lib /ASCbasePy//score_lib
+    /ASCbasePy//sitemaps_lib /ASCbasePy//lapack /ASCbasePy//blas ;
+#python-extension _HbondSurfacesScore
+#  : HbondSurfacesScorePy.cc /ASCbasePy//search_lib /ASCbasePy//score_lib
+#    /ASCbasePy//sitemaps_lib ;
+#python-extension _ModelHbondSurfaces
+#  : ModelHbondSurfacesPy.cc  /ASCbasePy//search_lib /ASCbasePy//sitemaps_lib ;
+
+# Install rules
+install $(ASCBASE_INSTALL_DIR)/ASCbasePy/search 
+  : _parameters _ModelSitemap _DbaseSitemap _MatchTriangles _ScoreMapBase 
+    _WeightedSumsScore _point_and_surf_score ;
+#    _point_and_surf_score _HbondSurfacesScore _ModelHbondSurfaces ;

@@ -1,0 +1,371 @@
+\section{ASCbase::Hbond\-Geometry Class Reference}
+\label{classASCbase_1_1HbondGeometry}\index{ASCbase::HbondGeometry@{ASCbase::HbondGeometry}}
+A helper class to compute various geometrical features of hydrogen bonds.  
+
+
+{\tt \#include $<$Hbond\-Geometry.H$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+typedef std::map$<$ atom\_\-type, const \bf{sidechain\_\-donor\_\-t} $\ast$ $>$ \textbf{SC\_\-tbl\_\-atom\_\-lvl}\label{classASCbase_1_1HbondGeometry_d4cc22996235d8e42553648883ab0ff9}
+
+\item 
+typedef std::map$<$ residue\_\-type, SC\_\-tbl\_\-atom\_\-lvl $>$ \textbf{SC\_\-tbl\_\-res\_\-lvl}\label{classASCbase_1_1HbondGeometry_78c70a6cd40282285300c5182331d7ee}
+
+\item 
+typedef std::map$<$ atom\_\-type, const \bf{sidechain\_\-preacc\_\-t} $\ast$ $>$ \textbf{preacc\_\-tbl\_\-atom\_\-lvl}\label{classASCbase_1_1HbondGeometry_925f736c4878f7dc63eeeca1118fbf2f}
+
+\item 
+typedef std::map$<$ residue\_\-type, preacc\_\-tbl\_\-atom\_\-lvl $>$ \textbf{preacc\_\-tbl\_\-res\_\-lvl}\label{classASCbase_1_1HbondGeometry_c6183711d166dd7189ebdc4d76e957ef}
+
+\item 
+\textbf{ACCEPTOR\_\-ACCEPTOR} = ACCEPTOR + ACCEPTOR\label{classASCbase_1_1HbondGeometry_c0cc28273dcab0f6d690a41ff295b4c7f49b49a92bbe24428a7c650861ac95be}
+
+\item 
+\textbf{ACCEPTOR\_\-DONOR} = ACCEPTOR + DONOR\label{classASCbase_1_1HbondGeometry_c0cc28273dcab0f6d690a41ff295b4c78cb38b64e9d0137e0587012fc849f4f8}
+
+\item 
+\textbf{ACCEPTOR\_\-DONEPTOR} = ACCEPTOR + DONEPTOR\label{classASCbase_1_1HbondGeometry_c0cc28273dcab0f6d690a41ff295b4c70dc886ed7385a07a0b2581df51e71ca5}
+
+\item 
+\textbf{DONOR\_\-DONOR} = DONOR + DONOR\label{classASCbase_1_1HbondGeometry_c0cc28273dcab0f6d690a41ff295b4c7fd76d0c5d776c2ebbda73bad9765b86e}
+
+\item 
+\textbf{DONOR\_\-DONEPTOR} = DONOR + DONEPTOR\label{classASCbase_1_1HbondGeometry_c0cc28273dcab0f6d690a41ff295b4c7bfc921b96362e9a318e6ec9432caf620}
+
+\item 
+\textbf{DONEPTOR\_\-DONEPTOR} = DONEPTOR + DONEPTOR\label{classASCbase_1_1HbondGeometry_c0cc28273dcab0f6d690a41ff295b4c7b865650cd901b4ab0175655d807248e9}
+
+\item 
+\textbf{ACCEPTOR\_\-METAL\_\-1} = ACCEPTOR + METAL\_\-1\label{classASCbase_1_1HbondGeometry_c0cc28273dcab0f6d690a41ff295b4c7bca79ba395ce711d8aa3beccf90fc745}
+
+\item 
+\textbf{ACCEPTOR\_\-METAL\_\-2} = ACCEPTOR + METAL\_\-2\label{classASCbase_1_1HbondGeometry_c0cc28273dcab0f6d690a41ff295b4c7e04071c71c857ba2eb586f73d9a94910}
+
+\item 
+\textbf{DONEPTOR\_\-METAL\_\-1} = DONEPTOR + METAL\_\-1\label{classASCbase_1_1HbondGeometry_c0cc28273dcab0f6d690a41ff295b4c7b5a26234ecac6d9aab327f65aeddfc8e}
+
+\item 
+\textbf{DONEPTOR\_\-METAL\_\-2} = DONEPTOR + METAL\_\-2\label{classASCbase_1_1HbondGeometry_c0cc28273dcab0f6d690a41ff295b4c70379a44a9e41c1028a840746708099d6}
+
+\item 
+\textbf{NO\_\-FLIP} = 0\label{classASCbase_1_1HbondGeometry_3050e159423a19503016965054e429e745e9128eb1c77dce6e3d7ec7dff9f60e}
+
+\item 
+\textbf{FLIP\_\-NBR\_\-Y}\label{classASCbase_1_1HbondGeometry_3050e159423a19503016965054e429e7c249ca22e8f59126719ec419d5480d2a}
+
+\item 
+\textbf{FLIP\_\-ACC\_\-Y}\label{classASCbase_1_1HbondGeometry_3050e159423a19503016965054e429e713b124e29dcd7cd9ddc701831191d17e}
+
+\item 
+\textbf{FLIP\_\-Z}\label{classASCbase_1_1HbondGeometry_3050e159423a19503016965054e429e7f2590814bca79e5321a0ad03611d35bc}
+
+\item 
+enum \textbf{interaction\-Sum} \{ \par
+\textbf{ACCEPTOR\_\-ACCEPTOR} =  ACCEPTOR + ACCEPTOR, 
+\textbf{ACCEPTOR\_\-DONOR} =  ACCEPTOR + DONOR, 
+\textbf{ACCEPTOR\_\-DONEPTOR} =  ACCEPTOR + DONEPTOR, 
+\textbf{DONOR\_\-DONOR} =  DONOR + DONOR, 
+\par
+\textbf{DONOR\_\-DONEPTOR} =  DONOR + DONEPTOR, 
+\textbf{DONEPTOR\_\-DONEPTOR} =  DONEPTOR + DONEPTOR, 
+\textbf{ACCEPTOR\_\-METAL\_\-1} =  ACCEPTOR + METAL\_\-1, 
+\textbf{ACCEPTOR\_\-METAL\_\-2} =  ACCEPTOR + METAL\_\-2, 
+\par
+\textbf{DONEPTOR\_\-METAL\_\-1} =  DONEPTOR + METAL\_\-1, 
+\textbf{DONEPTOR\_\-METAL\_\-2} =  DONEPTOR + METAL\_\-2
+ \}
+\item 
+enum \bf{local\_\-coord\_\-flip} \{ \textbf{NO\_\-FLIP} =  0, 
+\textbf{FLIP\_\-NBR\_\-Y}, 
+\textbf{FLIP\_\-ACC\_\-Y}, 
+\textbf{FLIP\_\-Z}
+ \}
+\begin{CompactList}\small\item\em Used to define the hbond coordinate symmetry. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{Hbond\-Geometry} ()\label{classASCbase_1_1HbondGeometry_f6af480ef52e15eb1ebd8adde6d525d7}
+
+\begin{CompactList}\small\item\em do nothin constructor \item\end{CompactList}\item 
+\bf{$\sim$Hbond\-Geometry} ()\label{classASCbase_1_1HbondGeometry_9c9e35e681954f55d64548c7f8bfd086}
+
+\begin{CompactList}\small\item\em do nothin destructor \item\end{CompactList}\item 
+bool \textbf{intra\_\-prot\_\-hbond} (atom\_\-vci A, atom\_\-vci D, my\_\-float\_\-t sq\_\-dist, \bf{PDBStructure} \&prot, my\_\-float\_\-t $\ast$cos\_\-theta, my\_\-float\_\-t $\ast$cos\_\-delta)\label{classASCbase_1_1HbondGeometry_bce57004079a80856d9c5078b3b487d7}
+
+\item 
+bool \textbf{intra\_\-lig\_\-hbond} (atom\_\-vci A, atom\_\-vci D, my\_\-float\_\-t sq\_\-dist, \bf{mol2File} \&ligand, my\_\-float\_\-t $\ast$cos\_\-theta, my\_\-float\_\-t $\ast$cos\_\-delta)\label{classASCbase_1_1HbondGeometry_ba541a4f7b2f58f99ef30fb933e5dd64}
+
+\item 
+bool \bf{prot\_\-lig\_\-hbond} (atom\_\-vci prot\_\-atom, atom\_\-vci lig\_\-atom, \bf{PDBStructure} \&prot, \bf{mol2File} \&ligand, my\_\-float\_\-t sq\_\-dist, my\_\-float\_\-t $\ast$cos\_\-theta, my\_\-float\_\-t $\ast$cos\_\-delta)
+\item 
+bool \bf{protein\_\-donor\_\-cos\_\-theta} (atom\_\-vci prot\_\-atom, atom\_\-vci acceptor, \bf{PDBStructure} \&prot, my\_\-float\_\-t $\ast$H\_\-pos, my\_\-float\_\-t $\ast$cos\_\-theta)
+\begin{CompactList}\small\item\em Compute the cosine of theta (DHA angle) when protein atom is the donor. \item\end{CompactList}\item 
+bool \bf{ligand\_\-donor\_\-cos\_\-theta} (atom\_\-vci lig\_\-atom, atom\_\-vci acceptor, \bf{mol2File} \&ligand, my\_\-float\_\-t $\ast$H\_\-pos, my\_\-float\_\-t $\ast$angle)
+\begin{CompactList}\small\item\em Compute the cosine of theta (DHA angle) when ligand atom is the donor. \item\end{CompactList}\item 
+bool \bf{prot\_\-acceptor\_\-cos\_\-delta} (atom\_\-vci acceptor, \bf{PDBStructure} \&prot, my\_\-float\_\-t $\ast$H\_\-pos, my\_\-float\_\-t $\ast$cos\_\-delta)
+\item 
+bool \bf{lig\_\-acceptor\_\-cos\_\-delta} (atom\_\-vci acceptor, \bf{mol2File} \&ligand, my\_\-float\_\-t $\ast$H\_\-pos, my\_\-float\_\-t $\ast$cos\_\-delta)
+\item 
+void \bf{compute\_\-H\_\-position} (atom\_\-vci hvy\_\-nbr\_\-A, atom\_\-vci donor, atom\_\-vci hvy\_\-nbr\_\-B, atom\_\-vci acceptor, const my\_\-float\_\-t $\ast$local\_\-H\_\-pos, const \bf{local\_\-coord\_\-flip} coord\_\-flip, my\_\-float\_\-t $\ast$new\_\-H\_\-pos)\label{classASCbase_1_1HbondGeometry_b458eb015b0f1b1febf0ba0e69eec510}
+
+\begin{CompactList}\small\item\em Compute the hydrogen position for a number of cases. \item\end{CompactList}\item 
+bool \bf{compute\_\-local\_\-H\_\-pos} (atom\_\-vci hvy\_\-nbr, atom\_\-vci lig\_\-atom, atom\_\-vci H\_\-atom, my\_\-float\_\-t $\ast$local\_\-H\_\-pos)\label{classASCbase_1_1HbondGeometry_9f6be856e4b9a1ca557a27493453626a}
+
+\begin{CompactList}\small\item\em Compute the local hydrogen position for a non sp3/sp4 ligand donor. \item\end{CompactList}\item 
+my\_\-float\_\-t \bf{cosine\_\-angle} (my\_\-float\_\-t $\ast$A, my\_\-float\_\-t $\ast$B, my\_\-float\_\-t $\ast$C, my\_\-float\_\-t $\ast$cos\_\-angle)\label{classASCbase_1_1HbondGeometry_f331b8cf86d1b6d75a1d9002cc728cde}
+
+\begin{CompactList}\small\item\em Compute the cosine of the angle ABC. \item\end{CompactList}\item 
+void \textbf{set\_\-protein} (\bf{PDBStructure} $\ast$prot)\label{classASCbase_1_1HbondGeometry_cffbb708f35a814d4cfd8102b8f4d19c}
+
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static bool \textbf{salt\_\-bridge} (const \bf{atom\_\-t} \&A, const \bf{atom\_\-t} \&B, const my\_\-float\_\-t sq\_\-dist)\label{classASCbase_1_1HbondGeometry_044cc1432011996eb5e9a27dd32874c9}
+
+\item 
+static bool \textbf{is\_\-hbond\_\-interaction} (interaction\-Type A\_\-act, interaction\-Type B\_\-act)\label{classASCbase_1_1HbondGeometry_c646aad45502f9c3f837cdf91700072a}
+
+\item 
+static bool \bf{metal\_\-hbond} (const \bf{atom\_\-t} \&polar\_\-atom, const \bf{atom\_\-t} \&metal, const my\_\-float\_\-t sq\_\-dist)\label{classASCbase_1_1HbondGeometry_40113626b71155acaeff6f20f4ff18b0}
+
+\begin{CompactList}\small\item\em For now the consensus is only acceptors should interact with metal ions. \item\end{CompactList}\item 
+static bool \bf{metal\_\-salt\_\-bridge} (const \bf{atom\_\-t} \&polar\_\-atom, const \bf{atom\_\-t} \&metal, const my\_\-float\_\-t sq\_\-dist)\label{classASCbase_1_1HbondGeometry_e35f9ba1e79c9ef6ec2595c6c5089214}
+
+\begin{CompactList}\small\item\em For now the consensus is only acceptors should interact with metal ions. \item\end{CompactList}\item 
+static const \bf{sidechain\_\-donor\_\-t} $\ast$ \textbf{get\_\-sidechain\_\-donor} (residue\_\-type res, atom\_\-type atom)\label{classASCbase_1_1HbondGeometry_744683e67955b2811701f4ac3c799545}
+
+\item 
+static const \bf{sidechain\_\-preacc\_\-t} $\ast$ \textbf{get\_\-sidechain\_\-preacc} (residue\_\-type res, atom\_\-type atom)\label{classASCbase_1_1HbondGeometry_73ea3b6706d0eea3353c6fe286f2239b}
+
+\end{CompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{CompactItemize}
+\item 
+static void \bf{build\_\-SC\_\-donor\_\-tables} ()\label{classASCbase_1_1HbondGeometry_65a97cfb3b7745f402c1742c47d83866}
+
+\begin{CompactList}\small\item\em Initialize the A\_\-SC\_\-donors map. \item\end{CompactList}\item 
+static void \bf{build\_\-SC\_\-preacc\_\-tables} ()\label{classASCbase_1_1HbondGeometry_3d28b9c70a52f5b6897c94147b860f14}
+
+\begin{CompactList}\small\item\em Initialize the A\_\-SC\_\-preaccs map. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+\bf{PDBStructure} $\ast$ \textbf{A\_\-prot}\label{classASCbase_1_1HbondGeometry_8da82662a17685bfe0ce02f2d4d6ba6a}
+
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static const my\_\-float\_\-t \textbf{MIN\_\-SALT\_\-BRIDGE\_\-SQUARED\_\-LENGTH} = 2.5 $\ast$ 2.5\label{classASCbase_1_1HbondGeometry_29c5c8d5d543d33470f10f31afd60d2f}
+
+\item 
+static const my\_\-float\_\-t \textbf{MAX\_\-SALT\_\-BRIDGE\_\-SQUARED\_\-LENGTH} = 4.5 $\ast$ 4.5\label{classASCbase_1_1HbondGeometry_69c3704548ade0b37b66654f5bae97df}
+
+\item 
+static const my\_\-float\_\-t \textbf{MIN\_\-HBOND\_\-SQUARED\_\-LENGTH} = 2.5 $\ast$ 2.5\label{classASCbase_1_1HbondGeometry_e2e30edec42fadce0889c782f6e59eeb}
+
+\item 
+static const my\_\-float\_\-t \textbf{MAX\_\-HBOND\_\-SQUARED\_\-LENGTH} = 3.5 $\ast$ 3.5\label{classASCbase_1_1HbondGeometry_6fba042f242b6e32bc9c14fd7341dbc3}
+
+\item 
+static const my\_\-float\_\-t \textbf{MIN\_\-DHA\_\-ANGLE} = 120.0\label{classASCbase_1_1HbondGeometry_196cfe032d7ed4df8990cee55cdcd687}
+
+\item 
+static const my\_\-float\_\-t \textbf{MIN\_\-H\_\-A\_\-AA\_\-ANGLE} = 90.0\label{classASCbase_1_1HbondGeometry_f80408c07c5fe34bbb7c095e2699ada3}
+
+\item 
+static const my\_\-float\_\-t \textbf{COSINE\_\-MIN\_\-DHA\_\-ANGLE}
+\item 
+static const my\_\-float\_\-t \textbf{COSINE\_\-MIN\_\-H\_\-A\_\-AA\_\-ANGLE}
+\item 
+static const my\_\-float\_\-t \bf{A\_\-SC\_\-H\_\-positions} [$\,$]
+\begin{CompactList}\small\item\em Local hydrogen positions for protein side chain donor atoms. \item\end{CompactList}\item 
+static const my\_\-float\_\-t \bf{A\_\-lig\_\-H\_\-positions} [$\,$]
+\begin{CompactList}\small\item\em Local hydrogen positions for ligand donor atoms. \item\end{CompactList}\item 
+static const my\_\-float\_\-t \bf{A\_\-main\_\-chain\_\-NH\_\-position} [$\,$]
+\begin{CompactList}\small\item\em local hydrogen position for main chain N-H \item\end{CompactList}\item 
+static const size\_\-t \bf{A\_\-SC\_\-donors\_\-array\_\-size} = 12\label{classASCbase_1_1HbondGeometry_309f9769bac2da03e5bfea01f3c6b205}
+
+\begin{CompactList}\small\item\em Number of elements in the A\_\-SC\_\-donors\_\-array. \item\end{CompactList}\item 
+static const \bf{sidechain\_\-donor\_\-t} \textbf{A\_\-SC\_\-donors\_\-array} [$\,$]
+\item 
+static SC\_\-tbl\_\-res\_\-lvl \bf{A\_\-SC\_\-donors}\label{classASCbase_1_1HbondGeometry_41f1ae04adc06ecce1090fc0b29bdb6c}
+
+\begin{CompactList}\small\item\em Map to look up protein sidechain donor info based on PDB residue and atom names. \item\end{CompactList}\item 
+static const size\_\-t \bf{A\_\-SC\_\-preacc\_\-array\_\-size} = 13\label{classASCbase_1_1HbondGeometry_db54f5c38c13a2ba3a4e28b41ba8024c}
+
+\begin{CompactList}\small\item\em Number of elements in the A\_\-SC\_\-preacc\_\-array. \item\end{CompactList}\item 
+static const \bf{sidechain\_\-preacc\_\-t} \textbf{A\_\-SC\_\-preacc\_\-array} [$\,$]
+\item 
+static preacc\_\-tbl\_\-res\_\-lvl \bf{A\_\-SC\_\-preaccs}\label{classASCbase_1_1HbondGeometry_0707a6e39cd01a720da5469cc0138af4}
+
+\begin{CompactList}\small\item\em Map to help look up protein sidechain preacceptor info based on pdb residue and atom names. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \bf{sidechain\_\-donor\_\-t}
+\begin{CompactList}\small\item\em Simple struct to hold protein sidechain donor atom information. \item\end{CompactList}\item 
+struct \bf{sidechain\_\-preacc\_\-t}
+\begin{CompactList}\small\item\em Simple struct to hold protein sidechain acceptor atom information. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A helper class to compute various geometrical features of hydrogen bonds. 
+
+
+
+\subsection{Member Function Documentation}
+\index{ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}!lig_acceptor_cos_delta@{lig\_\-acceptor\_\-cos\_\-delta}}
+\index{lig_acceptor_cos_delta@{lig\_\-acceptor\_\-cos\_\-delta}!ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Hbond\-Geometry::lig\_\-acceptor\_\-cos\_\-delta (atom\_\-vci {\em acceptor}, \bf{mol2File} \& {\em ligand}, my\_\-float\_\-t $\ast$ {\em H\_\-pos}, my\_\-float\_\-t $\ast$ {\em cos\_\-delta})}\label{classASCbase_1_1HbondGeometry_40d1f230f39f08f31cabf8cf239f744a}
+
+
+Compute the cosine of the delta angle (H ... A-AA angle) when the ligand atom is the acceptor \index{ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}!ligand_donor_cos_theta@{ligand\_\-donor\_\-cos\_\-theta}}
+\index{ligand_donor_cos_theta@{ligand\_\-donor\_\-cos\_\-theta}!ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Hbond\-Geometry::ligand\_\-donor\_\-cos\_\-theta (atom\_\-vci {\em lig\_\-atom}, atom\_\-vci {\em acceptor}, \bf{mol2File} \& {\em ligand}, my\_\-float\_\-t $\ast$ {\em H\_\-pos}, my\_\-float\_\-t $\ast$ {\em angle})}\label{classASCbase_1_1HbondGeometry_e9bec32ecce4d5e5d3de550b97a56718}
+
+
+Compute the cosine of theta (DHA angle) when ligand atom is the donor. 
+
+Compute cosine of the donor-hydrogen-acceptor (DHA) angle. This is typically termed the theta angle. \index{ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}!prot_acceptor_cos_delta@{prot\_\-acceptor\_\-cos\_\-delta}}
+\index{prot_acceptor_cos_delta@{prot\_\-acceptor\_\-cos\_\-delta}!ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Hbond\-Geometry::prot\_\-acceptor\_\-cos\_\-delta (atom\_\-vci {\em acceptor}, \bf{PDBStructure} \& {\em prot}, my\_\-float\_\-t $\ast$ {\em H\_\-pos}, my\_\-float\_\-t $\ast$ {\em cos\_\-delta})}\label{classASCbase_1_1HbondGeometry_f618291bc802e111027a06eb98ca1946}
+
+
+Compute the cosine of delta (H ... A-AA angle) when the protein atom is the acceptor \index{ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}!prot_lig_hbond@{prot\_\-lig\_\-hbond}}
+\index{prot_lig_hbond@{prot\_\-lig\_\-hbond}!ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Hbond\-Geometry::prot\_\-lig\_\-hbond (atom\_\-vci {\em prot\_\-atom}, atom\_\-vci {\em lig\_\-atom}, \bf{PDBStructure} \& {\em prot}, \bf{mol2File} \& {\em ligand}, my\_\-float\_\-t {\em sq\_\-dist}, my\_\-float\_\-t $\ast$ {\em cos\_\-theta}, my\_\-float\_\-t $\ast$ {\em cos\_\-delta})}\label{classASCbase_1_1HbondGeometry_f285f2ddcc67f20d410fdccf1d053ed4}
+
+
+Atom type and distance chess as well as computing and checking the DHA and H ... A-AA angles \index{ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}!protein_donor_cos_theta@{protein\_\-donor\_\-cos\_\-theta}}
+\index{protein_donor_cos_theta@{protein\_\-donor\_\-cos\_\-theta}!ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Hbond\-Geometry::protein\_\-donor\_\-cos\_\-theta (atom\_\-vci {\em prot\_\-atom}, atom\_\-vci {\em acceptor}, \bf{PDBStructure} \& {\em prot}, my\_\-float\_\-t $\ast$ {\em H\_\-pos}, my\_\-float\_\-t $\ast$ {\em cos\_\-theta})}\label{classASCbase_1_1HbondGeometry_af52b4614187640cdad06cbddab9655f}
+
+
+Compute the cosine of theta (DHA angle) when protein atom is the donor. 
+
+Compute cosine of the donor-hydrogen-acceptor (DHA) angle. This is typically termed the theta angle. 
+
+\subsection{Member Data Documentation}
+\index{ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}!A_lig_H_positions@{A\_\-lig\_\-H\_\-positions}}
+\index{A_lig_H_positions@{A\_\-lig\_\-H\_\-positions}!ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t \bf{Hbond\-Geometry::A\_\-lig\_\-H\_\-positions}\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1HbondGeometry_7749c80383b11d3353e1ffad00700b52}
+
+
+\textbf{Initial value:}
+
+\begin{Code}\begin{verbatim} {
+  -0.337144927826108, 0.952067906003100, 0.0, 
+  -0.320454584864420, 0.904935831448491, 0.0, 
+  -0.337144927826108, 0.0, 0.952067906003100  
+}
+\end{verbatim}\end{Code}
+Local hydrogen positions for ligand donor atoms. 
+
+\index{ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}!A_main_chain_NH_position@{A\_\-main\_\-chain\_\-NH\_\-position}}
+\index{A_main_chain_NH_position@{A\_\-main\_\-chain\_\-NH\_\-position}!ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t \bf{Hbond\-Geometry::A\_\-main\_\-chain\_\-NH\_\-position}\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1HbondGeometry_d2a5bf930c8cc804ff282ab0752d26d4}
+
+
+\textbf{Initial value:}
+
+\begin{Code}\begin{verbatim} {
+  -0.414871375937316, 0.931816366795453, 0
+}
+\end{verbatim}\end{Code}
+local hydrogen position for main chain N-H 
+
+\index{ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}!A_SC_donors_array@{A\_\-SC\_\-donors\_\-array}}
+\index{A_SC_donors_array@{A\_\-SC\_\-donors\_\-array}!ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const \bf{Hbond\-Geometry::sidechain\_\-donor\_\-t} Hbond\-Geometry::A\_\-SC\_\-donors\_\-array\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1HbondGeometry_25aa470a8b192c3efde135af8f963f07}
+
+
+\textbf{Initial value:}
+
+\begin{Code}\begin{verbatim} {
+  { ARG, { CD, NE, CZ}, NULL },
+  { ARG, { CZ, NH1, NH2}, &A_SC_H_positions[0] },
+  { ARG, { CZ, NH2, NH1}, &A_SC_H_positions[3] },
+  { ASN, { CG, ND2, OD1}, &A_SC_H_positions[6] },
+  { GLN, { CD, NE2, OE1}, &A_SC_H_positions[9] },
+  { HIS, { CG, ND1, CE1}, NULL },
+  { HIS, {CE1, NE2, CD2}, NULL },
+  { LYS, { CE, NZ, NULL_ATOM_TYPE}, &A_SC_H_positions[12] },
+  { SER, { CB, OG, NULL_ATOM_TYPE}, &A_SC_H_positions[15] },
+  { THR, { CB, OG1, NULL_ATOM_TYPE}, &A_SC_H_positions[18] },
+  { TRP, {CD1, NE1, CE2}, NULL },
+  { TYR, { CZ, OH, NULL_ATOM_TYPE}, &A_SC_H_positions[21] }
+}
+\end{verbatim}\end{Code}
+\index{ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}!A_SC_H_positions@{A\_\-SC\_\-H\_\-positions}}
+\index{A_SC_H_positions@{A\_\-SC\_\-H\_\-positions}!ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t \bf{Hbond\-Geometry::A\_\-SC\_\-H\_\-positions}\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1HbondGeometry_66e9722f03aaf1c9a6567284538d5fa9}
+
+
+\textbf{Initial value:}
+
+\begin{Code}\begin{verbatim} {
+  -0.463070309734338, 0.908826654672135, 0.0,  
+  -0.463070309734338, 0.908826654672135, 0.0,  
+  -0.431070626975513, 0.924433942777383, 0.0,  
+  -0.431070626975513, 0.924433942777383, 0.0,  
+  -0.414871375937316, 0.931816366795453, 0.0,  
+  -0.280676836533827, 0.918052565724514, 0.0,  
+  -0.264611861584319, 0.922811228100786, 0.0,  
+  -0.296656314599950, 0.913014255643347, 0.0   
+}
+\end{verbatim}\end{Code}
+Local hydrogen positions for protein side chain donor atoms. 
+
+\index{ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}!A_SC_preacc_array@{A\_\-SC\_\-preacc\_\-array}}
+\index{A_SC_preacc_array@{A\_\-SC\_\-preacc\_\-array}!ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const \bf{Hbond\-Geometry::sidechain\_\-preacc\_\-t} Hbond\-Geometry::A\_\-SC\_\-preacc\_\-array\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1HbondGeometry_b63bedb579466023399489db46844a28}
+
+
+\textbf{Initial value:}
+
+\begin{Code}\begin{verbatim} {
+  { ASN, OD1,  CG },
+  { ASP, OD1,  CG },
+  { ASP, OD2,  CG },
+  { CYS,  SG,  CB },
+  { GLN, OE1,  CD },
+  { GLU, OE1,  CD },
+  { GLU, OE2,  CD },
+  { HIS, ND1,  CG },  
+  { HIS, NE2, CD2 },  
+  { MET,  SD,  CG },  
+  { SER,  OG,  CB },
+  { THR, OG1,  CB },
+  { TYR,  OH,  CZ }
+}
+\end{verbatim}\end{Code}
+\index{ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}!COSINE_MIN_DHA_ANGLE@{COSINE\_\-MIN\_\-DHA\_\-ANGLE}}
+\index{COSINE_MIN_DHA_ANGLE@{COSINE\_\-MIN\_\-DHA\_\-ANGLE}!ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t Hbond\-Geometry::COSINE\_\-MIN\_\-DHA\_\-ANGLE\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1HbondGeometry_7aa28706a8d3851bfd42ad2f6e159d72}
+
+
+\textbf{Initial value:}
+
+\begin{Code}\begin{verbatim} 
+  std::cos(deg2rad(HbondGeometry::MIN_DHA_ANGLE))
+\end{verbatim}\end{Code}
+\index{ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}!COSINE_MIN_H_A_AA_ANGLE@{COSINE\_\-MIN\_\-H\_\-A\_\-AA\_\-ANGLE}}
+\index{COSINE_MIN_H_A_AA_ANGLE@{COSINE\_\-MIN\_\-H\_\-A\_\-AA\_\-ANGLE}!ASCbase::HbondGeometry@{ASCbase::Hbond\-Geometry}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const my\_\-float\_\-t Hbond\-Geometry::COSINE\_\-MIN\_\-H\_\-A\_\-AA\_\-ANGLE\hspace{0.3cm}{\tt  [static, private]}}\label{classASCbase_1_1HbondGeometry_228f234e37eba913cebf3cdfa004c590}
+
+
+\textbf{Initial value:}
+
+\begin{Code}\begin{verbatim} 
+  std::cos(deg2rad(HbondGeometry::MIN_H_A_AA_ANGLE))
+\end{verbatim}\end{Code}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Hbond\-Geometry.H\item 
+Hbond\-Geometry.C\end{CompactItemize}

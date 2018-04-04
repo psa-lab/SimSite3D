@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 41
+Doxyfile
+Makefile
+Makefile.in
+html
+latex
+
+END

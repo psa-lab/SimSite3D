@@ -1,0 +1,225 @@
+\section{ASCbase::point\_\-storage$<$ \_\-Tp, \_\-Sequence $>$ Class Template Reference}
+\label{classASCbase_1_1point__storage}\index{ASCbase::point_storage@{ASCbase::point\_\-storage}}
+{\tt \#include $<$point\_\-storage.H$>$}
+
+Inheritance diagram for ASCbase::point\_\-storage$<$ \_\-Tp, \_\-Sequence $>$::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classASCbase_1_1point__storage}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+typedef \_\-Sequence::value\_\-type \textbf{value\_\-type}\label{classASCbase_1_1point__storage_52ae4f4fb47a9352aeb60e416b941370}
+
+\item 
+typedef \_\-Sequence::reference \textbf{reference}\label{classASCbase_1_1point__storage_2dd7aae8e2a9df9b81d20345dbf07c91}
+
+\item 
+typedef \_\-Sequence::const\_\-reference \textbf{const\_\-reference}\label{classASCbase_1_1point__storage_3929df48b7e2b43058fd8043253d1ce7}
+
+\item 
+typedef \_\-Sequence::iterator \textbf{iterator}\label{classASCbase_1_1point__storage_8ee8417d3261ab75b8de308ee0d63887}
+
+\item 
+typedef \_\-Sequence::const\_\-iterator \textbf{const\_\-iterator}\label{classASCbase_1_1point__storage_7f6d8335405d11572ea1bf048d3dabc9}
+
+\item 
+typedef \_\-Sequence::size\_\-type \textbf{size\_\-type}\label{classASCbase_1_1point__storage_7c34ddf2fad492932e2cdf5c8df2d329}
+
+\item 
+typedef \_\-Sequence::iterator::iterator\_\-category \textbf{iterator\_\-category}\label{classASCbase_1_1point__storage_462445b8c65a8df8a42b78041689caba}
+
+\item 
+typedef \_\-Sequence \textbf{container\_\-type}\label{classASCbase_1_1point__storage_3b7cb477bcd92d1bb9915a2a7b9b00ee}
+
+\item 
+typedef \bf{point\_\-bins}$<$ const\_\-iterator $>$::bin\_\-vci \textbf{bins\_\-vci\_\-type}\label{classASCbase_1_1point__storage_35749c1a56a9353992d0b6a29b67b33c}
+
+\item 
+typedef \bf{point\_\-bins}$<$ const\_\-iterator $>$ \textbf{bins\_\-type}\label{classASCbase_1_1point__storage_75ce41cf8c33f143c1c30075c5991405}
+
+\item 
+typedef std::pair$<$ my\_\-float\_\-t, const\_\-iterator $>$ \textbf{float\_\-const\_\-iter\_\-pair}\label{classASCbase_1_1point__storage_e23bb4488db360e26280b065dcb7b225}
+
+\item 
+typedef std::multimap$<$ my\_\-float\_\-t, const\_\-iterator $>$ \textbf{float\_\-const\_\-iter\_\-map}\label{classASCbase_1_1point__storage_e20eff69bd4e8a3bc7739e7339fab66d}
+
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{point\_\-storage} (uint init\_\-num\_\-pts=150, uint stride\_\-in=3)\label{classASCbase_1_1point__storage_487c979dfa93bedf323e6e3a26a7786a}
+
+\item 
+\textbf{point\_\-storage} (const \bf{point\_\-storage} \&src)\label{classASCbase_1_1point__storage_dd6e131042145021e1cd7202bcfccea7}
+
+\item 
+const \bf{point\_\-storage} \& \textbf{operator=} (const \bf{point\_\-storage} \&src)\label{classASCbase_1_1point__storage_3520cbd7a09d6803b971ddb611228726}
+
+\item 
+const my\_\-float\_\-t $\ast$ \bf{points\_\-begin} () const \label{classASCbase_1_1point__storage_4179b369dfa5b1277da5db9e3e9cb0c1}
+
+\begin{CompactList}\small\item\em Constant pointer to the beginning of the points array. \item\end{CompactList}\item 
+const my\_\-float\_\-t $\ast$ \bf{points\_\-end} () const \label{classASCbase_1_1point__storage_5406affe211bf9c423b577b6bb282b56}
+
+\begin{CompactList}\small\item\em Constant pointer to one past the end of the points array. \item\end{CompactList}\item 
+const\_\-iterator \bf{begin} () const \label{classASCbase_1_1point__storage_137cc46a9b6a9eed4a2966b1c2652802}
+
+\begin{CompactList}\small\item\em Constant iterator to the beginning of the container. \item\end{CompactList}\item 
+const\_\-iterator \bf{end} () const \label{classASCbase_1_1point__storage_55e058eb0fc22f701fd441641cd49d83}
+
+\begin{CompactList}\small\item\em Constant iterator to 1 past the end of the container. \item\end{CompactList}\item 
+iterator \bf{begin} ()\label{classASCbase_1_1point__storage_83805a7e465cb05a7d94f42bd14d3626}
+
+\begin{CompactList}\small\item\em Iterator to the beginning of the container. \item\end{CompactList}\item 
+iterator \bf{end} ()\label{classASCbase_1_1point__storage_9385b69e57a30908b798d1b7aea79437}
+
+\begin{CompactList}\small\item\em Iterator to 1 past the end of the container. \item\end{CompactList}\item 
+size\_\-type \bf{size} () const \label{classASCbase_1_1point__storage_598615e1ca68e12e1f7ae8446758e608}
+
+\begin{CompactList}\small\item\em Get the size of the container. \item\end{CompactList}\item 
+void \bf{push\_\-back} (const value\_\-type \&\_\-\_\-x)
+\item 
+iterator \bf{erase} (iterator \_\-\_\-i)\label{classASCbase_1_1point__storage_257e54a362a5f8eab82b0d431f671903}
+
+\begin{CompactList}\small\item\em Erase the element pointed to by the iterator. \item\end{CompactList}\item 
+void \bf{transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classASCbase_1_1point__storage_f90d2e349c29b237403efe80c4377a2a}
+
+\begin{CompactList}\small\item\em Apply a rigid body transformation to the points (current positions). \item\end{CompactList}\item 
+void \bf{inverse\_\-transform} (const my\_\-float\_\-t $\ast$R, const my\_\-float\_\-t $\ast$T)\label{classASCbase_1_1point__storage_20a59aecf6978920fa2bcf8be845dfc0}
+
+\begin{CompactList}\small\item\em Apply a rigid body transformation to the points (current positions). \item\end{CompactList}\item 
+void \bf{revert} ()\label{classASCbase_1_1point__storage_f08419a1ed01d6bc8de1486a5811da83}
+
+\begin{CompactList}\small\item\em Revert the positions to the original positions. \item\end{CompactList}\item 
+void \bf{set\_\-current\_\-positions\_\-as\_\-original} ()
+\item 
+void \bf{get\_\-current\_\-inverse\_\-3D\_\-transform} (Quaternion $\ast$Q, my\_\-float\_\-t $\ast$T) const \label{classASCbase_1_1point__storage_a8b7d0c0bc834f02e4ad877b8dc1f147}
+
+\begin{CompactList}\small\item\em Get transform to move current positions to their original positions. \item\end{CompactList}\item 
+my\_\-float\_\-t \bf{compute\_\-RMSD} () const 
+\item 
+const bool \bf{centroid\_\-3D} (my\_\-float\_\-t $\ast$C) const \label{classASCbase_1_1point__storage_66a712bb966c3433d12563eca592be2a}
+
+\begin{CompactList}\small\item\em Compute the centroid of the positions. \item\end{CompactList}\item 
+const\_\-iterator \bf{closest\_\-point} (const my\_\-float\_\-t $\ast$a\_\-pos, my\_\-float\_\-t $\ast$d\_\-out) const 
+\item 
+const\_\-iterator \bf{\_\-closest\_\-point} (const my\_\-float\_\-t $\ast$a\_\-pos, my\_\-float\_\-t $\ast$d\_\-out, std::random\_\-access\_\-iterator\_\-tag tag) const \label{classASCbase_1_1point__storage_3bc1d840ac575c316bfea6fb23d75507}
+
+\begin{CompactList}\small\item\em Random access iterator version of closest\_\-point. \item\end{CompactList}\item 
+const\_\-iterator \bf{\_\-closest\_\-point} (const my\_\-float\_\-t $\ast$a\_\-pos, my\_\-float\_\-t $\ast$d\_\-out, std::forward\_\-iterator\_\-tag tag) const \label{classASCbase_1_1point__storage_96b7602e9af5661fdd0ba9f674c55f00}
+
+\begin{CompactList}\small\item\em Forward iterator version of closest\_\-point. \item\end{CompactList}\item 
+void \bf{close\_\-points} (const my\_\-float\_\-t $\ast$a\_\-pos, const my\_\-float\_\-t radius, float\_\-const\_\-iter\_\-map $\ast$pts\_\-map) const \label{classASCbase_1_1point__storage_7552e9f80dc2a7c4c8c58fd7e6bb3858}
+
+\begin{CompactList}\small\item\em Find all points within some radius of a. \item\end{CompactList}\item 
+reference \bf{front} ()\label{classASCbase_1_1point__storage_7fe3b3db22e041f08c2261dececcae6b}
+
+\begin{CompactList}\small\item\em Reference to the front of the container (first point). \item\end{CompactList}\item 
+const reference \bf{front} () const \label{classASCbase_1_1point__storage_6ead8e9f3df6e5e128fe05a0220e04aa}
+
+\begin{CompactList}\small\item\em Constant reference to the front of the container (first point). \item\end{CompactList}\item 
+reference \bf{back} ()\label{classASCbase_1_1point__storage_e52573f43d27b850351e64bf8e487dc4}
+
+\begin{CompactList}\small\item\em Reference to the back of the container (last point). \item\end{CompactList}\item 
+const reference \bf{back} () const \label{classASCbase_1_1point__storage_97bdb4e3a0059504a65ad4b65f765f5c}
+
+\begin{CompactList}\small\item\em Constant reference to the back of the container (last point). \item\end{CompactList}\item 
+void \bf{bin\_\-points} (const my\_\-float\_\-t max\_\-dist)
+\item 
+void \textbf{get\_\-bin} (const my\_\-float\_\-t $\ast$pt, bins\_\-vci\_\-type $\ast$nbrs, bins\_\-vci\_\-type $\ast$moved\_\-nbrs) const \label{classASCbase_1_1point__storage_f3155ff82214b849b593eaa2b8b856f0}
+
+\item 
+void \textbf{write\_\-bin\_\-bounds} (std::ostream \&out) const \label{classASCbase_1_1point__storage_d3f1f6a9ecdcb64c3e7753cc6941c84b}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\_\-Sequence \textbf{Container}\label{classASCbase_1_1point__storage_39da1fa2fc313b6b05e6a63578957e4a}
+
+\item 
+\bf{my\_\-float\_\-array} \textbf{positions}\label{classASCbase_1_1point__storage_604415d42b6f03d7269873cdd5c41bc2}
+
+\end{CompactItemize}
+\subsection*{Private Types}
+\begin{CompactItemize}
+\item 
+typedef \_\-Sequence::value\_\-type \textbf{\_\-Sequence\_\-value\_\-type}\label{classASCbase_1_1point__storage_335f813af60c40488f514c35ca249962}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{\_\-\_\-glibcpp\_\-class\_\-requires} (\_\-Tp, \_\-SGIAssignable\-Concept)\label{classASCbase_1_1point__storage_36835bbd0d69d8e86a3f1b2c3af9e42c}
+
+\item 
+\textbf{\_\-\_\-glibcpp\_\-class\_\-requires} (\_\-Sequence, \_\-Back\-Insertion\-Sequence\-Concept)\label{classASCbase_1_1point__storage_d706c83ef3e834a1a3ffb56daeac628f}
+
+\item 
+\textbf{\_\-\_\-glibcpp\_\-class\_\-requires2} (\_\-Tp, \_\-Sequence\_\-value\_\-type, \_\-Same\-Type\-Concept)\label{classASCbase_1_1point__storage_b068057e5352db913cad225b48d2de06}
+
+\item 
+void \bf{do\_\-copy} (const \bf{point\_\-storage} \&src)\label{classASCbase_1_1point__storage_88a0b4dff13887825af1ca7529a24778}
+
+\begin{CompactList}\small\item\em This function has not been verified. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+bool \textbf{A\_\-has\_\-been\_\-transformed}\label{classASCbase_1_1point__storage_0210eb0feee82c00756fd93c2d83bbdc}
+
+\item 
+\bf{point\_\-bins}$<$ const\_\-iterator $>$ \textbf{A\_\-bins}\label{classASCbase_1_1point__storage_231d5efc893553d2d7239afc6aed8108}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \_\-Tp, typename \_\-Sequence = std::vector$<$\_\-Tp$>$$>$ class ASCbase::point\_\-storage$<$ \_\-Tp, \_\-Sequence $>$}
+
+A wrapper class to an STL container class for the \doxyref{point\_\-t}{p.}{classASCbase_1_1point__t} and derived datatypes (classes) 
+
+
+
+\subsection{Member Function Documentation}
+\index{ASCbase::point_storage@{ASCbase::point\_\-storage}!bin_points@{bin\_\-points}}
+\index{bin_points@{bin\_\-points}!ASCbase::point_storage@{ASCbase::point\_\-storage}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-Tp, typename \_\-Sequence = std::vector$<$\_\-Tp$>$$>$ void \bf{ASCbase::point\_\-storage}$<$ \_\-Tp, \_\-Sequence $>$::bin\_\-points (const my\_\-float\_\-t {\em max\_\-dist})\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1point__storage_e629a1edb840a3177e9db2c1b4f46c22}
+
+
+Only call this function after the container is complete (no more objects will be added) and before closest\_\-point, etc. \index{ASCbase::point_storage@{ASCbase::point\_\-storage}!closest_point@{closest\_\-point}}
+\index{closest_point@{closest\_\-point}!ASCbase::point_storage@{ASCbase::point\_\-storage}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-Tp, typename \_\-Sequence = std::vector$<$\_\-Tp$>$$>$ const\_\-iterator \bf{ASCbase::point\_\-storage}$<$ \_\-Tp, \_\-Sequence $>$::closest\_\-point (const my\_\-float\_\-t $\ast$ {\em a\_\-pos}, my\_\-float\_\-t $\ast$ {\em d\_\-out}) const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1point__storage_99dcbb083379f7f193c0655a5e7e03aa}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a\_\-pos}]Constant pointer to a position \item[{\em d\_\-out}]Pointer to a float to store the distance between the two points \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Constant iterator to the element in the container whose position was the closest to a \end{Desc}
+\index{ASCbase::point_storage@{ASCbase::point\_\-storage}!compute_RMSD@{compute\_\-RMSD}}
+\index{compute_RMSD@{compute\_\-RMSD}!ASCbase::point_storage@{ASCbase::point\_\-storage}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-Tp, typename \_\-Sequence = std::vector$<$\_\-Tp$>$$>$ my\_\-float\_\-t \bf{ASCbase::point\_\-storage}$<$ \_\-Tp, \_\-Sequence $>$::compute\_\-RMSD () const\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1point__storage_daaeae9e9bfdf971409b15a2b04b761c}
+
+
+Compute the root mean squared deviation (RMSD) between the current and orignial positions \index{ASCbase::point_storage@{ASCbase::point\_\-storage}!push_back@{push\_\-back}}
+\index{push_back@{push\_\-back}!ASCbase::point_storage@{ASCbase::point\_\-storage}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-Tp, typename \_\-Sequence = std::vector$<$\_\-Tp$>$$>$ void \bf{ASCbase::point\_\-storage}$<$ \_\-Tp, \_\-Sequence $>$::push\_\-back (const value\_\-type \& {\em \_\-\_\-x})\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1point__storage_b1e42dc1e766408149125759061291a6}
+
+
+Push an element on the back of the container -- updating the position pointers if the points array was resized 
+
+Reimplemented in \bf{ASCbase::dir\_\-point\_\-storage$<$ \_\-Tp, \_\-Sequence $>$} \doxyref{p.}{classASCbase_1_1dir__point__storage_d01a90e5412d2c160cfd4f567d710c4e}, \bf{ASCbase::dir\_\-point\_\-storage$<$ ASCbase::geometry::Vert\-Attrib $>$} \doxyref{p.}{classASCbase_1_1dir__point__storage_d01a90e5412d2c160cfd4f567d710c4e}, and \bf{ASCbase::dir\_\-point\_\-storage$<$ ASCbase::geometry::vertex\_\-t $>$} \doxyref{p.}{classASCbase_1_1dir__point__storage_d01a90e5412d2c160cfd4f567d710c4e}.\index{ASCbase::point_storage@{ASCbase::point\_\-storage}!set_current_positions_as_original@{set\_\-current\_\-positions\_\-as\_\-original}}
+\index{set_current_positions_as_original@{set\_\-current\_\-positions\_\-as\_\-original}!ASCbase::point_storage@{ASCbase::point\_\-storage}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-Tp, typename \_\-Sequence = std::vector$<$\_\-Tp$>$$>$ void \bf{ASCbase::point\_\-storage}$<$ \_\-Tp, \_\-Sequence $>$::set\_\-current\_\-positions\_\-as\_\-original ()\hspace{0.3cm}{\tt  [inline]}}\label{classASCbase_1_1point__storage_e841ba62806a65a9fdbd79a4d8bf968a}
+
+
+Set the current positions as those to revert to when this.revert() is called 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+point\_\-storage.H\end{CompactItemize}

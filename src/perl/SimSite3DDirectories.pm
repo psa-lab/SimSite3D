@@ -5,8 +5,8 @@ sub new{
   my $type = shift;
 
   # Directory where SimSite3D is installed
-  $self->{project} = $ENV{'ASCBASE_SOFTWARE_DIR'} or croak "ERROR: " .
-    "environment variable ASCBASE_SOFTWARE_DIR is not set\n";
+  $self->{project} = $ENV{'SIMSITE3D_SOFTWARE_DIR'} or croak "ERROR: " .
+    "environment variable SIMSITE3D_SOFTWARE_DIR is not set\n";
   # Added so that it can be changed if needed.
   $self->{data} = $self->{project} . "/data";
   # Directory holding the query SimSite3D sitemap pdb file
@@ -18,8 +18,8 @@ sub new{
   $self->{ligands} = $ENV{'LIGAND_CRYSTAL_STRUCTURES_DIR'} or croak "ERROR: ".
     "environment variable LIGAND_CRYSTAL_STRUCTURES_DIR is not set\n";
   # Directory holding the searchable SimSite3D sitemap pdb files
-  $self->{search} = $ENV{'ASCBASE_SEARCHABLE_SITEMAPS_DIR'} or croak "ERROR: ".
-    "environment variable ASCBASE_SEARCHABLE_SITEMAPS_DIR is not set\n";
+  $self->{search} = $ENV{'SIMSITE3D_SEARCHABLE_SITEMAPS_DIR'} or croak "ERROR: ".
+    "environment variable SIMSITE3D_SEARCHABLE_SITEMAPS_DIR is not set\n";
 
   return bless $self, $type;
 }

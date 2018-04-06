@@ -14,7 +14,7 @@ project SimSite3DPy
 
 import os ;
 constant VIRTUAL_ENV : [ os.environ VIRTUAL_ENV ] ;
-constant ASCBASE_INSTALL_DIR : $(VIRTUAL_ENV)/lib/python2.7/site-packages ;
+constant SIMSITE3D_INSTALL_DIR : $(VIRTUAL_ENV)/lib/python2.7/site-packages ;
 import modules ;
 local ARGV = [ modules.peek : ARGV ] ;
 echo $(ARGV) ; 
@@ -62,12 +62,12 @@ install python_sources
     ./utils/cgo_items.py ./utils/_TransformResults.py
     ./score/__init__.py ./sitemaps/Sitemap.py
     ./plotting/_LoadData.py ./plotting/__init__.py ./plotting/plot_matrices.py
-  : <location>$(ASCBASE_INSTALL_DIR)/SimSite3DPy <install-source-root>.
+  : <location>$(SIMSITE3D_INSTALL_DIR)/SimSite3DPy <install-source-root>.
   ;
 
 #install python_sources2
 #  : ./py_src/_hits.py 
-#  : <location>$(ASCBASE_INSTALL_DIR)/SimSite3DPy
+#  : <location>$(SIMSITE3D_INSTALL_DIR)/SimSite3DPy
 #  ;
 
 install pymol_scripts
@@ -78,20 +78,20 @@ install pymol_scripts
     ./SimSite3D/PmwExtras/__init__.py
     ./SimSite3D/PmwExtras/_DirBrowser.py
     ./SimSite3D/PmwExtras/_FileDialog.py
-  : <location>$(ASCBASE_INSTALL_DIR)/SimSite3DPy <install-source-root>.
+  : <location>$(SIMSITE3D_INSTALL_DIR)/SimSite3DPy <install-source-root>.
   ;
 
 install pymol_scripts2
   : ./utils/pdb.py ./utils/pdb_residues.csv
-  : <location>$(ASCBASE_INSTALL_DIR)/SimSite3DPy/SimSite3D
+  : <location>$(SIMSITE3D_INSTALL_DIR)/SimSite3DPy/SimSite3D
   ;
 
 install pymol_plugins
   : ./SimSite3D/SimSite3D_hits.py
-  : <location>$(ASCBASE_INSTALL_DIR)/SimSite3DPy/PyMOL_plugins
+  : <location>$(SIMSITE3D_INSTALL_DIR)/SimSite3DPy/PyMOL_plugins
   ;
 
 install python_progs
   : py_src/search_sitemaps.py py_src/auto_gen_sitemaps.py
-  : <location>$(ASCBASE_INSTALL_DIR)/bin
+  : <location>$(SIMSITE3D_INSTALL_DIR)/bin
   ;

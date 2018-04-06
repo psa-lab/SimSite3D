@@ -414,12 +414,12 @@ SearchParameters::verify_parameters()
   // Check
   if(dbase_sites.length() == 0){
     std::string msg = "Directory for searchable sitemaps was not given";
-    msg += " (i.e. $ASCBASE_DBASE_SITES)";
+    msg += " (i.e. $SIMSITE3D_DBASE_SITES)";
     err_msg(A_fname, "verify_parameters", msg);
     return INVALID_PARAMETER;
   }if(dbase_ligs.length() == 0){
     std::string msg = "Directory for ligands corresponding to the searchable ";
-    msg += "sitemaps was not given\n (i.e. $ASCBASE_DBASE_LIGS)";
+    msg += "sitemaps was not given\n (i.e. $SIMSITE3D_DBASE_LIGS)";
     err_msg(A_fname, "verify_parameters", msg);
     return INVALID_PARAMETER;
   }if(num_scores_to_keep < 1){
@@ -434,12 +434,12 @@ SearchParameters::verify_parameters()
     return INVALID_PARAMETER;
   }if(normalize && diverse_sites.length() == 0){
     std::string msg = "Directory for diverse sitemaps was not given";
-    msg += " (i.e. $ASCBASE_DIVERSE_SITES)";
+    msg += " (i.e. $SIMSITE3D_DIVERSE_SITES)";
     err_msg(A_fname, "verify_parameters", msg);
     return INVALID_PARAMETER;
   }if(normalize && diverse_ligs.length() == 0){
     std::string msg = "Directory for ligands corresponding to the diverse ";
-    msg += "sitemaps was not given\n (i.e. $ASCBASE_DIVERSE_LIGS)";
+    msg += "sitemaps was not given\n (i.e. $SIMSITE3D_DIVERSE_LIGS)";
     err_msg(A_fname, "verify_parameters", msg);
     return INVALID_PARAMETER;
   }if(db_start > 0 && db_stop > 0 && !db_index_fname.length()){
@@ -477,7 +477,7 @@ SearchParameters::verify_parameters()
   std::string tmp_name = path + "/" + struct_id + "_s.csv";
   if(!normal_file_exists(tmp_name, false)){
     std::cout << "Unable to find: " << tmp_name << "\nlooking for " 
-              << struct_id << " in $ASCBASE_DBASE_SITES\n"
+              << struct_id << " in $SIMSITE3D_DBASE_SITES\n"
               << "\t(" <<  dbase_sites <<  ")\n";
     tmp_name = dbase_sites + "/" + struct_id + "_s.csv";
     if(!normal_file_exists(tmp_name)) return INVALID_PARAMETER;

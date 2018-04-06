@@ -16,8 +16,8 @@
  *          Leslie Kuhn, Ph.D., KuhnL@msu.edu 
  *****************************************************************************/
 
-#ifndef ASCBASE_MAIN_HEADER_FILE
-#define ASCBASE_MAIN_HEADER_FILE
+#ifndef SIMSITE3D_MAIN_HEADER_FILE
+#define SIMSITE3D_MAIN_HEADER_FILE
 
 #include <errno.h>
 #include <dirent.h>

@@ -9,10 +9,10 @@
 # Revision 1.3  2008/01/22 16:46:56  vanvoor4
 # Changed to reflect the more recent method of handling the SimSite3D
 # environment.  At this time the course of action is
-# 0) Get $ASCBASE_INSTALL_DIR value
-# 1) read the /etc/ascbase/ascbase.conf file if it exists
-# 2) read the $HOME/.ascbase/ascbase.conf file if it exists
-# 3) Get the ASCBASE environment variables
+# 0) Get $SIMSITE3D_INSTALL_DIR value
+# 1) read the /etc/simsite3d/simsite3d.conf file if it exists
+# 2) read the $HOME/.simsite3d/simsite3d.conf file if it exists
+# 3) Get the SIMSITE3D environment variables
 # 4) use the parameters provided on the command line
 #
 # Revision 1.2  2007/11/01 19:11:47  vanvoor4
@@ -38,7 +38,7 @@ class directories:
   fail = False
 
   def __init__(self, check_install_dirs = True):
-    self.proj_dir = self.__getenv_dir("ASCBASE_INSTALL_DIR")
+    self.proj_dir = self.__getenv_dir("SIMSITE3D_INSTALL_DIR")
     if(self.proj_dir == None):
       return None
 
@@ -56,13 +56,13 @@ class directories:
       return None
 
   
-    vars = {"ASCBASE_DBASE_PROTS":None, "ASCBASE_DBASE_LIGS":None, 
-            "ASCBASE_DBASE_SITES":None, "ASCBASE_DIVERSE_SITES":None, 
-            "ASCBASE_DIVERSE_LIGS":None, "ASCBASE_PROJ_OUTPUT":None, 
-            "ASCBASE_SCRATCH_DIR":None}
+    vars = {"SIMSITE3D_DBASE_PROTS":None, "SIMSITE3D_DBASE_LIGS":None, 
+            "SIMSITE3D_DBASE_SITES":None, "SIMSITE3D_DIVERSE_SITES":None, 
+            "SIMSITE3D_DIVERSE_LIGS":None, "SIMSITE3D_PROJ_OUTPUT":None, 
+            "SIMSITE3D_SCRATCH_DIR":None}
 
     # Load the defaults form the system wide environment file
-    #sys_env_file = open(self.config_dir + "/ascbase_software.conf")
+    #sys_env_file = open(self.config_dir + "/simsite3d_software.conf")
     #for l in sys_env_file.readlines():
       #if(l.startswith("%") or l.startswith("#")):
         #continue
@@ -73,11 +73,11 @@ class directories:
         #vars[toks[0]] = toks[1]
 
     # Load parameters from conf files if they exist
-    if(path.exists("/etc/ascbase/ascbase.conf")):
-      self.__load_param_file("/etc/ascbase/ascbase.conf", vars)
+    if(path.exists("/etc/simsite3d/simsite3d.conf")):
+      self.__load_param_file("/etc/simsite3d/simsite3d.conf", vars)
     local_conf = self.__getenv_dir("HOME")
-    if(path.exists(local_conf + "/.ascbase/ascbase.conf")):
-      self.__load_param_file(local_conf + "/.ascbase/ascbase.conf", vars)
+    if(path.exists(local_conf + "/.simsite3d/simsite3d.conf")):
+      self.__load_param_file(local_conf + "/.simsite3d/simsite3d.conf", vars)
 
     # Load the values set in the environment
     for var in vars:
@@ -85,15 +85,15 @@ class directories:
       if(not tmp_val == None):
         vars[var] = tmp_val
 
-    self.prot_dir = vars["ASCBASE_DBASE_PROTS"]
-    self.ligs_dir = vars["ASCBASE_DBASE_LIGS"]
-    self.dbase_dir = vars["ASCBASE_DBASE_SITES"]
-    self.diverse_dir = vars["ASCBASE_DIVERSE_SITES"]
-    self.diverse_ligs = vars["ASCBASE_DIVERSE_LIGS"]
-    self.results_dir = vars["ASCBASE_PROJ_OUTPUT"]
+    self.prot_dir = vars["SIMSITE3D_DBASE_PROTS"]
+    self.ligs_dir = vars["SIMSITE3D_DBASE_LIGS"]
+    self.dbase_dir = vars["SIMSITE3D_DBASE_SITES"]
+    self.diverse_dir = vars["SIMSITE3D_DIVERSE_SITES"]
+    self.diverse_ligs = vars["SIMSITE3D_DIVERSE_LIGS"]
+    self.results_dir = vars["SIMSITE3D_PROJ_OUTPUT"]
 
-    if(not vars["ASCBASE_SCRATCH_DIR"] == None):
-      self.scratch_dir = vars["ASCBASE_SCRATCH_DIR"]
+    if(not vars["SIMSITE3D_SCRATCH_DIR"] == None):
+      self.scratch_dir = vars["SIMSITE3D_SCRATCH_DIR"]
     else:
       self.scratch_dir = self.results_dir
 

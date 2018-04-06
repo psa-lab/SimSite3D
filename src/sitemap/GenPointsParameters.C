@@ -119,7 +119,7 @@ GenPointsParameters::get_opts(const int argc, const char** argv)
     { "proj_output", '\0', POPT_ARG_STRING, &A_proj_output, 0,
       "Set directory to hold the generated sitemap", "path/to/sitemap"},
     { "msms_surf", '\0', POPT_ARG_NONE, 0, MSMS_SURFACE,
-      "Use Michel Sanner's msms to create pocket surface ($ASCBASE_INSTALL_DIR/bin/linux_msms) -- noncommerical use ONLY"},
+      "Use Michel Sanner's msms to create pocket surface ($SIMSITE3D_INSTALL_DIR/bin/linux_msms) -- noncommerical use ONLY"},
     { "probe_radius", '\0', POPT_ARG_DOUBLE, &(probe_radius), 0, 
       "The probe radius to use for the MSMS surface" },
     { "num_pts_per_area", '\0', POPT_ARG_DOUBLE, &(num_pts_per_area), 0, 

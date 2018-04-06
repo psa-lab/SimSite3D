@@ -8,7 +8,7 @@ using namespace SimSite3D;
 int main(int argc, char** argv)
 {
   if(argc != 4){
-    std::cerr << "Usage:  " << *argv << " <input_ASCBASE_test>.out <dbase_site_dir>" 
+    std::cerr << "Usage:  " << *argv << " <input_SIMSITE3D_test>.out <dbase_site_dir>" 
               << " <tag | NONE>"
               << std::endl;
     return -1;

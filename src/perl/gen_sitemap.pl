@@ -73,8 +73,8 @@ system "$proj_bin/gen_points --hbond_density sparse " .
 sub get_directories{
 
   # Directory where SimSite3D is installed
-  $dirs->{project} = $ENV{'ASCBASE_SOFTWARE_DIR'} or croak "ERROR: " .
-    "environment variable ASCBASE_SOFTWARE_DIR is not set\n";
+  $dirs->{project} = $ENV{'SIMSITE3D_SOFTWARE_DIR'} or croak "ERROR: " .
+    "environment variable SIMSITE3D_SOFTWARE_DIR is not set\n";
   # Added so that it can be changed if needed.
   $dirs->{data} = $dirs->{project} . "/data";
   # Directory holding the Pfizer protein pdb files
@@ -83,8 +83,8 @@ sub get_directories{
   $dirs->{ligands} = $ENV{'LIGAND_CRYSTAL_STRUCTURES_DIR'} or croak "ERROR: ".
     "environment variable LIGAND_CRYSTAL_STRUCTURES_DIR is not set\n";
   # Directory holding the searchable SimSite3D sitemap pdb files
-  $dirs->{search} = $ENV{'ASCBASE_SITEMAPS_DIR'} or croak "ERROR: ".
-    "environment variable ASCBASE_SITEMAPS_DIR is not set\n";
+  $dirs->{search} = $ENV{'SIMSITE3D_SITEMAPS_DIR'} or croak "ERROR: ".
+    "environment variable SIMSITE3D_SITEMAPS_DIR is not set\n";
 
   return $dirs;
 }

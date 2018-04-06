@@ -7,7 +7,7 @@ directory.  If the third parameter is not specified, the sitemap file is
 stored in the current directory .
 
 Note:  You may specify proteins and ligands files that are in the directories
-$ASCBASE_DBASE_PROTS and $ASCBASE_DBASE_LIGS respectively by just giving their 
+$SIMSITE3D_DBASE_PROTS and $SIMSITE3D_DBASE_LIGS respectively by just giving their 
 name (e.g. 1eqm_atp_p.pdb).
 
 These examples directories correspond to an example of creating a site map for 

@@ -112,9 +112,9 @@ Edit the activate script to set the necessary environment variables
 Set the environment variables in $VIRTUAL_ENV/bin/activate and/or
 $VIRTUAL_ENV/bin/activate.csh
 
-Set the ASCBASE_INSTALL_DIR variable::
+Set the SIMSITE3D_INSTALL_DIR variable::
 
-  setenv ASCBASE_INSTALL_DIR=</path/to/SimSite3D>
+  setenv SIMSITE3D_INSTALL_DIR=</path/to/SimSite3D>
 
 .. _activate_virtualenv:
 
@@ -214,7 +214,7 @@ C++ code for boost::python extension modules, and Python code.
         * Generating surfaces using your tool of choice
         * Converting them to the format written by MSMS
         * Passing the surfaces to gen_points via command line flags
-      * Having an MSMS binary at the path $ASCBASE_INSTALL_DIR/bin/linux_msms
+      * Having an MSMS binary at the path $SIMSITE3D_INSTALL_DIR/bin/linux_msms
       * Providing the location of an MSMS binary to gen_points via a 
         command line flag
     * ArtSurf uses numerical linear algebra that should be as robust as 

@@ -1,5 +1,5 @@
 import os ;
-local ASCBASE_INSTALL_DIR = [ os.environ  ASCBASE_INSTALL_DIR ] ;
+local SIMSITE3D_INSTALL_DIR = [ os.environ  SIMSITE3D_INSTALL_DIR ] ;
 
 # Extension build rules -- 
 python-extension _parameters 
@@ -25,7 +25,7 @@ python-extension _point_and_surf_score
 #  : ModelHbondSurfacesPy.cc  /SimSite3DPy//search_lib /SimSite3DPy//sitemaps_lib ;
 
 # Install rules
-install $(ASCBASE_INSTALL_DIR)/SimSite3DPy/search 
+install $(SIMSITE3D_INSTALL_DIR)/SimSite3DPy/search 
   : _parameters _ModelSitemap _DbaseSitemap _MatchTriangles _ScoreMapBase 
     _WeightedSumsScore _point_and_surf_score ;
 #    _point_and_surf_score _HbondSurfacesScore _ModelHbondSurfaces ;

@@ -56,7 +56,7 @@ SFCscoreInterface::SFCscoreInterface(std::string cmdline)
   if(pos == std::string::npos){
     std::ostringstream out;
     out << "Unable to find a .spf file specified in the command line string\n"
-        << "(column 2 of $ASCBASE_SOFTWARE_DIR/SimSite3DSoftParams/"
+        << "(column 2 of $SIMSITE3D_SOFTWARE_DIR/SimSite3DSoftParams/"
         << "external_scoring_functions.txt)";
     err_msg(_fname, "SFCscoreInterface", out.str());
   }else{

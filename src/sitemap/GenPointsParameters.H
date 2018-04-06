@@ -91,7 +91,7 @@ namespace SimSite3D{
     bool include_metals;  //!< True imples include metals in protein file as part of the protein, otherwise ignore all metal atoms
     std::vector<std::string> waters; //!< Water residues to include 
     verbose_level_t verbose_level;
-    bool call_msms;  //!< True implies call $ASCBASE_INSTALL_DIR/bin/linux_msms to create the site's surface
+    bool call_msms;  //!< True implies call $SIMSITE3D_INSTALL_DIR/bin/linux_msms to create the site's surface
     bool prune_to_lig; //!< True implies use the UnionOfBalls class rather than the RectangularSolid class for site map volume defined by ligand.
     my_float_t probe_radius; //!< Probe radius for MSMS
     my_float_t num_pts_per_area; //!< Number of points per (A)^2
@@ -114,11 +114,11 @@ namespace SimSite3D{
      */
     status_t get_opts(const int argc, const char** argv);
   
-    char* prots_dir;       //!< Cmdline value for $ASCBASE_DBASE_PROTS
-    char* ligs_dir;        //!< Cmdline value for $ASCBASE_DBASE_LIGS 
+    char* prots_dir;       //!< Cmdline value for $SIMSITE3D_DBASE_PROTS
+    char* ligs_dir;        //!< Cmdline value for $SIMSITE3D_DBASE_LIGS 
     char* hbond_dens_str;  //!< Cmdline value for hydrogen bond density
-    char* A_scratch_dir;   //!< Cmdline value for $ASCBASE_SCRATCH_DIR
-    char* A_proj_output;   //!< Cmdline value for $ASCBASE_PROJ_OUTPUT
+    char* A_scratch_dir;   //!< Cmdline value for $SIMSITE3D_SCRATCH_DIR
+    char* A_proj_output;   //!< Cmdline value for $SIMSITE3D_PROJ_OUTPUT
     char* A_waters_str;    //!< Cmdline string for water residues to include
     static const std::string A_fname; //!< Name of source file
   };

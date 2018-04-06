@@ -22,7 +22,7 @@ SimSite3D_Software_2.7.2
 * Atoms which were labeled as HETATMs in the input PDB files should now be
   correctly labeled as HETATMs in any output PDB files.
 * Having the names of runtime variables in the config files not prefixed with
-  ASCBASE_ was deemed a possible place of confusion.  The example config files
+  SIMSITE3D_ was deemed a possible place of confusion.  The example config files
   and parsing was updated accordingly.
 * Blank chainIDs and iCodes are ommitted (not represented by an character) from 
   the label in the sitemap labels file.  If an iCode is not a blank, it is 
@@ -36,8 +36,8 @@ SimSite3D_Software_2.7.1-r1
 * Fixed copy-n-paste bug in method used to load environment variables
 * Programs no longer allow explicit loading of conf files from command line
 * conf files are no longer required
-* system conf file now is /etc/ascbase/ascbase.conf
-* local conf file now is ${HOME}/.ascbase/ascbase.conf
+* system conf file now is /etc/simsite3d/simsite3d.conf
+* local conf file now is ${HOME}/.simsite3d/simsite3d.conf
 SimSite3D_Software_2.7.1-A6
 * mol2File::write() now puts the "struct_id" + _NNNNN as the molecule name
   (instead of "*****").  mol2File::write() now places the atom-type + orbit

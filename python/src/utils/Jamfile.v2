@@ -1,5 +1,5 @@
 import os ;
-local ASCBASE_INSTALL_DIR = [ os.environ  ASCBASE_INSTALL_DIR ] ;
+local SIMSITE3D_INSTALL_DIR = [ os.environ  SIMSITE3D_INSTALL_DIR ] ;
 
 python-extension _base_parameters 
   : BaseParametersPy.cc 
@@ -23,6 +23,6 @@ python-extension _system_timers
   : TimerPy.cc 
   : <variant>release:<cxxflags>-O2 ;
 
-install $(ASCBASE_INSTALL_DIR)/SimSite3DPy/utils 
+install $(SIMSITE3D_INSTALL_DIR)/SimSite3DPy/utils 
   : _base_parameters _atom _stl_containers _stream_basics _mol2File 
     _PDBStructure _system_timers ;

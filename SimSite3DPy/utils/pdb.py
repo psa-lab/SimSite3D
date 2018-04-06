@@ -31,7 +31,7 @@ class metal_lookup:
   def __init__(self):
     self.table = {}
     # must be a better way to have a data file read at run time
-    fname = os.environ["ASCBASE_INSTALL_DIR"]
+    fname = os.environ["SIMSITE3D_INSTALL_DIR"]
     fname += "/SimSite3DPy/utils/pdb_metals.csv"
     infile = open(fname, "r")
 
@@ -83,7 +83,7 @@ class residue_lookup:
   
     # must be a better way to have a data file read at run time
     infile = \
-      open(os.environ["ASCBASE_INSTALL_DIR"] + "/SimSite3DPy/utils/pdb_residues.csv", "r")
+      open(os.environ["SIMSITE3D_INSTALL_DIR"] + "/SimSite3DPy/utils/pdb_residues.csv", "r")
 #"/home/vanvoor4/code/python/trunk/coord_files/pdb_residues.csv", "r") 
 
     main_chain = {}

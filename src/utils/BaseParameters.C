@@ -43,19 +43,19 @@ BaseParameters::BaseParameters()
  
   // 0) This variable is needed till we decide how to handle the input data
   //    I recommend folding the static data into header files.
-  if(!get_env_var("ASCBASE_INSTALL_DIR", &install_dir)){
-    err_msg(A_fname, "BaseParameters()", "$ASCBASE_INSTALL_DIR is not set.  Please set $ASCBASE_INSTALL_DIR before\ncontinuing");
+  if(!get_env_var("SIMSITE3D_INSTALL_DIR", &install_dir)){
+    err_msg(A_fname, "BaseParameters()", "$SIMSITE3D_INSTALL_DIR is not set.  Please set $SIMSITE3D_INSTALL_DIR before\ncontinuing");
     A_status = FATAL_ERROR;
     return;
   }
 
-  // 1) Attempt to load /etc/ascbase/ascbase.conf
-  load_conf_file("/etc/ascbase/ascbase.conf");
+  // 1) Attempt to load /etc/simsite3d/simsite3d.conf
+  load_conf_file("/etc/simsite3d/simsite3d.conf");
 
-  // 2) Attempt to load ${HOME}/.ascbase/ascbase.conf
+  // 2) Attempt to load ${HOME}/.simsite3d/simsite3d.conf
   std::string home;
   if(get_env_var("HOME", &home)) 
-    load_conf_file(home + "/.ascbase/ascbase.conf");
+    load_conf_file(home + "/.simsite3d/simsite3d.conf");
   else warn(A_fname, "cstr()", "The variable $HOME is not set.");
 
   // 3) Environment variables
@@ -134,13 +134,13 @@ BaseParameters::load_environment()
 void
 BaseParameters::init_str_to_var_map()
 {
-  A_str_to_var.insert(str_var_pair("ASCBASE_DBASE_LIGS", &dbase_ligs)); 
-  A_str_to_var.insert(str_var_pair("ASCBASE_DBASE_PROTS", &dbase_prots)); 
-  A_str_to_var.insert(str_var_pair("ASCBASE_DBASE_SITES", &dbase_sites)); 
-  A_str_to_var.insert(str_var_pair("ASCBASE_DIVERSE_LIGS", &diverse_ligs)); 
-  A_str_to_var.insert(str_var_pair("ASCBASE_DIVERSE_SITES", &diverse_sites)); 
-  A_str_to_var.insert(str_var_pair("ASCBASE_SCRATCH_DIR", &scratch_dir));
-  A_str_to_var.insert(str_var_pair("ASCBASE_PROJ_OUTPUT", &proj_output));
+  A_str_to_var.insert(str_var_pair("SIMSITE3D_DBASE_LIGS", &dbase_ligs)); 
+  A_str_to_var.insert(str_var_pair("SIMSITE3D_DBASE_PROTS", &dbase_prots)); 
+  A_str_to_var.insert(str_var_pair("SIMSITE3D_DBASE_SITES", &dbase_sites)); 
+  A_str_to_var.insert(str_var_pair("SIMSITE3D_DIVERSE_LIGS", &diverse_ligs)); 
+  A_str_to_var.insert(str_var_pair("SIMSITE3D_DIVERSE_SITES", &diverse_sites)); 
+  A_str_to_var.insert(str_var_pair("SIMSITE3D_SCRATCH_DIR", &scratch_dir));
+  A_str_to_var.insert(str_var_pair("SIMSITE3D_PROJ_OUTPUT", &proj_output));
 }
 
 bool

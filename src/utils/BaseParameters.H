@@ -42,8 +42,8 @@ namespace SimSite3D{
 
   //! A method to load database, diverse sitemaps, etc directories from 
   //! environment variables and parameter files
-  /*! The order is to first read the $ASCBASE_INSTALL_DIR environment variable.
-   * Second, parse $ASCBASE_INSTALL_DIR/SimSite3DSoftParams/ascbase_software.conf
+  /*! The order is to first read the $SIMSITE3D_INSTALL_DIR environment variable.
+   * Second, parse $SIMSITE3D_INSTALL_DIR/SimSite3DSoftParams/simsite3d_software.conf
    * for system wide default values.  Thirdly, check for any updated parameters
    * in the environment.  Finally, if load_conf_file is called by a derived 
    * class, the parsed values override all previously stored values.

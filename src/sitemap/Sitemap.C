@@ -56,7 +56,7 @@ Sitemap::Sitemap(const std::string path, const std::string struct_id,
     my_struct = args.dbase_sites + "/" + A_struct_id;
     my_site = my_struct + "_s.csv";
     std::cout << "Checking for " << A_struct_id 
-              << "_s.csv in $ASCBASE_DBASE_SITES\n" 
+              << "_s.csv in $SIMSITE3D_DBASE_SITES\n" 
               << "\t(" << args.dbase_sites << ")\n";
     if(!normal_file_exists(my_site, false)){
       std::cerr << "Unable to find the file: " << my_site << "\n"

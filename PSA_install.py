@@ -18,8 +18,8 @@ if(not os.path.exists(dirs.diverse_dir)):
 
 #if(dirs.proj_dir == None):
 #  print >> sys.stderr, \
-#    "\nUnable to get the environment variable $ASCBASE_INSTALL_DIR"
-#  print >> sys.stderr, "Please set $ASCBASE_INSTALL_DIR to a valid path"
+#    "\nUnable to get the environment variable $SIMSITE3D_INSTALL_DIR"
+#  print >> sys.stderr, "Please set $SIMSITE3D_INSTALL_DIR to a valid path"
 #  sys.exit(1)
 #
 ## This directory can screw things up between machines
@@ -82,8 +82,8 @@ shutil.copy("params/minimal_hbonds.dat", params_dir);
 # Copy the example conf file -- do not want to overwrite an existing conf file
 shutil.copy("params/ext_prot_lig_score_fcns.conf", 
             params_dir + "/ext_prot_lig_score_fcns.conf.example");
-shutil.copy("params/ascbase.conf", 
-            params_dir + "/ascbase.conf.example");
+shutil.copy("params/simsite3d.conf", 
+            params_dir + "/simsite3d.conf.example");
 print "finished"
 sys.stdout.flush()
 
@@ -113,15 +113,15 @@ sys.stdout.flush()
 #print "  The tar files for the diverse sitemaps and ligands may be found in:"
 #print "\t" + dirs.proj_dir + "/data\n"
 #print "  The file diverse_sitemaps.tgz should be extracted to " + \
-  #"$ASCBASE_DIVERSE_SITES"
+  #"$SIMSITE3D_DIVERSE_SITES"
 #print "  The file diverse_ligands.tgz should be extracted to " + \
-  #"$ASCBASE_DIVERSE_LIGS\n\n"
+  #"$SIMSITE3D_DIVERSE_LIGS\n\n"
 
 print "Please consult the SimSite3D Quick Guide for help in configuring and",
 print "using the\nSimSite3D software tools"
 print "To configure SimSite3D, two examples files are included:"
 print "  An example SimSite3D configuration file is:"
-print "    " + params_dir + "/ascbase.conf.example"
+print "    " + params_dir + "/simsite3d.conf.example"
 print "  An example external prot-lig scoring functions config file is:"
 print "    " + params_dir + "/ext_pro_lig_score_fcns.conf.example\n\n"
 print "To get started, you may look at the examples in\n  " + \

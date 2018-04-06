@@ -1,5 +1,5 @@
 import os ;
-local ASCBASE_INSTALL_DIR = [ os.environ  ASCBASE_INSTALL_DIR ] ;
+local SIMSITE3D_INSTALL_DIR = [ os.environ  SIMSITE3D_INSTALL_DIR ] ;
 
 # Extension build rules
 python-extension _Sitemap
@@ -14,5 +14,5 @@ python-extension _HbondSurfaces
   : HbondSurfacesPy.cc /SimSite3DPy//sitemaps_lib ;
 
 # Install rules
-install $(ASCBASE_INSTALL_DIR)/SimSite3DPy/sitemaps 
+install $(SIMSITE3D_INSTALL_DIR)/SimSite3DPy/sitemaps 
   : _Sitemap _HbondPoints _hbond_points _parameters _HbondSurfaces ;

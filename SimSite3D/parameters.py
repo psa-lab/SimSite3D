@@ -18,7 +18,7 @@ class parameters_base:
     self.load_surf_files = False
     self.fail = False
     
-    self.install_dir = self.__getenv_dir("ASCBASE_INSTALL_DIR")
+    self.install_dir = self.__getenv_dir("SIMSITE3D_INSTALL_DIR")
   ##########
 
   # Parameters are not verified since they can be overwritten by subclasses
@@ -27,17 +27,17 @@ class parameters_base:
     if(self.fail):
       return False  
 
-    vars = {"ASCBASE_DBASE_PROTS":None, "ASCBASE_DBASE_LIGS":None,
-            "ASCBASE_DBASE_SITES":None, "ASCBASE_DIVERSE_SITES":None,
-            "ASCBASE_DIVERSE_LIGS":None, "ASCBASE_PROJ_OUTPUT":None,
-            "ASCBASE_SCRATCH_DIR":None}
+    vars = {"SIMSITE3D_DBASE_PROTS":None, "SIMSITE3D_DBASE_LIGS":None,
+            "SIMSITE3D_DBASE_SITES":None, "SIMSITE3D_DIVERSE_SITES":None,
+            "SIMSITE3D_DIVERSE_LIGS":None, "SIMSITE3D_PROJ_OUTPUT":None,
+            "SIMSITE3D_SCRATCH_DIR":None}
 
     # Load parameters from conf files if they exist
-    if(os.path.exists("/etc/ascbase/ascbase.conf")):
-      self.__load_param_file("/etc/ascbase/ascbase.conf", vars)
+    if(os.path.exists("/etc/simsite3d/simsite3d.conf")):
+      self.__load_param_file("/etc/simsite3d/simsite3d.conf", vars)
     local_conf = self.__getenv_dir("HOME")
-    if(os.path.exists(local_conf + "/.ascbase/ascbase.conf")):
-      self.__load_param_file(local_conf + "/.ascbase/ascbase.conf", vars)
+    if(os.path.exists(local_conf + "/.simsite3d/simsite3d.conf")):
+      self.__load_param_file(local_conf + "/.simsite3d/simsite3d.conf", vars)
 
     # Load the values set in the environment
     for var in vars:
@@ -45,13 +45,13 @@ class parameters_base:
       if(not tmp_val == None):
         vars[var] = tmp_val
 
-    self.dbase_prots = vars["ASCBASE_DBASE_PROTS"]
-    self.dbase_ligs = vars["ASCBASE_DBASE_LIGS"]
-    self.dbase_sites = vars["ASCBASE_DBASE_SITES"]
-    self.diverse_sites = vars["ASCBASE_DIVERSE_SITES"]
-    self.diverse_ligs = vars["ASCBASE_DIVERSE_LIGS"]
-    self.proj_output = vars["ASCBASE_PROJ_OUTPUT"]
-    self.scratch_dir = vars["ASCBASE_SCRATCH_DIR"]
+    self.dbase_prots = vars["SIMSITE3D_DBASE_PROTS"]
+    self.dbase_ligs = vars["SIMSITE3D_DBASE_LIGS"]
+    self.dbase_sites = vars["SIMSITE3D_DBASE_SITES"]
+    self.diverse_sites = vars["SIMSITE3D_DIVERSE_SITES"]
+    self.diverse_ligs = vars["SIMSITE3D_DIVERSE_LIGS"]
+    self.proj_output = vars["SIMSITE3D_PROJ_OUTPUT"]
+    self.scratch_dir = vars["SIMSITE3D_SCRATCH_DIR"]
 
     if(self.proj_output == None):
       self.proj_output = os.getcwd()
@@ -456,11 +456,11 @@ Additional Options:
 
       --proj_output DIRECTORY
             Set the name of the search output directory.  This value is also
-            set by the $ASCBASE_PROJ_OUTPUT variable            
+            set by the $SIMSITE3D_PROJ_OUTPUT variable            
 
       --scratch_dir DIRECTORY
             Set the name of the temporary directory that SimSite3D can use 
-            during the course of a search.  This is set by $ASCBASE_SCRATCH_DIR
+            during the course of a search.  This is set by $SIMSITE3D_SCRATCH_DIR
             the variable.
 
 Site Map Database Options:
@@ -468,12 +468,12 @@ Site Map Database Options:
 
       --dbase_sites DIRECTORY
             Set the directory holding the database site maps.  This option
-            overrides the value set by $ASCBASE_DBASE_SITES and is typically
+            overrides the value set by $SIMSITE3D_DBASE_SITES and is typically
             used with the --dbase_ligs option.
 
       --dbase_ligs DIRECTORY
             Set the directory holding the database ligands.  This option
-            overrides the value set by $ASCBASE_DBASE_LIGS and is typically
+            overrides the value set by $SIMSITE3D_DBASE_LIGS and is typically
             used with the --dbase_sites option.
 
       --db_index_file FILE

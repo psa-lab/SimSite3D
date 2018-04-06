@@ -10,12 +10,12 @@ import py_src.utils as utils
 dir_mode = 0754
 
 dirs = DIRS()
-#dirs.proj_dir = os.getenv("ASCBASE_INSTALL_DIR")
+#dirs.proj_dir = os.getenv("SIMSITE3D_INSTALL_DIR")
 dirs.proj_dir = "/soft/linux64/SimSite3D_v4.5"
 if(dirs.proj_dir == None):
   print >> sys.stderr, \
-    "\nUnable to get the environment variable $ASCBASE_INSTALL_DIR"
-  print >> sys.stderr, "Please set $ASCBASE_INSTALL_DIR to a valid path"
+    "\nUnable to get the environment variable $SIMSITE3D_INSTALL_DIR"
+  print >> sys.stderr, "Please set $SIMSITE3D_INSTALL_DIR to a valid path"
   sys.exit(1)
 
 # This directory can screw things up between machines

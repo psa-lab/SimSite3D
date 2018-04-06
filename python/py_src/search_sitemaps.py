@@ -46,11 +46,11 @@ def copy_search_params(params_py):
   return params_cc
 
 ###############################################################################
-proj_dir = os.getenv("ASCBASE_INSTALL_DIR")
+proj_dir = os.getenv("SIMSITE3D_INSTALL_DIR")
 if(proj_dir == None):
   print >> sys.stderr, \
-    "\nUnable to get the environment variable $ASCBASE_INSTALL_DIR"
-  print >> sys.stderr, "Please set $ASCBASE_INSTALL_DIR to a valid path"
+    "\nUnable to get the environment variable $SIMSITE3D_INSTALL_DIR"
+  print >> sys.stderr, "Please set $SIMSITE3D_INSTALL_DIR to a valid path"
   sys.exit(1)
 
 sys.path.append(proj_dir + "/python")

@@ -5,6 +5,7 @@
 
 #include <string_basics.H>
 #include <math_basics.H>
+#include <stdio.h>
 
 namespace SimSite3D{
 namespace geometry{

@@ -1,9 +1,0 @@
-K 10
-svn:ignore
-V 25
-*.gcno
-*.gcov
-*.gcda
-*.o
-
-END

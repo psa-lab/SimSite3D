@@ -1,3 +1,9 @@
+# macOS temporary files
+.DS_Store
+
+# Word temporary files
+~\$*
+
 # Prerequisites
 *.d
 

@@ -4,7 +4,7 @@
  *      (MSU) Board of Trustees.
  * SimSite3D Software comes with ABSOLUTELY NO WARRANTY.
  *
- * Authors: Jeffrey Van Voorst, vanvoor4@msu.edu
+ * Authors: Jeffrey Van Voorst, jeff.vanvoorst@gmail.com
  *          Leslie Kuhn, Ph.D., KuhnL@msu.edu 
  *****************************************************************************/
 

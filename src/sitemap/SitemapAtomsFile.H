@@ -12,7 +12,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  *
- * Authors: Jeffrey Van Voorst, vanvoor4@msu.edu
+ * Authors: Jeffrey Van Voorst, jeff.vanvoorst@gmail.com
  *          Leslie Kuhn, Ph.D., KuhnL@msu.edu 
  *****************************************************************************/
 #ifndef _SITEMAP_ATOMS_FILE_HEADER_INCLUDED

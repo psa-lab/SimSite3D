@@ -2,7 +2,7 @@
  * Copyright (c) 2006-2011, Michigan State University (MSU) Board of Trustees.
  * This file is part of the SimSite3D software project.
  *
- * Authors: Jeffrey Van Voorst, vanvoor4@msu.edu
+ * Authors: Jeffrey Van Voorst, jeff.vanvoorst@gmail.com
  *          Leslie Kuhn, Ph.D., KuhnL@msu.edu 
  *
  *  SimSite3D is free software; you can redistribute it and/or modify

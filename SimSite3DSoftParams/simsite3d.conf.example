@@ -1,8 +1,0 @@
-# comments can be denoted using the '#' and/or '%' characters
-SIMSITE3D_DBASE_SITES /home/vanvoor4/data/sampling/adenines/dbase
-SIMSITE3D_DBASE_LIGS /home/vanvoor4/data/sampling/adenines/ligands
-SIMSITE3D_DBASE_PROTS /home/vanvoor4/data/sampling/adenines/proteins
-SIMSITE3D_DIVERSE_SITES /home/vanvoor4/data/diverse_structures/dbase
-SIMSITE3D_DIVERSE_LIGS /home/vanvoor4/data/diverse_structures/ligands
-SIMSITE3D_PROJ_OUTPUT .
-SIMSITE3D_SCRATCH_DIR /tmp

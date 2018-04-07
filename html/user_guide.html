@@ -1,0 +1,477 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Notes for Using SimSite3D and its Python Scripts &#8212; SimSite3D 4.6rc1 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Some Notes on SimSite3D’s Python API and Tools" href="api.html" />
+    <link rel="prev" title="Welcome to SimSite3D’s documentation!" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="api.html" title="Some Notes on SimSite3D’s Python API and Tools"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to SimSite3D’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">SimSite3D 4.6rc1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="notes-for-using-simsite3d-and-its-python-scripts">
+<span id="user-guide"></span><h1>Notes for Using SimSite3D and its Python Scripts<a class="headerlink" href="#notes-for-using-simsite3d-and-its-python-scripts" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">On the PSA systems, SimSite3D is currently installed from
+SimSite3D_hg, and it has a virtualenv for the python settings.</p>
+</div>
+<div class="section" id="using-psa-s-virtualenv">
+<h2>Using PSA’s virtualenv<a class="headerlink" href="#using-psa-s-virtualenv" title="Permalink to this headline">¶</a></h2>
+<p>To use the Python utilities with SimSite3D, I really recommend using the
+virtualenv.</p>
+<p>To use Python 2.7.2, SimSite3D’s python scripts, SimSite3D’s Boost::Python
+extentions; <strong>and</strong> to setup your paths for SimSite3D:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">source</span> <span class="o">/</span><span class="n">soft</span><span class="o">/</span><span class="n">linux64</span><span class="o">/.</span><span class="n">virtualenvs</span><span class="o">/</span><span class="n">SimSite3D_4</span><span class="o">.</span><span class="mi">5</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span><span class="o">.</span><span class="n">csh</span>
+</pre></div>
+</div>
+<p>When you need to use other tools or other tools fail, you can deactivate
+the virtualenv using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">deactivate</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="setting-up-a-dataset">
+<span id="dataset-setup"></span><h2>Setting up a Dataset<a class="headerlink" href="#setting-up-a-dataset" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Many of the conventions in this document are not required for the core
+SimSite3D functionality, but are generally required for the Python
+scripts.  Also, if you don’t stick to a file naming convention
+(either this one or your own) you may find it difficult to reproduce
+your work or recall what you did when you come back to your results
+at a later date.</p>
+</div>
+<p>SimSite3D generally requires a structure file for each binding site.
+Each site may have a ligand file, and will have SimSite3D generated site map
+files.  It is recommended to have a specific directory structure and file
+naming convention for SimSite3D screening and analysis.</p>
+<div class="section" id="binding-site-naming-convention">
+<span id="structure-name-template"></span><h3>Binding Site Naming Convention<a class="headerlink" href="#binding-site-naming-convention" title="Permalink to this headline">¶</a></h3>
+<p>A standard naming convention for binding sites is useful for yourself and
+others to know which sites you are using in your searches.  You should use
+the following template to name sites:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">XXXX_YYY_T</span><span class="o">.</span><span class="n">EXT</span>
+</pre></div>
+</div>
+<p>Where we replace <code class="docutils literal notranslate"><span class="pre">XXXX</span></code> with the name of the structure, <code class="docutils literal notranslate"><span class="pre">YYY</span></code> with the name
+of the ligand, <code class="docutils literal notranslate"><span class="pre">T</span></code> with the type of object, and <code class="docutils literal notranslate"><span class="pre">EXT</span></code> for the file
+extention.  As an example, suppose we have the PDB structure 1u72 and are
+interested in the methotrexate ligand (MTX).  Then we would have the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="n">u72_MTX_p</span><span class="o">.</span><span class="n">pdb</span>   <span class="c1"># PDB structure file</span>
+<span class="mi">1</span><span class="n">u72_MTX_l</span><span class="o">.</span><span class="n">mol2</span>  <span class="c1"># ligand mol2 file</span>
+</pre></div>
+</div>
+<p>SimSite3D itself is expected to handle any non-zero length name for both
+the protein and ligand, but some of the python scripts still expect
+a 4 character protein name and a 3 character ligand name.
+Also, do not skip any of the names or ‘_’ characters or most programs will
+fail.</p>
+</div>
+<div class="section" id="one-directory-structure-for-simsite3d-datasets">
+<span id="directory-structure"></span><h3>One Directory Structure for SimSite3D Datasets<a class="headerlink" href="#one-directory-structure-for-simsite3d-datasets" title="Permalink to this headline">¶</a></h3>
+<p>Let the ‘~’ character denote the root directory where you wish to work with,
+manipulate, and save your SimSite3D datasets.  It is good practice to name
+the dataset well, and to use the following commands to create the
+proteins, ligands, and dbase directories for that dataset:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="o">~/</span><span class="n">my_dataset</span>
+
+<span class="n">mkdir</span> <span class="o">~/</span><span class="n">my_dataset</span><span class="o">/</span><span class="n">proteins</span>
+<span class="n">mkdir</span> <span class="o">~/</span><span class="n">my_dataset</span><span class="o">/</span><span class="n">ligands</span>
+<span class="n">mkdir</span> <span class="o">~/</span><span class="n">my_dataset</span><span class="o">/</span><span class="n">dbase</span>
+</pre></div>
+</div>
+<p>If you are validating SimSite3D, I recommend aligning the proteins and ligands
+before generating the site maps.  Depending on the type of dataset you can use
+Dali, SSM, ligand based alignments, or a hybrid approach.</p>
+</div>
+<div class="section" id="column-order-file">
+<span id="id1"></span><h3>Column Order File<a class="headerlink" href="#column-order-file" title="Permalink to this headline">¶</a></h3>
+<p>We also need to create a file in the dataset directory called column_order.txt.
+This file should contain lines like the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">site_id_1</span><span class="o">|</span><span class="n">pdb_code_1</span><span class="o">|</span><span class="n">plot_name_1</span><span class="o">|</span>
+<span class="n">site_id_2</span><span class="o">|</span><span class="n">pdb_code_2</span><span class="o">|</span><span class="n">plot_name_2</span><span class="o">|</span>
+</pre></div>
+</div>
+<p>Where <code class="docutils literal notranslate"><span class="pre">site_id_i</span></code> is replaced by the name of the site, <code class="docutils literal notranslate"><span class="pre">pdb_code_i</span></code> is
+replaced by the pdb code for that structure, and <code class="docutils literal notranslate"><span class="pre">plot_name_i</span></code> is replace by
+the name that you would like to use to represent that structure on plots.
+As an example, for a pterin binding site dataset one might have:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="n">u72_mtx</span><span class="o">|</span><span class="mi">1</span><span class="n">u72</span><span class="o">|</span><span class="n">Hs</span> <span class="n">DHFR</span><span class="o">|</span>
+<span class="mi">2</span><span class="n">fzh_dh1</span><span class="o">|</span><span class="mi">2</span><span class="n">fzh</span><span class="o">|</span><span class="n">Pc</span> <span class="n">DHFR</span><span class="o">|</span>
+<span class="mi">1</span><span class="n">qzf_fol</span><span class="o">|</span><span class="mi">1</span><span class="n">qzf</span><span class="o">|</span><span class="n">Ch</span> <span class="n">DHFR</span><span class="o">|</span>
+<span class="mi">1</span><span class="n">df7_mtx</span><span class="o">|</span><span class="mi">1</span><span class="n">df7</span><span class="o">|</span><span class="n">Mt</span> <span class="n">DHFR</span><span class="o">|</span>
+<span class="mi">1</span><span class="n">j3i_wra</span><span class="o">|</span><span class="mi">1</span><span class="n">j3i</span><span class="o">|</span><span class="n">Pf</span> <span class="n">DHFR</span><span class="o">|</span>
+<span class="mi">1</span><span class="n">dr1_hbi</span><span class="o">|</span><span class="mi">1</span><span class="n">dr1</span><span class="o">|</span><span class="n">Gg</span> <span class="n">DHFR</span><span class="o">|</span>
+<span class="mi">1</span><span class="n">aoe_gw3</span><span class="o">|</span><span class="mi">1</span><span class="n">aoe</span><span class="o">|</span><span class="n">Ca</span> <span class="n">DHFR</span><span class="o">|</span>
+<span class="mi">1</span><span class="n">d1g_mtx</span><span class="o">|</span><span class="mi">1</span><span class="n">d1g</span><span class="o">|</span><span class="n">Tm</span> <span class="n">DHFR</span><span class="o">|</span>
+<span class="mi">2</span><span class="n">qx0_ph2</span><span class="o">|</span><span class="mi">2</span><span class="n">qx0</span><span class="o">|</span><span class="n">Yp</span> <span class="n">HPPK</span><span class="o">|</span>
+<span class="mi">2</span><span class="n">bmb_pmm2</span><span class="o">|</span><span class="mi">2</span><span class="n">bmb</span><span class="o">|</span><span class="n">Sc</span> <span class="n">HPPK</span><span class="o">|</span>
+<span class="mi">1</span><span class="n">q0n_ph2</span><span class="o">|</span><span class="mi">1</span><span class="n">q0n</span><span class="o">|</span><span class="n">Ec</span> <span class="n">HPPK</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">|</span>
+<span class="mi">1</span><span class="n">rb0_hh2</span><span class="o">|</span><span class="mi">1</span><span class="n">rb0</span><span class="o">|</span><span class="n">Ec</span> <span class="n">HPPK</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="o">|</span>
+<span class="mi">1</span><span class="n">cbk_roi</span><span class="o">|</span><span class="mi">1</span><span class="n">cbk</span><span class="o">|</span><span class="n">Hi</span> <span class="n">HPPK</span><span class="o">|</span>
+<span class="mi">1</span><span class="n">mmk_h4b</span><span class="o">|</span><span class="mi">1</span><span class="n">mmk</span><span class="o">|</span><span class="n">Hs</span> <span class="n">PAH</span><span class="o">|</span>
+<span class="mi">1</span><span class="n">mlw_hbi</span><span class="o">|</span><span class="mi">1</span><span class="n">mlw</span><span class="o">|</span><span class="n">Hs</span> <span class="n">TPH</span><span class="o">|</span>
+<span class="mi">2</span><span class="n">toh_hbi</span><span class="o">|</span><span class="mi">2</span><span class="n">toh</span><span class="o">|</span><span class="n">Rn</span> <span class="n">TH</span><span class="o">|</span>
+<span class="mi">1</span><span class="n">ltz_hbi</span><span class="o">|</span><span class="mi">1</span><span class="n">ltz</span><span class="o">|</span><span class="n">Cv</span> <span class="n">PAH</span><span class="o">|</span>
+<span class="mi">2</span><span class="n">bmb_pmm1</span><span class="o">|</span><span class="mi">2</span><span class="n">bmb</span><span class="o">|</span><span class="n">Sc</span> <span class="n">DHPS</span><span class="o">|</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="notes-on-simsite3d-scoring">
+<span id="simsite3d-scoring-notes"></span><h2>Notes on SimSite3D Scoring<a class="headerlink" href="#notes-on-simsite3d-scoring" title="Permalink to this headline">¶</a></h2>
+<p>The SimSite3D tool <strong>search_sitemaps</strong> writes the search results into a text
+file, hereafter referred to as “a/the results file”.
+The convention is any line that starts with the ‘#’ character is a comment
+line.
+To help with reproducibility, a number of SimSite3D parameters are written to
+the “comment header” of the results file.
+The score lines (if any) will follow the comment header.</p>
+<div class="section" id="simsite3d-results-file-comment-header">
+<h3>SimSite3D Results File Comment Header<a class="headerlink" href="#simsite3d-results-file-comment-header" title="Permalink to this headline">¶</a></h3>
+<p>Shown below is an example of a header from a recent SimSite3D results file.
+We will go through line by line to repeat what is shown.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Parameters for search_sitemaps (SimSite3D) 4.5-rc4 run</span>
+<span class="c1"># Local start time:                               Thu Dec 29 11:29:00 2011</span>
+<span class="c1"># Working directory (via getcwd()):               /Users/jvanvoorst/data/SimSite3D/results/baseline</span>
+<span class="c1"># Searchable sitemaps directory:                  /Users/jvanvoorst/data/SimSite3D/datasets/test/adenines/dbase</span>
+<span class="c1"># Corresponding ligands directory:                /Users/jvanvoorst/data/SimSite3D/datasets/test/adenines/ligands</span>
+<span class="c1"># Query (Model) Sitemap Name:                     /Users/jvanvoorst/data/SimSite3D/datasets/test/adenines/ade_pockets/1b38_atp_s.csv</span>
+<span class="c1"># Max number of scores to keep for each sitemap:  1</span>
+<span class="c1"># Score threshold:                                10</span>
+<span class="c1"># Minimum number of atoms required in a fragment: 0</span>
+<span class="c1"># Average distance metric error tolerance:        0.3</span>
+<span class="c1"># Average least squares error tolerance:          0.3</span>
+<span class="c1"># Highly hydrophobic query pocket:                Yes</span>
+<span class="c1"># SimSite3D timing statistics:</span>
+<span class="c1">#   Wall clock time:                              11.64 sec.</span>
+<span class="c1">#   CPU time:                                     11.63 sec.</span>
+<span class="c1">#   User time:                                    11.58 sec.</span>
+<span class="c1">#   Kernel time:                                  0.05 sec.</span>
+<span class="c1"># Scoring function terms were scaled:             No</span>
+<span class="c1"># Max dist between corresponding surface points:  1.5</span>
+<span class="c1"># SimSite3D alignments scores are not normalized</span>
+<span class="c1">#</span>
+<span class="c1"># Fields:</span>
+<span class="c1"># 1 ) Name of ligand fragment corresponding to the score record (line)</span>
+<span class="c1"># 2 ) Raw SimSite3D alignment score of target to query</span>
+<span class="c1"># 3 ) Rotation matrix to align target to query</span>
+<span class="c1"># 4 ) Translation vector to move target to query</span>
+<span class="c1"># 5 ) Match print of the query&#39;s sitemap points satisfied by sitemap points</span>
+<span class="c1">#     in the database hit</span>
+<span class="c1"># 6 ) Ligand fragment binary string:  1 or 0 in nth position implies that the</span>
+<span class="c1">#     nth mol2 ligand atom is or is not in the mol2 ligand fragment (resp.)</span>
+<span class="c1"># 7 ) scoring function terms/alignment features</span>
+</pre></div>
+</td></tr></table></div>
+<p>What questions can I answer with the information can be found in this header?</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Which version of SimSite3D (search_sitemaps) was used to search?</li>
+<li>When was this search started? (this will depend on the operating system’s
+locale)</li>
+<li>From which directory did I run the search?</li>
+<li>What was the dataset (screening) site maps directory?</li>
+<li>In which directory did I instruct search_sitemaps to search for dataset
+ligand files?</li>
+<li>Which file was used to specify the query site map?</li>
+<li>What was the maximum number of scores to keep per dataset site map?</li>
+<li>What was the score threshold (any alignments that scored numerically
+higher than this were ignored)?</li>
+<li>What was the minimum number of atoms required for dataset ligand
+fragments?</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>If this value is/was zero, ligands were ignored for the purpose of
+selecting site alignments</li>
+<li>If this value is/was greater than zero, any listed site alignments will
+have at least one dataset ligand fragment (with at least that many atoms)
+fully contained (after site alignment) within the query’s site map
+volume</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="10">
+<li>What was the distance matrix error (DME) threshold?</li>
+<li>What was the weighted RMSD threshold for triangle matches?</li>
+<li>Was the highly hydrophobic ligand flag on/off for search_sitemaps?</li>
+<li>Search timing using itimers (note that the timing could be off somewhat,
+and the precision is probably best kept to 1/10ths of seconds).</li>
+<li>How much “actual” time elapsed between search_sitemaps starting and
+finishing?</li>
+<li>How long was search_sitemaps executing on one CPU?</li>
+<li>How much of that time was spent in user space?</li>
+<li>How much of the CPU time was spent in the Linux kernel?</li>
+<li>Was a scoring function used that required scaled features?</li>
+<li>What was the threshold used to determine if two molecular surface points
+(one from query surface and one from dataset surface) could be
+corresponding points?</li>
+<li>Were the scores normalized?</li>
+<li>(blank)</li>
+<li>What are the fields (columns) listed for hits/matches?</li>
+<li>What was the name of the dataset site map?</li>
+<li>What was the score for this match?</li>
+<li>What rotation matrix may I use to align the dataset site (protein, ligand,
+and/or molecular surface) to the query?</li>
+<li>What translation vector corresponds with the rotation given above?</li>
+<li>Which points in the query site map had a corresponding point in the
+dataset site?</li>
+<li>…</li>
+<li>Which non-hydrogen atoms in the dataset ligand were inside the query
+site map’s volume?</li>
+<li>…</li>
+<li>What was the scoring function feature vector for this match?</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="sundry-comments-remarks-about-simsite3d-scoring">
+<h3>Sundry Comments/Remarks About SimSite3D Scoring<a class="headerlink" href="#sundry-comments-remarks-about-simsite3d-scoring" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You may skip this section.  It is a number of comments about the
+scoring process that are primarily of interest to those who
+are developing the tools.</p>
+</div>
+<p>Automatic score normalization is not handled robustly with respect to
+altering of experimental parameters.
+The algorithm and rules were based on the improper assumption that SimSite3D
+runs would be mostly static and SimSite3D parameters would be held constant.
+This means that to remove all doubt, you should consider running
+search_sitemaps with the –no_normalization flag <strong>and</strong> run search_sitemaps
+against a normalization dataset of your choice with <strong>exactly</strong> the same
+parameters as the search <em>except</em> for the screening dataset and corresponding
+ligands directories.</p>
+<p>The crux of the issue is the normalization stats are written into the
+query sitemap file, and once there they are not computed again.
+Also, SimSite3D now has too many parameters to reliably and reasonably list
+them with a particular set of normalization stats.
+We can still keep this step automated, but, in my opinion, we should recompute
+the normalization stats for each search (rather than writing them into the
+query’s sitemap files).
+In fact, although it puts more burden on users, it is much safer to
+compute the normalization as an explicit and separate step (however, adding
+additional steps will likely chase away most users).</p>
+<p>Finally, score normalization was deemed a very important part of SimSite3D.
+Thus, score normalization is enabled by default at site map generation time
+and at search time.
+For now, if you want to do things your own way, you will need to
+use the –no_normalization flag (at least when searching both your
+dataset and your normalization dataset, and to save time, when you
+create your dataset site maps).</p>
+</div>
+</div>
+<div class="section" id="howto-use-simsite3d-and-plotting-tools-for-validation-and-testing">
+<span id="setup-simsite-and-plotting"></span><h2>Howto use SimSite3D and Plotting Tools for Validation and Testing<a class="headerlink" href="#howto-use-simsite3d-and-plotting-tools-for-validation-and-testing" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you have not setup your dataset directory(ies) please do so first
+before continuing with this section.</p>
+</div>
+<div class="section" id="directory-names">
+<h3>Directory Names<a class="headerlink" href="#directory-names" title="Permalink to this headline">¶</a></h3>
+<p>As a generally good practice, I recommend creating a results directory for
+SimSite3D and, if you prefer, a subdirectory for your specific datasets.
+One example of this is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="o">~/</span><span class="n">SimSite3D_results</span>  <span class="c1"># main results directory</span>
+<span class="n">mkdir</span> <span class="o">~/</span><span class="n">SimSite3D_results</span><span class="o">/</span><span class="n">test_some_thing</span> <span class="c1"># my current results directory</span>
+<span class="n">mkdir</span> <span class="o">~/</span><span class="n">SimSite3D_results</span><span class="o">/</span><span class="n">test_some_thing</span><span class="o">/</span><span class="n">pterins</span> <span class="c1"># my current pterins results directory if I want results segregated by dataset</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="simsite3d-searches">
+<h3>SimSite3D Searches<a class="headerlink" href="#simsite3d-searches" title="Permalink to this headline">¶</a></h3>
+<p>Run SimSite3D to create a results file that starts with the same prefix as the
+query site.  For example if I am using 2toh_hbi as the query site I would use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">search_sitemaps</span> <span class="o">--</span><span class="n">proj_output</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">my</span><span class="o">/</span><span class="n">results</span><span class="o">/</span><span class="mi">2</span><span class="n">toh_hbi_results</span>
+</pre></div>
+</div>
+<p>If we run such a command for each of the query sites in the pterins dataset,
+we can plot an NxN matrix that shows the relative score of each query
+versus each dataset site.  The plotting is quite easy if you followed
+a consistent naming convention and can be miserable if you have files
+all over the place.</p>
+</div>
+<div class="section" id="computing-rmsd-of-alignment">
+<h3>Computing RMSD of Alignment<a class="headerlink" href="#computing-rmsd-of-alignment" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To compute RMSD of alignment you must have aligned the sites before
+doing the SimSite3D searches.  I recommend doing this by having
+aligned structures and ligands, and then creating the site maps.
+Following such a pattern generally results in less work and issues
+of “was this aligned or not”.</p>
+</div>
+<p>The general ideas and methods of “computing RMSD of site alignment” as was done
+for Jeff’s dissertation is presented here (of course, you are not required
+to use this method, but if you want to reproduce similar results, it is
+likely necessary).
+You will need to figure out how to best align your sites, and follow the
+following steps:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Align the sites/proteins/ligands using whatever tool you like to some
+reference
+(Jeff used one “reference” structure for each dataset and aligned all
+others to that structure)</li>
+<li>Save the transformations – you will wish you had later if you don’t</li>
+<li>Align the proteins (and ligands if there are any used to generate sites)</li>
+<li>Generate the site maps</li>
+<li>Do a search</li>
+<li>Use a program to transform the pocket for each dataset site using the
+saved transformation (in the results .out) file</li>
+<li>Compute the RMSD of alignment as the RMSD of the transformed pocket with
+the coordinates its initial alignment to the reference</li>
+</ol>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Notes for Using SimSite3D and its Python Scripts</a><ul>
+<li><a class="reference internal" href="#using-psa-s-virtualenv">Using PSA’s virtualenv</a></li>
+<li><a class="reference internal" href="#setting-up-a-dataset">Setting up a Dataset</a><ul>
+<li><a class="reference internal" href="#binding-site-naming-convention">Binding Site Naming Convention</a></li>
+<li><a class="reference internal" href="#one-directory-structure-for-simsite3d-datasets">One Directory Structure for SimSite3D Datasets</a></li>
+<li><a class="reference internal" href="#column-order-file">Column Order File</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#notes-on-simsite3d-scoring">Notes on SimSite3D Scoring</a><ul>
+<li><a class="reference internal" href="#simsite3d-results-file-comment-header">SimSite3D Results File Comment Header</a></li>
+<li><a class="reference internal" href="#sundry-comments-remarks-about-simsite3d-scoring">Sundry Comments/Remarks About SimSite3D Scoring</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#howto-use-simsite3d-and-plotting-tools-for-validation-and-testing">Howto use SimSite3D and Plotting Tools for Validation and Testing</a><ul>
+<li><a class="reference internal" href="#directory-names">Directory Names</a></li>
+<li><a class="reference internal" href="#simsite3d-searches">SimSite3D Searches</a></li>
+<li><a class="reference internal" href="#computing-rmsd-of-alignment">Computing RMSD of Alignment</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to SimSite3D’s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="api.html"
+                        title="next chapter">Some Notes on SimSite3D’s Python API and Tools</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/user_guide.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="api.html" title="Some Notes on SimSite3D’s Python API and Tools"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to SimSite3D’s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">SimSite3D 4.6rc1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Jeffrey R. Van Voorst and Leslie A. Kuhn.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.2.
+    </div>
+  </body>
+</html>

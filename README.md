@@ -15,7 +15,7 @@ SimSite3D can be used without computing alignments, that is, SimSite3D can also 
 ![](doc/figure_17.jpg)
 
 
-SimSite3D was developed by Jeffrey van Voorst and Leslie A. Kuhn in the [PSA Lab](http://www.kuhnlab.bmb.msu.edu) at Michigan State University.
+SimSite3D was developed by Jeffrey Van Voorst and Leslie A. Kuhn in the [PSA Lab](http://www.kuhnlab.bmb.msu.edu) at Michigan State University.
 
 
 
@@ -29,7 +29,7 @@ SimSite3D documentation at
 
 In addition, additional documents are provided in the [doc](./doc) subdirectory that may be helpful:
 
-- [Jeffrey van Voorst's Ph.D. thesis explaining the theory behind SimSite3D](doc/Jeff_VanVoorst_MSU_PhD_dissertation_SimSite3D.pdf)
+- [Jeffrey Van Voorst's Ph.D. thesis explaining the theory behind SimSite3D](doc/Jeff_VanVoorst_MSU_PhD_dissertation_SimSite3D.pdf)
 - [SimSite3D v 3.0 Software Installation Guide](./doc/SimSite3D_Install_Guide.pdf) (also applies to newer versions of SimSite3D)
 - [Troubleshooting Guide](troubleshooting.md)
 - [Simsite3D v 3.0 User Guide](./doc/SimSite3D_User_Guide.pdf)

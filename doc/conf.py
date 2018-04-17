@@ -29,7 +29,25 @@ import site
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.intersphinx', 'sphinx.ext.todo', 'sphinx.ext.pngmath', 'sphinx.ext.viewcode']
+
+sys.path.insert(0, os.path.abspath('_ext/'))
+sys.path.insert(0, os.path.abspath('../SimSite3DPy/'))
+sys.path.insert(0, os.path.abspath('../SimSite3DPy/SimSite3D'))
+sys.path.insert(0, os.path.abspath('../SimSite3DPy/sitemaps'))
+sys.path.insert(0, os.path.abspath('../SimSite3DPy/utils'))
+sys.path.insert(0, os.path.abspath('../SimSite3DPy/score'))
+sys.path.insert(0, os.path.abspath('../SimSite3DPy/search'))
+sys.path.insert(0, os.path.abspath('../SimSite3DPy/py_src'))
+
+
+extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.autosummary',
+    'sphinx.ext.doctest']
+
+edit_on_github_project = 'psa-lab/SimSite3D'
+edit_on_github_branch = 'master'
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -93,17 +111,22 @@ pygments_style = 'sphinx'
 
 # -- Options for HTML output ---------------------------------------------------
 
+# Add any paths that contain custom themes here, relative to this directory.
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'default'
+html_theme = 'sphinx_rtd_theme'
+
+html_context = {
+                "display_github": True, # Add 'Edit on Github' link instead of 'View page source'
+                "last_updated": True,
+                "commit": False,
+                "github_url": "https://github.com/psa-lab/SimSite3D"
+                }
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
-
-# Add any paths that contain custom themes here, relative to this directory.
-#html_theme_path = []
+#html_theme_options = {'display_version': True}
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".

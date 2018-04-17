@@ -6,6 +6,12 @@
 Welcome to SimSite3D's documentation!
 =====================================
 
+Source Code Repository:
+
+https://github.com/psa-lab/SimSite3D
+
+:github_url:
+
 Contents:
 
 .. toctree::

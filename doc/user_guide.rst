@@ -4,24 +4,6 @@
 Notes for Using SimSite3D and its Python Scripts
 ************************************************
 
-.. note:: On the PSA systems, SimSite3D is currently installed from
-          SimSite3D_hg, and it has a virtualenv for the python settings.
-
-Using PSA's virtualenv
-======================
-
-To use the Python utilities with SimSite3D, I really recommend using the
-virtualenv.
-
-To use Python 2.7.2, SimSite3D's python scripts, SimSite3D's Boost::Python
-extentions; **and** to setup your paths for SimSite3D::
-
-  source /soft/linux64/.virtualenvs/SimSite3D_4.5/bin/activate.csh
-
-When you need to use other tools or other tools fail, you can deactivate
-the virtualenv using::
-
-  deactivate
 
 .. _dataset_setup:
 

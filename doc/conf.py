@@ -45,8 +45,8 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.doctest']
 
-edit_on_github_project = 'psa-lab/SimSite3D'
-edit_on_github_branch = 'master'
+#edit_on_github_project = 'psa-lab/SimSite3D'
+#edit_on_github_branch = 'master'
 
 
 # Add any paths that contain templates here, relative to this directory.
@@ -116,12 +116,12 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 html_theme = 'sphinx_rtd_theme'
 
-html_context = {
-                "display_github": True, # Add 'Edit on Github' link instead of 'View page source'
-                "last_updated": True,
-                "commit": False,
-                "github_url": "https://github.com/psa-lab/SimSite3D"
-                }
+#html_context = {
+#                "display_github": True, # Add 'Edit on Github' link instead of 'View page source'
+#                "last_updated": True,
+#                "commit": False,
+#                "github_url": "https://github.com/psa-lab/SimSite3D"
+#                }
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

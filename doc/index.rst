@@ -6,11 +6,7 @@
 Welcome to SimSite3D's documentation!
 =====================================
 
-Source Code Repository:
-
-https://github.com/psa-lab/SimSite3D
-
-:github_url:
+Source Code Repository: https://github.com/psa-lab/SimSite3D
 
 Contents:
 
@@ -18,7 +14,6 @@ Contents:
    :maxdepth: 2
    
    user_guide
-   api
    install
   
 ..   install

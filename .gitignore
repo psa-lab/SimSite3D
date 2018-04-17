@@ -13,6 +13,7 @@ _build/
 *.o
 *.ko
 *.obj
+*.pyc
 *.elf
 
 # Linker output

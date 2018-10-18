@@ -21,6 +21,8 @@ SimSite3D was developed by Jeffrey Van Voorst and Leslie A. Kuhn in the [PSA Lab
 
 ## Installing and Using SimSite3D
 
+Note: this repo needs some major cleanup.  It is in progress, but is a somewhat low priority.
+
 
 For more information on how to install and use SimSite3D, please refer to the 
 SimSite3D documentation at
